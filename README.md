@@ -17,7 +17,7 @@ The content from this module is from **Masks: A New Generation** from **Magpie G
 
 ## Manual Instalation
 1. Go to **modules** and use the link: 
-Use this: https://raw.githubusercontent.com/brunocalado/10plus-v2-moremagicitems/main/module.json
+Use this: https://raw.githubusercontent.com/brunocalado/masks-newgeneration-unofficial/main/module.json
 
 # Templates
 You need to set up a template before import the compendium. There are two you can use:
