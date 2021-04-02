@@ -21,14 +21,15 @@ Use this: https://raw.githubusercontent.com/brunocalado/10plus-v2-moremagicitems
 
 # Templates
 You need to set up a template before import the compendium. There are two you can use:
-- Normal sheet: 
-- Normal sheet + Harm (page 206):  
+- Normal sheet: https://raw.githubusercontent.com/brunocalado/masks-newgeneration-unofficial/main/templates/masks.txt
+- Normal sheet + Harm (page 206): https://raw.githubusercontent.com/brunocalado/masks-newgeneration-unofficial/main/templates/masks_harm.txt 
 
 # How To
 
 1. Choose template. Load the template.
 2. Activate the module.
-3. Import the compendium you want. Right click it and Import all.
+3. Import the compendium you want. Right click it and Import all Content.
+4. Drag the Folder Basic and Adult to an Actor Sheet.
 
 # Changelog
 You can check changes at [CHANGELOG](CHANGELOG.md)
