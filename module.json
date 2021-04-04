@@ -25,14 +25,14 @@
         "name": "moves-options",
         "label": "Moves Options",
         "path": "packs/moves-options.db",
-        "entity": "Item",
+        "entity": "JournalEntry",
         "module": "masks-newgeneration-unofficial"
       },
       {
         "name": "rules",
         "label": "Rules",
         "path": "packs/rules.db",
-        "entity": "Item",
+        "entity": "JournalEntry",
         "module": "masks-newgeneration-unofficial"
       },
       {
