@@ -3,7 +3,7 @@
    "title": "Masks: A New Generation (unofficial)",
    "description": "Masks: A New Generation from Magpie Games (unofficial)",   
    "author": "Mestre Digital",
-   "version": "0.0.1",
+   "version": "0.0.2",
    "minimumCoreVersion": "0.7.9",
    "compatibleCoreVersion":"0.7.9",
    "packs": [
@@ -22,12 +22,89 @@
         "module": "masks-newgeneration-unofficial"
       },
       {
+        "name": "moves-options",
+        "label": "Moves Options",
+        "path": "packs/moves-options.db",
+        "entity": "Item",
+        "module": "masks-newgeneration-unofficial"
+      },
+      {
+        "name": "rules",
+        "label": "Rules",
+        "path": "packs/rules.db",
+        "entity": "Item",
+        "module": "masks-newgeneration-unofficial"
+      },
+      {
         "name": "the-beacon",
         "label": "The Beacon",
         "path": "packs/the-beacon.db",
         "entity": "Item",
         "module": "masks-newgeneration-unofficial"
-      }      
+      },
+      {bull
+        "name": "the-bull",
+        "label": "The Bull",
+        "path": "packs/the-bull.db",
+        "entity": "Item",
+        "module": "masks-newgeneration-unofficial"
+      },
+      {
+        "name": "the-delinquent",
+        "label": "The Delinquent",
+        "path": "packs/the-delinquent.db",
+        "entity": "Item",
+        "module": "masks-newgeneration-unofficial"
+      },
+      {
+        "name": "the-doomed",
+        "label": "The Doomed",
+        "path": "packs/the-doomed.db",
+        "entity": "Item",
+        "module": "masks-newgeneration-unofficial"
+      },
+      {
+        "name": "the-janus",
+        "label": "The Janus",
+        "path": "packs/the-janus.db",
+        "entity": "Item",
+        "module": "masks-newgeneration-unofficial"
+      },
+      {
+        "name": "the-legacy",
+        "label": "The Legacy",
+        "path": "packs/the-legacy.db",
+        "entity": "Item",
+        "module": "masks-newgeneration-unofficial"
+      },
+      {
+        "name": "the-nova",
+        "label": "The Nova",
+        "path": "packs/the-nova.db",
+        "entity": "Item",
+        "module": "masks-newgeneration-unofficial"
+      },
+      {
+        "name": "the-outsider",
+        "label": "The Outsider",
+        "path": "packs/the-outsider.db",
+        "entity": "Item",
+        "module": "masks-newgeneration-unofficial"
+      },
+      {
+        "name": "the-protege",
+        "label": "The Protege",
+        "path": "packs/the-protege.db",
+        "entity": "Item",
+        "module": "masks-newgeneration-unofficial"
+      },
+      {
+        "name": "the-transformed",
+        "label": "The Transformed",
+        "path": "packs/the-transformed.db",
+        "entity": "Item",
+        "module": "masks-newgeneration-unofficial"
+      }        
     ],
   "system": "pbta",
   "url": "https://github.com/brunocalado/masks-newgeneration-unofficial",
