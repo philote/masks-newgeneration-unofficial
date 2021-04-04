@@ -1,6 +1,6 @@
 # Masks: A New Generation (unofficial)
 
-Masks: A New Generation moves for PbtA System (https://gitlab.com/asacolips-projects/foundry-mods/pbta). 
+Masks: A New Generation moves for PbtA System (https://gitlab.com/asacolips-projects/foundry-mods/pbta). You can install this system with this link: https://gitlab.com/asacolips-projects/foundry-mods/pbta/-/jobs/artifacts/beta/raw/system.json?job=build-beta
 
 The content from this module is from **Masks: A New Generation** from **Magpie Games**. You can get the PDF at: https://magpiegames.com/masks/
 
