@@ -6,11 +6,15 @@ The content from this module is from **Masks: A New Generation** from **Magpie G
 
 ## Demonstration
 <p align="center">
-  <img width="900" src="images/guide/demo1.jpg">
+  <img width="700" src="images/guide/masks.jpg">
 </p>
 
 <p align="center">
-  <img width="900" src="images/guide/demo2.jpg">
+  <img width="800" src="images/guide/demo1.jpg">
+</p>
+
+<p align="center">
+  <img width="300" src="images/guide/demo2.jpg">
 </p>
 
 # Install
