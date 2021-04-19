@@ -88,9 +88,6 @@ statToggle = "Locked"
     [npc.attributesTop.realName]
       type = "Text"
       label = "Real Name"
-    [npc.attributesTop.conditions]
-      type = "Text"
-      label = "Conditions"
 
   [npc.attributesLeft]
     [npc.attributesLeft.conditions]

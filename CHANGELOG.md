@@ -1,3 +1,8 @@
+# 0.0.6
+janus/legacy/nova improvements
+other moves
+templates update
+
 # 0.0.5
 moves links ok
 
