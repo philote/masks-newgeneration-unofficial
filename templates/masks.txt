@@ -33,6 +33,9 @@ statToggle = "Locked"
     [character.attributesTop.heroName]
       type = "Text"
       label = "Hero Name"
+    [character.attributesTop.advances]
+      type = "Number"
+      label = "Advances"      
     [character.attributesTop.xp]
       type = "Xp"
       label = "Potential"

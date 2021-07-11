@@ -1,3 +1,9 @@
+# 0.0.7
+- macro
+- update template
+- journals with instructions
+- 8x tested
+
 # 0.0.6
 janus/legacy/nova improvements
 other moves

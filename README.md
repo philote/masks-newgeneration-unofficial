@@ -30,7 +30,6 @@ Use this: https://raw.githubusercontent.com/brunocalado/masks-newgeneration-unof
 # Templates
 You need to set up a template before import the compendium. There are two you can use:
 - Normal sheet: https://raw.githubusercontent.com/brunocalado/masks-newgeneration-unofficial/main/templates/masks.txt
-- Normal sheet + Harm (page 206): https://raw.githubusercontent.com/brunocalado/masks-newgeneration-unofficial/main/templates/masks_harm.txt 
 
 # How To
 
@@ -38,6 +37,9 @@ You need to set up a template before import the compendium. There are two you ca
 2. Activate the module.
 3. Import the compendium you want. Right click it and Import all Content.
 4. Drag the Folder Basic and Adult to an Actor Sheet.
+
+# More Instructions
+There is a journal with more instructions inside the module. Load the module and search the compendiuns for it.
 
 # Changelog
 You can check changes at [CHANGELOG](CHANGELOG.md)

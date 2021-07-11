@@ -1,0 +1,95 @@
+{
+  "system": "pbta",
+  "map": [
+    {
+      "id": "angry",
+      "name": "Angry",
+      "icon": "icons/skills/wounds/injury-face-impact-orange.webp",
+      "referenceId": "@JournalEntry[lODIxA5iUBsJp8QG]",
+      "applyTrigger": "783qmrlxe8vtuzdu",
+      "removeTrigger": "g0qkjvrfprueiqh8",
+      "activeEffect": null,
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link\" draggable=\"true\" data-entity=\"JournalEntry\" data-id=\"lODIxA5iUBsJp8QG\"><i class=\"fas fa-book-open\"></i> Angry</a>",
+      "isChanged": false
+    },
+    {
+      "id": "afraid",
+      "name": "Afraid",
+      "icon": "icons/magic/unholy/silhouette-robe-evil-power.webp",
+      "referenceId": "@JournalEntry[NaRt3Jw8GDpAuECU]",
+      "applyTrigger": "v1bimnlcypo6utio",
+      "removeTrigger": "exqtcb1rkxruxu4t",
+      "activeEffect": null,
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link\" draggable=\"true\" data-entity=\"JournalEntry\" data-id=\"NaRt3Jw8GDpAuECU\"><i class=\"fas fa-book-open\"></i> Afraid</a>",
+      "isChanged": false
+    },
+    {
+      "id": "guilty",
+      "name": "Guilty",
+      "icon": "icons/creatures/mammals/humanoid-cat-skulking-teal.webp",
+      "referenceId": "@JournalEntry[YdXN0KsaIJC59UWH]",
+      "applyTrigger": "drr2cikqampkld3d",
+      "removeTrigger": "112psa04lf2avyjz",
+      "activeEffect": null,
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link\" draggable=\"true\" data-entity=\"JournalEntry\" data-id=\"YdXN0KsaIJC59UWH\"><i class=\"fas fa-book-open\"></i> Guilty</a>",
+      "isChanged": false
+    },
+    {
+      "id": "hopeless",
+      "name": "Hopeless",
+      "icon": "icons/creatures/magical/spirit-undead-masked-blue.webp",
+      "referenceId": "@JournalEntry[lwJSLBfEPrnk8icK]",
+      "applyTrigger": "iqkcpglchgfnsa70",
+      "removeTrigger": "9ffv993rvo75lj4c",
+      "activeEffect": null,
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link\" draggable=\"true\" data-entity=\"JournalEntry\" data-id=\"lwJSLBfEPrnk8icK\"><i class=\"fas fa-book-open\"></i> Hopeless</a>",
+      "isChanged": false
+    },
+    {
+      "id": "insecure",
+      "name": "Insecure",
+      "icon": "icons/magic/death/undead-skeleton-deformed-red.webp",
+      "referenceId": "@JournalEntry[YPttLfs3i5zJBHSs]",
+      "applyTrigger": "f3hb17as7a8o8x9r",
+      "removeTrigger": "pqll4hlemfy5axw2",
+      "activeEffect": null,
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": true,
+        "markDefeated": false
+      },
+      "isNew": false,
+      "enrichedReference": "<a class=\"entity-link\" draggable=\"true\" data-entity=\"JournalEntry\" data-id=\"YPttLfs3i5zJBHSs\"><i class=\"fas fa-book-open\"></i> Insecure</a>",
+      "isChanged": false
+    }
+  ]
+}
