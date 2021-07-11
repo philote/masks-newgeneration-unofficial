@@ -1,3 +1,7 @@
+# 0.0.8
+- docs fix
+- cub json fix
+
 # 0.0.7
 - macro
 - update template
