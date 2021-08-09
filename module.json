@@ -1,7 +1,7 @@
-{   
-   "name": "masks-newgeneration-unofficial",   
+{
+   "name": "masks-newgeneration-unofficial",
    "title": "Masks: A New Generation (unofficial)",
-   "description": "Masks: A New Generation from Magpie Games (unofficial)",   
+   "description": "Masks: A New Generation from Magpie Games (unofficial)",
    "author": "Mestre Digital",
    "version": "0.0.8",
    "minimumCoreVersion": "0.8.8",
@@ -27,7 +27,14 @@
         "path": "packs/moves-other.db",
         "entity": "Item",
         "module": "masks-newgeneration-unofficial"
-      },      
+      },
+      {
+        "name": "gm-moves",
+        "label": "GM Moves",
+        "path": "packs/gm-moves.db",
+        "entity": "JournalEntry",
+        "module": "masks-newgeneration-unofficial"
+      },
       {
         "name": "moves-options",
         "label": "Moves Options",
@@ -62,7 +69,7 @@
         "path": "packs/macros-masks.db",
         "entity": "Macro",
         "module": "masks-newgeneration-unofficial"
-      },      
+      },
       {
         "name": "the-beacon",
         "label": "The Beacon",
@@ -132,10 +139,10 @@
         "path": "packs/the-transformed.db",
         "entity": "Item",
         "module": "masks-newgeneration-unofficial"
-      }        
+      }
     ],
-  "system": "pbta",  
+  "system": "pbta",
   "url": "https://github.com/brunocalado/masks-newgeneration-unofficial",
-  "manifest": "https://raw.githubusercontent.com/brunocalado/masks-newgeneration-unofficial/main/module.json",  
-  "download": "https://codeload.github.com/brunocalado/masks-newgeneration-unofficial/zip/main"               
+  "manifest": "https://raw.githubusercontent.com/brunocalado/masks-newgeneration-unofficial/main/module.json",
+  "download": "https://codeload.github.com/brunocalado/masks-newgeneration-unofficial/zip/main"
 }
