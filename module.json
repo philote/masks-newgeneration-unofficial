@@ -3,7 +3,7 @@
    "title": "Masks: A New Generation (unofficial)",
    "description": "Masks: A New Generation from Magpie Games (unofficial)",
    "author": "Mestre Digital",
-   "version": "0.0.8",
+   "version": "0.0.9",
    "minimumCoreVersion": "0.8.8",
    "compatibleCoreVersion":"0.8.8",
    "packs": [
@@ -66,6 +66,6 @@
     ],
   "system": "pbta",
   "url": "https://github.com/brunocalado/masks-newgeneration-unofficial",
-  "manifest": "https://raw.githubusercontent.com/brunocalado/masks-newgeneration-unofficial/main/module.json",
+  "manifest": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/module.json",
   "download": "https://codeload.github.com/brunocalado/masks-newgeneration-unofficial/zip/main"
 }
