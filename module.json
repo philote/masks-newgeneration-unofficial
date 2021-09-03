@@ -1,33 +1,26 @@
-{   
-   "name": "masks-newgeneration-unofficial",   
+{
+   "name": "masks-newgeneration-unofficial",
    "title": "Masks: A New Generation (unofficial)",
-   "description": "Masks: A New Generation from Magpie Games (unofficial)",   
+   "description": "Masks: A New Generation from Magpie Games (unofficial)",
    "author": "Mestre Digital",
    "version": "0.0.8",
    "minimumCoreVersion": "0.8.8",
    "compatibleCoreVersion":"0.8.8",
    "packs": [
       {
-        "name": "moves-adult",
-        "label": "Moves Adult",
-        "path": "packs/moves-adult.db",
+        "name": "moves-revised",
+        "label": "Moves",
+        "path": "packs/moves-revised.db",
         "entity": "Item",
         "module": "masks-newgeneration-unofficial"
       },
       {
-        "name": "moves-basic",
-        "label": "Moves Basic",
-        "path": "packs/moves-basic.db",
-        "entity": "Item",
+        "name": "masks-gm-moves",
+        "label": "GM Moves",
+        "path": "packs/masks-gm-moves.db",
+        "entity": "JournalEntry",
         "module": "masks-newgeneration-unofficial"
       },
-      {
-        "name": "moves-other",
-        "label": "Moves Other",
-        "path": "packs/moves-other.db",
-        "entity": "Item",
-        "module": "masks-newgeneration-unofficial"
-      },      
       {
         "name": "moves-options",
         "label": "Moves Options",
@@ -62,80 +55,17 @@
         "path": "packs/macros-masks.db",
         "entity": "Macro",
         "module": "masks-newgeneration-unofficial"
-      },      
+      },
       {
-        "name": "the-beacon",
-        "label": "The Beacon",
-        "path": "packs/the-beacon.db",
+        "name": "playbooks-revised",
+        "label": "Basic Playbooks",
+        "path": "packs/playbooks-revised.db",
         "entity": "Item",
         "module": "masks-newgeneration-unofficial"
       },
-      {
-        "name": "the-bull",
-        "label": "The Bull",
-        "path": "packs/the-bull.db",
-        "entity": "Item",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "the-delinquent",
-        "label": "The Delinquent",
-        "path": "packs/the-delinquent.db",
-        "entity": "Item",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "the-doomed",
-        "label": "The Doomed",
-        "path": "packs/the-doomed.db",
-        "entity": "Item",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "the-janus",
-        "label": "The Janus",
-        "path": "packs/the-janus.db",
-        "entity": "Item",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "the-legacy",
-        "label": "The Legacy",
-        "path": "packs/the-legacy.db",
-        "entity": "Item",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "the-nova",
-        "label": "The Nova",
-        "path": "packs/the-nova.db",
-        "entity": "Item",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "the-outsider",
-        "label": "The Outsider",
-        "path": "packs/the-outsider.db",
-        "entity": "Item",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "the-protege",
-        "label": "The Protege",
-        "path": "packs/the-protege.db",
-        "entity": "Item",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "the-transformed",
-        "label": "The Transformed",
-        "path": "packs/the-transformed.db",
-        "entity": "Item",
-        "module": "masks-newgeneration-unofficial"
-      }        
     ],
-  "system": "pbta",  
+  "system": "pbta",
   "url": "https://github.com/brunocalado/masks-newgeneration-unofficial",
-  "manifest": "https://raw.githubusercontent.com/brunocalado/masks-newgeneration-unofficial/main/module.json",  
-  "download": "https://codeload.github.com/brunocalado/masks-newgeneration-unofficial/zip/main"               
+  "manifest": "https://raw.githubusercontent.com/brunocalado/masks-newgeneration-unofficial/main/module.json",
+  "download": "https://codeload.github.com/brunocalado/masks-newgeneration-unofficial/zip/main"
 }

@@ -1,3 +1,6 @@
+#0.0.9
+- revised branch
+
 # 0.0.8
 - docs fix
 - cub json fix
@@ -26,4 +29,4 @@ Working!
 test beta
 
 # 0.0.1
-first 
+first
