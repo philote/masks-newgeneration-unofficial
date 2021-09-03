@@ -1,8 +1,8 @@
 {
    "name": "masks-newgeneration-unofficial",
-   "title": "Masks: A New Generation (unofficial)",
-   "description": "Masks: A New Generation from Magpie Games (unofficial)",
-   "author": "Mestre Digital",
+   "title": "Masks: A New Generation (unofficial) Revised",
+   "description": "Masks: A New Generation from Magpie Games (unofficial) Revised",
+   "author": "CyricPL",
    "version": "0.0.9",
    "minimumCoreVersion": "0.8.8",
    "compatibleCoreVersion":"0.8.8",
@@ -62,10 +62,10 @@
         "path": "packs/playbooks-revised.db",
         "entity": "Item",
         "module": "masks-newgeneration-unofficial"
-      },
+      }
     ],
   "system": "pbta",
-  "url": "https://github.com/brunocalado/masks-newgeneration-unofficial",
+  "url": "https://github.com/CyricPL/masks-newgeneration-unofficial",
   "manifest": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/module.json",
   "download": "https://codeload.github.com/brunocalado/masks-newgeneration-unofficial/zip/main"
 }
