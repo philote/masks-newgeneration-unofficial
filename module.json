@@ -64,6 +64,12 @@
         "module": "masks-newgeneration-unofficial"
       }
     ],
+  "dependencies": [
+    {
+      "name": "compendium-folders",
+      "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/master/module.json"
+    }
+  ],
   "system": "pbta",
   "url": "https://github.com/CyricPL/masks-newgeneration-unofficial",
   "manifest": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/module.json",
