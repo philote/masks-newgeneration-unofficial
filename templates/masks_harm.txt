@@ -122,3 +122,4 @@ statToggle = "Locked"
   # Define logical groups for moves.
   [npc.moveTypes]
     villain = "Villain Moves"
+    condition = "Condition Moves"
