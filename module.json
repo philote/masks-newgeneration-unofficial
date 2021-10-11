@@ -1,5 +1,5 @@
 {
-   "name": "masks-newgeneration-unofficial",
+   "name": "masks-newgeneration-unofficial-revised",
    "title": "Masks: A New Generation (unofficial) Revised",
    "description": "Masks: A New Generation from Magpie Games (unofficial) Revised",
    "author": "CyricPL",
@@ -71,7 +71,7 @@
     }
   ],
   "system": "pbta",
-  "url": "https://github.com/CyricPL/masks-newgeneration-unofficial",
-  "manifest": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/module.json",
-  "download": "https://codeload.github.com/CyricPL/masks-newgeneration-unofficial/zip/main"
+  "url": "https://github.com/CyricPL/masks-newgeneration-unofficial-revised",
+  "manifest": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial-revised/main/module.json",
+  "download": "https://codeload.github.com/CyricPL/masks-newgeneration-unofficial-revised/zip/main"
 }

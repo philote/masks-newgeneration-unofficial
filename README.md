@@ -24,8 +24,8 @@ The content from this module is from **Masks: A New Generation** from **Magpie G
 # Install
 
 ## Manual Instalation
-1. Go to **modules** and use the link: 
-Use this: https://raw.githubusercontent.com/brunocalado/masks-newgeneration-unofficial/main/module.json
+1. Go to **modules** and use the link:
+Use this: https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial-revised/main/module.json
 
 # Templates
 You need to set up a template before import the compendium. There are two you can use:
@@ -45,7 +45,7 @@ There is a journal with more instructions inside the module. Load the module and
 You can check changes at [CHANGELOG](CHANGELOG.md)
 
 # License
-You can check the license of this at page 4 from PDF. 
+You can check the license of this at page 4 from PDF.
 
 > The entire text of Masks is released under a Creative Commons Attribution 4.0 International license. https://creativecommons.org/licenses/by/4.0/
 
