@@ -1,11 +1,11 @@
 {
-   "name": "masks-newgeneration-unofficial-revised",
-   "title": "Masks: A New Generation (unofficial) Revised",
-   "description": "Masks: A New Generation from Magpie Games (unofficial) Revised",
+   "name": "masks-newgeneration-unofficial",
+   "title": "Masks: A New Generation (unofficial)",
+   "description": "Masks: A New Generation from Magpie Games (unofficial)",
    "author": "CyricPL",
-   "version": "0.0.10",
+   "version": "0.1.1",
    "minimumCoreVersion": "0.8.8",
-   "compatibleCoreVersion":"0.8.8",
+   "compatibleCoreVersion":"0.8.9",
    "packs": [
       {
         "name": "moves-revised",
