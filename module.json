@@ -63,6 +63,13 @@
         "entity": "Item",
         "module": "masks-newgeneration-unofficial"
       }
+      {
+        "name": "hchc-playbooks",
+        "label": "HCHC Playbooks",
+        "path": "packs/hchc-playbooks.db",
+        "entity": "Item",
+        "module": "masks-newgeneration-unofficial"
+      }
     ],
   "dependencies": [
     {
