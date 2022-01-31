@@ -1,4 +1,4 @@
-#0.1.7
+#0.1.8
 - bug fixes for HCHC Playbooks
 
 #0.1.7
