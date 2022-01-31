@@ -1,4 +1,7 @@
 #0.1.7
+- bug fixes for HCHC Playbooks
+
+#0.1.7
 - shift labels macro bug fix
 
 #0.1.6
