@@ -18,6 +18,7 @@
         "name": "masks-gm-moves",
         "label": "GM Moves",
         "path": "packs/masks-gm-moves.db",
+        "type": "JournalEntry",
         "entity": "JournalEntry",
         "module": "masks-newgeneration-unofficial"
       },
@@ -25,6 +26,7 @@
         "name": "moves-options",
         "label": "Moves Options",
         "path": "packs/moves-options.db",
+        "type": "JournalEntry",
         "entity": "JournalEntry",
         "module": "masks-newgeneration-unofficial"
       },
@@ -32,6 +34,7 @@
         "name": "rules",
         "label": "Rules",
         "path": "packs/rules.db",
+        "type": "JournalEntry",
         "entity": "JournalEntry",
         "module": "masks-newgeneration-unofficial"
       },
@@ -39,6 +42,7 @@
         "name": "conditions-masks",
         "label": "Conditions - Masks",
         "path": "packs/conditions-masks.db",
+        "type": "JournalEntry",
         "entity": "JournalEntry",
         "module": "masks-newgeneration-unofficial"
       },
@@ -46,6 +50,7 @@
         "name": "instructions-masks",
         "label": "Instructions - Masks",
         "path": "packs/instructions-masks.db",
+        "type": "JournalEntry",
         "entity": "JournalEntry",
         "module": "masks-newgeneration-unofficial"
       },
@@ -53,6 +58,7 @@
         "name": "macros-masks",
         "label": "Macros - Masks",
         "path": "packs/macros-masks.db",
+        "type": "Macro",
         "entity": "Macro",
         "module": "masks-newgeneration-unofficial"
       },
@@ -60,6 +66,7 @@
         "name": "playbooks-revised",
         "label": "Basic Playbooks",
         "path": "packs/playbooks-revised.db",
+        "type": "Item",
         "entity": "Item",
         "module": "masks-newgeneration-unofficial"
       },
@@ -67,6 +74,7 @@
         "name": "hchc-playbooks",
         "label": "HCHC Playbooks",
         "path": "packs/hchc-playbooks.db",
+        "type": "Item",
         "entity": "Item",
         "module": "masks-newgeneration-unofficial"
       }
