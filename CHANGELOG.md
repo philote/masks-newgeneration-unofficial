@@ -1,3 +1,6 @@
+#0.1.9
+- added playbooks from Secrets of AEGIS in compendium AEGIS Playbooks
+
 #0.1.8
 - bug fixes for HCHC Playbooks
 
