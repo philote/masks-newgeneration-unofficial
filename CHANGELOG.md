@@ -1,3 +1,7 @@
+#1.0.0
+- added playbooks from Unbound in compendium Unbound Playbooks - thanks to Prof. Hidgens#9914 on Discord!
+- changed the icon for The Protege's Captain move to not be redundant with The Soldier's More than Just a Shield move
+
 #0.1.9
 - added playbooks from Secrets of AEGIS in compendium AEGIS Playbooks
 

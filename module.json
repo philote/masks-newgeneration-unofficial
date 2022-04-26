@@ -3,7 +3,7 @@
    "title": "Masks: A New Generation (unofficial)",
    "description": "Masks: A New Generation from Magpie Games (unofficial)",
    "author": "CyricPL",
-   "version": "0.1.9",
+   "version": "1.0.0",
    "minimumCoreVersion": "0.8.8",
    "compatibleCoreVersion":"9",
    "packs": [
@@ -82,6 +82,14 @@
         "name": "aegis-playbooks",
         "label": "AEGIS Playbooks",
         "path": "packs/aegis-playbooks.db",
+        "type": "Item",
+        "entity": "Item",
+        "module": "masks-newgeneration-unofficial"
+      },
+      {
+        "name": "unbound-playbooks",
+        "label": "Unbound Playbooks",
+        "path": "packs/unbound-playbooks.db",
         "type": "Item",
         "entity": "Item",
         "module": "masks-newgeneration-unofficial"
