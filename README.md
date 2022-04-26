@@ -8,17 +8,19 @@ This revised version of the module is based on the original created by brunocala
 
 In addition, Compendium Folders (https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/master/module.json) is a dependency for this version. If you do not already have Compendium Folders installed, you should be prompted to install it when installing this module.
 
-<p align="center">
-  <img width="700" src="images/guide/masks.jpg">
-</p>
+This module is a prerequisite for Masks: A New Generation Sheets (https://foundryvtt.com/packages/masks-newgeneration-sheets). This module can be used without that one, but it is a great module and is highly recommended.
 
 # Install
 
+## Module Directory
+This module is listed in the Foundry module directory and can be searched and installed within the application.
+
 ## Manual Instalation
-1. Go to **modules** and use this link: https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial-revised/main/module.json
+Go to **modules** and use this link: https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial-revised/main/module.json
 
 # Templates
-You need to set up a template before import the compendium. There are two you can use:
+You need to set up a template before import the compendium. There are two you can use, but I suggest sticking with the normal sheet because that supports the Masks Sheets module referenced above.
+
 - Normal sheet: https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial-revised/main/templates/masks.txt
 - Harm sheet: https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial-revised/main/templates/masks_harm.txt
 
