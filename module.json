@@ -1,107 +1,138 @@
 {
-   "name": "masks-newgeneration-unofficial",
-   "title": "Masks: A New Generation (unofficial)",
-   "description": "Masks: A New Generation from Magpie Games (unofficial)",
-   "author": "CyricPL",
-   "version": "1.0.0",
-   "minimumCoreVersion": "0.8.8",
-   "compatibleCoreVersion":"9",
-   "packs": [
-      {
-        "name": "moves-revised",
-        "label": "Moves",
-        "path": "packs/moves-revised.db",
-        "entity": "Item",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "masks-gm-moves",
-        "label": "GM Moves",
-        "path": "packs/masks-gm-moves.db",
-        "type": "JournalEntry",
-        "entity": "JournalEntry",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "moves-options",
-        "label": "Moves Options",
-        "path": "packs/moves-options.db",
-        "type": "JournalEntry",
-        "entity": "JournalEntry",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "rules",
-        "label": "Rules",
-        "path": "packs/rules.db",
-        "type": "JournalEntry",
-        "entity": "JournalEntry",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "conditions-masks",
-        "label": "Conditions - Masks",
-        "path": "packs/conditions-masks.db",
-        "type": "JournalEntry",
-        "entity": "JournalEntry",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "instructions-masks",
-        "label": "Instructions - Masks",
-        "path": "packs/instructions-masks.db",
-        "type": "JournalEntry",
-        "entity": "JournalEntry",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "macros-masks",
-        "label": "Macros - Masks",
-        "path": "packs/macros-masks.db",
-        "type": "Macro",
-        "entity": "Macro",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "playbooks-revised",
-        "label": "Basic Playbooks",
-        "path": "packs/playbooks-revised.db",
-        "type": "Item",
-        "entity": "Item",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "hchc-playbooks",
-        "label": "HCHC Playbooks",
-        "path": "packs/hchc-playbooks.db",
-        "type": "Item",
-        "entity": "Item",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "aegis-playbooks",
-        "label": "AEGIS Playbooks",
-        "path": "packs/aegis-playbooks.db",
-        "type": "Item",
-        "entity": "Item",
-        "module": "masks-newgeneration-unofficial"
-      },
-      {
-        "name": "unbound-playbooks",
-        "label": "Unbound Playbooks",
-        "path": "packs/unbound-playbooks.db",
-        "type": "Item",
-        "entity": "Item",
-        "module": "masks-newgeneration-unofficial"
-      }
-    ],
+  "id": "masks-newgeneration-unofficial",
+  "name": "masks-newgeneration-unofficial",
+  "title": "Masks: A New Generation (unofficial)",
+  "description": "Masks: A New Generation from Magpie Games (unofficial)",
+  "author": "CyricPL",
+  "authors": [
+    {
+      "name": "CyricPL",
+      "discord": "@CyricPL#6704",
+      "flags": {}
+    }
+  ],
+  "version": "1.1.0",
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "10",
+  "compatibility": {
+    "minimum": "9",
+    "verified": "10"
+  },
+  "packs": [
+    {
+      "name": "moves-revised",
+      "label": "Moves",
+      "path": "packs/moves-revised.db",
+      "type": "Item",
+	  "system": "pbta",
+      "module": "masks-newgeneration-unofficial"
+    },
+    {
+      "name": "masks-gm-moves",
+      "label": "GM Moves",
+      "path": "packs/masks-gm-moves.db",
+      "type": "JournalEntry",
+      "module": "masks-newgeneration-unofficial"
+    },
+    {
+      "name": "moves-options",
+      "label": "Moves Options",
+      "path": "packs/moves-options.db",
+      "type": "JournalEntry",
+      "module": "masks-newgeneration-unofficial"
+    },
+    {
+      "name": "rules",
+      "label": "Rules",
+      "path": "packs/rules.db",
+      "type": "JournalEntry",
+      "module": "masks-newgeneration-unofficial"
+    },
+    {
+      "name": "conditions-masks",
+      "label": "Conditions - Masks",
+      "path": "packs/conditions-masks.db",
+      "type": "JournalEntry",
+      "module": "masks-newgeneration-unofficial"
+    },
+    {
+      "name": "instructions-masks",
+      "label": "Instructions - Masks",
+      "path": "packs/instructions-masks.db",
+      "type": "JournalEntry",
+      "module": "masks-newgeneration-unofficial"
+    },
+    {
+      "name": "macros-masks",
+      "label": "Macros - Masks",
+      "path": "packs/macros-masks.db",
+      "type": "Macro",
+      "module": "masks-newgeneration-unofficial"
+    },
+    {
+      "name": "playbooks-revised",
+      "label": "Basic Playbooks",
+      "path": "packs/playbooks-revised.db",
+      "type": "Item",
+	  "system": "pbta",
+      "module": "masks-newgeneration-unofficial"
+    },
+    {
+      "name": "hchc-playbooks",
+      "label": "HCHC Playbooks",
+      "path": "packs/hchc-playbooks.db",
+      "type": "Item",
+	  "system": "pbta",
+      "module": "masks-newgeneration-unofficial"
+    },
+    {
+      "name": "aegis-playbooks",
+      "label": "AEGIS Playbooks",
+      "path": "packs/aegis-playbooks.db",
+      "type": "Item",
+	  "system": "pbta",
+      "module": "masks-newgeneration-unofficial"
+    },
+    {
+      "name": "unbound-playbooks",
+      "label": "Unbound Playbooks",
+      "path": "packs/unbound-playbooks.db",
+      "type": "Item",
+	  "system": "pbta",
+      "module": "masks-newgeneration-unofficial"
+    }
+  ],
   "dependencies": [
     {
-      "name": "compendium-folders",
+      "id": "compendium-folders",
       "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/master/module.json"
     }
   ],
   "system": "pbta",
+  "relationships": {
+    "systems": [
+      {
+        "id": "pbta",
+        "type": "system",
+        "manifest": "https://asacolips-artifacts.s3.amazonaws.com/pbta/0.6.0/system.json",
+        "compatibility": {
+          "minimum": "0.6.0",
+          "verified": "0.6.0"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "compendium-folders",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/09x-update/module.json",
+        "compatibility": {
+          "minimum": "2.4.6",
+          "verified": "2.5.2"
+        }
+      }
+    ]
+  },
   "url": "https://github.com/CyricPL/masks-newgeneration-unofficial",
   "manifest": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/module.json",
   "download": "https://codeload.github.com/CyricPL/masks-newgeneration-unofficial/zip/main"
