@@ -1,3 +1,6 @@
+#1.2.0
+- added function to define system character sheet TOML from within module
+
 #1.0.0
 - added playbooks from Unbound in compendium Unbound Playbooks - thanks to Prof. Hidgens#9914 on Discord!
 - changed the icon for The Protege's Captain move to not be redundant with The Soldier's More than Just a Shield move
