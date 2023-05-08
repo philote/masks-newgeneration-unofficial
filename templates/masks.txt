@@ -1,6 +1,8 @@
 # Configure Rolls
 rollFormula = "2d6"
 statToggle = "Locked"
+minMod = -3
+maxMod = 4
 
 # Define roll result ranges.
 [rollResults]

@@ -8,6 +8,8 @@ Hooks.once('pbtaSheetConfig', () => {
             "label": "Locked",
             "modifier": 0
         },
+        "minMod": -3,
+        "maxMod": 4,
         "rollResults": {
             "failure": {
                 "start": null,
