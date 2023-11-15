@@ -6,8 +6,6 @@ The content from this module is from **Masks: A New Generation** from **Magpie G
 
 This revised version of the module is based on the original created by brunocalado (https://github.com/brunocalado/masks-newgeneration-unofficial). In the update, the text of the moves has been slightly rearranged and every move has a custom icon from game-icons.net (https://game-icons.net/).
 
-In addition, Compendium Folders (https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/master/module.json) is a dependency for this version. If you do not already have Compendium Folders installed, you should be prompted to install it when installing this module.
-
 This module is a prerequisite for Masks: A New Generation Sheets (https://foundryvtt.com/packages/masks-newgeneration-sheets). This module can be used without that one, but it is a great module and is highly recommended.
 
 # Install
@@ -18,21 +16,14 @@ This module is listed in the Foundry module directory and can be searched and in
 ## Manual Instalation
 Go to **modules** and use this link: https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial-revised/main/module.json
 
-# Templates
-You need to set up a template before import the compendium. There are two you can use, but I suggest sticking with the normal sheet because that supports the Masks Sheets module referenced above.
-
-- Normal sheet: https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial-revised/main/templates/masks.txt
-- Harm sheet: https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial-revised/main/templates/masks_harm.txt
-
 # How To
 
-1. Choose a template and load that template in the settings of your PbtA game.
-2. Activate the module.
+1. Activate the module.
 3. Import the compendium you want. Right click it and Import all Content.
 4. Drag the Folder Basic and Adult to an Actor Sheet.
 
 # More Instructions
-There is a journal with more instructions inside the module. Load the module and search the compendiuns for it.
+There is a journal with more instructions inside the module. Load the module and search the compendiums for it.
 
 # Changelog
 You can check changes at [CHANGELOG](CHANGELOG.md)

@@ -1,3 +1,6 @@
+#1.3.0
+- Updated the compendiums to be Foundry V11 compatible. This also removes the requirement for the Compendium Folders module and means this version of this module is not compatible with Foundry V10 or lower.
+
 #1.2.0
 - added function to define system character sheet TOML from within module
 
