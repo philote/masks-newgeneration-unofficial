@@ -1,9 +1,14 @@
 {
   "id": "masks-newgeneration-unofficial",
-  "name": "masks-newgeneration-unofficial",
   "title": "Masks: A New Generation (unofficial)",
   "description": "Masks: A New Generation from Magpie Games (unofficial)",
-  "author": "CyricPL",
+  "library": "false",
+  "version": "1.3.0",
+  "compatibility": {
+    "minimum": 11,
+    "verified": 11.315,
+    "maximum": 11
+  },
   "authors": [
     {
       "name": "CyricPL",
@@ -11,107 +16,188 @@
       "flags": {}
     }
   ],
-  "version": "1.2.1",
-  "minimumCoreVersion": "9",
-  "compatibleCoreVersion": "10",
-  "compatibility": {
-    "minimum": "9",
-    "verified": "10"
-  },
   "packs": [
     {
-      "name": "moves-revised",
+      "name": "moves",
       "label": "Moves",
-      "path": "packs/moves-revised.db",
+      "path": "packs/moves",
       "type": "Item",
-	  "system": "pbta",
-      "module": "masks-newgeneration-unofficial"
+	    "system": "pbta"
     },
     {
-      "name": "masks-gm-moves",
-      "label": "GM Moves",
-      "path": "packs/masks-gm-moves.db",
-      "type": "JournalEntry",
-      "module": "masks-newgeneration-unofficial"
-    },
-    {
-      "name": "moves-options",
-      "label": "Moves Options",
-      "path": "packs/moves-options.db",
-      "type": "JournalEntry",
-      "module": "masks-newgeneration-unofficial"
-    },
-    {
-      "name": "rules",
-      "label": "Rules",
-      "path": "packs/rules.db",
-      "type": "JournalEntry",
-      "module": "masks-newgeneration-unofficial"
-    },
-    {
-      "name": "conditions-masks",
-      "label": "Conditions - Masks",
-      "path": "packs/conditions-masks.db",
-      "type": "JournalEntry",
-      "module": "masks-newgeneration-unofficial"
-    },
-    {
-      "name": "instructions-masks",
-      "label": "Instructions - Masks",
-      "path": "packs/instructions-masks.db",
-      "type": "JournalEntry",
-      "module": "masks-newgeneration-unofficial"
+      "name": "documents",
+      "label": "Documents",
+      "path": "packs/documents",
+      "type": "JournalEntry"
     },
     {
       "name": "macros-masks",
       "label": "Macros - Masks",
-      "path": "packs/macros-masks.db",
-      "type": "Macro",
-      "module": "masks-newgeneration-unofficial"
+      "path": "packs/macros-masks",
+      "type": "Macro"
     },
     {
-      "name": "playbooks-revised",
-      "label": "Basic Playbooks",
-      "path": "packs/playbooks-revised.db",
+      "name": "basic-playbook-beacon",
+      "label": "Basic Playbook - The Beacon",
+      "path": "packs/basic-playbook-beacon",
       "type": "Item",
-	  "system": "pbta",
-      "module": "masks-newgeneration-unofficial"
+	    "system": "pbta"
     },
     {
-      "name": "hchc-playbooks",
-      "label": "HCHC Playbooks",
-      "path": "packs/hchc-playbooks.db",
+      "name": "basic-playbook-bull",
+      "label": "Basic Playbook - The Bull",
+      "path": "packs/basic-playbook-bull",
       "type": "Item",
-	  "system": "pbta",
-      "module": "masks-newgeneration-unofficial"
+	    "system": "pbta"
     },
     {
-      "name": "aegis-playbooks",
-      "label": "AEGIS Playbooks",
-      "path": "packs/aegis-playbooks.db",
+      "name": "basic-playbook-delinquent",
+      "label": "Basic Playbook - The Delinquent",
+      "path": "packs/basic-playbook-delinquent",
       "type": "Item",
-	  "system": "pbta",
-      "module": "masks-newgeneration-unofficial"
+	    "system": "pbta"
     },
     {
-      "name": "unbound-playbooks",
-      "label": "Unbound Playbooks",
-      "path": "packs/unbound-playbooks.db",
+      "name": "basic-playbook-doomed",
+      "label": "Basic Playbook - The Doomed",
+      "path": "packs/basic-playbook-doomed",
       "type": "Item",
-	  "system": "pbta",
-      "module": "masks-newgeneration-unofficial"
+	    "system": "pbta"
+    },
+    {
+      "name": "basic-playbook-janus",
+      "label": "Basic Playbook - The Janus",
+      "path": "packs/basic-playbook-janus",
+      "type": "Item",
+	    "system": "pbta"
+    },
+    {
+      "name": "basic-playbook-legacy",
+      "label": "Basic Playbook - The Legacy",
+      "path": "packs/basic-playbook-legacy",
+      "type": "Item",
+	    "system": "pbta"
+    },
+    {
+      "name": "basic-playbook-nova",
+      "label": "Basic Playbook - The Nova",
+      "path": "packs/basic-playbook-nova",
+      "type": "Item",
+	    "system": "pbta"
+    },
+    {
+      "name": "basic-playbook-outsider",
+      "label": "Basic Playbook - The Outsider",
+      "path": "packs/basic-playbook-outsider",
+      "type": "Item",
+	    "system": "pbta"
+    },
+    {
+      "name": "basic-playbook-protege",
+      "label": "Basic Playbook - The Protege",
+      "path": "packs/basic-playbook-protege",
+      "type": "Item",
+	    "system": "pbta"
+    },
+    {
+      "name": "basic-playbook-transformed",
+      "label": "Basic Playbook - The Transformed",
+      "path": "packs/basic-playbook-transformed",
+      "type": "Item",
+	    "system": "pbta"
+    },
+    {
+      "name": "hchc-playbook-innocent",
+      "label": "HCHC Playbook - The Innocent",
+      "path": "packs/hchc-playbooks-innocent",
+      "type": "Item",
+	    "system": "pbta"
+    },
+    {
+      "name": "hchc-playbook-joined",
+      "label": "HCHC Playbook - The Joined",
+      "path": "packs/hchc-playbooks-joined",
+      "type": "Item",
+	    "system": "pbta"
+    },
+    {
+      "name": "hchc-playbook-newborn",
+      "label": "HCHC Playbook - The Newborn",
+      "path": "packs/hchc-playbooks-newborn",
+      "type": "Item",
+	    "system": "pbta"
+    },
+    {
+      "name": "hchc-playbook-reformed",
+      "label": "HCHC Playbook - The Reformed",
+      "path": "packs/hchc-playbooks-reformed",
+      "type": "Item",
+	    "system": "pbta"
+    },
+    {
+      "name": "hchc-playbook-star",
+      "label": "HCHC Playbook - The Star",
+      "path": "packs/hchc-playbooks-star",
+      "type": "Item",
+	    "system": "pbta"
+    },
+    {
+      "name": "aegis-playbook-brain",
+      "label": "AEGIS Playbook - The Brain",
+      "path": "packs/aegis-playbook-brain",
+      "type": "Item",
+	    "system": "pbta"
+    },
+    {
+      "name": "aegis-playbook-soldier",
+      "label": "AEGIS Playbook - The Soldier",
+      "path": "packs/aegis-playbook-soldier",
+      "type": "Item",
+	    "system": "pbta"
+    },
+    {
+      "name": "unbound-playbook-harbinger",
+      "label": "Unbound Playbook - The Harbinger",
+      "path": "packs/unbound-playbook-harbinger",
+      "type": "Item",
+  	  "system": "pbta"
+    },
+    {
+      "name": "unbound-playbook-nomad",
+      "label": "Unbound Playbook - The Nomad",
+      "path": "packs/unbound-playbook-nomad",
+      "type": "Item",
+  	  "system": "pbta"
+    },
+    {
+      "name": "unbound-playbook-scion",
+      "label": "Unbound Playbook - The Scion",
+      "path": "packs/unbound-playbook-scion",
+      "type": "Item",
+  	  "system": "pbta"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Unbound Playbooks",
+      "packs": ["unbound-playbook-scion", "unbound-playbook-nomad", "unbound-playbook-harbinger"]
+    },
+    {
+      "name": "AEGIS Playbooks",
+      "packs": ["aegis-playbook-soldier", "aegis-playbook-brain"]
+    },
+    {
+      "name": "Halcyon City Herald Collection Playbooks",
+      "packs": ["hchc-playbook-innocent", "hchc-playbook-joined", "hchc-playbook-newborn", "hchc-playbook-reformed", "hchc-playbook-star"]
+    },
+    {
+      "name": "Basic Playbooks",
+      "packs": ["basic-playbook-beacon", "basic-playbook-bull", "basic-playbook-delinquent", "basic-playbook-doomed", "basic-playbook-janus", "basic-playbook-legacy", "basic-playbook-nova", "basic-playbook-outsider", "basic-playbook-protege", "basic-playbook-transformed"]
     }
   ],
   "scripts": [
-  "scripts/masks.js"
-],
-  "dependencies": [
-    {
-      "id": "compendium-folders",
-      "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/master/module.json"
-    }
+    "scripts/masks.js"
   ],
-  "system": "pbta",
   "relationships": {
     "systems": [
       {
@@ -120,18 +206,7 @@
         "manifest": "https://asacolips-artifacts.s3.amazonaws.com/pbta/0.6.0/system.json",
         "compatibility": {
           "minimum": "0.6.0",
-          "verified": "0.6.0"
-        }
-      }
-    ],
-    "requires": [
-      {
-        "id": "compendium-folders",
-        "type": "module",
-        "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/09x-update/module.json",
-        "compatibility": {
-          "minimum": "2.4.6",
-          "verified": "2.5.2"
+          "verified": "0.7.2"
         }
       }
     ]
