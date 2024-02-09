@@ -1,3 +1,7 @@
+#1.3.2
+- Tested with the PbtA module version 0.9.0.
+- Fixed a bug where Basic Playbooks would show twice in the playbook dropdown.
+
 #1.3.1
 - added roll modifier min/max values
 
