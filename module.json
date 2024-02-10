@@ -3,7 +3,7 @@
   "title": "Masks: A New Generation (unofficial)",
   "description": "Masks: A New Generation from Magpie Games (unofficial)",
   "library": "false",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "compatibility": {
     "minimum": 11,
     "verified": 11.315,
@@ -206,7 +206,7 @@
         "manifest": "https://asacolips-artifacts.s3.amazonaws.com/pbta/0.6.0/system.json",
         "compatibility": {
           "minimum": "0.6.0",
-          "verified": "0.7.2"
+          "verified": "0.9.0"
         }
       }
     ]
