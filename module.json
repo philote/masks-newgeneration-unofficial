@@ -195,8 +195,18 @@
       "packs": ["basic-playbook-beacon", "basic-playbook-bull", "basic-playbook-delinquent", "basic-playbook-doomed", "basic-playbook-janus", "basic-playbook-legacy", "basic-playbook-nova", "basic-playbook-outsider", "basic-playbook-protege", "basic-playbook-transformed"]
     }
   ],
-  "scripts": [
-    "scripts/masks.js"
+  "esmodules": [
+    "scripts/masks.mjs"
+  ],
+  "styles": [
+    "css/masks-sheets.css"
+  ],
+  "languages": [
+    {
+        "lang": "en",
+        "name": "English",
+        "path": "languages/en.json"
+    }
   ],
   "relationships": {
     "systems": [
