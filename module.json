@@ -243,13 +243,13 @@
   "media": [
     {
       "type": "screenshot",
-      "url": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/assets/screenshots/character-sheet_light.webp",
+      "url": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/images/screenshots/character-sheet_light.webp",
       "loop": false,
       "caption": "Masks character sheet screenshot from Foundry VTT."
     },
     {
       "type": "cover",
-      "url": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/assets/cover.webp",
+      "url": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/images/cover.webp",
       "loop": false,
       "caption": "Cover Image for the Unofficial Rhapsody of Blood package."
     }

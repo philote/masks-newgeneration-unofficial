@@ -1,6 +1,6 @@
 # Masks: A New Generation (Unofficial) Revised
 
-![Cover](assets/cover.webp)
+![Cover](images/cover.webp)
 
 This module contains moves for the game Masks: A New Generation for use with the Foundry VTT generic PbtA System (https://gitlab.com/asacolips-projects/foundry-mods/pbta). You can install this system with this link: https://gitlab.com/asacolips-projects/foundry-mods/pbta/-/jobs/artifacts/beta/raw/system.json?job=build-beta
 
@@ -10,11 +10,11 @@ This revised version of the module is based on the original created by brunocala
 
 This module is a prerequisite for Masks: A New Generation Sheets (https://foundryvtt.com/packages/masks-newgeneration-sheets). This module can be used without that one, but it is a great module and is highly recommended.
 
-![A screenshot of the Masks character sheet in light mode](assets/screenshots/character-sheet_light.webp)
+![A screenshot of the Masks character sheet in light mode](images/screenshots/character-sheet_light.webp)
 
-![A screenshot of the Masks character sheet in dark mode](assets/screenshots/character-sheet_dark.webp)
+![A screenshot of the Masks character sheet in dark mode](images/screenshots/character-sheet_dark.webp)
 
-![A screenshot of the Masks NPC sheet in light mode](assets/screenshots/npc-sheet_light.webp)
+![A screenshot of the Masks NPC sheet in light mode](images/screenshots/npc-sheet_light.webp)
 
 ## Features
 - PC Character Sheets
