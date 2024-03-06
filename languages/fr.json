@@ -1,0 +1,16 @@
+{
+    "MASKS-SHEETS": {
+        "Settings": {
+            "enable_dark_mode": {
+                "name": "Activer les feuilles de caractères en mode sombre",
+                "hint": "Modification de la feuille de personnage pour un thème sombre."
+            }
+        },
+        "Shift-Down": "Baisser",
+        "Shift-Up": "Augmenter",
+        "Shifts-Down": "Baisse",
+        "Shifts-Up": "Augmente",
+        "Shift-Labels": "Modifier étiquettes",
+        "None": "Aucun"
+    }
+}
