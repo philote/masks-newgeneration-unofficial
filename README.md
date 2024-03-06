@@ -1,5 +1,3 @@
-# Masks: A New Generation (Unofficial) Revised
-
 ![Cover](images/cover.webp)
 
 This module contains moves for the game Masks: A New Generation for use with the Foundry VTT generic PbtA System (https://gitlab.com/asacolips-projects/foundry-mods/pbta). You can install this system with this link: https://gitlab.com/asacolips-projects/foundry-mods/pbta/-/jobs/artifacts/beta/raw/system.json?job=build-beta
@@ -23,7 +21,7 @@ This module is a prerequisite for Masks: A New Generation Sheets (https://foundr
 - Compendium of moves
 
 ## TODO
-- Team Point Tracker
+- Team Pool Tracker
 - Easy Label switching
 - Better Descriptions fields
 - Ability to create custom resource fields
