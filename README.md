@@ -1,5 +1,7 @@
 # Masks: A New Generation (Unofficial) Revised
 
+![Cover](assets/cover.webp)
+
 This module contains moves for the game Masks: A New Generation for use with the Foundry VTT generic PbtA System (https://gitlab.com/asacolips-projects/foundry-mods/pbta). You can install this system with this link: https://gitlab.com/asacolips-projects/foundry-mods/pbta/-/jobs/artifacts/beta/raw/system.json?job=build-beta
 
 The content from this module is from **Masks: A New Generation** from **Magpie Games**. You can get the PDF at: https://magpiegames.com/masks/
@@ -7,6 +9,25 @@ The content from this module is from **Masks: A New Generation** from **Magpie G
 This revised version of the module is based on the original created by brunocalado (https://github.com/brunocalado/masks-newgeneration-unofficial). In the update, the text of the moves has been slightly rearranged and every move has a custom icon from game-icons.net (https://game-icons.net/).
 
 This module is a prerequisite for Masks: A New Generation Sheets (https://foundryvtt.com/packages/masks-newgeneration-sheets). This module can be used without that one, but it is a great module and is highly recommended.
+
+![A screenshot of the Masks character sheet in light mode](assets/screenshots/character-sheet_light.webp)
+
+![A screenshot of the Masks character sheet in dark mode](assets/screenshots/character-sheet_dark.webp)
+
+![A screenshot of the Masks NPC sheet in light mode](assets/screenshots/npc-sheet_light.webp)
+
+## Features
+- PC Character Sheets
+- NPC Character Sheets
+- Light and Dark designs with a setting to switch them
+- Compendium of moves
+
+## TODO
+- Team Point Tracker
+- Easy Label switching
+- Better Descriptions fields
+- Ability to create custom resource fields
+- Improved Influences interface
 
 # Install
 
@@ -41,3 +62,5 @@ This work uses material from The Harbinger, published by Magpie Games in Masks: 
 This work uses material from The Nomad, published by Magpie Games in Masks: Unbound and written by Brendan Conway, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/
 This work uses material from The Scion, published by Magpie Games in Masks: Unbound and written by Brendan Conway, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/
 Icons from game-icons.net are released under a Creative Commons Attribution 3.0 Unported license. https://creativecommons.org/licenses/by/3.0/
+back-forth.svg created by Lorc under CC BY 3.0, available through https://game-icons.net
+CSS for the light and dark themes came from https://gitlab.com/foundryvtt-mods/masks-newgeneration-sheets

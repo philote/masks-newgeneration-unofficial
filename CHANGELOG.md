@@ -1,3 +1,7 @@
+#1.4.0
+- Added Light and Dark themes. CSS used from https://gitlab.com/foundryvtt-mods/masks-newgeneration-sheets
+- updated the readme with screenshots
+
 #1.3.2
 - Tested with the PbtA module version 0.9.0.
 - Fixed a bug where Basic Playbooks would show twice in the playbook dropdown.

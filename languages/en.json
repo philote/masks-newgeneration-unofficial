@@ -1,75 +1,5 @@
 {
     "MASKS-SHEETS": {
-        "Abilities": "Abilities and Descripton of Powers",
-        "ABOUT": {
-            "About": "About",
-            "Created-By": "Created By",
-            "Live-Support": "Live Support",
-            "Project-Page": "Project Page",
-            "Support-Creator": "Support the Creator!",
-            "Title": "About Masks! Unofficial Sheets"
-        },
-        "Advances": "Advances",
-        "Backstory": "Backstory",
-        "Cancel": "Cancel",
-        "CONDITIONS": {
-            "Afraid": "Afraid",
-            "Afraid (-2 to engage)": "<b>Afraid</b> <i>(-2 to engage)</i>",
-            "Angry": "Angry",
-            "Angry (-2 to comfort or pierce)": "<b>Angry</b> <i>(-2 to comfort or pierce)</i>",
-            "Guilty": "Guilty",
-            "Guilty (-2 to provoke or assess)": "<b>Guilty</b> <i>(-2 to provoke or assess)</i>",
-            "Hopeless": "Hopeless",
-            "Hopeless (-2 to unleash)": "<b>Hopeless</b> <i>(-2 to unleash)</i>",
-            "Insecure": "Insecure",
-            "Insecure (-2 to defend or reject)": "<b>Insecure</b> <i>(-2 to defend or reject)</i>",
-            "Label": "Conditions"
-        },
-        "Confirm": "Confirm",
-        "Create-Custom-Resource": "Create Custom Resource",
-        "Custom": "Custom Resources",
-        "CUSTOM-RESOURCES": {
-            "Condition": "Condition",
-            "Numeric": "Numeric",
-            "Stat": "Stat",
-            "Text": "Text",
-            "Toggle": "Toggle",
-            "Tracker": "Tracker"
-        },
-        "Delete-Influence": "Delete Influence",
-        "Delete-Item": "Delete Item",
-        "Delete-Custom-Resource": "Delete Custom Resource",
-        "DIALOG": {
-            "Confirm-Delete": "Confirm Resource Deletion",
-            "Confirm-Text": "Please confirm that you wish to delete Custom Resource:",
-            "Limit": "Limit",
-            "Limit-Hint": "For tracker/numeric resource types.  A tracker must have a value of at least 2, and a setting of 0 for numeric means no limit.",
-            "Name": "Resource Name",
-            "Type": "Resource Type"
-        },
-        "Edit-Custom-Condition": "Edit a Custom Condition under Conditions!",
-        "Edit-Custom-Resource": "Edit Custom Resource",
-        "Edit-Custom-Stat": "Edit a Custom Stat's values under Stats!",
-        "Edit-Item": "Edit Item",
-        "Influence-Lock": "Lock This Influence",
-        "Influence-Unlock": "Unlock This Influence",
-        "InfluenceCreate": "Create Influence",
-        "Influences": "Influences",
-        "HasInfluence": "Has Influence Over You",
-        "HaveInfluence": "You Have Influence Over Them",
-        "Label-Shift-Failed": "No shift occurs. Instead, you mark a condition.",
-        "Label-Shifts": "shifts labels!",
-        "Look": "Look and Appearance",
-        "Moment": "Moment of Truth",
-        "None": "None",
-        "NPC": {
-            "Abilities": "Abilities",
-            "Drive": "Drive"
-        },
-        "Person-Name": "Person's Name",
-        "Potential": "Potential",
-        "Relationships": "Relationships",
-        "Resources": "Resources",
         "Settings": {
             "enable_dark_mode": {
                 "name": "Enable Dark Mode Character Sheets",
@@ -81,21 +11,6 @@
         "Shifts-Down": "Shifts Down",
         "Shifts-Up": "Shifts Up",
         "Shift-Labels": "Shift Labels",
-        "STATS": {
-            "danger": "Danger",
-            "freak": "Freak",
-            "mundane": "Mundane",
-            "savior": "Savior",
-            "superior": "Superior"
-        },
-        "Submit": "Submit",
-        "TheTeam": "When Our Team First Came Together",
-        "Unlocked": "Unlocked",
-        "WARNINGS": {
-            "Invalid-Limit": "Invalid Resource Limit.",
-            "Invalid-Name": "Custom Resource Name is required.",
-            "UnlinkedMoves": "Moves cannot be rearranged while this token is not linked to an actor.",
-            "UnlinkedResources": "Resources cannot be rearranged while this token is not linked to an actor."
-        }
+        "None": "None"
     }
 }

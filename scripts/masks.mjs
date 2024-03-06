@@ -39,3 +39,17 @@ Hooks.once("init", () => {
 	}
 
 });
+
+// Hooks.on("renderActorSheet", async (app, html, context) => {
+
+
+//     if (app.actor.type === "character") {
+        
+//         // Label Shift UI
+//         const asideElem = html[0].querySelector('.pbta.sheet.actor .stats-list');
+//         if (asideElem) {
+//             const newItem = await renderTemplate("modules/masks-newgeneration-unofficial/templates/shift.hbs");
+//             asideElem.insertAdjacentHTML('beforeend', newItem);
+//         }
+//     }
+// });
