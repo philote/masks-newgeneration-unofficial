@@ -1,0 +1,16 @@
+{
+    "MASKS-SHEETS": {
+        "Settings": {
+            "enable_dark_mode": {
+                "name": "Enable Dark Mode Character Sheets",
+                "hint": "Changes the character sheet to a dark theme."
+            }
+        },
+        "Shift-Down": "Shift Down",
+        "Shift-Up": "Shift Up",
+        "Shifts-Down": "Shifts Down",
+        "Shifts-Up": "Shifts Up",
+        "Shift-Labels": "Shift Labels",
+        "None": "None"
+    }
+}
