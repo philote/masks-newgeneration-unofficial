@@ -178,15 +178,18 @@ export const configSheet = async () => {
                 "moveTypes": {
                     "basic": {
                         "label": "Basic Moves",
-                        "moves": []
+                        "moves": [],
+                        "creation": true
                     },
                     "playbook": {
                         "label": "Playbook Moves",
-                        "moves": []
+                        "moves": [],
+                        "playbook": true
                     },
                     "team": {
                         "label": "Team Moves",
-                        "moves": []
+                        "moves": [],
+                        "playbook": true
                     },
                     "adult": {
                         "label": "Adult Moves",
