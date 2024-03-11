@@ -1,3 +1,7 @@
+#1.4.1
+- Cleaned up the Basic Moves & Basic Playbook Moves (all others to come)
+- Added code to automatically add Basic Moves to a character sheet when it is created
+
 #1.4.0
 - Added Light and Dark themes. CSS used from https://gitlab.com/foundryvtt-mods/masks-newgeneration-sheets
 - updated the readme with screenshots
