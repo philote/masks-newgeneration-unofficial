@@ -24,6 +24,7 @@
   --custom-resource-border-color: #ffffff;
 
   --cell-title-border-color: #b0c4de;
+  --bio-title-border-color: #515b68;
 
   --window-bg-image: url("/modules/masks-newgeneration-unofficial/images/skyline.webp"),
     var(--actor-gradient);
@@ -36,6 +37,14 @@
 
 .vtt .pbta .window-header {
   background-color: var(--interactive-bg-color);
+}
+
+.vtt .window-app input:disabled, 
+.vtt .window-app button:disabled, 
+.vtt .window-app select:disabled, 
+.vtt .window-app textarea:disabled {
+  background: rgba(153,153,153,.2509803922);
+  color: var(--resource-masks-border-color);
 }
 
 .pbta.sheet {
@@ -321,6 +330,42 @@
     padding-top: 5px;
   }
   
+  .bio_style {
+    font-style: italic;
+    position: relative;
+    padding-left: 8px;
+    border-bottom: none;
+    color: var(--secondary-text-color);
+    letter-spacing: 0.05rem;
+    font-size: 22px;
+    font-weight: normal;
+    margin: 10px 20px 0px 10px;
+
+    &::before {
+      // z-index: -1;
+      content: "";
+      position: absolute;
+      left: 7px;
+      top: 0;
+      height: 2px;
+      width: 100%;
+      background-color: var(--bio-title-border-color);
+      transform: skewX(-15deg);
+    }
+
+    &::after {
+      // z-index: -1;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 4px;
+      background-color: var(--bio-title-border-color);
+      transform: skewX(-15deg);
+    }
+  }
+
   .cell__title {
     font-style: italic;
     position: relative;

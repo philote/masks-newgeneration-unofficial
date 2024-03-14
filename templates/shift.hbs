@@ -8,16 +8,11 @@
         {{#select labelShiftUp}}
             <option value="none">{{localize "MASKS-SHEETS.None"}}</option>
             {{#each system.stats as |stat key|}}
-            {{#unless stat.toggle}}
-                {{#unless (eq key ../labelShiftDown)}}
-                <option value="{{key}}">{{stat.label}}</option>
+                {{#unless stat.toggle}}
+                    {{#unless (eq key ../labelShiftDown)}}
+                        <option value="{{key}}">{{stat.label}}</option>
+                    {{/unless}}
                 {{/unless}}
-            {{/unless}}
-            {{/each}}
-            {{#each customStats as |stat key|}}
-            {{#unless (eq key ../labelShiftDown)}}
-                <option value="{{key}}" data-isCustom="true">{{stat.label}}</option>
-            {{/unless}}
             {{/each}}
         {{/select}}
         </select>
@@ -25,16 +20,11 @@
         {{#select labelShiftDown}}
             <option value="none">{{localize "MASKS-SHEETS.None"}}</option>
             {{#each system.stats as |stat key|}}
-            {{#unless stat.toggle}}
-                {{#unless (eq key ../labelShiftUp)}}
-                <option value="{{key}}">{{stat.label}}</option>
+                {{#unless stat.toggle}}
+                    {{#unless (eq key ../labelShiftUp)}}
+                        <option value="{{key}}">{{stat.label}}</option>
+                    {{/unless}}
                 {{/unless}}
-            {{/unless}}
-            {{/each}}
-            {{#each customStats as |stat key|}}
-            {{#unless (eq key ../labelShiftUp)}}
-                <option value="{{key}}" data-isCustom="true">{{stat.label}}</option>
-            {{/unless}}
             {{/each}}
         {{/select}}
         </select>

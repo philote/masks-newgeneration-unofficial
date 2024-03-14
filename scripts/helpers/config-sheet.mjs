@@ -1,6 +1,5 @@
 export const configSheet = async () => {
-
-  // Pass Rhapsody of Blood sheet object to sheetConfig
+    // Pass Masks sheet object to sheetConfig
     game.pbta.sheetConfig = {
         "rollFormula": "2d6",
         "statToggle": {

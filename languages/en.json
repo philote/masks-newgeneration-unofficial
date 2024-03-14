@@ -2,8 +2,12 @@
     "MASKS-SHEETS": {
         "Settings": {
             "enable_dark_mode": {
-                "name": "Enable Dark Mode Character Sheets",
-                "hint": "Changes the character sheet to a dark theme."
+                "name": "Enable Dark Mode",
+                "hint": "Changes the Character, NPC, and Item sheets to a dark theme."
+            },
+            "enable_label_shift": {
+                "name": "Enable the Label Shift UI",
+                "hint": "Adds an easy to use label shift UI to the top of the Character Sheet."
             }
         },
         "Shift-Down": "Shift Down",
@@ -11,6 +15,11 @@
         "Shifts-Down": "Shifts Down",
         "Shifts-Up": "Shifts Up",
         "Shift-Labels": "Shift Labels",
-        "None": "None"
+        "Label-Shift-Failed": "No shift occurs. Instead, you mark a condition.",
+        "Label-Shifts": "shifts labels!",
+        "None": "None",
+        "Background": {
+            "CustomTemplate": "<h3 class='bio_style'>Look and Appearance</h3><ul><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>Abilities and Descriptions of Powers</h3><ul><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>When Our Team First Came Together</h3><ul><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>Backstory</h3><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>Relationships</h3><ul><li>&nbsp;</li><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>Notes</h3><ul><li>&nbsp;</li><li>&nbsp;</li></ul><p>&nbsp;</p>"
+        }
     }
 }
