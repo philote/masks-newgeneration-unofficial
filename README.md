@@ -19,12 +19,12 @@ This module is a prerequisite for Masks: A New Generation Sheets (https://foundr
 - NPC Character Sheets
 - Light and Dark designs with a setting to switch them
 - Compendium of moves
+- Easy Label switching
+- Better description fields
+- Most playbooks have unique attributes to track, once they are added to the character sheet
 
 ## TODO
 - Team Pool Tracker
-- Easy Label switching
-- Better Descriptions fields
-- Ability to create custom resource fields
 - Improved Influences interface
 
 # Install

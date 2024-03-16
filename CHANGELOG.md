@@ -1,3 +1,11 @@
+#1.4.2
+- Easy Label switching (can be turned on and off in the settings)
+- Better Descriptions fields
+- Most playbooks have unique attributes to track when chosen on the character sheet
+- Hid the EQ tab
+- Sheet Config clean up (added all the strings to en.json)
+- Basic moves are auto added to new character sheets
+
 #1.4.1
 - Cleaned up the Basic Moves & Basic Playbook Moves (all others to come)
 - Added code to automatically add Basic Moves to a character sheet when it is created
