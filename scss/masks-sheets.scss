@@ -97,6 +97,10 @@
     background: var(--input-bg-color);
     color: var(--secondary-text-color);
     min-height: 31px;
+
+    a.content-link, a.inline-roll {
+      background: var(--input-bg-color);
+    }
   }
 
   .sheet-wrapper {
@@ -124,30 +128,6 @@
   .cell__wrapper {
     position: relative;
     width: 100%;
-
-    // & > button.resource-masks {
-    //   position: absolute;
-    //   top: 0;
-    //   bottom: 0;
-    //   width: 20px;
-    //   height: 20px;
-    //   font-size: 16px;
-    //   font-weight: bold;
-    //   padding: 0;
-    //   line-height: 1;
-    //   text-align: center;
-    //   margin: auto;
-    //   border: 1px solid var(--resource-masks-border-color);
-    //   color: var(--secondary-text-color);
-
-    //   &.resource-increase {
-    //     right: 5px;
-    //   }
-
-    //   &.resource-decrease {
-    //     left: 5px;
-    //   }
-    // }
     
     & > input[type="number"] {
       font-size: 18px;
@@ -217,46 +197,6 @@
 
   // --
 
-  // .masks-custom-list {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   align-items: baseline;
-  // }
-
-  // .masks-custom-resource {
-  //   background-color: var(--interactive-bg-color);
-  //   color: var(--primary-text-color);
-  //   border: 1px solid var(--custom-resource-border-color);
-  //   border-radius: 5px;
-  //   padding: 6px;
-  //   margin: 4px;
-
-  //   & > h2 {
-  //     margin-top: 4px;
-  //   }
-
-  //   & .custom-resource-control {
-  //     float: right;
-  //     padding-left: 8px;
-  //   }
-
-  //   &.masks-custom-text {
-  //     min-height: 200px;
-  //     min-width: 250px;
-
-  //     .editor {
-  //       min-height: 100px;
-  //     }
-  //   }
-    
-  //   &.masks-custom-toggle div {
-  //     width: 100%;
-  //     text-align: center;
-  //   }
-  // }
-
-  // --
-
   .masks-label-shift {
     img {
       border: none;
@@ -291,21 +231,6 @@
     }
   }
 
-  // &
-  // .masks-custom-resource
-  // .custom-resource-control
-  // a.custom-control {
-  //   padding-left: 8px;
-  // }
-
-  // &
-  // .masks-custom-resource.masks-custom-text
-  // .editor
-  // .tox-editor-container {
-  //   min-height: 200px;
-  //   height: 100% !important;
-  // }
-  
   // -- /** NPCs **/
 
   .sheet-attributes {
