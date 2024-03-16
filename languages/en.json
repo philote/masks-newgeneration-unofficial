@@ -10,6 +10,22 @@
                 "hint": "Adds an easy to use label shift UI to the top of the Character Sheet."
             }
         },
+        "Description": {
+            "Abilities": "Abilities and Description of Powers",
+            "Backstory": "Backstory",
+            "Look": "Look and Appearance",
+            "Relationships": "Relationships",
+            "TheTeam": "When Our Team First Came Together",
+            "Moment": "Moment of Truth",
+            "Notes": "Notes"
+        },
+        "Influences": "Influences",
+        "HasInfluence": "Has Influence Over You",
+        "HaveInfluence": "You Have Influence Over Them",
+        "Influence-Lock": "Lock This Influence",
+        "Influence-Unlock": "Unlock This Influence",
+        "InfluenceCreate": "Create Influence",
+        "Person-Name": "Person's Name",
         "Shift-Down": "Shift Down",
         "Shift-Up": "Shift Up",
         "Shifts-Down": "Shifts Down",
@@ -19,7 +35,116 @@
         "Label-Shifts": "shifts labels!",
         "None": "None",
         "Background": {
-            "CustomTemplate": "<h3 class='bio_style'>Look and Appearance</h3><ul><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>Abilities and Descriptions of Powers</h3><ul><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>When Our Team First Came Together</h3><ul><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>Backstory</h3><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>Relationships</h3><ul><li>&nbsp;</li><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>Notes</h3><ul><li>&nbsp;</li><li>&nbsp;</li></ul><p>&nbsp;</p>"
+            "CustomTemplate": "<h3 class='bio_style'>When Our Team First Came Together</h3><ul><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>Backstory</h3><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>Relationships</h3><ul><li>&nbsp;</li><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>Notes</h3><ul><li>&nbsp;</li><li>&nbsp;</li></ul><p>&nbsp;</p>"
+        },
+        "NPCSheets": {
+            "realName": "Real Name",
+            "conditions": {
+                "label": "Conditions",    
+                "description": "Choose all that apply:",
+                "options": {
+                    "0": "Afraid",
+                    "1": "Angry",
+                    "2": "Guilty",
+                    "3": "Hopeless",
+                    "4": "Insecure"
+                }
+            },
+            "driveLabel": "Drive",
+            "abilitiesLabel": "Abilities",
+            "generationLabel": "Generation",
+            "moveTypes": {
+                "villainLabel": "Villain Moves",
+                "conditionLabel": "Condition Moves"
+            }
+        },
+        "CharacterSheets": {
+            "statToggle": "Locked",
+            "rollResults": {
+                "complications": "Complications...",
+                "partialSuccess": "Partial success",
+                "success": "Success!"
+            },
+            "stats": {
+                "danger": "Danger",
+                "freak": "Freak",
+                "savior": "Savior",
+                "superior": "Superior",
+                "mundane": "Mundane"
+            },
+            "heroNameLabel": "Hero Name",
+            "advancesLabel": "Advances",
+            "xpLabel": "Potential",
+            "conditions": {
+                "label": "Conditions",    
+                "description": "Choose all that apply:",
+                "options": {
+                    "0": "Afraid (-2 to engage)",
+                    "1": "Angry (-2 to comfort or pierce)",
+                    "2": "Guilty (-2 to provoke or assess)",
+                    "3": "Hopeless (-2 to unleash)",
+                    "4": "Insecure (-2 to defend or reject)"
+                }
+            },
+            "momentUnlocked": {
+                "label": "Moment of Truth",
+                "checkboxLabel": "Unlocked"
+            },
+            "influenceLabel": "Influence",
+            "advancementsLabel": "Advancements",
+            "details": {
+                "lookLabel": "Look",
+                "abilitiesLabel": "Abilities",
+                "momentLabel": "Moment of Truth",
+                "backstoryLabel": "Backstory",
+                "teamLabel": "The Team",    
+                "relationshipsLabel": "Relationships",
+                "biographyLabel": "Notes"
+            },
+            "moveTypes": {
+                "basicLabel": "Basic Moves",
+                "playbookLabel": "Playbook Moves",    
+                "teamLabel": "Team Moves",
+                "adultLabel": "Adult Moves"
+            },
+            "Playbooks": {
+                "theDoomedLabel": "Doom Track",
+                "theBull": {
+                    "label": "The Bull's Heart",
+                    "value": "<b>Love:</b> <br><b>Rival:</b> "
+                },
+                "theNovaLabel": "Held Burn",
+                "theProtege": {
+                    "label": "Mentor's Labels",
+                    "value": "<b>Embodies:</b> <br><b>Denies:</b> "
+                },
+                "theSoldierLabel": "Soldier",
+                "theHarbingerLabel": "Memories Score",
+                "theNomadLabel": "Influence Given",
+                "theScionGreatestEnemyLabel": "Greatest Enemy",
+                "theScionGreatestVictimLabel": "Greatest Victim",
+                "theScionPersonalIdolLabel": "Personal Idol",
+                "theScionGreatestLeaderLabel": "Greatest Leader",
+                "theScionGreatestHeroLabel": "Greatest Hero",
+                "theScionBiggestCelebrityLabel": "Biggest Celebrity",
+                "theHarbinger": {
+                    "label":  "Memories",
+                    "value": "<b>Monster: </b> <br><b>Traitor: </b> <br><b>Corruptor: </b> <br><b>Martyr: </b> <br><b>Architect: </b> <br><b>Leader: </b> <br>"
+                },
+                "theBrainLabel": "Your Shame",
+                "theStarAdvantagesLabel": "Audience Advantages",
+                "theStarDemandsLabel": "Audience Demands",
+                "theInnocentLabel": "You Future Self",
+                "theNewbornLabel": "Lessons",
+                "theReformedLabel": "Friends in Low Places",
+                "theJanusLabel": "Obligations",
+                "theProtegeLabel": "Mentor's Resources",
+                "theLegacy": {
+                    "label": "Legacy Members",
+                    "value": " <i>: is still active and prominent in the city.</i><br> <i>: is retired and quite judgmental.</i><br> <i>: is the next possible member of your legacy.</i><br> <i>: is the greatest opponent your legacy ever faced...and is still at large.</i>"
+                },
+                "theBeaconLabel": "Drives"
+            }
         }
     }
 }

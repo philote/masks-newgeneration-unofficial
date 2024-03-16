@@ -104,16 +104,21 @@
       background: var(--input-bg-color);
       color: var(--secondary-text-color);
       min-height: 31px;
+      padding: 0 10px;
     }
 
-    // .sheet-bottom .cell.cell--bio {
-    //   min-height: 175px;
-    //   margin-bottom: 5px;
+    .sheet-bottom .cell.cell--bio {
+      min-height: 175px;
+      margin-bottom: 5px;
 
-    //   .editor {
-    //     min-height: calc(100% - 40px);
-    //   }
-    // }
+      .editor {
+        min-height: calc(100% - 40px);
+
+        .editor-content {
+          height: 135px;
+        }
+      }
+    }
   }
 
   .cell__wrapper {
@@ -321,13 +326,20 @@
   }
   
   // -- /** Custom Styling **/
+  .sheet-bottom {
+    .cell--LongText, 
+    .cell--ListMany, 
+    .cell--moves,
+    .cell--xp,
+    .cell--Text,
+    .cell--Checkbox,
+    .cell--Number {
+      padding-top: 5px;
+    }
 
-  .cell--LongText, 
-  .cell--ListMany, 
-  .cell--moves,
-  .cell--Text,
-  .cell--Number {
-    padding-top: 5px;
+    .cell--conditions {
+      padding-top: 0px;
+    }
   }
   
   .bio_style {
@@ -339,7 +351,7 @@
     letter-spacing: 0.05rem;
     font-size: 22px;
     font-weight: normal;
-    margin: 10px 20px 0px 10px;
+    margin: 10px 10px 0px 0px;
 
     &::before {
       // z-index: -1;
@@ -348,7 +360,7 @@
       left: 7px;
       top: 0;
       height: 2px;
-      width: 100%;
+      width: calc(100% - 10px);
       background-color: var(--bio-title-border-color);
       transform: skewX(-15deg);
     }
@@ -382,7 +394,7 @@
       left: 7px;
       top: 0;
       height: 2px;
-      width: 100%;
+      width: calc(100% - 10px);
       background-color: var(--cell-title-border-color);
       transform: skewX(-15deg);
     }
@@ -436,6 +448,46 @@
     }
   }
 
+  /** Playbook customizations **/
+  .cell--theReformed {
+    input[type="checkbox"] {
+      margin: 3px 1px;
+      flex: 0 0 14px;
+    }
+
+    .cell__title {
+      font-size: 20px;
+    }
+  }
+  
+  .cell--theScionGreatestEnemy,
+  .cell--theScionGreatestVictim,
+  .cell--theScionPersonalIdol,
+  .cell--theScionGreatestLeader,
+  .cell--theScionGreatestHero,
+  .cell--theScionBiggestCelebrity {
+    input[type="checkbox"] {
+      margin: 3px 1px;
+      flex: 0 0 14px;
+    }
+
+    .cell__title {
+      font-size: 20px;
+    }
+
+    input[type="checkbox"] {
+      &:nth-child(5n) {
+        margin-left: 5px;
+        &::before {
+          display: inline-block;
+          content: "";
+          border-left: 2px solid #7a7971;
+          height: 18px;
+          margin: 0 -4px;
+        }
+      }
+    }
+  }
 }
 
 /** NPCs **/

@@ -36,7 +36,9 @@ Hooks.once("init", () => {
 
 Hooks.on('setup', () => {
     // Ensure template is loaded so that it will be ready when needed
-    loadTemplates(['modules/masks-newgeneration-unofficial/templates/shift.hbs']);
+    loadTemplates(['modules/masks-newgeneration-unofficial/templates/shift-labels.hbs']);
+    loadTemplates(['modules/masks-newgeneration-unofficial/templates/influence-tab.hbs']);
+    loadTemplates(['modules/masks-newgeneration-unofficial/templates/influence-sheet.hbs']);
 });
 
 Hooks.once('pbtaSheetConfig', () => {
@@ -60,9 +62,9 @@ Hooks.on("preCreateActor", async function (document, data, options, userId) {
     if (document.type === 'character') {
     
         // Add template for Description Tab's input box.
-        document.updateSource({
-            'system.details.biography.value': game.i18n.localize('MASKS-SHEETS.Background.CustomTemplate')
-        });
+        // document.updateSource({
+        //     'system.details.biography.value': game.i18n.localize('MASKS-SHEETS.Background.CustomTemplate')
+        // });
     }
 });
 
@@ -73,14 +75,40 @@ Hooks.on("renderActorSheet", async (app, html, context) => {
         // Label Shift UI
         if (game.settings.get("masks-newgeneration-unofficial","enable_label_shift")) {
 
-            const asideElem = html[0].querySelector('.pbta.sheet.actor .stats-list');
-            if (asideElem) {
-                const newItem = _templateCache['modules/masks-newgeneration-unofficial/templates/shift.hbs'](context, {allowProtoMethodsByDefault: true, allowProtoPropertiesByDefault: true});
-                asideElem.insertAdjacentHTML('beforeend', newItem);
+            const statsListElem = html[0].querySelector('.pbta.sheet.actor .stats-list');
+            if (statsListElem) {
+                const shiftLabelsTemplate = _templateCache['modules/masks-newgeneration-unofficial/templates/shift-labels.hbs'](context, {allowProtoMethodsByDefault: true, allowProtoPropertiesByDefault: true});
+                statsListElem.insertAdjacentHTML('beforeend', shiftLabelsTemplate);
             }
 
             onLabelShiftClick(app.actor, html);
         }
+
+        // Remove influence
+        // const influenceEl = html[0].querySelector('.pbta.sheet.actor .cell--attributes-left .cell--influence');
+        // if (influenceEl) {
+        //     influenceEl.remove();
+        // }
+
+        // remove equipment
+        const equipmentEl = html[0].querySelector('.pbta.sheet.actor .sheet-main [data-tab=equipment]');
+        if (equipmentEl) {
+            equipmentEl.remove();
+        }
+
+        // Add the influence tab
+        // const tabsEl = html[0].querySelector('.pbta.sheet.actor .sheet-main .sheet-tabs');
+        // if (tabsEl) {
+        //     const influenceTabTemplate = _templateCache['modules/masks-newgeneration-unofficial/templates/influence-tab.hbs'](context, {allowProtoMethodsByDefault: true, allowProtoPropertiesByDefault: true});
+        //     tabsEl.insertAdjacentHTML('beforeend', influenceTabTemplate);
+        // }
+
+        // Add the influence sheet-tab
+        // const sheetBodyEl = html[0].querySelector('.pbta.sheet.actor .sheet-main .sheet-body');
+        // if (sheetBodyEl) {
+        //     const influenceSheetTemplate = _templateCache['modules/masks-newgeneration-unofficial/templates/influence-sheet.hbs'](context, {allowProtoMethodsByDefault: true, allowProtoPropertiesByDefault: true});
+        //     sheetBodyEl.insertAdjacentHTML('beforeend', influenceSheetTemplate);
+        // }
     }
 });
 
