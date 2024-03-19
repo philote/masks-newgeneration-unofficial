@@ -1,34 +1,24 @@
-<div class="tab influences" data-group="primary" data-tab="influences">
-    <div class="cell cell--group cell--influences">
-        <h2 class="cell__title">
-        <label class="item-group-label">{{localize "MASKS-SHEETS.Influences"}}<span
-            class="item-details-toggle"><i class="fas fa-chevron-up"></i></span></label>
-        <div class="item-controls">
-            <button type="button" class="influence-control influence-create"
-            title='{{localize "MASKS-SHEETS.InfluenceCreate"}}' data-type="influence">
-            <i class="fas fa-plus"></i>
-            </button>
+<form class="{{cssClass}} item-form flexcol" autocomplete="off">
+    <header class="sheet-header flexrow">
+        <div class="cell--image">
+            <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
         </div>
-        </h2>
-        <ol class="items-list">
-        {{#each influences}}
-        <li class="item flexrow" data-influence-id="{{id}}">
-            <div class="influence-name">
-            <img class="influence-icon" data-influence-action="roll" src="modules/masks-newgeneration-unofficial/images/shadow-follower.svg" />
-            <input type="text" class="influence--name" value="{{name}}" placeholder="{{localize "MASKS-SHEETS.Person-Name"}}" />
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="{{localize "PBTA.Common.Name"}}"/></h1>
+            <div>
+                <label for="system.hasInfluenceOver" ><input type="checkbox" name="system.hasInfluenceOver" {{checked system.hasInfluenceOver}} />{{localize "MASKS-SHEETS.HasInfluence"}}</label>
             </div>
-            <div class="influence-management">
-            <img class="influence-icon {{#unless hasInfluenceOver}}influence-disabled{{/unless}}" data-influence-action="hasInfluenceOver" src="modules/masks-newgeneration-unofficial/images/team-downgrade.svg" title="{{localize "MASKS-SHEETS.HasInfluence"}}" />
-            <img class="influence-icon {{#unless haveInfluenceOver}}influence-disabled{{/unless}}" data-influence-action="haveInfluenceOver" src="modules/masks-newgeneration-unofficial/images/team-upgrade.svg" title="{{localize "MASKS-SHEETS.HaveInfluence"}}" />
-            {{#if locked}}
-            <a class="influence-control influence-lock" data-influence-action="lock" title="{{localize "MASKS-SHEETS.Influence-Unlock"}}"><i class="fas fa-lock"></i></a>
-            {{else}}
-            <a class="influence-control influence-unlock" data-influence-action="lock" title="{{localize "MASKS-SHEETS.Influence-Lock"}}"><i class="fas fa-lock-open"></i></a>
-            {{/if}}
-            <a class="influence-control influence-delete" data-influence-action="delete" title="{{localize "MASKS-SHEETS.Delete-Influence"}}"><i class="fas fa-trash"></i></a>
+            <div>
+                <label for="system.haveInfluenceOver" ><input type="checkbox" name="system.haveInfluenceOver" {{checked system.haveInfluenceOver}} />{{localize "MASKS-SHEETS.HaveInfluence"}}</label>
             </div>
-        </li>
-        {{/each}}
-        </ol>
-    </div>
-</div>
+            <div>
+                <label for="system.locked" ><input type="checkbox" name="system.isLocked" {{checked system.isLocked}} />Lock this Influence</label>
+            </div>
+        </div>
+    </header>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{editor system.description target="system.description" button=true owner=owner editable=editable}}
+    </section>
+</form>

@@ -1,0 +1,28 @@
+<div class="cell cell--group cell--influences">
+    <h2 class="cell__title">
+        <label class="item-group-label">{{localize "MASKS-SHEETS.Influences"}}<span class="item-details-toggle"><i class="fas fa-chevron-up"></i></span></label>
+        <div class="item-controls">
+            <button type="button" class="influence-control influence-create" title='{{localize "MASKS-SHEETS.InfluenceCreate"}}' data-type="influence"><i class="fas fa-plus"></i></button>
+        </div>
+    </h2>
+    <ol class="items-list">
+        {{#each flags.masks-newgeneration-unofficial.influences}}
+            <li class="item flexrow" data-influence-id="{{id}}">
+                <div class="influence-name">
+                    <img class="influence-icon" data-influence-action="roll" src="modules/masks-newgeneration-unofficial/images/shadow-follower.svg" />
+                    <input type="text" class="influence--name" value="{{name}}" placeholder="{{localize "MASKS-SHEETS.Person-Name"}}" />
+                </div>
+                <div class="influence-management">
+                    <img class="influence-icon {{#unless hasInfluenceOver}}influence-disabled{{/unless}}" data-influence-action="hasInfluenceOver" src="modules/masks-newgeneration-unofficial/images/team-downgrade.svg" title="{{localize "MASKS-SHEETS.HasInfluence"}}" />
+                    <img class="influence-icon {{#unless haveInfluenceOver}}influence-disabled{{/unless}}" data-influence-action="haveInfluenceOver" src="modules/masks-newgeneration-unofficial/images/team-upgrade.svg" title="{{localize "MASKS-SHEETS.HaveInfluence"}}" />
+                    {{#if locked}}
+                        <a class="influence-control influence-lock" data-influence-action="lock" title="{{localize "MASKS-SHEETS.Influence-Unlock"}}"><i class="fas fa-lock"></i></a>
+                    {{else}}
+                        <a class="influence-control influence-unlock" data-influence-action="lock" title="{{localize "MASKS-SHEETS.Influence-Lock"}}"><i class="fas fa-lock-open"></i></a>
+                    {{/if}}
+                    <a class="influence-control influence-delete" data-influence-action="delete" title="{{localize "MASKS-SHEETS.Delete-Influence"}}"><i class="fas fa-trash"></i></a>
+                </div>
+            </li>
+        {{/each}}
+    </ol>
+</div>

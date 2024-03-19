@@ -8,6 +8,7 @@
   --primary-text-color: #ffffff;
   --secondary-text-color: #000000;
   --input-text-color: #000000;
+  --input-placeholder-color: #979797;
 
   --interactive-bg-color: #1e528f;
   --interactive-bg-hover-color: #173f6e;
@@ -31,6 +32,8 @@
   --window-bg-image: url("/modules/masks-newgeneration-unofficial/images/skyline.webp"),
     var(--actor-gradient);
   --window-bg-position: bottom left;
+  --influence-icon-color: invert(100%);
+  --influence-icon-disabled-color: invert(100%) opacity(50%);
 }
 
 .pbta.window-app {
@@ -46,6 +49,7 @@
     color: var(--input-text-color);
     border: 0.5px solid var(--input-border-color);
     accent-color: var(--tab-bg-active-color);
+    font-weight: bold;
   }
 
   input:disabled, 
@@ -58,8 +62,30 @@
 }
 
 .pbta.sheet {
+  .sheet-look .cell--influence { display: none; }
+  .sheet-main .cell--equipment { display: none; }
+
+  input::placeholder, 
+  .sheet-header select.charplaybook:has(option[value=""]:checked), 
+  .sheet-header select.charplaybook option[value=""] {
+    color: var(--input-placeholder-color);
+    font-style: italic;
+  }
+  
   label {
     font-weight: normal;
+  }
+
+  &.item {
+    input[type=checkbox], input[type=radio] {
+      vertical-align: middle;
+      position: relative;
+      bottom: 1px;
+      height: 15px;
+    }
+    label {
+      color: var(--secondary-text-color);
+    }
   }
 
   .cell--image {
@@ -178,7 +204,7 @@
     }
   }
 
-  .influences {
+  .cell--influences {
     .influence-name {
       flex: 4;
     }
@@ -199,7 +225,7 @@
       flex: 4;
 
       .influence-disabled {
-        filter: opacity(0.5);
+        filter: var(--influence-icon-disabled-color);
       }
     }
     
@@ -212,13 +238,13 @@
       padding: 0;
       margin: 0;
       border-radius: 0;
-      cursor: pointer;
+      filter: var(--influence-icon-color);
     }
   }
 
-  & .influences .influence-management .influence-control.influence-delete,
-  & .influences .influence-management .influence-control.influence-lock,
-  & .influences .influence-management .influence-control.influence-unlock {
+  & .cell--influences .influence-management .influence-control.influence-delete,
+  & .cell--influences .influence-management .influence-control.influence-lock,
+  & .cell--influences .influence-management .influence-control.influence-unlock {
     font-size: 28px;
     flex: 1;
   }
