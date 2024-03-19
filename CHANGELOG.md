@@ -1,3 +1,12 @@
+#1.5.0
+- This is the 1st release after @philote took over the repo.
+- Light and Dark Themes for the sheets
+- Compendium of Moves & Playbooks
+- Influence tracking tab
+- Playbook specific UI when a Playbook is chosen (except for the Joined, since they take on any special rules for whomever they join with)
+- Label shifting UI on the Character Sheets (there is a setting to hide it)
+- Description tab has multiple sections
+
 #1.4.2
 - Easy Label switching (can be turned on and off in the settings)
 - Better Descriptions fields
