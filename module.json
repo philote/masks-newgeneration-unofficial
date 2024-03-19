@@ -2,22 +2,27 @@
   "id": "masks-newgeneration-unofficial",
   "title": "Masks: A New Generation (unofficial)",
   "description": "Masks: A New Generation from Magpie Games (unofficial)",
-  "version": "1.4.2",
+  "version": "#{VERSION}#",
+  "library": "false",
   "compatibility": {
-    "minimum": "11",
-    "verified": "11.315"
+    "minimum": 11,
+    "verified": 11.315,
+    "maximum": 11
   },
   "authors": [
     {
       "name": "CyricPL",
-      "discord": "@CyricPL#6704",
-      "flags": {}
+      "discord": "@CyricPL#6704"
+    },
+    {
+      "name": "Geekswordsman",
+      "discord": "@Geekswordsman#3085"
     },
     {
       "name": "ephson",
       "url": "https://github.com/philote",
       "discord": "ephson",
-      "flags": {}
+      "reddit": "u/ephson"
     }
   ],
   "packs": [
@@ -30,8 +35,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "documents",
@@ -42,8 +46,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "macros-masks",
@@ -54,8 +57,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "basic-playbook-beacon",
@@ -66,8 +68,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "basic-playbook-bull",
@@ -78,8 +79,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "basic-playbook-delinquent",
@@ -90,8 +90,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "basic-playbook-doomed",
@@ -102,8 +101,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "basic-playbook-janus",
@@ -114,8 +112,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "basic-playbook-legacy",
@@ -126,8 +123,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "basic-playbook-nova",
@@ -138,8 +134,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "basic-playbook-outsider",
@@ -150,8 +145,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "basic-playbook-protege",
@@ -162,8 +156,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "basic-playbook-transformed",
@@ -174,8 +167,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "hchc-playbook-innocent",
@@ -186,8 +178,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "hchc-playbook-joined",
@@ -198,8 +189,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "hchc-playbook-newborn",
@@ -210,8 +200,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "hchc-playbook-reformed",
@@ -222,8 +211,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "hchc-playbook-star",
@@ -234,8 +222,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "aegis-playbook-brain",
@@ -246,8 +233,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "aegis-playbook-soldier",
@@ -258,8 +244,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "unbound-playbook-harbinger",
@@ -270,8 +255,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "unbound-playbook-nomad",
@@ -282,8 +266,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     },
     {
       "name": "unbound-playbook-scion",
@@ -294,8 +277,7 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "flags": {}
+      }
     }
   ],
   "packFolders": [
@@ -354,8 +336,7 @@
     {
       "lang": "en",
       "name": "English",
-      "path": "languages/en.json",
-      "flags": {}
+      "path": "languages/en.json"
     }
   ],
   "relationships": {
@@ -365,37 +346,29 @@
         "type": "system",
         "manifest": "https://asacolips-artifacts.s3.amazonaws.com/pbta/0.6.0/system.json",
         "compatibility": {
-          "minimum": "0.6.0",
-          "verified": "0.9.2"
+          "minimum": "0.8.0",
+          "verified": "0.9.3"
         }
       }
     ]
   },
-  "documentTypes": {
-    "Item": {
-      "influence": {
-        "htmlFields": ["description"],
-        "filePathFields": {"img": ["IMAGE"]}
-      }
-    }
-  },
-  "url": "https://github.com/CyricPL/masks-newgeneration-unofficial",
-  "manifest": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/module.json",
-  "download": "https://codeload.github.com/CyricPL/masks-newgeneration-unofficial/zip/main",
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
+  "license": "LICENSE",
+  "readme": "README.md",
   "media": [
     {
       "type": "screenshot",
       "url": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/images/screenshots/character-sheet_light.webp",
       "loop": false,
-      "caption": "Masks character sheet screenshot from Foundry VTT.",
-      "flags": {}
+      "caption": "Masks character sheet screenshot from Foundry VTT."
     },
     {
       "type": "cover",
       "url": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/images/cover.webp",
       "loop": false,
-      "caption": "Cover Image for the Unofficial Rhapsody of Blood package.",
-      "flags": {}
+      "caption": "Cover Image for the Unofficial Rhapsody of Blood package."
     }
   ]
 }
