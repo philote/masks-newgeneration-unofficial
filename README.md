@@ -4,7 +4,11 @@ This module contains moves for the game Masks: A New Generation for use with the
 
 The content from this module is from **Masks: A New Generation** from **Magpie Games**. You can get the PDF at: https://magpiegames.com/masks/
 
-This revised version of the module is based on the original created by brunocalado (https://github.com/brunocalado/masks-newgeneration-unofficial). In the update, the text of the moves has been slightly rearranged and every move has a custom icon from game-icons.net (https://game-icons.net/).
+This revised version of the module is based on works from multiple people: 
+- The original created by brunocalado (https://github.com/brunocalado/masks-newgeneration-unofficial) 
+- A second version that was maintained by CyricPL (https://github.com/CyricPL/masks-newgeneration-unofficial)
+- A sheet module created by Geekswordsman (https://gitlab.com/geekswordsman/masks-newgeneration-sheets)
+The current version is a merging of these modules' features, cleanup of the moves and bringing the module up to date with Foundry VTT versions and PbtA system versions.
 
 This module is a prerequisite for Masks: A New Generation Sheets (https://foundryvtt.com/packages/masks-newgeneration-sheets). This module can be used without that one, but it is a great module and is highly recommended.
 
@@ -22,10 +26,10 @@ This module is a prerequisite for Masks: A New Generation Sheets (https://foundr
 - Easy Label switching
 - Better description fields
 - Most playbooks have unique attributes to track, once they are added to the character sheet
+- Improved Influences interface
 
 ## TODO
 - Team Pool Tracker
-- Improved Influences interface
 
 # Install
 
