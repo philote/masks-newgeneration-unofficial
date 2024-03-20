@@ -490,10 +490,21 @@
   }
 }
 
+/** Items **/
+
+.pbta.sheet.item.playbook {
+  min-height: 600px;
+  min-width: 650px;
+}
+
 /** NPCs **/
 .pbta.sheet.npc {
-  .sheet-wrapper .sheet-header {
-    margin-bottom: 0px;
+  .sheet-main [data-tab=equipment] { display: none; }
+
+  .sheet-wrapper {
+    .sheet-header {
+      margin-bottom: 10px;
+    }
   }
   
   .sheet-attributes {

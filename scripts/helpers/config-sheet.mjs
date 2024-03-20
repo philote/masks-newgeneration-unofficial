@@ -546,16 +546,6 @@ export const configSheet = async () => {
                 }
             },
             npc: {
-                attrTop: {
-                    realName: {
-                        label: game.i18n.localize("MASKS-SHEETS.NPCSheets.realName"),
-                        description: null,
-                        customLabel: false,
-                        userLabel: false,
-                        type: "Text",
-                        value: ""
-                    }
-                },
                 attrLeft: {
                     conditions: {
                         label: game.i18n.localize("MASKS-SHEETS.NPCSheets.conditions.label"),
@@ -587,20 +577,12 @@ export const configSheet = async () => {
                             }
                         }
                     },
-                    drive: {
-                        label: game.i18n.localize("MASKS-SHEETS.NPCSheets.driveLabel"),
+                    realName: {
+                        label: game.i18n.localize("MASKS-SHEETS.NPCSheets.realName"),
                         description: null,
                         customLabel: false,
                         userLabel: false,
-                        type: "LongText",
-                        value: ""
-                    },
-                    abilities: {
-                        label: game.i18n.localize("MASKS-SHEETS.NPCSheets.abilitiesLabel"),
-                        description: null,
-                        customLabel: false,
-                        userLabel: false,
-                        type: "LongText",
+                        type: "Text",
                         value: ""
                     },
                     generation: {
@@ -609,6 +591,20 @@ export const configSheet = async () => {
                         customLabel: false,
                         userLabel: false,
                         type: "Text",
+                        value: ""
+                    }
+                },
+                details: {
+                    drive: {
+                        label: game.i18n.localize("MASKS-SHEETS.NPCSheets.driveLabel"),
+                        value: ""
+                    },
+                    abilities: {
+                        label: game.i18n.localize("MASKS-SHEETS.NPCSheets.abilitiesLabel"),
+                        value: ""
+                    },
+                    biography: {
+                        label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.details.biographyLabel"),
                         value: ""
                     }
                 },
