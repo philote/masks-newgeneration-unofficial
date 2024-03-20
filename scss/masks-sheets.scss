@@ -97,7 +97,6 @@
   }
 
   .sheet-resources {
-
     .cell--ongoing .resource-control, 
     .cell--forward .resource-control, 
     .cell--roll-formula .resource-control {
@@ -174,15 +173,48 @@
       padding: 0 10px;
     }
 
-    .sheet-bottom .cell.cell--bio {
-      min-height: 175px;
-      margin-bottom: 5px;
+    .sheet-bottom {
+      .cell--LongText, 
+      .cell--ListMany, 
+      .cell--moves,
+      .cell--xp,
+      .cell--Text,
+      .cell--Checkbox,
+      .cell--Number {
+        padding-top: 5px;
+      }
 
-      .editor {
-        min-height: calc(100% - 40px);
+      .cell--conditions {
+        padding-top: 0px;
+      }
+      
+      .description {
+        .sheet-tab {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-content: flex-start;
+          gap: 10px;
+        }
 
-        .editor-content {
-          height: 135px;
+        .cell.cell--bio {
+          min-height: 175px;
+          margin-bottom: 5px;
+          width: 49%;
+
+          &:nth-child(3), 
+          &:nth-child(4), 
+          &:nth-child(5) {
+            width: 100%;
+          }
+    
+          .editor {
+            min-height: calc(100% - 40px);
+    
+            .editor-content {
+              height: 135px;
+            }
+          }
         }
       }
     }
@@ -302,23 +334,6 @@
       .stat-value {
         border: 1px solid var(--stats-border-color);
       }
-    }
-  }
-  
-  // -- /** Custom Styling **/
-  .sheet-bottom {
-    .cell--LongText, 
-    .cell--ListMany, 
-    .cell--moves,
-    .cell--xp,
-    .cell--Text,
-    .cell--Checkbox,
-    .cell--Number {
-      padding-top: 5px;
-    }
-
-    .cell--conditions {
-      padding-top: 0px;
     }
   }
   

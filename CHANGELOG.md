@@ -1,3 +1,6 @@
+#1.5.1
+- character sheet Layout updates
+
 #1.5.0
 - This is the 1st release after @philote took over the repo.
 - Light and Dark Themes for the sheets

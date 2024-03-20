@@ -500,20 +500,10 @@ export const configSheet = async () => {
                     },
                     abilities: {
                         label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.details.abilitiesLabel"),
-                        value: "",
-                        limited: false
-                    },
-                    moment: {
-                        label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.details.momentLabel"),
-                        value: "",
-                        limited: true
+                        value: ""
                     },
                     backstory: {
                         label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.details.backstoryLabel"),
-                        value: ""
-                    },
-                    team: {
-                        label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.details.teamLabel"),
                         value: ""
                     },
                     relationships: {
@@ -522,6 +512,14 @@ export const configSheet = async () => {
                     },
                     biography: {
                         label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.details.biographyLabel"),
+                        value: ""
+                    },
+                    moment: {
+                        label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.details.momentLabel"),
+                        value: ""
+                    },
+                    team: {
+                        label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.details.teamLabel"),
                         value: ""
                     }
                 },
