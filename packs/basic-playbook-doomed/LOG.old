@@ -1,7 +1,4 @@
-2024/03/16-00:00:44.859230 30b7d1000 Recovering log #296
-2024/03/16-00:00:44.859719 30b7d1000 Delete type=3 #294
-2024/03/16-00:00:44.859783 30b7d1000 Delete type=0 #296
-2024/03/16-00:28:56.069678 3060e7000 Level-0 table #301: started
-2024/03/16-00:28:56.069693 3060e7000 Level-0 table #301: 0 bytes OK
-2024/03/16-00:28:56.069848 3060e7000 Delete type=0 #299
-2024/03/16-00:28:56.070291 3060e7000 Manual compaction at level-0 from '!items!1U52p4ehuhChMI6s' @ 72057594037927935 : 1 .. '!items!uiBLBbqD0pCTb8m1' @ 0 : 0; will stop at (end)
+2024/03/21-16:04:58.858531 30ad74000 Log #323: 0 ops saved to Table #326 OK
+2024/03/21-16:04:58.858616 30ad74000 Archiving /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/basic-playbook-doomed/000323.log: OK
+2024/03/21-16:04:58.858682 30ad74000 Table #325: 10 entries OK
+2024/03/21-16:04:58.858970 30ad74000 **** Repaired leveldb /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/basic-playbook-doomed; recovered 1 files; 12978 bytes. Some data may have been lost. ****

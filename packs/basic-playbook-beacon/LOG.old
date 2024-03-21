@@ -1,7 +1,4 @@
-2024/03/16-00:00:44.852877 30a7d3000 Recovering log #296
-2024/03/16-00:00:44.853251 30a7d3000 Delete type=3 #294
-2024/03/16-00:00:44.853298 30a7d3000 Delete type=0 #296
-2024/03/16-00:28:56.068956 3060e7000 Level-0 table #301: started
-2024/03/16-00:28:56.068970 3060e7000 Level-0 table #301: 0 bytes OK
-2024/03/16-00:28:56.069135 3060e7000 Delete type=0 #299
-2024/03/16-00:28:56.069588 3060e7000 Manual compaction at level-0 from '!items!0ilDMC4CPIvQYpwf' @ 72057594037927935 : 1 .. '!items!xVgfLmI5v4pCCxUr' @ 0 : 0; will stop at (end)
+2024/03/21-16:04:58.844700 30c571000 Log #323: 0 ops saved to Table #326 OK
+2024/03/21-16:04:58.844772 30c571000 Archiving /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/basic-playbook-beacon/000323.log: OK
+2024/03/21-16:04:58.844857 30c571000 Table #325: 10 entries OK
+2024/03/21-16:04:58.845232 30c571000 **** Repaired leveldb /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/basic-playbook-beacon; recovered 1 files; 13757 bytes. Some data may have been lost. ****

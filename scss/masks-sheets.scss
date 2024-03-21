@@ -490,13 +490,6 @@
   }
 }
 
-/** Items **/
-
-.pbta.sheet.item.playbook {
-  min-height: 600px;
-  min-width: 650px;
-}
-
 /** NPCs **/
 .pbta.sheet.npc {
   .sheet-main [data-tab=equipment] { display: none; }
@@ -532,5 +525,91 @@
   .sheet-attributes .cell-npc-text .editor .tox-editor-container {
     min-height: 150px;
     height: 100% !important;
+  }
+}
+
+/** Items **/
+
+.pbta.sheet.item.playbook {
+  min-height: 600px;
+  min-width: 800px;
+}
+
+.pbta.sheet .editor-content {
+  .playbook {
+    padding: 10px;
+
+    h1 {
+      width: 100%;
+      text-align-last: center;
+    }
+
+    h2 {
+      font-style: italic;
+      position: relative;
+      padding-left: 8px;
+      color: var(--secondary-text-color);
+      letter-spacing: 0.05rem;
+      font-size: 22px;
+  
+      &::before {
+        // z-index: -1;
+        content: "";
+        position: absolute;
+        left: 7px;
+        top: 0;
+        height: 2px;
+        width: calc(100% - 10px);
+        background-color: var(--cell-title-border-color);
+        transform: skewX(-15deg);
+      }
+  
+      &::after {
+        // z-index: -1;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 4px;
+        background-color: var(--cell-title-border-color);
+        transform: skewX(-15deg);
+      }
+    }
+
+    h1, h2, h3 {
+      border-bottom: none;
+    }
+
+    h2, h3 {
+      margin-top: 30px;
+    }
+
+    .special {
+      color: #ae0000;
+      font-weight: bold;
+    }
+  
+    .rules {
+      // background-color: green;
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+      align-content: flex-start;
+      align-items: flex-start;
+      gap: 10px 20px;
+
+      div {
+        width: 48%;
+
+        h2:nth-child(1) {
+          margin-top: 10px;
+        }
+      }
+    }
+  
+    .extras {
+      margin-top: 30px;
+    }
   }
 }

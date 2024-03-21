@@ -1,7 +1,4 @@
-2024/03/16-00:00:44.854728 30b7d1000 Recovering log #296
-2024/03/16-00:00:44.855161 30b7d1000 Delete type=3 #294
-2024/03/16-00:00:44.855216 30b7d1000 Delete type=0 #296
-2024/03/16-00:28:56.068713 3060e7000 Level-0 table #301: started
-2024/03/16-00:28:56.068728 3060e7000 Level-0 table #301: 0 bytes OK
-2024/03/16-00:28:56.068910 3060e7000 Delete type=0 #299
-2024/03/16-00:28:56.069367 3060e7000 Manual compaction at level-0 from '!items!0MaiOXSttsCtWTiu' @ 72057594037927935 : 1 .. '!items!nxCpUP97kfuDtHuK' @ 0 : 0; will stop at (end)
+2024/03/21-16:04:58.849184 30bd72000 Log #323: 0 ops saved to Table #326 OK
+2024/03/21-16:04:58.849273 30bd72000 Archiving /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/basic-playbook-bull/000323.log: OK
+2024/03/21-16:04:58.849374 30bd72000 Table #325: 14 entries OK
+2024/03/21-16:04:58.849762 30bd72000 **** Repaired leveldb /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/basic-playbook-bull; recovered 1 files; 17322 bytes. Some data may have been lost. ****

@@ -1,7 +1,3 @@
-2024/03/16-00:00:44.851250 30b7d1000 Recovering log #310
-2024/03/16-00:00:44.851679 30b7d1000 Delete type=3 #308
-2024/03/16-00:00:44.851723 30b7d1000 Delete type=0 #310
-2024/03/16-00:28:56.067926 3060e7000 Level-0 table #315: started
-2024/03/16-00:28:56.067945 3060e7000 Level-0 table #315: 0 bytes OK
-2024/03/16-00:28:56.068121 3060e7000 Delete type=0 #313
-2024/03/16-00:28:56.068705 3060e7000 Manual compaction at level-0 from '!macros!UADvOOpCRB7PT43F' @ 72057594037927935 : 1 .. '!macros!UADvOOpCRB7PT43F' @ 0 : 0; will stop at (end)
+2024/03/21-16:04:58.842017 30ad74000 Log #337: 0 ops saved to Table #338 OK
+2024/03/21-16:04:58.842111 30ad74000 Archiving /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/macros-masks/000337.log: OK
+2024/03/21-16:04:58.842450 30ad74000 **** Repaired leveldb /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/macros-masks; recovered 0 files; 0 bytes. Some data may have been lost. ****
