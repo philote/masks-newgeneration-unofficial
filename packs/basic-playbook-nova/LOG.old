@@ -1,4 +1,7 @@
-2024/03/21-16:04:58.873337 30b573000 Log #323: 0 ops saved to Table #326 OK
-2024/03/21-16:04:58.873417 30b573000 Archiving /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/basic-playbook-nova/000323.log: OK
-2024/03/21-16:04:58.873494 30b573000 Table #325: 14 entries OK
-2024/03/21-16:04:58.873940 30b573000 **** Repaired leveldb /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/basic-playbook-nova; recovered 1 files; 14956 bytes. Some data may have been lost. ****
+2024/03/21-20:52:16.687378 30b73e000 Recovering log #353
+2024/03/21-20:52:16.687849 30b73e000 Delete type=3 #352
+2024/03/21-20:52:16.687900 30b73e000 Delete type=0 #353
+2024/03/21-20:52:56.426364 304d2b000 Level-0 table #357: started
+2024/03/21-20:52:56.426387 304d2b000 Level-0 table #357: 0 bytes OK
+2024/03/21-20:52:56.426582 304d2b000 Delete type=0 #355
+2024/03/21-20:52:56.427391 304d2b000 Manual compaction at level-0 from '!items!85dJPVC2vJl9GBTq' @ 72057594037927935 : 1 .. '!items!vY5TpUxvsf9r3AaI' @ 0 : 0; will stop at (end)

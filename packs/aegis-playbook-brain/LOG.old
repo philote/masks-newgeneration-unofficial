@@ -1,3 +1,7 @@
-2024/03/21-16:04:58.908310 30bd72000 Log #322: 0 ops saved to Table #323 OK
-2024/03/21-16:04:58.908390 30bd72000 Archiving /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/aegis-playbook-brain/000322.log: OK
-2024/03/21-16:04:58.908808 30bd72000 **** Repaired leveldb /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/aegis-playbook-brain; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2024/03/21-20:52:16.711419 30af3f000 Recovering log #312
+2024/03/21-20:52:16.711852 30af3f000 Delete type=0 #312
+2024/03/21-20:52:16.711880 30af3f000 Delete type=3 #311
+2024/03/21-20:52:56.428770 304d2b000 Level-0 table #316: started
+2024/03/21-20:52:56.428783 304d2b000 Level-0 table #316: 0 bytes OK
+2024/03/21-20:52:56.429104 304d2b000 Delete type=0 #314
+2024/03/21-20:52:56.429645 304d2b000 Manual compaction at level-0 from '!items!2Qmk8fYPA87GJ2cB' @ 72057594037927935 : 1 .. '!items!mZ1KtsTyXbsYCWyz' @ 0 : 0; will stop at (end)

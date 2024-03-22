@@ -1,4 +1,7 @@
-2024/03/21-16:04:58.863076 30c571000 Log #324: 0 ops saved to Table #327 OK
-2024/03/21-16:04:58.863171 30c571000 Archiving /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/basic-playbook-janus/000324.log: OK
-2024/03/21-16:04:58.863251 30c571000 Table #326: 10 entries OK
-2024/03/21-16:04:58.863540 30c571000 **** Repaired leveldb /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/basic-playbook-janus; recovered 1 files; 13150 bytes. Some data may have been lost. ****
+2024/03/21-20:52:16.679339 30b73e000 Recovering log #354
+2024/03/21-20:52:16.679837 30b73e000 Delete type=3 #353
+2024/03/21-20:52:16.679885 30b73e000 Delete type=0 #354
+2024/03/21-20:52:56.425782 304d2b000 Level-0 table #358: started
+2024/03/21-20:52:56.425798 304d2b000 Level-0 table #358: 0 bytes OK
+2024/03/21-20:52:56.425971 304d2b000 Delete type=0 #356
+2024/03/21-20:52:56.426255 304d2b000 Manual compaction at level-0 from '!items!9rHkdpdEcFKHHfvS' @ 72057594037927935 : 1 .. '!items!ydbo4cvJD4HmydqF' @ 0 : 0; will stop at (end)

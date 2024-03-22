@@ -1,3 +1,7 @@
-2024/03/21-16:04:58.914230 30c571000 Log #322: 0 ops saved to Table #323 OK
-2024/03/21-16:04:58.914816 30c571000 Archiving /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/aegis-playbook-soldier/000322.log: OK
-2024/03/21-16:04:58.916120 30c571000 **** Repaired leveldb /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/aegis-playbook-soldier; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2024/03/21-20:52:16.713977 30b73e000 Recovering log #302
+2024/03/21-20:52:16.714352 30b73e000 Delete type=3 #301
+2024/03/21-20:52:16.714391 30b73e000 Delete type=0 #302
+2024/03/21-20:52:56.430030 304d2b000 Level-0 table #306: started
+2024/03/21-20:52:56.430051 304d2b000 Level-0 table #306: 0 bytes OK
+2024/03/21-20:52:56.430682 304d2b000 Delete type=0 #304
+2024/03/21-20:52:56.430878 304d2b000 Manual compaction at level-0 from '!items!148GpsSskloolq8C' @ 72057594037927935 : 1 .. '!items!gq9ZwbYOjKAAxdmm' @ 0 : 0; will stop at (end)

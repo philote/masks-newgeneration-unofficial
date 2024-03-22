@@ -1,3 +1,7 @@
-2024/03/21-16:04:58.904113 30b573000 Log #322: 0 ops saved to Table #323 OK
-2024/03/21-16:04:58.904216 30b573000 Archiving /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/hchc-playbooks-star/000322.log: OK
-2024/03/21-16:04:58.904581 30b573000 **** Repaired leveldb /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/hchc-playbooks-star; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2024/03/21-20:52:16.708345 30b73e000 Recovering log #302
+2024/03/21-20:52:16.708714 30b73e000 Delete type=3 #301
+2024/03/21-20:52:16.709219 30b73e000 Delete type=0 #302
+2024/03/21-20:52:56.428491 304d2b000 Level-0 table #306: started
+2024/03/21-20:52:56.428510 304d2b000 Level-0 table #306: 0 bytes OK
+2024/03/21-20:52:56.428731 304d2b000 Delete type=0 #304
+2024/03/21-20:52:56.429637 304d2b000 Manual compaction at level-0 from '!items!6bCZhQcfTKgPf4Az' @ 72057594037927935 : 1 .. '!items!xiAaGYXdxSKkfmDw' @ 0 : 0; will stop at (end)

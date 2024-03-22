@@ -1,4 +1,7 @@
-2024/03/21-16:04:58.854572 30b573000 Log #324: 0 ops saved to Table #327 OK
-2024/03/21-16:04:58.854863 30b573000 Archiving /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/basic-playbook-delinquent/000324.log: OK
-2024/03/21-16:04:58.854955 30b573000 Table #326: 9 entries OK
-2024/03/21-16:04:58.855399 30b573000 **** Repaired leveldb /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/basic-playbook-delinquent; recovered 1 files; 11605 bytes. Some data may have been lost. ****
+2024/03/21-20:52:16.674334 30b73e000 Recovering log #354
+2024/03/21-20:52:16.674777 30b73e000 Delete type=3 #353
+2024/03/21-20:52:16.674824 30b73e000 Delete type=0 #354
+2024/03/21-20:52:56.425465 304d2b000 Level-0 table #358: started
+2024/03/21-20:52:56.425479 304d2b000 Level-0 table #358: 0 bytes OK
+2024/03/21-20:52:56.425681 304d2b000 Delete type=0 #356
+2024/03/21-20:52:56.426244 304d2b000 Manual compaction at level-0 from '!items!7L7bDU8j0bnKoEAQ' @ 72057594037927935 : 1 .. '!items!uxNafPsvQ9QFYiG1' @ 0 : 0; will stop at (end)

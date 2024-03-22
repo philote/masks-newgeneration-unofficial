@@ -1,3 +1,7 @@
-2024/03/21-16:04:58.833457 30bd72000 Log #341: 0 ops saved to Table #342 OK
-2024/03/21-16:04:58.833566 30bd72000 Archiving /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/moves/000341.log: OK
-2024/03/21-16:04:58.833905 30bd72000 **** Repaired leveldb /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/moves; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2024/03/21-20:52:16.649488 30af3f000 Recovering log #321
+2024/03/21-20:52:16.650238 30af3f000 Delete type=0 #321
+2024/03/21-20:52:16.650505 30af3f000 Delete type=3 #320
+2024/03/21-20:52:56.420339 304d2b000 Level-0 table #325: started
+2024/03/21-20:52:56.420355 304d2b000 Level-0 table #325: 0 bytes OK
+2024/03/21-20:52:56.420506 304d2b000 Delete type=0 #323
+2024/03/21-20:52:56.423883 304d2b000 Manual compaction at level-0 from '!folders!AOEag4Ri4UFgRMu2' @ 72057594037927935 : 1 .. '!items!x3abYvFtsiDsMNQa' @ 0 : 0; will stop at (end)

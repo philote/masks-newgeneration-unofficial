@@ -1,3 +1,7 @@
-2024/03/21-16:04:58.922650 30ad74000 Log #322: 0 ops saved to Table #323 OK
-2024/03/21-16:04:58.922735 30ad74000 Archiving /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/unbound-playbook-harbinger/000322.log: OK
-2024/03/21-16:04:58.923117 30ad74000 **** Repaired leveldb /Users/joseph/Projects/FoundryVTT/Data/modules/masks-newgeneration-unofficial/packs/unbound-playbook-harbinger; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2024/03/21-20:52:16.715981 30af3f000 Recovering log #302
+2024/03/21-20:52:16.716343 30af3f000 Delete type=3 #301
+2024/03/21-20:52:16.716384 30af3f000 Delete type=0 #302
+2024/03/21-20:52:56.429147 304d2b000 Level-0 table #306: started
+2024/03/21-20:52:56.429163 304d2b000 Level-0 table #306: 0 bytes OK
+2024/03/21-20:52:56.429362 304d2b000 Delete type=0 #304
+2024/03/21-20:52:56.429655 304d2b000 Manual compaction at level-0 from '!items!1I6S69JEkM6y2Qw2' @ 72057594037927935 : 1 .. '!items!yFAN6PpCiKocEJOM' @ 0 : 0; will stop at (end)
