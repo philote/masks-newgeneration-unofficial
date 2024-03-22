@@ -1,3 +1,7 @@
 2024/03/21-20:53:22.353568 30b73e000 Recovering log #356
 2024/03/21-20:53:22.353922 30b73e000 Delete type=3 #354
 2024/03/21-20:53:22.353969 30b73e000 Delete type=0 #356
+2024/03/21-21:45:40.570298 304d2b000 Level-0 table #361: started
+2024/03/21-21:45:40.570436 304d2b000 Level-0 table #361: 0 bytes OK
+2024/03/21-21:45:40.570586 304d2b000 Delete type=0 #359
+2024/03/21-21:45:40.571524 304d2b000 Manual compaction at level-0 from '!items!0MaiOXSttsCtWTiu' @ 72057594037927935 : 1 .. '!items!nxCpUP97kfuDtHuK' @ 0 : 0; will stop at (end)
