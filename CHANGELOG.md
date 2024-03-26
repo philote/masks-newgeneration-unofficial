@@ -1,3 +1,7 @@
+#1.5.2
+- updated all the playbooks with new layouts and info
+- NPC sheet clean up
+
 #1.5.1
 - character sheet Layout updates
 
