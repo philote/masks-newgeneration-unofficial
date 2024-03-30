@@ -14,8 +14,6 @@ This revised version of the module is based on works from multiple people:
 - A sheet module created by Geekswordsman (https://gitlab.com/geekswordsman/masks-newgeneration-sheets)
 The current version is a merging of these modules' features, cleanup of the moves and bringing the module up to date with Foundry VTT versions and PbtA system versions.
 
-This module is a prerequisite for Masks: A New Generation Sheets (https://foundryvtt.com/packages/masks-newgeneration-sheets). This module can be used without that one, but it is a great module and is highly recommended.
-
 ![A screenshot of the Masks character sheet in light mode](images/screenshots/character-sheet_light.webp)
 
 ![A screenshot of the Masks character sheet in dark mode](images/screenshots/character-sheet_dark.webp)
