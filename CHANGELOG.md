@@ -1,3 +1,6 @@
+#1.5.3
+- Update the moves to not use the "choices" UI in the PbtA system as it doesnt work well for Masks
+
 #1.5.2
 - updated all the playbooks with new layouts and info
 - NPC sheet clean up

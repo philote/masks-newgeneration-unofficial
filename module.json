@@ -347,7 +347,7 @@
         "manifest": "https://asacolips-artifacts.s3.amazonaws.com/pbta/0.6.0/system.json",
         "compatibility": {
           "minimum": "0.8.0",
-          "verified": "0.9.3"
+          "verified": "0.9.4"
         }
       }
     ]
