@@ -1,5 +1,11 @@
 ![Cover](images/cover.webp)
 
+![](https://img.shields.io/badge/Foundry-v11-informational)
+<!--- Downloads @ Latest Badge -->
+![Latest Release Download Count](https://img.shields.io/github/downloads/philote/masks-newgeneration-unofficial/latest/module.zip)
+<!--- Forge Bazaar Install % Badge -->
+![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Fmasks-newgeneration-unofficial&colorB=4aa94a)
+
 This module contains moves for the game Masks: A New Generation for use with the Foundry VTT generic PbtA System (https://gitlab.com/asacolips-projects/foundry-mods/pbta). You can install this system with this link: https://gitlab.com/asacolips-projects/foundry-mods/pbta/-/jobs/artifacts/beta/raw/system.json?job=build-beta
 
 The content from this module is from **Masks: A New Generation** from **Magpie Games**. You can get the PDF at: https://magpiegames.com/masks/
