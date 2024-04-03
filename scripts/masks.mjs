@@ -146,7 +146,7 @@ function onInfluenceAction(actor, html) {
         const clickedElement = $(event.currentTarget);
         const action = clickedElement.data().influenceAction;
         let influenceID = clickedElement.parents("[data-influence-id]").data().influenceId;
-        let influences = actor.getFlag("masks-newgeneration-unofficial", "influences");
+        let influences = actor.getFlag("masks-newgeneration-unofficial", "influences") ?? [];
         let influence = influences.find(i => i.id === influenceID);
 
         if (influence.locked && /lock|roll/.exec(action) === null) {
