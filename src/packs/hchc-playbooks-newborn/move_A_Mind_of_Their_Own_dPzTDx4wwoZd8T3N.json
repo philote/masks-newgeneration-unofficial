@@ -1,0 +1,59 @@
+{
+  "name": "A Mind of Their Own",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/dna1-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_omlrv0qfo3",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>Your powers evolve and mutate. When you are facing an obstacle or threat that your powers would not be able to deal with, you can mark a condition to gain brand new abilities adapted to the situation. You lose these new powers once the danger is gone.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Newborn",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699857899394,
+    "modifiedTime": 1711825967103,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "dPzTDx4wwoZd8T3N",
+  "sort": 700000,
+  "_key": "!items!dPzTDx4wwoZd8T3N"
+}

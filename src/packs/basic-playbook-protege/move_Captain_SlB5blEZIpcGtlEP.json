@@ -1,0 +1,60 @@
+{
+  "name": "Captain",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/captain-hat-profile-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_t8rvi2xbimm",
+      "path": "Basic Playbooks#/CF_SEP/The Protege",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you @UUID[Compendium.masks-newgeneration-unofficial.moves.Item.x3abYvFtsiDsMNQa]{Enter Battle as a Team}, add an extra Team to the pool and carry +1 forward if you are the leader.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Protégé",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1711773993724,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "SlB5blEZIpcGtlEP",
+  "sort": 900000,
+  "_key": "!items!SlB5blEZIpcGtlEP"
+}

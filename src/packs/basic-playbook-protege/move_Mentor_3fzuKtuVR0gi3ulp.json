@@ -1,0 +1,60 @@
+{
+  "name": "Mentor",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/bat-mask-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_t8rvi2xbimm",
+      "path": "Basic Playbooks#/CF_SEP/The Protege",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>You have a mentor, someone who&rsquo;s taught you, trained you, given you aid, or raised you up. Someone who might have confined you a bit too rigidly to a single path. Which Label do they embody, and which do they deny? (pick one each)</p>\n<table style=\"width: 98.7952%;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"text-align: center; width: 22.3244%;\"><strong>Embodies</strong></td>\n<td style=\"width: 11.6631%; text-align: center;\">Savior</td>\n<td style=\"width: 15.1296%; text-align: center;\">Danger</td>\n<td style=\"width: 11.579%; text-align: center;\">Freak</td>\n<td style=\"width: 17.9878%; text-align: center;\">Superior</td>\n<td style=\"width: 19.4868%; text-align: center;\">Mundane</td>\n</tr>\n<tr>\n<td style=\"text-align: center; width: 22.3244%;\"><strong>Denies</strong></td>\n<td style=\"width: 11.6631%; text-align: center;\">Savior</td>\n<td style=\"width: 15.1296%; text-align: center;\">Danger</td>\n<td style=\"width: 11.579%; text-align: center;\">Freak</td>\n<td style=\"width: 17.9878%; text-align: center;\">Superior</td>\n<td style=\"width: 19.4868%; text-align: center;\">Mundane</td>\n</tr>\n</tbody>\n</table>\n<p>Choose up to three resources that your mentor gave you and the team:</p>\n<p>A hidden base, a vehicle, a supercomputer, communicators, surveillance equipment, false identities, badges of authority, a chem lab, a med lab, a teleportal, a weapon of last resort, security systems, simple robots</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Protégé",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1711773993724,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "3fzuKtuVR0gi3ulp",
+  "sort": 200000,
+  "_key": "!items!3fzuKtuVR0gi3ulp"
+}

@@ -1,0 +1,256 @@
+{
+  "name": "Rules",
+  "folder": null,
+  "flags": {
+    "world": {
+      "displayLocation": "displayScene"
+    },
+    "core": {}
+  },
+  "pages": [
+    {
+      "name": "Condition Moves",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>These are GM moves for villains to make immediately after they’ve marked a condition, and any time you’d make a GM move after that.</p><p> </p><h2>AFRAID</h2><ul><li>Hide out of harm’s way</li><li>Flee from danger or difficulty</li><li>Lash out without thought at a threat</li><li>Plead for mercy</li><li>Throw up blocks and walls</li></ul><p>The Afraid condition moves are about blocking and fleeing, about escaping from danger, with the exception of lash out without thought at a threat. Mark Afraid for a villain if you want them to try to escape or protect their interests.</p><p> </p><h2>ANGRY</h2><ul><li>Vent through unthinking violence</li><li>Break the environment</li><li>Shut down conversation</li><li>Lash out at any vulnerability</li><li>Escalate the situation dangerously</li></ul><p>The Angry condition moves are about intense overreaction and amplifying the situation. Mark Angry for a villain if you want them to fight and struggle dangerously.</p><p> </p><h2>GUILTY</h2><ul><li>Seek forgiveness</li><li>Sacrifice anything or everything for redemption • Turn to the unthinkable</li><li>Implicate others in guilt</li><li>Reveal the nature of their drive The Guilty condition moves are about making the villain more relatable and human.</li></ul><p>They let you try to redeem a villain or to show an inner pain that pushes them to drastic action. Mark Guilty for a villain if they understand the terrible nature of the things they do, but aren’t sure what else they can do.</p><p> </p><h2>HOPELESS</h2><ul><li>Give up without a fight</li><li>Burn down the world around them • Seek any light in the dark</li><li>Undermine others’ beliefs</li><li>Veer toward drastic and terrible action The Hopeless condition moves are about escalation or de-escalation.</li></ul><p>They let you make the villain give up, or take an outstretched hero’s hand...or they let you make the villain escalate in terrible ways. Mark Hopeless for a villain if they’re losing badly, and you want to either ratchet the overall tension or bring things to a close.</p><p> </p><h2>INSECURE</h2><ul><li>Double down on broken plans or ideas</li><li>Follow the lead of someone else</li><li>Doubt and question their own allies and plans</li><li>Admit wrongful action</li><li>Recede into the background</li></ul><p>The Insecure condition moves are about social interaction. They let you make a villain talk, explain, or interact on a level other than conflict and violence. Mark Insecure for a villain if they doubt themselves and those around them, and you’re interested in having a different kind of interaction.</p>"
+      },
+      "_id": "NDN7CTMmEK7t35vQ",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": null,
+        "modifiedTime": 1700081506850,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!XSOVjbAHQOvTKe67.NDN7CTMmEK7t35vQ"
+    },
+    {
+      "name": "Conditions",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Conditions are negative emotional states that beset the characters in your story. Having a condition marked means that your character is experiencing that emotion—anger, or fear, or insecurity, or whatever. You’re always in charge of how your character is played; you can choose to play your character as calm and dispassionate, even with Angry marked. But that means you’re holding your anger inside, and it still impacts your actions as the story progresses.</p><p> </p><h2>EFFECTS AND MARKING CONDITIONS</h2><p>Conditions impact and interfere with your ability to take action. Each condition gives you an ongoing -2 to certain moves. Remember that the lowest modifier you can roll a move with is -3.</p><p>When a move tells you to mark a condition, unless it says otherwise, mark any condition you choose. Sometimes the GM tells you a specific condition to mark, especially after a hard move. If you need to mark a condition and all conditions are already marked, you’re taken out. You lose consciousness or flee the scene—one way or another, you cannot continue there.</p><p>The conditions and their associated penalties are:</p><ul><li>If you’re Angry, take -2 to comfort or support someone or pierce the mask.</li><li>If you’re Afraid, take -2 to directly engage.</li><li>If you’re Guilty, take -2 to provoke someone or assess the situation.</li><li>If you’re Hopeless, take -2 to unleash your powers.</li><li>If you’re Insecure, take -2 to defend or reject others’ Influence.</li></ul><p> </p><h2>CLEARING CONDITIONS</h2><p>Some of the basic moves help you clear conditions—comfort or support and defend, in particular. But the most straightforward way to clear conditions is to take a particular action to relieve that emotional state. The action varies depending on the specific condition.</p><p>At the end of any scene in which you take the corresponding action, clear that condition.</p><ul><li>To clear Angry, hurt someone or break something important.</li><li>To clear Afraid, run from something difficult.</li><li>To clear Guilty, make a sacrifice to absolve your guilt.</li><li>To clear Hopeless, fling yourself into easy relief.</li><li>To clear Insecure, take foolhardy action without talking to your team.</li></ul><p>Clearing Angry requires you to vent your anger, either on someone or on something. It’s not enough to just punch a bag—you have to take your anger out on someone, or something important. What’s important is different for every character, but the GM should ask if and why an object is important when the Angry character breaks it. Hurting someone doesn’t necessarily mean hurting them physically—yelling at them and hurting their feelings would do the trick, too.</p><p>Clearing Afraid requires you to avoid or flee from a complicated, dangerous, or problematic situation. That could mean anything from running away from a villain to fleeing the room when someone wants to have a conversation about your recent actions. The key is avoidance—instead of confronting something, you’re running from it.</p><p>Clearing Guilty requires you to pay some cost on behalf of others, those you feel you’ve wronged or let down. It doesn’t require them to actually absolve you of your guilt—just so long as you pay a price in an attempt to redeem yourself. This might be anything from standing alone against a dangerous villain so your teammates can escape to agreeing to follow the older heroes’ rules even when it’s easier not to.</p><p>Clearing Hopeless requires you to seek the easiest and quickest way to relieve your feelings. Most likely, that means making stupid decisions in pursuit of stupid fun. It could be anything from finding some cheap booze and getting drunk to making out with the wrong person.</p><p>Clearing Insecure means following your worst, most impulsive instincts without consulting anybody first. You feel doubtful of your own abilities, so you’re proving yourself by following your own plan without talking to anyone first. That could be anything from deciding to attack the bad guy while the rest of your team waits in stealth to agreeing to give up the crucial component for the death ray in exchange for escaping right now, all without anyone else’s input.</p><p>Remember that even if you take the action, you only clear the condition at the end of the scene. You can clear multiple conditions in one scene, but you continue to be affected by the penalty for the entirety of the scene.</p><p> </p><h2>LABEL SHIFTING AND CONDITIONS</h2><p>Shifting a Label means that your view of yourself is changing. You see yourself more as the Label you shift up, less as the Label you shift down. If you ever need to shift a Label and can’t (because the Label is at +3 and would shift up, or is at -2 and would shift down), you must mark a condition, GM’s choice. The entire Label shift doesn’t occur—you shift no Label either up or down.</p><blockquote><p>Huma’s dad is actually praising him, telling him that he’s a great hero, the savior the city needs—but Huma’s Savior is already at +3. If Huma accepts his dad’s words, then his Savior would shift up, but it can’t. Instead, Huma marks a condition—I tell Rich to mark Insecure, because of all the pressure his dad is putting on him.</p></blockquote><p> </p><p> </p>"
+      },
+      "_id": "BTyfwqfEGZY769m6",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.3ibhK1eQCCb1hV91.JournalEntryPage.BTyfwqfEGZY769m6"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699856599293,
+        "modifiedTime": 1700081519612,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!XSOVjbAHQOvTKe67.BTyfwqfEGZY769m6"
+    },
+    {
+      "name": "Moment of Truth",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>You don’t have any decisions to make about your playbook’s Moment of Truth, but it’s good to familiarize yourself with it early. Your Moment of Truth is a script for a special instant when you get to seize control of the game’s conversation. Each playbook’s is a bit different, and gives you an idea for the kinds of thing you’re allowed to say when you trigger your Moment of Truth. You’re not mind-controlling anybody, so you probably can’t say what the other PCs or NPCs choose to do—but you can say largely everything else, including how you defeat them or how you change the world around you. It’s a moment when the spotlight’s on your character, and we’re all interested in seeing them be awesome—which means you get to say what happens in a much more direct fashion than at any other time in the game.</p><p>You can’t trigger your Moment of Truth until you’ve unlocked it through advancement (page 115). Then, you can trigger it whenever you want, and during that scene you have full control of describing what your character does, for as long as you remain within your playbook’s script. After your Moment of Truth is over, you permanently lock one of your Labels—it will never change again (page 118).</p><p>Your Moment of Truth tells you a lot about the key, critical moment for your playbook—what it looks like when everything comes to a head, and your character shows off the fullest extent of what they can do.</p><p> </p><blockquote><p>Rich briefly looks at his Moment of Truth. It’s about coming fully into his powers and upholding the full weight of his legacy, so Rich gets a clear notion that Huma’s story will be about the pressure and burden of that name.</p></blockquote><p> </p><p> </p>"
+      },
+      "_id": "aIcOddfDrb7LKgey",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.k46JHfSXucGraTGs.JournalEntryPage.aIcOddfDrb7LKgey"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699856606785,
+        "modifiedTime": 1700081529179,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!XSOVjbAHQOvTKe67.aIcOddfDrb7LKgey"
+    },
+    {
+      "name": "Potential",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Every time you roll a miss on any move, you mark potential—your character is growing fully into their self and what they can do. Once you’ve marked five potential, you can take one of your advances, checking that option off the list. The advancement list is divided into two sections.</p><p>You can only take advances from the lower section once you’ve taken five from the top section. For more on advancement, see THE FUTURE page 113.</p>"
+      },
+      "_id": "mCCErZLBlkb99KMX",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.ml5iVphKqd1OeBAB.JournalEntryPage.mCCErZLBlkb99KMX"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699856613635,
+        "modifiedTime": 1700081540411,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!XSOVjbAHQOvTKe67.mCCErZLBlkb99KMX"
+    },
+    {
+      "name": "Team Moves",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Team is a resource that the team of young superheroes can use to help each other out. It represents their unity, their connection, and their coordination, but it’s pretty intangible—a squad of superheroes with a lot of Team doesn’t look different, but they’re much more prepared to work together!</p><p> </p><h2>USING TEAM</h2><p>Anyone on the team can spend a Team out of the pool to give a teammate +1 on a move, after the roll. To do this, the spender has to be able to actually help—if you’re in a completely different place from your teammate, then you can’t spend Team to help, unless it makes sense in the fiction (a telepathic connection, maybe).</p><p>Multiple teammates can spend Team from the pool to help on the same roll—even low rolls can be turned into hits when the whole group pitches in and there’s enough Team in the pool. But each teammate can only spend one Team out of the pool for any single roll, and they still have to be able to actually help in the fiction.</p><blockquote><p>Toro charges at Blood Opal, and the two start fighting hand to hand, Blood Opal striking with her sword and Toro punching with her fists. Marissa rolls for Toro to directly engage a threat, and gets 5 total—a miss.</p><p>“I want to help,” says Grace. “I summon up a brief shadow construct, just something to grab her ankle and throw her off balance.”</p><p>“I’m not sure you can help,” I say. “You’re stuck on the other end of the street fighting against Aquaria, aren’t you? You’ve got your hands full.”</p><p>“What about me?” says Mark. “Sureshot can fire an arrow into the conflict so Blood Opal has to deflect it at just the right moment.”</p><p>“Yeah, that’s great! You were just firing arrows from on top of the nearby building, you can definitely help like that. Spend a Team out of the pool.”</p><p>That raises Marissa’s roll to a 6. But it’s still a miss.</p><p>“Am I there yet? Have I arrived?” asks Sarah. “I’ve been flying there as fast as I can.”</p><p>“Oh yeah, you’re there now.”</p><p>“Awesome! I fly straight at Blood Opal from the opposite direction of Sureshot’s arrow. This’ll help keep her off balance so Toro can get that perfect hit.” “Excellent! Spend another Team out of the pool, Sarah.” Now Marissa’s roll is 7—a hit!</p></blockquote><p>NPCs who are part of the team, whether temporarily or permanently, can also help. Players can spend Team from the pool on behalf of those NPCs. The players still have to spend one Team per NPC who helps, and the NPCs still have to be fictionally capable of helping. If the GM thinks the NPC wouldn’t help, then they won’t.</p><p> </p><h2>SPENDING TEAM SELFISHLY</h2><p>PC team members can also spend Team to act selfishly.</p><p>When you act selfishly, say how your actions ignore or insult your teammates, remove one Team from the pool, and shift one Label up and one Label down, your choice. You can use this option after rolling to alter the Label you’re rolling with.</p><p>Because you can act selfishly after you roll, this can boost a miss up to a hit, or a partial hit up to a full hit, by changing the Label you rolled with. All you have to do is spend the Team from the pool and describe your character doing something that ignores or insults your teammates.</p><p>Generally, your teammates can determine whether they feel ignored or insulted by the selfish action, but the GM can push on it if it seems appropriate.</p><p>Acting selfishly may save you when you can’t be helped by anybody else, but it has a cost you can’t avoid.</p><blockquote><p>Vertex is unleashing his powers to create illusions, to try to distract Arcknife from attacking him. He’s on his own, too; no teammates around to help. He rolls, and he gets a 6...not enough for a hit.</p><p>“Crud! And no one can help?” Jack asks.</p><p>“Nope. What do you do?”</p><p>“Y’know what? I’m going to make the illusions look exactly like my teammates.</p><p>I’m going to have them taunt him, so he’ll chase after them, and then once he sees the real ones, he’ll leave me alone,” says Jack. “I’m acting selfishly, spending a Team out of the pool to shift my Freak up and my Savior down, so I get that extra +1 I need for a hit.”</p><p>“What do you think? Is that selfish enough? Do you feel insulted or ignored?” I ask the other teammates.</p><p>“Definitely,” says Marissa. “You jerk.”</p><p>I have Jack spend the Team and shift his Labels.</p></blockquote>"
+      },
+      "_id": "5EfDgycCMVaLvpsf",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.dFlSmr1Ea1fJM7sE.JournalEntryPage.5EfDgycCMVaLvpsf"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699856620978,
+        "modifiedTime": 1700081552767,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!XSOVjbAHQOvTKe67.5EfDgycCMVaLvpsf"
+    },
+    {
+      "name": "The Labels",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>THE LABELS</p><p>In MASKS, you have five main stats called Labels. Each Label tells you how your character understands their self-image. These Labels shift and change over the course of play as your character’s own self-image changes, and those changes are often in direct reaction to how others see you. When you’re a young hero, how you see yourself is determined just as much by others as it is by your own choices, for better or worse.</p><p>The five Labels are:</p><p> </p><h2>Danger:</h2><p>seeing yourself as threatening, strong, bloody-knuckled, and risky.</p><p>Other people see you as a danger when they think they should steer clear of you because you might bring them harm. You see yourself as a danger when you believe you can take down other dangerous threats, and when you think you yourself are a threat to other people.</p><p> </p><h2>Freak:</h2><p>seeing yourself as strange, unusual, unique, and powerful. Other</p><p>people see you as a freak when they think you’re odd, unlike them, something unnatural or outside of their understanding. You see yourself as a freak when you accept and own the things you can do that no one else can, and when you think you don’t belong with the people and the world around you.</p><p> </p><h2>Savior:</h2><p>seeing yourself as defending, guarding, protecting, and stalwart.</p><p>Other people see you as a savior when they think of you as noble or selfsacrificing, or a bit overbearing and moralizing. You see yourself as a savior</p><p>when you think of yourself as a martyr, someone who gladly sacrifices to protect and defend others.</p><p> </p><h2>Superior:</h2><p>seeing yourself as smart, capable, crafty, and quick. Other people see you as superior when they think you’re the smartest person in the room, an arrogant and egotistical jerk. You see yourself as superior when you think you’re cleverer than everyone else, and when you know exactly what to say to make the people around you do what you want.</p><p> </p><h2>Mundane:</h2><p>seeing yourself as normal, human, empathetic, and</p><p>understanding. Other people see you as mundane when they think of you as all too normal and uninteresting, but also comprehending and sympathetic.</p><p>You see yourself as mundane when you think you’re regular, just a person, not special, and focused on normal human things like feelings and emotions.</p>"
+      },
+      "_id": "WWRd7iOXdqrReKHB",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.7yIvBN0oMqfYtKPd.JournalEntryPage.WWRd7iOXdqrReKHB"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699856627334,
+        "modifiedTime": 1700081565130,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!XSOVjbAHQOvTKe67.WWRd7iOXdqrReKHB"
+    }
+  ],
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.7.2",
+    "coreVersion": "11.315",
+    "createdTime": 1699855336910,
+    "modifiedTime": 1700081565130,
+    "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+  },
+  "_id": "XSOVjbAHQOvTKe67",
+  "sort": 200000,
+  "_key": "!journal!XSOVjbAHQOvTKe67"
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Pierce the Mask",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/domino-mask-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": "AOEag4Ri4UFgRMu2",
+  "sort": 112500,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.masks-newgeneration-unofficial.moves-basic.hhjGUZLIalJt7B9z"
+    },
+    "cf": {
+      "id": "temp_sjbmyuxuqd",
+      "path": "Moves#/CF_SEP/Moves Basic",
+      "color": "#000000"
+    }
+  },
+  "_id": "BdZxrM4H0P7EWM04",
+  "system": {
+    "name": "",
+    "description": "<p>When you <strong>pierce someone&rsquo;s mask</strong> to see the person beneath, roll + Mundane.</p>",
+    "requiresMove": "",
+    "moveType": "basic",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>Mark Potential and the GM makes a move.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>Ask one.</p>\n<ul>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.lpdO5NVkPWpxsMnN]{What are you really planning?}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.xLBI83n9pJ0JM2Z3]{What do you want me to do?}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.xaVijSiMeSZ2PxMQ]{What do you intend to do?}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.UPfmLu0LY5nkdyMm]{How could I get your character to ___?}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.NbyYOcjZ18jxuVez]{How could I gain Influence over you?}</h4>\n</li>\n</ul>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>Ask three.</p>\n<ul>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.lpdO5NVkPWpxsMnN]{What are you really planning?}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.xLBI83n9pJ0JM2Z3]{What do you want me to do?}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.xaVijSiMeSZ2PxMQ]{What do you intend to do?}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.UPfmLu0LY5nkdyMm]{How could I get your character to ___?}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.NbyYOcjZ18jxuVez]{How could I gain Influence over you?}</h4>\n</li>\n</ul>"
+      }
+    },
+    "uses": 0,
+    "playbook": "",
+    "rollType": "mundane",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "RZXbWcV7kggw6gJH": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1711601461729,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_key": "!items!BdZxrM4H0P7EWM04"
+}

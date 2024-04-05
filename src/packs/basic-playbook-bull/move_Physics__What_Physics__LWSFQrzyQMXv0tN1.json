@@ -1,0 +1,60 @@
+{
+  "name": "Physics? What Physics?",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/charging-bull.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_oc50ea2m2hk",
+      "path": "Basic Playbooks#/CF_SEP/The Bull",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you @UUID[Compendium.masks-newgeneration-unofficial.moves.Item.6rnOFrthWetWrS7c]{Unleash Your Powers} to barrel through an insurmountable barrier, roll + Danger instead of + Freak.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>Mark Potential and the GM makes a move.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>You do it. Mark a condition or the GM will tell you how the effect is&nbsp; <a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.LGWniZDyhHCEZxtg\" data-id=\"AGsdZxeDIixx5ulh\" data-pack=\"world\" data-type=\"JournalEntryPage\" data-tooltip=\"Creating an opportunity for your allies\">Unstable</a> or <a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.q24rfVSZIs8xQwya\" data-id=\"AGsdZxeDIixx5ulh\" data-pack=\"world\" data-type=\"JournalEntryPage\" data-tooltip=\"Creating an opportunity for your allies\">Temporary</a>.</p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>You do it.</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "The Bull",
+    "rollType": "danger",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1711772842740,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "LWSFQrzyQMXv0tN1",
+  "sort": 600000,
+  "_key": "!items!LWSFQrzyQMXv0tN1"
+}

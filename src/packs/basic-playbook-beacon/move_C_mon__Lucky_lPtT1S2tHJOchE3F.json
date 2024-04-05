@@ -1,0 +1,60 @@
+{
+  "name": "C’mon, Lucky",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/sitting-dog-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_hz2f4ifmmm",
+      "path": "Basic Playbooks#/CF_SEP/The Beacon",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>You have a pet of some kind, a smaller companion that helps you out. Detail it.</p>\n<p>Choose three basic moves and tell the GM how it helps you with those moves. Whenever your pet could help you, take +1 to that move. If your pet ever gets hurt, treat it as taking a powerful blow.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Beacon",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1711772471771,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "lPtT1S2tHJOchE3F",
+  "sort": 900000,
+  "_key": "!items!lPtT1S2tHJOchE3F"
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Not From Around Here",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/misdirection-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_omlrv0qfo3",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you act clueless, goofy, or confused to get out of a sticky mundane situation, roll + Freak.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>No one is fooled, and you&rsquo;ve put yourself in their crosshairs.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>You create an opportunity, a distraction, or a plausible excuse. You also feel all the weight of playing the clown and of the people staring at you. The GM shifts one of your Labels up and one down.</p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>You create an opportunity, a distraction, or a plausible excuse.</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "The Newborn",
+    "rollType": "freak",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699857899394,
+    "modifiedTime": 1711825967103,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "RuUIulSPL9gnVq5m",
+  "sort": 600000,
+  "_key": "!items!RuUIulSPL9gnVq5m"
+}

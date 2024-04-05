@@ -1,0 +1,59 @@
+{
+  "name": "A Blank Slate",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/android-mask-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_omlrv0qfo3",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>You were created with a basic understanding of the world. When you learn something that helps you make sense of the world, write it down as a lesson. Fill in two lessons when you create your character; fill in the other two when you&rsquo;ve learned those lessons during play.</p>\n<ul>\n<li>I am:</li>\n<li>A superhero should:</li>\n<li>Always:</li>\n<li>Never:</li>\n</ul>\n<p>When you <strong>embody one of your lessons</strong>, shift one Label up and one Label down, your choice. If you cause a misunderstanding, collateral damage, or unintended consequences in the process, mark potential. When you r<strong>eject one of your lessons</strong>, reject its Influence as if it were an NPC. If you choose to have it lose Influence over you, erase that lesson and write a new one in its stead.</p>\n<p>When you <strong>approach your creator or caretakers with a problem</strong>, tell them what obstacle you face or what you need to achieve, and they will offer you something you need. The GM chooses one:</p>\n<ul>\n<li>Secret information</li>\n<li>A way to temporarily boost or expand your powers</li>\n<li>Access to instruments, weapons, or resources</li>\n<li>Official and explicit backing</li>\n</ul>\n<p>If you accept their help, they rewrite one of your lessons for you.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Newborn",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699857899394,
+    "modifiedTime": 1711825967103,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "BE7s7N6COZdUfRxx",
+  "sort": 400000,
+  "_key": "!items!BE7s7N6COZdUfRxx"
+}

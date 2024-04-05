@@ -1,0 +1,55 @@
+{
+  "_id": "mFueSwIqf3EeyQ3W",
+  "name": "Guilty",
+  "type": "npcMove",
+  "img": "icons/svg/mystery-man-black.svg",
+  "effects": [],
+  "folder": "jcmGVC97lkoxDyuc",
+  "sort": 300000,
+  "flags": {
+    "cf": {
+      "id": "temp_4re3qtzonmp",
+      "path": "Moves#/CF_SEP/Villain Condition Moves",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<ul>\n<li>Seek forgiveness</li>\n<li>Sacrifice anything or everything for redemption</li>\n<li>Turn to the unthinkable</li>\n<li>Implicate others in guilt</li>\n<li>Reveal the nature of their drive</li>\n</ul>\n<p>The Guilty condition moves are about making the villain more relatable and human. They let you try to redeem a villain or to show an inner pain that pushes them to drastic action. Mark Guilty for a villain if they understand the terrible nature of the things they do, but aren&rsquo;t sure what else they can do.</p>",
+    "requiresMove": "",
+    "moveType": "condition",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0
+  },
+  "ownership": {
+    "default": 0,
+    "RZXbWcV7kggw6gJH": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.7.2",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1700085113187,
+    "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+  },
+  "_key": "!items!mFueSwIqf3EeyQ3W"
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Persuade With Best Interests",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/convince-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": "EN72hQiVqSj583p1",
+  "sort": 150000,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.masks-newgeneration-unofficial.moves-adult.ervitpQkDVAsKkZy"
+    },
+    "cf": {
+      "id": "temp_4htx0v8rro6",
+      "path": "Moves#/CF_SEP/Moves Adult",
+      "color": "#000000"
+    }
+  },
+  "_id": "fU2JRZzV5WbQymDi",
+  "system": {
+    "name": "",
+    "description": "<p>When you <strong>persuade someone with their best interests</strong>, roll + Superior.</p>",
+    "requiresMove": "",
+    "moveType": "adult",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>Mark Potential and the GM makes a move.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p><strong>If they&rsquo;re an NPC</strong>,&nbsp;they need concrete assurance, right now.</p>\n<p><strong>If they&rsquo;re a PC</strong>, they can mark potential or shift their own Labels if they do what you want.</p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p><strong>If they&rsquo;re an NPC</strong>,&nbsp;they buy it and act accordingly.</p>\n<p><strong>If they&rsquo;re a PC</strong>, they can mark potential or shift their own Labels if they do what you want. Take Influence over them as well.</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "",
+    "rollType": "superior",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "RZXbWcV7kggw6gJH": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.7.2",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1700085040263,
+    "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+  },
+  "_key": "!items!fU2JRZzV5WbQymDi"
+}

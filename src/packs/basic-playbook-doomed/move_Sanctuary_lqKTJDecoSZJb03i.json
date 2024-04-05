@@ -1,0 +1,60 @@
+{
+  "name": "Sanctuary",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/temple-gate-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_9awprgpthnj",
+      "path": "Basic Playbooks#/CF_SEP/The Doomed",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>You have a place where you can rest, recover, and reflect upon your powers. Choose and underline three features of your sanctuary:</p>\n<blockquote>\n<p>An aide or assistant; locks and traps; a library of valuable tomes; a scattering of ancient relics; a teleportal; a containment system; a powerful computer; useful tools; a meditation space; a power battery; a power enhancement system; healing equipment; art, music, and food</p>\n</blockquote>\n<p>Choose and underline two downsides of your sanctuary:</p>\n<blockquote>\n<p>Difficult to access, draws dangerous attention, location known to many, easily damaged or tampered with, tied intricately to your doom</p>\n</blockquote>\n<p>When you call upon the resources of your sanctuary to solve a problem, say what you want to do. The GM will give you one to four conditions you must fulfill to complete your solution:</p>\n<ul>\n<li>First, you must _______________________</li>\n<li>You&rsquo;ll need help from ___________________</li>\n<li>You and your team will risk danger from ______</li>\n<li>The best you can do is a lesser version, unreliable and limited</li>\n<li>You&rsquo;ll need to mark one box on your doom track</li>\n<li>You&rsquo;ll have to obtain ___________________</li>\n</ul>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Doomed",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1711773343712,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "lqKTJDecoSZJb03i",
+  "sort": 700000,
+  "_key": "!items!lqKTJDecoSZJb03i"
+}

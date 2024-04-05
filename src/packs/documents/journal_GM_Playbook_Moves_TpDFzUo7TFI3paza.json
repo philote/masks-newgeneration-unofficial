@@ -1,0 +1,415 @@
+{
+  "name": "GM Playbook Moves",
+  "pages": [
+    {
+      "name": "GM Playbook Moves",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<h2>BEACON</h2><p> • Draw attention to their inadequacies </p><p> • Praise their best traits</p><p> • Make them pay for their audacity</p><p> • Compare them to the others</p><p> • Play to their drives</p><h2>BULL</h2><p>• Endanger their love</p><p> • Bolster their rival</p><p> • Reveal dark secrets of their past</p><p> • Attack with someone just like them</p><p> • Swarm with mundane forces</p><h2> DELINQUENT</h2><p> • Put them in chains</p><p> • Give or take an audience</p><p> • Give them conditional love</p><p> • Show them the line</p><p> • Offer a helping hand</p><h2> DOOMED</h2><p> • Mark their doom track</p><p> • Offer a chance to further their cause</p><p> • Remind them of what they could lose</p><p> • Push them to the brink</p><p> • Offer temporary relief with a cost</p><h2> JANUS</h2><p> • Bring their obligations to bear</p><p> • Endanger someone from either life</p><p> • Make their lives cross over</p><p> • Put more obligations on them</p><p> • Take away their mask</p><h2> LEGACY</h2><p> • Remind them of their traditions</p><p> • Compare them to the past</p><p> • Make them answer their family’s concerns</p><p> • Raise expectations on them</p><p> • Honor them</p><h2> NOVA</h2><p> • Remind them of past collateral damage</p><p> • Reveal a terrible truth of their powers</p><p> • Make their powers flare out of control</p><p> • Stoke their conditions</p><p> • Introduce threats only they can tackle</p><h2>OUTSIDER</h2><p>• Draw attention to their differences</p><p> • Make a request from home</p><p> • Introduce a monitor from home</p><p> • Accept and support them in their moments of weakness</p><p> • Provoke their beliefs and practices in tense situations</p><h2> PROTEGE</h2><p>• Convey their mistakes</p><p>• Bestow wisdom, wanted or unwanted</p><p>• Hold up a mirror to them</p><p>• Give them exactly what they need at a cost</p><p>• Endanger their mentor</p><h2>TRANSFORMED</h2><p>• Reject them</p><p>• Show how they are feared or hated</p><p>• Attack them with unthinking hordes</p><p>• Remind them of what they’ve lost</p><p>• See their true self</p><p> </p>",
+        "markdown": ""
+      },
+      "_id": "0gq2bec4dqb6o5q8",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 100000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3,
+        "Dqtz4V1KsRqBnD6q": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.sWhQALFCBAtsAmvH.JournalEntryPage.0gq2bec4dqb6o5q8"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855506421,
+        "modifiedTime": 1700081071515,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!TpDFzUo7TFI3paza.0gq2bec4dqb6o5q8"
+    },
+    {
+      "sort": 200000,
+      "name": "Beacon",
+      "type": "text",
+      "_id": "wMFKMHS3B8xp3VRU",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p> • Draw attention to their inadequacies </p><p> • Praise their best traits</p><p> • Make them pay for their audacity</p><p> • Compare them to the others</p><p> • Play to their drives</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1,
+        "Dqtz4V1KsRqBnD6q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1700081095421,
+        "modifiedTime": 1700081155039,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!TpDFzUo7TFI3paza.wMFKMHS3B8xp3VRU"
+    },
+    {
+      "sort": 300000,
+      "name": "Bull",
+      "type": "text",
+      "_id": "6PRNxQEg7FABKret",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>• Endanger their love</p><p> • Bolster their rival</p><p> • Reveal dark secrets of their past</p><p> • Attack with someone just like them</p><p> • Swarm with mundane forces</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1,
+        "Dqtz4V1KsRqBnD6q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1700081176124,
+        "modifiedTime": 1700081197337,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!TpDFzUo7TFI3paza.6PRNxQEg7FABKret"
+    },
+    {
+      "sort": 400000,
+      "name": "Delinquent",
+      "type": "text",
+      "_id": "EkZU3caFMs1eOTkH",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p> • Put them in chains</p><p> • Give or take an audience</p><p> • Give them conditional love</p><p> • Show them the line</p><p> • Offer a helping hand</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1,
+        "Dqtz4V1KsRqBnD6q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1700081213521,
+        "modifiedTime": 1700081230319,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!TpDFzUo7TFI3paza.EkZU3caFMs1eOTkH"
+    },
+    {
+      "sort": 500000,
+      "name": "Doomed",
+      "type": "text",
+      "_id": "jw8PKUCESmWz0ZJW",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p> • Mark their doom track</p><p> • Offer a chance to further their cause</p><p> • Remind them of what they could lose</p><p> • Push them to the brink</p><p> • Offer temporary relief with a cost</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1,
+        "Dqtz4V1KsRqBnD6q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1700081237842,
+        "modifiedTime": 1700081251136,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!TpDFzUo7TFI3paza.jw8PKUCESmWz0ZJW"
+    },
+    {
+      "sort": 600000,
+      "name": "Janus",
+      "type": "text",
+      "_id": "Cm5VkscDfIfSSSAQ",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p> • Bring their obligations to bear</p><p> • Endanger someone from either life</p><p> • Make their lives cross over</p><p> • Put more obligations on them</p><p> • Take away their mask</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1,
+        "Dqtz4V1KsRqBnD6q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1700081260729,
+        "modifiedTime": 1700081275547,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!TpDFzUo7TFI3paza.Cm5VkscDfIfSSSAQ"
+    },
+    {
+      "sort": 700000,
+      "name": "Legacy",
+      "type": "text",
+      "_id": "2eixVmiouEcXNT54",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p> • Remind them of their traditions</p><p> • Compare them to the past</p><p> • Make them answer their family’s concerns</p><p> • Raise expectations on them</p><p> • Honor them</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1,
+        "Dqtz4V1KsRqBnD6q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1700081291142,
+        "modifiedTime": 1700081304497,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!TpDFzUo7TFI3paza.2eixVmiouEcXNT54"
+    },
+    {
+      "sort": 800000,
+      "name": "Nova",
+      "type": "text",
+      "_id": "u3hHMbKVFmCvrJqi",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p> • Remind them of past collateral damage</p><p> • Reveal a terrible truth of their powers</p><p> • Make their powers flare out of control</p><p> • Stoke their conditions</p><p> • Introduce threats only they can tackle</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1,
+        "Dqtz4V1KsRqBnD6q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1700081310251,
+        "modifiedTime": 1700081328335,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!TpDFzUo7TFI3paza.u3hHMbKVFmCvrJqi"
+    },
+    {
+      "sort": 900000,
+      "name": "Outsider",
+      "type": "text",
+      "_id": "sOZLAeiAvrLqfdo9",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>• Draw attention to their differences</p><p> • Make a request from home</p><p> • Introduce a monitor from home</p><p> • Accept and support them in their moments of weakness</p><p> • Provoke their beliefs and practices in tense situations</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1,
+        "Dqtz4V1KsRqBnD6q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1700081338080,
+        "modifiedTime": 1700081349880,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!TpDFzUo7TFI3paza.sOZLAeiAvrLqfdo9"
+    },
+    {
+      "sort": 1000000,
+      "name": "Protege",
+      "type": "text",
+      "_id": "9TfiBC6dYfq7siBc",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>• Convey their mistakes</p><p>• Bestow wisdom, wanted or unwanted</p><p>• Hold up a mirror to them</p><p>• Give them exactly what they need at a cost</p><p>• Endanger their mentor</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1,
+        "Dqtz4V1KsRqBnD6q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1700081359511,
+        "modifiedTime": 1700081374097,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!TpDFzUo7TFI3paza.9TfiBC6dYfq7siBc"
+    },
+    {
+      "sort": 1100000,
+      "name": "Transformed",
+      "type": "text",
+      "_id": "tzWZu53kaWVd40GQ",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>• Reject them</p><p>• Show how they are feared or hated</p><p>• Attack them with unthinking hordes</p><p>• Remind them of what they’ve lost</p><p>• See their true self</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1,
+        "Dqtz4V1KsRqBnD6q": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1700081379905,
+        "modifiedTime": 1700081384656,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!TpDFzUo7TFI3paza.tzWZu53kaWVd40GQ"
+    }
+  ],
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "Dqtz4V1KsRqBnD6q": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.7.2",
+    "coreVersion": "11.315",
+    "createdTime": 1700081057517,
+    "modifiedTime": 1700081474902,
+    "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+  },
+  "_id": "TpDFzUo7TFI3paza",
+  "sort": 0,
+  "_key": "!journal!TpDFzUo7TFI3paza"
+}

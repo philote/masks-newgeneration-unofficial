@@ -1,0 +1,59 @@
+{
+  "name": "What's This Thing?",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/smartphone-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_hu7bezgqb6",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you ask for someone else&rsquo;s guidance on the modern world, they must tell you what they think you should do or how you should act. If you act that way, clear a condition and shift Mundane up and any other Label down. If you act that way and it goes poorly, mark potential.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Innocent",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699857899394,
+    "modifiedTime": 1711825754770,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "jiR574f9xlrXbeUT",
+  "sort": 700000,
+  "_key": "!items!jiR574f9xlrXbeUT"
+}

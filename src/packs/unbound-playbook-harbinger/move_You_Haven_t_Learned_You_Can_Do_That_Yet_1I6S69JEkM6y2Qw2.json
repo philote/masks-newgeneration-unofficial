@@ -1,0 +1,58 @@
+{
+  "name": "You Haven’t Learned You Can Do That Yet",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/time-trap-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_5kwcaz4a39d"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you tell a teammate about a new, never-before-performed trick that they&rsquo;ve never considered, spend a Team from the pool to allow them to <strong>unleash their powers</strong>, <strong>directly engage a threat</strong>, or <strong>defend someone</strong> using your Superior as if it was their Label. Any costs or complications from their move affect you, as well.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Harbinger",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699858426966,
+    "modifiedTime": 1711825190191,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "1I6S69JEkM6y2Qw2",
+  "sort": 100000,
+  "_key": "!items!1I6S69JEkM6y2Qw2"
+}

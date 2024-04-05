@@ -1,0 +1,62 @@
+{
+  "name": "Defend",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/shield-reflect-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": "AOEag4Ri4UFgRMu2",
+  "sort": 150000,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.masks-newgeneration-unofficial.moves-basic.Tf2WvNkBdNJt3QLV"
+    },
+    "cf": {
+      "id": "temp_sjbmyuxuqd",
+      "path": "Moves#/CF_SEP/Moves Basic",
+      "color": "#000000"
+    }
+  },
+  "_id": "sog3ZBzKUOxRDHWw",
+  "system": {
+    "name": "",
+    "description": "<p>When you <strong>defend someone or something</strong> from an immediate threat, roll + Savior.</p>",
+    "requiresMove": "",
+    "moveType": "basic",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>Mark Potential and the GM makes a move.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<h3>For NPC threats:</h3>\n<p>You <a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.4g7nxJy9tPVI1Zr4\" data-id=\"AGsdZxeDIixx5ulh\" data-pack=\"world\" data-type=\"JournalEntryPage\" data-tooltip=\"Keeping them safe\">Keep them safe</a> and choose one. But it costs you: expose yourself to danger or escalate the situation.</p>\n<ul>\n<li>Add a Team to the pool</li>\n<li>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.PzqlHqRhI7uRWAxR]</li>\n<li>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.UQp2JmzBob2lVP3C]{Clear a Condition}</li>\n</ul>\n<p>&nbsp;</p>\n<h3>For PC threats:</h3>\n<p>Give them -2 to their roll.</p>\n<p>You <a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.OM3f9fIRUZmDmQnp\" data-id=\"AGsdZxeDIixx5ulh\" data-pack=\"world\" data-type=\"JournalEntryPage\" data-tooltip=\"Expose yourself to cost, retribution, or judgment\">Expose yourself to cost, retribution, or judgment</a></p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<h3>For NPC threats:</h3>\n<p>You <a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.4g7nxJy9tPVI1Zr4\" data-id=\"AGsdZxeDIixx5ulh\" data-pack=\"world\" data-type=\"JournalEntryPage\" data-tooltip=\"Keeping them safe\">Keep them safe</a> and choose one.</p>\n<ul>\n<li>Add a Team to the pool</li>\n<li>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.PzqlHqRhI7uRWAxR]</li>\n<li>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.UQp2JmzBob2lVP3C]{Clear a Condition}</li>\n</ul>\n<p>&nbsp;</p>\n<h3>For PC threats:</h3>\n<p>Give them -2 to their roll.</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "",
+    "rollType": "savior",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "RZXbWcV7kggw6gJH": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1711601369870,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_key": "!items!sog3ZBzKUOxRDHWw"
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Cold and Cruel",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/cold-heart-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_lnctjfysar",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you shut someone down, roll + Superior.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>They gain Influence over you.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>You either each inflict a condition on the other, or both lose Influence over each other, your choice.</p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>You either inflict a condition on them, make them lose Influence over you, or take Influence over them, your choice.</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "The Star",
+    "rollType": "superior",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699857899394,
+    "modifiedTime": 1711826105889,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "ZlC6ZvpbLPngLxEc",
+  "sort": 500000,
+  "_key": "!items!ZlC6ZvpbLPngLxEc"
+}

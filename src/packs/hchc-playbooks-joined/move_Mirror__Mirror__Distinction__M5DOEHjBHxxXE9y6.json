@@ -1,0 +1,59 @@
+{
+  "name": "Mirror, Mirror (Distinction)",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/mirror-mirror-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_3o9fbk35ojh",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you <strong>pierce someone&rsquo;s mask</strong>, you can ask them &ldquo;What are you really feeling right now?&rdquo;, even on a miss. If you do, they can ask you the same question.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Joined",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699857899394,
+    "modifiedTime": 1711825794781,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "M5DOEHjBHxxXE9y6",
+  "sort": 400000,
+  "_key": "!items!M5DOEHjBHxxXE9y6"
+}

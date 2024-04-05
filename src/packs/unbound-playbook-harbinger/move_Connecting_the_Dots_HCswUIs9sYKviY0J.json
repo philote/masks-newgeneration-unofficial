@@ -1,0 +1,58 @@
+{
+  "name": "Connecting the Dots",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/mesh-network-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_5kwcaz4a39d"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>You&rsquo;re from the future, but your knowledge of the past is spotty, intermittent, confused, jumbled.</p>\n<p>You&rsquo;re doing your best to put together the clues and your broken memories, though, so you can figure out how this world and its people become the ones you know.</p>\n<p><strong>When you push yourself to remember the version of someone that exists in your future</strong>, mark a condition and roll + Memories. On a 7+, you connect who they are now to who they are in the future; choose the role that they fulfill in the future, and the GM will tell you about their future self. On a 10+, ask a follow-up question. On a 6-, they&rsquo;re not at all who you thought they would be; the GM will choose their role, or tell you that as far as you know, they don&rsquo;t exist in the future.</p>\n<hr>\n<p>Monster:&nbsp;</p>\n<p>Traitor:</p>\n<p>Corruptor:</p>\n<p>Martyr:</p>\n<p>Architect:&nbsp;</p>\n<p>Leader:&nbsp;</p>\n<hr>\n<p>Your Memories score starts at -1, and goes up by 1 (to a maximum of +3) for each name above.</p>\n<p><strong>When you write a name above</strong>, they gain Influence over you if they did not already have it.</p>\n<p><strong>At the start of each session or when time passes</strong>, roll + Savior to find out how your investigations into the timeline have been going. On a 7+, choose one figure noted above or one aspect of the future world you can remember. You&rsquo;ve found a lead to follow to learn more about how the present version of that figure or aspect became the future version. On a 10+, the lead is particularly strong; right now, you can ask the GM one question about the figure or aspect, and they will answer honestly. On a 6-, you&rsquo;re lost in the present; the GM will tell you how things are so different here, and shift your Labels according to how it makes you feel.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Harbinger",
+    "rollType": "prompt",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699858426966,
+    "modifiedTime": 1711825190191,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "HCswUIs9sYKviY0J",
+  "sort": 300000,
+  "_key": "!items!HCswUIs9sYKviY0J"
+}

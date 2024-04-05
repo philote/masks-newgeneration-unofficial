@@ -1,0 +1,58 @@
+{
+  "name": "All the Best Stuff",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/ray-gun-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_bi8fhu4arqf"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>&nbsp;You&rsquo;ve compiled access to caches of equipment and weaponry other supers have hidden in the city. When you access a cache, say whose cache it is. If it&rsquo;s a hero&rsquo;s, roll + Savior. If it&rsquo;s a villain&rsquo;s, roll + Danger.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>You tripped an alarm and they&rsquo;re coming; prepare to explain yourself.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>You find a tool or intel useful to your situation; the GM will detail. You leave evidence that you&rsquo;ve been here.</p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>You find a tool or intel useful to your situation; the GM will detail.</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "The Scion",
+    "rollType": "prompt",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699858426966,
+    "modifiedTime": 1711825340633,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "lAPeonZjgWpNThTz",
+  "sort": 900000,
+  "_key": "!items!lAPeonZjgWpNThTz"
+}

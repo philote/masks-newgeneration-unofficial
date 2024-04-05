@@ -1,0 +1,58 @@
+{
+  "name": "Team Move - Share a Triumphant Celebration",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_0gtw5ufxxrhn"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you<strong> share a triumphant celebration with someone</strong>, ask them what they admire about you. The GM will shift one of your Labels up and one down based on what they say.</p>",
+    "requiresMove": "",
+    "moveType": "team",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Nomad",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699858426966,
+    "modifiedTime": 1711825271600,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "QFonblTmQ1HvcXsM",
+  "sort": 400000,
+  "_key": "!items!QFonblTmQ1HvcXsM"
+}

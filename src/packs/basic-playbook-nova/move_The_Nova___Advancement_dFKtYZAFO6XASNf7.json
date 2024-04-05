@@ -1,0 +1,60 @@
+{
+  "name": "The Nova - Advancement",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/upgrade-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_f8mhy5sjrn9",
+      "path": "Basic Playbooks#/CF_SEP/The Nova",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you fill your potential track, you advance. Choose from the list below.</p>\n<p>❑ Take a move from another playbook</p>\n<p>❑ Take a move from another playbook</p>\n<p>❑ Someone permanently loses Influence over you; add +1 to a Label</p>\n<p>❑ Rearrange your Labels as you choose, and add +1 to a Label</p>\n<p>❑ Unlock your Moment of Truth</p>\n<p>❑ Unlock three new flares</p>\n<p>❑ Unlock three new flares</p>\n<p>❑ Take The Bull&rsquo;s Heart from the Bull playbook</p>\n<hr />\n<p>When you&rsquo;ve taken five advances from the top list, you can take advances from the list below.</p>\n<p>❑ Unlock your Moment of Truth after you&rsquo;ve used it once</p>\n<p>❑ Change playbooks</p>\n<p>❑ Take an adult move</p>\n<p>❑ Take an adult move</p>\n<p>❑ Lock a Label, and add +1 to a Label of your choice</p>\n<p>❑ Retire from the life or become a paragon of the city</p>",
+    "requiresMove": "",
+    "moveType": "team",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Nova",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.7.2",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1699861607326,
+    "lastModifiedBy": "qxt7zBbnFWpsYRqr"
+  },
+  "_id": "dFKtYZAFO6XASNf7",
+  "sort": 0,
+  "_key": "!items!dFKtYZAFO6XASNf7"
+}

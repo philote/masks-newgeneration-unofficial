@@ -1,0 +1,58 @@
+{
+  "name": "A Higher Calling",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/law-star-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_239stekhau3"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>You work for a metahuman law enforcement agency (A.E.G.I.S.) that keeps the world safe from all manner of superhuman, supernatural, and extraterrestrial threats. You volunteered to work with a team of young superheroes as part of a new A.E.G.I.S. program designed to keep Halcyon City safe.</p>\n<p>You have an additional Label: Soldier, starts at +2</p>\n<p>Soldier functions like any other Label. Characters with Influence over you can shift it, and you mark a condition if it would ever shift above +3 or below -2. You can only cancel the influence A.E.G.I.S. holds over you with the appropriate advancement. You cannot lock Soldier with a Moment of Truth.</p>\n<p>When you&rsquo;re <strong>acting on orders and relying on your training</strong>, give A.E.G.I.S. influence to use Soldier instead of any other Label when you make a basic or playbook move.</p>\n<p>When you <strong>invoke your authority over civilians, Halcyon City personnel, or A.E.G.I.S. staff</strong>, roll + Soldier. On a 7+, your words carry weight. On a 7-9, someone will push back against your instructions or orders...sooner rather than later. On a 6-, your attempts to control the situation create an opportunity for your enemies within A.E.G.I.S. to act against you.</p>\n<p>When you <strong>ask A.E.G.I.S. for additional resources, equipment, or information during a mission</strong>, roll + Soldier. On a 7+, they&rsquo;ll resupply you as best they can. On a 10+, the resources are highly classified or experimental; take +1 ongoing to deploying them throughout the mission. On a 6-, A.E.G.I.S. sends what they think you need, regardless of what you actually requested.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Soldier",
+    "rollType": "prompt",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699857569855,
+    "modifiedTime": 1711825662320,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "148GpsSskloolq8C",
+  "sort": 100000,
+  "_key": "!items!148GpsSskloolq8C"
+}

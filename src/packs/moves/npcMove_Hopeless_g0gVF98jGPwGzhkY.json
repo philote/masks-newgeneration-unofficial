@@ -1,0 +1,55 @@
+{
+  "_id": "g0gVF98jGPwGzhkY",
+  "name": "Hopeless",
+  "type": "npcMove",
+  "img": "icons/svg/mystery-man-black.svg",
+  "effects": [],
+  "folder": "jcmGVC97lkoxDyuc",
+  "sort": 250000,
+  "flags": {
+    "cf": {
+      "id": "temp_4re3qtzonmp",
+      "path": "Moves#/CF_SEP/Villain Condition Moves",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<ul>\n<li>Give up without a fight</li>\n<li>Burn down the world around them</li>\n<li>Seek any light in the dark</li>\n<li>Undermine others&rsquo; beliefs</li>\n<li>Veer toward drastic and terrible action&nbsp;</li>\n</ul>\n<p>The Hopeless condition moves are about escalation or de-escalation. They let you make the villain give up, or take an outstretched hero&rsquo;s hand...or they let you make the villain escalate in terrible ways. Mark Hopeless for a villain if they&rsquo;re losing badly, and you want to either ratchet the overall tension or bring things to a close.</p>",
+    "requiresMove": "",
+    "moveType": "condition",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0
+  },
+  "ownership": {
+    "default": 0,
+    "RZXbWcV7kggw6gJH": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.7.2",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1700085114396,
+    "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+  },
+  "_key": "!items!g0gVF98jGPwGzhkY"
+}

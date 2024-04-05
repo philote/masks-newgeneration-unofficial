@@ -1,0 +1,60 @@
+{
+  "name": "The Bull's Heart",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/centaur-heart-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_oc50ea2m2hk",
+      "path": "Basic Playbooks#/CF_SEP/The Bull",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>You always have exactly one love and one rival. You can change your love or rival at any time; give the new subject of your affections or disdain Influence over you. Take +1 ongoing to any action that impresses your love or frustrates your rival.</p>\n<h3>Love:</h3>\n<h3>Rival:</h3>\n<p>Choose a role you commonly fulfill for your love or rival:</p>\n<ul>\n<li><strong>Defender:</strong> When you leap to defend your love or rival in battle, roll + Danger instead of + Savior to defend them.</li>\n<li><strong>Friend:</strong> When you comfort or support your love or rival, mark potential on a hit. When your love or rival comforts or supports you, mark potential when they roll a hit.&nbsp;</li>\n<li><strong>Listener:</strong> When you pierce the mask of your love or rival, you can always let them ask you a question to ask them an additional question in turn, even on a miss. These additional questions do not have to be on the list.&nbsp;</li>\n<li><strong>Enabler:</strong> When you provoke your love or rival, roll + Danger if you are trying to provoke them to rash or poorly thought out action.</li>\n</ul>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Bull",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1711772842740,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "0MaiOXSttsCtWTiu",
+  "sort": 100000,
+  "_key": "!items!0MaiOXSttsCtWTiu"
+}

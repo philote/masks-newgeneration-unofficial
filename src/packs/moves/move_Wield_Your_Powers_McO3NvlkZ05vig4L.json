@@ -1,0 +1,62 @@
+{
+  "name": "Wield Your Powers",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/aura-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": "EN72hQiVqSj583p1",
+  "sort": 300000,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.masks-newgeneration-unofficial.moves-adult.3BtSmPj5XWkQJ3v3"
+    },
+    "cf": {
+      "id": "temp_4htx0v8rro6",
+      "path": "Moves#/CF_SEP/Moves Adult",
+      "color": "#000000"
+    }
+  },
+  "_id": "McO3NvlkZ05vig4L",
+  "system": {
+    "name": "",
+    "description": "<p>When you <strong>wield your powers</strong> with precision or grace, roll + Freak.</p>",
+    "requiresMove": "",
+    "moveType": "adult",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>Mark Potential and the GM makes a move.&nbsp;</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>Choose one.</p>\n<ul>\n<li>Take hold of something vulnerable to you</li>\n<li>Create something useful from your environment</li>\n<li>Neutralize an opponent or threat, at least for now</li>\n</ul>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>Choose two.</p>\n<ul>\n<li>Take hold of something vulnerable to you</li>\n<li>Create something useful from your environment</li>\n<li>Neutralize an opponent or threat, at least for now</li>\n</ul>"
+      }
+    },
+    "uses": 0,
+    "playbook": "",
+    "rollType": "freak",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "RZXbWcV7kggw6gJH": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1711601531944,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_key": "!items!McO3NvlkZ05vig4L"
+}

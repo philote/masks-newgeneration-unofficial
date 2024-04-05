@@ -1,0 +1,59 @@
+{
+  "name": "Friends in Low Places",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/handcuffed-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_q8mrwtx465l",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>You have ties to villains from your previous career. Choose three names to fill in:</p>\n<p><strong>Finch, Ellen &ldquo;Devil&rdquo; Drummond, Mr. Cane, The Mad Magpie, Dr. Cutler, Armorer, Tegan Queen, Lovelace</strong></p>\n<p>For each of them, choose a specialty.</p>\n<p>_______________ Specialty: weapons, materials, cosmic artifacts, alien tech, insider info</p>\n<p>Obligation: ❏ ❏ ❏ ❏</p>\n<p>_______________ Specialty: weapons, materials, cosmic artifacts, alien tech, insider info</p>\n<p>Obligation: ❏ ❏ ❏ ❏</p>\n<p>_______________ Specialty: weapons, materials, cosmic artifacts, alien tech, insider info</p>\n<p>Obligation: ❏ ❏ ❏ ❏</p>\n<p>&nbsp;</p>\n<p>When you create your character, mark two obligations on one villain, and mark one obligation on another.</p>\n<p>When you <strong>come to them for help with your problems</strong>, mark obligation on them and they&rsquo;ll help out within their specialty. If all their boxes are full, then they won&rsquo;t help you until you help them.</p>\n<p>When <strong>time passes</strong>, roll + your highest obligation. On a 10+, they come crashing into your life with a crisis. On a 7-9, they call for a favor. On a 6-, they don&rsquo;t come knocking yet, but mark obligation with them&mdash;the debts are getting heavier.</p>\n<p>When you <strong>help one of these villains with their problems</strong>, erase two obligations on them.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>They don&rsquo;t come knocking yet, but mark obligation with them&mdash;the debts are getting heavier.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>They call for a favor.</p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>They come crashing into your life with a crisis.</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "The Reformed",
+    "rollType": "ask",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699857899394,
+    "modifiedTime": 1711826051083,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "zgT2HTOZKOiKXC6T",
+  "sort": 1100000,
+  "_key": "!items!zgT2HTOZKOiKXC6T"
+}

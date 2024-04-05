@@ -1,0 +1,60 @@
+{
+  "name": "Game Face",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/american-football-helmet-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_z30gu0pmsqd",
+      "path": "Basic Playbooks#/CF_SEP/The Janus",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you commit yourself to save someone or defeat a terrible enemy, mark a condition and take +1 ongoing to all rolls in direct pursuit of that goal.</p>\n<p>At the end of any scene in which you don&rsquo;t make progress towards that goal, mark a condition.</p>\n<p>When you fulfill your goal, mark potential.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Janus",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.7.2",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1700279575331,
+    "lastModifiedBy": "qxt7zBbnFWpsYRqr"
+  },
+  "_id": "MlEjerrQzViRkl9o",
+  "sort": 200000,
+  "_key": "!items!MlEjerrQzViRkl9o"
+}

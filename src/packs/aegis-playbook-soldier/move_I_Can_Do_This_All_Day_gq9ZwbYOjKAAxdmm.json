@@ -1,0 +1,58 @@
+{
+  "name": "I Can Do This All Day",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/trash-can-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_239stekhau3"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When something causes you to remove yourself from a fight, you can shift Savior down (and another Label up) instead. If shifting Savior down would move it below -2, you have to leave the fight instead of shifting Labels.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Soldier",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699857569855,
+    "modifiedTime": 1711825662320,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "gq9ZwbYOjKAAxdmm",
+  "sort": 1100000,
+  "_key": "!items!gq9ZwbYOjKAAxdmm"
+}

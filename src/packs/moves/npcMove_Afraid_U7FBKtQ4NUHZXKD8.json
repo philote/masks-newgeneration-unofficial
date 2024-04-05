@@ -1,0 +1,55 @@
+{
+  "_id": "U7FBKtQ4NUHZXKD8",
+  "name": "Afraid",
+  "type": "npcMove",
+  "img": "icons/svg/mystery-man-black.svg",
+  "effects": [],
+  "folder": "jcmGVC97lkoxDyuc",
+  "sort": 100000,
+  "flags": {
+    "cf": {
+      "id": "temp_4re3qtzonmp",
+      "path": "Moves#/CF_SEP/Villain Condition Moves",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<ul>\n<li>Hide out of harm&rsquo;s way</li>\n<li>Flee from danger or difficulty</li>\n<li>Lash out without thought at a threat</li>\n<li>Plead for mercy</li>\n<li>Throw up blocks and walls</li>\n</ul>\n<p>The Afraid condition moves are about blocking and fleeing, about escaping from danger, with the exception of lash out without thought at a threat. Mark Afraid for a villain if you want them to try to escape or protect their interests.</p>",
+    "requiresMove": "",
+    "moveType": "condition",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0
+  },
+  "ownership": {
+    "default": 0,
+    "RZXbWcV7kggw6gJH": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.7.2",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1700085109572,
+    "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+  },
+  "_key": "!items!U7FBKtQ4NUHZXKD8"
+}

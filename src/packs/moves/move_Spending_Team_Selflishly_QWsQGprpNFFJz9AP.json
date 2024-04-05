@@ -1,0 +1,62 @@
+{
+  "name": "Spending Team Selflishly",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/team-downgrade-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": "i8wSFCNmUaovx6Ae",
+  "sort": 112500,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.masks-newgeneration-unofficial.moves-other.rn9iciTwMa040zN1"
+    },
+    "cf": {
+      "id": "temp_mdq95msnwl",
+      "path": "Moves#/CF_SEP/Moves Other",
+      "color": "#000000"
+    }
+  },
+  "_id": "QWsQGprpNFFJz9AP",
+  "system": {
+    "name": "",
+    "description": "<p>When you act selfishly, say how your actions ignore or insult your teammates, remove one Team from the pool, and <strong>shift one Label up and one Label down</strong>, your choice.</p>\n<p>You can use this option after rolling to alter the Label you&rsquo;re rolling with.</p>\n<p>Because you can act selfishly after you roll, this can boost a miss up to a hit, or a partial hit up to a full hit, by changing the Label you rolled with. All you have to do is spend the Team from the pool and describe your character doing something that ignores or insults your teammates.</p>\n<p>Generally, your teammates can determine whether they feel ignored or insulted by the selfish action, but the GM can push on it if it seems appropriate.</p>\n<p>Acting selfishly may save you when you can&rsquo;t be helped by anybody else, but it has a cost you can&rsquo;t avoid.</p>",
+    "requiresMove": "",
+    "moveType": "team",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "RZXbWcV7kggw6gJH": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1711773148793,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_key": "!items!QWsQGprpNFFJz9AP"
+}

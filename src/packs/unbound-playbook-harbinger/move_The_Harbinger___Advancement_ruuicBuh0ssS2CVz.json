@@ -1,0 +1,58 @@
+{
+  "name": "The Harbinger - Advancement",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/upgrade-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_5kwcaz4a39d"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you fill your potential track, you advance. Choose from the list below.</p>\n<p>❑ Take another move from your playbook</p>\n<p>❑ Take another move from your playbook</p>\n<p>❑ Take a move from another playbook</p>\n<p>❑ Take a move from another playbook</p>\n<p>❑ Rearrange your Labels as you choose, and add +1 to a Label</p>\n<p>❑ Unlock your Moment of Truth</p>\n<p>❑ Someone permanently loses Influence over you; add +1 to a Label</p>\n<p>❑ Rearrange your Labels as you choose, and add +1 to a Label</p>\n<hr />\n<p>When you&rsquo;ve taken five advances from the top list, you can take advances from the list below.</p>\n<p>❑ Unlock your Moment of Truth after you&rsquo;ve used it once</p>\n<p>❑ Change playbooks</p>\n<p>❑ Take an adult move</p>\n<p>❑ Take an adult move</p>\n<p>❑ Lock a Label and add +1 to a Label of your choice</p>\n<p>❑ Return to the future and accept its new form, or jump to a different point in the past to begin your mission anew</p>",
+    "requiresMove": "",
+    "moveType": "team",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Harbinger",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699858426966,
+    "modifiedTime": 1711825190191,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "ruuicBuh0ssS2CVz",
+  "sort": 900000,
+  "_key": "!items!ruuicBuh0ssS2CVz"
+}

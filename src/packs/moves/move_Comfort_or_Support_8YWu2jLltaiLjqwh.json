@@ -1,0 +1,62 @@
+{
+  "name": "Comfort or Support",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/love-letter-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": "AOEag4Ri4UFgRMu2",
+  "sort": 200000,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.masks-newgeneration-unofficial.moves-basic.QsbjQt0DFr3bT5eG"
+    },
+    "cf": {
+      "id": "temp_sjbmyuxuqd",
+      "path": "Moves#/CF_SEP/Moves Basic",
+      "color": "#000000"
+    }
+  },
+  "_id": "8YWu2jLltaiLjqwh",
+  "system": {
+    "name": "",
+    "description": "<p>When you <strong>comfort or support someone</strong>, roll + Mundane.</p>",
+    "requiresMove": "",
+    "moveType": "basic",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>Mark Potential and the GM makes a move.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>They hear you: they mark potential, clear a condition, or shift Labels if they open up to you.</p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>They hear you: they mark potential, clear a condition, or shift Labels if they open up to you. You can also add a Team to the pool or clear a condition yourself.</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "",
+    "rollType": "mundane",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "RZXbWcV7kggw6gJH": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.7.2",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1700084987057,
+    "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+  },
+  "_key": "!items!8YWu2jLltaiLjqwh"
+}

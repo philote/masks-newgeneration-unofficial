@@ -1,0 +1,59 @@
+{
+  "name": "Time For The Show",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/popcorn-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_lnctjfysar",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you put on a flamboyant display of your powers, roll + Superior.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>Your display catches someone watching in the wrong way.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>Name one NPC present.&nbsp;<span style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\">The named NPCs must either volunteer help or information, express admiration, or ask for your help, GM&rsquo;s choice.</span></p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>Name two NPCs present.&nbsp;<span style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\">The named NPCs must either volunteer help or information, express admiration, or ask for your help, GM&rsquo;s choice.</span></p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "The Star",
+    "rollType": "superior",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699857899394,
+    "modifiedTime": 1711826105889,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "xiAaGYXdxSKkfmDw",
+  "sort": 1100000,
+  "_key": "!items!xiAaGYXdxSKkfmDw"
+}

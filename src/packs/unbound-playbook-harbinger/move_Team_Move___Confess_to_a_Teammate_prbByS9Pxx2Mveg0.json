@@ -1,0 +1,58 @@
+{
+  "name": "Team Move - Confess to a Teammate",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_5kwcaz4a39d"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you <strong>confess to a teammate the difference between what you thought they would be and what they really are</strong>, add a Team to the pool, and ask them if you represent a future they’d want. If they say yes, mark potential. If they say no, mark a condition.</p>",
+    "requiresMove": "",
+    "moveType": "team",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Harbinger",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699858426966,
+    "modifiedTime": 1711825190191,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "prbByS9Pxx2Mveg0",
+  "sort": 800000,
+  "_key": "!items!prbByS9Pxx2Mveg0"
+}

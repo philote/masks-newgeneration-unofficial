@@ -1,0 +1,59 @@
+{
+  "name": "Audience",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/red-carpet-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_lnctjfysar",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>You are a celebrity in the city. By default, your audience is a limited group of interested fans, and you speak to them through after-action interviews and infrequent press conferences. Why does your audience love you? Mark all that apply.</p>\n<p>❑ You&rsquo;re just like them</p>\n<p>❑ You&rsquo;re a dangerous person, a bad seed</p>\n<p>❑ You&rsquo;re noble warrior for justice</p>\n<p>❑ You&rsquo;re stunning, unique, and beautiful</p>\n<p>❑ You&rsquo;re charming, well-spoken, and smart</p>\n<p>❑ You&rsquo;re a firebrand, a rabble rouser</p>\n<p>Choose two advantages:</p>\n<p>❑ Your audience is utterly devoted to you</p>\n<p>❑ You can easily speak to them at any time</p>\n<p>❑ You have a PR agent to handle your audience</p>\n<p>❑ You earn a lot of money from their interest</p>\n<p>❑ You have a major hero&rsquo;s endorsement</p>\n<p>❑ You have a much wider audience</p>\n<p>Choose two demands your audience makes on you:</p>\n<p>❑ They require constant stimulation</p>\n<p>❑ They require perfection&mdash;no mistakes</p>\n<p>❑ They require frequent bouts of drama</p>\n<p>❑ They require major acts of heroism</p>\n<p>❑ They require novelty and brand new action</p>\n<p>❑ They require chemistry with your allies</p>\n<p>When you <strong>accept what your audience tells you about yourself</strong>, clear a condition. When you <strong>reject what your audience tells you about yourself</strong>, on a hit mark potential and expect retribution.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Star",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699857899394,
+    "modifiedTime": 1711826105889,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "BxIcS3GOuOSuH9E0",
+  "sort": 300000,
+  "_key": "!items!BxIcS3GOuOSuH9E0"
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Stand Up For Something",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/flying-flag-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": "EN72hQiVqSj583p1",
+  "sort": 125000,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.masks-newgeneration-unofficial.moves-adult.tZ78T8JqxxhSej1C"
+    },
+    "cf": {
+      "id": "temp_4htx0v8rro6",
+      "path": "Moves#/CF_SEP/Moves Adult",
+      "color": "#000000"
+    }
+  },
+  "_id": "ROP6Orix4ysA27Nh",
+  "system": {
+    "name": "",
+    "description": "<p>When you stand up for something, roll + Savior.</p>",
+    "requiresMove": "",
+    "moveType": "adult",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>Mark Potential and the GM makes a move.&nbsp;</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>Choose one.</p>\n<ul>\n<li>Listeners can&rsquo;t keep doing what they&rsquo;re doing</li>\n<li>Listeners can&rsquo;t flee without addressing you</li>\n<li>Listeners can&rsquo;t attack you without losing status or position</li>\n</ul>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>Choose two.</p>\n<ul>\n<li>Listeners can&rsquo;t keep doing what they&rsquo;re doing</li>\n<li>Listeners can&rsquo;t flee without addressing you</li>\n<li>Listeners can&rsquo;t attack you without losing status or position</li>\n</ul>"
+      }
+    },
+    "uses": 0,
+    "playbook": "",
+    "rollType": "savior",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "RZXbWcV7kggw6gJH": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1711601958386,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_key": "!items!ROP6Orix4ysA27Nh"
+}

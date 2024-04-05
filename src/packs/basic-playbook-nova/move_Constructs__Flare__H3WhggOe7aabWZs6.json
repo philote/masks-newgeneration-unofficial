@@ -1,0 +1,60 @@
+{
+  "name": "Constructs (Flare)",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/spark-spirit-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_f8mhy5sjrn9",
+      "path": "Basic Playbooks#/CF_SEP/The Nova",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>Spend 1 burn to create any object with your powers, up to the size of a person. Spend an additional burn to animate it independently of yourself. The construct dissolves at the end of the scene.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": null
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": null
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": null
+      }
+    },
+    "uses": 0,
+    "playbook": "The Nova",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.7.2",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1700280104246,
+    "lastModifiedBy": "qxt7zBbnFWpsYRqr"
+  },
+  "_id": "H3WhggOe7aabWZs6",
+  "sort": 300000,
+  "_key": "!items!H3WhggOe7aabWZs6"
+}

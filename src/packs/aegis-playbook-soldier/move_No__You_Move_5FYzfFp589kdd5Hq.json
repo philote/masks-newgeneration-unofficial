@@ -1,0 +1,58 @@
+{
+  "name": "No, You Move",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/congress-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_239stekhau3"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you demand that an NPC live up to a higher moral code, roll + Savior.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>They reveal that the conflict in question is more complicated than it seems; give them Influence over you.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>They have to meet your standard or mark a Condition.</p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>They have to meet your standard or mark a Condition. T<span style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\">ake Influence over them as well.</span></p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "The Soldier",
+    "rollType": "savior",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699857569855,
+    "modifiedTime": 1711825662320,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "5FYzfFp589kdd5Hq",
+  "sort": 400000,
+  "_key": "!items!5FYzfFp589kdd5Hq"
+}

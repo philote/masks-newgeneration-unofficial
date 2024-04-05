@@ -1,0 +1,60 @@
+{
+  "name": "Mary Contrary",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/confrontation-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_z1awbdwk3z",
+      "path": "Basic Playbooks#/CF_SEP/The Delinquent",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When someone tries to <a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.masks-newgeneration-unofficial.moves.Item.BdZxrM4H0P7EWM04\" data-id=\"BdZxrM4H0P7EWM04\" data-type=\"Item\" data-pack=\"masks-newgeneration-unofficial.moves\" data-tooltip=\"Move Item\">Pierce your Mask</a>, <a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.masks-newgeneration-unofficial.moves.Item.8YWu2jLltaiLjqwh\" data-id=\"8YWu2jLltaiLjqwh\" data-type=\"Item\" data-pack=\"masks-newgeneration-unofficial.moves\" data-tooltip=\"Move Item\">Comfort or Support</a> you, or <a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.masks-newgeneration-unofficial.moves.Item.4peWl5mESOLCbcDD\" data-id=\"4peWl5mESOLCbcDD\" data-type=\"Item\" data-pack=\"masks-newgeneration-unofficial.moves\" data-tooltip=\"Move Item\">Provoke</a> you, you can interfere. Roll + Superior.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>They get a 10+ no matter what they rolled and you mark a condition of their choice.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>They take a -2 on their roll.</p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>They take a -2 on their roll. You also take Influence over them or clear a condition.</p>\n<p>&nbsp;</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "The Delinquent",
+    "rollType": "superior",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1711772985187,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "uxNafPsvQ9QFYiG1",
+  "sort": 1000000,
+  "_key": "!items!uxNafPsvQ9QFYiG1"
+}

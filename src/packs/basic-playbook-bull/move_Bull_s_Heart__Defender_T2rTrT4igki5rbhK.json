@@ -1,0 +1,51 @@
+{
+  "name": "Bull's Heart: Defender",
+  "type": "move",
+  "_id": "T2rTrT4igki5rbhK",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Defender:</strong> When you leap to defend your love or rival in battle, roll + Danger instead of + Savior to defend them.</p>\n<p> </p>",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>Mark Potential and the GM makes a move.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<h3>For NPC threats:</h3>\n<p>You <a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.4g7nxJy9tPVI1Zr4\" data-id=\"AGsdZxeDIixx5ulh\" data-pack=\"world\" data-type=\"JournalEntryPage\" data-tooltip=\"Keeping them safe\">Keep them safe</a> and choose one. But it costs you: expose yourself to danger or escalate the situation.</p>\n<ul>\n<li class=\"p1\">add a Team to the pool</li>\n<li class=\"p1\">take Influence over someone you protect</li>\n<li class=\"p1\">clear a condition</li>\n</ul>\n<p>&nbsp;</p>\n<h3>For PC threats:</h3>\n<p>Give them -2 to their roll.</p>\n<p>You <a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.OM3f9fIRUZmDmQnp\" data-id=\"AGsdZxeDIixx5ulh\" data-pack=\"world\" data-type=\"JournalEntryPage\" data-tooltip=\"Expose yourself to cost, retribution, or judgment\">Expose yourself to cost, retribution, or judgment</a></p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "Success!",
+        "value": "<h3>For NPC threats:</h3>\n<p>You <a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.4g7nxJy9tPVI1Zr4\" data-id=\"AGsdZxeDIixx5ulh\" data-pack=\"world\" data-type=\"JournalEntryPage\" data-tooltip=\"Keeping them safe\">Keep them safe</a> and choose one.</p>\n<ul>\n<li class=\"p1\">add a Team to the pool</li>\n<li class=\"p1\">take Influence over someone you protect</li>\n<li class=\"p1\">clear a condition</li>\n</ul>\n<p>&nbsp;</p>\n<h3>For PC threats:</h3>\n<p>Give them -2 to their roll.</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "The Bull",
+    "rollType": "danger",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": "<ul>\n<li>Add a Team to the pool</li>\n<li>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.PzqlHqRhI7uRWAxR]</li>\n<li>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.UQp2JmzBob2lVP3C]{Clear a Condition}</li>\n</ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 800000,
+  "ownership": {
+    "default": 0,
+    "IOpTeOSwK75GQDn8": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": 1710990605554,
+    "modifiedTime": 1711772842740,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_key": "!items!T2rTrT4igki5rbhK"
+}

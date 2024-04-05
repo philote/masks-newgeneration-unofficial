@@ -1,0 +1,62 @@
+{
+  "name": "Empathize",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/hearts-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": "EN72hQiVqSj583p1",
+  "sort": 100000,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.masks-newgeneration-unofficial.moves-adult.D5Vy5iL24zVyLdQq"
+    },
+    "cf": {
+      "id": "temp_4htx0v8rro6",
+      "path": "Moves#/CF_SEP/Moves Adult",
+      "color": "#000000"
+    }
+  },
+  "_id": "cs5MLESc25yDhL4B",
+  "system": {
+    "name": "",
+    "description": "<p>When you openly <strong>empathize with someone</strong>, roll + Mundane.</p>",
+    "requiresMove": "",
+    "moveType": "adult",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>Mark Potential and the GM make a move.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>They must reveal a vulnerability or mark a condition.</p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>They must reveal a vulnerability or mark a condition. Take Influence over them as well.</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "",
+    "rollType": "mundane",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "RZXbWcV7kggw6gJH": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3.beta-1",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1710223159427,
+    "lastModifiedBy": "4C9xTrePJlXfEBlt"
+  },
+  "_key": "!items!cs5MLESc25yDhL4B"
+}

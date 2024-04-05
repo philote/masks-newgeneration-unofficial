@@ -1,0 +1,55 @@
+{
+  "_id": "sA0fpKJ53e5YpG1F",
+  "name": "Angry",
+  "type": "npcMove",
+  "img": "icons/svg/mystery-man-black.svg",
+  "effects": [],
+  "folder": "jcmGVC97lkoxDyuc",
+  "sort": 200000,
+  "flags": {
+    "cf": {
+      "id": "temp_4re3qtzonmp",
+      "path": "Moves#/CF_SEP/Villain Condition Moves",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<ul>\n<li>Vent through unthinking violence</li>\n<li>Break the environment</li>\n<li>Shut down conversation</li>\n<li>Lash out at any vulnerability</li>\n<li>Escalate the situation dangerously</li>\n</ul>\n<p>The Angry condition moves are about intense overreaction and amplifying the situation. Mark Angry for a villain if you want them to fight and struggle dangerously.</p>",
+    "requiresMove": "",
+    "moveType": "condition",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0
+  },
+  "ownership": {
+    "default": 0,
+    "RZXbWcV7kggw6gJH": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.7.2",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1700085111728,
+    "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+  },
+  "_key": "!items!sA0fpKJ53e5YpG1F"
+}

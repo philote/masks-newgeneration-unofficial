@@ -1,0 +1,60 @@
+{
+  "name": "Burn",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/burning-passion-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_f8mhy5sjrn9",
+      "path": "Basic Playbooks#/CF_SEP/The Nova",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you charge up your powers, roll + conditions you currently have marked.</p>\n<p>Spend your burn on your flares. You lose all burn at the end of the scene.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>Hold 2 burn and mark three conditions.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>Hold 3 burn and mark a condition.</p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>Hold 3 burn.</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "The Nova",
+    "rollType": "prompt",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.7.2",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1700280111835,
+    "lastModifiedBy": "qxt7zBbnFWpsYRqr"
+  },
+  "_id": "85dJPVC2vJl9GBTq",
+  "sort": 200000,
+  "_key": "!items!85dJPVC2vJl9GBTq"
+}

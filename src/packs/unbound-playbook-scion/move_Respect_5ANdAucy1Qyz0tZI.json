@@ -1,0 +1,58 @@
+{
+  "name": "Respect",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/conqueror-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_bi8fhu4arqf"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>Write down the names of at least two other characters whose respect you need to earn in order to differentiate yourself from your parent. You may fill in new names whenever appropriate.</p>\n<hr />\n<p>Your parent&rsquo;s greatest enemy: _____________</p>\n<p>Respect: ☐ ☐ ☐ ☐ Advancement: ☐</p>\n<p>Your parent&rsquo;s greatest victim: _____________</p>\n<p>Respect: ☐ ☐ ☐ ☐ Advancement: ☐</p>\n<p>Your personal idol: _____________________</p>\n<p>Respect: ☐ ☐ ☐ ☐ Advancement: ☐</p>\n<p>The city&rsquo;s greatest leader: ________________</p>\n<p>Respect: ☐ ☐ ☐ ☐ Advancement: ☐</p>\n<p>The city&rsquo;s greatest hero: _________________</p>\n<p>Respect: ☐ ☐ ☐ ☐ Advancement: ☐</p>\n<p>The city&rsquo;s biggest celebrity: ______________</p>\n<p>Respect: ☐ ☐ ☐ ☐ Advancement: ☐</p>\n<hr />\n<p>When you seek out one of the characters named above, roll + Savior. On a hit, you track them down. On a 7-9, they&rsquo;re juggling their own problems, and may not have time for you. On a miss, when you find them, the situation is dire; the GM will tell you how.</p>\n<p>If you earn Influence over the characters listed above, instead you mark 1 Respect. If you lose Influence over the characters listed above, you lose 1 Respect. If you lose 1 Respect and you have none marked, you immediately mark a condition, GM&rsquo;s choice.</p>\n<p>The first time you reach 4 Respect on an individual, take an advancement.</p>\n<p>While you have 4 Respect on an individual:</p>\n<ul>\n<li>You can reject their Influence at a +3 (does not stack with the above).</li>\n<li>You take +1 to a Label of their choice (record it next to their name).</li>\n</ul>\n<p>If you dip below 4 Respect on an individual, you lose those benefits.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Scion",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699858426966,
+    "modifiedTime": 1711825340633,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "5ANdAucy1Qyz0tZI",
+  "sort": 200000,
+  "_key": "!items!5ANdAucy1Qyz0tZI"
+}

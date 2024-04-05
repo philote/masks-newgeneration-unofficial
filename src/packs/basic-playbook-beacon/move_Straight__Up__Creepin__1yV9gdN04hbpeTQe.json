@@ -1,0 +1,60 @@
+{
+  "name": "Straight. Up. Creepin’",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/spy-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_hz2f4ifmmm",
+      "path": "Basic Playbooks#/CF_SEP/The Beacon",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you scope out a person or place, roll + Mundane.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>You find yourself in over your head. The GM will tell you why this is a bad spot.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>Ask one.</p>\n<ul>\n<li>what&rsquo;s my best way in/out?</li>\n<li>what happened here recently?</li>\n<li>what here is worth grabbing?</li>\n<li>who or what here is not what they seem?</li>\n<li>whose place is this?</li>\n</ul>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>Ask two.</p>\n<ul>\n<li>what&rsquo;s my best way in/out?</li>\n<li>what happened here recently?</li>\n<li>what here is worth grabbing?</li>\n<li>who or what here is not what they seem?</li>\n<li>whose place is this?</li>\n</ul>"
+      }
+    },
+    "uses": 0,
+    "playbook": "The Beacon",
+    "rollType": "mundane",
+    "rollMod": 0,
+    "choices": "<ul>\n<li>What&rsquo;s my best way in/out?</li>\n<li>What happened here recently?</li>\n<li>What here is worth grabbing?</li>\n<li>Who or what here is not what they seem?</li>\n<li>Whose place is this?</li>\n</ul>"
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1711772471771,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "1yV9gdN04hbpeTQe",
+  "sort": 200000,
+  "_key": "!items!1yV9gdN04hbpeTQe"
+}

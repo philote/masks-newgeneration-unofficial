@@ -1,0 +1,59 @@
+{
+  "name": "Team Move - Share a Triumphant Celebration",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_omlrv0qfo3",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you <strong>share a triumphant celebration with someone</strong>, ask them what makes them proud or happy about the actions they took and write a lesson based on it, either filling an empty slot or replacing an existing lesson.</p>",
+    "requiresMove": "",
+    "moveType": "team",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Newborn",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699857899394,
+    "modifiedTime": 1711825967103,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "eBjq0wXHY2Rfk77e",
+  "sort": 900000,
+  "_key": "!items!eBjq0wXHY2Rfk77e"
+}

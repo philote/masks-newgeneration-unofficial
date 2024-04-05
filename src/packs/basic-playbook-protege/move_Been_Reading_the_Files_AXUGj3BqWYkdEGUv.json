@@ -1,0 +1,60 @@
+{
+  "name": "Been Reading the Files",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/open-folder-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_t8rvi2xbimm",
+      "path": "Basic Playbooks#/CF_SEP/The Protege",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>You&rsquo;ve learned about the superhuman world through your mentor&rsquo;s resources. When you first encounter an important superpowered phenomenon (your call), roll + Superior.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>The situation is well outside your base of knowledge; the GM will tell you why.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>Tell the team one important detail you&rsquo;ve learned from your studies. The GM will tell you what, if anything, seems different from what you remember.</p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>Tell the team one important detail you&rsquo;ve learned from your studies. The GM will tell you what, if anything, seems different from what you remember. Ask the GM a follow-up question; they will answer it honestly.</p>\n<p>&nbsp;</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "The Protégé",
+    "rollType": "superior",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1711773993724,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "AXUGj3BqWYkdEGUv",
+  "sort": 400000,
+  "_key": "!items!AXUGj3BqWYkdEGUv"
+}

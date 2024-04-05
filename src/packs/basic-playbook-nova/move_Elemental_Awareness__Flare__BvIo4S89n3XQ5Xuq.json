@@ -1,0 +1,60 @@
+{
+  "name": "Elemental Awareness (Flare)",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/awareness-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_f8mhy5sjrn9",
+      "path": "Basic Playbooks#/CF_SEP/The Nova",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>Spend 1 burn and mark a condition to open your mind up to the world around you with your powers. You can ask any one question about the world around you, and the GM will answer honestly.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": null
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": null
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": null
+      }
+    },
+    "uses": 0,
+    "playbook": "The Nova",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.7.2",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1700280096563,
+    "lastModifiedBy": "qxt7zBbnFWpsYRqr"
+  },
+  "_id": "BvIo4S89n3XQ5Xuq",
+  "sort": 400000,
+  "_key": "!items!BvIo4S89n3XQ5Xuq"
+}

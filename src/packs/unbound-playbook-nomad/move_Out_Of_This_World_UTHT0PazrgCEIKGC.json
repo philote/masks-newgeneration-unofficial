@@ -1,0 +1,58 @@
+{
+  "name": "Out Of This World",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/headphones-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_0gtw5ufxxrhn"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you plug into the cosmic aether and tune out of this world, roll + Freak.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>You realize something dangerous or terrible; the GM will tell you what, and shift your Labels accordingly.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>You come to a new, interesting insight about your current problems and situation; the GM will tell you what.</p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>You come to a new, interesting insight about your current problems and situation; the GM will tell you what. You can also shift your own Labels according to match your new understanding.</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "The Nomad",
+    "rollType": "freak",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699858426966,
+    "modifiedTime": 1711825271600,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "UTHT0PazrgCEIKGC",
+  "sort": 700000,
+  "_key": "!items!UTHT0PazrgCEIKGC"
+}

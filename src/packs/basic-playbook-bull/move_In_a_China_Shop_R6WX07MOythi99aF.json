@@ -1,0 +1,60 @@
+{
+  "name": "In a China Shop",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/broken-pottery-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_oc50ea2m2hk",
+      "path": "Basic Playbooks#/CF_SEP/The Bull",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you @UUID[Compendium.masks-newgeneration-unofficial.moves.Item.RbWTLi81e6IZ9vH4]{Directly Engage a Threat}, you can cause significant collateral damage to your environment to choose an additional option, even on a miss.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Bull",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1711772842740,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "R6WX07MOythi99aF",
+  "sort": 700000,
+  "_key": "!items!R6WX07MOythi99aF"
+}

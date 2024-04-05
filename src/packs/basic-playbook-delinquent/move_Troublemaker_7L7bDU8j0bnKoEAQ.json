@@ -1,0 +1,60 @@
+{
+  "name": "Troublemaker",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/chalk-outline-murder-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_z1awbdwk3z",
+      "path": "Basic Playbooks#/CF_SEP/The Delinquent",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you help a teammate through destructive, criminal, or rule-breaking actions, you can give them a +2 instead of a +1 when you spend a Team from the pool.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Delinquent",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1711772985187,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "7L7bDU8j0bnKoEAQ",
+  "sort": 100000,
+  "_key": "!items!7L7bDU8j0bnKoEAQ"
+}

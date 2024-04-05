@@ -1,3 +1,6 @@
+#1.5.4
+- New release process to get packs out of git. From now on people will need to use `npm run pullJSONtoLDB` to get packs locally.
+
 #1.5.3
 - Update the moves to not use the "choices" UI in the PbtA system as it doesnt work well for Masks
 

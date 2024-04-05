@@ -1,0 +1,59 @@
+{
+  "name": "Take It From Me",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/star-struck-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_lnctjfysar",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you <strong>comfort or support</strong> someone who openly admires your celebrity persona, roll + Superior instead of Mundane.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>Mark Potential and the GM makes a move.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>They hear you: they mark potential, clear a condition, or shift Labels if they open up to you.</p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>They hear you: they mark potential, clear a condition, or shift Labels if they open up to you. You can also add a Team to the pool or clear a condition yourself.</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "The Star",
+    "rollType": "superior",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699857899394,
+    "modifiedTime": 1711826105889,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "qTI16qAiT72w9uOa",
+  "sort": 700000,
+  "_key": "!items!qTI16qAiT72w9uOa"
+}

@@ -1,0 +1,217 @@
+{
+  "name": "Conditions",
+  "folder": null,
+  "flags": {
+    "world": {
+      "displayLocation": "displayScene"
+    },
+    "core": {}
+  },
+  "pages": [
+    {
+      "name": "Afraid",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>If you’re Afraid, take <strong>-2 to directly engage</strong>.</p>"
+      },
+      "_id": "P93XEtPIAdwLYcQl",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!journal.pages!ZknI7Tletbolq2Y2.P93XEtPIAdwLYcQl"
+    },
+    {
+      "name": "Angry",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>If you’re Angry, take <strong>-2 to comfort or support someone or pierce the mask</strong>.</p>\n<p> </p>"
+      },
+      "_id": "gUjH4zX3QFrvddQ0",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.CHkJHR750AmybjBW.JournalEntryPage.gUjH4zX3QFrvddQ0"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855367323,
+        "modifiedTime": 1699855367323,
+        "lastModifiedBy": "qxt7zBbnFWpsYRqr"
+      },
+      "_key": "!journal.pages!ZknI7Tletbolq2Y2.gUjH4zX3QFrvddQ0"
+    },
+    {
+      "name": "Guilty",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>If you’re Guilty, take -2 to provoke someone or assess the situation.</p>"
+      },
+      "_id": "yGpBDjEnh9PA6jSf",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.OKOdRBzVlxYBb1VQ.JournalEntryPage.yGpBDjEnh9PA6jSf"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855386366,
+        "modifiedTime": 1699855386366,
+        "lastModifiedBy": "qxt7zBbnFWpsYRqr"
+      },
+      "_key": "!journal.pages!ZknI7Tletbolq2Y2.yGpBDjEnh9PA6jSf"
+    },
+    {
+      "name": "Hopeless",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>If you’re Hopeless, take <strong>-2 to unleash your powers</strong>.</p>"
+      },
+      "_id": "DLmyuAU5MIntJybC",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.IVLVMhcSnRhWcepA.JournalEntryPage.DLmyuAU5MIntJybC"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855392395,
+        "modifiedTime": 1699855392395,
+        "lastModifiedBy": "qxt7zBbnFWpsYRqr"
+      },
+      "_key": "!journal.pages!ZknI7Tletbolq2Y2.DLmyuAU5MIntJybC"
+    },
+    {
+      "name": "Insecure",
+      "type": "text",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>If you’re Insecure, take <strong>-2 to defend or reject others’ Influence</strong>.</p>\n<p> </p>"
+      },
+      "_id": "KEtMJdL05DeAIAZe",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 0,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.wzwc0Zm19Cjh0jCd.JournalEntryPage.KEtMJdL05DeAIAZe"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855397834,
+        "modifiedTime": 1699855397834,
+        "lastModifiedBy": "qxt7zBbnFWpsYRqr"
+      },
+      "_key": "!journal.pages!ZknI7Tletbolq2Y2.KEtMJdL05DeAIAZe"
+    }
+  ],
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.7.2",
+    "coreVersion": "11.315",
+    "createdTime": 1699855302793,
+    "modifiedTime": 1700080416905,
+    "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+  },
+  "_id": "ZknI7Tletbolq2Y2",
+  "sort": 300000,
+  "_key": "!journal!ZknI7Tletbolq2Y2"
+}

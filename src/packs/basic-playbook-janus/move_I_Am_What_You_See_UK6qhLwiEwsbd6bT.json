@@ -1,0 +1,60 @@
+{
+  "name": "I Am What You See",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/character-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_z30gu0pmsqd",
+      "path": "Basic Playbooks#/CF_SEP/The Janus",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you spend time talking to someone about your identity, you can ask them which Label they want to impose on you; their player will tell you honestly.</p>\n<p>If you accept what they tell you, take +1 forward and either mark potential or clear a condition.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Janus",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.2",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1709956524506,
+    "lastModifiedBy": "xQUjMKwiUnmFKx7h"
+  },
+  "_id": "UK6qhLwiEwsbd6bT",
+  "sort": 300000,
+  "_key": "!items!UK6qhLwiEwsbd6bT"
+}

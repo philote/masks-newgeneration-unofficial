@@ -1,0 +1,59 @@
+{
+  "name": "Thermodynamic Miracle",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/snowflake-1-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_omlrv0qfo3",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you <strong>Comfort or Support</strong>&nbsp;someone by telling them what makes them unique, roll + Freak instead of Mundane. If they open up to you, shift Freak up and Mundane down. If they don&rsquo;t, mark a condition.</p>\n<p>When you <strong>comfort or support someone</strong>, roll + Freak.</p>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<p>Mark Potential and the GM makes a move.</p>"
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<p>They hear you: they mark potential, clear a condition, or shift Labels if they open up to you.</p>"
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": "<p>They hear you: they mark potential, clear a condition, or shift Labels if they open up to you. You can also add a Team to the pool or clear a condition yourself.</p>"
+      }
+    },
+    "uses": 0,
+    "playbook": "The Newborn",
+    "rollType": "freak",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699857899394,
+    "modifiedTime": 1711825967103,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "5YXzfZWJ4fzU77yZ",
+  "sort": 300000,
+  "_key": "!items!5YXzfZWJ4fzU77yZ"
+}

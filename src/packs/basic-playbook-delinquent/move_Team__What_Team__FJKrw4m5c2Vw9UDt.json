@@ -1,0 +1,59 @@
+{
+  "name": "Team? What Team?",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/duality-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_z1awbdwk3z",
+      "path": "Basic Playbooks#/CF_SEP/The Delinquent",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "description": "<p>When you use Team selfishly, clear a condition or mark potential. The first time in a session that you use Team to help a teammate, take +1 forward.</p>",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Delinquent",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": "",
+    "actorType": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3,
+    "x2ixoSwGbsuhIrIT": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": 1699858650702,
+    "modifiedTime": 1711773209916,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "FJKrw4m5c2Vw9UDt",
+  "sort": 0,
+  "_key": "!items!FJKrw4m5c2Vw9UDt"
+}

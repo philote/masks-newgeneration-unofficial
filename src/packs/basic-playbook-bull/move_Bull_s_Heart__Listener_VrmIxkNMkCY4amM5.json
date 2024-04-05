@@ -1,0 +1,51 @@
+{
+  "name": "Bull's Heart: Listener",
+  "type": "move",
+  "_id": "VrmIxkNMkCY4amM5",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "description": "<p><strong>Listener:</strong> When you pierce the mask of your love or rival, you can always let them ask you a question to ask them an additional question in turn, even on a miss. These additional questions do not have to be on the list. </p>",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Bull",
+    "rollType": "",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 900000,
+  "ownership": {
+    "default": 0,
+    "IOpTeOSwK75GQDn8": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.3",
+    "coreVersion": "11.315",
+    "createdTime": 1710990622503,
+    "modifiedTime": 1711772842740,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_key": "!items!VrmIxkNMkCY4amM5"
+}

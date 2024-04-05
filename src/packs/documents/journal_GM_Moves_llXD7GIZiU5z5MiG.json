@@ -1,0 +1,686 @@
+{
+  "name": "GM Moves",
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_4h5r03e5nxs",
+      "color": "#000000"
+    },
+    "core": {}
+  },
+  "pages": [
+    {
+      "name": "Activate the Downsides of their Abilities and Relationships",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Every ability has a downside; every relationship comes with responsibility. Bring those into play to increase the pressure on the PCs. Make the problems and difficulties of each PC’s abilities and relationships come up to counterbalance the benefits.</p>"
+      },
+      "_id": "NXgUwNBxnjOEIqRa",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 100000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": null,
+        "modifiedTime": 1700081035867,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.NXgUwNBxnjOEIqRa"
+    },
+    {
+      "name": "Announce Between-Panel Threats",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Halcyon City marches on, even while the heroes deal with other problems and issues. Between scenes, outside of the conversation, villains may take action that threatens the heroes and their interests. When you need to make a move, you can announce those threats. Draw attention to them. Show a villain cackling ominously, or have them make veiled allusions to what they’ve done—or just straight up announce it, publicly. Villains can be a pompous bunch, after all.</p>"
+      },
+      "_id": "sSBCr0W3EJYs6Tg7",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 200000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.UGx4gfuXxujL6sqJ.JournalEntryPage.sSBCr0W3EJYs6Tg7"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855484528,
+        "modifiedTime": 1700081027436,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.sSBCr0W3EJYs6Tg7"
+    },
+    {
+      "name": "Bring an NPC to Rash Decisions and Hard Conclusions",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>NPCs don’t always know what’s best. They judge situations quickly and harshly and, especially when they have power of their own, they act just as quickly. Those decisions can set in motion all kinds of mayhem and future moves. Don’t hesitate to take advantage of an opportunity in which an NPC would jump to a wrong conclusion.</p>"
+      },
+      "_id": "WDtPMAeq3CIumtrg",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 300000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.CkFuLcEFEkfK2Xie.JournalEntryPage.WDtPMAeq3CIumtrg"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855488965,
+        "modifiedTime": 1700081023477,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.WDtPMAeq3CIumtrg"
+    },
+    {
+      "name": "Bring Them Together",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The young heroes will do a bang-up job of separating themselves. They’ve all got their own stuff to worry about, their own interests and ideas to pursue. It’s your job to bring ’em back together and connect the disparate elements of their lives so they wind up encountering each other again in surprising places and ways. You don’t have to make them love each other—but you do need to point them at each other.</p>"
+      },
+      "_id": "5NEbMj9wQ0QJFLYz",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 400000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.nR1zEyKYqWuzf64r.JournalEntryPage.5NEbMj9wQ0QJFLYz"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855493450,
+        "modifiedTime": 1700081020014,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.5NEbMj9wQ0QJFLYz"
+    },
+    {
+      "name": "Capture Someone",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Lock people down. Put them into dangerous situations, with no clear way out. Do it to the PCs, or to people the PCs care about. Sometimes you can even just straight up capture characters, having the villain take them to a secret lair or something similar. When you capture someone, you amp up the stakes, giving the heroes a chance to be heroes and save their friend.</p>"
+      },
+      "_id": "u8A6Gk7GoqBIMQBs",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 500000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.75sYF9XK9OJstSde.JournalEntryPage.u8A6Gk7GoqBIMQBs"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855497696,
+        "modifiedTime": 1700081015280,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.u8A6Gk7GoqBIMQBs"
+    },
+    {
+      "name": "Inflict a Condition",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<div class=\"page\" title=\"Page 175\"><div class=\"section\"><div class=\"layoutArea\"><div class=\"column\"><p>Young heroes lead stressful lives! Inflict a condition to clarify how intense the pressure’s getting, how they’re negatively affected by all that’s coming at them. Inflicting a condition always leads to more fiction, which is exactly what you want. When you inflict a condition, you should only tell the PC which condition if you have a very clear idea for it.</p></div></div></div></div>"
+      },
+      "_id": "aiXzW3H0z4NREaFc",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 900000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.Ayqd4mmwXjR5xEsL.JournalEntryPage.aiXzW3H0z4NREaFc"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855510813,
+        "modifiedTime": 1700081008933,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.aiXzW3H0z4NREaFc"
+    },
+    {
+      "name": "Make a Playbook Move",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Every playbook has its own unique issues and themes to deal with. In BEHIND THE MASKS on page 193, you’ll find individual moves you can make for each playbook, to really push on and bring attention to that playbook’s issues. You can make these moves any time you could make any other GM move.</p><p>Example: Nova—Introduce threats only they can take on</p><p></p><p>@UUID[JournalEntry.G2EwWovYUbe3HSww]{GM Playbook Moves}</p>"
+      },
+      "_id": "voNk2PNNF7oNqnSn",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 800000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.uacO1mEypo2ZJG1j.JournalEntryPage.voNk2PNNF7oNqnSn"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855516071,
+        "modifiedTime": 1700081411610,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.voNk2PNNF7oNqnSn"
+    },
+    {
+      "name": "Make a Villain Move",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Like the playbook moves, every villain you make has a few moves of their own. You’ll find out how to do that later in this chapter (page 189). You can make these moves when you would make any other move, so long as the villain’s involved in the situation. They always amp up the situation, and highlight that villain’s own particular idiom.</p>"
+      },
+      "_id": "gUeKGSiXfwJEKGeS",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 1000000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.8QOq3yKgpBgOIwZG.JournalEntryPage.gUeKGSiXfwJEKGeS"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855520169,
+        "modifiedTime": 1700081005518,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.gUeKGSiXfwJEKGeS"
+    },
+    {
+      "name": "Make Them Pay a Price for Victory",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>You can open paths for the heroes to come through victoriously, having another hero or even a villain arrive with a way to succeed—but always at a price. The villain will only help if you give them something you shouldn’t; the hero offers help, but only in exchange for your team agreeing to follow her lead in the future.</p><p> </p>"
+      },
+      "_id": "89UPbdTtpbs4kmP3",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 1100000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.o7t08ghJ0DlhpXq1.JournalEntryPage.89UPbdTtpbs4kmP3"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855524459,
+        "modifiedTime": 1700081001967,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.89UPbdTtpbs4kmP3"
+    },
+    {
+      "name": "Principles",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>• Describe like a comic book</p><p>• Address yourself to the heroes, not the players</p><p>• Make your move, but misdirect</p><p>• Make threats real</p><p>• Give up to fight another day</p><p>• Treat human life as meaningful</p><p>• Make supers seem outlandish, creative, and cool</p><p>• Give villains drives to feature their humanity</p><p>• Make adults seem childish and short-sighted</p><p>• Support people, but only conditionally</p><p>• Ask provocative questions and build on the answers</p><p>• Be a fan of the PCs</p><p>• Treat your NPCs like hammers: square peg, round hole</p><p>• Remind them of the generations that came before</p><p>• Think in the gutters between panels</p><p>• Sometimes, disclaim decision-making</p>"
+      },
+      "_id": "NJoGfUBxMgS0m59d",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 1200000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.EJ8ZsGUIuVBoPMKn.JournalEntryPage.NJoGfUBxMgS0m59d"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855528592,
+        "modifiedTime": 1700080949235,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.NJoGfUBxMgS0m59d"
+    },
+    {
+      "name": "Put Innocents in Danger",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Halcyon City is full of people, and they may be used to the superhuman conflict that riddles the city, but they aren’t immune to it or safe from it. That’s why heroes are needed in the first place—to keep people safe. When Rampage throws a car, it has to go somewhere, and that means people are often put in danger. Putting innocents in danger ups the ante, and gives the heroes a chance to be heroes.</p>"
+      },
+      "_id": "J6NDHhQ2xeaHUZ6Y",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 1300000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.YkMMTr4W0ibow04I.JournalEntryPage.J6NDHhQ2xeaHUZ6Y"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855533411,
+        "modifiedTime": 1700080946429,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.J6NDHhQ2xeaHUZ6Y"
+    },
+    {
+      "name": "Reveal the Future, Subtly or Directly",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The characters in MASKS are the future of this city. They’ll determine what Halcyon City becomes. So keep showing them the future and the possible paths they’re on. Sometimes you can do this in a straightforwardly comic book fashion—literally, showing them the future through time portals or future versions of themselves or whatever. But other times, do it indirectly, through current figures that might represent what they’re becoming.</p>"
+      },
+      "_id": "Rm4fQyfiwGkpytfF",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 1400000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.YiEo7fRSYnd0OVD0.JournalEntryPage.Rm4fQyfiwGkpytfF"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855537776,
+        "modifiedTime": 1700080941620,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.Rm4fQyfiwGkpytfF"
+    },
+    {
+      "name": "Show the Costs of Collateral Damage",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>It’s easy to just pass over and ignore the damage when buildings get destroyed, cars trashed, streets torn up. Halcyon City’s gotten pretty darn good at cleaning up that kind of destruction, after all. But that doesn’t mean someone doesn’t come calling, demanding that the PCs take responsibility for the damage they’ve caused—especially when it’s important structures, or people, who’ve been hurt. Show them the costs and the penalties for letting that damage ensue.</p><p> </p>"
+      },
+      "_id": "y38zWkHIGzqyZmGc",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 1500000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.3vvole9MCKAsq2wT.JournalEntryPage.y38zWkHIGzqyZmGc"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855542151,
+        "modifiedTime": 1700080998811,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.y38zWkHIGzqyZmGc"
+    },
+    {
+      "name": "Take Influence Over Someone",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Young heroes often leave themselves vulnerable. They open themselves up and find themselves affected by the words of people they thought they could ignore. That’s you taking Influence over someone. You’re flagging that the PCs don’t have as much control over their own emotions as they might want...that they don’t always get to pick and choose whose words matter to them.</p>"
+      },
+      "_id": "NQfxjpOmX5mqu1Ow",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 1600000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.RmA3vo8I931ma2BD.JournalEntryPage.NQfxjpOmX5mqu1Ow"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855546437,
+        "modifiedTime": 1700080995500,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.NQfxjpOmX5mqu1Ow"
+    },
+    {
+      "name": "Tell them the Possible Consequences and Ask",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Sometimes, the path to victory is clear—but it won’t come without taking a few hits along the way. You can always tell a PC exactly what will happen if they follow a particular course of action, giving them a difficult choice to make or a messy option they hadn’t considered. It raises the tension around their choice and decisions, while still keeping things moving forward.</p>"
+      },
+      "_id": "TxVR9tX5Y50wmTRt",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 1700000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.gQE0SHsotSj5vU3z.JournalEntryPage.TxVR9tX5Y50wmTRt"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855550894,
+        "modifiedTime": 1700080991187,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.TxVR9tX5Y50wmTRt"
+    },
+    {
+      "name": "Tell Them Who They Are or Who They Should Be",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Adults and other NPCs who hold Influence over the PCs are always telling the PCs exactly who to be. How to act. What to think. Do it, and do it often. This almost always means they have to shift their Labels or reject the NPC’s Influence, and that’s exactly what you want.</p>"
+      },
+      "_id": "vbmelu6amDCsv8Xp",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 1800000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.DgnBwrRxS6aMCimh.JournalEntryPage.vbmelu6amDCsv8Xp"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855555079,
+        "modifiedTime": 1700080986912,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.vbmelu6amDCsv8Xp"
+    },
+    {
+      "name": "Turn Their Move Back on Them",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Sometimes, all you have to do to make a move is flip around the move a PC just made. They tried to pierce someone’s mask? Great! Pierce theirs, and ask them some questions. They tried to provoke someone? Great! Provoke them, telling them to do something nasty. When you turn their move back on them, always do it as if it was a 10+ result.</p>"
+      },
+      "_id": "EgNc30M2opeJiQOg",
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "sort": 1900000,
+      "ownership": {
+        "default": -1,
+        "qxt7zBbnFWpsYRqr": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "JournalEntry.pmqVxC2g3qJqRB6i.JournalEntryPage.EgNc30M2opeJiQOg"
+        }
+      },
+      "_stats": {
+        "systemId": "pbta",
+        "systemVersion": "0.7.2",
+        "coreVersion": "11.315",
+        "createdTime": 1699855559837,
+        "modifiedTime": 1700080982915,
+        "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+      },
+      "_key": "!journal.pages!llXD7GIZiU5z5MiG.EgNc30M2opeJiQOg"
+    }
+  ],
+  "ownership": {
+    "default": 0,
+    "Dqtz4V1KsRqBnD6q": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.7.2",
+    "coreVersion": "11.315",
+    "createdTime": 1699855309613,
+    "modifiedTime": 1700081472360,
+    "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+  },
+  "_id": "llXD7GIZiU5z5MiG",
+  "sort": 0,
+  "_key": "!journal!llXD7GIZiU5z5MiG"
+}

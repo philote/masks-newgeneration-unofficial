@@ -1,0 +1,58 @@
+{
+  "name": "Sharpened Eyes",
+  "type": "move",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/eye-target-%23ffffff-%233da7db.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_0gtw5ufxxrhn"
+    },
+    "core": {}
+  },
+  "system": {
+    "name": "",
+    "description": "<p>When you <strong>assess the situation</strong>, you may always ask one of the following questions, even on a 6-:</p>\n<ul>\n<li>What&rsquo;s my best way out/way in/way past?</li>\n<li>What here would be handy to grab?</li>\n<li>Who here is susceptible to my words?</li>\n</ul>",
+    "requiresMove": "",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveGroup": "",
+    "moveResults": {
+      "failure": {
+        "key": "data.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "data.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "data.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "The Nomad",
+    "rollType": "",
+    "rollMod": 0,
+    "choices": ""
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3
+  },
+  "_stats": {
+    "systemId": "pbta",
+    "systemVersion": "0.9.4",
+    "coreVersion": "11.315",
+    "createdTime": 1699858426966,
+    "modifiedTime": 1711825271600,
+    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+  },
+  "_id": "evojX8BAiWelkDnQ",
+  "sort": 900000,
+  "_key": "!items!evojX8BAiWelkDnQ"
+}
