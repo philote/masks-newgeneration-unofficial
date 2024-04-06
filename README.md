@@ -54,17 +54,17 @@ There is a journal with more instructions inside the module. Load the module and
 You can check changes at [CHANGELOG](CHANGELOG.md)
 
 # License
-The entire text of Masks is released under a Creative Commons Attribution 4.0 International license. https://creativecommons.org/licenses/by/4.0/
-This work uses material from The Innocent, published by Magpie Games in the Halcyon City Herald Collection and written by Brendan Conway, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/
-This work uses material from The Joined, published by Magpie Games in the Halcyon City Herald Collection and written by Jenn Martin, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/
-This work uses material from The Newborn, published by Magpie Games in the Halcyon City Herald Collection and written by Tim Franzke and Alberto Muti, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/
-This work uses material from The Reformed, published by Magpie Games in the Halcyon City Herald Collection and written by June Shores, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/
-This work uses material from The Star, published by Magpie Games in the Halcyon City Herald Collection and written by Brendan Conway, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/
-This work uses material from The Brain, published by Magpie Games in Secrets of AEGIS and written by Cam Banks, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/
-This work uses material from The Soldier, published by Magpie Games in Secrets of AEGIS and written by Mark Diaz Truman, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/
-This work uses material from The Harbinger, published by Magpie Games in Masks: Unbound and written by Fred Hicks, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/
-This work uses material from The Nomad, published by Magpie Games in Masks: Unbound and written by Brendan Conway, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/
-This work uses material from The Scion, published by Magpie Games in Masks: Unbound and written by Brendan Conway, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/
-Icons from game-icons.net are released under a Creative Commons Attribution 3.0 Unported license. https://creativecommons.org/licenses/by/3.0/
-back-forth.svg created by Lorc under CC BY 3.0, available through https://game-icons.net
+The entire text of Masks is released under a Creative Commons Attribution 4.0 International license. https://creativecommons.org/licenses/by/4.0/ \
+This work uses material from The Innocent, published by Magpie Games in the Halcyon City Herald Collection and written by Brendan Conway, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/ \
+This work uses material from The Joined, published by Magpie Games in the Halcyon City Herald Collection and written by Jenn Martin, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/ \
+This work uses material from The Newborn, published by Magpie Games in the Halcyon City Herald Collection and written by Tim Franzke and Alberto Muti, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/ \
+This work uses material from The Reformed, published by Magpie Games in the Halcyon City Herald Collection and written by June Shores, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/ \
+This work uses material from The Star, published by Magpie Games in the Halcyon City Herald Collection and written by Brendan Conway, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/ \
+This work uses material from The Brain, published by Magpie Games in Secrets of AEGIS and written by Cam Banks, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/ \
+This work uses material from The Soldier, published by Magpie Games in Secrets of AEGIS and written by Mark Diaz Truman, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/ \
+This work uses material from The Harbinger, published by Magpie Games in Masks: Unbound and written by Fred Hicks, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/ \
+This work uses material from The Nomad, published by Magpie Games in Masks: Unbound and written by Brendan Conway, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/ \
+This work uses material from The Scion, published by Magpie Games in Masks: Unbound and written by Brendan Conway, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/ \
+Icons from game-icons.net are released under a Creative Commons Attribution 3.0 Unported license. https://creativecommons.org/licenses/by/3.0/ \
+back-forth.svg created by Lorc under CC BY 3.0, available through https://game-icons.net \
 CSS for the light and dark themes came from https://gitlab.com/foundryvtt-mods/masks-newgeneration-sheets
