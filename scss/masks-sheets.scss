@@ -39,6 +39,11 @@
 .pbta.window-app {
   .window-content {
     color: var(--secondary-text-color);
+
+    a.content-link, a.inline-roll {
+      color: var(--input-text-color);
+      // background: var(--stats-secondary-bg-color);
+    }
   }
 
   input, 
