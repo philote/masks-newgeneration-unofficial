@@ -4,8 +4,6 @@
 <!--- Forge Bazaar Install % Badge -->
 ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Fmasks-newgeneration-unofficial&colorB=4aa94a)
 
-This module contains moves for the game Masks: A New Generation for use with the Foundry VTT generic PbtA System (https://gitlab.com/asacolips-projects/foundry-mods/pbta). You can install this system with this link: https://gitlab.com/asacolips-projects/foundry-mods/pbta/-/jobs/artifacts/beta/raw/system.json?job=build-beta
-
 The content from this module is from **Masks: A New Generation** from **Magpie Games**. You can get the PDF at: https://magpiegames.com/masks/
 
 This revised version of the module is based on works from multiple people: 
@@ -19,6 +17,9 @@ The current version is a merging of these modules' features, cleanup of the move
 ![A screenshot of the Masks character sheet in dark mode](images/screenshots/character-sheet_dark.webp)
 
 ![A screenshot of the Masks NPC sheet in light mode](images/screenshots/npc-sheet_light.webp)
+
+## Dependencies
+The following Foundry VTT game system must be installed to use this module: [Powered by the Apocalypse](https://github.com/asacolips-projects/pbta).
 
 ## Features
 - PC Character Sheets
