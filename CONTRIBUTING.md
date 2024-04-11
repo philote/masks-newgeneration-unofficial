@@ -1,3 +1,7 @@
+# Contributing
+
+This module is under the MIT license and is accepting merge requests and issue reports. Feel free to submit improvements to the module, and I'll review them and merge them if they seem useful for the module.
+
 # How to use the system locally
 
 With the change to LevelDB, there is an extra step to create the packs locally.

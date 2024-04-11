@@ -66,5 +66,4 @@ This work uses material from The Harbinger, published by Magpie Games in Masks: 
 This work uses material from The Nomad, published by Magpie Games in Masks: Unbound and written by Brendan Conway, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/ \
 This work uses material from The Scion, published by Magpie Games in Masks: Unbound and written by Brendan Conway, and is licensed under the Creative Commons Attribution 4.0 International license. http://creativecommons.org/licenses/by/4.0/ \
 Icons from game-icons.net are released under a Creative Commons Attribution 3.0 Unported license. https://creativecommons.org/licenses/by/3.0/ \
-back-forth.svg created by Lorc under CC BY 3.0, available through https://game-icons.net \
 CSS for the light and dark themes came from https://gitlab.com/foundryvtt-mods/masks-newgeneration-sheets

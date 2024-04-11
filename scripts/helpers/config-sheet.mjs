@@ -2,6 +2,14 @@ export const configSheet = async () => {
     // Pass Masks sheet object to sheetConfig
     game.pbta.sheetConfig = {
         rollFormula: "2d6",
+        rollShifting: true,
+        statShifting: {
+            label: game.i18n.localize("MASKS-SHEETS.Shift-Labels.label"),
+            img: "systems/pbta/assets/icons/svg/back-forth.svg",
+            value: 1,
+            stat: game.i18n.localize("MASKS-SHEETS.Shift-Labels.stat"),
+            stats: game.i18n.localize("MASKS-SHEETS.Shift-Labels.stats")
+        },
         statToggle: {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.statToggle"),
             modifier: 0

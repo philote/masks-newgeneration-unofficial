@@ -5,10 +5,6 @@
             "enable_dark_mode": {
                 "name": "Enable Dark Mode",
                 "hint": "Changes the Character, NPC, and Item sheets to a dark theme."
-            },
-            "enable_label_shift": {
-                "name": "Enable the Label Shift UI",
-                "hint": "Adds an easy to use label shift UI to the top of the Character Sheet."
             }
         },
         "Description": {
@@ -27,16 +23,10 @@
         "Influence-Unlock": "Unlock This Influence",
         "InfluenceCreate": "Create Influence",
         "Person-Name": "Person's Name",
-        "Shift-Down": "Shift Down",
-        "Shift-Up": "Shift Up",
-        "Shifts-Down": "Shifts Down",
-        "Shifts-Up": "Shifts Up",
-        "Shift-Labels": "Shift Labels",
-        "Label-Shift-Failed": "No shift occurs. Instead, you mark a condition.",
-        "Label-Shifts": "shifts labels!",
-        "None": "None",
-        "Background": {
-            "CustomTemplate": "<h3 class='bio_style'>When Our Team First Came Together</h3><ul><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>Backstory</h3><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p><strong>Question?</strong></p><ul><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>Relationships</h3><ul><li>&nbsp;</li><li>&nbsp;</li></ul><p>&nbsp;</p><h3 class='bio_style'>Notes</h3><ul><li>&nbsp;</li><li>&nbsp;</li></ul><p>&nbsp;</p>"
+        "Shift-Labels": {
+            "label": "Shift Labels",
+            "stat": "Label",
+            "stats": "Labels"
         },
         "NPCSheets": {
             "realName": "Real Name",

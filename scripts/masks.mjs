@@ -12,16 +12,6 @@ Hooks.once("init", () => {
         onChange: debouncedReload
     });
 
-    game.settings.register("masks-newgeneration-unofficial", "enable_label_shift", {
-        name: "MASKS-SHEETS.Settings.enable_label_shift.name",
-        hint: "MASKS-SHEETS.Settings.enable_label_shift.hint",
-        scope: "world",
-        config: true,
-        type: Boolean,
-        default: true,
-        onChange: debouncedReload
-    });
-
     var head = document.getElementsByTagName('HEAD')[0];
     if (game.settings.get("masks-newgeneration-unofficial","enable_dark_mode")){
 		var link = document.createElement('link');
@@ -36,7 +26,6 @@ Hooks.once("init", () => {
 
 Hooks.on('setup', () => {
     // Ensure template is loaded so that it will be ready when needed
-    loadTemplates(['modules/masks-newgeneration-unofficial/templates/shift-labels.hbs']);
     loadTemplates(['modules/masks-newgeneration-unofficial/templates/influences-tab.hbs']);
     loadTemplates(['modules/masks-newgeneration-unofficial/templates/influences-tab-page.hbs']);
 });
@@ -57,32 +46,9 @@ Hooks.once('pbtaSheetConfig', () => {
     game.settings.set('pbta', 'hideUses', true);
 });
 
-Hooks.on("preCreateActor", async function (document, data, options, userId) {
-    
-    if (document.type === 'character') {
-        document.updateSource({'flags.masks-newgeneration-unofficial.influences': []});
-        // Add template for Description Tab's input box.
-        // document.updateSource({
-        //     'system.details.biography.value': game.i18n.localize('MASKS-SHEETS.Background.CustomTemplate')
-        // });
-    }
-});
-
 Hooks.on("renderActorSheet", async (app, html, context) => {
 
     if (app.actor.type === "character") {
-        
-        // Label Shift UI
-        if (game.settings.get("masks-newgeneration-unofficial","enable_label_shift")) {
-
-            const statsListElem = html[0].querySelector('.pbta.sheet.actor .stats-list');
-            if (statsListElem) {
-                const shiftLabelsTemplate = _templateCache['modules/masks-newgeneration-unofficial/templates/shift-labels.hbs'](context, {allowProtoMethodsByDefault: true, allowProtoPropertiesByDefault: true});
-                statsListElem.insertAdjacentHTML('beforeend', shiftLabelsTemplate);
-            }
-
-            onLabelShiftClick(app.actor, html);
-        }
 
         // rename equipment tab
         const equipmentTabEl = html[0].querySelector('.pbta.sheet.actor .sheet-main [data-tab=equipment]');
@@ -172,52 +138,4 @@ function onInfluenceAction(actor, html) {
 
         await actor.setFlag("masks-newgeneration-unofficial", "influences", influences);
     });
-}
-
-
-function onLabelShiftClick(actor, html) {
-    let shiftRoll = html.find('.masks-shift-roll');
-    shiftRoll.click(async function(event) {
-        event.preventDefault();
-        // TODO: add a check for if they are the same and silent fail
-        const upVal = html.find('.masks-shift-up').find(":selected").val();
-        const downVal = html.find('.masks-shift-down').find(":selected").val();
-        //---
-        let statUp = actor.system.stats[upVal];
-        let statDown = actor.system.stats[downVal];
-
-        if (!statUp && !statDown) { return; }
-        let statUpdate = {};
-        let performShift = true;
-
-        let content = `<h2 class="cell__title">${actor.name} ${game.i18n.localize('MASKS-SHEETS.Label-Shifts')}</h2>`;
-        if (statUp) {
-            statUp.value++;
-            content += `<b style="color: darkred">${statUp.label} ${game.i18n.localize('MASKS-SHEETS.Shifts-Up')}</b><br/>`;
-            statUpdate[`data.stats.${upVal}.value`] = statUp.value;
-        }
-        if (statDown) {
-            statDown.value--;
-            content += `<b style="color: red">${statDown.label} ${game.i18n.localize('MASKS-SHEETS.Shifts-Down')}</b>`;
-            statUpdate[`data.stats.${downVal}.value`] = statDown.value;
-        }
-
-        if (statUp?.value > 3 || statDown?.value < -3) {
-            performShift = false;
-            if (statUp) { statUp.value--; }
-            if (statDown) { statDown.value++; }
-            content = `<h2 class="cell__title">${actor.name} ${game.i18n.localize('MASKS-SHEETS.Label-Shifts')}</h2><p>${game.i18n.localize('MASKS-SHEETS.Label-Shift-Failed')}</p>`;
-        }
-
-        await ChatMessage.create({
-            author: game.userId,
-            content: content,
-            speaker: ChatMessage.getSpeaker({actor: actor}),
-            type: CONST.CHAT_MESSAGE_TYPES.OTHER
-        });
-
-        if (performShift) { 
-            await actor.update(statUpdate); 
-        }
-    });   
 }
