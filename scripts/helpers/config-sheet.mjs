@@ -7,8 +7,10 @@ export const configSheet = async () => {
             label: game.i18n.localize("MASKS-SHEETS.Shift-Labels.label"),
             img: "systems/pbta/assets/icons/svg/back-forth.svg",
             value: 1,
-            stat: game.i18n.localize("MASKS-SHEETS.Shift-Labels.stat"),
-            stats: game.i18n.localize("MASKS-SHEETS.Shift-Labels.stats")
+            labels: {
+                stat: game.i18n.localize("MASKS-SHEETS.Shift-Labels.stat"),
+                stats: game.i18n.localize("MASKS-SHEETS.Shift-Labels.stats")
+            }
         },
         statToggle: {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.statToggle"),
