@@ -1,3 +1,6 @@
+#1.5.8
+- Fixed a bug with making new influences
+
 #1.5.7
 - Migrated from custom label shifting to using the on built into the PbtA system
 
