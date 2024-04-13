@@ -46,6 +46,13 @@ Hooks.once('pbtaSheetConfig', () => {
     game.settings.set('pbta', 'hideUses', true);
 });
 
+Hooks.on("preCreateActor", async function (document, data, options, userId) {
+    
+    if (document.type === 'character') {
+        document.updateSource({'flags.masks-newgeneration-unofficial.influences': []});
+    }
+});
+
 Hooks.on("renderActorSheet", async (app, html, context) => {
 
     if (app.actor.type === "character") {
