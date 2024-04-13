@@ -1,3 +1,6 @@
+#1.5.7
+- Migrated from custom label shifting to using the on built into the PbtA system
+
 #1.5.4
 - New release process to get packs out of git. From now on people will need to use `npm run pullJSONtoLDB` to get packs locally.
 
