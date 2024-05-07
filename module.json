@@ -1,13 +1,13 @@
 {
   "id": "masks-newgeneration-unofficial",
-  "title": "Masks: A New Generation",
+  "title": "Masks: A New Generation (PbtA)",
   "description": "Masks: A New Generation from Magpie Games (unofficial)",
   "version": "#{VERSION}#",
   "library": "false",
   "compatibility": {
     "minimum": 11,
     "verified": 11.315,
-    "maximum": 11
+    "maximum": 12
   },
   "authors": [
     {
