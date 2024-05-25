@@ -1,1 +1,3 @@
-- add influence to rolling
+- add influence to rolling (with ongoing and forward: when you click any move roll button, instead of immediately rolling, it can pop up a dialog w/ a list of all the influences you have in your character sheet + a check box next to each one. For each checkbox you check, you get a +1 on the roll. (or maybe it's radio buttons? not sure if multiple influences can affect the same roll)
+- update the output to let players know why the label switch failed when a label is too high or too low.
+- add auto-advances for potential on a failed roll.

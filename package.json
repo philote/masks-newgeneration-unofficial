@@ -1,7 +1,5 @@
 {
   "name": "masks-newgeneration-unofficial",
-  "version": "1.0.0",
-  "description": "CSS compiler for the PbtA Masks system",
   "scripts": {
     "build": "gulp build",
     "compile": "gulp css",
@@ -10,12 +8,6 @@
     "pushLDBtoJSON": "node ./tools/pushLDBtoJSON.mjs",
     "pullJSONtoLDB": "node ./tools/pullJSONtoLDB.mjs"
   },
-  "browserslist": [
-    "last 3 versions"
-  ],
-  "author": "Joseph Hopson",
-  "license": "MIT",
-  "private": true,
   "devDependencies": {
     "@foundryvtt/foundryvtt-cli": "^1.0.2",
     "gulp": "^5.0.0",

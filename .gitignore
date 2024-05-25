@@ -32,5 +32,11 @@ packs/*
 *.sass.map
 *.scss.map
 
+# Optional eslint cache
+.eslintcache
+
+# Optional npm cache directory
+.npm
+
 #OS
 .DS_Store

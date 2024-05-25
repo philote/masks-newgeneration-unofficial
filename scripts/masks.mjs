@@ -66,7 +66,6 @@ Hooks.on("renderActorSheet", async (app, html, context) => {
         // Add the influence sheet-tab
         const equipmentEl = html[0].querySelector('.pbta.sheet.actor .sheet-main .sheet-body .equipment .cell--equipment');
         if (equipmentEl) {
-            // const influenceSheetTemplate = _templateCache['modules/masks-newgeneration-unofficial/templates/influences-tab-page.hbs'](context, {allowProtoMethodsByDefault: true, allowProtoPropertiesByDefault: true});
             const influenceSheetTemplate = await renderTemplate('modules/masks-newgeneration-unofficial/templates/influences-tab-page.hbs', context);
             equipmentEl.insertAdjacentHTML('beforebegin', influenceSheetTemplate);
         }
@@ -78,17 +77,7 @@ Hooks.on("renderActorSheet", async (app, html, context) => {
         });
         onInfluenceAction(app.actor, html);
     }
-
-    let repList = [
-        {
-            "name": "faction name",
-            "neg-rep": 4,
-            "pos-rep": 2
-        }
-    ]
 });
-
-
 
 function onInfluenceCreate(actor, html) {
     let create = html.find('.influence-create');

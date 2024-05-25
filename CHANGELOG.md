@@ -1,3 +1,6 @@
+#1.5.9
+- Foundry v12 fixes
+
 #1.5.8
 - Fixed a bug with making new influences
 
