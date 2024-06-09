@@ -1,6 +1,10 @@
 import { configSheet } from "./helpers/config-sheet.mjs";
+// import { RollPbtAMasks } from "./helpers/rollsMasks.mjs";
 
 Hooks.once("init", () => {
+
+    // CONFIG.Dice.RollPbtA = RollPbtAMasks;
+	// CONFIG.Dice.rolls.push(RollPbtAMasks);
 
     game.settings.register("masks-newgeneration-unofficial", "enable_dark_mode", {
         name: "MASKS-SHEETS.Settings.enable_dark_mode.name",
@@ -43,19 +47,17 @@ Hooks.once('pbtaSheetConfig', () => {
     game.settings.set('pbta', 'hideOngoing', false);
     game.settings.set('pbta', 'hideRollMode', true);
     game.settings.set('pbta', 'hideUses', true);
+    game.settings.set('pbta', 'hideHold', false);
 });
 
-Hooks.on("preCreateActor", async function (document, data, options, userId) {
-    
+Hooks.on("preCreateActor", async function (document) {
     if (document.type === 'character') {
         document.updateSource({'flags.masks-newgeneration-unofficial.influences': []});
     }
 });
 
 Hooks.on("renderActorSheet", async (app, html, context) => {
-
     if (app.actor.type === "character") {
-
         // rename equipment tab
         const equipmentTabEl = html[0].querySelector('.pbta.sheet.actor .sheet-main [data-tab=equipment]');
         if (equipmentTabEl) {
