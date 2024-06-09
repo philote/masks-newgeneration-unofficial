@@ -47,7 +47,10 @@ Hooks.once('pbtaSheetConfig', () => {
     game.settings.set('pbta', 'hideOngoing', false);
     game.settings.set('pbta', 'hideRollMode', true);
     game.settings.set('pbta', 'hideUses', true);
-    game.settings.set('pbta', 'hideHold', false);
+    
+    if (isNewerVersion(game.system.version, '1.0.4')) {
+        game.settings.set('pbta', 'hideHold', false);
+    }
 });
 
 Hooks.on("preCreateActor", async function (document) {
