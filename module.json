@@ -344,10 +344,8 @@
       {
         "id": "pbta",
         "type": "system",
-        "manifest": "https://asacolips-artifacts.s3.amazonaws.com/pbta/1.0.8/system.json",
         "compatibility": {
-          "minimum": "0.9.0",
-          "verified": "1.0.8"
+          "minimum": "0.9.0"
         }
       }
     ]
