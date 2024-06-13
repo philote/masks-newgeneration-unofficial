@@ -1,3 +1,48 @@
-- add influence to rolling (with ongoing and forward: when you click any move roll button, instead of immediately rolling, it can pop up a dialog w/ a list of all the influences you have in your character sheet + a check box next to each one. For each checkbox you check, you get a +1 on the roll. (or maybe it's radio buttons? not sure if multiple influences can affect the same roll)
-- update the output to let players know why the label switch failed when a label is too high or too low.
 - add auto-advances for potential on a failed roll.
+- add influence to rolling (when you click any move roll button, instead of immediately rolling, it can pop up a dialog w/ a list of all the influences you have in your character sheet + a check box next to each one. For each checkbox you check, you get a +1 on the roll. (or maybe it's radio buttons? not sure if multiple influences can affect the same roll)
+
+- work on playbook updates
+Attribute Grants:
+-----------------
+Abilities | LongText [multi-select || fill in the blank]
+Look | Tags
+Backstory | LongText [multi-questions]
+Team together | LongText [question]
+Relation Ships | Text [multi-questions with fill in the blank]
+Moment of Truth | LongText [just text]
+Influence | Text | [single-select] 
+
+advancement basic | 8 [Multi-select]
+advancement advanced | 6 [Multi-select]
+
+Item Grants:
+------------
+Team Moves
+Playbook Moves
+
+Playbook special bio-tab
+------------------------
+Legacy's legacy info | LongText [fill in the blank]
+Janis - Secret Identity | LongText [mulitple single-selects]
+Doomed - Nemesis | LongText [fill in the blank]
+Doomed - Doom | LongText [multi-select]
+Doomed - Doomsigns
+Doomed - Sanctuary | LongText [multi-select & fill in the blank]
+Beacon - Drives | LongText [multi-select]
+Bull - The Bull’s Heart | LongText [fill in the blank & Single-select]
+Reformed - Friends in Low Places
+Newborn - A Blank Slate
+INNOCENT - Time Period
+INNOCENT - Your Future Self
+Star - Audience
+JOINED - Your Other Half
+JOINED - Bonds and Distinctions
+BRAIN - Your Shame
+SOLDIER - A Higher Calling...
+HARBINGER - Connecting the Dots
+NOMAD - Putting Down Roots
+SCION - Your Lineage
+SCION - Respect
+
+
+- update the output to let players know why the label switch failed when a label is too high or too low.
