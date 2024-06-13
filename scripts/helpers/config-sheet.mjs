@@ -458,7 +458,7 @@ export const configSheet = async () => {
           },
           advancements: {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.advancementsLabel"),
-            description: null,
+            description: game.i18n.localize("MASKS-SHEETS.CharacterSheets.advancementsDescription"),
             customLabel: false,
             userLabel: false,
             type: "ListMany",
@@ -467,7 +467,7 @@ export const configSheet = async () => {
           },
           laterAdvances: {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.laterAdvancesLabel"),
-            description: null,
+            description: game.i18n.localize("MASKS-SHEETS.CharacterSheets.laterAdvancesDescription"),
             customLabel: false,
             userLabel: false,
             type: "ListMany",
@@ -542,22 +542,18 @@ export const configSheet = async () => {
         moveTypes: {
           basic: {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.moveTypes.basicLabel"),
-            moves: [],
             creation: true,
           },
           playbook: {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.moveTypes.playbookLabel"),
-            moves: [],
-            playbook: true,
-          },
-          team: {
-            label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.moveTypes.teamLabel"),
-            moves: [],
             playbook: true,
           },
           adult: {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.moveTypes.adultLabel"),
-            moves: [],
+          },
+          rules: {
+            label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.moveTypes.rulesLabel"),
+            creation: true,
           },
         },
       },

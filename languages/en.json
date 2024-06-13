@@ -82,7 +82,9 @@
             },
             "influenceLabel": "Influence",
             "advancementsLabel": "Advancements",
+            "advancementsDescription": "When you fill your potential track, you advance. Choose from the list below.",
             "laterAdvancesLabel": "Later Advances",
+            "laterAdvancesDescription": "When you fill your potential track, you advance. Choose from the list below.",
             "details": {
                 "lookLabel": "Look",
                 "abilitiesLabel": "Abilities",
@@ -95,7 +97,7 @@
             "moveTypes": {
                 "basicLabel": "Basic Moves",
                 "playbookLabel": "Playbook Moves",    
-                "teamLabel": "Team Moves",
+                "rulesLabel": "Rules",
                 "adultLabel": "Adult Moves"
             },
             "Playbooks": {
