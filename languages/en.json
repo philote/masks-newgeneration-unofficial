@@ -63,8 +63,7 @@
                 "superior": "Superior",
                 "mundane": "Mundane"
             },
-            "heroNameLabel": "Hero Name",
-            "advancesLabel": "Advances",
+            "realNameLabel": "Real Name",
             "xpLabel": "Potential",
             "conditions": {
                 "label": "Conditions",    
@@ -83,6 +82,7 @@
             },
             "influenceLabel": "Influence",
             "advancementsLabel": "Advancements",
+            "laterAdvancesLabel": "Later Advances",
             "details": {
                 "lookLabel": "Look",
                 "abilitiesLabel": "Abilities",
