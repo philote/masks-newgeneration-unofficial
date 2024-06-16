@@ -14,7 +14,7 @@
     "name": "",
     "description": "<p>When <strong>you share a triumphant celebration with someone</strong>, ask them if they felt they could have done it without you. If they say yes, give Influence to them and mark a condition. If they say no, they give Influence to you.</p>",
     "requiresMove": "",
-    "moveType": "team",
+    "moveType": "playbook",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -35,7 +35,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Brain",
+    "playbook": "1",
     "rollType": "",
     "rollMod": 0,
     "choices": ""
@@ -46,11 +46,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.4",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.10",
+    "coreVersion": "12.327",
     "createdTime": 1699857569855,
-    "modifiedTime": 1711825599363,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718255798657,
+    "lastModifiedBy": "S5z9pWDiqzE1X6Fi",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "6KeDS2FfRjpxsrdF",
   "sort": 400000,

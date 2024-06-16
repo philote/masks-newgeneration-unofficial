@@ -16,7 +16,7 @@
     "name": "",
     "description": "<p>When you <strong>share a triumphant celebration with someone</strong>, tell them how they’re awesome and add a Team to the pool. If they tell you how you’re awesome in return, add another Team to the pool.</p>",
     "requiresMove": "",
-    "moveType": "team",
+    "moveType": "playbook",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -37,7 +37,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Beacon",
+    "playbook": "0",
     "rollType": "",
     "rollMod": 0,
     "choices": ""
@@ -48,11 +48,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.10",
+    "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1711772620558,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718255511165,
+    "lastModifiedBy": "S5z9pWDiqzE1X6Fi",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "dVGxoDujkZNCNQVo",
   "sort": 800000,

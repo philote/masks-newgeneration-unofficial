@@ -37,7 +37,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Doomed",
+    "playbook": "",
     "rollType": "",
     "rollMod": 0,
     "choices": ""
@@ -48,11 +48,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.10",
+    "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1711773343712,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718258709586,
+    "lastModifiedBy": "S5z9pWDiqzE1X6Fi",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "S6qLyKvutRXBUm6w",
   "sort": 400000,

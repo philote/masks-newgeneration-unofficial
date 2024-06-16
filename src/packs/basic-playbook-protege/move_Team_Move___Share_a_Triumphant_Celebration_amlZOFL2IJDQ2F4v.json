@@ -16,7 +16,7 @@
     "name": "",
     "description": "<p>When you <strong>share a triumphant celebration with someone</strong>, ask them if you’ve been a good leader or effective teammate. If they say yes, your mentor loses Influence over you and you mark potential. If they say no, your mentor gains Influence over you, and you take +1 forward on using the Label your mentor embodies.</p>",
     "requiresMove": "",
-    "moveType": "team",
+    "moveType": "playbook",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -37,7 +37,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Protégé",
+    "playbook": "14",
     "rollType": "",
     "rollMod": 0,
     "choices": ""
@@ -48,11 +48,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.10",
+    "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1711773993724,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718262450761,
+    "lastModifiedBy": "S5z9pWDiqzE1X6Fi",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "amlZOFL2IJDQ2F4v",
   "sort": 1000000,

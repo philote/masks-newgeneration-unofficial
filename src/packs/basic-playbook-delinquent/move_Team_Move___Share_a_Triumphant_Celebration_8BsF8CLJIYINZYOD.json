@@ -16,7 +16,7 @@
     "name": "",
     "description": "<p>When you <strong>share a triumphant celebration with someone</strong>, ask them if they think you’re cool. If they say yes, give them Influence and take Influence over them. If they say no, mark a condition or spurn them immediately. If they’re a teammate, then either way, add a Team to the pool.</p>",
     "requiresMove": "",
-    "moveType": "team",
+    "moveType": "playbook",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -37,7 +37,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Delinquent",
+    "playbook": "3",
     "rollType": "",
     "rollMod": 0,
     "choices": ""
@@ -48,11 +48,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.10",
+    "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1711772985187,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718257989492,
+    "lastModifiedBy": "S5z9pWDiqzE1X6Fi",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "8BsF8CLJIYINZYOD",
   "sort": 200000,

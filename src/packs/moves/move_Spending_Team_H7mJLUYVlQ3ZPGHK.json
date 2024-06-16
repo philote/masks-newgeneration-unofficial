@@ -20,7 +20,7 @@
     "name": "",
     "description": "<p>Anyone on the team can spend a Team out of the pool to give a teammate +1 on a move, after the roll. To do this, the spender has to be able to actually help&mdash;if you&rsquo;re in a completely different place from your teammate, then you can&rsquo;t spend Team to help, unless it makes sense in the fiction (a telepathic connection, maybe).</p>\n<p>Multiple teammates can spend Team from the pool to help on the same roll&mdash;even low rolls can be turned into hits when the whole group pitches in and there&rsquo;s enough Team in the pool.</p>\n<p>But each teammate can only spend one Team out of the pool for any single roll, and they still have to be able to actually help in the fiction.</p>\n<p>NPCs who are part of the team, whether temporarily or permanently, can also help. Players can spend Team from the pool on behalf of those NPCs. The players still have to spend one Team per NPC who helps, and the NPCs still have to be fictionally capable of helping. If the GM thinks the NPC wouldn&rsquo;t help, then they won&rsquo;t.</p>",
     "requiresMove": "",
-    "moveType": "team",
+    "moveType": "rules",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -52,11 +52,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.10",
+    "coreVersion": "12.327",
     "createdTime": null,
-    "modifiedTime": 1711773144160,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718255690435,
+    "lastModifiedBy": "S5z9pWDiqzE1X6Fi",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_key": "!items!H7mJLUYVlQ3ZPGHK"
 }

@@ -49,7 +49,7 @@ Hooks.once('pbtaSheetConfig', () => {
     game.settings.set('pbta', 'hideUses', true);
     
     if (isNewerVersion(game.system.version, '1.0.4')) {
-        game.settings.set('pbta', 'hideHold', false);
+        game.settings.set('pbta', 'hideHold', true);
     }
 });
 
@@ -65,7 +65,6 @@ Hooks.on("renderActorSheet", async (app, html, context) => {
         const equipmentTabEl = html[0].querySelector('.pbta.sheet.actor .sheet-main [data-tab=equipment]');
         if (equipmentTabEl) {
             equipmentTabEl.innerText = game.i18n.localize("MASKS-SHEETS.Influences");
-            
         }
 
         // Add the influence sheet-tab

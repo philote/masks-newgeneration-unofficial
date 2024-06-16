@@ -16,7 +16,7 @@
     "name": "",
     "description": "<p>When you <strong>share a triumphant celebration with someone</strong>, take Influence over them if you show them meaningful affection, physical or emotional. They decide if it’s meaningful.</p>",
     "requiresMove": "",
-    "moveType": "team",
+    "moveType": "playbook",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -37,7 +37,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Outsider",
+    "playbook": "13",
     "rollType": "",
     "rollMod": 0,
     "choices": ""
@@ -48,11 +48,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.10",
+    "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1711773906060,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718262475594,
+    "lastModifiedBy": "S5z9pWDiqzE1X6Fi",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "uvXIGFEhjiiTu0F5",
   "sort": 1000000,

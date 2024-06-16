@@ -1,0 +1,268 @@
+{
+  "name": "The Transformed",
+  "type": "playbook",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/playbook.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_gb3smq5ubtn",
+      "path": "Basic Playbooks#/CF_SEP/The Transformed",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "description": "<div class=\"playbook\">\n<section>\n<h1>THE TRANSFORMED</h1>\n<p>You can recall a time not too long ago when you looked...normal. When you didn’t feel their stares. When you didn’t hear their gasps. When no one thought of you as a monster. Those were the days, huh.</p>\n</section>\n<section class=\"rules\">\n<div>\n<h2>Look</h2>\n<ul>\n<li>ambiguous, man, shifting, transgressing, woman</li>\n<li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>\n<li>strange eyes, upsetting eyes, piercing eyes, human eyes</li>\n<li>metallic flesh, scaled flesh, alien flesh, plated flesh, untouchable flesh, mottled flesh</li>\n<li>terrifying costume, strange costume, unnerving costume, no costume</li>\n</ul>\n<h2>Abilities</h2>\n<p>You appear obviously and clearly monstrous, and your powers are tied to your appearance. Choose two, and describe how they make you grotesque.</p>\n<ul>\n<li>impenetrable armor</li>\n<li>inhuman might</li>\n<li>plant affinity</li>\n<li>superhuman senses</li>\n<li>technopathy</li>\n<li>transmuting flesh</li>\n</ul>\n<h2>Labels</h2>\n<p><em>(at character creation, add +1 wherever you choose)</em></p>\n<p><strong>DANGER:</strong> +1</p>\n<p><strong>FREAK:</strong> +3</p>\n<p><strong>SAVIOR:</strong> 0</p>\n<p><strong>SUPERIOR:</strong> -1</p>\n<p><strong>MUNDANE:</strong> -1</p>\n<h2>Backstory</h2>\n<ul>\n<li>Who were you before?</li>\n<li>When did you change? What caused it?</li>\n<li>Who, outside of the team, is helping you understand your new body?</li>\n<li>Why don’t you just try to hide yourself away?</li>\n<li>Why do you care about the team?</li>\n</ul>\n<p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>\n<h2>When our team first came together...</h2>\n<p>We drew attention and ire from plenty during the fight. One important person in particular now hates and fears us. Who is it?</p>\n<h2>Relationships</h2>\n<p>___________________ comforted you when you were at your lowest.</p>\n<p>___________________ knew you before you changed.</p>\n<h2>Influence</h2>\n<p>You try not to care what other people think, even if you can’t shut everyone out. Give Influence to one teammate.</p>\n<h2>Moment of Truth</h2>\n<p>It’s so easy to forget that you’re not your body, and you’re not the voice in your head—you’re both. Be the monster, and save them anyway. Smash down walls, and speak softly. Because when you embrace it, you can do anything. Of course, putting on a display like this is sure to rile up those who see only the monster when they look at you...</p>\n</div>\n<div>\n<h2>Transformed Moves</h2>\n<p><em>(Choose three)</em></p>\n<div>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.QdaMEZ10LHjTzN3e]{I Am Not My Body}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.v8KMWk8A997WNMHR]{Not Human Enough}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.KVD2hGeXUUBpXZio]{Unstoppable}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.rBp1TAjpQCnSnydG]{Coming For You}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.s7eFqYiXyXFs5jzS]{Wish I Could Be}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.cuRPcDPrjbO4sSkk]{Be The Monster}</p>\n</div>\n<h2>Team Moves</h2>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.osYGF8n6N7RHq8c9]{The Transformed - Team Move}</p>\n<h2>Potential</h2>\n<p>Every time you roll a miss on a move, mark potential.</p>\n<h2>Advancement</h2>\n<p>When you fill your potential track, you advance. Choose from the list below.</p>\n<ul>\n<li>Take another move from your playbook</li>\n<li>Take another move from your playbook</li>\n<li>Take a move from another playbook</li>\n<li>Take a doom, doomtrack, and doomsigns from the Doomed playbook</li>\n<li>Someone permanently loses Influence over you; add +1 to a Label</li>\n<li>Rearrange your Labels as you choose, and add +1 to a Label</li>\n<li>Unlock your Moment of Truth</li>\n<li>Mutate further and reveal another two new abilities (chosen from any playbook)</li>\n</ul>\n<hr />\n<p>When you’ve taken five advances from the top list, you can take advances from the list below.</p>\n<ul>\n<li>Unlock your Moment of Truth after it’s been used once</li>\n<li>Change playbooks</li>\n<li>Take an adult move</li>\n<li>Take an adult move</li>\n<li>Lock a Label, and add +1 to a Label of your choice</li>\n<li>Retire from the life or become a paragon of the city</li>\n</ul>\n</div>\n</section>\n<section class=\"extras\">\n<div>\n<h2>PLAYING THE TRANSFORMED</h2>\n<p>Troubled, titanic, grotesque, lamentable. The Transformed used to be human, without any powers or superhuman elements, until something happened and they were changed, obviously and permanently. They might be a cyborg, or a strange monster, or made of electricity—just so long as they’re strange and inhuman, with no way of hiding it. The Transformed’s story is about what you do with your new life and form, and how you react to the way other people treat you now.</p>\n<p>Make the details of your abilities strange and surprising. If you have impenetrable armor, it could be just straight up armored plating, like a lizard— or it could be a layer of water over your entire body that slows down any impact coming your way. If you have superhuman senses, it could be that you can see and hear really well—or it could be that you have strange antenna that can actually detect the thoughts of sentient minds. Be grotesque, and play with it.</p>\n<p>As the Transformed, lots of people will attempt to shift your Labels, just by how they react to your appearance. You’re the quintessential book, and your cover is pretty striking—other people will judge you by it all the time, whether you like it or not. Your story is about how your actions either change or confirm those opinions. You can prove those people wrong—or you can prove them right. It’s your choice.</p>\n<p>Pay close attention to your backstory questions while building your character. You’re not the Bull, whose past is muddy and unclear—you had a life, and you remember it clearly. It’s important to know who you were so that everyone at the table knows who you might be now. It’s especially important that you answer the third question, about someone outside of the team who is helping you understand your new body. This character is your link to further developments specifically on your transformation. Whether it’s learning about what your transformation means, how it happened, what you can really do, or how to change back, they’re going to play an important role in your story.</p>\n<p>It’s theoretically possible for you to change yourself back over the course of play—after all, everything and anything is possible within Halcyon City. But keep in mind that doing so will be very difficult—you have no tools to point out such a path for yourself—and it requires you to change playbooks, or retire your character at the very least. Your character’s arc and struggles aren’t really about trying to return to what you were—they’re about trying to deal with what you are now.</p>\n</div>\n<div>\n<h2>NOTES ON YOUR MOVES AND EXTRAS</h2>\n<p>For <span class=\"special\">I am not my body</span>, you don’t just roll to <span class=\"special\">take a powerful blow</span> at -2—if you have no conditions marked, you’ll still roll at a 0, not a -2.</p>\n<p>For <span class=\"special\">Not human enough</span>, what counts as a “terrifying way” is up to you and the GM, but the GM might push you on it to make sure you’re doing something actually terrifying.</p>\n<p>For <span class=\"special\">Coming for you</span>, if it’s not immediately obvious who’s to blame for a given condition you mark, don’t worry about it and don’t bother to keep track—you’ll mark plenty of conditions, so just worry about the times when it’s a pretty clear choice. Remember that +1 forward is only a +1 on the very next move you make against them, whatever it is.</p>\n<p>For <span class=\"special\">Be the monster</span>, there might be times when it doesn’t make sense that you could frighten or intimidate another individual—the GM lets you know if that happens. Otherwise, though, the move should trigger whenever you do something outright meant to provoke fear. It is not impossible for you to trigger the move accidentally, but the vast majority of the time it should be the result of intentional effort to be frightening.</p>\n</div>\n<div>\n<h3>SUGGESTED MOVES FROM OTHER PLAYBOOKS</h3>\n<ul>\n<li><span class=\"special\">You’ve got a head you don’t need</span>, from the Bull playbook. Take this if you want to have a somewhat softer option than <span class=\"special\">Be the monster</span> for cowing people into doing what you want.</li>\n<li><span class=\"special\">Troublemaker</span>, from the Delinquent playbook. Take this if you want to emphasize how destructive and dangerous you can be, even when you’re trying to help your teammates.</li>\n<li><span class=\"special\">Game face</span>, from the Janus playbook. Take this if you want to commit to taking down particularly powerful foes, or saving the people who matter to you, no matter what.</li>\n</ul>\n</div>\n<div>\n<h3>INSPIRATION FOR THE TRANSFORMED</h3>\n<p>Cyborg, <strong>TEEN TITANS</strong></p>\n<p>Mettle, <strong>AVENGERS ACADEMY</strong></p>\n<p>Beast, <strong>X-MEN</strong></p>\n<p>The Hulk, <strong>THE INCREDIBLE HULK</strong></p>\n<p>Rockslide, <strong>WOLVERINE AND THE X-MEN</strong></p>\n</div>\n</section>\n</div>",
+    "slug": "the-transformed",
+    "actorType": "",
+    "stats": {
+      "danger": {
+        "label": "Danger",
+        "value": 1
+      },
+      "freak": {
+        "label": "Freak",
+        "value": 3
+      },
+      "savior": {
+        "label": "Savior",
+        "value": 0
+      },
+      "superior": {
+        "label": "Superior",
+        "value": 1
+      },
+      "mundane": {
+        "label": "Mundane",
+        "value": 1
+      }
+    },
+    "statsDetail": "(at character creation, add +1 wherever you choose)",
+    "attributes": {
+      "advancements": {
+        "label": "Advancements",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "1": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "2": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "3": {
+                "value": false,
+                "label": "Take a doom, doomtrack, and doomsigns from the Doomed playbook"
+              },
+              "4": {
+                "value": false,
+                "label": "Someone permanently loses Influence over you; add +1 to a Label"
+              },
+              "5": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "6": {
+                "value": false,
+                "label": "Unlock your Moment of Truth"
+              },
+              "7": {
+                "value": false,
+                "label": "Mutate further and reveal another two new abilities (chosen from any playbook)"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attrLeft",
+        "value": "",
+        "max": null,
+        "options": {}
+      },
+      "laterAdvances": {
+        "label": "Later Advances",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Unlock your Moment of Truth after it’s been used once"
+              },
+              "1": {
+                "value": false,
+                "label": "Change playbooks"
+              },
+              "2": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "3": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "4": {
+                "value": false,
+                "label": "Lock a Label, and add +1 to a Label of your choice"
+              },
+              "5": {
+                "value": false,
+                "label": "Retire from the life or become a paragon of the city"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attrLeft",
+        "value": "",
+        "max": null,
+        "options": {}
+      },
+      "look": {
+        "label": "Look",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>ambiguous, man, shifting, transgressing, woman</li>      <li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>      <li>strange eyes, upsetting eyes, piercing eyes, human eyes</li>      <li>metallic flesh, scaled flesh, alien flesh, plated flesh, untouchable flesh, mottled flesh</li>      <li>terrifying costume, strange costume, unnerving costume, no costume</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "abilities": {
+        "label": "Abilities",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>You appear obviously and clearly monstrous, and your powers are tied to your appearance. Choose two, and describe how they make you grotesque.</p>      <ul>      <li>impenetrable armor</li>      <li>inhuman might</li>      <li>plant affinity</li>      <li>superhuman senses</li>      <li>technopathy</li>      <li>transmuting flesh</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "backstory": {
+        "label": "Backstory",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>Who were you before?</li>      <li>When did you change? What caused it?</li>      <li>Who, outside of the team, is helping you understand your new body?</li>      <li>Why don’t you just try to hide yourself away?</li>      <li>Why do you care about the team?</li>      </ul>      <p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "relationships": {
+        "label": "Relationships",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>___________________ comforted you when you were at your lowest.</p>      <p>___________________ knew you before you changed.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "moment": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>It’s so easy to forget that you’re not your body, and you’re not the voice in your head—you’re both. Be the monster, and save them anyway. Smash down walls, and speak softly. Because when you embrace it, you can do anything. Of course, putting on a display like this is sure to rile up those who see only the monster when they look at you...</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "team": {
+        "label": "The Team",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>We drew attention and ire from plenty during the fight. One important person in particular now hates and fears us. Who is it?</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      }
+    },
+    "choiceSets": [
+      {
+        "title": "Core Playbook Moves",
+        "desc": "",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "name": "Team Move - Share a Triumphant Celebration",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.osYGF8n6N7RHq8c9",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.vwYFUjrJdCfLyD8A",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Vulnerability",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      }
+    ]
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3,
+    "S5z9pWDiqzE1X6Fi": 3
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.327",
+    "systemId": "pbta",
+    "systemVersion": "1.0.10",
+    "createdTime": 1718261806917,
+    "modifiedTime": 1718262008611,
+    "lastModifiedBy": "S5z9pWDiqzE1X6Fi"
+  },
+  "_id": "sLinIC5FDvushQR4",
+  "sort": 0,
+  "_key": "!items!sLinIC5FDvushQR4"
+}

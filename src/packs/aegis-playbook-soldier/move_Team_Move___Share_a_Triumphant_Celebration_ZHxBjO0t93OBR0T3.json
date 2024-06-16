@@ -14,7 +14,7 @@
     "name": "",
     "description": "<p>When you <strong>share a triumphant celebration with someone</strong>, tell them what they need to do to achieve their full potential. If they accept your advice, take Influence over them and add two Team to the pool. If they reject what you have to say, mark a condition.</p>",
     "requiresMove": "",
-    "moveType": "team",
+    "moveType": "playbook",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -35,7 +35,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Soldier",
+    "playbook": "17",
     "rollType": "",
     "rollMod": 0,
     "choices": ""
@@ -46,11 +46,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.4",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.10",
+    "coreVersion": "12.327",
     "createdTime": 1699857569855,
-    "modifiedTime": 1711825662320,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718255767473,
+    "lastModifiedBy": "S5z9pWDiqzE1X6Fi",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "ZHxBjO0t93OBR0T3",
   "sort": 800000,

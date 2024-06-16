@@ -20,7 +20,7 @@
     "name": "",
     "description": "<p class=\"p1\">When someone with Influence over you tells you who you are or how the world works, accept what they say or reject their Influence. If you accept what they say, the GM will adjust your Labels accordingly; if you want to keep your Labels as they are, you must reject their Influence.</p>\n<p class=\"p1\"> </p>\n<p class=\"p1\">When you <strong>reject someone’s Influence</strong>, roll.</p>",
     "requiresMove": "",
-    "moveType": "",
+    "moveType": "rules",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -52,11 +52,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.10",
+    "coreVersion": "12.327",
     "createdTime": null,
-    "modifiedTime": 1711602106139,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718255697735,
+    "lastModifiedBy": "S5z9pWDiqzE1X6Fi",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_key": "!items!seVDkWcE3goK3amK"
 }

@@ -14,7 +14,7 @@
     "name": "",
     "description": "<p>When you<strong> share a triumphant celebration with someone</strong>, ask them what they admire about you. The GM will shift one of your Labels up and one down based on what they say.</p>",
     "requiresMove": "",
-    "moveType": "team",
+    "moveType": "playbook",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -35,7 +35,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Nomad",
+    "playbook": "11",
     "rollType": "",
     "rollMod": 0,
     "choices": ""
@@ -46,11 +46,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.4",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.10",
+    "coreVersion": "12.327",
     "createdTime": 1699858426966,
-    "modifiedTime": 1711825271600,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718263558816,
+    "lastModifiedBy": "S5z9pWDiqzE1X6Fi",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "QFonblTmQ1HvcXsM",
   "sort": 400000,

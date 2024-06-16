@@ -14,7 +14,7 @@
     "name": "",
     "description": "<p>When you <strong>share a triumphant celebration with someone</strong>, ask them if you have earned their respect. If you have, take Influence over them and mark potential. If you have not, give them Influence over you and mark potential.</p>",
     "requiresMove": "",
-    "moveType": "team",
+    "moveType": "playbook",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -35,7 +35,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Scion",
+    "playbook": "16",
     "rollType": "",
     "rollMod": 0,
     "choices": ""
@@ -46,11 +46,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.4",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.10",
+    "coreVersion": "12.327",
     "createdTime": 1699858426966,
-    "modifiedTime": 1711825340633,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718263585391,
+    "lastModifiedBy": "S5z9pWDiqzE1X6Fi",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "vZWbhNK0hym9W53E",
   "sort": 1000000,

@@ -20,7 +20,7 @@
     "name": "",
     "description": "<p>When you act selfishly, say how your actions ignore or insult your teammates, remove one Team from the pool, and <strong>shift one Label up and one Label down</strong>, your choice.</p>\n<p>You can use this option after rolling to alter the Label you&rsquo;re rolling with.</p>\n<p>Because you can act selfishly after you roll, this can boost a miss up to a hit, or a partial hit up to a full hit, by changing the Label you rolled with. All you have to do is spend the Team from the pool and describe your character doing something that ignores or insults your teammates.</p>\n<p>Generally, your teammates can determine whether they feel ignored or insulted by the selfish action, but the GM can push on it if it seems appropriate.</p>\n<p>Acting selfishly may save you when you can&rsquo;t be helped by anybody else, but it has a cost you can&rsquo;t avoid.</p>",
     "requiresMove": "",
-    "moveType": "team",
+    "moveType": "rules",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -52,11 +52,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.10",
+    "coreVersion": "12.327",
     "createdTime": null,
-    "modifiedTime": 1711773148793,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718255686964,
+    "lastModifiedBy": "S5z9pWDiqzE1X6Fi",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_key": "!items!QWsQGprpNFFJz9AP"
 }

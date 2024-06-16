@@ -59,7 +59,7 @@ export const configSheet = async () => {
             value: 0,
           },
         },
-        attrTop: {
+        attributes: {
           realName: {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.realNameLabel"),
             description: null,
@@ -67,6 +67,7 @@ export const configSheet = async () => {
             userLabel: false,
             type: "Text",
             value: "",
+            position: "top"
           },
           xp: {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.xpLabel"),
@@ -76,7 +77,8 @@ export const configSheet = async () => {
             type: "Xp",
             value: 0,
             max: 5,
-            steps: [false, false, false, false, false],
+            steps: Array(5).fill(false),
+            position: "top"
           },
           momentUnlocked: {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.momentUnlocked.label"),
@@ -86,6 +88,7 @@ export const configSheet = async () => {
             type: "Checkbox",
             checkboxLabel: game.i18n.localize("MASKS-SHEETS.CharacterSheets.momentUnlocked.checkboxLabel"),
             value: false,
+            position: "top"
           },
           theDoomed: {
             type: "Clock",
@@ -93,37 +96,43 @@ export const configSheet = async () => {
             max: 5,
             default: 0,
             playbook: "The Doomed",
-            steps: [false, false, false, false, false],
+            steps: Array(5).fill(false),
+            position: "top"
           },
           theBull: {
             type: "LongText",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theBull.label"),
             playbook: "The Bull",
             value: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theBull.value"),
+            position: "top"
           },
           theNova: {
             type: "Number",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theNovaLabel"),
             playbook: "The Nova",
             default: 0,
+            position: "top"
           },
           theProtege: {
             type: "LongText",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theProtege.label"),
             playbook: "The Protégé",
             value: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theProtege.value"),
+            position: "top"
           },
           theSoldier: {
             type: "Number",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theSoldierLabel"),
             playbook: "The Soldier",
             default: 2,
+            position: "top"
           },
-          theHarbinger: {
+          theHarbingerMemories: {
             type: "Number",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theHarbingerLabel"),
             playbook: "The Harbinger",
             default: -1,
+            position: "top"
           },
           theNomad: {
             type: "Number",
@@ -131,6 +140,7 @@ export const configSheet = async () => {
             playbook: "The Nomad",
             default: 0,
             max: 6,
+            position: "top"
           },
           theBrain: {
             type: "ListMany",
@@ -142,9 +152,8 @@ export const configSheet = async () => {
                 value: false,
               },
             },
+            position: "top"
           },
-        },
-        attrLeft: {
           conditions: {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.conditions.label"),
             description: game.i18n.localize("MASKS-SHEETS.CharacterSheets.conditions.description"),
@@ -152,6 +161,7 @@ export const configSheet = async () => {
             userLabel: false,
             type: "ListMany",
             condition: true,
+            position: "left",
             options: {
               0: {
                 label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.conditions.options.0"),
@@ -179,6 +189,7 @@ export const configSheet = async () => {
             type: "ListMany",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theScionGreatestEnemyLabel"),
             playbook: "The Scion",
+            position: "left",
             options: {
               0: {
                 label: "[Text]",
@@ -197,6 +208,7 @@ export const configSheet = async () => {
             type: "ListMany",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theScionGreatestVictimLabel"),
             playbook: "The Scion",
+            position: "left",
             options: {
               0: {
                 label: "[Text]",
@@ -215,6 +227,7 @@ export const configSheet = async () => {
             type: "ListMany",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theScionPersonalIdolLabel"),
             playbook: "The Scion",
+            position: "left",
             options: {
               0: {
                 label: "[Text]",
@@ -233,6 +246,7 @@ export const configSheet = async () => {
             type: "ListMany",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theScionGreatestLeaderLabel"),
             playbook: "The Scion",
+            position: "left",
             options: {
               0: {
                 label: "[Text]",
@@ -251,6 +265,7 @@ export const configSheet = async () => {
             type: "ListMany",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theScionGreatestHeroLabel"),
             playbook: "The Scion",
+            position: "left",
             options: {
               0: {
                 label: "[Text]",
@@ -269,6 +284,7 @@ export const configSheet = async () => {
             type: "ListMany",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theScionBiggestCelebrityLabel"),
             playbook: "The Scion",
+            position: "left",
             options: {
               0: {
                 label: "[Text]",
@@ -288,11 +304,13 @@ export const configSheet = async () => {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theHarbinger.label"),
             playbook: "The Harbinger",
             value: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theHarbinger.value"),
+            position: "left",
           },
           theStarAdvantages: {
             type: "ListMany",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theStarAdvantagesLabel"),
             playbook: "The Star",
+            position: "left",
             options: {
               0: {
                 label: "[Text]",
@@ -308,6 +326,7 @@ export const configSheet = async () => {
             type: "ListMany",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theStarDemandsLabel"),
             playbook: "The Star",
+            position: "left",
             options: {
               0: {
                 label: "[Text]",
@@ -323,6 +342,7 @@ export const configSheet = async () => {
             type: "ListMany",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theInnocentLabel"),
             playbook: "The Innocent",
+            position: "left",
             options: {
               0: {
                 label: "[Text]",
@@ -346,6 +366,7 @@ export const configSheet = async () => {
             type: "ListMany",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theNewbornLabel"),
             playbook: "The Newborn",
+            position: "left",
             options: {
               0: {
                 label: "[Text]",
@@ -369,6 +390,7 @@ export const configSheet = async () => {
             type: "ListMany",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theReformedLabel"),
             playbook: "The Reformed",
+            position: "left",
             options: {
               0: {
                 label: "[Text]",
@@ -406,6 +428,7 @@ export const configSheet = async () => {
             type: "ListMany",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theJanusLabel"),
             playbook: "The Janus",
+            position: "left",
             options: {
               0: {
                 label: "[Text]",
@@ -421,22 +444,25 @@ export const configSheet = async () => {
               },
             },
           },
-          theProtege: {
+          theProtegeMentorsResources: {
             type: "LongText",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theProtegeLabel"),
             playbook: "The Protégé",
             value: "",
+            position: "left",
           },
           theLegacy: {
             type: "LongText",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theLegacy.label"),
             playbook: "The Legacy",
             value: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theLegacy.value"),
+            position: "left",
           },
           theBeacon: {
             type: "ListMany",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theBeaconLabel"),
             playbook: "The Beacon",
+            position: "left",
             options: {
               0: {
                 label: "[Text]",
@@ -464,6 +490,7 @@ export const configSheet = async () => {
             type: "ListMany",
             condition: false,
             playbook: true,
+            position: "left",
           },
           laterAdvances: {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.laterAdvancesLabel"),
@@ -473,6 +500,7 @@ export const configSheet = async () => {
             type: "ListMany",
             condition: false,
             playbook: true,
+            position: "left",
           },
         },
         details: {
@@ -558,7 +586,7 @@ export const configSheet = async () => {
         },
       },
       npc: {
-        attrLeft: {
+        attributes: {
           conditions: {
             label: game.i18n.localize("MASKS-SHEETS.NPCSheets.conditions.label"),
             description: game.i18n.localize("MASKS-SHEETS.NPCSheets.conditions.description"),
@@ -566,6 +594,7 @@ export const configSheet = async () => {
             userLabel: false,
             type: "ListMany",
             condition: false,
+            position: "left",
             options: {
               0: {
                 label: game.i18n.localize("MASKS-SHEETS.NPCSheets.conditions.options.0"),
@@ -596,6 +625,7 @@ export const configSheet = async () => {
             userLabel: false,
             type: "Text",
             value: "",
+            position: "left",
           },
           generation: {
             label: game.i18n.localize("MASKS-SHEETS.NPCSheets.generationLabel"),
@@ -604,6 +634,7 @@ export const configSheet = async () => {
             userLabel: false,
             type: "Text",
             value: "",
+            position: "left",
           },
         },
         details: {

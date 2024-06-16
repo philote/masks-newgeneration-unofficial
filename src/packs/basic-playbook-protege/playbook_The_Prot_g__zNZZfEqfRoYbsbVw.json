@@ -1,0 +1,275 @@
+{
+  "name": "The Protégé",
+  "type": "playbook",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/playbook.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_t8rvi2xbimm",
+      "path": "Basic Playbooks#/CF_SEP/The Protege",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "description": "<div class=\"playbook\">\n<section>\n<h1>THE PROTÉGÉ</h1>\n<p>You proved yourself to an experienced hero. They think you’ve got what it takes. They’ve been training you for a while, and now you have to decide...do you want to be them? Or will you find your own path?</p>\n</section>\n<section class=\"rules\">\n<div>\n<h2>Look</h2>\n<ul>\n<li>ambiguous, man, shifting, transgressing, woman</li>\n<li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>\n<li>athletic body, compact body, lean body, muscular body</li>\n<li>school uniform, casual clothes, fashionable clothes, loose clothes</li>\n<li>colorful costume, mentor’s garb, protective wear, simple costume</li>\n</ul>\n<h2>Abilities</h2>\n<p>You are someone’s protégé. Your powers largely mimic theirs, but each of you is in some way unique. Pick one ability you both share and one ability for each of you that is uniquely yours.</p>\n<p><strong>SHARED ABILITY:</strong></p>\n<p><strong>YOUR OWN ABILITY:</strong></p>\n<p><strong>YOUR MENTOR’S ABILITY:</strong></p>\n<p>Superhuman physique, weapons and gadgets, stealth, detective skills, hacking, power mimicry, body elasticity, powerful armor, telepathy/telekinesis, intimidation and fear, impossible fighting skills, elemental control</p>\n<h2>Labels</h2>\n<p><em>(at character creation, add +1 wherever you choose)</em></p>\n<p><strong>DANGER:</strong> -1</p>\n<p><strong>FREAK:</strong> 0</p>\n<p><strong>SAVIOR:</strong> +1</p>\n<p><strong>SUPERIOR:</strong> +2</p>\n<p><strong>MUNDANE:</strong> 0</p>\n<h2>Backstory</h2>\n<ul>\n<li>How did you first meet your mentor?</li>\n<li>When and why did you choose to train with them?</li>\n<li>Why did they agree to train you?</li>\n<li>Who else, outside of the team, knows about your training?</li>\n<li>Why do you care about the team?</li>\n</ul>\n<p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>\n<h2>When our team first came together...</h2>\n<p>We stuck together after all was said and done. Why? How’d we keep in contact?</p>\n<h2>Relationships</h2>\n<p>You and ____________________ teamed up a few times before the rest of you came together.</p>\n<p>Your mentor is cautious; they asked you to keep an eye on __________________.</p>\n<h2>Influence</h2>\n<p>Choose your demeanor: playful or business.</p>\n<p>If you choose playful, give Influence to two teammates.</p>\n<p>If you choose business, give Influence to no teammates.</p>\n<h2>Moment of Truth</h2>\n<p>The moment that you show who you really are: your mentor, or something different. You can do whatever your mentor could do and more. You can do the incredible, even the things they always failed to accomplish. Of course, they’re not going to see you the same way, no matter which path you choose...</p>\n</div>\n<div>\n<h2>Protégé Moves</h2>\n<p><em>(Choose three)</em></p>\n<div>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.AXUGj3BqWYkdEGUv]{Been Reading the Files}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.SlB5blEZIpcGtlEP]{Captain}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.4tT3uRkqsHprzWQm]{Venting Frustration}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.Nd5TjPyTRN1yWNC8]{Fireside Chat}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.Kvq3QFnkagdjyBts]{Be Mindful of Your Surroundings}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.GESYoYrGn0FvA9fs]{Heroic Tradition}</p>\n</div>\n<h2>Mentor</h2>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.3fzuKtuVR0gi3ulp]{Mentor}</p>\n<p>You have a mentor, someone who’s taught you, trained you, given you aid, or raised you up. Someone who might have confined you a bit too rigidly to a single path. Which Label do they embody, and which do they deny? (pick one each)</p>\n<p><strong>EMBODIES:</strong> Savior Danger Freak Superior Mundane</p>\n<p><strong>DENIES:</strong> Savior Danger Freak Superior Mundane</p>\n<h2>Mentor’s Resources</h2>\n<p>Choose up to three resources that your mentor gave you and the team:</p>\n<p>A hidden base, a vehicle, a supercomputer, communicators, surveillance equipment, false identities, badges of authority, a chem lab, a med lab, a teleportal, a weapon of last resort, security systems, simple robots</p>\n<h2>Team Moves</h2>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.amlZOFL2IJDQ2F4v]{The Protege - Team Move}</p>\n<h2>Potential</h2>\n<p>Every time you roll a miss on a move, mark potential.</p>\n<h2>Advancement</h2>\n<p>When you fill your potential track, you advance. Choose from the list below.</p>\n<ul>\n<li>Take another move from your playbook</li>\n<li>Take another move from your playbook</li>\n<li>Take a move from another playbook</li>\n<li>Someone permanently loses Influence over you; add +1 to a Label</li>\n<li>Rearrange your Labels as you choose, and add +1 to a Label</li>\n<li>Unlock your Moment of Truth</li>\n<li>Add +2 to the Label your mentor embodies or denies</li>\n<li>Choose up to four more resources from your mentor</li>\n</ul>\n<hr />\n<p>When you’ve taken five advances from the top list, you can take advances from the list below.</p>\n<ul>\n<li>Unlock your Moment of Truth after it’s been used once</li>\n<li>Change playbooks</li>\n<li>Take an adult move</li>\n<li>Take an adult move</li>\n<li>Lock a Label, and add +1 to a Label of your choice</li>\n<li>Retire from the life or become a paragon of the city</li>\n</ul>\n</div>\n</section>\n<section class=\"extras\">\n<div>\n<h2>PLAYING THE PROTÉGÉ</h2>\n<p>Focused, well-trained, driven, unsure. The Protégé is defined by two things: their training and their mentor. A Protégé has a level of skill and preparation beyond nearly any of the other PCs—even the Legacy wasn’t necessarily as well-trained as the Protégé. The Protégé might have innate powers, sure, but they were also guided in how to use those abilities and more by their mentor. That also means they’re devoted to being a superhero in a way that none of the other PCs may be—a Protégé made at the start of play has been training for quite some time to get into this life.</p>\n<p>That said, the question before a Protégé is always whether this is really what they want—and, more specifically, if they want to wind up being their mentor. For better or worse, the relationship between you and your mentor is always one wherein your mentor wants you to turn out similarly to them—maybe not exactly the same, but close. And you have to decide if that’s really what you want. Regardless of everything they’ve given you, you might not want their life once you understand what it really means. Pay close attention to your choices for which Labels your mentor denies and embodies. In addition to telling you the kind of person your mentor likely is, they tell you the kind of person your mentor wants you to be.</p>\n<p>Make sure you spend time with your mentor. Return to them. Ask them for help and input. You might butt heads with them, you might resist what they choose for you, but they matter to you, as well. They gave you what you needed to become the person you are today, and your relationship with them is the source of your dramatic arc. They might seek you out, but you should do the same.</p>\n</div>\n<div>\n<h2>NOTES ON YOUR MOVES AND EXTRAS</h2>\n<p>For <span class=\"special\">Been reading the files</span>, you’re assumed to be reading or otherwise learning about the superhuman world from your mentor—in whatever way fits their MO. You only trigger the move, though, the first time you encounter any given important superhuman phenomenon. You can’t say you read a file about them during a later encounter. When you tell the team the most important detail you remember, you have a responsibility to stick to whatever fiction is already established about the world and this character—but otherwise, you can add whatever detail you want. The GM tells you if anything is different, meaning that they’ll alert you if things have changed surrounding the detail you provided.</p>\n<p>For <span class=\"special\">Captain</span>, pay close attention to when the team battle move hits, and whether or not you’re the leader. If you take this move, you’re going to want to push for that role to make sure you get the benefits. Don’t hesitate to do so! Any drama you create by pushing hard to be the leader will only feed back into more awesome scenes down the line. That said, if you feel comfortable having your Protégé cede leadership to another character, then this move may not be for you.</p>\n<p>For <span class=\"special\">Fireside chat</span>, you can get more than just a platitude or aphorism like “Don’t give up!” when you ask your mentor for advice. You can get a clear course of action, a plan for how to move forward. So if you’re stumped on how to solve a problem, this move is a great option—and the bonuses for following the advice are just icing on the cake.</p>\n<p>The resources that your mentor gives you and the team are things that your mentor has access to and is willing to grant you. Ultimately, you’re the arbiter of whether they go to the team, or if you keep them for yourself.</p>\n</div>\n<div>\n<h3>SUGGESTED MOVES FROM OTHER PLAYBOOKS</h3>\n<ul>\n<li><span class=\"special\">Kirby-craft</span>, from the Outsider playbook. Take this if you want to have a cool vehicle with its own unique abilities.</li>\n<li><span class=\"special\">There when it matters</span>, from the Bull playbook. Take this if you want to be able to jump in and protect your teammates much more easily, making your Protégé much more of a “team protector” (and working well with Captain).</li>\n<li><span class=\"special\">Suck it, Domitian</span>, from the Beacon playbook. Take this if you want to tackle your mentor’s villains on a regular basis—they’re almost certainly going to put you under heavy fire.</li>\n</ul>\n</div>\n<div>\n<h3>INSPIRATION FOR THE PROTEGE</h3>\n<p>Robin, <strong>YOUNG JUSTICE</strong></p>\n<p>Cyclops, <strong>X-MEN</strong></p>\n<p>Batman (Terry McGinnis), <strong>BATMAN: BEYOND</strong></p>\n<p>Aqualad, <strong>YOUNG JUSTICE</strong></p>\n<p>Wonder Girl, <strong>YOUNG JUSTICE</strong></p>\n</div>\n</section>\n</div>",
+    "slug": "the-protege",
+    "actorType": "",
+    "stats": {
+      "danger": {
+        "label": "Danger",
+        "value": -1
+      },
+      "freak": {
+        "label": "Freak",
+        "value": 0
+      },
+      "savior": {
+        "label": "Savior",
+        "value": 1
+      },
+      "superior": {
+        "label": "Superior",
+        "value": 2
+      },
+      "mundane": {
+        "label": "Mundane",
+        "value": 0
+      }
+    },
+    "statsDetail": "(at character creation, add +1 wherever you choose)",
+    "attributes": {
+      "advancements": {
+        "label": "Advancements",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "1": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "2": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "3": {
+                "value": false,
+                "label": "Someone permanently loses Influence over you; add +1 to a Label"
+              },
+              "4": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "5": {
+                "value": false,
+                "label": "Unlock your Moment of Truth"
+              },
+              "6": {
+                "value": false,
+                "label": "Add +2 to the Label your mentor embodies or denies"
+              },
+              "7": {
+                "value": false,
+                "label": "Choose up to four more resources from your mentor"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attrLeft",
+        "value": "",
+        "max": null,
+        "options": {}
+      },
+      "laterAdvances": {
+        "label": "Later Advances",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Unlock your Moment of Truth after it’s been used once"
+              },
+              "1": {
+                "value": false,
+                "label": "Change playbooks"
+              },
+              "2": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "3": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "4": {
+                "value": false,
+                "label": "Lock a Label, and add +1 to a Label of your choice"
+              },
+              "5": {
+                "value": false,
+                "label": "Retire from the life or become a paragon of the city"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attrLeft",
+        "value": "",
+        "max": null,
+        "options": {}
+      },
+      "look": {
+        "label": "Look",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>ambiguous, man, shifting, transgressing, woman</li>      <li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>      <li>athletic body, compact body, lean body, muscular body</li>      <li>school uniform, casual clothes, fashionable clothes, loose clothes</li>      <li>colorful costume, mentor’s garb, protective wear, simple costume</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "abilities": {
+        "label": "Abilities",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>You are someone’s protégé. Your powers largely mimic theirs, but each of you is in some way unique. Pick one ability you both share and one ability for each of you that is uniquely yours.</p>      <p><strong>SHARED ABILITY:</strong></p>      <p><strong>YOUR OWN ABILITY:</strong></p>      <p><strong>YOUR MENTOR’S ABILITY:</strong></p>      <p>Superhuman physique, weapons and gadgets, stealth, detective skills, hacking, power mimicry, body elasticity, powerful armor, telepathy/telekinesis, intimidation and fear, impossible fighting skills, elemental control</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "backstory": {
+        "label": "Backstory",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>How did you first meet your mentor?</li>      <li>When and why did you choose to train with them?</li>      <li>Why did they agree to train you?</li>      <li>Who else, outside of the team, knows about your training?</li>      <li>Why do you care about the team?</li>      </ul>      <p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "relationships": {
+        "label": "Relationships",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>You and ____________________ teamed up a few times before the rest of you came together.</p>      <p>Your mentor is cautious; they asked you to keep an eye on __________________.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "moment": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>The moment that you show who you really are: your mentor, or something different. You can do whatever your mentor could do and more. You can do the incredible, even the things they always failed to accomplish. Of course, they’re not going to see you the same way, no matter which path you choose...</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "team": {
+        "label": "The Team",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>We stuck together after all was said and done. Why? How’d we keep in contact?</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      }
+    },
+    "choiceSets": [
+      {
+        "title": "Core Playbook Moves",
+        "desc": "",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "name": "Mentor",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/bat-mask-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.3fzuKtuVR0gi3ulp",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.amlZOFL2IJDQ2F4v",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Triumphant Celebration",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.QI9FJIxuzllljSHq",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Vulnerability",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      }
+    ]
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3,
+    "S5z9pWDiqzE1X6Fi": 3
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.327",
+    "systemId": "pbta",
+    "systemVersion": "1.0.10",
+    "createdTime": 1718261466966,
+    "modifiedTime": 1718261705899,
+    "lastModifiedBy": "S5z9pWDiqzE1X6Fi"
+  },
+  "_id": "zNZZfEqfRoYbsbVw",
+  "sort": 0,
+  "_key": "!items!zNZZfEqfRoYbsbVw"
+}

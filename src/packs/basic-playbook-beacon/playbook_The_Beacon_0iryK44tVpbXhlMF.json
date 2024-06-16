@@ -13,25 +13,262 @@
     }
   },
   "system": {
-    "name": "",
     "description": "<div class=\"playbook\">\n<section>\n<h1>THE BEACON</h1>\n<p>You don't have to do this. You could probably have a safe, decent, simple life. It'd be nice, but... come on. Superpowers! Aliens! Wizards! Time travel! You're out of your depth, but who cares? This is awesome. Everybody should try it.</p>\n</section>\n<section class=\"rules\">\n<div>\n<h2>Look</h2>\n<ul>\n<li>ambiguous, man, shifting, transgressing, woman</li>\n<li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>\n<li>smiling face, naïve face, average face, pretty face</li>\n<li>stylish clothing, comfortable clothing, simple clothing, casual clothing</li>\n<li>flashy costume, stylish costume, gaudy costume, iconic costume</li>\n</ul>\n<h2>Abilities</h2>\n<p>If you have superpowers, they’re pretty minor or not noticeable. If you have skills, you carry the necessary equipment. Choose two.</p>\n<ul>\n<li>bow and trick arrows</li>\n<li>swords</li>\n<li>camouflage and stealth</li>\n<li>martial arts</li>\n<li>phasing</li>\n<li>acrobatics</li>\n</ul>\n<h2>Labels</h2>\n<p><em>(at character creation, add +1 wherever you choose)</em></p>\n<p><strong>DANGER:</strong> -1</p>\n<p><strong>FREAK:</strong> -1</p>\n<p><strong>SAVIOR:</strong> +2</p>\n<p><strong>SUPERIOR:</strong> 0</p>\n<p><strong>MUNDANE:</strong> +2</p>\n<h2>Backstory</h2>\n<ul>\n<li>How did you gain your skills?</li>\n<li>When did you first put on your costume?</li>\n<li>Who, outside of the team, thinks you shouldn’t be a superhero?</li>\n<li>Why do you try to be a hero?</li>\n<li>Why do you care about the team?</li>\n</ul>\n<p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>\n<h2>When our team first came together...</h2>\n<p>We found signs that this incident was just the start of something bigger. What were the signs?</p>\n<h2>Relationships</h2>\n<p>____________________ is awesome, and you take every chance you get to hang out with them.</p>\n<p>You’ve got to prove yourself to_____________________ before you feel like a real hero.</p>\n<h2>Influence</h2>\n<p>You are so excited to be here. Give Influence over you to three of your teammates.</p>\n<h2>Moment of Truth</h2>\n<p>This is the moment when you show them exactly why you belong here. You do any one thing, take out any one enemy, no matter how insane, no matter how ridiculous, because that’s you. Their jaws are gonna drop when you’re done. Of course, pulling off a stunt like this tends to bring unwanted attention and a dangerous reputation...</p>\n</div>\n<div>\n<h2>Beacon Moves</h2>\n<p><em>(Choose two)</em></p>\n<div>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.1yV9gdN04hbpeTQe]{Straight. Up. Creepin’}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.PTEHUoWI1ApWH8mV]{No Powers and Not Nearly Enough Training}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.MVKKsnk6eT36LNdO]{Won't Let You Down}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.0ilDMC4CPIvQYpwf]{Pretty Much a Superhero}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.lPtT1S2tHJOchE3F]{C’mon, Lucky}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.xVgfLmI5v4pCCxUr]{Suck it, Domitian}</p>\n</div>\n<h2>Drives</h2>\n<p>Choose four drives to mark at the start of play. When you fulfill a marked drive, strike it out, and choose one: mark potential, clear a condition, take Influence over someone involved.</p>\n<p>When your four marked drives are all struck out, choose and mark four new drives. When all drives are struck out, change playbooks, retire from the life, or become a paragon of the city.</p>\n<ul>\n<li>lead the team successfully in battle</li>\n<li>kiss someone dangerous</li>\n<li>punch someone you probably shouldn’t</li>\n<li>help a teammate when they most need you</li>\n<li>take down a threat all on your own</li>\n<li>outperform an adult hero</li>\n<li>pull off a ridiculous stunt</li>\n<li>save a teammate’s life</li>\n<li>get drunk or high with a teammate</li>\n<li>drive a fantastical vehicle</li>\n<li>get a new costume</li>\n<li>get a new hero name</li>\n<li>earn the respect of a hero you admire</li>\n<li>make out with a teammate</li>\n<li>punch out a teammate</li>\n<li>break up with someone</li>\n<li>stop a fight with calm words</li>\n<li>tell someone your true feelings for them</li>\n<li>travel to an incredible place (or time)</li>\n<li>reject someone who tells you “you shouldn’t be here”</li>\n</ul>\n<h2>Team Moves</h2>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.dVGxoDujkZNCNQVo]{The Beacon - Team Move}</p>\n<h2>Potential</h2>\n<p>Every time you roll a miss on a move, mark potential.</p>\n<h2>Advancement</h2>\n<p>When you fill your potential track, you advance. Choose from the list below.</p>\n<ul>\n<li>Take another move from your playbook</li>\n<li>Take another move from your playbook</li>\n<li>Take a move from another playbook</li>\n<li>Take a move from another playbook</li>\n<li>Take a move from another playbook</li>\n<li>Someone permanently loses Influence over you; add +1 to a Label</li>\n<li>Rearrange your Labels as you choose, and add +1 to a Label</li>\n<li>Unlock your Moment of Truth</li>\n</ul>\n<hr />\n<p>When you’ve taken five advances from the top list, you can take advances from the list below.</p>\n<ul>\n<li>Unlock your Moment of Truth after it’s been used once</li>\n<li>Change playbooks</li>\n<li>Take an adult move</li>\n<li>Take an adult move</li>\n<li>Lock a Label, and add +1 to a Label of your choice</li>\n<li>Retire from the life or become a paragon of the city</li>\n</ul>\n</div>\n</section>\n<section class=\"extras\">\n<div>\n<h2>PLAYING THE BEACON</h2>\n<p>Hopeful, excited, understanding, human. The Beacon is the most directly mortal and least strange of all the playbooks. They haven’t been shaped by anything else—they could choose to leave this life behind, if they wanted. Which is exactly the point. They’re here because they want to be here. They want to do this. And that gives them a purity compared to the other characters.</p>\n<p>You can expect NPCs to tell you that you don’t really belong here. After all, you don’t have those extras that most people associate with superheroes. A central conflict for the Beacon is proving yourself and making the case for why you actually belong.</p>\n<p>Ultimately, your character is all about their drives. Those give you objectives, things to aim towards and try to do, so make sure you pick drives that really interest you. Trying to accomplish your drives might lead you into trouble just as much as it might lead you to triumph, but they’ll always push you toward that key conflict—do you actually deserve to be here? And that’s exactly what you want.</p>\n<p>Ideally, you want to try to accomplish at least one drive per session. Always be on the lookout for an opportunity to accomplish one of your drives, and call out when you think you have. Your GM will want to work with you to make sure you hit those drives, so remind them what your drives are if you go for a session without hitting any.</p>\n<p>Remember that just because your playbook is generally far less powerful than most of your fellows, it doesn’t mean you’re incompetent or powerless. You have abilities! You can <span class=\"special\">unleash your powers</span> to do crazy things! Maybe not as crazy as transforming cars into robots or flying on jets of fire, but still. Look for opportunities to show off your own powers. Don’t feel chained to your Mundane Label.</p>\n</div>\n<div>\n<h2>NOTES ON YOUR MOVES AND EXTRAS</h2>\n<p><span class=\"special\">No powers and not nearly enough training</span> requires you to pay attention to gear. Most other characters only care about stuff like ray guns and special devices when they’re immediately dangerous, but you should be listening for cool stuff you can pick up whenever possible. Assessing the situation and Straight. Up. Creepin’. are great ways to flag cool stuff you can use.</p>\n<p><span class=\"special\">Pretty much a superhero</span> is your chance to control NPCs’ first impressions of you. It only triggers when you think the other character is actually important, and it lets you frame how they see you—though the GM can complicate it on 7-9. Whatever Label you pick is the one they reflect back at you through their Influence.</p>\n<p><span class=\"special\">Suck it, Domitian</span> requires you to be dramatically under fire—that means the odds are against you, or you’re up against some terrifying threat. If the situation’s well in hand, chances are you’re not dramatically under fire. Of course, you’re often underpowered compared to your opposition, so it shouldn’t be too hard to get there.</p>\n<p>Your <strong>drives</strong> work almost like an alternate advancement track—even if you aren’t there yet on your normal advances, when they’re all gone you have to change playbooks, retire, or become a paragon. If you retire or become a paragon, your character becomes an NPC. If you change playbooks, mark that advance like normal, and switch your character to the new playbook.</p>\n</div>\n<div>\n<h3>SUGGESTED MOVES FROM OTHER PLAYBOOKS</h3>\n<ul>\n<li><span class=\"special\">The Mask</span>, from the Janus playbook. Take this if you want to emphasize a secret identity for your Beacon without making it the crux of the whole character.</li>\n<li><span class=\"special\">I don’t care what you think!</span>, from the Delinquent playbook. Take this if you want your Beacon to be free from the harsh words of heroes and villains who think they’re just some kid.</li>\n<li><span class=\"special\">Never give up</span>, never surrender, from the Legacy playbook. Take this if you want your Beacon to get beaten up and keep on trucking—most every enemy will have “far greater power than you.”</li>\n</ul>\n</div>\n<div>\n<h3>INSPIRATION FOR THE BEACON</h3>\n<p>Kate Bishop, <strong>YOUNG AVENGERS</strong> and <strong>HAWKEYE</strong></p>\n<p>Artemis and Arrowette, <strong>YOUNG JUSTICE</strong> cartoon and comic (respectively) Doug Ramsey, <strong>THE NEW MUTANTS</strong></p>\n<p>Kamala Khan, <strong>MS. MARVEL</strong></p>\n<p>Gertrude Yorkes, <strong>RUNAWAYS</strong></p>\n<p>Felicity Smoak, <strong>ARROW</strong> (TV show)</p>\n<p>Stephanie Brown (Spoiler), <strong>DETECTIVE COMICS</strong></p>\n</div>\n</section>\n</div>",
-    "hp": null,
-    "load": null,
-    "damage": ""
+    "slug": "the-beacon",
+    "actorType": "",
+    "stats": {
+      "danger": {
+        "label": "Danger",
+        "value": -1
+      },
+      "freak": {
+        "label": "Freak",
+        "value": -1
+      },
+      "savior": {
+        "label": "Savior",
+        "value": 2
+      },
+      "superior": {
+        "label": "Superior",
+        "value": 0
+      },
+      "mundane": {
+        "label": "Mundane",
+        "value": 2
+      }
+    },
+    "statsDetail": "(at character creation, add +1 wherever you choose)",
+    "attributes": {
+      "advancements": {
+        "label": "Advancements",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "1": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "2": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "3": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "4": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "5": {
+                "value": false,
+                "label": "Someone permanently loses Influence over you; add +1 to a Label"
+              },
+              "6": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "7": {
+                "value": false,
+                "label": "Unlock your Moment of Truth"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attrLeft",
+        "value": "",
+        "max": null,
+        "options": {}
+      },
+      "laterAdvances": {
+        "label": "Later Advances",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Unlock your Moment of Truth after it’s been used once"
+              },
+              "1": {
+                "value": false,
+                "label": "Change playbooks"
+              },
+              "2": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "3": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "4": {
+                "value": false,
+                "label": "Lock a Label, and add +1 to a Label of your choice"
+              },
+              "5": {
+                "value": false,
+                "label": "Retire from the life or become a paragon of the city"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attrLeft",
+        "value": "",
+        "max": null,
+        "options": {}
+      },
+      "look": {
+        "label": "Look",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>ambiguous, man, shifting, transgressing, woman</li>      <li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>      <li>smiling face, naïve face, average face, pretty face</li>      <li>stylish clothing, comfortable clothing, simple clothing, casual clothing</li>      <li>flashy costume, stylish costume, gaudy costume, iconic costume</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "abilities": {
+        "label": "Abilities",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>If you have superpowers, they’re pretty minor or not noticeable. If you have skills, you carry the necessary equipment. Choose two.</p>      <ul>      <li>bow and trick arrows</li>      <li>swords</li>      <li>camouflage and stealth</li>      <li>martial arts</li>      <li>phasing</li>      <li>acrobatics</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "backstory": {
+        "label": "Backstory",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>How did you gain your skills?</li>      <li>When did you first put on your costume?</li>      <li>Who, outside of the team, thinks you shouldn’t be a superhero?</li>      <li>Why do you try to be a hero?</li>      <li>Why do you care about the team?</li>      </ul>      <p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "relationships": {
+        "label": "Relationships",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>____________________ is awesome, and you take every chance you get to hang out with them.</p>      <p>You’ve got to prove yourself to_____________________ before you feel like a real hero.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "moment": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>This is the moment when you show them exactly why you belong here. You do any one thing, take out any one enemy, no matter how insane, no matter how ridiculous, because that’s you. Their jaws are gonna drop when you’re done. Of course, pulling off a stunt like this tends to bring unwanted attention and a dangerous reputation...</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "team": {
+        "label": "The Team",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>We found signs that this incident was just the start of something bigger. What were the signs?</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      }
+    },
+    "choiceSets": [
+      {
+        "title": "Core Playbook Moves",
+        "desc": "",
+        "grantOn": 0,
+        "advancement": 0,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.V9TJpzXAyulP7Bd5",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/full-motorcycle-helmet-%23ffffff-%233da7db.svg",
+            "name": "Drives",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.dVGxoDujkZNCNQVo",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Triumphant Celebration",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.e3bFXMzK0I8BnMrz",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Vulnerability",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "type": "multi",
+        "repeatable": true,
+        "granted": false
+      }
+    ]
   },
   "ownership": {
     "default": 0,
-    "qxt7zBbnFWpsYRqr": 3
+    "S5z9pWDiqzE1X6Fi": 3
   },
   "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.327",
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
-    "createdTime": 1699858650702,
-    "modifiedTime": 1711772471771,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "systemVersion": "1.0.10",
+    "createdTime": 1718253072304,
+    "modifiedTime": 1718257304563,
+    "lastModifiedBy": "S5z9pWDiqzE1X6Fi"
   },
-  "_id": "P5D2uEx68wFy3Uoy",
-  "sort": 500000,
-  "_key": "!items!P5D2uEx68wFy3Uoy"
+  "_id": "0iryK44tVpbXhlMF",
+  "sort": 0,
+  "_key": "!items!0iryK44tVpbXhlMF"
 }
