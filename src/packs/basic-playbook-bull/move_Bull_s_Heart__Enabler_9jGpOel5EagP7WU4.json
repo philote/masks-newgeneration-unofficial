@@ -28,7 +28,7 @@
     "playbook": "The Bull",
     "rollType": "danger",
     "rollMod": 0,
-    "actorType": "",
+    "actorType": "character",
     "choices": ""
   },
   "effects": [],
@@ -41,11 +41,11 @@
   "flags": {},
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "12.324",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1710990629986,
-    "modifiedTime": 1711772842740,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT",
+    "modifiedTime": 1718674176781,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null
   },

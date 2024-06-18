@@ -38,7 +38,8 @@
     "playbook": "The Soldier",
     "rollType": "savior",
     "rollMod": 0,
-    "choices": "<p>During the fight, you can spend your hold to name a character you observed and choose one.</p>\n<ul>\n<li>Redirect their attack to another character or nowhere&mdash;into a wall or the sky.</li>\n<li>Cross a distance between them and you.</li>\n<li>Stun them, close up or from a distance.</li>\n<li>Ignore all harm from one of their attacks.</li>\n<li>Escape any bindings or impediments they attempt to place on you.</li>\n</ul>"
+    "choices": "<p>During the fight, you can spend your hold to name a character you observed and choose one.</p>\n<ul>\n<li>Redirect their attack to another character or nowhere&mdash;into a wall or the sky.</li>\n<li>Cross a distance between them and you.</li>\n<li>Stun them, close up or from a distance.</li>\n<li>Ignore all harm from one of their attacks.</li>\n<li>Escape any bindings or impediments they attempt to place on you.</li>\n</ul>",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -46,11 +47,11 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.4",
-    "coreVersion": "12.324",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1699857569855,
-    "modifiedTime": 1711825662320,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT",
+    "modifiedTime": 1718674181509,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null
   },

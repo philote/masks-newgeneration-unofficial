@@ -13,7 +13,7 @@ Hooks.once("init", () => {
         config: true,
         type: Boolean,
         default: false,
-        onChange: debouncedReload
+        requiresReload: true
     });
 
     var head = document.getElementsByTagName('HEAD')[0];

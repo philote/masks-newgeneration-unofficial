@@ -39,7 +39,8 @@
     "playbook": "The Innocent",
     "rollType": "",
     "rollMod": 0,
-    "choices": ""
+    "choices": "",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -47,11 +48,11 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.4",
-    "coreVersion": "12.324",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1711825754770,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT",
+    "modifiedTime": 1718674179859,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null
   },

@@ -345,7 +345,7 @@
         "id": "pbta",
         "type": "system",
         "compatibility": {
-          "minimum": "1.0.12"
+          "minimum": "1.0.14"
         }
       }
     ]

@@ -29,7 +29,7 @@
     "playbook": "",
     "rollType": "",
     "rollMod": 0,
-    "actorType": ""
+    "actorType": "character"
   },
   "effects": [],
   "sort": 0,
@@ -40,11 +40,11 @@
   "flags": {},
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "1.0.10",
+    "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1710185746067,
-    "modifiedTime": 1718255678927,
-    "lastModifiedBy": "S5z9pWDiqzE1X6Fi",
+    "modifiedTime": 1718674176043,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null
   },

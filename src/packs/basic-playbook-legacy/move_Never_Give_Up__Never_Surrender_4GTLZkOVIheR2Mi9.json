@@ -40,7 +40,8 @@
     "playbook": "The Legacy",
     "rollType": "savior",
     "rollMod": 0,
-    "choices": "<ul>\n<li>You get an opportunity or opening against your attacker</li>\n<li>You rally from the hit, and it inspires the team; add 1 Team to the pool</li>\n<li>You keep your attacker&rsquo;s attention</li>\n</ul>"
+    "choices": "<ul>\n<li>You get an opportunity or opening against your attacker</li>\n<li>You rally from the hit, and it inspires the team; add 1 Team to the pool</li>\n<li>You keep your attacker&rsquo;s attention</li>\n</ul>",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -48,11 +49,11 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "12.324",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1711773482553,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT",
+    "modifiedTime": 1718674178420,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null
   },

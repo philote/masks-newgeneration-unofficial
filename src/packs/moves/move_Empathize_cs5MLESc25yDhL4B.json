@@ -44,7 +44,8 @@
     "playbook": "",
     "rollType": "mundane",
     "rollMod": 0,
-    "choices": ""
+    "choices": "",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -52,11 +53,11 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3.beta-1",
-    "coreVersion": "12.324",
-    "createdTime": null,
-    "modifiedTime": 1710223159427,
-    "lastModifiedBy": "4C9xTrePJlXfEBlt",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
+    "createdTime": 1718674175225,
+    "modifiedTime": 1718674175985,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null
   },

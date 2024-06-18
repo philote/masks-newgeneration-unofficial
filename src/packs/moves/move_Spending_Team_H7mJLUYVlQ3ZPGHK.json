@@ -44,7 +44,8 @@
     "playbook": "",
     "rollType": "",
     "rollMod": 0,
-    "choices": ""
+    "choices": "",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -52,11 +53,11 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "1.0.10",
+    "systemVersion": "1.0.14",
     "coreVersion": "12.327",
-    "createdTime": null,
-    "modifiedTime": 1718255690435,
-    "lastModifiedBy": "S5z9pWDiqzE1X6Fi",
+    "createdTime": 1718674175224,
+    "modifiedTime": 1718674175742,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null
   },
