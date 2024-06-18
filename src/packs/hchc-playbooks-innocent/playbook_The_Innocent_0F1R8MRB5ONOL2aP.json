@@ -29,17 +29,240 @@
       },
       "savior": {
         "label": "Savior",
-        "value": 0
+        "value": 1
       },
       "superior": {
         "label": "Superior",
-        "value": 0
+        "value": -1
       },
       "mundane": {
         "label": "Mundane",
-        "value": 0
+        "value": 2
       }
-    }
+    },
+    "choiceSets": [
+      {
+        "title": "Core Playbook Moves",
+        "desc": "",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-innocent.Item.pMG123KjbpheyyJQ",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Triumphant Celebration",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-innocent.Item.m3DZrpyD6sgB6y3O",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Vulnerability",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "Your Future Self",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/cyborg-face-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-innocent.Item.G7BR8AutpZGsV7hL",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      }
+    ],
+    "slug": "the-innocent",
+    "attributes": {
+      "theInnocent": {
+        "type": "ListMany",
+        "label": "You Future Self",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false
+          },
+          "1": {
+            "label": "[Text]",
+            "value": false
+          },
+          "2": {
+            "label": "[Text]",
+            "value": false
+          },
+          "3": {
+            "label": "[Text]",
+            "value": false
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "advancements": {
+        "label": "Advancements",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "1": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "2": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "3": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "4": {
+                "value": false,
+                "label": "Someone permanently loses Influence over you; add +1 to a Label"
+              },
+              "5": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "6": {
+                "value": false,
+                "label": "Unlock your Moment of Truth"
+              },
+              "7": {
+                "value": false,
+                "label": "Choose a mentor for yourself (from the Protégé’s playbook)"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "laterAdvances": {
+        "label": "Later Advances",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Unlock your Moment of Truth after it’s been used once"
+              },
+              "1": {
+                "value": false,
+                "label": "Change playbooks"
+              },
+              "2": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "3": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "4": {
+                "value": false,
+                "label": "Lock a Label, and add +1 to a Label of your choice"
+              },
+              "5": {
+                "value": false,
+                "label": "Go back to your own time or become a paragon of the city"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "look": {
+        "label": "Look",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>ambiguous, man, shifting, transgressing, woman</li>      <li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>      <li>smooth-skinned face, chipper face, hopeful face, bright face, handsome face</li>      <li>old-fashioned clothing, haphazard clothing, well-tailored clothing, safe clothing</li>      <li>outdated costume, reflective costume, simplistic costume, gaudy costume, unique costume</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "abilities": {
+        "label": "Abilities",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>You and your future self have the same core ability, though your future self is better with it. Choose one:</p>      <ul>      <li>energy projection</li>      <li>shapeshifting</li>      <li>telepathy</li>      <li>elemental control</li>      <li>super-speed</li>      <li>sound control</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "backstory": {
+        "label": "Backstory",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>Who or what brought you to the present?</li>      <li>When did you first meet your future self?</li>      <li>How is your future self the embodiment of a future you never wanted?</li>      <li>What is your favorite part of life in the future? Your least favorite part?</li>      <li>Why are you determined to stay in the present with this team?</li>      </ul>      <p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "relationships": {
+        "label": "Relationships",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>__________________ is helping me understand this weirdo future. I follow their lead.</p>      <p>I saved someone important to __________________; they’re now my biggest defender.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "moment": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>You’ve fought, struggled, and worked so hard to figure out who you are, whether you’re just the same as your future self or whether you’re different...but right now, that’s all out the window. The distinction between your future self and your present self vanishes in the face of the trial before you, and you become exactly the powerful, adamant figure that everyone fears or hopes you will one day become. You can do exactly what your future self could do, and everyone around you sees them in you more clearly than ever. Of course, after this it’s going to be hard to treat you as two different people...</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "team": {
+        "label": "The Team",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>My future self was involved, and I tried to stop them. It took the rest of the team to help me succeed. How did we stymie my future self ’s plans?</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      }
+    },
+    "statsDetail": "(at character creation, add +1 wherever you choose)"
   },
   "ownership": {
     "default": 0,
@@ -50,7 +273,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1718674179839,
+    "modifiedTime": 1718689144564,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

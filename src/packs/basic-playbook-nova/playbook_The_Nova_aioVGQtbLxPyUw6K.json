@@ -217,6 +217,13 @@
         "path": "details",
         "max": null,
         "options": {}
+      },
+      "theNova": {
+        "type": "Number",
+        "label": "Held Burn",
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
       }
     },
     "choiceSets": [
@@ -266,7 +273,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718260931443,
-    "modifiedTime": 1718674178835,
+    "modifiedTime": 1718686709770,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "aioVGQtbLxPyUw6K",

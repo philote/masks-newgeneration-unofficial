@@ -36,7 +36,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Star",
+    "playbook": "",
     "rollType": "superior",
     "rollMod": 0,
     "choices": "",
@@ -51,7 +51,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1718674180967,
+    "modifiedTime": 1718687755951,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

@@ -21,11 +21,11 @@
     "stats": {
       "danger": {
         "label": "Danger",
-        "value": 0
+        "value": 1
       },
       "freak": {
         "label": "Freak",
-        "value": 0
+        "value": 2
       },
       "savior": {
         "label": "Savior",
@@ -33,13 +33,236 @@
       },
       "superior": {
         "label": "Superior",
-        "value": 0
+        "value": 1
       },
       "mundane": {
         "label": "Mundane",
-        "value": 0
+        "value": 2
       }
-    }
+    },
+    "attributes": {
+      "theNewborn": {
+        "type": "ListMany",
+        "label": "Lessons",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false
+          },
+          "1": {
+            "label": "[Text]",
+            "value": false
+          },
+          "2": {
+            "label": "[Text]",
+            "value": false
+          },
+          "3": {
+            "label": "[Text]",
+            "value": false
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "advancements": {
+        "label": "Advancements",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "1": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "2": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "3": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "4": {
+                "value": false,
+                "label": "Someone permanently loses Influence over you; add +1 to a Label"
+              },
+              "5": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "6": {
+                "value": false,
+                "label": "Unlock your Moment of Truth"
+              },
+              "7": {
+                "value": false,
+                "label": "Get burn and three flares (from the Nova’s playbook)"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "laterAdvances": {
+        "label": "Later Advances",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Unlock your Moment of Truth after it’s been used once"
+              },
+              "1": {
+                "value": false,
+                "label": "Lock down your lessons and change playbooks"
+              },
+              "2": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "3": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "4": {
+                "value": false,
+                "label": "Lock a Label, and add +1 to a Label of your choice"
+              },
+              "5": {
+                "value": false,
+                "label": "Retire from the life or become a paragon of the city"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "look": {
+        "label": "Look",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>ambiguous, man, shifting, transgressing, woman</li>      <li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>      <li>crystal skin, metal skin, green skin, human skin</li>      <li>mismatched clothing, concealing clothing, immaculate clothing, plain clothing</li>      <li>prototype uniform, over the top costume, your own skin, unnerving costume, no costume</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "abilities": {
+        "label": "Abilities",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>Your powers are based on your unique physical configuration. Choose two and describe how they are part of your body.</p>      <ul>      <li>elemental form</li>      <li>solid light projection</li>      <li>sonic bursts</li>      <li>fantastic elasticity</li>      <li>super durability and strength</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "backstory": {
+        "label": "Backstory",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>Who created you, and why?</li>      <li>How are you different from humans?</li>      <li>Who, outside of the team, is your caretaker?</li>      <li>What about humanity fascinates you the most?</li>      <li>Why do you care about the team?</li>      </ul>      <p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "relationships": {
+        "label": "Relationships",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>________________ is an exemplary human; they show you around and tell you how things work.</p>      <p>The behavior of ________________ confuses you again and again; you’re determined to understand humanity better by studying them.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "moment": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>Something snaps into focus, and suddenly you’re a full thing, true and complete. You’d never have known how fragmented you were before, if not for here, this moment. You’re not a series of individual lessons. You’re not a series of subroutines and programs. You’re...a person. This must be what it’s like to be...human. And this fullness? It gives you a control over yourself, a unity of purpose you’ve never experienced before. Of course, now that you’re showing off all your potential, it’s only a matter of time before someone comes forward to reduce you to a machine again...</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "team": {
+        "label": "The Team",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>The team discovered you during the incident; thanks to them, you reached the outside world and helped in the fight. Where and how did they find you? Who gave you your first nickname?</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      }
+    },
+    "slug": "the-newborn",
+    "choiceSets": [
+      {
+        "title": "Core Playbook Moves",
+        "desc": "",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "name": "A Blank Slate",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/android-mask-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-newborn.Item.BE7s7N6COZdUfRxx",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-newborn.Item.eBjq0wXHY2Rfk77e",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Triumphant Celebration",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-newborn.Item.6GRM5kOtXiptsYrn",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Vulnerability",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      }
+    ],
+    "statsDetail": "(at character creation, add +1 wherever you choose)"
   },
   "ownership": {
     "default": 0,
@@ -50,7 +273,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1718674180658,
+    "modifiedTime": 1718688470191,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

@@ -24,21 +24,227 @@
       },
       "freak": {
         "label": "Freak",
-        "value": 0
+        "value": 2
       },
       "savior": {
         "label": "Savior",
-        "value": 0
+        "value": -1
       },
       "superior": {
         "label": "Superior",
-        "value": 0
+        "value": 2
       },
       "mundane": {
         "label": "Mundane",
-        "value": 0
+        "value": -1
       }
-    }
+    },
+    "choiceSets": [
+      {
+        "title": "Core Playbook Moves",
+        "desc": "",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "name": "Putting Down Roots",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/plant-roots-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-nomad.Item.dd9JX7X4CcymgjAK",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-nomad.Item.QFonblTmQ1HvcXsM",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Triumphant Celebration",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-nomad.Item.u9EcyEVNpQqQEIph",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Vulnerability",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      }
+    ],
+    "attributes": {
+      "theNomad": {
+        "type": "Number",
+        "label": "Influence Given",
+        "max": 6,
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "advancements": {
+        "label": "Advancements",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "1": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "2": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "3": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "4": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "5": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "6": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "7": {
+                "value": false,
+                "label": "Unlock your Moment of Truth"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "laterAdvances": {
+        "label": "Later Advances",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Unlock your Moment of Truth after it’s been used once"
+              },
+              "1": {
+                "value": false,
+                "label": "Change playbooks"
+              },
+              "2": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "3": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "4": {
+                "value": false,
+                "label": "Lock a Label, and add +1 to a Label of your choice"
+              },
+              "5": {
+                "value": false,
+                "label": "Depart for reaches unknown, never to return"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "look": {
+        "label": "Look",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>ambiguous, man, shifting, transgressing, woman</li>      <li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>      <li>average body, compact body, modified body, sculpted body, wiry body</li>      <li>traveling clothing, garish clothing, extraterrestrial clothing, unassuming clothing</li>      <li>weird jewelry, strange greatcoat, eccentric boots, unusual gloves, uncanny belt</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "abilities": {
+        "label": "Abilities",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>You’ve seen space, time, and everything in between. One might say you’ve seen it all. Besides your tremendous knowledge, experience, and haphazard on-the-job training, you picked up some neat toys on your travels. Pick two of your most important.</p>      <ul>      <li>rift generator</li>      <li>anti-grav pack</li>      <li>forcefield projectors</li>      <li>cloaking rig</li>      <li>modular blaster</li>      <li>wearable ultraprocessor</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "backstory": {
+        "label": "Backstory",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>Who took you from the Earth when you were younger?</li>      <li>What farscapes did you explore?</li>      <li>Who was your favorite traveling companion?</li>      <li>What brought you back to stay (for now)?</li>      <li>Why do you care about the team?</li>      </ul>      <p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "relationships": {
+        "label": "Relationships",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>__________________ knows plenty that I don’t about this world, its people, and how to deal with them; I should follow their lead while I’m here.</p>      <p>__________________ is...well...boring. But that’s okay! I’m going to make them more interesting.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "moment": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>You basically exist with one foot out the door, ready to leave this place, to go back out into the wide expanse of the universe. You’ve never fully committed. That is, until today. Until right now. Now, you pour everything you have and everything you are into this moment. You pull off tricks no one from this planet has ever seen before. You use your tools in ways no one here could have ever imagined. You devote yourself, here and now, to a cause, and you achieve your goal in ways that you never could’ve if you’d only stayed home. Of course, now you’ve proved to everyone that you really don’t belong here, and the very skills that let you succeed are the ones you earned from out there...</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "team": {
+        "label": "The Team",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>We had to deal with a danger I’d met while traveling the farscapes. What was it, and how did we send it away?</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      }
+    },
+    "slug": "the-nomad",
+    "statsDetail": "(at character creation, add +1 wherever you choose)"
   },
   "ownership": {
     "default": 0,
@@ -49,7 +255,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858426966,
-    "modifiedTime": 1718674181894,
+    "modifiedTime": 1718689902381,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

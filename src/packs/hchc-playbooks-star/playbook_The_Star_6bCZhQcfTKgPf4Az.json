@@ -21,25 +21,264 @@
     "stats": {
       "danger": {
         "label": "Danger",
-        "value": 0
+        "value": -1
       },
       "freak": {
         "label": "Freak",
-        "value": 0
+        "value": 1
       },
       "savior": {
         "label": "Savior",
-        "value": 0
+        "value": 1
       },
       "superior": {
         "label": "Superior",
-        "value": 0
+        "value": 2
       },
       "mundane": {
         "label": "Mundane",
-        "value": 0
+        "value": -1
       }
-    }
+    },
+    "statsDetail": "(at character creation, add +1 wherever you choose)",
+    "slug": "the-star",
+    "attributes": {
+      "theStarAdvantages": {
+        "type": "ListMany",
+        "label": "Audience Advantages",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false
+          },
+          "1": {
+            "label": "[Text]",
+            "value": false
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "theStarDemands": {
+        "type": "ListMany",
+        "label": "Audience Demands",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false
+          },
+          "1": {
+            "label": "[Text]",
+            "value": false
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "advancements": {
+        "label": "Advancements",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "1": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "2": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "3": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "4": {
+                "value": false,
+                "label": "Someone permanently loses Influence over you; add +1 to a Label"
+              },
+              "5": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "6": {
+                "value": false,
+                "label": "Unlock your Moment of Truth"
+              },
+              "7": {
+                "value": false,
+                "label": "Become part of a larger superhero tradition and take a legacy (from the Legacy playbook)"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "laterAdvances": {
+        "label": "Later Advances",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Unlock your Moment of Truth after it’s been used once"
+              },
+              "1": {
+                "value": false,
+                "label": "Change playbooks"
+              },
+              "2": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "3": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "4": {
+                "value": false,
+                "label": "Lock a Label, and add +1 to a Label of your choice"
+              },
+              "5": {
+                "value": false,
+                "label": "Retire from the life or become a paragon of the city"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "look": {
+        "label": "Look",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>ambiguous, man, shifting, transgressing, woman</li>      <li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>      <li>charming smile, coy smile, broad smile, warm smile, teasing smile</li>      <li>designer clothing, formal wear, beautiful outfits, preppy clothing, casual clothing</li>      <li>branded costume, flashy costume, focus-tested costume, stylish costume, ridiculous costume</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "abilities": {
+        "label": "Abilities",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>Your powers are flashy and impressive. Choose one.</p>      <ul>      <li>sonic control</li>      <li>electrodynamic control</li>      <li>light control</li>      <li>strange wings</li>      <li>body plasticity and stretching</li>      <li>flame control</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "backstory": {
+        "label": "Backstory",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>When did you first appear onscreen?</li>      <li>What do you tell people about how you got your powers?</li>      <li>Who, outside of the team, supports your burgeoning star in every way possible?</li>      <li>Who, outside of the team, loathes what you represent?</li>      <li>Why do you care about the team?</li>      </ul>      <p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "relationships": {
+        "label": "Relationships",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>__________________ might wind up being more of a star than me some day.</p>      <p>__________________ would be a great sidekick; I try to keep them around.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "moment": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>Sometimes it can be hard to tell where the show stops and where you begin—but not today. Not now. Because right now, there is no show. Right now, you are the thing you pretend to be—bold and bright and beautiful and amazing and powerful and confident. Right now, you draw strength from your audience, comfort from their belief in you, and you can do anything they think you can. Of course, after such an impassioned performance, your audience will just have even more demands...</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "team": {
+        "label": "The Team",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>We, as a team, attracted the attention of a major media outlet within the city, thanks to our efforts. Who are they? Why do they support us?</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      }
+    },
+    "choiceSets": [
+      {
+        "title": "Core Playbook Moves",
+        "desc": "",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-star.Item.BxIcS3GOuOSuH9E0",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/red-carpet-%23ffffff-%233da7db.svg",
+            "name": "Audience",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "Seek Help From Your Audience",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/help-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-star.Item.VyVNaw7mqNQpIZ6W",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-star.Item.uclgpCW0sqE0S0B2",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Triumphant Celebration",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-star.Item.apeGXXssc2xGqhpW",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Vulnerability",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      }
+    ]
   },
   "ownership": {
     "default": 0,
@@ -50,7 +289,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1718674180891,
+    "modifiedTime": 1718687736775,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

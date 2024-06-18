@@ -217,6 +217,31 @@
         "path": "details",
         "max": null,
         "options": {}
+      },
+      "theBeacon": {
+        "type": "ListMany",
+        "label": "Drives",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false
+          },
+          "1": {
+            "label": "[Text]",
+            "value": false
+          },
+          "2": {
+            "label": "[Text]",
+            "value": false
+          },
+          "3": {
+            "label": "[Text]",
+            "value": false
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
       }
     },
     "choiceSets": [
@@ -265,7 +290,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718253072304,
-    "modifiedTime": 1718674176468,
+    "modifiedTime": 1718686546401,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "0iryK44tVpbXhlMF",

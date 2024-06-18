@@ -21,15 +21,15 @@
     "stats": {
       "danger": {
         "label": "Danger",
-        "value": 0
+        "value": 2
       },
       "freak": {
         "label": "Freak",
-        "value": 0
+        "value": 1
       },
       "savior": {
         "label": "Savior",
-        "value": 0
+        "value": -1
       },
       "superior": {
         "label": "Superior",
@@ -39,7 +39,268 @@
         "label": "Mundane",
         "value": 0
       }
-    }
+    },
+    "attributes": {
+      "theReformed": {
+        "type": "ListMany",
+        "label": "Friends in Low Places",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false,
+            "values": {
+              "0": {
+                "value": false
+              },
+              "1": {
+                "value": false
+              },
+              "2": {
+                "value": false
+              },
+              "3": {
+                "value": false
+              }
+            }
+          },
+          "1": {
+            "label": "[Text]",
+            "value": false,
+            "values": {
+              "0": {
+                "value": false
+              },
+              "1": {
+                "value": false
+              },
+              "2": {
+                "value": false
+              },
+              "3": {
+                "value": false
+              }
+            }
+          },
+          "2": {
+            "label": "[Text]",
+            "value": false,
+            "values": {
+              "0": {
+                "value": false
+              },
+              "1": {
+                "value": false
+              },
+              "2": {
+                "value": false
+              },
+              "3": {
+                "value": false
+              }
+            }
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "advancements": {
+        "label": "Advancements",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "1": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "2": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "3": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "4": {
+                "value": false,
+                "label": "Someone permanently loses Influence over you; add +1 to a Label"
+              },
+              "5": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "6": {
+                "value": false,
+                "label": "Unlock your Moment of Truth"
+              },
+              "7": {
+                "value": false,
+                "label": "Take drives and mark four (from the Beacon’s playbook)"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "laterAdvances": {
+        "label": "Later Advances",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Unlock your Moment of Truth after it’s been used once"
+              },
+              "1": {
+                "value": false,
+                "label": "Change playbooks"
+              },
+              "2": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "3": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "4": {
+                "value": false,
+                "label": "Lock a Label, and add +1 to a Label of your choice"
+              },
+              "5": {
+                "value": false,
+                "label": "Retire from the life or become a paragon of the city"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "look": {
+        "label": "Look",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>ambiguous, man, shifting, transgressing, woman</li>      <li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>      <li>sad eyes, technicolor eyes, shadowy eyes, gorgeous eyes</li>      <li>conservative clothes, school uniform, concealing fashion, expensive fashion</li>      <li>tattered costume, normal clothes, sleek costume, regal costume</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "abilities": {
+        "label": "Abilities",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>You’re young, but you’ve been around for a few years before switching teams. You know how to fight, but you’re known for one ability more than any other. Choose one.</p>      <ul>      <li>poison, venom, or acid control</li>      <li>weapons and martial expertise</li>      <li>ferrokinesis</li>      <li>vitality absorption</li>      <li>fear manipulation</li>      <li>geokinesis</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "backstory": {
+        "label": "Backstory",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>Who mentored you in supervillainy?</li>      <li>Who first showed you that you could do good?</li>      <li>What was your goal as a villain?</li>      <li>What caused you to switch sides?</li>      <li>Why do you care about the team?</li>      </ul>      <p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "relationships": {
+        "label": "Relationships",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>I’ve earned the trust of _________________, and I follow their example of what a hero should be.</p>      <p>I did something terrible to __________________ once. I hope they can forgive me one day.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "moment": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>You’ve seen your greatest mistakes, and the rest of the world has, too. They’re all watching you now, judging every move you make. When everything is on the line and your back is against the wall, though, you’ll show them what you’re made of—that being a hero is a choice. An act of will. And you’ve got what it takes to save the day. Of course, afterward, you can expect both sides, hero and villain, to deeply question where your loyalties truly lie...</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "team": {
+        "label": "The Team",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>We fought a terrible enemy from my old life. Who was it and what did they take from me?</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      }
+    },
+    "slug": "the-reformed",
+    "statsDetail": "(at character creation, add +1 wherever you choose)",
+    "choiceSets": [
+      {
+        "title": "Core Playbook Moves",
+        "desc": "",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "name": "Friends in Low Places",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/handcuffed-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-reformed.Item.zgT2HTOZKOiKXC6T",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-reformed.Item.rUvf395epj4ZmZyO",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Moment of Triumphant",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-reformed.Item.9WQNUvqlzFvlPN8K",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Vulnerability",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      }
+    ]
   },
   "ownership": {
     "default": 0,
@@ -50,7 +311,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1718674180769,
+    "modifiedTime": 1718688148420,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

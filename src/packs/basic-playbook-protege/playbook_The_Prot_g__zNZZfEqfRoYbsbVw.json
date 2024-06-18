@@ -217,6 +217,27 @@
         "path": "details",
         "max": null,
         "options": {}
+      },
+      "theProtege": {
+        "type": "LongText",
+        "label": "Mentor's Labels",
+        "value": "<b>Embodies:</b> <br><b>Denies:</b> ",
+        "choices": [
+          {
+            "value": "<b>Embodies:</b> <br><b>Denies:</b>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "theProtegeMentorsResources": {
+        "type": "LongText",
+        "label": "Mentor's Resources",
+        "value": "",
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
       }
     },
     "choiceSets": [
@@ -266,7 +287,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718261466966,
-    "modifiedTime": 1718674179535,
+    "modifiedTime": 1718686675790,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "zNZZfEqfRoYbsbVw",

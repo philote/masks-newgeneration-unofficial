@@ -217,6 +217,14 @@
         "path": "details",
         "max": null,
         "options": {}
+      },
+      "theDoomed": {
+        "type": "Clock",
+        "label": "Doom Track",
+        "max": 5,
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
       }
     },
     "choiceSets": [
@@ -273,7 +281,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718258337076,
-    "modifiedTime": 1718674177644,
+    "modifiedTime": 1718687021237,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "Sblehr0zwyebBGOl",

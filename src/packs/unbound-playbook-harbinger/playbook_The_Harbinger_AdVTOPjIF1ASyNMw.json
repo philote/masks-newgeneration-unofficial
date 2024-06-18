@@ -28,17 +28,235 @@
       },
       "savior": {
         "label": "Savior",
-        "value": 0
+        "value": 2
       },
       "superior": {
         "label": "Superior",
-        "value": 0
+        "value": 1
       },
       "mundane": {
         "label": "Mundane",
-        "value": 0
+        "value": -1
       }
-    }
+    },
+    "attributes": {
+      "theHarbingerMemories": {
+        "type": "Number",
+        "label": "Memories Score",
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "theHarbinger": {
+        "type": "LongText",
+        "label": "Memories",
+        "value": "<b>Monster: </b> <br><b>Traitor: </b> <br><b>Corruptor: </b> <br><b>Martyr: </b> <br><b>Architect: </b> <br><b>Leader: </b> <br>",
+        "choices": [
+          {
+            "value": "<b>Monster: </b> <br><b>Traitor: </b> <br><b>Corruptor: </b> <br><b>Martyr: </b> <br><b>Architect: </b> <br><b>Leader: </b> <br>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "advancements": {
+        "label": "Advancements",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "1": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "2": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "3": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "4": {
+                "value": false,
+                "label": "Someone permanently loses Influence over you; add +1 to a Label"
+              },
+              "5": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "6": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "7": {
+                "value": false,
+                "label": "Unlock your Moment of Truth"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "laterAdvances": {
+        "label": "Later Advances",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Unlock your Moment of Truth after it’s been used once"
+              },
+              "1": {
+                "value": false,
+                "label": "Change playbooks"
+              },
+              "2": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "3": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "4": {
+                "value": false,
+                "label": "Lock a Label, and add +1 to a Label of your choice"
+              },
+              "5": {
+                "value": false,
+                "label": "Return to the future and accept its new form, or jump to a different point in the past to begin your mission anew"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "look": {
+        "label": "Look",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>ambiguous, man, shifting, transgressing, woman</li>      <li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>      <li>haunted face, optimistic face, ordinary face, “hyper-evolved human” face</li>      <li>streamlined clothing, “fashion-forward” clothing, simple clothing, casual clothing</li>      <li>high-tech costume, impossible costume, sleek costume, dramatic costume</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "abilities": {
+        "label": "Abilities",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>You’re from the future, and that has its benefits, like future knowledge (even though your memories are scrambled). Plus, your powers may have had something to do with how you got back to the past—er, the present day, that is. “Now,” as the locals call it. Choose one option from the list below.</p>      <ul>      <li>super speed</li>      <li>optimized biology</li>      <li>telepathy &amp; telekinesis</li>      <li>teleportation &amp; portals</li>      <li>futuristic gadgets &amp; implants</li>      <li>energy absorption/redirection</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "backstory": {
+        "label": "Backstory",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>How did you travel from the future to the present day?</li>      <li>What keeps you from returning to the future?</li>      <li>Why are your memories and knowledge of the future scrambled?</li>      <li>What is the most important part of your future that you want to avert?</li>      <li>Why must you join this team specifically to achieve your mission’s goals?</li>      </ul>      <p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "relationships": {
+        "label": "Relationships",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>____________________ turns away from the hero’s path, according to your history books. You have to prevent that from happening.</p>      <p>You’ve always idolized ____________________, but it’s too awkward to admit it to them now that you’ve met them in real life. Keep it cool, keep it cool.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "moment": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>Everything you do could affect the future. For all you know, saving that one guy means that now the future is full of pterodactyls. The ripples are always so hard to track, and you’re not sure if you’ve helped or hurt—not really. Until now. In this moment, it’s all clear. You can see the course of events laid out before you like a river, and you know exactly what you have to do to ensure the future outcome you want. Of course, after this, you’ve changed enough of the timeline to invalidate your prior research—reset all the names in your “Connecting the dots” section.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "team": {
+        "label": "The Team",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>We averted a disaster from the future’s history books. What was the disaster? What effect do we hope it had on the timeline?</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      }
+    },
+    "choiceSets": [
+      {
+        "title": "Core Playbook Moves",
+        "desc": "",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "name": "Connecting the Dots",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/mesh-network-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-harbinger.Item.HCswUIs9sYKviY0J",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-harbinger.Item.prbByS9Pxx2Mveg0",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Confess to a Teammate",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-harbinger.Item.TD2otlOVMhehPrG5",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Moves - Share a Tale of Future Loss",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      }
+    ],
+    "slug": "the-harbinger",
+    "statsDetail": "(at character creation, add +1 wherever you choose)"
   },
   "ownership": {
     "default": 0,
@@ -49,7 +267,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858426966,
-    "modifiedTime": 1718674181643,
+    "modifiedTime": 1718690175054,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

@@ -217,6 +217,19 @@
         "path": "details",
         "max": null,
         "options": {}
+      },
+      "theLegacy": {
+        "type": "LongText",
+        "label": "Legacy Members",
+        "value": " <i>: is still active and prominent in the city.</i><br> <i>: is retired and quite judgmental.</i><br> <i>: is the next possible member of your legacy.</i><br> <i>: is the greatest opponent your legacy ever faced...and is still at large.</i>",
+        "choices": [
+          {
+            "value": "<i>: is still active and prominent in the city.</i><br> <i>: is retired and quite judgmental.</i><br> <i>: is the next possible member of your legacy.</i><br> <i>: is the greatest opponent your legacy ever faced...and is still at large.</i>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
       }
     },
     "choiceSets": [
@@ -266,7 +279,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718260308485,
-    "modifiedTime": 1718674178457,
+    "modifiedTime": 1718686724421,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "BuGKIdEepDgYFVd8",

@@ -215,6 +215,13 @@
         "path": "details",
         "max": null,
         "options": {}
+      },
+      "theSoldier": {
+        "type": "Number",
+        "label": "Soldier",
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
       }
     },
     "choiceSets": [
@@ -264,7 +271,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718262718363,
-    "modifiedTime": 1718674181556,
+    "modifiedTime": 1718687112000,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "ide6IwCw3zieK6m4",

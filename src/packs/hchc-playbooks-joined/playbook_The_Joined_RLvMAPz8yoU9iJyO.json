@@ -39,7 +39,198 @@
         "label": "Mundane",
         "value": 0
       }
-    }
+    },
+    "slug": "the-joined",
+    "attributes": {
+      "advancements": {
+        "label": "Advancements",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Take one new bond"
+              },
+              "1": {
+                "value": false,
+                "label": "Take one new distinction"
+              },
+              "2": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "3": {
+                "value": false,
+                "label": "Gain two new abilities from any playbook"
+              },
+              "4": {
+                "value": false,
+                "label": "Take an advancement from your other half’s playbook"
+              },
+              "5": {
+                "value": false,
+                "label": "Someone permanently loses Influence over you; add +1 to a Label"
+              },
+              "6": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "7": {
+                "value": false,
+                "label": "Unlock your Moment of Truth"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "laterAdvances": {
+        "label": "Later Advances",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Unlock your Moment of Truth after it’s been used once"
+              },
+              "1": {
+                "value": false,
+                "label": "Change playbooks"
+              },
+              "2": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "3": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "4": {
+                "value": false,
+                "label": "Lock a Label, and add +1 to a Label of your choice"
+              },
+              "5": {
+                "value": false,
+                "label": "Retire from the life or become a paragon of the city"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "look": {
+        "label": "Look",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>You look similar to your other half, and your costume choice is always the same as theirs. Choose two other options they have selected that you share; then, choose two options from the lists below.</p>      <ul>      <li>ambiguous, man, shifting, transgressing, woman</li>      <li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>      <li>brooding face, curious face, judging face, unreadable face</li>      <li>casual clothing, eccentric clothing, dark clothing, light clothing</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "abilities": {
+        "label": "Abilities",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>Your powers complement your other half ’s. You have the same abilities they have. At least for now.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "backstory": {
+        "label": "Backstory",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>How did you and your other half become connected?</li>      <li>Who or what did you have to give up because of your connection?</li>      <li>Apart from your powers, what keeps you together?</li>      <li>Someone outside the team thinks you’d be better off on your own. Who are they and why do they think that?</li>      <li>Why do you care about the team?</li>      </ul>      <p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "relationships": {
+        "label": "Relationships",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>When you have problems with your other half, you talk to _________________.</p>      <p>You are jealous of the relationship between your other half and _________________, and you keep trying to interject yourself.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "moment": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>When you trigger your Moment of Truth, choose—are you working with your other half, or are you on your own?</p>      <p>If you’re working with your other half, use the text of their Moment of Truth and treat it as if it applies to both of you. Remember to lock your Label and switch a bond to a distinction because you’ll probably never reach these heights of perfect connection, of being one, ever again...</p>      <p>If you’re on your own, use the following text:</p>      <p>You’re on your own. It’s like missing an arm. Like fighting naked. Like holding your breath. You’re missing something vital...but you’re moving faster than ever, thinking faster than ever, doing things you couldn’t even do while relying on both of your strength combined. And it’s hitting you, hard—you can do this. Without them. And you can win. It’s going to be hard to come down off this high and rejoin with them afterwards, isn’t it?</p>      <p>Remember to lock a Label and switch a bond to a distinction, afterward.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "team": {
+        "label": "The Team",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>The connection between our two halves was threatened by the crisis. How? By what?</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      }
+    },
+    "statsDetail": "Your Labels start off the same as your other half ’s, but you may shift up any one Label, and shift down any one Label.",
+    "choiceSets": [
+      {
+        "title": "Core Playbook Moves",
+        "desc": "",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-joined.Item.i4kDCDitbyFbexmD",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a moment of Vulnerability or a Triumphant Celebration",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "Your Other Half",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/gemini-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-joined.Item.GIxgFOuqBSiP0YEC",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      }
+    ]
   },
   "ownership": {
     "default": 0,
@@ -50,7 +241,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1718674180527,
+    "modifiedTime": 1718688762910,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

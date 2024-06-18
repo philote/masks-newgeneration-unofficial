@@ -20,7 +20,7 @@
     "stats": {
       "danger": {
         "label": "Danger",
-        "value": 0
+        "value": 1
       },
       "freak": {
         "label": "Freak",
@@ -28,7 +28,7 @@
       },
       "savior": {
         "label": "Savior",
-        "value": 0
+        "value": 1
       },
       "superior": {
         "label": "Superior",
@@ -38,7 +38,385 @@
         "label": "Mundane",
         "value": 0
       }
-    }
+    },
+    "slug": "the-scion",
+    "attributes": {
+      "theScionGreatestEnemy": {
+        "type": "ListMany",
+        "label": "Greatest Enemy",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false,
+            "values": {
+              "0": {
+                "value": false
+              },
+              "1": {
+                "value": false
+              },
+              "2": {
+                "value": false
+              },
+              "3": {
+                "value": false
+              },
+              "4": {
+                "value": false
+              }
+            }
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "theScionGreatestVictim": {
+        "type": "ListMany",
+        "label": "Greatest Victim",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false,
+            "values": {
+              "0": {
+                "value": false
+              },
+              "1": {
+                "value": false
+              },
+              "2": {
+                "value": false
+              },
+              "3": {
+                "value": false
+              },
+              "4": {
+                "value": false
+              }
+            }
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "theScionPersonalIdol": {
+        "type": "ListMany",
+        "label": "Personal Idol",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false,
+            "values": {
+              "0": {
+                "value": false
+              },
+              "1": {
+                "value": false
+              },
+              "2": {
+                "value": false
+              },
+              "3": {
+                "value": false
+              },
+              "4": {
+                "value": false
+              }
+            }
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "theScionGreatestLeader": {
+        "type": "ListMany",
+        "label": "Greatest Leader",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false,
+            "values": {
+              "0": {
+                "value": false
+              },
+              "1": {
+                "value": false
+              },
+              "2": {
+                "value": false
+              },
+              "3": {
+                "value": false
+              },
+              "4": {
+                "value": false
+              }
+            }
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "theScionGreatestHero": {
+        "type": "ListMany",
+        "label": "Greatest Hero",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false,
+            "values": {
+              "0": {
+                "value": false
+              },
+              "1": {
+                "value": false
+              },
+              "2": {
+                "value": false
+              },
+              "3": {
+                "value": false
+              },
+              "4": {
+                "value": false
+              }
+            }
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "theScionBiggestCelebrity": {
+        "type": "ListMany",
+        "label": "Biggest Celebrity",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false,
+            "values": {
+              "0": {
+                "value": false
+              },
+              "1": {
+                "value": false
+              },
+              "2": {
+                "value": false
+              },
+              "3": {
+                "value": false
+              },
+              "4": {
+                "value": false
+              }
+            }
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "advancements": {
+        "label": "Advancements",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "1": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "2": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "3": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "4": {
+                "value": false,
+                "label": "Someone permanently loses Influence over you; add +1 to a Label"
+              },
+              "5": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "6": {
+                "value": false,
+                "label": "Unlock your Moment of Truth"
+              },
+              "7": {
+                "value": false,
+                "label": "Take The Mask and a secret identity from the Janus playbook"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "laterAdvances": {
+        "label": "Later Advances",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Unlock your Moment of Truth after it’s been used once"
+              },
+              "1": {
+                "value": false,
+                "label": "Change playbooks"
+              },
+              "2": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "3": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "4": {
+                "value": false,
+                "label": "Lock a Label, and add +1 to a Label of your choice"
+              },
+              "5": {
+                "value": false,
+                "label": "Retire from the life or become a paragon of the city"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "look": {
+        "label": "Look",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>ambiguous, man, shifting, transgressing, woman</li>      <li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>      <li>stocky body, slender body, scrawny body, statuesque body, taut body</li>      <li>hand-me-down clothing, expensive clothing, uniform clothing, rebellious clothing, casual clothing</li>      <li>bright costume, parent’s costume, understated costume, makeshift costume, no costume</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "abilities": {
+        "label": "Abilities",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "backstory": {
+        "label": "Backstory",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>Who is your supervillain parent?</li>      <li>Who told you about your parent’s true nature?</li>      <li>Why did you turn from your lineage to become a hero?</li>      <li>Who, outside of the team, helps you on your chosen path?</li>      <li>Why do you care about the team?</li>      </ul>      <p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "relationships": {
+        "label": "Relationships",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>____________________ is the only one who understands what I’m going through; I told them which part of me I wished was more like my parent.</p>      <p>My parent once fought and thrashed _____________________; I’ve got to find a way to make it up to them.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "moment": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>People have always tried to define you by your lineage. As if from the moment you were born, you were meant to be some villain to be defeated. But...they’re right, aren’t they? That darkness is in you. So right here, right now, you’re not fighting it—you’re embracing it. Both hero and villain, and greater besides. You’re overcoming impossible odds in ways no hero would approve of, and no villain could comprehend. Of course, after seeing what you can really do when you embrace the whole of yourself, the rest of the world isn’t going to forget who you really are...</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "team": {
+        "label": "The Team",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>Someone important learned about my lineage and condemned us all. Who? Why?</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      }
+    },
+    "choiceSets": [
+      {
+        "title": "Core Playbook Moves",
+        "desc": "",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "name": "Respect",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/conqueror-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.5ANdAucy1Qyz0tZI",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.vZWbhNK0hym9W53E",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Triumphant Celebration",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.Ti3QHKtjFUHjLVF9",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Vulnerability",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      }
+    ],
+    "statsDetail": "(at character creation, add +1 wherever you choose)"
   },
   "ownership": {
     "default": 0,
@@ -49,7 +427,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858426966,
-    "modifiedTime": 1718674182037,
+    "modifiedTime": 1718689584844,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

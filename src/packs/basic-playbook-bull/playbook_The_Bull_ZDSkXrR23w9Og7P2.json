@@ -217,6 +217,19 @@
         "path": "details",
         "max": null,
         "options": {}
+      },
+      "theBull": {
+        "type": "LongText",
+        "label": "The Bull's Heart",
+        "value": "<b>Love:</b> <br><b>Rival:</b> ",
+        "choices": [
+          {
+            "value": "<b>Love:</b> <br><b>Rival:</b>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
       }
     },
     "choiceSets": [
@@ -259,7 +272,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718256107895,
-    "modifiedTime": 1718674176888,
+    "modifiedTime": 1718687055798,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "ZDSkXrR23w9Og7P2",
