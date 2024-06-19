@@ -49,17 +49,6 @@
       }
     },
     {
-      "name": "macros-masks",
-      "label": "Macros - Masks",
-      "path": "packs/macros-masks",
-      "type": "Macro",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
       "name": "basic-playbook-beacon",
       "label": "Basic Playbook - The Beacon",
       "path": "packs/basic-playbook-beacon",

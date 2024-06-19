@@ -4,10 +4,9 @@
 		<img class="profile-img" src="{{actor.img}}" data-edit="img" height="100" width="100"/>
 	</div>
 	{{/if}}
-	<div class="sheet-header__fields flexrow"> {{log actor.system.attributes.realName}}
+	<div class="sheet-header__fields flexrow">
 		<input class="input--title" name="name" type="text" value="{{actor.name}}" placeholder="Name"/>
 		{{#if (and isCharacter (not limited))}}
-		{{log this}}
 		<input type="text" class="input input--title" name="system.attributes.realName.value" value="{{system.attributes.realName.value}}"  placeholder="{{actor.system.attributes.realName.label}}"/>
 		<span class="sheet-playbook">
 			{{#if system.playbook.uuid}}

@@ -173,51 +173,6 @@
         "max": null,
         "options": {}
       },
-      "relationships": {
-        "label": "Relationships",
-        "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>_____________________ knew you from your civilian life first.</p>      <p>You refused to tell ___________________ your secret identity when they asked.</p>",
-            "options": {}
-          }
-        ],
-        "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
-      },
-      "moment": {
-        "label": "Moment of Truth",
-        "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>The mask is a lie, and some piece of you has always known that. Doesn’t matter if others can see it. You’re the one that can do the impossible. Mask off. Costume on. And you’re going to save the damn day. Of course, you better hope nobody nasty is watching...</p>",
-            "options": {}
-          }
-        ],
-        "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
-      },
-      "team": {
-        "label": "The Team",
-        "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>We saved the life of someone important, either to the city or to us. Who was it? Why are they important?</p>",
-            "options": {}
-          }
-        ],
-        "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
-      },
       "theJanus": {
         "type": "ListMany",
         "label": "Obligations",
@@ -235,6 +190,27 @@
             "value": false
           }
         },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "relationshipQuestions": {
+        "label": "Relationships",
+        "type": "LongText",
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "momentOfTruth": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "teamQuestion": {
+        "label": "When our team first came together...",
+        "type": "LongText",
         "choices": [],
         "custom": false,
         "path": "attributes"
@@ -287,7 +263,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718258782013,
-    "modifiedTime": 1718686751119,
+    "modifiedTime": 1718828859923,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "zxTWBBFmce79uFvU",

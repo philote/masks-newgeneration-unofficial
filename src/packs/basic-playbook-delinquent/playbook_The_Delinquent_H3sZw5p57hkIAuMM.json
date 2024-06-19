@@ -173,50 +173,26 @@
         "max": null,
         "options": {}
       },
-      "relationships": {
+      "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>You keep trying to impress _________________ with your antics.</p>      <p>You and ________________ pulled an awesome (if illegal) stunt together.</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
+        "path": "attributes"
       },
-      "moment": {
+      "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>This is when you show them what you really are. Whether you’re the hero underneath the rebel facade...or the one who can make the hard choices heroes can’t make. You do whatever it takes</p>      <p>to show that truth, whether it’s saving the day from a terrible villain or stopping a bad guy once and for all. Of course, once you’ve shown what you really are, there’s no going back to playing the clown...</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
+        "path": "attributes"
       },
-      "team": {
-        "label": "The Team",
+      "teamQuestion": {
+        "label": "When our team first came together...",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>We totally broke some major rules to win the fight. What rules did we break? Whose rules were they?</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
+        "path": "attributes"
       }
     },
     "choiceSets": [
@@ -259,7 +235,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718257558329,
-    "modifiedTime": 1718674177055,
+    "modifiedTime": 1718828885032,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "H3sZw5p57hkIAuMM",

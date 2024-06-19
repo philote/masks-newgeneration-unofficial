@@ -222,44 +222,26 @@
         "custom": false,
         "path": "details"
       },
-      "relationships": {
+      "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>__________________ is helping me understand this weirdo future. I follow their lead.</p>      <p>I saved someone important to __________________; they’re now my biggest defender.</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details"
+        "path": "attributes"
       },
-      "moment": {
+      "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>You’ve fought, struggled, and worked so hard to figure out who you are, whether you’re just the same as your future self or whether you’re different...but right now, that’s all out the window. The distinction between your future self and your present self vanishes in the face of the trial before you, and you become exactly the powerful, adamant figure that everyone fears or hopes you will one day become. You can do exactly what your future self could do, and everyone around you sees them in you more clearly than ever. Of course, after this it’s going to be hard to treat you as two different people...</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details"
+        "path": "attributes"
       },
-      "team": {
-        "label": "The Team",
+      "teamQuestion": {
+        "label": "When our team first came together...",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>My future self was involved, and I tried to stop them. It took the rest of the team to help me succeed. How did we stymie my future self ’s plans?</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details"
+        "path": "attributes"
       }
     },
     "statsDetail": "(at character creation, add +1 wherever you choose)"
@@ -273,7 +255,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1718689144564,
+    "modifiedTime": 1718828915544,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

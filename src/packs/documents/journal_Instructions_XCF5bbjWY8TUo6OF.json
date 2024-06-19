@@ -14,7 +14,7 @@
       },
       "text": {
         "format": 1,
-        "content": "<p>You can make the condition show on a token when the player mark it on the Actor Sheet with the module Combat Utility Belt.</p><p>First you need to enable Condition Lab.</p><img src=\"modules/masks-newgeneration-unofficial/images/guide/cub-masks02.webp\" width=\"749\" height=\"454\" /><p> </p><p>You need to create a trigger On and Off to each condition.</p><img src=\"modules/masks-newgeneration-unofficial/images/guide/cub-masks01.webp\" width=\"800\" height=\"711\" /><p> </p><p>This is the values you can use for each condition:</p><p>Afraid</p><p>data.attrLeft.conditions.options.0.value</p><p>Angry </p><p>data.attrLeft.conditions.options.1.value</p><p>Guilty </p><p>data.attrLeft.conditions.options.2.value</p><p>Hopeless </p><p>data.attrLeft.conditions.options.3.value</p><p>Insecure</p><p>data.attrLeft.conditions.options.4.value</p><p> </p><p>You need to create the conditions. You can import then using this link: <a href=\"https://raw.githubusercontent.com/brunocalado/masks-newgeneration-unofficial/main/resources/cub-pbta-condition-map.json\" target=\"_blank\" rel=\"noopener\">Download Link</a></p><img src=\"modules/masks-newgeneration-unofficial/images/guide/cub-masks03.webp\" width=\"800\" height=\"477\" /><p>Make sure each condition has its triggers defined.</p><p> </p><h2>Icons</h2><p>Angry: icons/skills/wounds/injury-face-impact-orange.webp</p><img src=\"icons/skills/wounds/injury-face-impact-orange.webp\" width=\"50\" height=\"50\" /><p> </p><p>Afraid: icons/magic/unholy/silhouette-robe-evil-power.webp</p><img src=\"icons/magic/unholy/silhouette-robe-evil-power.webp\" width=\"50\" height=\"50\" /><p> </p><p>Guilty: icons/creatures/mammals/humanoid-cat-skulking-teal.webp</p><img src=\"icons/creatures/mammals/humanoid-cat-skulking-teal.webp\" width=\"50\" height=\"50\" /><p> </p><p>Hopeless: icons/creatures/magical/spirit-undead-masked-blue.webp</p><img src=\"icons/creatures/magical/spirit-undead-masked-blue.webp\" width=\"50\" height=\"50\" /><p> </p><p>Insecure: icons/skills/wounds/injury-face-impact-orange.webp</p><img src=\"icons/magic/death/undead-skeleton-deformed-red.webp\" width=\"50\" height=\"50\" /><p> </p><p> </p>"
+        "content": "<p>You can make the condition show on a token when the player mark it on the Actor Sheet with the module Combat Utility Belt. https://foundryvtt.com/packages/combat-utility-belt</p><p>First you need to enable Condition Lab.</p><img src=\"modules/masks-newgeneration-unofficial/images/guide/cub-masks02.webp\" width=\"749\" height=\"454\" /><p> </p><p>You need to create a trigger On and Off to each condition.</p><img src=\"modules/masks-newgeneration-unofficial/images/guide/cub-masks01.webp\" width=\"800\" height=\"711\" /><p> </p><p>This is the values you can use for each condition:</p><p>Afraid</p><p>data.attrLeft.conditions.options.0.value</p><p>Angry </p><p>data.attrLeft.conditions.options.1.value</p><p>Guilty </p><p>data.attrLeft.conditions.options.2.value</p><p>Hopeless </p><p>data.attrLeft.conditions.options.3.value</p><p>Insecure</p><p>data.attrLeft.conditions.options.4.value</p><p> </p><p>You need to create the conditions. You can import then using this link: <a href=\"https://raw.githubusercontent.com/brunocalado/masks-newgeneration-unofficial/main/resources/cub-pbta-condition-map.json\" target=\"_blank\" rel=\"noopener\">Download Link</a></p><img src=\"modules/masks-newgeneration-unofficial/images/guide/cub-masks03.webp\" width=\"800\" height=\"477\" /><p>Make sure each condition has its triggers defined.</p><p> </p><h2>Icons</h2><p>Angry: icons/skills/wounds/injury-face-impact-orange.webp</p><img src=\"icons/skills/wounds/injury-face-impact-orange.webp\" width=\"50\" height=\"50\" /><p> </p><p>Afraid: icons/magic/unholy/silhouette-robe-evil-power.webp</p><img src=\"icons/magic/unholy/silhouette-robe-evil-power.webp\" width=\"50\" height=\"50\" /><p> </p><p>Guilty: icons/creatures/mammals/humanoid-cat-skulking-teal.webp</p><img src=\"icons/creatures/mammals/humanoid-cat-skulking-teal.webp\" width=\"50\" height=\"50\" /><p> </p><p>Hopeless: icons/creatures/magical/spirit-undead-masked-blue.webp</p><img src=\"icons/creatures/magical/spirit-undead-masked-blue.webp\" width=\"50\" height=\"50\" /><p> </p><p>Insecure: icons/skills/wounds/injury-face-impact-orange.webp</p><img src=\"icons/magic/death/undead-skeleton-deformed-red.webp\" width=\"50\" height=\"50\" /><p> </p><p> </p>"
       },
       "_id": "cK7IAKu1SN2xSSop",
       "image": {},
@@ -32,55 +32,14 @@
       "_stats": {
         "systemId": "pbta",
         "systemVersion": "0.7.2",
-        "coreVersion": "12.324",
+        "coreVersion": "12.327",
         "createdTime": null,
-        "modifiedTime": 1700081607435,
-        "lastModifiedBy": "Dqtz4V1KsRqBnD6q",
+        "modifiedTime": 1718825047380,
+        "lastModifiedBy": "6hjjFCY28uGRsfsB",
         "compendiumSource": null,
         "duplicateSource": null
       },
       "_key": "!journal.pages!XCF5bbjWY8TUo6OF.cK7IAKu1SN2xSSop"
-    },
-    {
-      "name": "Macros",
-      "type": "text",
-      "title": {
-        "show": true,
-        "level": 1
-      },
-      "text": {
-        "format": 1,
-        "content": "<p>You have a macro to let your players change labels easier.</p><p> </p><p> </p><img src=\"icons/commodities/treasure/mask-jeweled-gold.webp\" width=\"28\" height=\"28\" /><p>Label Changer</p><ol><li>Import the macro to the world. </li><li>Share it with your players.</li><li>They must select their token. </li></ol><p> </p><img src=\"modules/masks-newgeneration-unofficial/images/guide/macro-labelchanger.png\" width=\"397\" height=\"334\" /><p> </p><p>Notes</p><p>The token must be linked to the actor.</p>"
-      },
-      "_id": "tm6aIZh5W0XLyLXx",
-      "image": {},
-      "video": {
-        "controls": true,
-        "volume": 0.5
-      },
-      "src": null,
-      "system": {},
-      "sort": 0,
-      "ownership": {
-        "default": -1,
-        "qxt7zBbnFWpsYRqr": 3
-      },
-      "flags": {
-        "core": {
-          "sourceId": "JournalEntry.JDmxZLk15dRViDS7.JournalEntryPage.tm6aIZh5W0XLyLXx"
-        }
-      },
-      "_stats": {
-        "systemId": "pbta",
-        "systemVersion": "0.7.2",
-        "coreVersion": "12.324",
-        "createdTime": 1699855648587,
-        "modifiedTime": 1700081620005,
-        "lastModifiedBy": "Dqtz4V1KsRqBnD6q",
-        "compendiumSource": null,
-        "duplicateSource": null
-      },
-      "_key": "!journal.pages!XCF5bbjWY8TUo6OF.tm6aIZh5W0XLyLXx"
     },
     {
       "name": "Tips",
@@ -91,7 +50,7 @@
       },
       "text": {
         "format": 1,
-        "content": "<h2>Hero Pool</h2><p>FoundryVTT - Party Resources</p><p>You can use Party Resources to control the hero pool.</p><p>https://github.com/davelens/fvtt-party-resources</p><p> </p><h2>Theatre</h2><p>Use Theatre to make the PCs feel in the scene.</p><p>https://github.com/League-of-Foundry-Developers/fvtt-module-theatre</p><p> </p>"
+        "content": "<h2>Team Pool</h2><p>Modules:</p><p>You can use Party Resources or Global Progress Clocks to control the team pool.</p><p>https://foundryvtt.com/packages/fvtt-party-resources</p><p>https://foundryvtt.com/packages/global-progress-clocks</p><p> </p><h2>Theatre</h2><p>Use Theatre to make the PCs feel in the scene. (not yet updated for Foundry v12)</p><p>https://foundryvtt.com/packages/theatre</p><p> </p>"
       },
       "_id": "G51PfCtXWRdFFwoy",
       "image": {},
@@ -114,10 +73,10 @@
       "_stats": {
         "systemId": "pbta",
         "systemVersion": "0.7.2",
-        "coreVersion": "12.324",
+        "coreVersion": "12.327",
         "createdTime": 1699855657294,
-        "modifiedTime": 1700081629927,
-        "lastModifiedBy": "Dqtz4V1KsRqBnD6q",
+        "modifiedTime": 1718825009698,
+        "lastModifiedBy": "6hjjFCY28uGRsfsB",
         "compendiumSource": null,
         "duplicateSource": null
       },

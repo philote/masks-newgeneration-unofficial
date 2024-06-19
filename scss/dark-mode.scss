@@ -2,18 +2,18 @@
 :root {
     --actor-gradient: linear-gradient(
     to bottom,
-    #121336 64%,
-    #854c5b 90%,
-    #cd8e18 100%
+    #00012f 40%,
+    #451f29 86%,
+    #5e3e00 100%
   );
   --masks-primary-text-color: #ffffff;
   --masks-secondary-text-color: #fff4dc;
+  --masks-title-text-color: #C7A3AC;
   --masks-input-text-color: #000000;
   --masks-input-placeholder-color: #5a5a5a;
 
   --masks-interactive-bg-color: #683b47;
   --masks-interactive-bg-hover-color: #4b2a33;
-  --masks-stats-secondary-bg-color: rgba(0, 0, 0, 0.25);
   --masks-option-bg-color: #683b47;
   
   --interactive-color: #cd8e18;
@@ -28,7 +28,8 @@
   --masks-resource-control-bg-color: #ffffff;
   --masks-stats-border-color: rgb(229 222 210 / 37%);
 
-  --masks-cell-title-border-color: #8b8dc1;
+  --masks-cell-title-border-color: #C7A3AC;
+  --masks-header-bg-color: #4b2a33;
 
   --masks-window-bg-image: url("/modules/masks-newgeneration-unofficial/images/skyline.webp"), 
   url("/modules/masks-newgeneration-unofficial/images/stars.webp"),

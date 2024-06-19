@@ -39,7 +39,8 @@
 				<nav class="sheet-tabs tabs" data-group="primary">
 					<a class="item" data-tab="description">{{localize "PBTA.Description"}}</a>
 					<a class="item" data-tab="moves">{{localize "PBTA.Moves"}}</a>
-					<a class="item" data-tab="equipment">{{localize "PBTA.Equipment"}}</a>
+					<a class="item" data-tab="social">Social</a>
+					<a class="item" data-tab="advancement">Advancement</a>
 				</nav>
 
 				{{!-- Sheet Body --}}
@@ -50,8 +51,11 @@
 					{{!-- Moves Tab --}}
 					{{> "modules/masks-newgeneration-unofficial/templates/parts/actor-movelist.hbs" }}
 
-					{{!-- Owned Equipment Tab --}}
-					{{> "pbta.actor-inventory" }}
+					{{!-- Social Tab --}}
+					{{> "modules/masks-newgeneration-unofficial/templates/parts/actor-social.hbs" }}
+
+					{{!-- Personal advancement Tab --}}
+					{{> "modules/masks-newgeneration-unofficial/templates/parts/actor-advancement.hbs" }}
 				</section>
 			</section>
 		</section>

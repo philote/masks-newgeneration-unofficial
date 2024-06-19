@@ -67,20 +67,8 @@ Hooks.on("preCreateActor", async function (document) {
     }
 });
 
-Hooks.on("renderActorSheet", async (app, html, context) => {
+Hooks.on("renderActorSheet", async (app, html) => {
     if (app.actor.type === "character") {
-        // rename equipment tab
-        const equipmentTabEl = html[0].querySelector('.pbta.sheet.actor .sheet-main [data-tab=equipment]');
-        if (equipmentTabEl) {
-            equipmentTabEl.innerText = game.i18n.localize("MASKS-SHEETS.Influences");
-        }
-
-        // Add the influence sheet-tab
-        const equipmentEl = html[0].querySelector('.pbta.sheet.actor .sheet-main .sheet-body .equipment .cell--equipment');
-        if (equipmentEl) {
-            const influenceSheetTemplate = await renderTemplate('modules/masks-newgeneration-unofficial/templates/influences-tab-page.hbs', context);
-            equipmentEl.insertAdjacentHTML('beforebegin', influenceSheetTemplate);
-        }
 
         // Create influence list and enable influence tab interactivity
         onInfluenceCreate(app.actor, html);

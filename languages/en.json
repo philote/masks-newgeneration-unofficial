@@ -87,13 +87,13 @@
             "advancementsLabel": "Advancements",
             "advancementsDescription": "When you fill your potential track, you advance. Choose from the list below.",
             "laterAdvancesLabel": "Later Advances",
-            "laterAdvancesDescription": "When you fill your potential track, you advance. Choose from the list below.",
+            "laterAdvancesDescription": "When you’ve taken five advances from the top list, you can take advances from the list below.",
             "details": {
                 "lookLabel": "Look",
                 "abilitiesLabel": "Abilities",
                 "momentLabel": "Moment of Truth",
                 "backstoryLabel": "Backstory",
-                "teamLabel": "The Team",    
+                "teamLabel": "When our team first came together...",    
                 "relationshipsLabel": "Relationships",
                 "biographyLabel": "Notes"
             },

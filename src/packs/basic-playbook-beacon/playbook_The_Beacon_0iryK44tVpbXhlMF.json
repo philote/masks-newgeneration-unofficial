@@ -173,51 +173,6 @@
         "max": null,
         "options": {}
       },
-      "relationships": {
-        "label": "Relationships",
-        "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>____________________ is awesome, and you take every chance you get to hang out with them.</p>      <p>You’ve got to prove yourself to_____________________ before you feel like a real hero.</p>",
-            "options": {}
-          }
-        ],
-        "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
-      },
-      "moment": {
-        "label": "Moment of Truth",
-        "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>This is the moment when you show them exactly why you belong here. You do any one thing, take out any one enemy, no matter how insane, no matter how ridiculous, because that’s you. Their jaws are gonna drop when you’re done. Of course, pulling off a stunt like this tends to bring unwanted attention and a dangerous reputation...</p>",
-            "options": {}
-          }
-        ],
-        "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
-      },
-      "team": {
-        "label": "The Team",
-        "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>We found signs that this incident was just the start of something bigger. What were the signs?</p>",
-            "options": {}
-          }
-        ],
-        "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
-      },
       "theBeacon": {
         "type": "ListMany",
         "label": "Drives",
@@ -239,6 +194,27 @@
             "value": false
           }
         },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "relationshipQuestions": {
+        "label": "Relationships",
+        "type": "LongText",
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "momentOfTruth": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "teamQuestion": {
+        "label": "When our team first came together...",
+        "type": "LongText",
         "choices": [],
         "custom": false,
         "path": "attributes"
@@ -290,7 +266,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718253072304,
-    "modifiedTime": 1718686546401,
+    "modifiedTime": 1718828905330,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "0iryK44tVpbXhlMF",

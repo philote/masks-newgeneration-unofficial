@@ -198,44 +198,26 @@
         "custom": false,
         "path": "details"
       },
-      "relationships": {
+      "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>__________________ might wind up being more of a star than me some day.</p>      <p>__________________ would be a great sidekick; I try to keep them around.</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details"
+        "path": "attributes"
       },
-      "moment": {
+      "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>Sometimes it can be hard to tell where the show stops and where you begin—but not today. Not now. Because right now, there is no show. Right now, you are the thing you pretend to be—bold and bright and beautiful and amazing and powerful and confident. Right now, you draw strength from your audience, comfort from their belief in you, and you can do anything they think you can. Of course, after such an impassioned performance, your audience will just have even more demands...</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details"
+        "path": "attributes"
       },
-      "team": {
-        "label": "The Team",
+      "teamQuestion": {
+        "label": "When our team first came together...",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>We, as a team, attracted the attention of a major media outlet within the city, thanks to our efforts. Who are they? Why do they support us?</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details"
+        "path": "attributes"
       }
     },
     "choiceSets": [
@@ -289,7 +271,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1718687736775,
+    "modifiedTime": 1718828936779,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

@@ -1,0 +1,68 @@
+<div class="tab advancement" data-group="primary" data-tab="advancement">
+	<section class="sheet-tab">
+		<div class="cell cell--group cell--momentOfTruth">
+			<label for="system.attributes.momentOfTruth.value" class="cell__title">
+				{{system.attributes.momentOfTruth.label}}
+				<div class="moment-unlock">{{system.attributes.momentUnlocked.checkboxLabel}} <input type="checkbox" name="system.attributes.momentUnlocked.value" {{checked system.attributes.momentUnlocked.value}}/></div>
+			</label>
+			{{#if system.attributes.momentOfTruth.description}}<p class="cell__description cell__description--attr">{{system.attributes.momentOfTruth.description}}</p>{{/if}}
+			{{editor system.attributes.momentOfTruth.value target=system.attributes.momentOfTruth.value button=true owner=owner editable=editable}}
+		</div>
+		<div class="cell cell--group cell--advancements">
+			<label for="system.attributes.advancements.value" class="cell__title">{{system.attributes.advancements.label}}</label>
+			{{#if system.attributes.advancements.description}}<p class="cell__description cell__description--attr">{{system.attributes.advancements.description}}</p>{{/if}}
+			<ul class="cell__checkboxes flexcol">
+				{{#each system.attributes.advancements.options as |option optionKey|}}
+					<label
+						class="flexrow"
+						{{#if option.tooltip}}
+							data-tooltip="{{option.tooltip}}"
+							data-tooltip-direction="UP"
+						{{/if}}
+						>
+						{{#if option.values}}
+							{{#each option.values as |suboption suboptionKey|}}
+								<input type="checkbox" class="attr-list" name="system.attributes.{{key}}.options.{{optionKey}}.values.{{suboptionKey}}.value" {{checked suboption.value}}/>
+							{{/each}}
+						{{else}}
+							<input type="checkbox" class="attr-list" name="system.attributes.{{key}}.options.{{optionKey}}.value" {{checked option.value}}/>
+						{{/if}}
+						{{#if (eq option.label "[Text]")}}
+							<input type="text" class="input input-title" name="system.attributes.{{key}}.options.{{optionKey}}.userLabel" value="{{option.userLabel}}">
+						{{else}} 
+							{{option.label}}
+						{{/if}}
+					</label>
+				{{/each}}
+			</ul>
+		</div>
+		<div class="cell cell--group cell--later-advances">
+			<label for="system.attributes.laterAdvances.value" class="cell__title">{{system.attributes.laterAdvances.label}}</label>
+			{{#if system.attributes.laterAdvances.description}}<p class="cell__description cell__description--attr">{{system.attributes.laterAdvances.description}}</p>{{/if}}
+			<ul class="cell__checkboxes flexcol">
+				{{#each system.attributes.laterAdvances.options as |option optionKey|}}
+					<label
+						class="flexrow"
+						{{#if option.tooltip}}
+							data-tooltip="{{option.tooltip}}"
+							data-tooltip-direction="UP"
+						{{/if}}
+						>
+						{{#if option.values}}
+							{{#each option.values as |suboption suboptionKey|}}
+								<input type="checkbox" class="attr-list" name="system.attributes.{{key}}.options.{{optionKey}}.values.{{suboptionKey}}.value" {{checked suboption.value}}/>
+							{{/each}}
+						{{else}}
+							<input type="checkbox" class="attr-list" name="system.attributes.{{key}}.options.{{optionKey}}.value" {{checked option.value}}/>
+						{{/if}}
+						{{#if (eq option.label "[Text]")}}
+							<input type="text" class="input input-title" name="system.attributes.{{key}}.options.{{optionKey}}.userLabel" value="{{option.userLabel}}">
+						{{else}} 
+							{{option.label}}
+						{{/if}}
+					</label>
+				{{/each}}
+			</ul>
+		</div>
+	</section>
+</div>

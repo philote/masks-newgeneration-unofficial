@@ -173,54 +173,30 @@
         "max": null,
         "options": {}
       },
-      "relationships": {
-        "label": "Relationships",
-        "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>You hang out all the time with __________________ to blow off steam.</p>      <p>You once hurt ________________ when you lost control of your powers.</p>",
-            "options": {}
-          }
-        ],
-        "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
-      },
-      "moment": {
-        "label": "Moment of Truth",
-        "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>Your mind’s eye opens, and you can see the world around you like never before. You can control it, at will, with ease. Of course, warping reality tends to have ramifications down the line, but in your moment of godhood...how could you possibly be worried?</p>",
-            "options": {}
-          }
-        ],
-        "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
-      },
-      "team": {
-        "label": "The Team",
-        "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>We destroyed our surroundings in the fight. Where was it? What did we destroy?</p>",
-            "options": {}
-          }
-        ],
-        "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
-      },
       "theNova": {
         "type": "Number",
         "label": "Held Burn",
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "relationshipQuestions": {
+        "label": "Relationships",
+        "type": "LongText",
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "momentOfTruth": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "teamQuestion": {
+        "label": "When our team first came together...",
+        "type": "LongText",
         "choices": [],
         "custom": false,
         "path": "attributes"
@@ -273,7 +249,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718260931443,
-    "modifiedTime": 1718686709770,
+    "modifiedTime": 1718828839823,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "aioVGQtbLxPyUw6K",

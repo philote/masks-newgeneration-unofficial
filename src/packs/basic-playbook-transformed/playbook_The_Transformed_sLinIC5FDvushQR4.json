@@ -173,50 +173,26 @@
         "max": null,
         "options": {}
       },
-      "relationships": {
+      "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>___________________ comforted you when you were at your lowest.</p>      <p>___________________ knew you before you changed.</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
+        "path": "attributes"
       },
-      "moment": {
+      "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>It’s so easy to forget that you’re not your body, and you’re not the voice in your head—you’re both. Be the monster, and save them anyway. Smash down walls, and speak softly. Because when you embrace it, you can do anything. Of course, putting on a display like this is sure to rile up those who see only the monster when they look at you...</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
+        "path": "attributes"
       },
-      "team": {
-        "label": "The Team",
+      "teamQuestion": {
+        "label": "When our team first came together...",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>We drew attention and ire from plenty during the fight. One important person in particular now hates and fears us. Who is it?</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
+        "path": "attributes"
       }
     },
     "choiceSets": [
@@ -259,7 +235,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718261806917,
-    "modifiedTime": 1718674179646,
+    "modifiedTime": 1718828818440,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "sLinIC5FDvushQR4",

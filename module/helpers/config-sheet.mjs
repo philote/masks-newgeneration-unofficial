@@ -479,7 +479,6 @@ export const configSheet = async () => {
             type: "Checkbox",
             checkboxLabel: game.i18n.localize("MASKS-SHEETS.CharacterSheets.momentUnlocked.checkboxLabel"),
             value: false,
-            position: "Left"
           },
           advancements: {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.advancementsLabel"),
@@ -489,7 +488,6 @@ export const configSheet = async () => {
             type: "ListMany",
             condition: false,
             playbook: true,
-            position: "Left",
           },
           laterAdvances: {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.laterAdvancesLabel"),
@@ -499,7 +497,30 @@ export const configSheet = async () => {
             type: "ListMany",
             condition: false,
             playbook: true,
-            position: "Left",
+          },
+          relationshipQuestions: {
+            label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.details.relationshipsLabel"),
+            description: null,
+            customLabel: false,
+            userLabel: false,
+            type: "LongText",
+            playbook: true,
+          },
+          momentOfTruth: {
+            label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.details.momentLabel"),
+            description: null,
+            customLabel: false,
+            userLabel: false,
+            type: "LongText",
+            playbook: true,
+          },
+          teamQuestion: {
+            label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.details.teamLabel"),
+            description: null,
+            customLabel: false,
+            userLabel: false,
+            type: "LongText",
+            playbook: true,
           },
         },
         details: {
@@ -530,15 +551,6 @@ export const configSheet = async () => {
             value: "",
             playbook: true,
           },
-          relationships: {
-            label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.details.relationshipsLabel"),
-            description: null,
-            customLabel: false,
-            userLabel: false,
-            type: "LongText",
-            value: "",
-            playbook: true,
-          },
           biography: {
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.details.biographyLabel"),
             description: null,
@@ -546,24 +558,6 @@ export const configSheet = async () => {
             userLabel: false,
             type: "LongText",
             value: "",
-          },
-          moment: {
-            label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.details.momentLabel"),
-            description: null,
-            customLabel: false,
-            userLabel: false,
-            type: "LongText",
-            value: "",
-            playbook: true,
-          },
-          team: {
-            label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.details.teamLabel"),
-            description: null,
-            customLabel: false,
-            userLabel: false,
-            type: "LongText",
-            value: "",
-            playbook: true,
           },
         },
         moveTypes: {

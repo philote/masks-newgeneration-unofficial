@@ -173,10 +173,17 @@
         "max": null,
         "options": {}
       },
-      "relationships": {
+      "theDoomed": {
+        "type": "Clock",
+        "label": "Doom Track",
+        "max": 5,
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "value": "",
         "choices": [
           {
             "value": "<p>You told _______________ all about your doom and the danger you’re in.</p>      <p>You’d love to kiss ________________ before your doom comes.</p>",
@@ -184,14 +191,11 @@
           }
         ],
         "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
+        "path": "attributes"
       },
-      "moment": {
+      "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "value": "",
         "choices": [
           {
             "value": "<p>The prickly tingling fear of your doom, always in your head—it holds you back most of the time. But right here, right now? It gives you the confidence to do anything. After all, what’s the worst that could happen? Is it worse than your doom? Do impossible things. Do anything. But mark a doomsign after you’re finished.</p>",
@@ -199,30 +203,17 @@
           }
         ],
         "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
+        "path": "attributes"
       },
-      "team": {
+      "teamQuestion": {
         "label": "The Team",
         "type": "LongText",
-        "value": "",
         "choices": [
           {
             "value": "<p>We paid a high cost for victory. What was it?</p>",
             "options": {}
           }
         ],
-        "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
-      },
-      "theDoomed": {
-        "type": "Clock",
-        "label": "Doom Track",
-        "max": 5,
-        "choices": [],
         "custom": false,
         "path": "attributes"
       }
@@ -281,7 +272,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718258337076,
-    "modifiedTime": 1718687021237,
+    "modifiedTime": 1718828871570,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "Sblehr0zwyebBGOl",

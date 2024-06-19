@@ -173,50 +173,26 @@
         "max": null,
         "options": {}
       },
-      "relationships": {
+      "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>You’ve been learning about Earth by spending time with _____________.</p>      <p>You have a crush on ________________ but you keep it under wraps.</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
+        "path": "attributes"
       },
-      "moment": {
+      "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>You embrace your home and call them for aid. They will answer your call—in force!—arriving exactly when you need them to turn the tide. They fight and serve you for the rest of the battle. Of course, when all is said and done...they’d probably like to take you home with them. You did, after all, just prove yourself worthy.</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
+        "path": "attributes"
       },
-      "team": {
-        "label": "The Team",
+      "teamQuestion": {
+        "label": "When our team first came together...",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>We didn’t trust each other at first, but that changed. How? Why?</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details",
-        "max": null,
-        "options": {}
+        "path": "attributes"
       }
     },
     "choiceSets": [
@@ -259,7 +235,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718261200806,
-    "modifiedTime": 1718674179231,
+    "modifiedTime": 1718828831272,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "bO6yoJI2fCGtZI0c",

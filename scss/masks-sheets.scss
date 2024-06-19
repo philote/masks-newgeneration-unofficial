@@ -13,7 +13,6 @@
 
   --masks-interactive-bg-color: #1e528f;
   --masks-interactive-bg-hover-color: #173f6e;
-  --masks-stats-secondary-bg-color: rgba(0, 0, 0, 0.25);
   --masks-option-bg-color: #683b47;
 
   --masks-tabs-border-color: #ffeb98;
@@ -28,7 +27,7 @@
   --masks-stats-border-color: rgb(229 222 210 / 37%);
 
   --masks-cell-title-border-color: #173f6e;
-  --masks-bio-title-border-color: #515b68;
+  --masks-header-bg-color: #173f6e;
 
   --masks-window-bg-image: url("/modules/masks-newgeneration-unofficial/images/skyline.webp"),
     var(--actor-gradient);
@@ -44,7 +43,6 @@
 
     a.content-link, a.inline-roll {
       color: var(--masks-input-text-color);
-      // background: var(--masks-stats-secondary-bg-color);
     }
   }
 
@@ -66,9 +64,54 @@
     background: rgba(153,153,153,.2509803922);
     color: var(--masks-resource-border-color);
   }
+
+  input::placeholder {
+    color: var(--masks-input-placeholder-color) !important;
+  }
 }
 
 .pbta.sheet {
+
+  .cell__title.warning {
+    background-color: #d68888;
+    color: #000000;
+
+    &::before {
+      height: 0px;
+      background-color: none;
+    }
+
+    &::after {
+      width: 0px;
+      background-color: none;
+    }
+  }
+
+  .cell--influences,
+  .cell--relationshipQuestions,
+  .cell--advancements,
+  .cell--later-advances {
+    margin-top: 10px;
+  }
+
+  .cell--momentOfTruth label div.moment-unlock {
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  // .cell--influences,
+  // .cell--advancements,
+  // .cell--momentOfTruth {
+  //   margin-top: 10px;
+  // }
+
+  .sheet-header, .sheet-body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   .sheet-look .cell--influence { display: none; }
   .sheet-main .cell--equipment { display: none; }
@@ -190,9 +233,7 @@
     }
     
     .sheet-header {
-      padding-left: 10px;
-      padding-right: 10px;
-      background-color: #173f6e;
+      background-color: var(--masks-header-bg-color);
     }
 
     .editor-content {
@@ -234,8 +275,7 @@
           width: 49%;
 
           &:nth-child(3), 
-          &:nth-child(4), 
-          &:nth-child(5) {
+          &:nth-child(4) {
             width: 100%;
           }
     
@@ -243,7 +283,7 @@
             min-height: calc(100% - 40px);
     
             .editor-content {
-              height: 135px;
+              height: 145px;
             }
           }
         }

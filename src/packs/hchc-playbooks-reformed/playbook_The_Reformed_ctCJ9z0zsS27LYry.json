@@ -225,44 +225,26 @@
         "custom": false,
         "path": "details"
       },
-      "relationships": {
+      "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>I’ve earned the trust of _________________, and I follow their example of what a hero should be.</p>      <p>I did something terrible to __________________ once. I hope they can forgive me one day.</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details"
+        "path": "attributes"
       },
-      "moment": {
+      "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>You’ve seen your greatest mistakes, and the rest of the world has, too. They’re all watching you now, judging every move you make. When everything is on the line and your back is against the wall, though, you’ll show them what you’re made of—that being a hero is a choice. An act of will. And you’ve got what it takes to save the day. Of course, afterward, you can expect both sides, hero and villain, to deeply question where your loyalties truly lie...</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details"
+        "path": "attributes"
       },
-      "team": {
-        "label": "The Team",
+      "teamQuestion": {
+        "label": "When our team first came together...",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>We fought a terrible enemy from my old life. Who was it and what did they take from me?</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details"
+        "path": "attributes"
       }
     },
     "slug": "the-reformed",
@@ -311,7 +293,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1718688148420,
+    "modifiedTime": 1718828944101,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

@@ -187,44 +187,26 @@
         "custom": false,
         "path": "details"
       },
-      "relationships": {
+      "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>________________ is an exemplary human; they show you around and tell you how things work.</p>      <p>The behavior of ________________ confuses you again and again; you’re determined to understand humanity better by studying them.</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details"
+        "path": "attributes"
       },
-      "moment": {
+      "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>Something snaps into focus, and suddenly you’re a full thing, true and complete. You’d never have known how fragmented you were before, if not for here, this moment. You’re not a series of individual lessons. You’re not a series of subroutines and programs. You’re...a person. This must be what it’s like to be...human. And this fullness? It gives you a control over yourself, a unity of purpose you’ve never experienced before. Of course, now that you’re showing off all your potential, it’s only a matter of time before someone comes forward to reduce you to a machine again...</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details"
+        "path": "attributes"
       },
-      "team": {
-        "label": "The Team",
+      "teamQuestion": {
+        "label": "When our team first came together...",
         "type": "LongText",
-        "value": "",
-        "choices": [
-          {
-            "value": "<p>The team discovered you during the incident; thanks to them, you reached the outside world and helped in the fight. Where and how did they find you? Who gave you your first nickname?</p>",
-            "options": {}
-          }
-        ],
+        "choices": [],
         "custom": false,
-        "path": "details"
+        "path": "attributes"
       }
     },
     "slug": "the-newborn",
@@ -273,7 +255,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1718688470191,
+    "modifiedTime": 1718828952190,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null
