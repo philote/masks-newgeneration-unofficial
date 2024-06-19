@@ -37,10 +37,11 @@
       }
     },
     "uses": 0,
-    "playbook": "The Nova",
+    "playbook": "",
     "rollType": "prompt",
     "rollMod": 0,
-    "choices": ""
+    "choices": "",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -48,11 +49,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.7.2",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1700280111835,
-    "lastModifiedBy": "qxt7zBbnFWpsYRqr"
+    "modifiedTime": 1718674178794,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "85dJPVC2vJl9GBTq",
   "sort": 200000,

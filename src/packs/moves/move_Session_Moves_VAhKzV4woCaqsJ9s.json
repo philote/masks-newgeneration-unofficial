@@ -20,7 +20,7 @@
     "name": "",
     "description": "<p>At the <strong>start of every session</strong>, the <strong>GM adds one Team to the pool</strong>.</p>\n<p>At the <strong>end of every session, choose one:</strong></p>\n<ul>\n<li>Grow closer to the team. Explain who made you feel welcome; give Influence to that character and clear a condition or mark potential.</li>\n<li>Grow into your own image of yourself. Explain how you see yourself and why; shift one Label up and another down.</li>\n<li>Grow away from the team. Explain why you feel detached. Take Influence over you away from another character.</li>\n</ul>",
     "requiresMove": "",
-    "moveType": "",
+    "moveType": "rules",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -44,7 +44,8 @@
     "playbook": "",
     "rollType": "",
     "rollMod": 0,
-    "choices": ""
+    "choices": "",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -52,11 +53,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.7.2",
-    "coreVersion": "11.315",
-    "createdTime": null,
-    "modifiedTime": 1700085062360,
-    "lastModifiedBy": "Dqtz4V1KsRqBnD6q"
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
+    "createdTime": 1718674175225,
+    "modifiedTime": 1718674175906,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_key": "!items!VAhKzV4woCaqsJ9s"
 }

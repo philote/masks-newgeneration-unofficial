@@ -1,0 +1,259 @@
+{
+  "name": "The Delinquent",
+  "type": "playbook",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/playbook.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {},
+    "cf": {
+      "id": "temp_z1awbdwk3z",
+      "path": "Basic Playbooks#/CF_SEP/The Delinquent",
+      "color": "#000000"
+    }
+  },
+  "system": {
+    "description": "<div class=\"playbook\">\n<section>\n<h1>THE DELINQUENT</h1>\n<p>You’ve got these cool powers. But everyone keeps telling you how to use ’em. You know what they need? Someone to give them trouble, to make sure they don’t always get their way. <br />And hey! You’re the perfect hero to do it.</p>\n</section>\n<section class=\"rules\">\n<div>\n<h2>Look</h2>\n<ul>\n<li>ambiguous, man, shifting, transgressing, woman</li>\n<li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>\n<li>laughing eyes, jaded eyes, untrusting eyes, hateful eyes</li>\n<li>casual clothing, ragged clothing, rebellious clothing, garish clothing</li>\n<li>skimpy costume, showy costume, ridiculous costume, cheap costume, no costume</li>\n</ul>\n<h2>Abilities</h2>\n<p>Your powers are messy, deceiving, or frustrating. Choose two.</p>\n<ul>\n<li>teleportation</li>\n<li>tricks illusions</li>\n<li>gadgetry and hacking</li>\n<li>psychic weapons</li>\n<li>emotion control</li>\n<li>power negation</li>\n</ul>\n<h2>Labels</h2>\n<p><em>(at character creation, add +1 wherever you choose)</em></p>\n<p><strong>DANGER:</strong> 0</p>\n<p><strong>FREAK:</strong> 0</p>\n<p><strong>SAVIOR:</strong> -1</p>\n<p><strong>SUPERIOR:</strong> +2</p>\n<p><strong>MUNDANE:</strong> +1</p>\n<h2>Backstory</h2>\n<ul>\n<li>How did you get your powers?</li>\n<li>What do you do for fun?</li>\n<li>Who, outside the team, thinks better of you than you do?</li>\n<li>Why do you try to be a hero?</li>\n<li>Why do you care about the team?</li>\n</ul>\n<p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>\n<h2>When our team first came together...</h2>\n<p>We totally broke some major rules to win the fight. What rules did we break? Whose rules were they?</p>\n<h2>Relationships</h2>\n<p>You keep trying to impress _________________ with your antics.</p>\n<p>You and ________________ pulled an awesome (if illegal) stunt together.</p>\n<h2>Influence</h2>\n<p>You care way more than you let on. Give three teammates Influence over you.</p>\n<h2>Moment of Truth</h2>\n<p>This is when you show them what you really are. Whether you’re the hero underneath the rebel facade...or the one who can make the hard choices heroes can’t make. You do whatever it takes</p>\n<p>to show that truth, whether it’s saving the day from a terrible villain or stopping a bad guy once and for all. Of course, once you’ve shown what you really are, there’s no going back to playing the clown...</p>\n</div>\n<div>\n<h2>Delinquent Moves</h2>\n<p><em>(Choose three)</em></p>\n<div>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.uxNafPsvQ9QFYiG1]{Mary Contrary}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.QQ6i4rOJku9wodQ9]{I Don't Care What You Think!}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.PWUQo4Mhm1e8wHAt]{Team? What Team?}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.FLABmd6lOLhIMgIX]{Criminal Mind}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.7L7bDU8j0bnKoEAQ]{Troublemaker}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.YH1hztqRAKwh7cap]{Are You Watching Closely?}</p>\n</div>\n<h2>Team Moves</h2>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.8BsF8CLJIYINZYOD]{The Delinquent - Team Move}</p>\n<h2>Potential</h2>\n<p>Every time you roll a miss on a move, mark potential.</p>\n<h2>Advancement</h2>\n<p>When you fill your potential track, you advance. Choose from the list below.</p>\n<ul>\n<li>Take another move from your playbook</li>\n<li>Take another move from your playbook</li>\n<li>Take a move from another playbook</li>\n<li>Take a move from another playbook</li>\n<li>Someone permanently loses Influence over you; add +1 to a Label</li>\n<li>Rearrange your Labels as you choose, and add +1 to a Label</li>\n<li>Unlock your Moment of Truth</li>\n<li>Add +1 to any two Labels</li>\n</ul>\n<hr />\n<p>When you’ve taken five advances from the top list, you can take advances from the list below.</p>\n<ul>\n<li>Unlock your Moment of Truth after it’s been used once</li>\n<li>Change playbooks</li>\n<li>Take an adult move</li>\n<li>Take an adult move</li>\n<li>Lock a Label, and add +1 to a Label of your choice</li>\n<li>Retire from the life or become a paragon of the city</li>\n</ul>\n</div>\n</section>\n<section class=\"extras\">\n<div>\n<h2>PLAYING THE DELINQUENT</h2>\n<p>Rebellious, joking, attention-seeking, manipulative. The Delinquent is the class clown, or the punk with the stash of weed, or the rebel without a cause. They’re the spoiler, most often just because they can be more than out of any particular desire. They trick other people, they mess with people, they cause problems. That said, the Delinquent isn’t an excuse to just be an annoying jerk. They cause trouble because it’s how they get attention, and it’s how they deal with problems—but that doesn’t mean they’re without deeper feelings or goals that make them more human.</p>\n<p>The Delinquent veers between being selfish and being a proud member of the team, and their moves point them in that direction. <span class=\"special\">Mary Contrary</span> and <span class=\"special\">I don’t care what you think!</span> are both about messing with and ignoring the words of others, especially your teammates, while <span class=\"special\">Troublemaker</span> is about helping your team (albeit in destructive ways), and <span class=\"special\">Team? What team?</span> is about both! The Delinquent bounces back and forth over that line, over and over, so play in that space and have fun with it. Remember always that, ultimately, you’re part of this team for a reason—you wanted to be here—so simply ditching them all is never an option. (Not least because it means your character would probably retire!)</p>\n<p>The Delinquent works best by sticking close to teammates, one way or another, as much as possible. Whether you’re giving them grief, getting to know them better, or even revealing your true self, your story is ultimately about how you relate to your closest compatriots. You’re the companion, the helper, the provocateur, and you make other characters’ lives interesting with your presence. Own it!</p>\n<p>Part and parcel to the idea that you’re on the team because you want to be is the idea that you’re a hero because you want to be. You may be a rebel, and you may hate the capes that patrol the skies, but you’re still on the same side as them—you are here to help people, to make things better. You just probably have a different idea of what “better” means than they do.</p>\n<p>Delinquents will often tip in the direction of villainy, especially with the influence of bigger villains around them—but to actually do anything outwardly villainous ould be a huge shift for them, and might even mark the end of the character’s arc. Don’t dive into that abyss thoughtlessly.</p>\n</div>\n<div>\n<h2>NOTES ON YOUR MOVES AND EXTRAS</h2>\n<p>For <span class=\"special\">Criminal mind</span>, you still get +1 ongoing to act on the answers to those questions, just like for a normal <span class=\"special\">assess the situation</span> move.</p>\n<p>For <span class=\"special\">Are you watching closely?</span>, you’re assumed not to get any of the options that you don’t choose. That means if you don’t choose “You confuse them for some time,” then your trick may not last very long. If you don’t choose “You avoid further entanglement,” then you can assume someone’s going to check up on you later about that deception. Getting an opportunity means you get a chance you might not have had otherwise to take action, and exposing a weakness or flaw means you learn something you might be able to exploit.</p>\n</div>\n<div>\n<h3>SUGGESTED MOVES FROM OTHER PLAYBOOKS</h3>\n<p><span class=\"special\">Be mindful of your surroundings</span>, from the Protégé playbook. Take this if you want your Delinquent to have a more combat-focused supplement to <span class=\"special\">Criminal mind</span>.</p>\n<p><span class=\"special\">Pretty much a superhero</span>, from the Beacon playbook. Take this if you want your Delinquent to have a reputation, especially one that often gets out of their control.</p>\n<p><span class=\"special\">Dangerous web</span>, from the Janus playbook. Take this if you want to add traps to your repertoire of tricks. (You’ll either have to take <span class=\"special\">The Mask</span> first, or work with your GM to figure out what your “mask Label” is.)</p>\n</div>\n<div>\n<h3>INSPIRATION FOR THE DELINQUENT</h3>\n<p>Quentin Quire, <strong>WOLVERINE AND THE X-MEN</strong></p>\n<p>Kid Loki, <strong>YOUNG AVENGERS</strong></p>\n<p>Chase Stein, <strong>RUNAWAYS</strong></p>\n<p>Arsenal, <strong>YOUNG JUSTICE</strong></p>\n<p>Striker, <strong>AVENGERS ACADEMY</strong></p>\n</div>\n</section>\n</div>",
+    "slug": "the-delinquent",
+    "actorType": "character",
+    "stats": {
+      "danger": {
+        "label": "Danger",
+        "value": 0
+      },
+      "freak": {
+        "label": "Freak",
+        "value": 0
+      },
+      "savior": {
+        "label": "Savior",
+        "value": -1
+      },
+      "superior": {
+        "label": "Superior",
+        "value": 2
+      },
+      "mundane": {
+        "label": "Mundane",
+        "value": 1
+      }
+    },
+    "statsDetail": "(at character creation, add +1 wherever you choose)",
+    "attributes": {
+      "advancements": {
+        "label": "Advancements",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "1": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "2": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "3": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "4": {
+                "value": false,
+                "label": "Someone permanently loses Influence over you; add +1 to a Label"
+              },
+              "5": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "6": {
+                "value": false,
+                "label": "Unlock your Moment of Truth"
+              },
+              "7": {
+                "value": false,
+                "label": "Add +1 to any two Labels"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes",
+        "value": "",
+        "max": null,
+        "options": {}
+      },
+      "laterAdvances": {
+        "label": "Later Advances",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Unlock your Moment of Truth after it’s been used once"
+              },
+              "1": {
+                "value": false,
+                "label": "Change playbooks"
+              },
+              "2": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "3": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "4": {
+                "value": false,
+                "label": "Lock a Label, and add +1 to a Label of your choice"
+              },
+              "5": {
+                "value": false,
+                "label": "Retire from the life or become a paragon of the city"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes",
+        "value": "",
+        "max": null,
+        "options": {}
+      },
+      "look": {
+        "label": "Look",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>ambiguous, man, shifting, transgressing, woman</li>      <li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>      <li>laughing eyes, jaded eyes, untrusting eyes, hateful eyes</li>      <li>casual clothing, ragged clothing, rebellious clothing, garish clothing</li>      <li>skimpy costume, showy costume, ridiculous costume, cheap costume, no costume</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "abilities": {
+        "label": "Abilities",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>Your powers are messy, deceiving, or frustrating. Choose two.</p>      <ul>      <li>teleportation</li>      <li>tricks illusions</li>      <li>gadgetry and hacking</li>      <li>psychic weapons</li>      <li>emotion control</li>      <li>power negation</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "backstory": {
+        "label": "Backstory",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>How did you get your powers?</li>      <li>What do you do for fun?</li>      <li>Who, outside the team, thinks better of you than you do?</li>      <li>Why do you try to be a hero?</li>      <li>Why do you care about the team?</li>      </ul>      <p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "relationshipQuestions": {
+        "label": "Relationships",
+        "type": "LongText",
+        "choices": [
+          {
+            "value": "<p>You keep trying to impress _________________ with your antics.</p>      <p>You and ________________ pulled an awesome (if illegal) stunt together.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "momentOfTruth": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "choices": [
+          {
+            "value": "<p>This is when you show them what you really are. Whether you’re the hero underneath the rebel facade...or the one who can make the hard choices heroes can’t make. You do whatever it takes</p>      <p>to show that truth, whether it’s saving the day from a terrible villain or stopping a bad guy once and for all. Of course, once you’ve shown what you really are, there’s no going back to playing the clown...</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "teamQuestion": {
+        "label": "When our team first came together...",
+        "type": "LongText",
+        "choices": [
+          {
+            "value": "<p>We totally broke some major rules to win the fight. What rules did we break? Whose rules were they?</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      }
+    },
+    "choiceSets": [
+      {
+        "title": "Core Playbook Moves",
+        "desc": "",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.8BsF8CLJIYINZYOD",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Triumphant Celebration",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "Team Move - Share a Vulnerability",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.EXCfJoSHmqbXPiBa",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      }
+    ]
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3,
+    "S5z9pWDiqzE1X6Fi": 3
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.327",
+    "systemId": "pbta",
+    "systemVersion": "1.0.14",
+    "createdTime": 1718257558329,
+    "modifiedTime": 1718830259332,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB"
+  },
+  "_id": "H3sZw5p57hkIAuMM",
+  "sort": 0,
+  "_key": "!items!H3sZw5p57hkIAuMM"
+}

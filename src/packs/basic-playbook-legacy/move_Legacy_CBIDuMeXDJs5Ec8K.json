@@ -40,7 +40,8 @@
     "playbook": "The Legacy",
     "rollType": "prompt",
     "rollMod": 0,
-    "choices": ""
+    "choices": "",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -48,11 +49,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1711773482553,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718674178470,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "CBIDuMeXDJs5Ec8K",
   "sort": 500000,

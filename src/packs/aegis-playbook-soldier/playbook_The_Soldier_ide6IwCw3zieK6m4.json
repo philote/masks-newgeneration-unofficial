@@ -1,0 +1,271 @@
+{
+  "name": "The Soldier",
+  "type": "playbook",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/playbook.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "cf": {
+      "id": "temp_239stekhau3"
+    },
+    "core": {}
+  },
+  "system": {
+    "description": "<div class=\"playbook\">\n<section>\n<h1>THE SOLDIER</h1>\n<p>A devoted agent of a larger law enforcement organization, constrained by their rules and supported by their resources.</p>\n</section>\n<section class=\"rules\">\n<div>\n<h2>Look</h2>\n<ul>\n<li>ambiguous, man, shifting, transgressing, woman</li>\n<li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>\n<li>average body, bulky body, lean body, trained body, surprising body</li>\n<li>stylish clothing, comfortable clothing, simple clothing, casual clothing</li>\n<li>modern costume, iconic costume, military uniform, no costume</li>\n</ul>\n\n<h2>Abilities</h2>\n<p>A.E.G.I.S. found you before you got full control of your abilities. They helped you master your gifts, maybe even augmented them with some new tech. Now you have an opportunity to do some good, using your powers to protect and serve humanity. Choose any two of the following.</p>\n<ul>\n<li>superstrength and durability</li>\n<li>energy blasts</li>\n<li>enhanced senses</li>\n<li>a signature weapon</li>\n<li>augmented/mechanical limbs</li>\n<li>an alternate/monstrous form</li>\n</ul>\n\n<h2>Labels</h2>\n<p><em>(at character creation, add +1 wherever you choose)</em></p>\n<p><strong>DANGER:</strong> -1</p>\n<p><strong>FREAK:</strong> 0</p>\n<p><strong>SAVIOR:</strong> +2</p>\n<p><strong>SUPERIOR:</strong> +1</p>\n<p><strong>MUNDANE:</strong> 0</p>\n\n<h2>Backstory</h2>\n<ul>\n<li>What tragedy or disaster led to you gaining your abilities?</li>\n<li>What inspired you to officially join A.E.G.I.S.?</li>\n<li>What does A.E.G.I.S. do for the world that no one else can?</li>\n<li>Who, outside of A.E.G.I.S. and the team, connects you to the civilian world?</li>\n<li>Why do you care about the team?</li>\n</ul>\n<p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>\n\n<h2>When our team first came together...</h2>\n<p>Our victory secured an important resource for A.E.G.I.S. What was it?</p>\n\n<h2>Relationships</h2>\n<p>____________________ is crucial to the long-term success of A.E.G.I.S. I must protect them.</p>\n<p>_____________________ isn’t always thrilled with the way A.E.G.I.S. handles things. I’ve come to value their critiques, even if I don’t agree with them.</p>\n\n<h2>Influence</h2>\n<p>Respect is earned, soldier. Tell two of your teammates what they did to earn your esteem and give them Influence. Everyone else will have to match their efforts.</p>\n\n<h2>Moment of Truth</h2>\n<p>Freedom isn’t free. But not every mission ends in tragedy. When things look bleakest, when your back is against the wall, when it seems like the dawn will never come...you find a way forward without violence. Your enemies lay down their arms and surrender; your allies step back from the brink of chaos. Of course, the people you’ve saved aren’t going to forget what you’ve done here today; they may even come to see you as a symbol of the higher cause you claim to serve...</p>\n</div>\n<div>\n<h2>Soldier Moves</h2>\n<p><em>(You start with Before we get started and one more)</em></p>\n<div>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.Lll1XpXdEwFqjDJE]{Before We Get Started}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.5FYzfFp589kdd5Hq]{No, You Move}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.gq9ZwbYOjKAAxdmm]{I Can Do This All Day}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.8qy5VrWDMAr8ckBn]{It Kinda Feels Personal}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.3pK4oPVsaAmxrEd2]{Mission First}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.cirOaPpafyBlNawi]{More Than A Shield}</p>\n</div>\n\n<h2>A Higher Calling...</h2>\n<p>You work for a metahuman law enforcement agency (A.E.G.I.S.) that keeps the world safe from all manner of superhuman, supernatural, and extraterrestrial threats. You volunteered to work with a team of young superheroes as part of a new A.E.G.I.S. program designed to keep Halcyon City safe.</p>\n<p>You have an additional Label:</p>\n<p><strong>SOLDIER:</strong> +2</p>\n<p>Soldier functions like any other Label. Characters with Influence over you can shift it, and you mark a condition if it would ever shift above +3 or below -2. You can only cancel the influence A.E.G.I.S. holds over you with the appropriate advancement. You cannot lock Soldier with a Moment of Truth.</p>\n<p>When you’re <strong>acting on orders and relying on your training</strong>, give A.E.G.I.S. influence to use Soldier instead of any other Label when you make a basic or playbook move.</p>\n<p>When you <strong>invoke your authority over civilians</strong>, Halcyon City personnel, or A.E.G.I.S. staff, roll + Soldier. On a hit, your words carry weight. On a 7-9, someone will push back against your instructions or orders...sooner rather than later. On a miss, your attempts to control the situation create an opportunity for your enemies within A.E.G.I.S. to act against you.</p>\n<p>When you <strong>ask A.E.G.I.S. for additional resources, equipment, or information during a mission</strong>, roll + Soldier. On a hit, they’ll resupply you as best they can. On a 10+, the resources are highly classified or experimental; take +1 ongoing to deploying them throughout the mission. On a miss, A.E.G.I.S. sends what they think you need, regardless of what you actually requested.</p>\n\n<h2>Team Moves</h2>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.ZHxBjO0t93OBR0T3]{The Soldier - Team Moves}</p>\n\n<h2>Potential</h2>\n<p>Every time you roll a miss on a move, mark potential.</p>\n\n<h2>Advancement</h2>\n<p>When you fill your potential track, you advance. Choose from the list below.</p>\n<ul>\n<li>Take another move from your playbook</li>\n<li>Take another move from your playbook</li>\n<li>Take another move from your playbook</li>\n<li>Take a move from another playbook</li>\n<li>Someone permanently loses Influence over you; add +1 to a Label</li>\n<li>Rearrange your Labels as you choose, and add +1 to a Label</li>\n<li>Unlock your Moment of Truth</li>\n<li>Undergo enhancement: take two new abilities</li>\n</ul>\n<hr />\n<p>When you’ve taken five advances from the top list, you can take advances from the list below.</p>\n<ul>\n<li>Lock Soldier, and add +1 to a Label of your choice</li>\n<li>Take a Mentor and any move from the Protégé playbook</li>\n<li>Take an adult move</li>\n<li>Take an adult move</li>\n<li>A.E.G.I.S. permanently loses Influence over you; change playbooks</li>\n<li>Retire from A.E.G.I.S. to a civilian life or join the upper echelons of A.E.G.I.S. as a Senior Director</li>\n</ul>\n</div>\n</section>\n<section class=\"extras\">\n<div>\n<h2>PLAYING THE SOLDIER</h2>\n<p>Devoted, commanding, competent, conflicted. The Soldier is a member of a powerful organization, supported and aided by their resources and personnel, but beholden to their orders and beliefs. Note that the Soldier must commit to A.E.G.I.S., but the other members of the team do not—the “new A.E.G.I.S. program designed to keep Halcyon City safe” does not require that the whole team be an A.E.G.I.S.-assembled unit.</p>\n<p>The relationship between the Soldier and A.E.G.I.S. is complicated, but it’s grounded in real support, both ways. When you’re playing the Soldier, you’ve received meaningful help from A.E.G.I.S., and you believe in the organization and its purpose. You’re a part of A.E.G.I.S. because you want to be.</p>\n<p>The question before you is not “What will the last straw be?,” as if the Soldier is guaranteed to break with A.E.G.I.S. eventually. Instead, the question is “How do I balance my own beliefs and morality with that of the organization?” You do not want to leave A.E.G.I.S. If you did, you wouldn’t be a soldier anymore! You want to find a way to both keep true to yourself and your beliefs, and to remain a part of the organization that helped you and does good in the world.</p>\n<p>Make sure you keep yourself actually believing in A.E.G.I.S. and its mission. If you find yourself refusing every order you get, that’s a sign that something is wrong. Your relationship with A.E.G.I.S. is both the source of your strength and the source of your dramatic tension—embrace it, and play with it.</p>\n</div>\n<div>\n<h2>NOTES ON YOUR MOVES AND EXTRAS</h2>\n<p>For <span class=\"special\">A higher calling...</span>, you have a whole other Label—Soldier. “Soldier” here means seeing yourself as devoted, committed, driven, and obedient. Other people see you as a soldier when they think of you as duty-bound and focused, or thoughtlessly and dangerously obeisant. You see yourself as a soldier when you think you’re committed and motivated to serve a higher cause.</p>\n<p><strong>Acting on orders and relying on your training and asking A.E.G.I.S. for additional resources, equipment, or information during a mission</strong> both require all those clauses to be true—meaning that to get A.E.G.I.S.’s aid, you have to be doing A.E.G.I.S.’s work. If you’re not both acting on orders and relying on training, you can’t perform the Label swap to Soldier. If you’re not on a mission for A.E.G.I.S., then asking them for help is as risky as asking anyone for help.</p>\n<p><strong>Giving A.E.G.I.S. Influence over you</strong> means that it will immediately be able to shift your Labels (seeing that you cannot get rid of A.E.G.I.S.’s Influence without switching playbooks). The GM gets to make that Label shift immediately, from the perspective of A.E.G.I.S. as an organization.</p>\n<p>For <span class=\"special\">Mission first</span>, you must both <strong>secure a valuable resource and defeat a powerful foe</strong> to trigger the move. Only the Soldier and team have to avoid causing collateral damage to qualify for that clause—if the villain causes damage, then that’s just the way it is.</p>\n<p>Generally speaking, <span class=\"special\">Before we get started and More than a shield</span> are mutually exclusive—most times you cannot closely observe your opposition and head directly into danger without regard for your own safety, both.</p>\n</div>\n<div>\n<h3>INSPIRATION FOR THE SOLDIER</h3>\n<p>Quake, <strong>SECRET WARRIORS</strong></p>\n<p>Captain America, <strong>THE AVENGERS</strong></p>\n<p>Bombshell, <strong>TEEN TITANS</strong></p>\n<p>Hellboy, <strong>HELLBOY</strong></p>\n<p>Cyclops, <strong>X-MEN</strong></p>\n<p>Captain Marvel (Carol Danvers), <strong>THE AVENGERS</strong></p>\n</div>\n</section>\n</div>",
+    "slug": "the-soldier",
+    "actorType": "character",
+    "stats": {
+      "danger": {
+        "label": "Danger",
+        "value": -1
+      },
+      "freak": {
+        "label": "Freak",
+        "value": 0
+      },
+      "savior": {
+        "label": "Savior",
+        "value": 2
+      },
+      "superior": {
+        "label": "Superior",
+        "value": 1
+      },
+      "mundane": {
+        "label": "Mundane",
+        "value": 0
+      }
+    },
+    "statsDetail": "(at character creation, add +1 wherever you choose)",
+    "attributes": {
+      "advancements": {
+        "label": "Advancements",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "1": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "2": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "3": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "4": {
+                "value": false,
+                "label": "Someone permanently loses Influence over you; add +1 to a Label"
+              },
+              "5": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "6": {
+                "value": false,
+                "label": "Unlock your Moment of Truth"
+              },
+              "7": {
+                "value": false,
+                "label": "Undergo enhancement: take two new abilities"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes",
+        "value": "",
+        "max": null,
+        "options": {}
+      },
+      "laterAdvances": {
+        "label": "Later Advances",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Lock Soldier, and add +1 to a Label of your choice"
+              },
+              "1": {
+                "value": false,
+                "label": "Take a Mentor and any move from the Protégé playbook"
+              },
+              "2": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "3": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "4": {
+                "value": false,
+                "label": "A.E.G.I.S. permanently loses Influence over you; change playbooks"
+              },
+              "5": {
+                "value": false,
+                "label": "Retire from A.E.G.I.S. to a civilian life or join the upper echelons of A.E.G.I.S. as a Senior Director"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes",
+        "value": "",
+        "max": null,
+        "options": {}
+      },
+      "look": {
+        "label": "Look",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>ambiguous, man, shifting, transgressing, woman</li>      <li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>      <li>average body, bulky body, lean body, trained body, surprising body</li>      <li>stylish clothing, comfortable clothing, simple clothing, casual clothing</li>      <li>modern costume, iconic costume, military uniform, no costume</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "abilities": {
+        "label": "Abilities",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<p>A.E.G.I.S. found you before you got full control of your abilities. They helped you master your gifts, maybe even augmented them with some new tech. Now you have an opportunity to do some good, using your powers to protect and serve humanity. Choose any two of the following.</p>      <ul>      <li>superstrength and durability</li>      <li>energy blasts</li>      <li>enhanced senses</li>      <li>a signature weapon</li>      <li>augmented/mechanical limbs</li>      <li>an alternate/monstrous form</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "backstory": {
+        "label": "Backstory",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>What tragedy or disaster led to you gaining your abilities?</li>      <li>What inspired you to officially join A.E.G.I.S.?</li>      <li>What does A.E.G.I.S. do for the world that no one else can?</li>      <li>Who, outside of A.E.G.I.S. and the team, connects you to the civilian world?</li>      <li>Why do you care about the team?</li>      </ul>      <p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {}
+      },
+      "theSoldier": {
+        "type": "Number",
+        "label": "Soldier",
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "relationshipQuestions": {
+        "label": "Relationships",
+        "type": "LongText",
+        "choices": [
+          {
+            "value": "<p>____________________ is crucial to the long-term success of A.E.G.I.S. I must protect them.</p>      <p>_____________________ isn’t always thrilled with the way A.E.G.I.S. handles things. I’ve come to value their critiques, even if I don’t agree with them.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "momentOfTruth": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "choices": [
+          {
+            "value": "<p>Freedom isn’t free. But not every mission ends in tragedy. When things look bleakest, when your back is against the wall, when it seems like the dawn will never come...you find a way forward without violence. Your enemies lay down their arms and surrender; your allies step back from the brink of chaos. Of course, the people you’ve saved aren’t going to forget what you’ve done here today; they may even come to see you as a symbol of the higher cause you claim to serve...</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "teamQuestion": {
+        "label": "When our team first came together...",
+        "type": "LongText",
+        "choices": [
+          {
+            "value": "<p>Our victory secured an important resource for A.E.G.I.S. What was it?</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      }
+    },
+    "choiceSets": [
+      {
+        "title": "Core Playbook Moves",
+        "desc": "",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "name": "A Higher Calling",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/law-star-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.148GpsSskloolq8C",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.ZHxBjO0t93OBR0T3",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Triumphant Celebration",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.ETwAIkq6SnTg1qL5",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Vulnerability",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      }
+    ]
+  },
+  "ownership": {
+    "default": 0,
+    "qxt7zBbnFWpsYRqr": 3,
+    "S5z9pWDiqzE1X6Fi": 3
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.327",
+    "systemId": "pbta",
+    "systemVersion": "1.0.14",
+    "createdTime": 1718262718363,
+    "modifiedTime": 1718829728890,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB"
+  },
+  "_id": "ide6IwCw3zieK6m4",
+  "sort": 0,
+  "_key": "!items!ide6IwCw3zieK6m4"
+}

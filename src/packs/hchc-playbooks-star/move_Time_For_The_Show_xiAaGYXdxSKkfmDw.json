@@ -36,10 +36,11 @@
       }
     },
     "uses": 0,
-    "playbook": "The Star",
+    "playbook": "",
     "rollType": "superior",
     "rollMod": 0,
-    "choices": ""
+    "choices": "",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -47,11 +48,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.4",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1711826105889,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718687755951,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "xiAaGYXdxSKkfmDw",
   "sort": 1100000,

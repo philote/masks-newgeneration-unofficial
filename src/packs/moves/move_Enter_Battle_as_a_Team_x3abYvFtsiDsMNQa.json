@@ -6,7 +6,7 @@
   "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
   "system": {
     "description": "<p class=\"p1\">When you <strong>enter battle against a dangerous foe as a team, add two to the Team</strong> pool.</p>\n<ul>\n<li class=\"p1\">If the leader has Influence over every teammate, add another Team.</li>\n<li class=\"p1\">If everyone has the same purpose in the fight, add another Team.</li>\n<li class=\"p1\">If any team member mistrusts the leader or the team, remove a Team.</li>\n<li class=\"p1\">If your team is ill-prepared or off-balance, remove a Team.</li>\n</ul>\n<p class=\"p1\">The leader of the team can mark a condition to avoid removing a Team from the pool.</p>",
-    "moveType": "team",
+    "moveType": "rules",
     "rollFormula": "",
     "moveResults": {
       "failure": {
@@ -29,7 +29,7 @@
     "playbook": "",
     "rollType": "",
     "rollMod": 0,
-    "actorType": ""
+    "actorType": "character"
   },
   "effects": [],
   "sort": 0,
@@ -40,11 +40,13 @@
   "flags": {},
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1710185746067,
-    "modifiedTime": 1711773135644,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718674176043,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_key": "!items!x3abYvFtsiDsMNQa"
 }

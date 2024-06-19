@@ -1,6 +1,9 @@
 {
     "TYPES.Item.masks-newgeneration-unofficial.influence": "Influence",
     "MASKS-SHEETS": {
+        "SheetConfig": {
+            "character": "Masks Character Sheet"
+        },
         "Settings": {
             "enable_dark_mode": {
                 "name": "Enable Dark Mode",
@@ -63,8 +66,7 @@
                 "superior": "Superior",
                 "mundane": "Mundane"
             },
-            "heroNameLabel": "Hero Name",
-            "advancesLabel": "Advances",
+            "realNameLabel": "Real Name",
             "xpLabel": "Potential",
             "conditions": {
                 "label": "Conditions",    
@@ -83,19 +85,22 @@
             },
             "influenceLabel": "Influence",
             "advancementsLabel": "Advancements",
+            "advancementsDescription": "When you fill your potential track, you advance. Choose from the list below.",
+            "laterAdvancesLabel": "Later Advances",
+            "laterAdvancesDescription": "When you’ve taken five advances from the top list, you can take advances from the list below.",
             "details": {
                 "lookLabel": "Look",
                 "abilitiesLabel": "Abilities",
                 "momentLabel": "Moment of Truth",
                 "backstoryLabel": "Backstory",
-                "teamLabel": "The Team",    
+                "teamLabel": "When our team first came together...",    
                 "relationshipsLabel": "Relationships",
                 "biographyLabel": "Notes"
             },
             "moveTypes": {
                 "basicLabel": "Basic Moves",
                 "playbookLabel": "Playbook Moves",    
-                "teamLabel": "Team Moves",
+                "rulesLabel": "Rules",
                 "adultLabel": "Adult Moves"
             },
             "Playbooks": {

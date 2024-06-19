@@ -44,7 +44,8 @@
     "playbook": "",
     "rollType": "savior",
     "rollMod": 0,
-    "choices": ""
+    "choices": "",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -52,11 +53,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
-    "createdTime": null,
-    "modifiedTime": 1711601369870,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
+    "createdTime": 1718674175247,
+    "modifiedTime": 1718674176019,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_key": "!items!sog3ZBzKUOxRDHWw"
 }

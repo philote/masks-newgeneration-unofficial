@@ -5,7 +5,7 @@
   "version": "#{VERSION}#",
   "library": "false",
   "compatibility": {
-    "minimum": 11,
+    "minimum": 12,
     "verified": 12.327,
     "maximum": 12
   },
@@ -42,17 +42,6 @@
       "label": "Documents",
       "path": "packs/documents",
       "type": "JournalEntry",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "macros-masks",
-      "label": "Macros - Masks",
-      "path": "packs/macros-masks",
-      "type": "Macro",
       "system": "pbta",
       "ownership": {
         "PLAYER": "OBSERVER",
@@ -327,7 +316,7 @@
     }
   ],
   "esmodules": [
-    "scripts/masks.mjs"
+    "module/masks.mjs"
   ],
   "styles": [
     "css/masks-sheets.css"
@@ -345,7 +334,7 @@
         "id": "pbta",
         "type": "system",
         "compatibility": {
-          "minimum": "0.9.0"
+          "minimum": "1.0.14"
         }
       }
     ]

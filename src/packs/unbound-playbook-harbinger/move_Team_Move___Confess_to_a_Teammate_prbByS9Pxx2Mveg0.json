@@ -14,7 +14,7 @@
     "name": "",
     "description": "<p>When you <strong>confess to a teammate the difference between what you thought they would be and what they really are</strong>, add a Team to the pool, and ask them if you represent a future they’d want. If they say yes, mark potential. If they say no, mark a condition.</p>",
     "requiresMove": "",
-    "moveType": "team",
+    "moveType": "playbook",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -35,10 +35,11 @@
       }
     },
     "uses": 0,
-    "playbook": "The Harbinger",
+    "playbook": "5",
     "rollType": "",
     "rollMod": 0,
-    "choices": ""
+    "choices": "",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -46,11 +47,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.4",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1699858426966,
-    "modifiedTime": 1711825190191,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718674181698,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "prbByS9Pxx2Mveg0",
   "sort": 800000,

@@ -1,4 +1,15 @@
 - add auto-advances for potential on a failed roll.
+    - update Moves with xp check boxes for different results
+    - update xp Attribute with a new value to designate it should get updated when xp triggers
+    - update rolls to return "xp pings" when a move calls for it
+    - update any marked xp Attribute on move usage
+    - when last xp gets filled tell the user & maybe the GM (chat or popup)
+    - Deal with when the GM shifts the roll up or down
+
+    - roll override that sends a message back when rolls fail
+    - message updates potential
+    - trigger when potential is full to pick a new advancement
+    - Deal with when the GM shifts the roll up or down
 - add influence to rolling (when you click any move roll button, instead of immediately rolling, it can pop up a dialog w/ a list of all the influences you have in your character sheet + a check box next to each one. For each checkbox you check, you get a +1 on the roll. (or maybe it's radio buttons? not sure if multiple influences can affect the same roll)
 
 - work on playbook updates
@@ -9,15 +20,15 @@ Look | Tags
 Backstory | LongText [multi-questions]
 Team together | LongText [question]
 Relation Ships | Text [multi-questions with fill in the blank]
-Moment of Truth | LongText [just text]
+[x] Moment of Truth | LongText [just text] with unlocked check
 Influence | Text | [single-select] 
 
-advancement basic | 8 [Multi-select]
-advancement advanced | 6 [Multi-select]
+[x] advancement basic | 8 [Multi-select]
+[x] advancement advanced | 6 [Multi-select]
 
 Item Grants:
 ------------
-Team Moves
+[x] Team Moves
 Playbook Moves
 
 Playbook special bio-tab

@@ -40,7 +40,8 @@
     "playbook": "The Protégé",
     "rollType": "ask",
     "rollMod": 0,
-    "choices": "<ul>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.t9kFvEp4eNYMCUkC]{Resisting or avoiding their blows}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.VTyTLEzt5Zbx3JM4]{Taking something from them}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.AGsdZxeDIixx5ulh]{Creating an opportunity for your allies}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.3e3Dyp1IAnqrGwNj]{Impress, surprise, or frighten the opposition}</h4>\n</li>\n</ul>"
+    "choices": "<ul>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.t9kFvEp4eNYMCUkC]{Resisting or avoiding their blows}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.VTyTLEzt5Zbx3JM4]{Taking something from them}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.AGsdZxeDIixx5ulh]{Creating an opportunity for your allies}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.3e3Dyp1IAnqrGwNj]{Impress, surprise, or frighten the opposition}</h4>\n</li>\n</ul>",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -48,11 +49,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1711773993724,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718674179478,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "4tT3uRkqsHprzWQm",
   "sort": 300000,

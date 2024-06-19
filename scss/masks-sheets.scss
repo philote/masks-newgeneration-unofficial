@@ -1,18 +1,18 @@
 :root {
   --actor-gradient: linear-gradient(
     to bottom,
-    #3179cd 0%,
-    #9cb1a5 80%,
-    #ffeb98 100%
+    #58a4fc 0%,
+    #b0c2b8 80%,
+    #fff1b6 100%
   );
   --masks-primary-text-color: #ffffff;
   --masks-secondary-text-color: #000000;
+  --masks-title-text-color: #173f6e;
   --masks-input-text-color: #000000;
   --masks-input-placeholder-color: #979797;
 
   --masks-interactive-bg-color: #1e528f;
   --masks-interactive-bg-hover-color: #173f6e;
-  --masks-stats-secondary-bg-color: rgba(0, 0, 0, 0.25);
   --masks-option-bg-color: #683b47;
 
   --masks-tabs-border-color: #ffeb98;
@@ -26,8 +26,8 @@
   --masks-resource-control-bg-color: #ffffff;
   --masks-stats-border-color: rgb(229 222 210 / 37%);
 
-  --masks-cell-title-border-color: #b0c4de;
-  --masks-bio-title-border-color: #515b68;
+  --masks-cell-title-border-color: #173f6e;
+  --masks-header-bg-color: #173f6e;
 
   --masks-window-bg-image: url("/modules/masks-newgeneration-unofficial/images/skyline.webp"),
     var(--actor-gradient);
@@ -39,10 +39,10 @@
 .pbta.window-app {
   .window-content {
     color: var(--masks-secondary-text-color);
+    padding: 0;
 
     a.content-link, a.inline-roll {
       color: var(--masks-input-text-color);
-      // background: var(--masks-stats-secondary-bg-color);
     }
   }
 
@@ -64,9 +64,55 @@
     background: rgba(153,153,153,.2509803922);
     color: var(--masks-resource-border-color);
   }
+
+  input::placeholder {
+    color: var(--masks-input-placeholder-color) !important;
+  }
 }
 
 .pbta.sheet {
+
+  .cell__title.warning {
+    background-color: #d68888;
+    color: #000000;
+
+    &::before {
+      height: 0px;
+      background-color: none;
+    }
+
+    &::after {
+      width: 0px;
+      background-color: none;
+    }
+  }
+
+  .cell--influences,
+  .cell--relationshipQuestions,
+  .cell--advancements,
+  .cell--later-advances {
+    margin-top: 10px;
+  }
+
+  .cell--momentOfTruth label div.moment-unlock {
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  // .cell--influences,
+  // .cell--advancements,
+  // .cell--momentOfTruth {
+  //   margin-top: 10px;
+  // }
+
+  .sheet-header, .sheet-body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .sheet-look .cell--influence { display: none; }
   .sheet-main .cell--equipment { display: none; }
 
@@ -75,10 +121,6 @@
   .sheet-header select.charplaybook option[value=""] {
     color: var(--masks-input-placeholder-color);
     font-style: italic;
-  }
-  
-  label {
-    font-weight: normal;
   }
 
   &.item {
@@ -102,6 +144,12 @@
   }
 
   .sheet-resources {
+    align-items: start;
+
+    .cell>.cell__title {
+      justify-content: start;
+    }
+
     .cell--ongoing .resource-control, 
     .cell--forward .resource-control, 
     .cell--roll-formula .resource-control {
@@ -169,6 +217,25 @@
   }
 
   .sheet-wrapper {
+
+    .sheet-bottom {
+      padding: 0px 10px;
+    }
+
+    .sheet-top .sheet-attributes-top {
+      padding: 10px;
+    }
+
+    .sheet-top .sheet-attributes-top .cell--attributes-top>.cell+.cell::before {
+      left: 0;
+      width: 0;
+      background: none;
+    }
+    
+    .sheet-header {
+      background-color: var(--masks-header-bg-color);
+    }
+
     .editor-content {
       background: var(--masks-input-bg-color);
       color: var(--masks-secondary-text-color);
@@ -205,11 +272,10 @@
         .cell.cell--bio {
           min-height: 175px;
           margin-bottom: 5px;
-          width: 49%;
+          width: 48%;
 
           &:nth-child(3), 
-          &:nth-child(4), 
-          &:nth-child(5) {
+          &:nth-child(4) {
             width: 100%;
           }
     
@@ -217,7 +283,7 @@
             min-height: calc(100% - 40px);
     
             .editor-content {
-              height: 135px;
+              height: 145px;
             }
           }
         }
@@ -290,6 +356,9 @@
 
   .sheet-attributes {
     position: relative;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
   
     .cell--stats .stat {
       background: var(--masks-interactive-bg-color);
@@ -347,10 +416,12 @@
 
   .cell__title {
     font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
     position: relative;
     padding-left: 8px;
     border-bottom: none;
-    color: var(--masks-secondary-text-color);
+    color: var(--masks-title-text-color);
     letter-spacing: 0.05rem;
     font-size: 22px;
 
@@ -405,9 +476,10 @@
   }
 
   .sheet-header__fields .view-playbook {
-    background: var(--masks-interactive-bg-color);
-    color: var(--masks-primary-text-color);
+    background: var(--masks-tab-bg-active-color);
+    color: var(--masks-secondary-text-color);
     opacity: 1;
+    border: 0.5px solid var(--masks-interactive-bg-hover-color);
   
     &:hover {
       opacity: 1;
@@ -467,8 +539,13 @@
   .sheet-main [data-tab=equipment] { display: none; }
 
   .sheet-wrapper {
+    max-height: none;
+
     .sheet-header {
+      background: none;
       margin-bottom: 10px;
+      padding: 8px;
+      max-height: none;
     }
   }
   

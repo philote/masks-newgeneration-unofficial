@@ -15,7 +15,405 @@
     "description": "<div class=\"playbook\">\n<section>\n<h1>THE SCION</h1>\n<p>The child of a major supervillain, doing everything in their power to prove they’re different.</p>\n</section>\n<section class=\"rules\">\n<div>\n<h2>Look</h2>\n<ul>\n<li>ambiguous, man, shifting, transgressing, woman</li>\n<li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>\n<li>stocky body, slender body, scrawny body, statuesque body, taut body</li>\n<li>hand-me-down clothing, expensive clothing, uniform clothing, rebellious clothing, casual clothing</li>\n<li>bright costume, parent’s costume, understated costume, makeshift costume, no costume</li>\n</ul>\n\n<h2>Your Lineage</h2>\n<p>You are the child of a true supervillain. You strive to be different than them, but they are a part of you. Circle at least one option for each question below.</p>\n<p><strong>What kind of villain are they?</strong></p>\n<p><em>deadly mercenary, master thief, hateful destroyer, zealous crusader, cruel mastermind, grand tyrant</em></p>\n<p><strong>What is your relationship with them like?</strong></p>\n<p><em>mostly strangers, actively adversarial, sadly opposed, ever-shifting, redemption/corruption, full of denial</em></p>\n<p><strong>They have an array of abilities, assets, and strengths; what are some of them? (up to 3)</strong></p>\n<p><em>superhuman martial prowess, dark sorcery, cosmic might, diabolical machines, endless minions, unrivaled genius, powerful allies, arsenal of weapons and gadgets, supremely honed skills</em></p>\n<p><strong>What abilities do you use to fight them? (up to 2)</strong></p>\n<p><em>impressive martial prowess, magical aptitude, cosmic energies, machine control, regeneration, electrokinesis, seismic waves, a powerful weapon or gadget, mastery of a single skillset</em></p>\n\n<h2>Labels</h2>\n<p><em>(at character creation, add +1 wherever you choose)</em></p>\n<p><strong>DANGER:</strong> +1</p>\n<p><strong>FREAK:</strong> 0</p>\n<p><strong>SAVIOR:</strong> +1</p>\n<p><strong>SUPERIOR:</strong> 0</p>\n<p><strong>MUNDANE:</strong> 0</p>\n\n<h2>Backstory</h2>\n<ul>\n<li>Who is your supervillain parent?</li>\n<li>Who told you about your parent’s true nature?</li>\n<li>Why did you turn from your lineage to become a hero?</li>\n<li>Who, outside of the team, helps you on your chosen path?</li>\n<li>Why do you care about the team?</li>\n</ul>\n<p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>\n\n<h2>When our team first came together...</h2>\n<p>Someone important learned about my lineage and condemned us all. Who? Why?</p>\n\n<h2>Relationships</h2>\n<p>____________________ is the only one who understands what I’m going through; I told them which part of me I wished was more like my parent.</p>\n<p>My parent once fought and thrashed _____________________; I’ve got to find a way to make it up to them.</p>\n\n<h2>Influence</h2>\n<p>This team may be the key to proving you’re different from your parent, but you don’t want to be defined by your peers, either. Give Influence to 2 teammates.</p>\n\n<h2>Moment of Truth</h2>\n<p>People have always tried to define you by your lineage. As if from the moment you were born, you were meant to be some villain to be defeated. But...they’re right, aren’t they? That darkness is in you. So right here, right now, you’re not fighting it—you’re embracing it. Both hero and villain, and greater besides. You’re overcoming impossible odds in ways no hero would approve of, and no villain could comprehend. Of course, after seeing what you can really do when you embrace the whole of yourself, the rest of the world isn’t going to forget who you really are...</p>\n</div>\n<div>\n<h2>Scion Moves</h2>\n<p><em>(Choose two)</em></p>\n<div>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.04fQgIDibndT7G8f]{I’ll Show Them}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.ayyQIYvZyy4pLQN6]{Changed Sides}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.xDJvW0dvYQjw0116]{They Don’t Deserve Forgiveness}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.CS2MDVWIx9VX0bFg]{Moldable}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.lAPeonZjgWpNThTz]{All the Best Stuff}</p>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.h0Rjc3yhKYCLRJSJ]{White Lies}</p>\n</div>\n\n<h2>Respect</h2>\n<p>Write down the names of at least two other characters whose respect you need to earn in order to differentiate yourself from your parent. You may fill in new names whenever appropriate.</p>\n<p>Your parent’s greatest enemy: _____________ Respect: ☐ ☐ ☐ ☐ Advancement: ☐</p>\n<p>Your parent’s greatest victim: _____________ Respect: ☐ ☐ ☐ ☐ Advancement: ☐</p>\n<p>Your personal idol: _____________________ Respect: ☐ ☐ ☐ ☐ Advancement: ☐</p>\n<p>The city’s greatest leader: ________________ Respect: ☐ ☐ ☐ ☐ Advancement: ☐</p>\n<p>The city’s greatest hero: _________________ Respect: ☐ ☐ ☐ ☐ Advancement: ☐</p>\n<p>The city’s biggest celebrity: ______________ Respect: ☐ ☐ ☐ ☐ Advancement: ☐</p>\n<p>When you seek out one of the characters named above, roll + Savior. On a hit, you track them down. On a 7-9, they’re juggling their own problems, and may not have time for you. On a miss, when you find them, the situation is dire; the GM will tell you how.</p>\n<p>If you earn Influence over the characters listed above, instead you mark 1 Respect. If you lose Influence over the characters listed above, you lose 1 Respect. If you lose 1 Respect and you have none marked, you immediately mark a condition, GM’s choice.</p>\n<p>The first time you reach 4 Respect on an individual, take an advancement. While you have 4 Respect on an individual:</p>\nYou can reject their Influence at a +3 (does not stack with the above).You take +1 to a Label of their choice (record it next to their name).\n<p>If you dip below 4 Respect on an individual, you lose those benefits.</p>\n\n<h2>Team Moves</h2>\n<p>@UUID[Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.vZWbhNK0hym9W53E]{The Scion - Team Move}</p>\n\n<h2>Potential</h2>\n<p>Every time you roll a miss on a move, mark potential.</p>\n\n<h2>Advancement</h2>\n<p>When you fill your potential track, you advance. Choose from the list below.</p>\n<ul>\n<li>Take another move from your playbook</li>\n<li>Take another move from your playbook</li>\n<li>Take a move from another playbook</li>\n<li>Take a move from another playbook</li>\n<li>Someone permanently loses Influence over you; add +1 to a Label</li>\n<li>Rearrange your Labels as you choose, and add +1 to a Label</li>\n<li>Unlock your Moment of Truth</li>\n<li>Take <strong>The Mask</strong> and a secret identity from the Janus playbook</li>\n</ul>\n<hr />\n<p>When you’ve taken five advances from the top list, you can take advances from the list below.</p>\n<ul>\n<li>Unlock your Moment of Truth after it’s been used once</li>\n<li>Change playbooks</li>\n<li>Take an adult move</li>\n<li>Take an adult move</li>\n<li>Lock a Label, and add +1 to a Label of your choice</li>\n<li>Retire from the life or become a paragon of the city</li>\n</ul>\n</div>\n</section>\n<section class=\"extras\">\n<div>\n<h2>PLAYING THE SCION</h2>\n<p>Shameful, resistant, daring, stalwart. The Scion is the child of a real supervillain, but they won’t let that define them. They’re determined to prove they are their own person by being a greater hero than their parent is a villain, even as the rest of the world paints them with the same brush as their progenitor.</p>\n<p>The Scion is heavily defined in relationship to another character—but that relationship is not direct the way it is for the Protégé or the Legacy. The Scion may interact with their villainous parent very rarely during the course of play, but their parent will always cast a dire shadow upon all that they do. Other characters aware of the relationship between the Scion and their parent will always see the Scion in that light, until the Scion successfully “earns” the right to be viewed independently. As a result, when the Scion designs their parent, they are designing an important character for the game as a whole—but they are not necessarily designing another member of the main cast.</p>\n<p>Instead, the Scion focuses on particular other characters with their <span class=\"special\">Respect</span> extra. Any name filled into the <span class=\"special\">Respect</span> area of their playbook is immediately flagged as a crucial character to the game as a whole, someone the Scion is interested in interacting with further. When playing the Scion, you should use this extra to aim yourself at the characters and relationships you are most interested in pursuing—if you name a character here that you don’t actually care that much about as a player, you’re going to be in trouble.</p>\n</div>\n<div>\n<h2>NOTES ON YOUR MOVES AND EXTRAS</h2>\n<p>For <span class=\"special\">Changed sides</span>, you define who is an enemy, but keep in mind that an “enemy” is real opposition—not simply someone who is currently in your way, but someone you see as truly opposed to you. The same goes for <span class=\"special\">They don’t deserve forgiveness</span>.</p>\n<p>Also for <span class=\"special\">Changed sides</span>, someone watching (like a teammate) may still doubt your loyalties even on a 10+...but on a miss, they have no questions. They come to the worst possible conclusion, and act immediately.</p>\n<p>For <span class=\"special\">All the best stuff</span>, when you define whose cache it is, you should feel free to create a new NPC—but try to use existing characters, especially to bolster ongoing relationships. The GM is the final arbiter of whether a given character is a “hero” or a “villain”—the judgment is not about perception, but the kind of things they would keep in their cache.</p>\n<p>For <span class=\"special\">Respect</span>, name characters you are interested in spending more time with— especially seeing as you will be trying to earn Influence over those characters. Most of the time that you earn Influence over a given character, you do it through the fiction itself, especially by <span class=\"special\">piercing their mask</span> and fulfilling the condition for “How could I gain Influence over you?” That means you’re going to want to spend a lot of time with the characters in your <span class=\"special\">Respect</span> section, seeking them out and trying to impress them.</p>\n<p>Naming a character for <span class=\"special\">Respect</span> means you cannot hold standard Influence over them; all of those rules no longer apply with regards to you gaining Influence over them. They can still hold Influence over you, however, and use it in all the standard ways.</p>\n</div>\n<div>\n<h3>INSPIRATION FOR THE SCION</h3>\n<p>Spoiler, <strong>BATMAN</strong></p>\n<p>Ravager, <strong>TEEN TITANS</strong></p>\n<p>Victor Mancha, <strong>RUNAWAYS</strong></p>\n<p>Gamora, <strong>GUARDIANS OF THE GALAXY</strong></p>\n<p>Quake, <strong>SECRET WARRIORS</strong></p>\n<p>Polaris, Quicksilver, and Scarlet Witch, <strong>X-MEN</strong></p>\n</div>\n</section>\n</div>",
     "hp": null,
     "load": null,
-    "damage": ""
+    "damage": "",
+    "actorType": "character",
+    "stats": {
+      "danger": {
+        "label": "Danger",
+        "value": 1
+      },
+      "freak": {
+        "label": "Freak",
+        "value": 0
+      },
+      "savior": {
+        "label": "Savior",
+        "value": 1
+      },
+      "superior": {
+        "label": "Superior",
+        "value": 0
+      },
+      "mundane": {
+        "label": "Mundane",
+        "value": 0
+      }
+    },
+    "slug": "the-scion",
+    "attributes": {
+      "theScionGreatestEnemy": {
+        "type": "ListMany",
+        "label": "Greatest Enemy",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false,
+            "values": {
+              "0": {
+                "value": false
+              },
+              "1": {
+                "value": false
+              },
+              "2": {
+                "value": false
+              },
+              "3": {
+                "value": false
+              },
+              "4": {
+                "value": false
+              }
+            }
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "theScionGreatestVictim": {
+        "type": "ListMany",
+        "label": "Greatest Victim",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false,
+            "values": {
+              "0": {
+                "value": false
+              },
+              "1": {
+                "value": false
+              },
+              "2": {
+                "value": false
+              },
+              "3": {
+                "value": false
+              },
+              "4": {
+                "value": false
+              }
+            }
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "theScionPersonalIdol": {
+        "type": "ListMany",
+        "label": "Personal Idol",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false,
+            "values": {
+              "0": {
+                "value": false
+              },
+              "1": {
+                "value": false
+              },
+              "2": {
+                "value": false
+              },
+              "3": {
+                "value": false
+              },
+              "4": {
+                "value": false
+              }
+            }
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "theScionGreatestLeader": {
+        "type": "ListMany",
+        "label": "Greatest Leader",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false,
+            "values": {
+              "0": {
+                "value": false
+              },
+              "1": {
+                "value": false
+              },
+              "2": {
+                "value": false
+              },
+              "3": {
+                "value": false
+              },
+              "4": {
+                "value": false
+              }
+            }
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "theScionGreatestHero": {
+        "type": "ListMany",
+        "label": "Greatest Hero",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false,
+            "values": {
+              "0": {
+                "value": false
+              },
+              "1": {
+                "value": false
+              },
+              "2": {
+                "value": false
+              },
+              "3": {
+                "value": false
+              },
+              "4": {
+                "value": false
+              }
+            }
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "theScionBiggestCelebrity": {
+        "type": "ListMany",
+        "label": "Biggest Celebrity",
+        "options": {
+          "0": {
+            "label": "[Text]",
+            "value": false,
+            "values": {
+              "0": {
+                "value": false
+              },
+              "1": {
+                "value": false
+              },
+              "2": {
+                "value": false
+              },
+              "3": {
+                "value": false
+              },
+              "4": {
+                "value": false
+              }
+            }
+          }
+        },
+        "choices": [],
+        "custom": false,
+        "path": "attributes"
+      },
+      "advancements": {
+        "label": "Advancements",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "1": {
+                "value": false,
+                "label": "Take another move from your playbook"
+              },
+              "2": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "3": {
+                "value": false,
+                "label": "Take a move from another playbook"
+              },
+              "4": {
+                "value": false,
+                "label": "Someone permanently loses Influence over you; add +1 to a Label"
+              },
+              "5": {
+                "value": false,
+                "label": "Rearrange your Labels as you choose, and add +1 to a Label"
+              },
+              "6": {
+                "value": false,
+                "label": "Unlock your Moment of Truth"
+              },
+              "7": {
+                "value": false,
+                "label": "Take The Mask and a secret identity from the Janus playbook"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "laterAdvances": {
+        "label": "Later Advances",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Unlock your Moment of Truth after it’s been used once"
+              },
+              "1": {
+                "value": false,
+                "label": "Change playbooks"
+              },
+              "2": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "3": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "4": {
+                "value": false,
+                "label": "Lock a Label, and add +1 to a Label of your choice"
+              },
+              "5": {
+                "value": false,
+                "label": "Retire from the life or become a paragon of the city"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "look": {
+        "label": "Look",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>ambiguous, man, shifting, transgressing, woman</li>      <li>Asian or South Asian, Black, Hispanic/Latino, Indigenous, Middle Eastern, White</li>      <li>stocky body, slender body, scrawny body, statuesque body, taut body</li>      <li>hand-me-down clothing, expensive clothing, uniform clothing, rebellious clothing, casual clothing</li>      <li>bright costume, parent’s costume, understated costume, makeshift costume, no costume</li>      </ul>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "abilities": {
+        "label": "Abilities",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "backstory": {
+        "label": "Backstory",
+        "type": "LongText",
+        "value": "",
+        "choices": [
+          {
+            "value": "<ul>      <li>Who is your supervillain parent?</li>      <li>Who told you about your parent’s true nature?</li>      <li>Why did you turn from your lineage to become a hero?</li>      <li>Who, outside of the team, helps you on your chosen path?</li>      <li>Why do you care about the team?</li>      </ul>      <p>Once you’ve finished your backstory, introduce your character to the other players, and then determine what happened when your team first came together, the relationships between you and your teammates, and who has Influence over you.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "details"
+      },
+      "relationshipQuestions": {
+        "label": "Relationships",
+        "type": "LongText",
+        "choices": [
+          {
+            "value": "<p>____________________ is the only one who understands what I’m going through; I told them which part of me I wished was more like my parent.</p>      <p>My parent once fought and thrashed _____________________; I’ve got to find a way to make it up to them.</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "momentOfTruth": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "choices": [
+          {
+            "value": "<p>People have always tried to define you by your lineage. As if from the moment you were born, you were meant to be some villain to be defeated. But...they’re right, aren’t they? That darkness is in you. So right here, right now, you’re not fighting it—you’re embracing it. Both hero and villain, and greater besides. You’re overcoming impossible odds in ways no hero would approve of, and no villain could comprehend. Of course, after seeing what you can really do when you embrace the whole of yourself, the rest of the world isn’t going to forget who you really are...</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "teamQuestion": {
+        "label": "When our team first came together...",
+        "type": "LongText",
+        "choices": [
+          {
+            "value": "<p>Someone important learned about my lineage and condemned us all. Who? Why?</p>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      }
+    },
+    "choiceSets": [
+      {
+        "title": "Core Playbook Moves",
+        "desc": "",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "name": "Respect",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/conqueror-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.5ANdAucy1Qyz0tZI",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.vZWbhNK0hym9W53E",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Triumphant Celebration",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.Ti3QHKtjFUHjLVF9",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Vulnerability",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      }
+    ],
+    "statsDetail": "(at character creation, add +1 wherever you choose)"
   },
   "ownership": {
     "default": 0,
@@ -23,11 +421,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.4",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1699858426966,
-    "modifiedTime": 1711825340633,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718830514907,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "7nqbfK7BWYyVsCM6",
   "sort": 300000,

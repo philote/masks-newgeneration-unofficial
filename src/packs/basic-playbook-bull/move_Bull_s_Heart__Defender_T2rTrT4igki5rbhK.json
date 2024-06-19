@@ -25,10 +25,10 @@
       }
     },
     "uses": 0,
-    "playbook": "The Bull",
+    "playbook": "",
     "rollType": "danger",
     "rollMod": 0,
-    "actorType": "",
+    "actorType": "character",
     "choices": "<ul>\n<li>Add a Team to the pool</li>\n<li>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.PzqlHqRhI7uRWAxR]</li>\n<li>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.UQp2JmzBob2lVP3C]{Clear a Condition}</li>\n</ul>"
   },
   "effects": [],
@@ -41,11 +41,13 @@
   "flags": {},
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1710990605554,
-    "modifiedTime": 1711772842740,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718674176878,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_key": "!items!T2rTrT4igki5rbhK"
 }

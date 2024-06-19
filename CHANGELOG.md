@@ -1,5 +1,23 @@
-#1.5.9
+#1.7.0
+- Foundry v12 Only release
+- [ Breaking ] Attributes were changed for Relationship Questions, Momentum, and the Team Question, and Hero Name (became Real name)
+- Updated Playbooks to add auto add attributes to the character
+- Added Social and Advancement tabs for a cleaner layout
+- Moved Real Name to the top bar
+- Moved Forward and Ongoing to the top attribute bar
+Notes: 
+- Only works with Foundry v12+ and PbtA v1+
+- If you need Foundry v11 or PbtA v0.9 support then use Masks v1.6.3
+
+#1.6.3
+- PbtA version update
+
+#1.6.2
+- fixed a bug with a setting not existing in older versions of pbta
+
+#1.6.1
 - Foundry v12 fixes
+- fix a possible issue with pbta version
 
 #1.5.8
 - Fixed a bug with making new influences

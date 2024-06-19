@@ -40,7 +40,8 @@
     "playbook": "The Outsider",
     "rollType": "superior",
     "rollMod": 0,
-    "choices": "<p>Spend your hold 1 for 1 to:</p>\n<ul>\n<li>Receive a useful piece of alien technology that will allow you to use any ability from another playbook once (choose the ability when you spend the hold)</li>\n<li>Consult your people&rsquo;s knowledge to ask the GM a question about the current situation</li>\n<li>Clear a condition through the comfort of contact with your home</li>\n</ul>"
+    "choices": "<p>Spend your hold 1 for 1 to:</p>\n<ul>\n<li>Receive a useful piece of alien technology that will allow you to use any ability from another playbook once (choose the ability when you spend the hold)</li>\n<li>Consult your people&rsquo;s knowledge to ask the GM a question about the current situation</li>\n<li>Clear a condition through the comfort of contact with your home</li>\n</ul>",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -48,11 +49,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1711773906060,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718674179277,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "qeaZKeGOGyHJKKr8",
   "sort": 900000,

@@ -15,7 +15,7 @@
     "name": "",
     "description": "<p>When you <strong>share a triumphant celebration with someone</strong>, ask them what makes them proud or happy about the actions they took and write a lesson based on it, either filling an empty slot or replacing an existing lesson.</p>",
     "requiresMove": "",
-    "moveType": "team",
+    "moveType": "playbook",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -36,10 +36,11 @@
       }
     },
     "uses": 0,
-    "playbook": "The Newborn",
+    "playbook": "10",
     "rollType": "",
     "rollMod": 0,
-    "choices": ""
+    "choices": "",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -47,11 +48,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.4",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1711825967103,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718674180691,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "eBjq0wXHY2Rfk77e",
   "sort": 900000,

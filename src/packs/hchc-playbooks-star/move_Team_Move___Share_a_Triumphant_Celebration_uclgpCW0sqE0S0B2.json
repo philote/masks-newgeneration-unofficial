@@ -15,7 +15,7 @@
     "name": "",
     "description": "<p>When you <strong>share a triumphant celebration</strong> <strong>with someone</strong>, say whether it’s part of the show or not. If it is, then you can shift your Labels as you choose. If it is not, then they shift your Labels, and you can clear a condition or mark potential.</p>",
     "requiresMove": "",
-    "moveType": "team",
+    "moveType": "playbook",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -36,10 +36,11 @@
       }
     },
     "uses": 0,
-    "playbook": "The Star",
+    "playbook": "18",
     "rollType": "",
     "rollMod": 0,
-    "choices": ""
+    "choices": "",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -47,11 +48,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.4",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1711826105889,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718674180955,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "uclgpCW0sqE0S0B2",
   "sort": 800000,

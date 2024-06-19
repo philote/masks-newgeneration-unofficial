@@ -40,7 +40,8 @@
     "playbook": "The Transformed",
     "rollType": "freak",
     "rollMod": 0,
-    "choices": "<ul>\n<li>You frighten others you had not intended to scare</li>\n<li>You hurt someone or break something you shouldn&rsquo;t have</li>\n<li>You feel like more of a monster afterward; mark a condition (GM&rsquo;s choice)</li>\n</ul>"
+    "choices": "<ul>\n<li>You frighten others you had not intended to scare</li>\n<li>You hurt someone or break something you shouldn&rsquo;t have</li>\n<li>You feel like more of a monster afterward; mark a condition (GM&rsquo;s choice)</li>\n</ul>",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -48,11 +49,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1711774088714,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718674179626,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "cuRPcDPrjbO4sSkk",
   "sort": 500000,

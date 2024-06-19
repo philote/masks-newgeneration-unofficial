@@ -16,7 +16,7 @@
     "name": "",
     "description": "<p>When you <strong>share a triumphant celebration with someone</strong>, tell them whether you see them as an equal. If you do, give them Influence over you and mark potential. If you don’t, shift Superior up and any other Label down.</p>",
     "requiresMove": "",
-    "moveType": "team",
+    "moveType": "playbook",
     "rollFormula": "",
     "moveGroup": "",
     "moveResults": {
@@ -37,10 +37,11 @@
       }
     },
     "uses": 0,
-    "playbook": "The Legacy",
+    "playbook": "9",
     "rollType": "",
     "rollMod": 0,
-    "choices": ""
+    "choices": "",
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -48,11 +49,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.3",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1711773482553,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718674178545,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "vq6DbyMngWK3cmuP",
   "sort": 1000000,

@@ -12,7 +12,7 @@
   },
   "system": {
     "description": "<p>When you <strong>share a tale of future loss with someone</strong>, ask them if they think you have the ability to avert that loss. If they believe you do, mark potential and give them Influence over you. If they don’t, mark Guilty and shift one Label up and one Label down (your choice). If Guilty is already marked mark another condition, GM’s choice.</p>",
-    "moveType": "team",
+    "moveType": "playbook",
     "rollFormula": "",
     "moveResults": {
       "failure": {
@@ -32,11 +32,11 @@
       }
     },
     "uses": 0,
-    "playbook": "The Harbinger",
+    "playbook": "5",
     "rollType": "",
     "rollMod": 0,
     "choices": "",
-    "actorType": ""
+    "actorType": "character"
   },
   "ownership": {
     "default": 0,
@@ -45,11 +45,13 @@
   },
   "_stats": {
     "systemId": "pbta",
-    "systemVersion": "0.9.4",
-    "coreVersion": "11.315",
+    "systemVersion": "1.0.14",
+    "coreVersion": "12.327",
     "createdTime": 1699858426966,
-    "modifiedTime": 1711825190191,
-    "lastModifiedBy": "x2ixoSwGbsuhIrIT"
+    "modifiedTime": 1718674181679,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_id": "TD2otlOVMhehPrG5",
   "sort": 700000,

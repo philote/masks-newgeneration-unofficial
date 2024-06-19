@@ -129,7 +129,7 @@ jobs:
             CHANGELOG.md                         \
             LICENSE                              \
             templates/                           \
-            scripts/                             \
+            module/                             \
             css/                                 \
             packs/                               \
             resources/                           \

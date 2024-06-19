@@ -1,6 +1,6 @@
 ![Cover](images/cover.webp)
 
-![](https://img.shields.io/badge/Foundry-v11-informational)
+![](https://img.shields.io/badge/Foundry-v12-informational)
 <!--- Forge Bazaar Install % Badge -->
 ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Fmasks-newgeneration-unofficial&colorB=4aa94a)
 
@@ -21,6 +21,10 @@ The current version is a merging of these modules' features, cleanup of the move
 ## Dependencies
 The following Foundry VTT game system must be installed to use this module: [Powered by the Apocalypse](https://github.com/asacolips-projects/pbta).
 
+### Masks V1.7+
+- Only works with Foundry v12+ and PbtA v1+
+- If you need Foundry v11 or PbtA v0.9 support then use Masks v1.6.3
+
 ## Features
 - PC Character Sheets
 - NPC Character Sheets
@@ -33,6 +37,10 @@ The following Foundry VTT game system must be installed to use this module: [Pow
 
 ## TODO
 - Team Pool Tracker
+- Automation for potential
+- Add influence to roll dialogs
+- Common tracking of who has influence over who
+- Figure out how to support the Joined better
 
 # Install
 
