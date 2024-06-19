@@ -187,21 +187,36 @@
       "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>You told ____________________ about your shame and asked them for their confidence.</p>      <p>You wish you could be a better hero, more like _____________________.</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>Sooner or later, all the super powers, elite training, and experience are helpless in the face of evil or disaster. That’s when somebody like you, gifted as you are with a peerless intellect, can rise to the occasion. Your plan, your invention, or your lightning-fast thought processes save the day, in a way no one else could have foreseen. Of course, after you’ve shown how different you are from them, that distance between you and the others is now that much greater. And the world is only going to pull you farther apart...</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "teamQuestion": {
         "label": "When our team first came together...",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>I created something lasting and beneficial for the whole team. What was it?</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       }
@@ -253,7 +268,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718262093687,
-    "modifiedTime": 1718828796298,
+    "modifiedTime": 1718829803789,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "Zdgcueyay4Y6w7bB",

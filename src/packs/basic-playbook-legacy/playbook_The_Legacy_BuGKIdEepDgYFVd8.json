@@ -189,21 +189,36 @@
       "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>You once got caught doing something that shames your legacy with ______________.</p>      <p>You trust ______________ and told them an important secret of your legacy.</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>This is the moment when you prove how much the mantle belongs to you. You seize control of all your powers, and you defeat even impossible odds to prove you are worthy of the name you carry. You accomplish feats even your predecessors couldn’t do. Of course, after you prove something like that, you can expect still more responsibilities to be placed on your shoulders...</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "teamQuestion": {
         "label": "When our team first came together...",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>All things considered, we did well and impressed an established hero. Who was it?</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       }
@@ -255,7 +270,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718260308485,
-    "modifiedTime": 1718828847313,
+    "modifiedTime": 1718830133496,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "BuGKIdEepDgYFVd8",

@@ -197,21 +197,36 @@
       "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>You and ____________________ teamed up a few times before the rest of you came together.</p>      <p>Your mentor is cautious; they asked you to keep an eye on __________________.</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>The moment that you show who you really are: your mentor, or something different. You can do whatever your mentor could do and more. You can do the incredible, even the things they always failed to accomplish. Of course, they’re not going to see you the same way, no matter which path you choose...</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "teamQuestion": {
         "label": "When our team first came together...",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>We stuck together after all was said and done. Why? How’d we keep in contact?</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       }
@@ -263,7 +278,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718261466966,
-    "modifiedTime": 1718828824412,
+    "modifiedTime": 1718829951531,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "zNZZfEqfRoYbsbVw",

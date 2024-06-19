@@ -189,21 +189,36 @@
       "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>_______________ is your love. You’ve opened up to them about the worst parts of your past.</p>      <p>_______________ is your rival. They tried to control you at a crucial moment.</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>This is what you do best. You let loose, all the pent up strength and rage and glee, and you break whatever stands in your way. You are a walking demolition crew. What can stand up to you? Nothing. Not buildings. Not structures. Not enemies. Nothing. Of course, now the people who changed you know exactly where to find you...</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "teamQuestion": {
         "label": "When our team first came together...",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>We defeated a dangerous enemy. Who or what was it?</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       }
@@ -248,7 +263,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718256107895,
-    "modifiedTime": 1718828898213,
+    "modifiedTime": 1718830326718,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "ZDSkXrR23w9Og7P2",

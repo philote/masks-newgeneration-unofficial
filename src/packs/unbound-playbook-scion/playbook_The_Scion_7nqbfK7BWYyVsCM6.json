@@ -345,21 +345,36 @@
       "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>____________________ is the only one who understands what I’m going through; I told them which part of me I wished was more like my parent.</p>      <p>My parent once fought and thrashed _____________________; I’ve got to find a way to make it up to them.</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>People have always tried to define you by your lineage. As if from the moment you were born, you were meant to be some villain to be defeated. But...they’re right, aren’t they? That darkness is in you. So right here, right now, you’re not fighting it—you’re embracing it. Both hero and villain, and greater besides. You’re overcoming impossible odds in ways no hero would approve of, and no villain could comprehend. Of course, after seeing what you can really do when you embrace the whole of yourself, the rest of the world isn’t going to forget who you really are...</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "teamQuestion": {
         "label": "When our team first came together...",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>Someone important learned about my lineage and condemned us all. Who? Why?</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       }
@@ -409,7 +424,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858426966,
-    "modifiedTime": 1718828981163,
+    "modifiedTime": 1718830514907,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

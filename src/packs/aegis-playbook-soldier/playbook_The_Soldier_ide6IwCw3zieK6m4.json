@@ -181,21 +181,36 @@
       "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>____________________ is crucial to the long-term success of A.E.G.I.S. I must protect them.</p>      <p>_____________________ isn’t always thrilled with the way A.E.G.I.S. handles things. I’ve come to value their critiques, even if I don’t agree with them.</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>Freedom isn’t free. But not every mission ends in tragedy. When things look bleakest, when your back is against the wall, when it seems like the dawn will never come...you find a way forward without violence. Your enemies lay down their arms and surrender; your allies step back from the brink of chaos. Of course, the people you’ve saved aren’t going to forget what you’ve done here today; they may even come to see you as a symbol of the higher cause you claim to serve...</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "teamQuestion": {
         "label": "When our team first came together...",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>Our victory secured an important resource for A.E.G.I.S. What was it?</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       }
@@ -247,7 +262,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718262718363,
-    "modifiedTime": 1718828783838,
+    "modifiedTime": 1718829728890,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "ide6IwCw3zieK6m4",

@@ -184,21 +184,36 @@
       "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>____________________ turns away from the hero’s path, according to your history books. You have to prevent that from happening.</p>      <p>You’ve always idolized ____________________, but it’s too awkward to admit it to them now that you’ve met them in real life. Keep it cool, keep it cool.</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>Everything you do could affect the future. For all you know, saving that one guy means that now the future is full of pterodactyls. The ripples are always so hard to track, and you’re not sure if you’ve helped or hurt—not really. Until now. In this moment, it’s all clear. You can see the course of events laid out before you like a river, and you know exactly what you have to do to ensure the future outcome you want. Of course, after this, you’ve changed enough of the timeline to invalidate your prior research—reset all the names in your “Connecting the dots” section.</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "teamQuestion": {
         "label": "When our team first came together...",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>We averted a disaster from the future’s history books. What was the disaster? What effect do we hope it had on the timeline?</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       }
@@ -249,7 +264,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858426966,
-    "modifiedTime": 1718828994146,
+    "modifiedTime": 1718830645745,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

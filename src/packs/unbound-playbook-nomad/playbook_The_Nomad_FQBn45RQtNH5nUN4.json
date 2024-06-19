@@ -206,21 +206,36 @@
       "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>__________________ knows plenty that I don’t about this world, its people, and how to deal with them; I should follow their lead while I’m here.</p>      <p>__________________ is...well...boring. But that’s okay! I’m going to make them more interesting.</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>You basically exist with one foot out the door, ready to leave this place, to go back out into the wide expanse of the universe. You’ve never fully committed. That is, until today. Until right now. Now, you pour everything you have and everything you are into this moment. You pull off tricks no one from this planet has ever seen before. You use your tools in ways no one here could have ever imagined. You devote yourself, here and now, to a cause, and you achieve your goal in ways that you never could’ve if you’d only stayed home. Of course, now you’ve proved to everyone that you really don’t belong here, and the very skills that let you succeed are the ones you earned from out there...</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "teamQuestion": {
         "label": "When our team first came together...",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>We had to deal with a danger I’d met while traveling the farscapes. What was it, and how did we send it away?</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       }
@@ -237,7 +252,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858426966,
-    "modifiedTime": 1718828987780,
+    "modifiedTime": 1718830577049,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null
