@@ -20,15 +20,15 @@ Look | Tags
 Backstory | LongText [multi-questions]
 Team together | LongText [question]
 Relation Ships | Text [multi-questions with fill in the blank]
-Moment of Truth | LongText [just text]
+[x] Moment of Truth | LongText [just text] with unlocked check
 Influence | Text | [single-select] 
 
-advancement basic | 8 [Multi-select]
-advancement advanced | 6 [Multi-select]
+[x] advancement basic | 8 [Multi-select]
+[x] advancement advanced | 6 [Multi-select]
 
 Item Grants:
 ------------
-Team Moves
+[x] Team Moves
 Playbook Moves
 
 Playbook special bio-tab

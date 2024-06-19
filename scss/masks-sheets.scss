@@ -272,7 +272,7 @@
         .cell.cell--bio {
           min-height: 175px;
           margin-bottom: 5px;
-          width: 49%;
+          width: 48%;
 
           &:nth-child(3), 
           &:nth-child(4) {
@@ -539,8 +539,13 @@
   .sheet-main [data-tab=equipment] { display: none; }
 
   .sheet-wrapper {
+    max-height: none;
+
     .sheet-header {
+      background: none;
       margin-bottom: 10px;
+      padding: 8px;
+      max-height: none;
     }
   }
   
