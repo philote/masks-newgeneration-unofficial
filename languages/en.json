@@ -1,6 +1,9 @@
 {
     "TYPES.Item.masks-newgeneration-unofficial.influence": "Influence",
     "MASKS-SHEETS": {
+        "SheetConfig": {
+            "character": "Masks Character Sheet"
+        },
         "Settings": {
             "enable_dark_mode": {
                 "name": "Enable Dark Mode",

@@ -1,10 +1,21 @@
 import { configSheet } from "./helpers/config-sheet.mjs";
+import * as utils from "./helpers/utils.mjs";
+import { MasksActorSheetMixin } from './sheets/actor-sheet.mjs';
 // import { RollPbtAMasks } from "./helpers/rollsMasks.mjs";
 
 Hooks.once("init", () => {
 
     // CONFIG.Dice.RollPbtA = RollPbtAMasks;
 	// CONFIG.Dice.rolls.push(RollPbtAMasks);
+
+    const masksActorSheet = MasksActorSheetMixin(game.pbta.applications.actor.PbtaActorSheet);
+    Actors.unregisterSheet('pbta', game.pbta.applications.actor.PbtaActorSheet, { types: ['character'] });
+    Actors.registerSheet('pbta', masksActorSheet, {
+        types: ['character'],
+        makeDefault: true,
+        label: 'MASKS-SHEETS.SheetConfig.character',
+    });
+
 
     game.settings.register("masks-newgeneration-unofficial", "enable_dark_mode", {
         name: "MASKS-SHEETS.Settings.enable_dark_mode.name",
@@ -26,11 +37,8 @@ Hooks.once("init", () => {
 		head.appendChild(link);
 	}
 
-});
-
-Hooks.on('setup', () => {
-    // Ensure template is loaded so that it will be ready when needed
-    loadTemplates(['modules/masks-newgeneration-unofficial/templates/influences-tab-page.hbs']);
+    // Preload Handlebars stuff.
+    utils.preloadHandlebarsTemplates();
 });
 
 Hooks.once('pbtaSheetConfig', () => {
