@@ -6,13 +6,14 @@
 				<div class="moment-unlock">{{system.attributes.momentUnlocked.checkboxLabel}} <input type="checkbox" name="system.attributes.momentUnlocked.value" {{checked system.attributes.momentUnlocked.value}}/></div>
 			</label>
 			{{#if system.attributes.momentOfTruth.description}}<p class="cell__description cell__description--attr">{{system.attributes.momentOfTruth.description}}</p>{{/if}}
-			{{editor system.attributes.momentOfTruth.value target=system.attributes.momentOfTruth.value button=true owner=owner editable=editable}}
+			{{editor system.attributes.momentOfTruth.value target="system.attributes.momentOfTruth.value" button=true owner=owner editable=editable}}
 		</div>
 		<div class="cell cell--group cell--advancements">
 			<label for="system.attributes.advancements.value" class="cell__title">{{system.attributes.advancements.label}}</label>
 			{{#if system.attributes.advancements.description}}<p class="cell__description cell__description--attr">{{system.attributes.advancements.description}}</p>{{/if}}
 			<ul class="cell__checkboxes flexcol">
 				{{#each system.attributes.advancements.options as |option optionKey|}}
+					{{log option}}
 					<label
 						class="flexrow"
 						{{#if option.tooltip}}
@@ -22,13 +23,13 @@
 						>
 						{{#if option.values}}
 							{{#each option.values as |suboption suboptionKey|}}
-								<input type="checkbox" class="attr-list" name="system.attributes.{{key}}.options.{{optionKey}}.values.{{suboptionKey}}.value" {{checked suboption.value}}/>
+								<input type="checkbox" class="attr-list" name="system.attributes.advancements.options.{{optionKey}}.values.{{suboptionKey}}.value" {{checked suboption.value}}/>
 							{{/each}}
 						{{else}}
-							<input type="checkbox" class="attr-list" name="system.attributes.{{key}}.options.{{optionKey}}.value" {{checked option.value}}/>
+							<input type="checkbox" class="attr-list" name="system.attributes.advancements.options.{{optionKey}}.value" {{checked option.value}}/>
 						{{/if}}
 						{{#if (eq option.label "[Text]")}}
-							<input type="text" class="input input-title" name="system.attributes.{{key}}.options.{{optionKey}}.userLabel" value="{{option.userLabel}}">
+							<input type="text" class="input input-title" name="system.attributes.advancements.options.{{optionKey}}.userLabel" value="{{option.userLabel}}">
 						{{else}} 
 							{{option.label}}
 						{{/if}}
@@ -50,13 +51,13 @@
 						>
 						{{#if option.values}}
 							{{#each option.values as |suboption suboptionKey|}}
-								<input type="checkbox" class="attr-list" name="system.attributes.{{key}}.options.{{optionKey}}.values.{{suboptionKey}}.value" {{checked suboption.value}}/>
+								<input type="checkbox" class="attr-list" name="system.attributes.laterAdvances.options.{{optionKey}}.values.{{suboptionKey}}.value" {{checked suboption.value}}/>
 							{{/each}}
 						{{else}}
-							<input type="checkbox" class="attr-list" name="system.attributes.{{key}}.options.{{optionKey}}.value" {{checked option.value}}/>
+							<input type="checkbox" class="attr-list" name="system.attributes.laterAdvances.options.{{optionKey}}.value" {{checked option.value}}/>
 						{{/if}}
 						{{#if (eq option.label "[Text]")}}
-							<input type="text" class="input input-title" name="system.attributes.{{key}}.options.{{optionKey}}.userLabel" value="{{option.userLabel}}">
+							<input type="text" class="input input-title" name="system.attributes.laterAdvances.options.{{optionKey}}.userLabel" value="{{option.userLabel}}">
 						{{else}} 
 							{{option.label}}
 						{{/if}}

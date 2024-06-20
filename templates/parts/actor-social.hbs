@@ -3,12 +3,12 @@
 		<div class="cell cell--group cell--teamQuestion">
 			<label for="system.attributes.teamQuestion.value" class="cell__title">{{system.attributes.teamQuestion.label}}</label>
 			{{#if system.attributes.teamQuestion.description}}<p class="cell__description cell__description--attr">{{system.attributes.teamQuestion.description}}</p>{{/if}}
-			{{editor system.attributes.teamQuestion.value target=system.attributes.teamQuestion.value button=true owner=owner editable=editable}}
+			{{editor system.attributes.teamQuestion.value target="system.attributes.teamQuestion.value" button=true}}
 		</div>
 		<div class="cell cell--group cell--relationshipQuestions">
 			<label for="system.attributes.relationshipQuestions.value" class="cell__title">{{system.attributes.relationshipQuestions.label}}</label>
 			{{#if system.attributes.relationshipQuestions.description}}<p class="cell__description cell__description--attr">{{system.attributes.relationshipQuestions.description}}</p>{{/if}}
-			{{editor system.attributes.relationshipQuestions.value target=system.attributes.relationshipQuestions.value button=true owner=owner editable=editable}}
+			{{editor system.attributes.relationshipQuestions.value target="system.attributes.relationshipQuestions.value" button=true owner=owner editable=editable}}
 		</div>
 		<div class="cell cell--group cell--influences">
 			<h2 class="cell__title">

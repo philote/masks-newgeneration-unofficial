@@ -146,6 +146,10 @@
   .sheet-resources {
     align-items: start;
 
+    .cell {
+      text-align: left;
+    }
+
     .cell>.cell__title {
       justify-content: start;
     }
