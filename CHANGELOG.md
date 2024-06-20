@@ -1,3 +1,6 @@
+#1.7.1
+- Fixed buts in the Team question, Relationship questions, Moment of truth, and advances (they were not saving)
+
 #1.7.0
 - Foundry v12 Only release
 - [ Breaking ] Attributes were changed for Relationship Questions, Momentum, and the Team Question, and Hero Name (became Real name)
