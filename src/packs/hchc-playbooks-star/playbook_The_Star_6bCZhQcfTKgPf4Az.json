@@ -201,21 +201,36 @@
       "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>__________________ might wind up being more of a star than me some day.</p>      <p>__________________ would be a great sidekick; I try to keep them around.</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<div>      <p>Sometimes it can be hard to tell where the show stops and where you begin—but not today. Not now. Because right now, there is no show. Right now, you are the thing you pretend to be—bold and bright and beautiful and amazing and powerful and confident. Right now, you draw strength from your audience, comfort from their belief in you, and you can do anything they think you can. Of course, after such an impassioned performance, your audience will just have even more demands...</p>      </div>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "teamQuestion": {
         "label": "When our team first came together...",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>We, as a team, attracted the attention of a major media outlet within the city, thanks to our efforts. Who are they? Why do they support us?</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       }
@@ -235,9 +250,9 @@
             "advancement": 0
           },
           {
-            "name": "Seek Help From Your Audience",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/help-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-star.Item.VyVNaw7mqNQpIZ6W",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/help-%23ffffff-%233da7db.svg",
+            "name": "Seek Help From Your Audience",
             "granted": false,
             "advancement": 0
           },
@@ -259,6 +274,52 @@
         "grantOn": 0,
         "granted": false,
         "advancement": 0
+      },
+      {
+        "title": "Star Moves",
+        "desc": "Choose two",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "name": "Cold and Cruel",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/cold-heart-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-star.Item.ZlC6ZvpbLPngLxEc",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-star.Item.eeKYSbbldOSh1X1Z",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/theater-curtains-%23ffffff-%233da7db.svg",
+            "name": "Stage-Fighting",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-star.Item.qTI16qAiT72w9uOa",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/star-struck-%23ffffff-%233da7db.svg",
+            "name": "Take It From Me",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-star.Item.wtGcwLGWbGjzhi8u",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/newspaper-%23ffffff-%233da7db.svg",
+            "name": "The Gossip Mags",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-star.Item.xiAaGYXdxSKkfmDw",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/popcorn-%23ffffff-%233da7db.svg",
+            "name": "Time For The Show",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
+        "granted": false,
+        "advancement": 0
       }
     ]
   },
@@ -271,7 +332,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1718828936779,
+    "modifiedTime": 1718912955664,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

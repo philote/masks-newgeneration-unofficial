@@ -227,8 +227,8 @@
       {
         "title": "Core Playbook Moves",
         "desc": "",
-        "grantOn": 0,
-        "advancement": 0,
+        "type": "multi",
+        "repeatable": true,
         "choices": [
           {
             "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-bull.Item.206CcGDXMlrncJtt",
@@ -245,9 +245,101 @@
             "advancement": 0
           }
         ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      },
+      {
+        "title": "Bull Moves",
+        "desc": "Choose Two",
         "type": "multi",
         "repeatable": true,
-        "granted": false
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-bull.Item.R6WX07MOythi99aF",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/broken-pottery-%23ffffff-%233da7db.svg",
+            "name": "In a China Shop",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-bull.Item.LWSFQrzyQMXv0tN1",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/charging-bull.svg",
+            "name": "Physics? What Physics?",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-bull.Item.nxCpUP97kfuDtHuK",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/armor-punch-%23ffffff-%233da7db.svg",
+            "name": "Punch Everyone",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-bull.Item.cAH622RTr42UH1nl",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/attached-shield-%23ffffff-%233da7db.svg",
+            "name": "There When It Matters",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-bull.Item.ld3OBrdnYdrxvpCU",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/angry-eyes-%23ffffff-%233da7db.svg",
+            "name": "Thick and Thin Skinned",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-bull.Item.BYbtzCCpP7rQ4kQV",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/arrest-%23ffffff-%233da7db.svg",
+            "name": "You’ve Got a Head You Don’t Need",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
+        "granted": false,
+        "advancement": 0
+      },
+      {
+        "title": "The Bull’s Heart",
+        "desc": "Choose a role you commonly fulfill for your love or rival:",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "name": "Bull's Heart: Defender",
+            "img": "icons/svg/aura.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-bull.Item.T2rTrT4igki5rbhK",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-bull.Item.9jGpOel5EagP7WU4",
+            "img": "icons/svg/aura.svg",
+            "name": "Bull's Heart: Enabler",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-bull.Item.JQHyAAp1wOlnfvIc",
+            "img": "icons/svg/aura.svg",
+            "name": "Bull's Heart: Friend",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-bull.Item.VrmIxkNMkCY4amM5",
+            "img": "icons/svg/aura.svg",
+            "name": "Bull's Heart: Listener",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
+        "granted": false,
+        "advancement": 0
       }
     ]
   },
@@ -263,7 +355,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718256107895,
-    "modifiedTime": 1718830326718,
+    "modifiedTime": 1718907767253,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "ZDSkXrR23w9Og7P2",

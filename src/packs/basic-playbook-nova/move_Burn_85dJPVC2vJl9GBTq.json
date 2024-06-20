@@ -14,7 +14,7 @@
   },
   "system": {
     "name": "",
-    "description": "<p>When you charge up your powers, roll + conditions you currently have marked.</p>\n<p>Spend your burn on your flares. You lose all burn at the end of the scene.</p>",
+    "description": "<p><strong>When you charge up your powers</strong>, roll + conditions you currently have marked.</p>\n<p>Spend your burn on your flares. You lose all burn at the end of the scene.</p>",
     "requiresMove": "",
     "moveType": "playbook",
     "rollFormula": "",
@@ -37,7 +37,7 @@
       }
     },
     "uses": 0,
-    "playbook": "",
+    "playbook": "12",
     "rollType": "prompt",
     "rollMod": 0,
     "choices": "",
@@ -52,7 +52,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1718674178794,
+    "modifiedTime": 1718910742787,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

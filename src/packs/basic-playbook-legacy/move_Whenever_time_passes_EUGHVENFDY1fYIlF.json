@@ -1,0 +1,53 @@
+{
+  "name": "Whenever time passes",
+  "type": "move",
+  "_id": "EUGHVENFDY1fYIlF",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/time-trap-%23ffffff-%233da7db.svg",
+  "system": {
+    "description": "<div class=\"page\" title=\"Page 12\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>Whenever time passes</strong>, roll + Savior to see how the members of your legacy feel or react to your most recent exploits.</p>\n<p>Before rolling, ask the other players to answer these questions about your performance. Take -1 to the roll for each “no” answer:</p>\n<ul>\n<li><em>have you been upholding the traditions of your legacy?</em></li>\n<li><em>have you maintained the image of your legacy?</em></li>\n<li><em>have you made the othe</em>r members of your legacy proud?</li>\n</ul>\n</div>\n</div>\n</div>\n</div>",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "Complications...",
+        "value": "<div class=\"page\" title=\"Page 12\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Something you did stirred up the hornet&rsquo;s nest&mdash;expect several members of your legacy to meddle with your life.</p>\n</div>\n</div>\n</div>\n</div>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "Partial success",
+        "value": "<div class=\"page\" title=\"Page 12\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>One of them offers you meaningful encouragement, an opportunity, or an advantage.</p>\n<div class=\"page\" title=\"Page 12\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>Another is upset with your most recent actions, and will make their displeasure known.</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "Success!",
+        "value": "<div class=\"page\" title=\"Page 12\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p>One of them offers you meaningful encouragement, an opportunity, or an advantage.</p>\n</div>\n</div>\n</div>\n</div>"
+      }
+    },
+    "uses": 0,
+    "playbook": "9",
+    "rollType": "prompt",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "6hjjFCY28uGRsfsB": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.327",
+    "systemId": "pbta",
+    "systemVersion": "1.0.14",
+    "createdTime": 1718910414161,
+    "modifiedTime": 1718910591844,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB"
+  },
+  "_key": "!items!EUGHVENFDY1fYIlF"
+}

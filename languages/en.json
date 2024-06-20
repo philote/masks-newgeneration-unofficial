@@ -104,15 +104,33 @@
                 "adultLabel": "Adult Moves"
             },
             "Playbooks": {
-                "theDoomedLabel": "Doom Track",
+                "theDoomed": {
+                    "track": "Doom Track",
+                    "bringsDoomCloser": {
+                        "label": "Doom",
+                        "description": "What brings your doom closer? Choose two."
+                    },
+                    "sanctuary": {
+                        "features" : {
+                            "label": "Sanctuary Features",
+                            "description": "Choose three features of your sanctuary:"
+                        },
+                        "downsides" : {
+                            "label": "Sanctuary Downsides",
+                            "description": "Choose two downsides of your sanctuary:"
+                        }
+                    }
+                },
                 "theBull": {
-                    "label": "The Bull's Heart",
-                    "value": "<b>Love:</b> <br><b>Rival:</b> "
+                    "label": "The Bull's Heart"
                 },
                 "theNovaLabel": "Held Burn",
                 "theProtege": {
-                    "label": "Mentor's Labels",
-                    "value": "<b>Embodies:</b> <br><b>Denies:</b> "
+                    "resources": {
+                        "label": "Mentor's Resources",
+                        "description": "Choose up to three resources that your mentor gave you and the team:"
+                    },
+                    "label": "Mentor's Labels"
                 },
                 "theSoldierLabel": "Soldier",
                 "theHarbingerLabel": "Memories Score",
@@ -124,8 +142,7 @@
                 "theScionGreatestHeroLabel": "Greatest Hero",
                 "theScionBiggestCelebrityLabel": "Biggest Celebrity",
                 "theHarbinger": {
-                    "label":  "Memories",
-                    "value": "<b>Monster: </b> <br><b>Traitor: </b> <br><b>Corruptor: </b> <br><b>Martyr: </b> <br><b>Architect: </b> <br><b>Leader: </b> <br>"
+                    "label":  "Memories"
                 },
                 "theBrainLabel": "Your Shame",
                 "theStarAdvantagesLabel": "Audience Advantages",
@@ -134,7 +151,6 @@
                 "theNewbornLabel": "Lessons",
                 "theReformedLabel": "Friends in Low Places",
                 "theJanusLabel": "Obligations",
-                "theProtegeLabel": "Mentor's Resources",
                 "theLegacy": {
                     "label": "Legacy Members",
                     "value": " <i>: is still active and prominent in the city.</i><br> <i>: is retired and quite judgmental.</i><br> <i>: is the next possible member of your legacy.</i><br> <i>: is the greatest opponent your legacy ever faced...and is still at large.</i>"

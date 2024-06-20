@@ -387,9 +387,9 @@
         "repeatable": true,
         "choices": [
           {
-            "name": "Respect",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/conqueror-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.5ANdAucy1Qyz0tZI",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/conqueror-%23ffffff-%233da7db.svg",
+            "name": "Respect",
             "granted": false,
             "advancement": 0
           },
@@ -411,6 +411,59 @@
         "grantOn": 0,
         "granted": false,
         "advancement": 0
+      },
+      {
+        "title": "Scion Moves",
+        "desc": "Choose Two",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.lAPeonZjgWpNThTz",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/ray-gun-%23ffffff-%233da7db.svg",
+            "name": "All the Best Stuff",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.ayyQIYvZyy4pLQN6",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/spy-%23ffffff-%233da7db.svg",
+            "name": "Changed Sides",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.04fQgIDibndT7G8f",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/surprised-%23ffffff-%233da7db.svg",
+            "name": "I’ll Show Them",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.CS2MDVWIx9VX0bFg",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/melting-metal-%23ffffff-%233da7db.svg",
+            "name": "Moldable",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.xDJvW0dvYQjw0116",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/bullet-impacts-%23ffffff-%233da7db.svg",
+            "name": "They Don’t Deserve Forgiveness",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "White Lies",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/liar-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-scion.Item.h0Rjc3yhKYCLRJSJ",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
+        "granted": false,
+        "advancement": 0
       }
     ],
     "statsDetail": "(at character creation, add +1 wherever you choose)"
@@ -424,7 +477,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858426966,
-    "modifiedTime": 1718830514907,
+    "modifiedTime": 1718912327787,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

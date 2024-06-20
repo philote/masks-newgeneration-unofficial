@@ -190,7 +190,12 @@
         "type": "LongText",
         "label": "Mentor's Resources",
         "value": "",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<div class=\"page\" title=\"Page 18\">      <div class=\"section\">      <div class=\"layoutArea\">      <div class=\"column\">      <p>A hidden base, a vehicle, a supercomputer, communicators, surveillance equipment, false identities, badges of authority, a chem lab, a med lab, a teleportal, a weapon of last resort, security systems, simple robots</p>      </div>      </div>      </div>      </div>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
@@ -239,9 +244,9 @@
         "repeatable": true,
         "choices": [
           {
-            "name": "Mentor",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/bat-mask-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.3fzuKtuVR0gi3ulp",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/bat-mask-%23ffffff-%233da7db.svg",
+            "name": "Mentor",
             "granted": false,
             "advancement": 0
           },
@@ -263,6 +268,59 @@
         "grantOn": 0,
         "granted": false,
         "advancement": 0
+      },
+      {
+        "title": "Protégé Moves",
+        "desc": "Choose Three",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.Kvq3QFnkagdjyBts",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/radar-sweep-%23ffffff-%233da7db.svg",
+            "name": "Be Mindful of Your Surroundings",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.AXUGj3BqWYkdEGUv",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/open-folder-%23ffffff-%233da7db.svg",
+            "name": "Been Reading the Files",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.SlB5blEZIpcGtlEP",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/captain-hat-profile-%23ffffff-%233da7db.svg",
+            "name": "Captain",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.Nd5TjPyTRN1yWNC8",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/discussion-%23ffffff-%233da7db.svg",
+            "name": "Fireside Chat",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.GESYoYrGn0FvA9fs",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/bat-%23ffffff-%233da7db.svg",
+            "name": "Heroic Tradition",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "Venting Frustration",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/screaming-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-protege.Item.4tT3uRkqsHprzWQm",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
+        "granted": false,
+        "advancement": 0
       }
     ]
   },
@@ -278,7 +336,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718261466966,
-    "modifiedTime": 1718829951531,
+    "modifiedTime": 1718911624638,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "zNZZfEqfRoYbsbVw",

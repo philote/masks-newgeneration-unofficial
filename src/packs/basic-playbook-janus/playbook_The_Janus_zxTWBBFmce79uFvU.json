@@ -235,13 +235,13 @@
       {
         "title": "Core Playbook Moves",
         "desc": "",
-        "type": "multi",
-        "repeatable": true,
+        "grantOn": 0,
+        "advancement": 0,
         "choices": [
           {
-            "name": "Secret Identity",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/school-bag-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-janus.Item.olFpgF1UGwFQ4WfB",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/school-bag-%23ffffff-%233da7db.svg",
+            "name": "Secret Identity",
             "granted": false,
             "advancement": 0
           },
@@ -258,11 +258,71 @@
             "name": "Team Move - Share a Vulnerability",
             "granted": false,
             "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-janus.Item.xSDFGCcdXafb9JUt",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/spider-mask-%23ffffff-%233da7db.svg",
+            "name": "The Mask",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-janus.Item.8zpn7IDhStBBVE8T",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/time-trap-%23ffffff-%233da7db.svg",
+            "name": "When Time Passes",
+            "granted": false,
+            "advancement": 0
           }
         ],
-        "grantOn": 0,
-        "granted": false,
-        "advancement": 0
+        "type": "multi",
+        "repeatable": true,
+        "granted": false
+      },
+      {
+        "title": "Janus Moves",
+        "desc": "You start with two moves of your choice",
+        "grantOn": 1,
+        "advancement": 0,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-janus.Item.ETSLtf5YgoZXVxZf",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/spider-web-%23ffffff-%233da7db.svg",
+            "name": "Dangerous Web",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-janus.Item.MlEjerrQzViRkl9o",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/american-football-helmet-%23ffffff-%233da7db.svg",
+            "name": "Game Face",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-janus.Item.UK6qhLwiEwsbd6bT",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/character-%23ffffff-%233da7db.svg",
+            "name": "I Am What You See",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-janus.Item.ydbo4cvJD4HmydqF",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/save-%23ffffff-%233da7db.svg",
+            "name": "I’ll Save You!",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-janus.Item.FOBLYiiuxzXwQotS",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/dutch-bike-%23ffffff-%233da7db.svg",
+            "name": "Mild-Mannered",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "type": "multi",
+        "repeatable": true,
+        "granted": false
       }
     ]
   },
@@ -278,7 +338,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718258782013,
-    "modifiedTime": 1718830192291,
+    "modifiedTime": 1718910624846,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "zxTWBBFmce79uFvU",

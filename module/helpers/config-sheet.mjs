@@ -81,9 +81,9 @@ export const configSheet = async () => {
           },
           theDoomed: {
             type: "Clock",
-            label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theDoomedLabel"),
+            label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theDoomed.track"),
             max: 5,
-            default: 0,
+            value: 0,
             playbook: "The Doomed",
             steps: Array(5).fill(false),
             position: "Top"
@@ -92,42 +92,40 @@ export const configSheet = async () => {
             type: "LongText",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theBull.label"),
             playbook: "The Bull",
-            value: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theBull.value"),
             position: "Top"
           },
           theNova: {
             type: "Number",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theNovaLabel"),
             playbook: "The Nova",
-            default: 0,
+            value: 0,
             position: "Top"
           },
           theProtege: {
             type: "LongText",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theProtege.label"),
             playbook: "The Protégé",
-            value: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theProtege.value"),
             position: "Top"
           },
           theSoldier: {
             type: "Number",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theSoldierLabel"),
             playbook: "The Soldier",
-            default: 2,
+            value: 2,
             position: "Top"
           },
           theHarbingerMemories: {
             type: "Number",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theHarbingerLabel"),
             playbook: "The Harbinger",
-            default: -1,
+            value: -1,
             position: "Top"
           },
           theNomad: {
             type: "Number",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theNomadLabel"),
             playbook: "The Nomad",
-            default: 0,
+            value: 0,
             max: 6,
             position: "Top"
           },
@@ -173,6 +171,28 @@ export const configSheet = async () => {
                 value: false,
               },
             },
+          },
+          bringsDoomCloser: {
+            type: "ListMany",
+            condition: false,
+            label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theDoomed.bringsDoomCloser.label"),
+            description: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theDoomed.bringsDoomCloser.description"),
+            playbook: "The Doomed",
+            position: "Left",
+          },
+          doomedSanctuaryFeatures: {
+            type: "LongText",
+            label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theDoomed.sanctuary.features.label"),
+            description: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theDoomed.sanctuary.features.description"),
+            playbook: "The Doomed",
+            position: "Left",
+          },
+          doomedSanctuaryDownsides: {
+            type: "LongText",
+            label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theDoomed.sanctuary.downsides.label"),
+            description: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theDoomed.sanctuary.downsides.description"),
+            playbook: "The Doomed",
+            position: "Left",
           },
           theScionGreatestEnemy: {
             type: "ListMany",
@@ -292,7 +312,6 @@ export const configSheet = async () => {
             type: "LongText",
             label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theHarbinger.label"),
             playbook: "The Harbinger",
-            value: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theHarbinger.value"),
             position: "Left",
           },
           theStarAdvantages: {
@@ -435,9 +454,9 @@ export const configSheet = async () => {
           },
           theProtegeMentorsResources: {
             type: "LongText",
-            label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theProtegeLabel"),
+            label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theProtege.resources.label"),
+            description: game.i18n.localize("MASKS-SHEETS.CharacterSheets.Playbooks.theProtege.resources.description"),
             playbook: "The Protégé",
-            value: "",
             position: "Left",
           },
           theLegacy: {

@@ -34,6 +34,8 @@ The following Foundry VTT game system must be installed to use this module: [Pow
 - Better description fields
 - Most playbooks have unique attributes to track, once they are added to the character sheet
 - Improved Influences interface
+- Automation for playbooks
+- Improved layout with Social and Advancement Tabs
 
 ## TODO
 - Team Pool Tracker

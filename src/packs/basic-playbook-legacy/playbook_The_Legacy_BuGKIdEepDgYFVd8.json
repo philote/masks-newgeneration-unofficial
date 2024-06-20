@@ -231,9 +231,9 @@
         "repeatable": true,
         "choices": [
           {
-            "name": "Legacy",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/crowned-heart-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-legacy.Item.CBIDuMeXDJs5Ec8K",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/crowned-heart-%23ffffff-%233da7db.svg",
+            "name": "Legacy",
             "granted": false,
             "advancement": 0
           },
@@ -250,9 +250,69 @@
             "name": "Team Move - Share a Vulnerability",
             "granted": false,
             "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-legacy.Item.EUGHVENFDY1fYIlF",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/time-trap-%23ffffff-%233da7db.svg",
+            "name": "Whenever time passes",
+            "granted": false,
+            "advancement": 0
           }
         ],
         "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      },
+      {
+        "title": "Legacy Moves",
+        "desc": "Choose Two",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-legacy.Item.AbKxGcUlJkRdZKqn",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/medal-%23ffffff-%233da7db.svg",
+            "name": "Fight the Good Fight",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-legacy.Item.shUFYAS5glLoI3Mq",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/checked-shield.svg",
+            "name": "I Know What I Am",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-legacy.Item.4GTLZkOVIheR2Mi9",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/revolt-%23ffffff-%233da7db.svg",
+            "name": "Never Give Up, Never Surrender",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-legacy.Item.rGBU4R9PqEKsetoW",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/police-badge-%23ffffff-%233da7db.svg",
+            "name": "Symbol of Authority",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-legacy.Item.8VveiAZHfsSPCmBQ",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/family-tree-%23ffffff-%233da7db.svg",
+            "name": "The Legacy Matters",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "Words of the Past",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/wisdom-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-legacy.Item.ZZFK7WLfMi2Rbura",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
         "granted": false,
         "advancement": 0
       }
@@ -270,7 +330,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718260308485,
-    "modifiedTime": 1718830133496,
+    "modifiedTime": 1718910680709,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "BuGKIdEepDgYFVd8",

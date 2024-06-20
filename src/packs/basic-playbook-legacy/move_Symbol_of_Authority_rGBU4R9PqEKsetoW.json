@@ -37,7 +37,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Legacy",
+    "playbook": "9",
     "rollType": "savior",
     "rollMod": 0,
     "choices": "<ul>\n<li>Do what you say</li>\n<li>Get out of your way</li>\n<li>Attack you at a disadvantage</li>\n<li>Freeze</li>\n</ul>",
@@ -52,7 +52,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1718674178520,
+    "modifiedTime": 1718910965784,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

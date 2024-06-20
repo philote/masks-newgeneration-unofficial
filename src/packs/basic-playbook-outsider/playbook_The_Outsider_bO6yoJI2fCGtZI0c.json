@@ -218,9 +218,9 @@
         "repeatable": true,
         "choices": [
           {
-            "name": "Team Move - Share a Triumphant Celebration",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-outsider.Item.uvXIGFEhjiiTu0F5",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Triumphant Celebration",
             "granted": false,
             "advancement": 0
           },
@@ -233,6 +233,59 @@
           }
         ],
         "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      },
+      {
+        "title": "Outsider Moves",
+        "desc": "Choose Three",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-outsider.Item.gxCY7J7gsR0gEs9G",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/big-gear-%23ffffff-%233da7db.svg",
+            "name": "Alien Tech",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-outsider.Item.ATCRRzVe7I1KGR1z",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/metroid-%23ffffff-%233da7db.svg",
+            "name": "Alien Ways",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-outsider.Item.qeaZKeGOGyHJKKr8",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/ringed-planet-%23ffffff-%233da7db.svg",
+            "name": "Belong in Two Worlds",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-outsider.Item.9ooZpYIc5R6s8K2H",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/ufo-%23ffffff-%233da7db.svg",
+            "name": "Kirby-Craft",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-outsider.Item.T9QMn3wJB7rcAZvx",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/alien-stare-%23ffffff-%233da7db.svg",
+            "name": "Not So Different After All",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "The Best of Them",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/earth-america-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-outsider.Item.cp0azIQ7KBawfEqg",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
         "granted": false,
         "advancement": 0
       }
@@ -250,7 +303,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718261200806,
-    "modifiedTime": 1718830012670,
+    "modifiedTime": 1718911102386,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "bO6yoJI2fCGtZI0c",

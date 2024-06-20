@@ -225,14 +225,67 @@
             "advancement": 0
           },
           {
-            "name": "Team Move - Share a Vulnerability",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.EXCfJoSHmqbXPiBa",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Vulnerability",
             "granted": false,
             "advancement": 0
           }
         ],
         "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      },
+      {
+        "title": "Delinquent Moves",
+        "desc": "Choose Three",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.YH1hztqRAKwh7cap",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/distraction-%23ffffff-%233da7db.svg",
+            "name": "Are You Watching Closely?",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.FLABmd6lOLhIMgIX",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/robber-%23ffffff-%233da7db.svg",
+            "name": "Criminal Mind",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.QQ6i4rOJku9wodQ9",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/smoking-finger-%23ffffff-%233da7db.svg",
+            "name": "I Don't Care What You Think!",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.uxNafPsvQ9QFYiG1",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/confrontation-%23ffffff-%233da7db.svg",
+            "name": "Mary Contrary",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "Team? What team?",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/team-downgrade-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.p9EHL8Yx5RwDmaQu",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-delinquent.Item.7L7bDU8j0bnKoEAQ",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/chalk-outline-murder-%23ffffff-%233da7db.svg",
+            "name": "Troublemaker",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
         "granted": false,
         "advancement": 0
       }
@@ -250,7 +303,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718257558329,
-    "modifiedTime": 1718830259332,
+    "modifiedTime": 1718908091129,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "H3sZw5p57hkIAuMM",

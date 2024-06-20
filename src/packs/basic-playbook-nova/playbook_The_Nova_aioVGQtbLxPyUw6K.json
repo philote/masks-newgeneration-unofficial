@@ -225,9 +225,9 @@
         "repeatable": true,
         "choices": [
           {
-            "name": "Burn",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/burning-passion-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-nova.Item.85dJPVC2vJl9GBTq",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/burning-passion-%23ffffff-%233da7db.svg",
+            "name": "Burn",
             "granted": false,
             "advancement": 0
           },
@@ -249,6 +249,87 @@
         "grantOn": 0,
         "granted": false,
         "advancement": 0
+      },
+      {
+        "title": "Flares",
+        "desc": "Choose four flares",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-nova.Item.9tuNTC2QTrFSO3V3",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/muscle-up-%23ffffff-%233da7db.svg",
+            "name": "Boost (Flare)",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-nova.Item.H3WhggOe7aabWZs6",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/spark-spirit-%23ffffff-%233da7db.svg",
+            "name": "Constructs (Flare)",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-nova.Item.BvIo4S89n3XQ5Xuq",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/awareness-%23ffffff-%233da7db.svg",
+            "name": "Elemental Awareness (Flare)",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-nova.Item.vY5TpUxvsf9r3AaI",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/barrier-%23ffffff-%233da7db.svg",
+            "name": "Moat (Flare)",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-nova.Item.AgqoeeisMwzcNJUH",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/move-%23ffffff-%233da7db.svg",
+            "name": "Move (Flare)",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-nova.Item.kVJ30EaKnjC933tf",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/overdrive-%23ffffff-%233da7db.svg",
+            "name": "Overcharge (Flare)",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-nova.Item.IPlbWxyKTiNGMBs9",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/lightning-flame-%23ffffff-%233da7db.svg",
+            "name": "Reality Storm (Flare)",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-nova.Item.tuTEXiS5JZbg1SvW",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/fire-shield-%23ffffff-%233da7db.svg",
+            "name": "Shielding (Flare)",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-nova.Item.t5EuwIWM2cXIrBgx",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/snatch-%23ffffff-%233da7db.svg",
+            "name": "Snatch (Flare)",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "Worship (Flare)",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/kneeling-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-nova.Item.HQmabaAsctpCteYW",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
+        "granted": false,
+        "advancement": 0
       }
     ]
   },
@@ -264,7 +345,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718260931443,
-    "modifiedTime": 1718830070158,
+    "modifiedTime": 1718910875738,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "aioVGQtbLxPyUw6K",

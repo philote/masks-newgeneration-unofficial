@@ -228,21 +228,36 @@
       "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>I’ve earned the trust of _________________, and I follow their example of what a hero should be.</p>      <p>I did something terrible to __________________ once. I hope they can forgive me one day.</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>You’ve seen your greatest mistakes, and the rest of the world has, too. They’re all watching you now, judging every move you make. When everything is on the line and your back is against the wall, though, you’ll show them what you’re made of—that being a hero is a choice. An act of will. And you’ve got what it takes to save the day. Of course, afterward, you can expect both sides, hero and villain, to deeply question where your loyalties truly lie...</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "teamQuestion": {
         "label": "When our team first came together...",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>We fought a terrible enemy from my old life. Who was it and what did they take from me?</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       }
@@ -257,9 +272,9 @@
         "repeatable": true,
         "choices": [
           {
-            "name": "Friends in Low Places",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/handcuffed-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-reformed.Item.zgT2HTOZKOiKXC6T",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/handcuffed-%23ffffff-%233da7db.svg",
+            "name": "Friends in Low Places",
             "granted": false,
             "advancement": 0
           },
@@ -281,6 +296,59 @@
         "grantOn": 0,
         "granted": false,
         "advancement": 0
+      },
+      {
+        "title": "Reformed Moves",
+        "desc": "Choose two",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-reformed.Item.dM79Yu6FEErjiGqG",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/spray-%23ffffff-%233da7db.svg",
+            "name": "Blowing Off Steam",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-reformed.Item.RoWwnQL90kHttvJ2",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/mug-shot-%23ffffff-%233da7db.svg",
+            "name": "Dark Past",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-reformed.Item.N4IeW25LaOUGJ7Bh",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/phone-%23ffffff-%233da7db.svg",
+            "name": "Do Me A Favor",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-reformed.Item.3LSUunBV0isZW3jk",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/prisoner-%23ffffff-%233da7db.svg",
+            "name": "Not So Different",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-reformed.Item.6h2iXcUQjPXb2fxQ",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/pointing-%23ffffff-%233da7db.svg",
+            "name": "What the Hell, Hero",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "Wrong Side of the Tracks",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/rail-road-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-reformed.Item.J6MDsKy2ONsaOueR",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
+        "granted": false,
+        "advancement": 0
       }
     ]
   },
@@ -293,7 +361,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1718828944101,
+    "modifiedTime": 1718912624849,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

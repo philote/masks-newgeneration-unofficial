@@ -37,7 +37,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Legacy",
+    "playbook": "9",
     "rollType": "savior",
     "rollMod": 0,
     "choices": "<ul>\n<li>You get an opportunity or opening against your attacker</li>\n<li>You rally from the hit, and it inspires the team; add 1 Team to the pool</li>\n<li>You keep your attacker&rsquo;s attention</li>\n</ul>",
@@ -52,7 +52,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1718674178420,
+    "modifiedTime": 1718910970264,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

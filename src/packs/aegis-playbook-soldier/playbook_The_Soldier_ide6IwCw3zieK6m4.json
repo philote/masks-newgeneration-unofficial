@@ -223,9 +223,16 @@
         "repeatable": true,
         "choices": [
           {
-            "name": "A Higher Calling",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/law-star-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.148GpsSskloolq8C",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/law-star-%23ffffff-%233da7db.svg",
+            "name": "A Higher Calling",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.Lll1XpXdEwFqjDJE",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/elevator-%23ffffff-%233da7db.svg",
+            "name": "Before We Get Started",
             "granted": false,
             "advancement": 0
           },
@@ -247,6 +254,52 @@
         "grantOn": 0,
         "granted": false,
         "advancement": 0
+      },
+      {
+        "title": "Soldier Moves",
+        "desc": "Choose one",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.gq9ZwbYOjKAAxdmm",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/trash-can-%23ffffff-%233da7db.svg",
+            "name": "I Can Do This All Day",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.8qy5VrWDMAr8ckBn",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/skull-crossed-bones-%23ffffff-%233da7db.svg",
+            "name": "It Kinda Feels Personal",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.3pK4oPVsaAmxrEd2",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/brodie-helmet-%23ffffff-%233da7db.svg",
+            "name": "Mission First",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.cirOaPpafyBlNawi",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/american-shield-%23ffffff-%233da7db.svg",
+            "name": "More Than A Shield",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "No, You Move",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/congress-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-soldier.Item.5FYzfFp589kdd5Hq",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
+        "granted": false,
+        "advancement": 0
       }
     ]
   },
@@ -262,7 +315,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718262718363,
-    "modifiedTime": 1718829728890,
+    "modifiedTime": 1718912482030,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "ide6IwCw3zieK6m4",

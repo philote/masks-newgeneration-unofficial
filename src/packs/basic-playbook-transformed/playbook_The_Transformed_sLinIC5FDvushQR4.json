@@ -218,9 +218,9 @@
         "repeatable": true,
         "choices": [
           {
-            "name": "Team Move - Share a Triumphant Celebration",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.osYGF8n6N7RHq8c9",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/three-friends-%23ffffff-%233da7db.svg",
+            "name": "Team Move - Share a Triumphant Celebration",
             "granted": false,
             "advancement": 0
           },
@@ -233,6 +233,59 @@
           }
         ],
         "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      },
+      {
+        "title": "Transformed Moves",
+        "desc": "Choose Three",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.cuRPcDPrjbO4sSkk",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/frankenstein-creature-%23ffffff-%233da7db.svg",
+            "name": "Be The Monster",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.rBp1TAjpQCnSnydG",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/target-dummy-%23ffffff-%233da7db.svg",
+            "name": "Coming For You",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.QdaMEZ10LHjTzN3e",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/rock-golem-%23ffffff-%233da7db.svg",
+            "name": "I Am Not My Body",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.v8KMWk8A997WNMHR",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/mighty-force-%23ffffff-%233da7db.svg",
+            "name": "Not Human Enough",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.KVD2hGeXUUBpXZio",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/bulldozer-%23ffffff-%233da7db.svg",
+            "name": "Unstoppable",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "Wish I Could Be",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/suspicious-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-transformed.Item.s7eFqYiXyXFs5jzS",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
         "granted": false,
         "advancement": 0
       }
@@ -250,7 +303,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718261806917,
-    "modifiedTime": 1718829867845,
+    "modifiedTime": 1718911818911,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "sLinIC5FDvushQR4",

@@ -62,14 +62,67 @@
             "advancement": 0
           },
           {
-            "name": "Your Future Self",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/cyborg-face-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-innocent.Item.G7BR8AutpZGsV7hL",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/cyborg-face-%23ffffff-%233da7db.svg",
+            "name": "Your Future Self",
             "granted": false,
             "advancement": 0
           }
         ],
         "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      },
+      {
+        "title": "Innocent Moves",
+        "desc": "Choose two",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-innocent.Item.rBBGbIyvM4go6LBI",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/progression-%23ffffff-%233da7db.svg",
+            "name": "Growing Into Power",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-innocent.Item.Lam6vm4aVNqV7KjG",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/open-palm-%23ffffff-%233da7db.svg",
+            "name": "Making Amends",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-innocent.Item.GUbKuz9YvlBqvw4b",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/stigmata-%23ffffff-%233da7db.svg",
+            "name": "Martyr",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-innocent.Item.sLPKUMOq5qUxkDAL",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/six-eyes-%23ffffff-%233da7db.svg",
+            "name": "See It Their Way",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-innocent.Item.jiR574f9xlrXbeUT",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/smartphone-%23ffffff-%233da7db.svg",
+            "name": "What's This Thing?",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "White Knight",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/chess-knight-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-innocent.Item.pA24Fo2XoEtZd3WS",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
         "granted": false,
         "advancement": 0
       }
@@ -225,21 +278,36 @@
       "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>__________________ is helping me understand this weirdo future. I follow their lead.</p>      <p>I saved someone important to __________________; they’re now my biggest defender.</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>You’ve fought, struggled, and worked so hard to figure out who you are, whether you’re just the same as your future self or whether you’re different...but right now, that’s all out the window. The distinction between your future self and your present self vanishes in the face of the trial before you, and you become exactly the powerful, adamant figure that everyone fears or hopes you will one day become. You can do exactly what your future self could do, and everyone around you sees them in you more clearly than ever. Of course, after this it’s going to be hard to treat you as two different people...</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "teamQuestion": {
         "label": "When our team first came together...",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>My future self was involved, and I tried to stop them. It took the rest of the team to help me succeed. How did we stymie my future self ’s plans?</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       }
@@ -255,7 +323,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1718828915544,
+    "modifiedTime": 1718912840479,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

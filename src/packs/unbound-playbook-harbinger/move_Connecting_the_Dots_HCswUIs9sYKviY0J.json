@@ -35,7 +35,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Harbinger",
+    "playbook": "",
     "rollType": "prompt",
     "rollMod": 0,
     "choices": "",
@@ -50,7 +50,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858426966,
-    "modifiedTime": 1718674181648,
+    "modifiedTime": 1718912085868,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

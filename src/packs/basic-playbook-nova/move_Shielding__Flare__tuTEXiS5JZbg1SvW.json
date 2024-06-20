@@ -37,7 +37,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Nova",
+    "playbook": "12",
     "rollType": "freak",
     "rollMod": 0,
     "choices": "<ul>\n<li>Add a Team to the pool</li>\n<li>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.PzqlHqRhI7uRWAxR]</li>\n<li>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.UQp2JmzBob2lVP3C]{Clear a Condition}</li>\n</ul>",
@@ -52,7 +52,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1718674178854,
+    "modifiedTime": 1718910789337,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

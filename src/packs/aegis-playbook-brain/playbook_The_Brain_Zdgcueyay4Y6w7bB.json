@@ -243,14 +243,67 @@
             "advancement": 0
           },
           {
-            "name": "Your Shame",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/dunce-cap-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-brain.Item.5aPckBvGdScPG4lM",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/dunce-cap-%23ffffff-%233da7db.svg",
+            "name": "Your Shame",
             "granted": false,
             "advancement": 0
           }
         ],
         "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      },
+      {
+        "title": "Brain Moves",
+        "desc": "Choose three",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-brain.Item.2vXM6w3O50MhE1lp",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/encirclement-%23ffffff-%233da7db.svg",
+            "name": "Above the Fray",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-brain.Item.PgmwFEYNbWB60UQW",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/processor-%23ffffff-%233da7db.svg",
+            "name": "Always Prepared",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-brain.Item.ccL2oS0ISIAqaz34",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/brain-%23ffffff-%233da7db.svg",
+            "name": "Logical Angle",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-brain.Item.mZ1KtsTyXbsYCWyz",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/cloud-download-%23ffffff-%233da7db.svg",
+            "name": "Mission Debrief",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-brain.Item.UHhihPIuKaiMvJuF",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/erlenmeyer-%23ffffff-%233da7db.svg",
+            "name": "Scientific Insight",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "Tactical Genius",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/brainstorm-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.aegis-playbook-brain.Item.It9z4Zxb1xUpejVO",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
         "granted": false,
         "advancement": 0
       }
@@ -268,7 +321,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718262093687,
-    "modifiedTime": 1718829803789,
+    "modifiedTime": 1718912405690,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "Zdgcueyay4Y6w7bB",

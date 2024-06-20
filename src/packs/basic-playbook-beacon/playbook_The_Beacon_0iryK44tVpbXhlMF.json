@@ -239,8 +239,8 @@
       {
         "title": "Core Playbook Moves",
         "desc": "",
-        "grantOn": 0,
-        "advancement": 0,
+        "type": "multi",
+        "repeatable": true,
         "choices": [
           {
             "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.V9TJpzXAyulP7Bd5",
@@ -264,9 +264,62 @@
             "advancement": 0
           }
         ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      },
+      {
+        "title": "Beacon Moves",
+        "desc": "Choose two",
         "type": "multi",
         "repeatable": true,
-        "granted": false
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.lPtT1S2tHJOchE3F",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/sitting-dog-%23ffffff-%233da7db.svg",
+            "name": "C’mon, Lucky",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.PTEHUoWI1ApWH8mV",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/bow-arrow-%23ffffff-%233da7db.svg",
+            "name": "No Powers and Not Nearly Enough Training",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.0ilDMC4CPIvQYpwf",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/supersonic-arrow-%23ffffff-%233da7db.svg",
+            "name": "Pretty Much a Superhero",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.1yV9gdN04hbpeTQe",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/spy-%23ffffff-%233da7db.svg",
+            "name": "Straight. Up. Creepin’",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.xVgfLmI5v4pCCxUr",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/charged-arrow-%23ffffff-%233da7db.svg",
+            "name": "Suck it, Domitian",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "Won't Let You Down",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/high-five-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.MVKKsnk6eT36LNdO",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
+        "granted": false,
+        "advancement": 0
       }
     ]
   },
@@ -281,7 +334,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718253072304,
-    "modifiedTime": 1718830432921,
+    "modifiedTime": 1718907638509,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "0iryK44tVpbXhlMF",

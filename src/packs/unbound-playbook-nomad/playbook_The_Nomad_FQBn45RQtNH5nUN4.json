@@ -47,9 +47,9 @@
         "repeatable": true,
         "choices": [
           {
-            "name": "Putting Down Roots",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/plant-roots-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-nomad.Item.dd9JX7X4CcymgjAK",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/plant-roots-%23ffffff-%233da7db.svg",
+            "name": "Putting Down Roots",
             "granted": false,
             "advancement": 0
           },
@@ -69,6 +69,59 @@
           }
         ],
         "grantOn": 0,
+        "granted": false,
+        "advancement": 0
+      },
+      {
+        "title": "Nomad Moves",
+        "desc": "Choose Two",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-nomad.Item.Fe0pgzg2BSZmk0oh",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/cavalry-%23ffffff-%233da7db.svg",
+            "name": "I Hate Calling the Cavalry",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-nomad.Item.QFsDRHG48Ak6alnL",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/treehouse-%23ffffff-%233da7db.svg",
+            "name": "No Good At Being A Kid",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-nomad.Item.UTHT0PazrgCEIKGC",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/headphones-%23ffffff-%233da7db.svg",
+            "name": "Out Of This World",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-nomad.Item.evojX8BAiWelkDnQ",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/eye-target-%23ffffff-%233da7db.svg",
+            "name": "Sharpened Eyes",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-nomad.Item.r4WZHDUdLRewPUcN",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/slingshot-%23ffffff-%233da7db.svg",
+            "name": "The Littlest Space Bandit",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "Watched C-Beams Glitter",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/astronaut-helmet-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-nomad.Item.wu6HgKNHy27krvTx",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
         "granted": false,
         "advancement": 0
       }
@@ -252,7 +305,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858426966,
-    "modifiedTime": 1718830577049,
+    "modifiedTime": 1718912226072,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

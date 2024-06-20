@@ -2,7 +2,7 @@
   "name": "Bull's Heart: Enabler",
   "type": "move",
   "_id": "9jGpOel5EagP7WU4",
-  "img": "icons/svg/aura.svg",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/centaur-heart-%23ffffff-%233da7db.svg",
   "system": {
     "description": "<p><strong>Enabler:</strong> When you provoke your love or rival, roll + Danger if you are trying to provoke them to rash or poorly thought out action.</p>",
     "moveType": "playbook",
@@ -25,7 +25,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Bull",
+    "playbook": "",
     "rollType": "danger",
     "rollMod": 0,
     "actorType": "character",
@@ -44,7 +44,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1710990629986,
-    "modifiedTime": 1718674176781,
+    "modifiedTime": 1718907867566,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

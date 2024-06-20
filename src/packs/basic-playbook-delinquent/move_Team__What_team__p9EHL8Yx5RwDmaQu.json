@@ -1,0 +1,53 @@
+{
+  "name": "Team? What team?",
+  "type": "move",
+  "_id": "p9EHL8Yx5RwDmaQu",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/team-downgrade-%23ffffff-%233da7db.svg",
+  "system": {
+    "description": "<div class=\"page\" title=\"Page 6\">\n<div class=\"section\">\n<div class=\"layoutArea\">\n<div class=\"column\">\n<p><strong>When you use Team selfishly</strong>, clear a condition or mark potential.</p>\n<p>The first time in a session that you use Team to help a teammate, take +1 forward.</p>\n</div>\n</div>\n</div>\n</div>",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "Complications...",
+        "value": ""
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "Partial success",
+        "value": ""
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "Success!",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "playbook": "3",
+    "rollType": "",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "6hjjFCY28uGRsfsB": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.327",
+    "systemId": "pbta",
+    "systemVersion": "1.0.14",
+    "createdTime": 1718907980927,
+    "modifiedTime": 1718908082140,
+    "lastModifiedBy": "6hjjFCY28uGRsfsB"
+  },
+  "_key": "!items!p9EHL8Yx5RwDmaQu"
+}

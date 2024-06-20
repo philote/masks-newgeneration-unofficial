@@ -37,7 +37,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Nova",
+    "playbook": "12",
     "rollType": "",
     "rollMod": 0,
     "choices": "",
@@ -52,7 +52,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1718674178816,
+    "modifiedTime": 1718910818460,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

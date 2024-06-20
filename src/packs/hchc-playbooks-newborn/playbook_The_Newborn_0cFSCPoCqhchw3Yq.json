@@ -190,21 +190,36 @@
       "relationshipQuestions": {
         "label": "Relationships",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>________________ is an exemplary human; they show you around and tell you how things work.</p>      <p>The behavior of ________________ confuses you again and again; you’re determined to understand humanity better by studying them.</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "momentOfTruth": {
         "label": "Moment of Truth",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>Something snaps into focus, and suddenly you’re a full thing, true and complete. You’d never have known how fragmented you were before, if not for here, this moment. You’re not a series of individual lessons. You’re not a series of subroutines and programs. You’re...a person. This must be what it’s like to be...human. And this fullness? It gives you a control over yourself, a unity of purpose you’ve never experienced before. Of course, now that you’re showing off all your potential, it’s only a matter of time before someone comes forward to reduce you to a machine again...</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       },
       "teamQuestion": {
         "label": "When our team first came together...",
         "type": "LongText",
-        "choices": [],
+        "choices": [
+          {
+            "value": "<p>The team discovered you during the incident; thanks to them, you reached the outside world and helped in the fight. Where and how did they find you? Who gave you your first nickname?</p>",
+            "options": {}
+          }
+        ],
         "custom": false,
         "path": "attributes"
       }
@@ -218,9 +233,9 @@
         "repeatable": true,
         "choices": [
           {
-            "name": "A Blank Slate",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/android-mask-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-newborn.Item.BE7s7N6COZdUfRxx",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/android-mask-%23ffffff-%233da7db.svg",
+            "name": "A Blank Slate",
             "granted": false,
             "advancement": 0
           },
@@ -242,6 +257,52 @@
         "grantOn": 0,
         "granted": false,
         "advancement": 0
+      },
+      {
+        "title": "Newborn Moves",
+        "desc": "Choose two",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-newborn.Item.dPzTDx4wwoZd8T3N",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/dna1-%23ffffff-%233da7db.svg",
+            "name": "A Mind of Their Own",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-newborn.Item.2RzWo1lB4JvpEHwj",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/broken-bone-%23ffffff-%233da7db.svg",
+            "name": "Damage",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-newborn.Item.RuUIulSPL9gnVq5m",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/misdirection-%23ffffff-%233da7db.svg",
+            "name": "Not From Around Here",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-newborn.Item.LG4iJqfKX6B2ThFB",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/regeneration-%23ffffff-%233da7db.svg",
+            "name": "Regeneration",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "Thermodynamic Miracle",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/snowflake-1-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.hchc-playbook-newborn.Item.5YXzfZWJ4fzU77yZ",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0
       }
     ],
     "statsDetail": "(at character creation, add +1 wherever you choose)"
@@ -255,7 +316,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699857899394,
-    "modifiedTime": 1718828952190,
+    "modifiedTime": 1718912708021,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

@@ -226,9 +226,9 @@
         "repeatable": true,
         "choices": [
           {
-            "name": "Connecting the Dots",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/mesh-network-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-harbinger.Item.HCswUIs9sYKviY0J",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/mesh-network-%23ffffff-%233da7db.svg",
+            "name": "Connecting the Dots",
             "granted": false,
             "advancement": 0
           },
@@ -250,6 +250,59 @@
         "grantOn": 0,
         "granted": false,
         "advancement": 0
+      },
+      {
+        "title": "Harbinger Moves",
+        "desc": "Choose two",
+        "type": "multi",
+        "repeatable": true,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-harbinger.Item.Z5cpphuaB1y6d3XD",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/book-pile-%23ffffff-%233da7db.svg",
+            "name": "21st Century Studies",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-harbinger.Item.S069QFyGbv2zpuqY",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/philosopher-bust-%23ffffff-%233da7db.svg",
+            "name": "Applied History",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-harbinger.Item.y4PSk1UGtUCG9yOL",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/teacher-%23ffffff-%233da7db.svg",
+            "name": "I Learned the Solution in Grade School",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-harbinger.Item.pe5bJn54tInUblQY",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/surrounded-shield-%23ffffff-%233da7db.svg",
+            "name": "Stick to the Mission",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-harbinger.Item.yFAN6PpCiKocEJOM",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/sunrise-%23ffffff-%233da7db.svg",
+            "name": "Tomorrow’s Golden Promise",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "name": "You Haven’t Learned You Can Do That Yet",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/time-trap-%23ffffff-%233da7db.svg",
+            "uuid": "Compendium.masks-newgeneration-unofficial.unbound-playbook-harbinger.Item.1I6S69JEkM6y2Qw2",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "grantOn": 1,
+        "granted": false,
+        "advancement": 0
       }
     ],
     "slug": "the-harbinger",
@@ -264,7 +317,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858426966,
-    "modifiedTime": 1718830645745,
+    "modifiedTime": 1718912072763,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

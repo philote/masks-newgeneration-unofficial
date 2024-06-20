@@ -216,19 +216,106 @@
         ],
         "custom": false,
         "path": "attributes"
+      },
+      "bringsDoomCloser": {
+        "type": "ListMany",
+        "label": "Doom",
+        "options": {
+          "0": {
+            "label": "overexerting yourself",
+            "value": false
+          },
+          "1": {
+            "label": "injuring innocents",
+            "value": false
+          },
+          "2": {
+            "label": "facing danger alone",
+            "value": false
+          },
+          "3": {
+            "label": "frightening loved ones",
+            "value": false
+          },
+          "4": {
+            "label": "showing mercy",
+            "value": false
+          },
+          "5": {
+            "label": "talking about it openly",
+            "value": false
+          }
+        },
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "label": "overexerting yourself",
+                "value": false
+              },
+              "1": {
+                "label": "injuring innocents",
+                "value": false
+              },
+              "2": {
+                "label": "facing danger alone",
+                "value": false
+              },
+              "3": {
+                "label": "frightening loved ones",
+                "value": false
+              },
+              "4": {
+                "label": "showing mercy",
+                "value": false
+              },
+              "5": {
+                "label": "talking about it openly",
+                "value": false
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "doomedSanctuaryFeatures": {
+        "type": "LongText",
+        "label": "Sanctuary Downsides",
+        "choices": [
+          {
+            "value": "<div class=\"page\" title=\"Page 8\">      <div class=\"section\">      <div class=\"layoutArea\">      <div class=\"column\">      <p>An aide or assistant; locks and traps; a library of valuable tomes; a scattering of ancient relics; a teleportal; a containment system; a powerful computer; useful tools; a meditation space; a power battery; a power enhancement system; healing equipment; art, music, and food</p>      </div>      </div>      </div>      </div>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
+      },
+      "doomedSanctuaryDownsides": {
+        "type": "LongText",
+        "label": "Sanctuary Downsides",
+        "choices": [
+          {
+            "value": "<div class=\"page\" title=\"Page 8\">      <div class=\"section\">      <div class=\"layoutArea\">      <div class=\"column\">      <p>Difficult to access, draws dangerous attention, location known to many, easily damaged or tampered with, tied intricately to your doom</p>      </div>      </div>      </div>      </div>",
+            "options": {}
+          }
+        ],
+        "custom": false,
+        "path": "attributes"
       }
     },
     "choiceSets": [
       {
         "title": "Core Playbook Moves",
         "desc": "",
-        "type": "multi",
-        "repeatable": true,
+        "grantOn": 0,
+        "advancement": 0,
         "choices": [
           {
-            "name": "Doom",
-            "img": "modules/masks-newgeneration-unofficial/images/gameicons/death-note-%23ffffff-%233da7db.svg",
             "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-doomed.Item.S6qLyKvutRXBUm6w",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/death-note-%23ffffff-%233da7db.svg",
+            "name": "Doom",
             "granted": false,
             "advancement": 0
           },
@@ -254,9 +341,55 @@
             "advancement": 0
           }
         ],
-        "grantOn": 0,
-        "granted": false,
-        "advancement": 0
+        "type": "multi",
+        "repeatable": true,
+        "granted": false
+      },
+      {
+        "title": "Doomsigns",
+        "desc": "Choose one doomsign you already hold at character creation.",
+        "grantOn": 1,
+        "advancement": 0,
+        "choices": [
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-doomed.Item.1U52p4ehuhChMI6s",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/ages.svg",
+            "name": "Bolstered (Doomsign)",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-doomed.Item.uiBLBbqD0pCTb8m1",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/candlebright-%23ffffff-%233da7db.svg",
+            "name": "Burning Bright (Doomsign)",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-doomed.Item.XW49wN9ieAj3rCTh",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/cursed-star-%23ffffff-%233da7db.svg",
+            "name": "Dark Visions (Doomsign)",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-doomed.Item.7HENgU1MH0FwzVsq",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/ouroboros-%23ffffff-%233da7db.svg",
+            "name": "Infinite Powers (Doomsign)",
+            "granted": false,
+            "advancement": 0
+          },
+          {
+            "uuid": "Compendium.masks-newgeneration-unofficial.basic-playbook-doomed.Item.Y17RfwfpmYa3hv6P",
+            "img": "modules/masks-newgeneration-unofficial/images/gameicons/magic-portal-%23ffffff-%233da7db.svg",
+            "name": "Portal (Doomsign)",
+            "granted": false,
+            "advancement": 0
+          }
+        ],
+        "type": "multi",
+        "repeatable": true,
+        "granted": false
       }
     ]
   },
@@ -272,7 +405,7 @@
     "systemId": "pbta",
     "systemVersion": "1.0.14",
     "createdTime": 1718258337076,
-    "modifiedTime": 1718828871570,
+    "modifiedTime": 1718909947127,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "Sblehr0zwyebBGOl",

@@ -2,7 +2,7 @@
   "name": "Bull's Heart: Friend",
   "type": "move",
   "_id": "JQHyAAp1wOlnfvIc",
-  "img": "icons/svg/aura.svg",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/centaur-heart-%23ffffff-%233da7db.svg",
   "system": {
     "description": "<p><strong>Friend:</strong> When you comfort or support your love or rival, mark potential on a hit. When your love or rival comforts or supports you, mark potential when they roll a hit. </p>",
     "moveType": "playbook",
@@ -25,7 +25,7 @@
       }
     },
     "uses": 0,
-    "playbook": "The Bull",
+    "playbook": "",
     "rollType": "",
     "rollMod": 0,
     "actorType": "character",
@@ -44,7 +44,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1710990612745,
-    "modifiedTime": 1718674176818,
+    "modifiedTime": 1718907875733,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

@@ -2,7 +2,7 @@
   "name": "Bull's Heart: Defender",
   "type": "move",
   "_id": "T2rTrT4igki5rbhK",
-  "img": "icons/svg/aura.svg",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/centaur-heart-%23ffffff-%233da7db.svg",
   "system": {
     "description": "<p><strong>Defender:</strong> When you leap to defend your love or rival in battle, roll + Danger instead of + Savior to defend them.</p>\n<p> </p>",
     "moveType": "playbook",
@@ -44,7 +44,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1710990605554,
-    "modifiedTime": 1718674176878,
+    "modifiedTime": 1718907858138,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null
