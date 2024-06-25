@@ -1,6 +1,5 @@
 #1.7.2
 - Added item granting from playbooks when a playbook is added to a character
-- Improved layout with Social and Advancement Tabs
 
 #1.7.1
 - Fixed buts in the Team question, Relationship questions, Moment of truth, and advances (they were not saving)
