@@ -10,6 +10,7 @@
   --masks-title-text-color: #173f6e;
   --masks-input-text-color: #000000;
   --masks-input-placeholder-color: #979797;
+  --masks-input-disabled-color: #0e2949;
 
   --masks-interactive-bg-color: #1e528f;
   --masks-interactive-bg-hover-color: #173f6e;
@@ -62,7 +63,7 @@
   select:disabled, 
   textarea:disabled {
     background: rgba(153,153,153,.2509803922);
-    color: var(--masks-resource-border-color);
+    color: var(--masks-input-disabled-color);
   }
 
   input::placeholder {

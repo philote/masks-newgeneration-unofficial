@@ -86,7 +86,8 @@
         "path": "attributes",
         "value": "",
         "max": null,
-        "options": {}
+        "options": {},
+        "description": ""
       },
       "laterAdvances": {
         "label": "Later Advances",
@@ -126,7 +127,8 @@
         "path": "attributes",
         "value": "",
         "max": null,
-        "options": {}
+        "options": {},
+        "description": ""
       },
       "look": {
         "label": "Look",
@@ -141,7 +143,8 @@
         "custom": false,
         "path": "details",
         "max": null,
-        "options": {}
+        "options": {},
+        "description": ""
       },
       "abilities": {
         "label": "Abilities",
@@ -156,7 +159,8 @@
         "custom": false,
         "path": "details",
         "max": null,
-        "options": {}
+        "options": {},
+        "description": ""
       },
       "backstory": {
         "label": "Backstory",
@@ -171,7 +175,8 @@
         "custom": false,
         "path": "details",
         "max": null,
-        "options": {}
+        "options": {},
+        "description": ""
       },
       "theBeacon": {
         "type": "ListMany",
@@ -208,7 +213,8 @@
           }
         ],
         "custom": false,
-        "path": "attributes"
+        "path": "attributes",
+        "description": ""
       },
       "momentOfTruth": {
         "label": "Moment of Truth",
@@ -220,7 +226,8 @@
           }
         ],
         "custom": false,
-        "path": "attributes"
+        "path": "attributes",
+        "description": ""
       },
       "teamQuestion": {
         "label": "When our team first came together...",
@@ -232,7 +239,8 @@
           }
         ],
         "custom": false,
-        "path": "attributes"
+        "path": "attributes",
+        "description": ""
       }
     },
     "choiceSets": [
@@ -332,9 +340,9 @@
     "duplicateSource": null,
     "coreVersion": "12.327",
     "systemId": "pbta",
-    "systemVersion": "1.0.14",
+    "systemVersion": "1.0.15",
     "createdTime": 1718253072304,
-    "modifiedTime": 1718907638509,
+    "modifiedTime": 1719204118728,
     "lastModifiedBy": "6hjjFCY28uGRsfsB"
   },
   "_id": "0iryK44tVpbXhlMF",

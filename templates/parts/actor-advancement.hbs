@@ -13,7 +13,6 @@
 			{{#if system.attributes.advancements.description}}<p class="cell__description cell__description--attr">{{system.attributes.advancements.description}}</p>{{/if}}
 			<ul class="cell__checkboxes flexcol">
 				{{#each system.attributes.advancements.options as |option optionKey|}}
-					{{log option}}
 					<label
 						class="flexrow"
 						{{#if option.tooltip}}
