@@ -73,6 +73,10 @@
 
 .pbta.sheet {
 
+  .sheet-header__fields .advancement {
+    display: none;
+  }
+
   .cell__title.warning {
     background-color: #d68888;
     color: #000000;
@@ -431,7 +435,6 @@
     font-size: 22px;
 
     &::before {
-      // z-index: -1;
       content: "";
       position: absolute;
       left: 7px;
@@ -443,7 +446,6 @@
     }
 
     &::after {
-      // z-index: -1;
       content: "";
       position: absolute;
       left: 0;
