@@ -16,7 +16,6 @@ Hooks.once("init", () => {
         label: 'MASKS-SHEETS.SheetConfig.character',
     });
 
-
     game.settings.register("masks-newgeneration-unofficial", "enable_dark_mode", {
         name: "MASKS-SHEETS.Settings.enable_dark_mode.name",
         hint: "MASKS-SHEETS.Settings.enable_dark_mode.hint",
@@ -37,8 +36,44 @@ Hooks.once("init", () => {
 		head.appendChild(link);
 	}
 
+    // Register settings
+    game.settings.register('masks-newgeneration-unofficial', 'firstTime', {
+        name: 'First Time Startup',
+        scope: 'world',
+        config: false,
+        type: Boolean,
+        default: true,
+    });
+
     // Preload Handlebars stuff.
     utils.preloadHandlebarsTemplates();
+});
+
+Hooks.once('ready', function () {
+    if (!game.settings.get('masks-newgeneration-unofficial', 'firstTime')) return;
+    game.settings.set('masks-newgeneration-unofficial', 'firstTime', false);
+  
+    const callback = async () => {
+      const worldData = {
+        id: game.world.id,
+        action: 'editWorld',
+        background: `modules/masks-newgeneration-unofficial/images/login-bg-lt.webp`,
+      };
+      const response = await foundry.utils.fetchJsonWithTimeout(foundry.utils.getRoute('setup'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(worldData),
+      });
+      game.world.updateSource(response);
+    };
+  
+    foundry.applications.api.DialogV2.confirm({
+      window: { title: 'Welcome to Masks: A New Generation!' },
+      content: '<p>Would you like to use a Masks theme for your login screen?</p>',
+      rejectClose: false,
+      modal: true,
+      yes: { callback: callback },
+    });
 });
 
 Hooks.once('pbtaSheetConfig', () => {
@@ -56,7 +91,11 @@ Hooks.once('pbtaSheetConfig', () => {
     game.settings.set('pbta', 'hideRollMode', true);
     game.settings.set('pbta', 'hideUses', true);
     
-    if (isNewerVersion(game.system.version, '1.0.4')) {
+    if (game.settings.settings.has('pbta.hideAdvancement')) {
+        game.settings.set('pbta', 'hideAdvancement', true);
+    }
+
+    if (game.settings.settings.has('pbta.hideHold')) {
         game.settings.set('pbta', 'hideHold', true);
     }
 });
