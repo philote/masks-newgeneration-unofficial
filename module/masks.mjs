@@ -92,7 +92,7 @@ Hooks.once('pbtaSheetConfig', () => {
     game.settings.set('pbta', 'hideUses', true);
     
     if (game.settings.settings.has('pbta.hideAdvancement')) {
-        game.settings.set('pbta', 'hideAdvancement', true);
+        game.settings.set('pbta', 'hideAdvancement', "both");
     }
 
     if (game.settings.settings.has('pbta.hideHold')) {
