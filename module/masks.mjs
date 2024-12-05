@@ -49,31 +49,66 @@ Hooks.once("init", () => {
     utils.preloadHandlebarsTemplates();
 });
 
-Hooks.once('ready', function () {
-    if (!game.settings.get('masks-newgeneration-unofficial', 'firstTime')) return;
-    game.settings.set('masks-newgeneration-unofficial', 'firstTime', false);
-  
-    const callback = async () => {
-      const worldData = {
-        id: game.world.id,
-        action: 'editWorld',
-        background: `modules/masks-newgeneration-unofficial/images/login-bg-lt.webp`,
-      };
-      const response = await foundry.utils.fetchJsonWithTimeout(foundry.utils.getRoute('setup'), {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(worldData),
-      });
-      game.world.updateSource(response);
-    };
-  
-    foundry.applications.api.DialogV2.confirm({
-      window: { title: 'Welcome to Masks: A New Generation!' },
-      content: '<p>Would you like to use a Masks theme for your login screen?</p>',
-      rejectClose: false,
-      modal: true,
-      yes: { callback: callback },
-    });
+Hooks.once('ready', async function () {
+    if (!game.user.isGM) return;
+    if (game.settings.get('masks-newgeneration-unofficial', 'firstTime')) {
+        game.settings.set('masks-newgeneration-unofficial', 'firstTime', false);
+
+        const callback = async () => {
+            game.settings.set('masks-newgeneration-unofficial', 'firstTime', true);
+            const worldData = {
+                id: game.world.id,
+                action: 'editWorld',
+                background: `modules/masks-newgeneration-unofficial/images/login-bg-lt.webp`,
+            };
+            let response;
+            try {
+                response = await foundry.utils.fetchJsonWithTimeout(foundry.utils.getRoute('setup'), {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(worldData),
+                });
+                if (response.error) {
+                        ui.notifications.error(response.error);
+                } else if (!response) {
+                        game.world.updateSource(response);
+                }
+            } catch (e) {
+                return ui.notifications.error(e);
+            }
+        };
+
+        foundry.applications.api.DialogV2.confirm({
+            window: { title: 'Welcome to Masks: A New Generation!' },
+            content: '<p>Would you like to use a Masks theme for your login screen?</p>',
+            rejectClose: false,
+            modal: true,
+            yes: { callback: callback },
+        });
+    } else {
+        if (game.settings.get('masks-newgeneration-unofficial', 'enableLoginImg')) {
+            const worldData = {
+                id: game.world.id,
+                action: 'editWorld',
+                background: `modules/masks-newgeneration-unofficial/images/login-bg-lt.webp`,
+            };
+            let response;
+            try {
+                response = await foundry.utils.fetchJsonWithTimeout(foundry.utils.getRoute('setup'), {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(worldData),
+                });
+                if (response.error) {
+                    ui.notifications.error(response.error);
+                } else if (!response) {
+                    game.world.updateSource(response);
+                }
+            } catch (e) {
+              return ui.notifications.error(e);
+            }
+        }
+    }
 });
 
 Hooks.once('pbtaSheetConfig', () => {
