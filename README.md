@@ -2,21 +2,21 @@
 
 <p align="center">
     <img alt="Foundry Version 12 support" src="https://img.shields.io/badge/Foundry-v12-informational">
-    <img alt="Latest Release Download Count" src="https://img.shields.io/github/downloads/philote/fellowship-pbta/latest/total"> 
-    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/philote/fellowship-pbta"> 
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/philote/fellowship-pbta">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/philote/fellowship-pbta">
+    <img alt="Latest Release Download Count" src="https://img.shields.io/github/downloads/philote/masks-newgeneration-unofficial/latest/total"> 
+    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/philote/masks-newgeneration-unofficial"> 
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/philote/masks-newgeneration-unofficial">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/philote/masks-newgeneration-unofficial">
 </p>
 <p align="center">
-    <img alt="GitHub" src="https://img.shields.io/github/license/philote/fellowship-pbta"> 
-    <a href="https://github.com/philote/fellowship-pbta/issues">
-        <img alt="GitHub issues" src="https://img.shields.io/github/issues/philote/fellowship-pbta">
+    <img alt="GitHub" src="https://img.shields.io/github/license/philote/masks-newgeneration-unofficial"> 
+    <a href="https://github.com/philote/masks-newgeneration-unofficial/issues">
+        <img alt="GitHub issues" src="https://img.shields.io/github/issues/philote/masks-newgeneration-unofficial">
     </a> 
-    <a href="https://github.com/philote/fellowship-pbta/network">
-        <img alt="GitHub forks" src="https://img.shields.io/github/forks/philote/fellowship-pbta">
+    <a href="https://github.com/philote/masks-newgeneration-unofficial/network">
+        <img alt="GitHub forks" src="https://img.shields.io/github/forks/philote/masks-newgeneration-unofficial">
     </a> 
-    <a href="https://github.com/philote/fellowship-pbta/stargazers">
-        <img alt="GitHub stars" src="https://img.shields.io/github/stars/philote/fellowship-pbta">
+    <a href="https://github.com/philote/masks-newgeneration-unofficial/stargazers">
+        <img alt="GitHub stars" src="https://img.shields.io/github/stars/philote/masks-newgeneration-unofficial">
     </a>
 </p>
 <p align="center">
