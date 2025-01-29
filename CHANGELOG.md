@@ -1,4 +1,4 @@
-#1.7.3
+#1.7.5
 - fixed a bug with the new login screen code
 - updated project files
 - fixed text for for setting up CUB (from Proffcake on Discord)
