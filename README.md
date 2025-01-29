@@ -21,8 +21,8 @@
 </p>
 <p align="center">
    	<a href='https://ko-fi.com/G2G3I91JQ' target='_blank'>
-					<img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
-				</a>
+        <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+    </a>
 </p>
 
 The content from this module is from **Masks: A New Generation** from **Magpie Games**. You can get the PDF at: https://magpiegames.com/masks/
@@ -32,8 +32,6 @@ This revised version of the module is based on works from multiple people:
 - A second version that was maintained by CyricPL (https://github.com/CyricPL/masks-newgeneration-unofficial)
 - A sheet module created by Geekswordsman (https://gitlab.com/geekswordsman/masks-newgeneration-sheets)
 The current version is a merging of these modules' features, cleanup of the moves and bringing the module up to date with Foundry VTT versions and PbtA system versions.
-
-If you’ve enjoyed my work and find value in what I create, please consider supporting me with a small donation on [Ko-fi](https://ko-fi.com/G2G3I91JQ). I truly love what I do, and your support helps me dedicate time and resources to ongoing development. Every contribution, no matter the size, makes a difference and allows me to continue doing what I’m passionate about. Thank you for considering—it means the world to me.
 
 If you’ve enjoyed my work and find value in what I create, please consider supporting me with a small donation on [Ko-fi](https://ko-fi.com/G2G3I91JQ). I truly love what I do, and your support helps me dedicate time and resources to ongoing development. Every contribution, no matter the size, makes a difference and allows me to continue doing what I’m passionate about. Thank you for considering—it means the world to me.
 
@@ -73,10 +71,11 @@ The following Foundry VTT game system must be installed to use this module: [Pow
 ## Module Directory
 This module is listed in the Foundry module directory and can be searched and installed within the application.
 
-## How to Install
-You can install the latest released version of the module by using this manifest link in Foundry VTT. [Instructions](https://foundryvtt.com/article/tutorial/): [module.json](https://github.com/philote/masks-newgeneration-unofficial/releases/latest/download/module.json)
+## Manual Instalation
+Go to **modules** and use this link: https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial-revised/main/module.json
 
 # How To
+
 1. Activate the module.
 3. Import the compendium you want. Right click it and Import all Content.
 4. Drag the Folder Basic and Adult to an Actor Sheet.
