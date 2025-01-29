@@ -1,13 +1,8 @@
 import { configSheet } from "./helpers/config-sheet.mjs";
 import * as utils from "./helpers/utils.mjs";
 import { MasksActorSheetMixin } from './sheets/actor-sheet.mjs';
-// import { RollPbtAMasks } from "./helpers/rollsMasks.mjs";
 
 Hooks.once("init", () => {
-
-    // CONFIG.Dice.RollPbtA = RollPbtAMasks;
-	// CONFIG.Dice.rolls.push(RollPbtAMasks);
-
     const masksActorSheet = MasksActorSheetMixin(game.pbta.applications.actor.PbtaActorSheet);
     Actors.unregisterSheet('pbta', game.pbta.applications.actor.PbtaActorSheet, { types: ['character'] });
     Actors.registerSheet('pbta', masksActorSheet, {
@@ -86,26 +81,28 @@ Hooks.once('ready', async function () {
             yes: { callback: callback },
         });
     } else {
-        if (game.settings.get('masks-newgeneration-unofficial', 'enableLoginImg')) {
-            const worldData = {
-                id: game.world.id,
-                action: 'editWorld',
-                background: `modules/masks-newgeneration-unofficial/images/login-bg-lt.webp`,
-            };
-            let response;
-            try {
-                response = await foundry.utils.fetchJsonWithTimeout(foundry.utils.getRoute('setup'), {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(worldData),
-                });
-                if (response.error) {
-                    ui.notifications.error(response.error);
-                } else if (!response) {
-                    game.world.updateSource(response);
+        if (game.settings.settings.has('masks-newgeneration-unofficial.enableLoginImg')) {
+            if (game.settings.get('masks-newgeneration-unofficial', 'enableLoginImg')) {
+                const worldData = {
+                    id: game.world.id,
+                    action: 'editWorld',
+                    background: `modules/masks-newgeneration-unofficial/images/login-bg-lt.webp`,
+                };
+                let response;
+                try {
+                    response = await foundry.utils.fetchJsonWithTimeout(foundry.utils.getRoute('setup'), {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(worldData),
+                    });
+                    if (response.error) {
+                        ui.notifications.error(response.error);
+                    } else if (!response) {
+                        game.world.updateSource(response);
+                    }
+                } catch (e) {
+                  return ui.notifications.error(e);
                 }
-            } catch (e) {
-              return ui.notifications.error(e);
             }
         }
     }
@@ -219,3 +216,52 @@ function onInfluenceAction(actor, html) {
         await actor.setFlag("masks-newgeneration-unofficial", "influences", influences);
     });
 }
+
+Hooks.on("renderSettings", (app, html) => {
+    const header = document.createElement("h2");
+    header.innerText = game.i18n.localize('MASKS-SHEETS.Settings.game.heading');
+
+    const pbtaSettings = document.createElement("div");
+    html.find("#settings-game")?.after(header, pbtaSettings);
+
+    const buttons = [
+        {
+            action: (ev) => {
+                ev.preventDefault();
+                window.open("https://magpiegames.com/masks/", "_blank");
+            },
+            iconClasses: ["fa-solid", "fa-book"],
+            label: game.i18n.localize('MASKS-SHEETS.Settings.game.publisher.title')
+        },
+        {
+            action: (ev) => {
+                ev.preventDefault();
+                window.open("https://github.com/philote/masks-newgeneration-unofficial", "_blank");
+            },
+            iconClasses: ["fab", "fa-github"],
+            label: game.i18n.localize(`MASKS-SHEETS.Settings.game.github.title`)
+        },
+        {
+            action: (ev) => {
+                ev.preventDefault();
+                window.open("https://ko-fi.com/ephson", "_blank");
+            },
+            iconClasses: ["fa-solid", "fa-mug-hot"],
+            label: game.i18n.localize("MASKS-SHEETS.Settings.game.kofi.title")
+        },
+    ].map(({ action, iconClasses, label }) => {
+        const button = document.createElement("button");
+        button.type = "button";
+
+        const icon = document.createElement("i");
+        icon.classList.add(...iconClasses);
+
+        button.append(icon, game.i18n.localize(label));
+
+        button.addEventListener("click", action);
+
+        return button;
+    });
+
+    pbtaSettings.append(...buttons);
+});

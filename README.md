@@ -1,8 +1,29 @@
 ![Cover](images/cover.webp)
 
-![](https://img.shields.io/badge/Foundry-v12-informational)
-<!--- Forge Bazaar Install % Badge -->
-![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Fmasks-newgeneration-unofficial&colorB=4aa94a)
+<p align="center">
+    <img alt="Foundry Version 12 support" src="https://img.shields.io/badge/Foundry-v12-informational">
+    <img alt="Latest Release Download Count" src="https://img.shields.io/github/downloads/philote/masks-newgeneration-unofficial/latest/total"> 
+    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/philote/masks-newgeneration-unofficial"> 
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/philote/masks-newgeneration-unofficial">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/philote/masks-newgeneration-unofficial">
+</p>
+<p align="center">
+    <img alt="GitHub" src="https://img.shields.io/github/license/philote/masks-newgeneration-unofficial"> 
+    <a href="https://github.com/philote/masks-newgeneration-unofficial/issues">
+        <img alt="GitHub issues" src="https://img.shields.io/github/issues/philote/masks-newgeneration-unofficial">
+    </a> 
+    <a href="https://github.com/philote/masks-newgeneration-unofficial/network">
+        <img alt="GitHub forks" src="https://img.shields.io/github/forks/philote/masks-newgeneration-unofficial">
+    </a> 
+    <a href="https://github.com/philote/masks-newgeneration-unofficial/stargazers">
+        <img alt="GitHub stars" src="https://img.shields.io/github/stars/philote/masks-newgeneration-unofficial">
+    </a>
+</p>
+<p align="center">
+   	<a href='https://ko-fi.com/G2G3I91JQ' target='_blank'>
+        <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+    </a>
+</p>
 
 The content from this module is from **Masks: A New Generation** from **Magpie Games**. You can get the PDF at: https://magpiegames.com/masks/
 
@@ -12,10 +33,9 @@ This revised version of the module is based on works from multiple people:
 - A sheet module created by Geekswordsman (https://gitlab.com/geekswordsman/masks-newgeneration-sheets)
 The current version is a merging of these modules' features, cleanup of the moves and bringing the module up to date with Foundry VTT versions and PbtA system versions.
 
+## Screenshots
 ![A screenshot of the Masks character sheet in light mode](images/screenshots/character-sheet_light.webp)
-
 ![A screenshot of the Masks character sheet in dark mode](images/screenshots/character-sheet_dark.webp)
-
 ![A screenshot of the Masks NPC sheet in light mode](images/screenshots/npc-sheet_light.webp)
 
 ## Dependencies
@@ -49,11 +69,10 @@ The following Foundry VTT game system must be installed to use this module: [Pow
 ## Module Directory
 This module is listed in the Foundry module directory and can be searched and installed within the application.
 
-## Manual Instalation
-Go to **modules** and use this link: https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial-revised/main/module.json
+## How to Install
+You can install the latest released version of the module by using this manifest link in Foundry VTT. [Instructions](https://foundryvtt.com/article/tutorial/): [module.json](https://github.com/philote/masks-newgeneration-unofficial/releases/latest/download/module.json)
 
 # How To
-
 1. Activate the module.
 3. Import the compendium you want. Right click it and Import all Content.
 4. Drag the Folder Basic and Adult to an Actor Sheet.

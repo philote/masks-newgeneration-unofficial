@@ -1,3 +1,8 @@
+#1.7.3
+- fixed a bug with the new login screen code
+- updated project files
+- fixed text for for setting up CUB (from Proffcake on Discord)
+
 #1.7.2
 - Added item granting from playbooks when a playbook is added to a character
 

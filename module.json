@@ -1,361 +1,360 @@
 {
-  "id": "masks-newgeneration-unofficial",
-  "title": "Masks: A New Generation (PbtA)",
-  "description": "Masks: A New Generation from Magpie Games (unofficial)",
-  "version": "#{VERSION}#",
-  "library": "false",
-  "compatibility": {
-    "minimum": 12,
-    "verified": 12.331,
-    "maximum": 12
-  },
-  "authors": [
-    {
-      "name": "CyricPL",
-      "discord": "@CyricPL#6704"
-    },
-    {
-      "name": "Geekswordsman",
-      "discord": "@Geekswordsman#3085"
-    },
-    {
-      "name": "ephson",
-      "url": "https://github.com/philote",
-      "discord": "ephson",
-      "reddit": "u/ephson"
-    }
-  ],
-  "packs": [
-    {
-      "name": "moves",
-      "label": "Moves",
-      "path": "packs/moves",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "documents",
-      "label": "Documents",
-      "path": "packs/documents",
-      "type": "JournalEntry",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "basic-playbook-beacon",
-      "label": "Basic Playbook - The Beacon",
-      "path": "packs/basic-playbook-beacon",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "basic-playbook-bull",
-      "label": "Basic Playbook - The Bull",
-      "path": "packs/basic-playbook-bull",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "basic-playbook-delinquent",
-      "label": "Basic Playbook - The Delinquent",
-      "path": "packs/basic-playbook-delinquent",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "basic-playbook-doomed",
-      "label": "Basic Playbook - The Doomed",
-      "path": "packs/basic-playbook-doomed",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "basic-playbook-janus",
-      "label": "Basic Playbook - The Janus",
-      "path": "packs/basic-playbook-janus",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "basic-playbook-legacy",
-      "label": "Basic Playbook - The Legacy",
-      "path": "packs/basic-playbook-legacy",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "basic-playbook-nova",
-      "label": "Basic Playbook - The Nova",
-      "path": "packs/basic-playbook-nova",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "basic-playbook-outsider",
-      "label": "Basic Playbook - The Outsider",
-      "path": "packs/basic-playbook-outsider",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "basic-playbook-protege",
-      "label": "Basic Playbook - The Protege",
-      "path": "packs/basic-playbook-protege",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "basic-playbook-transformed",
-      "label": "Basic Playbook - The Transformed",
-      "path": "packs/basic-playbook-transformed",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "hchc-playbook-innocent",
-      "label": "HCHC Playbook - The Innocent",
-      "path": "packs/hchc-playbooks-innocent",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "hchc-playbook-joined",
-      "label": "HCHC Playbook - The Joined",
-      "path": "packs/hchc-playbooks-joined",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "hchc-playbook-newborn",
-      "label": "HCHC Playbook - The Newborn",
-      "path": "packs/hchc-playbooks-newborn",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "hchc-playbook-reformed",
-      "label": "HCHC Playbook - The Reformed",
-      "path": "packs/hchc-playbooks-reformed",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "hchc-playbook-star",
-      "label": "HCHC Playbook - The Star",
-      "path": "packs/hchc-playbooks-star",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "aegis-playbook-brain",
-      "label": "AEGIS Playbook - The Brain",
-      "path": "packs/aegis-playbook-brain",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "aegis-playbook-soldier",
-      "label": "AEGIS Playbook - The Soldier",
-      "path": "packs/aegis-playbook-soldier",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "unbound-playbook-harbinger",
-      "label": "Unbound Playbook - The Harbinger",
-      "path": "packs/unbound-playbook-harbinger",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "unbound-playbook-nomad",
-      "label": "Unbound Playbook - The Nomad",
-      "path": "packs/unbound-playbook-nomad",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "unbound-playbook-scion",
-      "label": "Unbound Playbook - The Scion",
-      "path": "packs/unbound-playbook-scion",
-      "type": "Item",
-      "system": "pbta",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    }
-  ],
-  "packFolders": [
-    {
-      "name": "Unbound Playbooks",
-      "packs": [
-        "unbound-playbook-scion",
-        "unbound-playbook-nomad",
-        "unbound-playbook-harbinger"
-      ],
-      "folders": []
-    },
-    {
-      "name": "AEGIS Playbooks",
-      "packs": [
-        "aegis-playbook-soldier",
-        "aegis-playbook-brain"
-      ],
-      "folders": []
-    },
-    {
-      "name": "Halcyon City Herald Collection Playbooks",
-      "packs": [
-        "hchc-playbook-innocent",
-        "hchc-playbook-joined",
-        "hchc-playbook-newborn",
-        "hchc-playbook-reformed",
-        "hchc-playbook-star"
-      ],
-      "folders": []
-    },
-    {
-      "name": "Basic Playbooks",
-      "packs": [
-        "basic-playbook-beacon",
-        "basic-playbook-bull",
-        "basic-playbook-delinquent",
-        "basic-playbook-doomed",
-        "basic-playbook-janus",
-        "basic-playbook-legacy",
-        "basic-playbook-nova",
-        "basic-playbook-outsider",
-        "basic-playbook-protege",
-        "basic-playbook-transformed"
-      ],
-      "folders": []
-    }
-  ],
-  "esmodules": [
-    "module/masks.mjs"
-  ],
-  "styles": [
-    "css/masks-sheets.css"
-  ],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
-    }
-  ],
-  "relationships": {
-    "systems": [
-      {
-        "id": "pbta",
-        "type": "system",
-        "compatibility": {
-          "minimum": "1.0.14"
-        }
-      }
-    ]
-  },
-  "url": "#{URL}#",
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#",
-  "license": "LICENSE",
-  "readme": "README.md",
-  "media": [
-    {
-      "type": "screenshot",
-      "url": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/images/screenshots/character-sheet_light.webp",
-      "loop": false,
-      "caption": "Masks character sheet screenshot from Foundry VTT."
-    },
-    {
-      "type": "cover",
-      "url": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/images/cover.webp",
-      "loop": false,
-      "caption": "Cover Image for the Unofficial Rhapsody of Blood package."
-    }
-  ]
+	"id": "masks-newgeneration-unofficial",
+	"title": "Masks: A New Generation (PbtA)",
+	"description": "Masks: A New Generation from Magpie Games (unofficial)",
+	"version": "#{VERSION}#",
+	"library": "false",
+	"compatibility": {
+		"minimum": 12,
+		"verified": 12.331,
+		"maximum": 12
+	},
+	"authors": [
+		{
+			"name": "CyricPL",
+			"discord": "@CyricPL#6704"
+		},
+		{
+			"name": "Geekswordsman",
+			"discord": "@Geekswordsman#3085"
+		},
+		{
+			"name": "ephson",
+			"url": "https://github.com/philote",
+			"discord": "ephson",
+			"reddit": "u/ephson"
+		}
+	],
+	"packs": [
+		{
+			"name": "moves",
+			"label": "Moves",
+			"path": "packs/moves",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "documents",
+			"label": "Documents",
+			"path": "packs/documents",
+			"type": "JournalEntry",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "basic-playbook-beacon",
+			"label": "Basic Playbook - The Beacon",
+			"path": "packs/basic-playbook-beacon",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "basic-playbook-bull",
+			"label": "Basic Playbook - The Bull",
+			"path": "packs/basic-playbook-bull",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "basic-playbook-delinquent",
+			"label": "Basic Playbook - The Delinquent",
+			"path": "packs/basic-playbook-delinquent",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "basic-playbook-doomed",
+			"label": "Basic Playbook - The Doomed",
+			"path": "packs/basic-playbook-doomed",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "basic-playbook-janus",
+			"label": "Basic Playbook - The Janus",
+			"path": "packs/basic-playbook-janus",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "basic-playbook-legacy",
+			"label": "Basic Playbook - The Legacy",
+			"path": "packs/basic-playbook-legacy",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "basic-playbook-nova",
+			"label": "Basic Playbook - The Nova",
+			"path": "packs/basic-playbook-nova",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "basic-playbook-outsider",
+			"label": "Basic Playbook - The Outsider",
+			"path": "packs/basic-playbook-outsider",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "basic-playbook-protege",
+			"label": "Basic Playbook - The Protege",
+			"path": "packs/basic-playbook-protege",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "basic-playbook-transformed",
+			"label": "Basic Playbook - The Transformed",
+			"path": "packs/basic-playbook-transformed",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "hchc-playbook-innocent",
+			"label": "HCHC Playbook - The Innocent",
+			"path": "packs/hchc-playbooks-innocent",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "hchc-playbook-joined",
+			"label": "HCHC Playbook - The Joined",
+			"path": "packs/hchc-playbooks-joined",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "hchc-playbook-newborn",
+			"label": "HCHC Playbook - The Newborn",
+			"path": "packs/hchc-playbooks-newborn",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "hchc-playbook-reformed",
+			"label": "HCHC Playbook - The Reformed",
+			"path": "packs/hchc-playbooks-reformed",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "hchc-playbook-star",
+			"label": "HCHC Playbook - The Star",
+			"path": "packs/hchc-playbooks-star",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "aegis-playbook-brain",
+			"label": "AEGIS Playbook - The Brain",
+			"path": "packs/aegis-playbook-brain",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "aegis-playbook-soldier",
+			"label": "AEGIS Playbook - The Soldier",
+			"path": "packs/aegis-playbook-soldier",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "unbound-playbook-harbinger",
+			"label": "Unbound Playbook - The Harbinger",
+			"path": "packs/unbound-playbook-harbinger",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "unbound-playbook-nomad",
+			"label": "Unbound Playbook - The Nomad",
+			"path": "packs/unbound-playbook-nomad",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "unbound-playbook-scion",
+			"label": "Unbound Playbook - The Scion",
+			"path": "packs/unbound-playbook-scion",
+			"type": "Item",
+			"system": "pbta",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		}
+	],
+	"packFolders": [
+		{
+			"name": "Unbound Playbooks",
+			"packs": [
+				"unbound-playbook-scion",
+				"unbound-playbook-nomad",
+				"unbound-playbook-harbinger"
+			],
+			"folders": []
+		},
+		{
+			"name": "AEGIS Playbooks",
+			"packs": ["aegis-playbook-soldier", "aegis-playbook-brain"],
+			"folders": []
+		},
+		{
+			"name": "Halcyon City Herald Collection Playbooks",
+			"packs": [
+				"hchc-playbook-innocent",
+				"hchc-playbook-joined",
+				"hchc-playbook-newborn",
+				"hchc-playbook-reformed",
+				"hchc-playbook-star"
+			],
+			"folders": []
+		},
+		{
+			"name": "Basic Playbooks",
+			"packs": [
+				"basic-playbook-beacon",
+				"basic-playbook-bull",
+				"basic-playbook-delinquent",
+				"basic-playbook-doomed",
+				"basic-playbook-janus",
+				"basic-playbook-legacy",
+				"basic-playbook-nova",
+				"basic-playbook-outsider",
+				"basic-playbook-protege",
+				"basic-playbook-transformed"
+			],
+			"folders": []
+		}
+	],
+	"esmodules": ["module/masks.mjs"],
+	"styles": ["css/masks-sheets.css"],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "languages/en.json"
+		}
+	],
+	"flags": {
+		"hotReload": {
+			"extensions": ["css", "html", "hbs", "json"],
+			"paths": ["css", "languages", "templates"]
+		}
+	},
+	"relationships": {
+		"systems": [
+			{
+				"id": "pbta",
+				"type": "system",
+				"compatibility": {
+					"minimum": "1.0.14"
+				}
+			}
+		]
+	},
+	"url": "#{URL}#",
+	"manifest": "#{MANIFEST}#",
+	"download": "#{DOWNLOAD}#",
+	"license": "LICENSE",
+	"readme": "README.md",
+	"media": [
+		{
+			"type": "screenshot",
+			"url": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/images/screenshots/character-sheet_light.webp",
+			"loop": false,
+			"caption": "Masks character sheet screenshot from Foundry VTT."
+		},
+		{
+			"type": "cover",
+			"url": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/images/cover.webp",
+			"loop": false,
+			"caption": "Cover Image for the Unofficial Rhapsody of Blood package."
+		}
+	]
 }

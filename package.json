@@ -1,6 +1,6 @@
 {
   "name": "masks-newgeneration-unofficial",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Joseph Hopson",
   "description": "Masks system for Foundry VTT",
   "browserslist": [
@@ -9,22 +9,16 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "gulp build",
-    "compile": "gulp css",
-    "watch": "gulp",
-    "gulp": "gulp",
+    "build": "sass src/scss/masks-sheets.scss css/masks-sheets.css --style=expanded --no-source-map",
+    "watch": "sass src/scss/masks-sheets.scss css/masks-sheets.css --style=expanded --source-map --watch",
     "pushLDBtoJSON": "node ./tools/pushLDBtoJSON.mjs",
     "pullJSONtoLDB": "node ./tools/pullJSONtoLDB.mjs"
   },
   "devDependencies": {
-    "@eslint/js": "^9.3.0",
-    "@foundryvtt/foundryvtt-cli": "^1.0.2",
-    "eslint": "^9.3.0",
-    "globals": "^15.2.0",
-    "gulp": "^5.0.0",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "sass": "^1.53.0"
+    "@foundryvtt/foundryvtt-cli": "^1.0.3",
+    "sass": "^1.53.0",
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0"
   }
 }

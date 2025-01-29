@@ -5,6 +5,18 @@
             "character": "Masks Character Sheet"
         },
         "Settings": {
+            "game": {
+				"heading": "Masks: A New Generation",
+				"publisher": {
+					"title": "Magpie Games"
+				},
+				"github": {
+					"title": "Module Repository"
+				},
+				"kofi": {
+					"title": "Support me on Ko-fi"
+				}
+			},
             "enable_dark_mode": {
                 "name": "Enable Dark Mode",
                 "hint": "Changes the Character, NPC, and Item sheets to a dark theme."
