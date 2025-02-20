@@ -164,7 +164,7 @@ function onInfluenceCreate(actor, html) {
             "locked": false
         }
 
-        let influences = actor.getFlag("masks-newgeneration-unofficial", "influences");
+        let influences = actor.getFlag("masks-newgeneration-unofficial", "influences") ?? [];
         influences.push(item);
         actor.setFlag("masks-newgeneration-unofficial", "influences", influences);
     });
