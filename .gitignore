@@ -40,3 +40,7 @@ packs/*
 
 #OS
 .DS_Store
+
+# other
+.roomodes
+.roo/*

@@ -143,17 +143,20 @@ Hooks.on("renderActorSheet", async (app, html) => {
 
         // Create influence list and enable influence tab interactivity
         onInfluenceCreate(app.actor, html);
-        html.find('.influence--name').on('change', async function(event) {
-            onInfluenceEdit(app.actor, event);
+        const influenceNameInputs = html[0].querySelectorAll('.influence--name');
+        influenceNameInputs.forEach(input => {
+            input.addEventListener('change', async function(event) {
+                onInfluenceEdit(app.actor, event);
+            });
         });
         onInfluenceAction(app.actor, html);
     }
 });
 
 function onInfluenceCreate(actor, html) {
-    let create = html.find('.influence-create');
+    let create = html[0].querySelector('.influence-create');
     if (!create) { return; }
-    create.click(async function(event) {
+    create.addEventListener('click', async function(event) {
         event.preventDefault();
 
         let item = {
@@ -172,7 +175,11 @@ function onInfluenceCreate(actor, html) {
 
 async function onInfluenceEdit(actor, event) {
     event.preventDefault();
-    let influenceID = $(event.target).parents("[data-influence-id]").data().influenceId;
+    let element = event.target;
+    while (element && !element.hasAttribute('data-influence-id')) {
+        element = element.parentElement;
+    }
+    let influenceID = element ? element.dataset.influenceId : null;
     let influences = actor.getFlag("masks-newgeneration-unofficial", "influences");
     let influence = influences.find(i => i.id === influenceID);
     influence.name = event.target.value;
@@ -181,14 +188,20 @@ async function onInfluenceEdit(actor, event) {
 }
 
 function onInfluenceAction(actor, html) {
-    let action = html.find('[data-influence-action]');
-    if (!action) { return; }
-    action.click(async function(event) {
+    let actions = html[0].querySelectorAll('[data-influence-action]');
+    if (!actions.length) { return; }
+    actions.forEach(action => {
+        action.addEventListener('click', async function(event) {
         event.preventDefault();
         
-        const clickedElement = $(event.currentTarget);
-        const action = clickedElement.data().influenceAction;
-        let influenceID = clickedElement.parents("[data-influence-id]").data().influenceId;
+        const clickedElement = event.currentTarget;
+        const action = clickedElement.dataset.influenceAction;
+        
+        let element = clickedElement;
+        while (element && !element.hasAttribute('data-influence-id')) {
+            element = element.parentElement;
+        }
+        let influenceID = element ? element.dataset.influenceId : null;
         let influences = actor.getFlag("masks-newgeneration-unofficial", "influences") ?? [];
         let influence = influences.find(i => i.id === influenceID);
 
@@ -214,24 +227,20 @@ function onInfluenceAction(actor, html) {
         }
 
         await actor.setFlag("masks-newgeneration-unofficial", "influences", influences);
+        });
     });
 }
 
 Hooks.on("renderSettings", (app, html) => {
-    const header = document.createElement("h2");
-    header.innerText = game.i18n.localize('MASKS-SHEETS.Settings.game.heading');
-
-    const pbtaSettings = document.createElement("div");
-    html.find("#settings-game")?.after(header, pbtaSettings);
-
-    const buttons = [
+    // --- Button Creation Logic (Common for both versions) ---
+    const buttonsData = [
         {
             action: (ev) => {
                 ev.preventDefault();
                 window.open("https://magpiegames.com/masks/", "_blank");
             },
             iconClasses: ["fa-solid", "fa-book"],
-            label: game.i18n.localize('MASKS-SHEETS.Settings.game.publisher.title')
+            labelKey: "MASKS-SHEETS.Settings.game.publisher.title",
         },
         {
             action: (ev) => {
@@ -239,7 +248,7 @@ Hooks.on("renderSettings", (app, html) => {
                 window.open("https://github.com/philote/masks-newgeneration-unofficial", "_blank");
             },
             iconClasses: ["fab", "fa-github"],
-            label: game.i18n.localize(`MASKS-SHEETS.Settings.game.github.title`)
+            labelKey: "MASKS-SHEETS.Settings.game.github.title",
         },
         {
             action: (ev) => {
@@ -247,21 +256,56 @@ Hooks.on("renderSettings", (app, html) => {
                 window.open("https://ko-fi.com/ephson", "_blank");
             },
             iconClasses: ["fa-solid", "fa-mug-hot"],
-            label: game.i18n.localize("MASKS-SHEETS.Settings.game.kofi.title")
+            labelKey: "MASKS-SHEETS.Settings.game.kofi.title",
         },
-    ].map(({ action, iconClasses, label }) => {
+    ];
+
+    const buttons = buttonsData.map(({ action, iconClasses, labelKey }) => {
         const button = document.createElement("button");
         button.type = "button";
 
         const icon = document.createElement("i");
         icon.classList.add(...iconClasses);
 
-        button.append(icon, game.i18n.localize(label));
+        // Append icon and localized text node
+        button.append(icon, document.createTextNode(` ${game.i18n.localize(labelKey)}`)); // Add space for separation
 
         button.addEventListener("click", action);
-
         return button;
     });
+    
+    // --- Version Specific Logic ---
+    if (game.release.generation >= 13) {
+        // V13+ Logic: Append to the "Documentation" section
+        const documentationSection = html.querySelector("section.documentation");
+        if (documentationSection) {
+            const divider = document.createElement("h4");
+            divider.classList.add("divider");
+            // Using a more specific key might be better, but reusing for now
+            divider.textContent = game.i18n.localize("MASKS-SHEETS.Settings.game.heading");
 
-    pbtaSettings.append(...buttons);
+            // Append divider and then the buttons
+            documentationSection.append(divider, ...buttons);
+        } else {
+            console.warn("Masks | Could not find 'section.documentation' in V13 settings panel.");
+        }
+    } else {
+        // V12 Logic: Insert after the "Game Settings" section
+        const gameSettingsSection = html.querySelector("#settings-game");
+        if (gameSettingsSection) {
+            const header = document.createElement("h2");
+            header.innerText = game.i18n.localize("MASKS-SHEETS.Settings.game.heading");
+
+            const etrSettingsDiv = document.createElement("div");
+            etrSettingsDiv.append(...buttons);
+
+            // Insert the header and the div containing buttons after the game settings section
+            gameSettingsSection.after(header, etrSettingsDiv);
+        } else {
+            console.warn("Masks | Could not find '#settings-game' section in V12 settings panel.");
+        }
+    }
+
+    
+
 });
