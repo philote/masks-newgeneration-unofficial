@@ -1,7 +1,7 @@
 ![Cover](images/cover.webp)
 
 <p align="center">
-    <img alt="Foundry Version 12 support" src="https://img.shields.io/badge/Foundry-v12-informational">
+    <img alt="Foundry Version 13 support" src="https://img.shields.io/badge/Foundry-v13-informational">
     <img alt="Latest Release Download Count" src="https://img.shields.io/github/downloads/philote/masks-newgeneration-unofficial/latest/total"> 
     <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/philote/masks-newgeneration-unofficial"> 
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/philote/masks-newgeneration-unofficial">
@@ -43,9 +43,13 @@ If you’ve enjoyed my work and find value in what I create, please consider sup
 ## Dependencies
 The following Foundry VTT game system must be installed to use this module: [Powered by the Apocalypse](https://github.com/asacolips-projects/pbta).
 
-### Masks V1.7+
-- Only works with Foundry v12+ and PbtA v1+
-- If you need Foundry v11 or PbtA v0.9 support then use Masks v1.6.3
+> [!WARNING]
+> ### Masks V1.8+
+> **ONLY** works with Foundry v13+ and PbtA v1.1.16+
+#### If you use Foundry v12: 
+- use PbtA [v1.1.15.2](https://github.com/asacolips-projects/pbta/releases/tag/1.1.15.2) with Masks [v1.7.6](https://github.com/philote/masks-newgeneration-unofficial/releases/tag/1.7.6)
+#### If you use Foundry v11: 
+- use PbtA [v0.9.7](https://github.com/asacolips-projects/pbta/releases/tag/0.9.7) with Masks [v1.6.3](https://github.com/philote/masks-newgeneration-unofficial/releases/tag/1.6.3)
 
 ## Features
 - PC Character Sheets
@@ -75,16 +79,12 @@ This module is listed in the Foundry module directory and can be searched and in
 Go to **modules** and use this link: https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial-revised/main/module.json
 
 # How To
-
 1. Activate the module.
 3. Import the compendium you want. Right click it and Import all Content.
 4. Drag the Folder Basic and Adult to an Actor Sheet.
 
 # More Instructions
 There is a journal with more instructions inside the module. Load the module and search the compendiums for it.
-
-# Changelog
-You can check changes at [CHANGELOG](CHANGELOG.md)
 
 # License
 The entire text of Masks is released under a Creative Commons Attribution 4.0 International license. https://creativecommons.org/licenses/by/4.0/ \

@@ -38,6 +38,7 @@
 }
 
 .pbta.window-app {
+
   .window-content {
     color: var(--masks-secondary-text-color);
     padding: 0;
@@ -166,10 +167,13 @@
     }
   }
   
+  .cell__checkboxes, 
+  .cell__radio {
+    margin: 0;
 
-  .cell__checkboxes label.flexrow, 
-  .cell__radio label.flexrow {
+    & label.flexrow{
       margin: 0 0 5px 0;
+    }
   }
 
   .window-content {
@@ -184,8 +188,7 @@
   }
 
   .sheet-header__fields {
-    grid-column: span 3 / span 3;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
   }
 
   .cell--influences {
@@ -317,7 +320,9 @@
 
   .cell--influences {
     .influence-name {
-      flex: 4;
+      flex: 2;
+      display: flex;
+      gap: 2px;
     }
 
     input.influence--name {
@@ -333,7 +338,7 @@
       display: flex;
       flex-direction: row;
       text-align: center;
-      flex: 4;
+      flex: 1;
 
       .influence-disabled {
         filter: var(--masks-influence-icon-disabled-color);

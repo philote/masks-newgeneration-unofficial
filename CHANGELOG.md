@@ -1,3 +1,14 @@
+#1.8.0
+- Foundry v13 support added
+- This version ONLY works with Foundry v13+ and PbtA v1.1.16+
+- If you use Foundry v12: 
+    - use PbtA v1.1.15 with Masks v1.7.6
+- If you use Foundry v11: 
+    - use PbtA v0.9 with Masks v1.6.3
+
+#1.7.6
+- @ryzimmer fixed an issue that breaks when trying to add influences on new character/when undefined
+
 #1.7.5
 - fixed a bug with the new login screen code
 - updated project files
