@@ -1,0 +1,174 @@
+{
+    "TYPES.Item.masks-newgeneration-unofficial.influence": "Influencia",
+    "MASKS-SHEETS": {
+        "SheetConfig": {
+            "character": "Hoja de personaje de Masks"
+        },
+        "Settings": {
+            "game": {
+				"heading": "Masks: Una nueva generación",
+				"publisher": {
+					"title": "Magpie Games"
+				},
+				"github": {
+					"title": "Repositorio del módulo"
+				},
+				"kofi": {
+					"title": "Apóyame en Ko-fi"
+				}
+			},
+            "enable_dark_mode": {
+                "name": "Activar modo oscuro",
+                "hint": "Cambia las hojas de personaje, npc e item al modo oscuro."
+            }
+        },
+        "Description": {
+            "Abilities": "Capacidades",
+            "Backstory": "Trasfondo",
+            "Look": "Aspecto",
+            "Relationships": "Relaciones",
+            "TheTeam": "Cuando tu equipo se reunió por primera vez...",
+            "Moment": "Momento de la verdad",
+            "Notes": "Notas"
+        },
+        "Influences": "Influencias",
+        "HasInfluence": "Tiene influencia sobre ti",
+        "HaveInfluence": "Tienes influencia sobre él/ella",
+        "Influence-Lock": "Blockear influencia",
+        "Influence-Unlock": "Desbloquear influencia",
+        "InfluenceCreate": "Crear influencia",
+        "Person-Name": "Nombre de la persona",
+        "Shift-Labels": {
+            "label": "Intercambiar etiquetas",
+            "stat": "Etiqueta",
+            "stats": "Etiquetas"
+        },
+        "NPCSheets": {
+            "realName": "Nombre real",
+            "conditions": {
+                "label": "Condiciones",
+                "description": "Escoge todas las que apliquen:",
+                "options": {
+                    "0": "Asustado",
+                    "1": "Furioso",
+                    "2": "Culpable",
+                    "3": "Desesperanzado",
+                    "4": "Inseguro"
+                }
+            },
+            "driveLabel": "Motivación",
+            "abilitiesLabel": "Capacidades",
+            "generationLabel": "Generación",
+            "moveTypes": {
+                "villainLabel": "Movimientos de villano",
+                "conditionLabel": "Movimientos de condición"
+            }
+        },
+        "CharacterSheets": {
+            "statToggle": "Bloqueado",
+            "rollResults": {
+                "complications": "Complicaciones...",
+                "partialSuccess": "Éxito parcial",
+                "success": "¡Éxito!"
+            },
+            "stats": {
+                "danger": "Peligro",
+                "freak": "Monstruo",
+                "savior": "Salvador",
+                "superior": "Superior",
+                "mundane": "Mundano"
+            },
+            "realNameLabel": "Nombre real",
+            "xpLabel": "Potencial",
+            "conditions": {
+                "label": "Condiciones",
+                "description": "Escoge todas las que apliquen:",
+                "options": {
+                    "0": "Asustado (-2 a enfrentarse)",
+                    "1": "Furioso (-2 a reconfortar o atravesar)",
+                    "2": "Culpable (-2 a provocar o valorar)",
+                    "3": "Desesperanzado (-2 a desatar)",
+                    "4": "Inseguro (-2 a defender o rechazar)"
+                }
+            },
+            "momentUnlocked": {
+                "label": "Momento de la verdad",
+                "checkboxLabel": "Desbloqueado"
+            },
+            "influenceLabel": "Influencia",
+            "advancementsLabel": "Avances",
+            "advancementsDescription": "Cuando hayas rellenado todas tus casillas de potencial, ganas un avance. Elige uno de la lista.",
+            "laterAdvancesLabel": "Avances posteriores",
+            "laterAdvancesDescription": "Cuando hayas elegido cinco avances de la lista de arriba, podrás empezar a elegir avances de la lista de abajo",
+            "details": {
+                "lookLabel": "Aspecto",
+                "abilitiesLabel": "Capacidades",
+                "momentLabel": "Momento de la verdad",
+                "backstoryLabel": "Trasfondo",
+                "teamLabel": "Cuando tu equipo se reunió por primera vez...",
+                "relationshipsLabel": "Relaciones",
+                "biographyLabel": "Notas"
+            },
+            "moveTypes": {
+                "basicLabel": "Movimientos básicos",
+                "playbookLabel": "Movimientos de libreto",
+                "rulesLabel": "Reglas",
+                "adultLabel": "Movimientos de adulto"
+            },
+            "Playbooks": {
+                "theDoomed": {
+                    "track": "Contador de perdición",
+                    "bringsDoomCloser": {
+                        "label": "Perdición",
+                        "description": "What brings your doom closer? Choose two."
+                    },
+                    "sanctuary": {
+                        "features" : {
+                            "label": "Rasgos de santuario",
+                            "description": "Elige tres rasgos de tu santuario:"
+                        },
+                        "downsides" : {
+                            "label": "Desventajas de santuario",
+                            "description": "Escoge dos desventajas de santuario:"
+                        }
+                    }
+                },
+                "theBull": {
+                    "label": "El Corazón de la Toro"
+                },
+                "theNovaLabel": "Puntos de combustión",
+                "theProtege": {
+                    "resources": {
+                        "label": "Recursos de la mentora",
+                        "description": "Elige hasta tres recursos que tu mentora os ha entregado a ti y al equipo:"
+                    },
+                    "label": "Etiquetas de la mentora"
+                },
+                "theSoldierLabel": "Soldado",
+                "theHarbingerLabel": "Puntuación de Recuerdos",
+                "theNomadLabel": "Influendia dada",
+                "theScionGreatestEnemyLabel": "Mayor enemigo",
+                "theScionGreatestVictimLabel": "Mayor víctima",
+                "theScionPersonalIdolLabel": "Ídolo personal",
+                "theScionGreatestLeaderLabel": "Lider más grande",
+                "theScionGreatestHeroLabel": "Héroe más grande",
+                "theScionBiggestCelebrityLabel": "Mayor celebridad",
+                "theHarbinger": {
+                    "label":  "Recuerdos"
+                },
+                "theBrainLabel": "Tu Vergüenza",
+                "theStarAdvantagesLabel": "Ventajas de la audiencia",
+                "theStarDemandsLabel": "Peticiones de la audiencia",
+                "theInnocentLabel": "Tu yo futuro",
+                "theNewbornLabel": "Lecciones",
+                "theReformedLabel": "Amigos en los bajos fondos",
+                "theJanusLabel": "Obligaciones",
+                "theLegacy": {
+                    "label": "Miembros del Legado",
+                    "value": " <i>: sigue activo y es importante en la ciudad.</i><br> <i>: se ha retirado y es bastante crítico.</i><br> <i>: es el posible próximo miembro de tu legado.</i><br> <i>: es el mayor oponente con el que jamás se ha enfrentado tu legado… y sigue en libertad.</i>"
+                },
+                "theBeaconLabel": "Motivaciones"
+            }
+        }
+    }
+}
