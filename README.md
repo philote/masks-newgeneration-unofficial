@@ -62,6 +62,7 @@ The following Foundry VTT game system must be installed to use this module: [Pow
 - Improved Influences interface
 - Automation for playbooks
 - Improved layout with Social and Advancement Tabs
+- Spanish translation added by https://github.com/erizocosmico
 
 ## TODO
 - Team Pool Tracker
