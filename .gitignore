@@ -44,3 +44,14 @@ packs/*
 # other
 .roomodes
 .roo/*
+
+# Foundry code base symlinks
+foundry-config.yaml
+foundry
+
+# Environment variables
+.env
+
+# Other
+.claude/
+CLAUDE.md
