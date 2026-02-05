@@ -335,6 +335,11 @@
 			"lang": "es",
 			"name": "Spanish",
 			"path": "languages/es.json"
+		},
+		{
+			"lang": "fr",
+			"name": "French",
+			"path": "languages/fr.json"
 		}
 	],
 	"flags": {

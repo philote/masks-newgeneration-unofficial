@@ -1,0 +1,174 @@
+{
+    "TYPES.Item.masks-newgeneration-unofficial.influence": "Influence",
+    "MASKS-SHEETS": {
+        "SheetConfig": {
+            "character": "Livret de Masques"
+        },
+        "Settings": {
+            "game": {
+                "heading": "Masques: Une nouvelle génération",
+                "publisher": {
+                    "title": "Magpie Games"
+                },
+                "github": {
+                    "title": "Dépôt du module"
+                },
+                "kofi": {
+                    "title": "Soutenez-moi sur Ko-fi"
+                }
+            },
+            "enable_dark_mode": {
+                "name": "Activer le mode sombre",
+                "hint": "Passe les livrets de personnages, PNJ et les objet à un thème sombre."
+            }
+        },
+        "Description": {
+            "Abilities": "Pouvoir",
+            "Backstory": "Histoire",
+            "Look": "Apparence",
+            "Relationships": "Relations",
+            "TheTeam": "Quand notre équipe s'est réunie pour la première fois",
+            "Moment": "Moment de Vérité",
+            "Notes": "Notes"
+        },
+        "Influences": "Influences",
+        "HasInfluence": "A de l'influence sur toi",
+        "HaveInfluence": "Tu as de l'influence sur ellui",
+        "Influence-Lock": "Vérrouiller cette influence",
+        "Influence-Unlock": "Déverrouiller cette influence",
+        "InfluenceCreate": "Créer une influence",
+        "Person-Name": "Nom de la personne",
+        "Shift-Labels": {
+            "label": "Modifier les étiquettes",
+            "stat": "Étiquette",
+            "stats": "Étiquettes"
+        },
+        "NPCSheets": {
+            "realName": "Nom Civil",
+            "conditions": {
+                "label": "États émotionnels",
+                "description": "Sélectionne ceux qui s'appliquent :",
+                "options": {
+                    "0": "Effrayé",
+                    "1": "Furieux",
+                    "2": "Coupable",
+                    "3": "Désespéré",
+                    "4": "Démoralisé"
+                }
+            },
+            "driveLabel": "Pulsion",
+            "abilitiesLabel": "Pouvoir",
+            "generationLabel": "Génération",
+            "moveTypes": {
+                "villainLabel": "Action de super-vilain",
+                "conditionLabel": "Manœuvre d'état"
+            }
+        },
+        "CharacterSheets": {
+            "statToggle": "Vérrouillé",
+            "rollResults": {
+                "complications": "Complications…",
+                "partialSuccess": "Petite réussite",
+                "success": "Grande réussite !"
+            },
+            "stats": {
+                "danger": "Dangereux",
+                "freak": "Différent",
+                "savior": "Sauveur",
+                "superior": "Supérieur",
+                "mundane": "Normal"
+            },
+            "realNameLabel": "Nom civil",
+            "xpLabel": "Potentiel",
+            "conditions": {
+                "label": "États émotionnels",
+                "description": "Choisi ceux qui s'appliquent :",
+                "options": {
+                    "0": "Éffrayé (-2 à affronter directement)",
+                    "1": "Furieux (-2 à réconforter, soutenir et percer le masque)",
+                    "2": "Coupable (-2 à provoquer et évaluer la situation)",
+                    "3": "Désespéré (-2 à déchaîner ses pouvoirs)",
+                    "4": "Démoralisé (-2 à défendre ou rejeter l'influence)"
+                }
+            },
+            "momentUnlocked": {
+                "label": "Moment de Vérité",
+                "checkboxLabel": "Dévérrouillé"
+            },
+            "influenceLabel": "Influence",
+            "advancementsLabel": "Progressions",
+            "advancementsDescription": "Quand toutes tes cases de potentiel sont cochées, tu progresses. Choisis dans la liste.",
+            "laterAdvancesLabel": "Progressions suivantes",
+            "laterAdvancesDescription": "Quand tu as sélectionné au moins cinq des progressions, tu peux prendres parmi les suivantes.",
+            "details": {
+                "lookLabel": "Apparence",
+                "abilitiesLabel": "Pouvoirs",
+                "momentLabel": "Moment de Vérité",
+                "backstoryLabel": "Histoire",
+                "teamLabel": "Quand notre équipe s'est réunie pour la première fois…",
+                "relationshipsLabel": "Relations",
+                "biographyLabel": "Notes"
+            },
+            "moveTypes": {
+                "basicLabel": "Manœuvres de base",
+                "playbookLabel": "Manœuvres de livret",
+                "rulesLabel": "Règles",
+                "adultLabel": "Manœuvres d'adulte"
+            },
+            "Playbooks": {
+                "theDoomed": {
+                    "track": "Compte à rebours",
+                    "bringsDoomCloser": {
+                        "label": "Destin funeste",
+                        "description": "Sélectionne deux actes qui, quand tu les accomplis, te rapprochent de ton Destin Funeste"
+                    },
+                    "sanctuary": {
+                        "features" : {
+                            "label": "Ressources de Sanctuaire",
+                            "description": "Choisis trois ressources disponibles dans ton sanctuaire :"
+                        },
+                        "downsides" : {
+                            "label": "Inconvénients de sanctuaire",
+                            "description": "Choisis deux inconvénients :"
+                        }
+                    }
+                },
+                "theBull": {
+                    "label": "Un cœur de brute"
+                },
+                "theNovaLabel": "Accumulation",
+                "theProtege": {
+                    "resources": {
+                        "label": "Resources de mentor",
+                        "description": "Choisis jusqu’à trois ressources que ton mentor t’a données à toi et à ton équipe :"
+                    },
+                    "label": "Étiquettes de ton mentor"
+                },
+                "theSoldierLabel": "Soldat",
+                "theHarbingerLabel": "Score de souvenirs",
+                "theNomadLabel": "Influence donnée",
+                "theScionGreatestEnemyLabel": "Plus grand ennemi",
+                "theScionGreatestVictimLabel": "Plus importante victime",
+                "theScionPersonalIdolLabel": "Idole personnelle",
+                "theScionGreatestLeaderLabel": "Plus important dirigeant",
+                "theScionGreatestHeroLabel": "Plus important héro",
+                "theScionBiggestCelebrityLabel": "Plus grande célébrité",
+                "theHarbinger": {
+                    "label":  "Souvenirs"
+                },
+                "theBrainLabel": "Ta honte",
+                "theStarAdvantagesLabel": "Avantages de l'audience",
+                "theStarDemandsLabel": "Exigeances de l'audience",
+                "theInnocentLabel": "Ton futur Toi",
+                "theNewbornLabel": "Leçons",
+                "theReformedLabel": "Mauvaises fréquentations",
+                "theJanusLabel": "Obligations",
+                "theLegacy": {
+                    "label": "Membres de ton héritage",
+                    "value": " <i> : est toujours actif et important dans la ville.</i><br> <i> : est à la retraite et est très critique, sermonneur, donneur de leçon.</i><br> <i> : est le prochain membre possible de ton héritage.</i><br> <i> : est le plus grand adversaire que ton héritage ait jamais combattu… et il est toujours en liberté.</i>"
+                },
+                "theBeaconLabel": "Pulsions"
+            }
+        }
+    }
+}
