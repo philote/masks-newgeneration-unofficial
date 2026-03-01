@@ -19,7 +19,7 @@
             },
             "enable_dark_mode": {
                 "name": "Activer le mode sombre",
-                "hint": "Passe les livrets de personnages, PNJ et les objet à un thème sombre."
+                "hint": "Passe les livrets de personnages, PNJ et les objets à un thème sombre."
             }
         },
         "Description": {
@@ -139,7 +139,7 @@
                 "theNovaLabel": "Accumulation",
                 "theProtege": {
                     "resources": {
-                        "label": "Resources de mentor",
+                        "label": "Ressources de mentor",
                         "description": "Choisis jusqu’à trois ressources que ton mentor t’a données à toi et à ton équipe :"
                     },
                     "label": "Étiquettes de ton mentor"
@@ -161,11 +161,11 @@
                 "theStarDemandsLabel": "Exigeances de l'audience",
                 "theInnocentLabel": "Ton futur Toi",
                 "theNewbornLabel": "Leçons",
-                "theReformedLabel": "Mauvaises fréquentations",
+                "theReformedLabel": "Amis des bas-fonds",
                 "theJanusLabel": "Obligations",
                 "theLegacy": {
                     "label": "Membres de ton héritage",
-                    "value": " <i> : est toujours actif et important dans la ville.</i><br> <i> : est à la retraite et est très critique, sermonneur, donneur de leçon.</i><br> <i> : est le prochain membre possible de ton héritage.</i><br> <i> : est le plus grand adversaire que ton héritage ait jamais combattu… et il est toujours en liberté.</i>"
+                    "value": " <i> : est toujours actif et important dans la ville.</i><br> <i> : est à la retraite et est très critique, sermonneur, donneur de leçon.</i><br> <i> : est le prochain membre possible de ton héritage.</i><br> <i> : est le plus grand adversaire que ton héritage ait jamais combattu… Et il est toujours en liberté.</i>"
                 },
                 "theBeaconLabel": "Pulsions"
             }
