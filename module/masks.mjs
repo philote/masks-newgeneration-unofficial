@@ -289,7 +289,8 @@ Hooks.on("renderSettings", (app, html) => {
             {
                 action: (ev) => {
                     ev.preventDefault();
-                    window.open("https://magpiegames.com/masks/", "_blank");
+                    const publisherUrl = game.i18n.localize("MASKS-SHEETS.Settings.game.publisher.url");
+                    window.open("publisherUrl", "_blank");
                 },
                 iconClasses: ["fa-solid", "fa-book"],
                 labelKey: "MASKS-SHEETS.Settings.game.publisher.title",

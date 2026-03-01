@@ -45,7 +45,8 @@
             "game": {
 				"heading": "Masks: A New Generation",
 				"publisher": {
-					"title": "Magpie Games"
+					"title": "Magpie Games",
+					"url": "https://magpiegames.com/masks/",
 				},
 				"github": {
 					"title": "Module Repository"
