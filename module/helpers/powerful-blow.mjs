@@ -1,24 +1,28 @@
-const MOVE_NAME = "Take a Powerful Blow";
+import { ALL_CONDITIONS_MOVE_NAMES } from "./move-condition-map.mjs";
 
-// Unlike every other move, "Take a Powerful Blow" doesn't use the standard
-// per-condition -2 penalty: each marked condition adds a flat +1 here instead
-// (rules text: "roll + conditions marked" is a positive count, not a debuff).
+// Neither move uses the standard per-condition -2 penalty: each marked
+// condition adds a flat +1 here instead (rules text on both is "roll +
+// conditions marked" — a positive count, not a debuff).
 const MOD_PER_CONDITION = 1;
 
 /**
- * "Take a Powerful Blow" always applies every currently marked condition
- * rather than letting the player opt into a subset via the system's normal
- * per-move checkboxes. The pbta system's roll dialog doesn't expose the
- * source item/flags to this hook, so the dialog's title (which embeds the
- * item name) is the only reliable way to identify it here.
+ * "Take a Powerful Blow" and "Burn" both always apply every currently
+ * marked condition rather than letting the player opt into a subset via the
+ * system's normal per-move checkboxes. The pbta system's roll dialog
+ * doesn't expose the source item/flags to this hook, so the dialog's title
+ * (which embeds the item name) is the only reliable way to identify them
+ * here.
  */
 export function initPowerfulBlow() {
     Hooks.on("renderDialog", onRenderDialog);
 }
 
 function onRenderDialog(app, html) {
-    const expectedTitle = game.i18n.format("PBTA.RollLabel", { label: MOVE_NAME });
-    if (app?.data?.title !== expectedTitle) return;
+    const title = app?.data?.title;
+    const isFlatConditionBonusMove = ALL_CONDITIONS_MOVE_NAMES.some(
+        (moveName) => title === game.i18n.format("PBTA.RollLabel", { label: moveName })
+    );
+    if (!isFlatConditionBonusMove) return;
 
     const root = html[0];
     const conditionsCell = root.querySelector(".cell--conditions");

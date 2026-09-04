@@ -78,6 +78,25 @@ describe("initPowerfulBlow", () => {
 		);
 	});
 
+	it("applies the same +1-per-condition bonus to Burn (The Nova)", () => {
+		const { root, title } = buildDialogHtml({
+			title: formatMock("PBTA.RollLabel", { label: "Burn" }),
+			conditions: [{ label: "Hopeless (-2 to unleash)", mod: -2 }]
+		});
+		const app = { data: { title } };
+
+		handler(app, [root]);
+
+		const checkbox = root.querySelector('input[name="condition"]');
+		expect(checkbox.dataset.mod).toBe("1");
+		expect(checkbox.dataset.content).toBe("Hopeless (+1)");
+		expect(checkbox.checked).toBe(true);
+		expect(checkbox.disabled).toBe(true);
+		expect(root.querySelector(".notes").textContent).toBe(
+			formatMock("MASKS-SHEETS.Dialog.AutoConditions", { total: "+1" })
+		);
+	});
+
 	it("no-ops when the actor has no marked conditions", () => {
 		const { root, title } = buildDialogHtml({
 			title: formatMock("PBTA.RollLabel", { label: "Take a Powerful Blow" })

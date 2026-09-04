@@ -2,7 +2,10 @@ import { configSheet } from "./helpers/config-sheet.mjs";
 import * as utils from "./helpers/utils.mjs";
 import { MasksActorSheetMixin } from './sheets/actor-sheet.mjs';
 import { initPowerfulBlow } from './helpers/powerful-blow.mjs';
-import { migrateTakeAPowerfulBlow } from './helpers/migrations.mjs';
+import { initBasicMoveConditions } from './helpers/basic-move-conditions.mjs';
+import { initMovePicker } from './helpers/move-picker.mjs';
+import { initBasicMovePicker } from './helpers/basic-move-picker.mjs';
+import { migrateTakeAPowerfulBlow, migrateRejectingInfluence, migrateNoPowersBasicMoveChoices } from './helpers/migrations.mjs';
 
 Hooks.once("init", () => {
     const masksActorSheet = MasksActorSheetMixin(game.pbta.applications.actor.PbtaActorSheet);
@@ -47,12 +50,17 @@ Hooks.once("init", () => {
     utils.preloadHandlebarsTemplates();
 
     initPowerfulBlow();
+    initBasicMoveConditions();
+    initMovePicker();
+    initBasicMovePicker();
 });
 
 Hooks.once('ready', async function () {
     if (!game.user.isGM) return;
 
     await migrateTakeAPowerfulBlow();
+    await migrateRejectingInfluence();
+    await migrateNoPowersBasicMoveChoices();
     if (game.settings.get('masks-newgeneration-unofficial', 'firstTime')) {
         game.settings.set('masks-newgeneration-unofficial', 'firstTime', false);
 

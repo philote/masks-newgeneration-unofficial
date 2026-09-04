@@ -21,7 +21,7 @@
     "description": "<p class=\"p1\">When someone with Influence over you tells you who you are or how the world works, accept what they say or reject their Influence. If you accept what they say, the GM will adjust your Labels accordingly; if you want to keep your Labels as they are, you must reject their Influence.</p>\n<p class=\"p1\"> </p>\n<p class=\"p1\">When you <strong>reject someone’s Influence</strong>, roll.</p>",
     "requiresMove": "",
     "moveType": "rules",
-    "rollFormula": "",
+    "rollFormula": "2d6",
     "moveGroup": "",
     "moveResults": {
       "failure": {
@@ -42,7 +42,7 @@
     },
     "uses": 0,
     "playbook": "",
-    "rollType": "prompt",
+    "rollType": "formula",
     "rollMod": 0,
     "choices": "",
     "actorType": "character"

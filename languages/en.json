@@ -5,7 +5,25 @@
             "character": "Masks Character Sheet"
         },
         "Dialog": {
-            "AutoConditions": "All marked conditions apply automatically: {total}"
+            "AutoConditions": "All marked conditions apply automatically: {total}",
+            "ChooseMoveTitle": "Which move are you making?",
+            "ChooseMoveLabel": "Choose the basic move this applies to:",
+            "ChooseMoveSubmit": "Roll",
+            "MovePicker": {
+                "PlaybookChoiceTitle": "Add Playbook Move",
+                "PlaybookChoicePrompt": "How would you like to add a move?",
+                "OwnPlaybook": "From Your Playbook",
+                "OtherPlaybook": "From Another Playbook",
+                "Blank": "Create Blank Move",
+                "NoPlaybook": "This character doesn't have a playbook yet.",
+                "SelectPlaybookTitle": "Select a Playbook",
+                "SelectPlaybookPrompt": "Choose a playbook to browse its moves.",
+                "Next": "Next",
+                "SelectMoveTitle": "Select a Move",
+                "AdultMoveTitle": "Add Adult Move",
+                "Add": "Add",
+                "NoMovesAvailable": "There are no more moves available to add."
+            }
         },
         "Settings": {
             "game": {

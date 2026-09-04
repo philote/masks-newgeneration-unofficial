@@ -71,6 +71,105 @@
   }
 }
 
+// The pbta system's roll-configuration dialog (identified by its
+// form.roll-dialog content, since it carries no module- or pbta-specific
+// class of its own) and this module's own DialogV2 dialogs
+// (module/helpers/move-picker.mjs's .masks-move-picker-dialog wrapper,
+// module/helpers/basic-move-picker.mjs's .masks-basic-move-picker-dialog
+// wrapper) otherwise render with Foundry's default dialog styling instead of
+// matching the rest of the module's navigation bars.
+.dialog:has(form.roll-dialog),
+.dialog:has(.masks-move-picker-dialog),
+.dialog:has(.masks-basic-move-picker-dialog) {
+  .window-header {
+    background-color: var(--masks-interactive-bg-color);
+  }
+
+  .dialog-button {
+    background-color: var(--masks-interactive-bg-color);
+    color: var(--masks-primary-text-color);
+
+    &:hover {
+      background-color: var(--masks-interactive-bg-hover-color);
+    }
+  }
+}
+
+// The pbta system's condition list nests a second, unclassed <ul> (the
+// actual checkbox rows) inside the outer <ul class="no-bullets"> (which
+// only wraps the group header) — style every list under this cell, not
+// just the one carrying that class, so the default browser bullets don't
+// show through on either level.
+.dialog:has(form.roll-dialog) .cell--conditions ul {
+  list-style: none;
+}
+
+// The move picker (module/helpers/move-picker.mjs) otherwise renders plain
+// DialogV2 content with none of the sheet's input/select theming, and (for
+// the move-list step) shows each candidate move's full rules text (trigger
+// + hit results) so players can actually tell moves apart, not just their
+// names — needs its own spacing since it's not one of pbta's own sheet
+// cells.
+.masks-move-picker-dialog {
+  select {
+    background: var(--masks-input-bg-color);
+    color: var(--masks-input-text-color);
+    border: 0.5px solid var(--masks-input-border-color);
+  }
+
+  input[type="radio"] {
+    accent-color: var(--masks-tab-bg-active-color);
+  }
+}
+
+// The basic-move roll picker (module/helpers/basic-move-picker.mjs) is a
+// single <select>, otherwise rendered with none of the sheet's input theming.
+.masks-basic-move-picker-dialog {
+  select {
+    background: var(--masks-input-bg-color);
+    color: var(--masks-input-text-color);
+    border: 0.5px solid var(--masks-input-border-color);
+  }
+}
+
+.masks-move-picker-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.masks-move-picker-option {
+  display: block;
+  padding: 8px;
+  border: 0.5px solid var(--masks-input-border-color);
+  border-radius: 4px;
+  cursor: pointer;
+
+  .masks-move-picker-option-name {
+    font-weight: bold;
+    margin-left: 4px;
+  }
+
+  .masks-move-picker-option-description,
+  .masks-move-picker-option-result {
+    margin-top: 4px;
+    font-size: 0.9em;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .masks-move-picker-option-result {
+    ul {
+      margin: 4px 0;
+      padding-left: 20px;
+    }
+  }
+}
+
 .pbta.sheet {
   
   .advancement {
@@ -265,7 +364,12 @@
       .cell--conditions {
         padding-top: 0px;
       }
-      
+
+      .cell--basic .items-list button:has(.fa-trash) {
+        display: none;
+      }
+
+
       .description {
         .sheet-tab {
           display: flex;

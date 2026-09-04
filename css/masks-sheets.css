@@ -58,6 +58,75 @@
   color: var(--masks-input-placeholder-color) !important;
 }
 
+.dialog:has(form.roll-dialog) .window-header,
+.dialog:has(.masks-move-picker-dialog) .window-header,
+.dialog:has(.masks-basic-move-picker-dialog) .window-header {
+  background-color: var(--masks-interactive-bg-color);
+}
+.dialog:has(form.roll-dialog) .dialog-button,
+.dialog:has(.masks-move-picker-dialog) .dialog-button,
+.dialog:has(.masks-basic-move-picker-dialog) .dialog-button {
+  background-color: var(--masks-interactive-bg-color);
+  color: var(--masks-primary-text-color);
+}
+.dialog:has(form.roll-dialog) .dialog-button:hover,
+.dialog:has(.masks-move-picker-dialog) .dialog-button:hover,
+.dialog:has(.masks-basic-move-picker-dialog) .dialog-button:hover {
+  background-color: var(--masks-interactive-bg-hover-color);
+}
+
+.dialog:has(form.roll-dialog) .cell--conditions ul {
+  list-style: none;
+}
+
+.masks-move-picker-dialog select {
+  background: var(--masks-input-bg-color);
+  color: var(--masks-input-text-color);
+  border: 0.5px solid var(--masks-input-border-color);
+}
+.masks-move-picker-dialog input[type=radio] {
+  accent-color: var(--masks-tab-bg-active-color);
+}
+
+.masks-basic-move-picker-dialog select {
+  background: var(--masks-input-bg-color);
+  color: var(--masks-input-text-color);
+  border: 0.5px solid var(--masks-input-border-color);
+}
+
+.masks-move-picker-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.masks-move-picker-option {
+  display: block;
+  padding: 8px;
+  border: 0.5px solid var(--masks-input-border-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.masks-move-picker-option .masks-move-picker-option-name {
+  font-weight: bold;
+  margin-left: 4px;
+}
+.masks-move-picker-option .masks-move-picker-option-description,
+.masks-move-picker-option .masks-move-picker-option-result {
+  margin-top: 4px;
+  font-size: 0.9em;
+}
+.masks-move-picker-option .masks-move-picker-option-description p,
+.masks-move-picker-option .masks-move-picker-option-result p {
+  margin: 0;
+}
+.masks-move-picker-option .masks-move-picker-option-result ul {
+  margin: 4px 0;
+  padding-left: 20px;
+}
+
 .pbta.sheet {
   /** Playbook customizations **/
 }
@@ -217,6 +286,9 @@
 }
 .pbta.sheet .sheet-wrapper .sheet-bottom .cell--conditions {
   padding-top: 0px;
+}
+.pbta.sheet .sheet-wrapper .sheet-bottom .cell--basic .items-list button:has(.fa-trash) {
+  display: none;
 }
 .pbta.sheet .sheet-wrapper .sheet-bottom .description .sheet-tab {
   display: flex;

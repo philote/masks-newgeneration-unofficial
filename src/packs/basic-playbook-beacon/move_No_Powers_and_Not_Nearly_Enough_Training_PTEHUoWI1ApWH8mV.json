@@ -10,6 +10,13 @@
       "id": "temp_hz2f4ifmmm",
       "path": "Basic Playbooks#/CF_SEP/The Beacon",
       "color": "#000000"
+    },
+    "masks-newgeneration-unofficial": {
+      "basicMoveChoices": [
+        "Compendium.masks-newgeneration-unofficial.moves.Item.RbWTLi81e6IZ9vH4",
+        "Compendium.masks-newgeneration-unofficial.moves.Item.6rnOFrthWetWrS7c",
+        "Compendium.masks-newgeneration-unofficial.moves.Item.sog3ZBzKUOxRDHWw"
+      ]
     }
   },
   "system": {

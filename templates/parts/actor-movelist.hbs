@@ -48,6 +48,17 @@
 						{{/if}}<span class="item-details-toggle"><i class="fas fa-chevron-up"></i></span>
 					</label>
 					<div>
+						{{#if (eq moveKey "playbook")}}
+						<button type="button" class="item-control masks-move-picker" data-move-type="{{moveKey}}">
+							<i class="fas fa-plus"></i>
+						</button>
+						{{else}}
+						{{#if (eq moveKey "adult")}}
+						<button type="button" class="item-control masks-move-picker" data-move-type="{{moveKey}}">
+							<i class="fas fa-plus"></i>
+						</button>
+						{{else}}
+						{{#unless (eq moveKey "basic")}}
 						<button
 							type="button"
 							class="item-control item-create"
@@ -60,6 +71,9 @@
 							>
 							<i class="fas fa-plus"></i>
 						</button>
+						{{/unless}}
+						{{/if}}
+						{{/if}}
 					</div>
 				</h2>
 				<ol class="items-list">
