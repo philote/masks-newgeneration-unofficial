@@ -4,6 +4,9 @@
         "SheetConfig": {
             "character": "Masks Character Sheet"
         },
+        "Dialog": {
+            "AutoConditions": "All marked conditions apply automatically: {total}"
+        },
         "Settings": {
             "game": {
 				"heading": "Masks: A New Generation",

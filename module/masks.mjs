@@ -1,6 +1,8 @@
 import { configSheet } from "./helpers/config-sheet.mjs";
 import * as utils from "./helpers/utils.mjs";
 import { MasksActorSheetMixin } from './sheets/actor-sheet.mjs';
+import { initPowerfulBlow } from './helpers/powerful-blow.mjs';
+import { migrateTakeAPowerfulBlow } from './helpers/migrations.mjs';
 
 Hooks.once("init", () => {
     const masksActorSheet = MasksActorSheetMixin(game.pbta.applications.actor.PbtaActorSheet);
@@ -43,10 +45,14 @@ Hooks.once("init", () => {
 
     // Preload Handlebars stuff.
     utils.preloadHandlebarsTemplates();
+
+    initPowerfulBlow();
 });
 
 Hooks.once('ready', async function () {
     if (!game.user.isGM) return;
+
+    await migrateTakeAPowerfulBlow();
     if (game.settings.get('masks-newgeneration-unofficial', 'firstTime')) {
         game.settings.set('masks-newgeneration-unofficial', 'firstTime', false);
 

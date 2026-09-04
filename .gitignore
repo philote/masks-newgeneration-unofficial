@@ -35,6 +35,9 @@ packs/*
 # Optional eslint cache
 .eslintcache
 
+# Test coverage output
+coverage/
+
 # Optional npm cache directory
 .npm
 

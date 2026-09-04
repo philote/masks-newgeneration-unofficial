@@ -21,7 +21,7 @@
     "description": "<p>When you <strong>take a powerful blow</strong>, roll + conditions marked.</p>",
     "requiresMove": "",
     "moveType": "basic",
-    "rollFormula": "",
+    "rollFormula": "2d6",
     "moveGroup": "",
     "moveResults": {
       "failure": {
@@ -42,7 +42,7 @@
     },
     "uses": 0,
     "playbook": "",
-    "rollType": "prompt",
+    "rollType": "formula",
     "rollMod": 0,
     "choices": "",
     "actorType": "character"
