@@ -17,7 +17,7 @@
     "description": "<p><strong>When you charge up your powers</strong>, roll + conditions you currently have marked.</p>\n<p>Spend your burn on your flares. You lose all burn at the end of the scene.</p>",
     "requiresMove": "",
     "moveType": "playbook",
-    "rollFormula": "",
+    "rollFormula": "2d6",
     "moveGroup": "",
     "moveResults": {
       "failure": {
@@ -38,7 +38,7 @@
     },
     "uses": 0,
     "playbook": "12",
-    "rollType": "prompt",
+    "rollType": "formula",
     "rollMod": 0,
     "choices": "",
     "actorType": "character"

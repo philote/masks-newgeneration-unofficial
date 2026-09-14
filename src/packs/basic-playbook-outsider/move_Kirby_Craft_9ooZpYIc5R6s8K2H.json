@@ -10,6 +10,13 @@
       "id": "temp_jh8gwruuya",
       "path": "Basic Playbooks#/CF_SEP/The Outsider",
       "color": "#000000"
+    },
+    "masks-newgeneration-unofficial": {
+      "basicMoveChoices": [
+        "Compendium.masks-newgeneration-unofficial.moves.Item.RbWTLi81e6IZ9vH4",
+        "Compendium.masks-newgeneration-unofficial.moves.Item.6rnOFrthWetWrS7c",
+        "Compendium.masks-newgeneration-unofficial.moves.Item.sog3ZBzKUOxRDHWw"
+      ]
     }
   },
   "system": {
@@ -38,7 +45,7 @@
     },
     "uses": 0,
     "playbook": "The Outsider",
-    "rollType": "",
+    "rollType": "superior",
     "rollMod": 0,
     "choices": "",
     "actorType": "character"
@@ -52,7 +59,7 @@
     "systemVersion": "1.0.14",
     "coreVersion": "12.327",
     "createdTime": 1699858650702,
-    "modifiedTime": 1718674179201,
+    "modifiedTime": 1789337756892,
     "lastModifiedBy": "6hjjFCY28uGRsfsB",
     "compendiumSource": null,
     "duplicateSource": null

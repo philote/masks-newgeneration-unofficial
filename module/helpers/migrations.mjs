@@ -31,6 +31,14 @@ export async function migrateRejectingInfluence() {
     await migrateMoveRollType("Rejecting Influence", { rollType: "formula", rollFormula: "2d6" });
 }
 
+export async function migrateBurn() {
+    await migrateMoveRollType("Burn", { rollType: "formula", rollFormula: "2d6" });
+}
+
+export async function migrateWheneverTimePasses() {
+    await migrateMoveRollType("Whenever time passes", { rollType: "savior", rollFormula: "" });
+}
+
 const NO_POWERS_MOVE_NAME = "No Powers and Not Nearly Enough Training";
 const NO_POWERS_BASIC_MOVE_CHOICES = [
     "Compendium.masks-newgeneration-unofficial.moves.Item.RbWTLi81e6IZ9vH4",
@@ -63,6 +71,44 @@ export async function migrateNoPowersBasicMoveChoices() {
         if (updates.length) {
             await actor.updateEmbeddedDocuments("Item", updates);
             console.log(`masks-newgeneration-unofficial | Migrated "${NO_POWERS_MOVE_NAME}" on actor "${actor.name}".`);
+        }
+    }
+}
+
+const KIRBY_CRAFT_MOVE_NAME = "Kirby-Craft";
+const KIRBY_CRAFT_BASIC_MOVE_CHOICES = [
+    "Compendium.masks-newgeneration-unofficial.moves.Item.RbWTLi81e6IZ9vH4",
+    "Compendium.masks-newgeneration-unofficial.moves.Item.6rnOFrthWetWrS7c",
+    "Compendium.masks-newgeneration-unofficial.moves.Item.sog3ZBzKUOxRDHWw"
+];
+
+/**
+ * "Kirby-Craft" gained the same "basicMoveChoices" picker as "No Powers and Not
+ * Nearly Enough Training" (see basic-move-picker.mjs), plus a rollType of
+ * "superior" (it was previously "", relying on pbta's fallback prompt) —
+ * existing embedded copies need both patched in since compendium updates
+ * don't touch items actors already dragged onto their sheet. Matched by name +
+ * a missing flag (idempotent: already-migrated or manually-customized items
+ * are left alone since they already have it).
+ */
+export async function migrateKirbyCraftBasicMoveChoices() {
+    for (const actor of game.actors) {
+        const updates = actor.items
+            .filter(
+                (item) =>
+                    item.type === "move" &&
+                    item.name === KIRBY_CRAFT_MOVE_NAME &&
+                    !item.flags?.["masks-newgeneration-unofficial"]?.basicMoveChoices
+            )
+            .map((item) => ({
+                _id: item.id,
+                "system.rollType": "superior",
+                "flags.masks-newgeneration-unofficial.basicMoveChoices": KIRBY_CRAFT_BASIC_MOVE_CHOICES
+            }));
+
+        if (updates.length) {
+            await actor.updateEmbeddedDocuments("Item", updates);
+            console.log(`masks-newgeneration-unofficial | Migrated "${KIRBY_CRAFT_MOVE_NAME}" on actor "${actor.name}".`);
         }
     }
 }
