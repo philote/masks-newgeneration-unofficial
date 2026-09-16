@@ -899,8 +899,12 @@
       }
 
       .content-link {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
         white-space: normal;
-        overflow-wrap: anywhere;
+        word-break: normal;
+        overflow-wrap: break-word;
       }
     }
   }
