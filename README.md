@@ -61,10 +61,12 @@ The following Foundry VTT game system must be installed to use this module: [Pow
 - Automation for playbooks
 - Improved layout with Social and Advancement Tabs
 - Spanish translation added by https://github.com/erizocosmico
+- Team Pool Tracker sheet
+- Automatic Mark Potential button when a move result calls for it
+- Move picker dialogs for playbook/basic/adult moves, and automatic condition application from move results
+- Skips the roll dialog automatically when a move has no choices to make
 
 ## TODO
-- Team Pool Tracker
-- Automation for potential
 - Add influence to roll dialogs
 - Common tracking of who has influence over who
 - Figure out how to support the Joined better

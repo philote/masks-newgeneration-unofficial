@@ -1,11 +1,16 @@
 #2.0.0
 - New maintainer as of this release (ctincorvia), after the previous maintainer became unreachable — see README for the full lineage
+- Added a Team Pool Tracker sheet
+- Added an automatic Mark Potential button that appears when a move result calls for it
+- Added move picker dialogs for playbook, basic, and adult moves, and automatic condition application based on move results
+- Rolls with no choices to make now skip the roll dialog automatically
 - Foundry v14 support added
 - This version ONLY works with Foundry v14+ and PbtA v1.2.0+
 - Namespaced deprecated globals (`loadTemplates`, `Actors`) ahead of their v15 removal
 - Removed the dead Foundry v12 branch from the settings sidebar integration
 - Removed unused TinyMCE styling (TinyMCE was removed from Foundry in v13; ProseMirror is now the only editor)
 - Fixed the login screen background never actually applying, due to an inverted response check
+- Removed the in-app Ko-fi/donation link tied to the previous maintainer's personal account
 - If you use Foundry v13:
     - use PbtA v1.1.23 with Masks v1.8.x
 - If you use Foundry v12: 
