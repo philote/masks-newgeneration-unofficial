@@ -23,6 +23,9 @@
   --masks-stats-border-color: rgb(229 222 210 / 37%);
   --masks-cell-title-border-color: #173f6e;
   --masks-header-bg-color: #173f6e;
+  --masks-result-success-color: #1e7d32;
+  --masks-result-partial-color: #a3690a;
+  --masks-result-failure-color: #b31a1a;
   --masks-window-bg-image: url("/modules/masks-newgeneration-unofficial/images/skyline.webp"),
     var(--actor-gradient);
   --masks-window-bg-position: bottom left;
@@ -623,6 +626,95 @@
 }
 
 /** Chat cards **/
+.pbta-chat-card {
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--masks-input-bg-color);
+  color: var(--masks-input-text-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+.pbta-chat-card .cell--chat {
+  padding: 10px 12px 12px;
+}
+.pbta-chat-card .item-icon {
+  border: 1px solid var(--masks-input-border-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+.pbta-chat-card .card-content {
+  margin-top: 4px;
+}
+.pbta-chat-card .card-content .row {
+  margin: 2px 0;
+}
+.pbta-chat-card .card-content .row em {
+  opacity: 0.75;
+}
+.pbta-chat-card .row.result {
+  position: relative;
+  margin: 10px 0 0;
+  padding: 10px 12px 10px 18px;
+  border-radius: 4px;
+  border: 1px solid var(--masks-input-border-color);
+  background: color-mix(in srgb, var(--masks-result-failure-color) 10%, var(--masks-input-bg-color));
+  overflow: hidden;
+}
+.pbta-chat-card .row.result::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background-color: var(--masks-result-failure-color);
+}
+.pbta-chat-card .row.result.success {
+  background: color-mix(in srgb, var(--masks-result-success-color) 10%, var(--masks-input-bg-color));
+}
+.pbta-chat-card .row.result.success::before {
+  background-color: var(--masks-result-success-color);
+}
+.pbta-chat-card .row.result.partial {
+  background: color-mix(in srgb, var(--masks-result-partial-color) 10%, var(--masks-input-bg-color));
+}
+.pbta-chat-card .row.result.partial::before {
+  background-color: var(--masks-result-partial-color);
+}
+.pbta-chat-card .row.result.failure {
+  background: color-mix(in srgb, var(--masks-result-failure-color) 10%, var(--masks-input-bg-color));
+}
+.pbta-chat-card .row.result.failure::before {
+  background-color: var(--masks-result-failure-color);
+}
+.pbta-chat-card .dice-roll {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--masks-input-border-color);
+  background: color-mix(in srgb, var(--masks-interactive-bg-color) 10%, transparent);
+  cursor: pointer;
+}
+.pbta-chat-card .dice-flavor {
+  font-style: italic;
+  opacity: 0.75;
+  margin-bottom: 4px;
+}
+.pbta-chat-card .dice-formula {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.pbta-chat-card .dice-total {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 6px 0 0;
+  color: var(--masks-title-text-color);
+}
+.pbta-chat-card .tags .tag {
+  background: var(--masks-tab-bg-active-color);
+  border: 1px solid var(--masks-input-border-color);
+  color: var(--masks-secondary-text-color);
+}
 .pbta-chat-card .result-details li h4,
 .pbta-chat-card .result-choices li h4 {
   font-size: var(--font-size-13);
@@ -671,6 +763,58 @@
 .pbta-chat-card .masks-mark-potential:disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+
+.vtt #chat .message .pbta-chat-card .chat-title {
+  padding: 0;
+  margin-bottom: 6px;
+  border: none;
+  gap: 8px;
+}
+.vtt #chat .message .pbta-chat-card .cell__title {
+  font-weight: bold;
+  margin: 0;
+  border-bottom: none;
+  color: var(--masks-title-text-color);
+  font-size: 20px;
+  line-height: 1.2;
+}
+.vtt #chat .message .pbta-chat-card .cell__subtitle {
+  color: var(--masks-title-text-color);
+  margin: 0 0 4px;
+}
+.vtt #chat .message .pbta-chat-card .result-label {
+  background: transparent;
+  border: none;
+  padding: 0 0 6px;
+  text-align: left;
+  color: var(--masks-input-text-color);
+}
+.vtt #chat .message .pbta-chat-card .success .result-label {
+  color: var(--masks-result-success-color);
+}
+.vtt #chat .message .pbta-chat-card .partial .result-label {
+  color: var(--masks-result-partial-color);
+}
+.vtt #chat .message .pbta-chat-card .failure .result-label {
+  color: var(--masks-result-failure-color);
+}
+.vtt #chat .message .pbta-chat-card .row--border {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--masks-input-border-color);
+}
+.vtt #chat .message .pbta-chat-card .card-buttons button {
+  background: var(--masks-interactive-bg-color);
+  border: 1px solid var(--masks-tab-bg-active-color);
+  color: var(--masks-primary-text-color);
+}
+.vtt #chat .message .pbta-chat-card .card-buttons button:hover {
+  background: var(--masks-interactive-bg-hover-color);
+}
+
+.vtt #chat .message.whisper .pbta-chat-card .result-label {
+  background: transparent;
 }
 
 /** Team Pool tracker actor **/
