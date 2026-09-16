@@ -7,6 +7,7 @@ import { initMovePicker } from './helpers/move-picker.mjs';
 import { initBasicMovePicker } from './helpers/basic-move-picker.mjs';
 import { initSkipEmptyRollDialog } from './helpers/skip-empty-roll-dialog.mjs';
 import { initTeamPool } from './helpers/team-pool.mjs';
+import { initMarkPotentialButton } from './helpers/mark-potential.mjs';
 import { migrateTakeAPowerfulBlow, migrateRejectingInfluence, migrateBurn, migrateNoPowersBasicMoveChoices, migrateKirbyCraftBasicMoveChoices, migrateWheneverTimePasses } from './helpers/migrations.mjs';
 
 Hooks.once("init", () => {
@@ -57,6 +58,7 @@ Hooks.once("init", () => {
     initBasicMovePicker();
     initSkipEmptyRollDialog();
     initTeamPool();
+    initMarkPotentialButton();
 });
 
 Hooks.once('ready', async function () {

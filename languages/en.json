@@ -11,6 +11,9 @@
             "Increase": "Add to the Team pool",
             "Decrease": "Spend from the Team pool"
         },
+        "Chat": {
+            "MarkPotential": "Mark Potential"
+        },
         "Dialog": {
             "AutoConditions": "All marked conditions apply automatically: {total}",
             "ChooseMoveTitle": "Which move are you making?",

@@ -11,6 +11,9 @@
             "Increase": "Añadir a la reserva de Equipo",
             "Decrease": "Gastar de la reserva de Equipo"
         },
+        "Chat": {
+            "MarkPotential": "Marcar Potencial"
+        },
         "Settings": {
             "game": {
 				"heading": "Masks: Una nueva generación",

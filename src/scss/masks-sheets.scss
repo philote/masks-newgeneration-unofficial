@@ -790,6 +790,7 @@
   .card-buttons {
     justify-content: center;
     gap: 8px;
+    margin-top: 6px;
 
     button {
       flex: 1 1 0;
@@ -797,6 +798,37 @@
       &:hover {
         color: var(--masks-secondary-text-color);
       }
+    }
+  }
+
+  .masks-mark-potential {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    margin-top: 6px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 2px solid var(--masks-tab-bg-active-color);
+    background: var(--masks-interactive-bg-color);
+    color: var(--masks-primary-text-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s ease-out, background-color 0.1s ease-out;
+
+    &:hover:not(:disabled) {
+      background-color: var(--masks-interactive-bg-hover-color);
+    }
+
+    &:active:not(:disabled) {
+      transform: scale(0.97);
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
     }
   }
 }
