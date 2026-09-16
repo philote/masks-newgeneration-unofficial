@@ -1,3 +1,6 @@
+#2.0.1
+- Updated styling for chat panes (light and dark mode)
+
 #2.0.0
 - New maintainer as of this release (ctincorvia), after the previous maintainer became unreachable — see README for the full lineage
 - Added a Team Pool Tracker sheet
