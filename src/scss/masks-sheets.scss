@@ -880,7 +880,7 @@
     font-size: 1.75rem;
     font-weight: bold;
     margin: 6px 0 0;
-    color: var(--masks-title-text-color);
+    color: var(--masks-header-bg-color);
   }
 
   .tags .tag {
@@ -963,13 +963,13 @@
     font-weight: bold;
     margin: 0;
     border-bottom: none;
-    color: var(--masks-title-text-color);
+    color: var(--masks-header-bg-color);
     font-size: 20px;
     line-height: 1.2;
   }
 
   .cell__subtitle {
-    color: var(--masks-title-text-color);
+    color: var(--masks-header-bg-color);
     margin: 0 0 4px;
   }
 
