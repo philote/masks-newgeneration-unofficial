@@ -1,3 +1,7 @@
+#2.0.2
+- Fixed dark mode contrast for chat card titles and subtitles
+- Fixed chat card result links to wrap correctly instead of overflowing
+
 #2.0.1
 - Updated styling for chat panes (light and dark mode)
 
