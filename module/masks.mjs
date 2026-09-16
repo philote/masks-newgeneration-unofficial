@@ -5,6 +5,8 @@ import { initPowerfulBlow } from './helpers/powerful-blow.mjs';
 import { initBasicMoveConditions } from './helpers/basic-move-conditions.mjs';
 import { initMovePicker } from './helpers/move-picker.mjs';
 import { initBasicMovePicker } from './helpers/basic-move-picker.mjs';
+import { initSkipEmptyRollDialog } from './helpers/skip-empty-roll-dialog.mjs';
+import { initTeamPool } from './helpers/team-pool.mjs';
 import { migrateTakeAPowerfulBlow, migrateRejectingInfluence, migrateBurn, migrateNoPowersBasicMoveChoices, migrateKirbyCraftBasicMoveChoices, migrateWheneverTimePasses } from './helpers/migrations.mjs';
 
 Hooks.once("init", () => {
@@ -53,6 +55,8 @@ Hooks.once("init", () => {
     initBasicMoveConditions();
     initMovePicker();
     initBasicMovePicker();
+    initSkipEmptyRollDialog();
+    initTeamPool();
 });
 
 Hooks.once('ready', async function () {
@@ -271,18 +275,10 @@ Hooks.on("renderSettings", (app, html) => {
             {
                 action: (ev) => {
                     ev.preventDefault();
-                    window.open("https://github.com/philote/masks-newgeneration-unofficial", "_blank");
+                    window.open("https://github.com/ctincorvia/masks-newgeneration-unofficial", "_blank");
                 },
                 iconClasses: ["fab", "fa-github"],
                 labelKey: "MASKS-SHEETS.Settings.game.github.title",
-            },
-            {
-                action: (ev) => {
-                    ev.preventDefault();
-                    window.open("https://ko-fi.com/ephson", "_blank");
-                },
-                iconClasses: ["fa-solid", "fa-mug-hot"],
-                labelKey: "MASKS-SHEETS.Settings.game.kofi.title",
             },
         ]
     };

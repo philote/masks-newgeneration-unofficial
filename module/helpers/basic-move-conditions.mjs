@@ -40,6 +40,8 @@ function resolveApplicableCondition(moveName) {
     return pickerSuffix ? MOVE_CONDITIONS[pickerSuffix[1]] : undefined;
 }
 
+export { onRenderDialog as applyBasicMoveConditions };
+
 function onRenderDialog(app, html) {
     const root = html[0];
     const conditionsCell = root.querySelector(".cell--conditions");

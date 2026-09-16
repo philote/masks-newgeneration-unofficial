@@ -1,8 +1,15 @@
 {
     "TYPES.Item.masks-newgeneration-unofficial.influence": "Influencia",
+    "TYPES.Actor.masks-newgeneration-unofficial.team": "Reserva de Equipo",
     "MASKS-SHEETS": {
         "SheetConfig": {
-            "character": "Hoja de personaje de Masks"
+            "character": "Hoja de personaje de Masks",
+            "team": "Hoja de Reserva de Equipo"
+        },
+        "TeamPool": {
+            "Label": "Equipo",
+            "Increase": "Añadir a la reserva de Equipo",
+            "Decrease": "Gastar de la reserva de Equipo"
         },
         "Settings": {
             "game": {
@@ -12,9 +19,6 @@
 				},
 				"github": {
 					"title": "Repositorio del módulo"
-				},
-				"kofi": {
-					"title": "Apóyame en Ko-fi"
 				}
 			},
             "enable_dark_mode": {

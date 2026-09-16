@@ -1,8 +1,14 @@
 {
   "name": "masks-newgeneration-unofficial",
   "version": "2.0.0",
-  "author": "Joseph Hopson",
+  "author": "Charlie Incorvia",
   "description": "Masks system for Foundry VTT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctincorvia/masks-newgeneration-unofficial.git"
+  },
+  "homepage": "https://github.com/ctincorvia/masks-newgeneration-unofficial",
+  "bugs": "https://github.com/ctincorvia/masks-newgeneration-unofficial/issues",
   "browserslist": [
     "last 3 versions"
   ],

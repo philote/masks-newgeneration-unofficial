@@ -1,8 +1,15 @@
 {
     "TYPES.Item.masks-newgeneration-unofficial.influence": "Influence",
+    "TYPES.Actor.masks-newgeneration-unofficial.team": "Team Pool",
     "MASKS-SHEETS": {
         "SheetConfig": {
-            "character": "Masks Character Sheet"
+            "character": "Masks Character Sheet",
+            "team": "Team Pool Sheet"
+        },
+        "TeamPool": {
+            "Label": "Team",
+            "Increase": "Add to the Team pool",
+            "Decrease": "Spend from the Team pool"
         },
         "Dialog": {
             "AutoConditions": "All marked conditions apply automatically: {total}",
@@ -33,9 +40,6 @@
 				},
 				"github": {
 					"title": "Module Repository"
-				},
-				"kofi": {
-					"title": "Support me on Ko-fi"
 				}
 			},
             "enable_dark_mode": {

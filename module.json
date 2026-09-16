@@ -25,6 +25,10 @@
 		{
 			"name": "erizocosmico",
 			"url": "https://github.com/erizocosmico"
+		},
+		{
+			"name": "Charlie Incorvia",
+			"url": "https://github.com/ctincorvia"
 		}
 	],
 	"packs": [
@@ -316,6 +320,11 @@
 	],
 	"esmodules": ["module/masks.mjs"],
 	"styles": ["css/masks-sheets.css"],
+	"documentTypes": {
+		"Actor": {
+			"team": {}
+		}
+	},
 	"languages": [
 		{
 			"lang": "en",
@@ -350,16 +359,17 @@
 	"download": "#{DOWNLOAD}#",
 	"license": "LICENSE",
 	"readme": "README.md",
+	"bug-reports": "https://github.com/ctincorvia/masks-newgeneration-unofficial/issues",
 	"media": [
 		{
 			"type": "screenshot",
-			"url": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/images/screenshots/character-sheet_light.webp",
+			"url": "https://raw.githubusercontent.com/ctincorvia/masks-newgeneration-unofficial/main/images/screenshots/character-sheet_light.webp",
 			"loop": false,
 			"caption": "Masks character sheet screenshot from Foundry VTT."
 		},
 		{
 			"type": "cover",
-			"url": "https://raw.githubusercontent.com/CyricPL/masks-newgeneration-unofficial/main/images/cover.webp",
+			"url": "https://raw.githubusercontent.com/ctincorvia/masks-newgeneration-unofficial/main/images/cover.webp",
 			"loop": false,
 			"caption": "Cover Image for the Unofficial Rhapsody of Blood package."
 		}

@@ -17,6 +17,8 @@ export function initPowerfulBlow() {
     Hooks.on("renderDialog", onRenderDialog);
 }
 
+export { onRenderDialog as applyPowerfulBlowConditions };
+
 function onRenderDialog(app, html) {
     const title = app?.data?.title;
     const isFlatConditionBonusMove = ALL_CONDITIONS_MOVE_NAMES.some(

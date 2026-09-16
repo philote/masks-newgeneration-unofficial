@@ -9,5 +9,6 @@ export const preloadHandlebarsTemplates = async function () {
       'modules/masks-newgeneration-unofficial/templates/parts/actor-movelist.hbs',
       'modules/masks-newgeneration-unofficial/templates/parts/actor-social.hbs',
       'modules/masks-newgeneration-unofficial/templates/parts/actor-advancement.hbs',
+      'modules/masks-newgeneration-unofficial/templates/sheets/team-pool-sheet.hbs',
     ]);
 };
