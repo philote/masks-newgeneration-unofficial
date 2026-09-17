@@ -1,3 +1,10 @@
+#2.0.3
+- Added a Label-swap prompt: moves that grant it (currently the Soldier's "A Higher Calling") let you roll with that flagged attribute's Label instead of the move's own
+- Added a roll-options picker for moves that fold multiple distinct rolls into one item ("Connecting the Dots", "All the Best Stuff")
+- Added attribute-based rolls for playbook-specific Labels that aren't one of the five core stats
+- Extended chat card and dialog styling fixes to the chat popout and notifications windows, and added styling for the new roll-options/label-swap dialogs
+- Existing actors' items for the moves above are automatically migrated to the new mechanics
+
 #2.0.2
 - Fixed dark mode contrast for chat card titles and subtitles
 - Fixed chat card result links to wrap correctly instead of overflowing
