@@ -35,7 +35,7 @@
         "Influences": "Influences",
         "HasInfluence": "A de l'influence sur toi",
         "HaveInfluence": "Tu as de l'influence sur ellui",
-        "Influence-Lock": "Vérrouiller cette influence",
+        "Influence-Lock": "Verrouiller cette influence",
         "Influence-Unlock": "Déverrouiller cette influence",
         "InfluenceCreate": "Créer une influence",
         "Person-Name": "Nom de la personne",
@@ -66,7 +66,7 @@
             }
         },
         "CharacterSheets": {
-            "statToggle": "Vérrouillé",
+            "statToggle": "Verrouillé",
             "rollResults": {
                 "complications": "Complications…",
                 "partialSuccess": "Petite réussite",
@@ -83,9 +83,9 @@
             "xpLabel": "Potentiel",
             "conditions": {
                 "label": "États émotionnels",
-                "description": "Choisi ceux qui s'appliquent :",
+                "description": "Choisis ceux qui s'appliquent :",
                 "options": {
-                    "0": "Éffrayé (-2 à affronter directement)",
+                    "0": "Effrayé (-2 à affronter directement)",
                     "1": "Furieux (-2 à réconforter, soutenir et percer le masque)",
                     "2": "Coupable (-2 à provoquer et évaluer la situation)",
                     "3": "Désespéré (-2 à déchaîner ses pouvoirs)",
@@ -94,13 +94,13 @@
             },
             "momentUnlocked": {
                 "label": "Moment de Vérité",
-                "checkboxLabel": "Dévérrouillé"
+                "checkboxLabel": "Déverrouillé"
             },
             "influenceLabel": "Influence",
             "advancementsLabel": "Progressions",
             "advancementsDescription": "Quand toutes tes cases de potentiel sont cochées, tu progresses. Choisis dans la liste.",
             "laterAdvancesLabel": "Progressions suivantes",
-            "laterAdvancesDescription": "Quand tu as sélectionné au moins cinq des progressions, tu peux prendres parmi les suivantes.",
+            "laterAdvancesDescription": "Quand tu as sélectionné au moins cinq des progressions, tu peux prendre parmi les suivantes.",
             "details": {
                 "lookLabel": "Apparence",
                 "abilitiesLabel": "Pouvoirs",
@@ -152,14 +152,14 @@
                 "theScionGreatestVictimLabel": "Plus importante victime",
                 "theScionPersonalIdolLabel": "Idole personnelle",
                 "theScionGreatestLeaderLabel": "Plus important dirigeant",
-                "theScionGreatestHeroLabel": "Plus important héro",
+                "theScionGreatestHeroLabel": "Plus important héros",
                 "theScionBiggestCelebrityLabel": "Plus grande célébrité",
                 "theHarbinger": {
                     "label":  "Souvenirs"
                 },
                 "theBrainLabel": "Ta honte",
                 "theStarAdvantagesLabel": "Avantages de l'audience",
-                "theStarDemandsLabel": "Exigeances de l'audience",
+                "theStarDemandsLabel": "Exigences de l'audience",
                 "theInnocentLabel": "Ton futur Toi",
                 "theNewbornLabel": "Leçons",
                 "theReformedLabel": "Amis des bas-fonds",
