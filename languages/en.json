@@ -25,6 +25,7 @@
             "LabelSwapTitle": "Which Label are you rolling with?",
             "LabelSwapPrompt": "Choose which Label to roll with:",
             "LabelSwapUse": "Roll +{label}",
+            "LabelSwapAsk": "Choose a Label",
             "MovePicker": {
                 "PlaybookChoiceTitle": "Add Playbook Move",
                 "PlaybookChoicePrompt": "How would you like to add a move?",
@@ -46,7 +47,7 @@
 				"heading": "Masks: A New Generation",
 				"publisher": {
 					"title": "Magpie Games",
-					"url": "https://magpiegames.com/masks/",
+					"url": "https://magpiegames.com/masks/"
 				},
 				"github": {
 					"title": "Module Repository"
