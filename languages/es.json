@@ -14,6 +14,34 @@
         "Chat": {
             "MarkPotential": "Marcar Potencial"
         },
+        "Dialog": {
+            "AutoConditions": "Todas las condiciones marcadas se aplican automáticamente: {total}",
+            "ChooseMoveTitle": "¿Qué movimiento estás haciendo?",
+            "ChooseMoveLabel": "Elige el movimiento básico al que se aplica esto:",
+            "ChooseMoveSubmit": "Tirar",
+            "ChooseRollTitle": "¿Qué tirada estás haciendo?",
+            "ChooseRollLabel": "Elige una tirada:",
+            "ChooseRollSubmit": "Tirar",
+            "LabelSwapTitle": "¿Con qué etiqueta estás tirando?",
+            "LabelSwapPrompt": "Elige con qué etiqueta tirar:",
+            "LabelSwapUse": "Tirar +{label}",
+            "LabelSwapAsk": "Escoger una etiqueta",
+            "MovePicker": {
+                "PlaybookChoiceTitle": "Añadir movimiento de libreto",
+                "PlaybookChoicePrompt": "¿Cómo quieres añadir un movimiento?",
+                "OwnPlaybook": "Desde tu libreto",
+                "OtherPlaybook": "Desde otro libreto",
+                "Blank": "Crear movimiento en blanco",
+                "NoPlaybook": "Este personaje todavía no tiene libreto.",
+                "SelectPlaybookTitle": "Selecciona un libreto",
+                "SelectPlaybookPrompt": "Elige un libreto para ver sus movimientos.",
+                "Next": "Siguiente",
+                "SelectMoveTitle": "Selecciona un movimiento",
+                "AdultMoveTitle": "Añadir movimiento de adulto",
+                "Add": "Añadir",
+                "NoMovesAvailable": "No quedan movimientos disponibles para añadir."
+            }
+        },
         "Settings": {
             "game": {
 				"heading": "Masks: Una nueva generación",

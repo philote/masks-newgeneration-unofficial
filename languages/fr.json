@@ -1,8 +1,46 @@
 {
     "TYPES.Item.masks-newgeneration-unofficial.influence": "Influence",
+    "TYPES.Actor.masks-newgeneration-unofficial.team": "Réserve d'équipe",
     "MASKS-SHEETS": {
         "SheetConfig": {
-            "character": "Livret de Masques"
+            "character": "Livret de Masques",
+            "team": "Feuille de réserve d'équipe"
+        },
+        "TeamPool": {
+            "Label": "Équipe",
+            "Increase": "Ajouter à la réserve d'équipe",
+            "Decrease": "Dépenser dans la réserve d'équipe"
+        },
+        "Chat": {
+            "MarkPotential": "Cocher du Potentiel"
+        },
+        "Dialog": {
+            "AutoConditions": "Tous les états émotionnels cochés s'appliquent automatiquement : {total}",
+            "ChooseMoveTitle": "Quelle manœuvre effectues-tu ?",
+            "ChooseMoveLabel": "Choisis la manœuvre de base à laquelle cela s'applique :",
+            "ChooseMoveSubmit": "Lancer",
+            "ChooseRollTitle": "Quel jet effectues-tu ?",
+            "ChooseRollLabel": "Choisis un jet :",
+            "ChooseRollSubmit": "Lancer",
+            "LabelSwapTitle": "Avec quelle étiquette lances-tu les dés ?",
+            "LabelSwapPrompt": "Choisis l'étiquette avec laquelle lancer :",
+            "LabelSwapUse": "Lancer +{label}",
+            "LabelSwapAsk": "Choisir une étiquette",
+            "MovePicker": {
+                "PlaybookChoiceTitle": "Ajouter une manœuvre de livret",
+                "PlaybookChoicePrompt": "Comment souhaites-tu ajouter une manœuvre ?",
+                "OwnPlaybook": "Depuis ton livret",
+                "OtherPlaybook": "Depuis un autre livret",
+                "Blank": "Créer une manœuvre vierge",
+                "NoPlaybook": "Ce personnage n'a pas encore de livret.",
+                "SelectPlaybookTitle": "Choisir un livret",
+                "SelectPlaybookPrompt": "Choisis un livret pour parcourir ses manœuvres.",
+                "Next": "Suivant",
+                "SelectMoveTitle": "Choisir une manœuvre",
+                "AdultMoveTitle": "Ajouter une manœuvre d'adulte",
+                "Add": "Ajouter",
+                "NoMovesAvailable": "Il n'y a plus de manœuvre à ajouter."
+            }
         },
         "Settings": {
             "game": {
@@ -13,9 +51,6 @@
                 },
                 "github": {
                     "title": "Dépôt du module"
-                },
-                "kofi": {
-                    "title": "Soutenez-moi sur Ko-fi"
                 }
             },
             "enable_dark_mode": {

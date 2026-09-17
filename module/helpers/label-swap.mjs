@@ -71,7 +71,7 @@ function formatSignedLabel(label, value) {
 async function promptForLabelChoice(actor, rollType, attributeKey) {
     const normalLabel =
         rollType === "ask"
-            ? "Choose a Label"
+            ? game.i18n.localize("MASKS-SHEETS.Dialog.LabelSwapAsk")
             : formatSignedLabel(actor.system.stats[rollType].label, actor.system.stats[rollType].value);
 
     const swapAttribute = actor.system.attributes[attributeKey];
