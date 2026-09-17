@@ -1,3 +1,8 @@
+#2.0.4
+- Added a French translation (sedric, based on the official translation by Guy Blavin for 500 Nuances de Geek)
+- The publisher link in the Settings sidebar is now localized, crediting 500 Nuances de Geek under French and Magpie Games otherwise
+- Fixed automatic condition-checkbox lockdown on basic move rolls under non-English locales — it silently never applied under Spanish, and would have under French too
+
 #2.0.3
 - Added a Label-swap prompt: moves that grant it (currently the Soldier's "A Higher Calling") let you roll with that flagged attribute's Label instead of the move's own
 - Added a roll-options picker for moves that fold multiple distinct rolls into one item ("Connecting the Dots", "All the Best Stuff")

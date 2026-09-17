@@ -26,6 +26,7 @@ This revised version of the module is based on works from multiple people:
 - A second version that was maintained by CyricPL (https://github.com/CyricPL/masks-newgeneration-unofficial)
 - A sheet module created by Geekswordsman (https://gitlab.com/geekswordsman/masks-newgeneration-sheets)
 - Further development and Spanish translation added by erizocosmico
+- French translation added by sedric, based on the official translation by Guy Blavin for 500 Nuances de Geek
 - Continued maintenance through Foundry v14 by philote (ephson)
 The current version is a merging of these modules' features, cleanup of the moves and bringing the module up to date with Foundry VTT versions and PbtA system versions.
 
@@ -61,6 +62,7 @@ The following Foundry VTT game system must be installed to use this module: [Pow
 - Automation for playbooks
 - Improved layout with Social and Advancement Tabs
 - Spanish translation added by https://github.com/erizocosmico
+- French translation added by https://github.com/sedric
 - Team Pool Tracker sheet
 - Automatic Mark Potential button when a move result calls for it
 - Move picker dialogs for playbook/basic/adult moves, and automatic condition application from move results
