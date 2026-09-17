@@ -72,3 +72,20 @@ export const MOVE_CONDITIONS = {
  * the same "renderDialog" event.
  */
 export const ALL_CONDITIONS_MOVE_NAMES = ["Take a Powerful Blow", "Burn"];
+
+/**
+ * Maps each MOVE_CONDITIONS value to its option index under
+ * MASKS-SHEETS.CharacterSheets.conditions.options in languages/*.json (see
+ * config-sheet.mjs, which builds the sheet-config condition checkboxes from
+ * those same five keys in the same order). basic-move-conditions.mjs reads
+ * this to localize the condition name it's matching against, since the
+ * checkbox's rendered label is never in English once a non-English locale is
+ * active.
+ */
+export const CONDITION_OPTION_KEYS = {
+    Afraid: "0",
+    Angry: "1",
+    Guilty: "2",
+    Hopeless: "3",
+    Insecure: "4"
+};

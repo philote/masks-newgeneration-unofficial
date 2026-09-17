@@ -1,4 +1,4 @@
-import { ALL_CONDITIONS_MOVE_NAMES, MOVE_CONDITIONS } from "./move-condition-map.mjs";
+import { ALL_CONDITIONS_MOVE_NAMES, CONDITION_OPTION_KEYS, MOVE_CONDITIONS } from "./move-condition-map.mjs";
 
 /**
  * Like powerful-blow.mjs, the pbta system's roll dialog doesn't expose the
@@ -27,6 +27,12 @@ function extractMoveName(title) {
     if (!title.startsWith(prefix) || !title.endsWith(suffix)) return null;
 
     return title.slice(prefix.length, title.length - suffix.length);
+}
+
+// Strips a checkbox/option label's trailing "(-2 to ...)" parenthetical so
+// the bare condition name can be compared regardless of locale.
+function stripModifier(text) {
+    return text.replace(/\s*\([^)]*\)\s*$/, "").trim();
 }
 
 // basic-move-picker.mjs renames its clone to "<move name> (<chosen basic
@@ -63,10 +69,19 @@ function onRenderDialog(app, html) {
     const checkboxes = conditionsCell.querySelectorAll('input[name="condition"]');
     if (!checkboxes.length) return;
 
+    // The checkbox label is rendered from config-sheet.mjs's own
+    // MASKS-SHEETS.CharacterSheets.conditions.options.N localization, so it's
+    // never the English "Afraid"/"Angry"/... literal once a non-English
+    // locale is active — resolve the expected label through i18n instead of
+    // comparing against MOVE_CONDITIONS' English name directly.
+    const expectedLabel = stripModifier(
+        game.i18n.localize(`MASKS-SHEETS.CharacterSheets.conditions.options.${CONDITION_OPTION_KEYS[applicableCondition]}`)
+    );
+
     let total = 0;
     checkboxes.forEach((checkbox) => {
-        const conditionName = (checkbox.dataset.content ?? "").split(" ")[0];
-        if (conditionName === applicableCondition) {
+        const conditionLabel = stripModifier(checkbox.dataset.content ?? "");
+        if (conditionLabel === expectedLabel) {
             checkbox.checked = true;
             checkbox.disabled = true;
             total += Number(checkbox.dataset.mod);

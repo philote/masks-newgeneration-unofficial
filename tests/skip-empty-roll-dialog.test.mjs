@@ -1,8 +1,29 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { initSkipEmptyRollDialog } from "../module/helpers/skip-empty-roll-dialog.mjs";
+import { CONDITION_OPTION_KEYS } from "../module/helpers/move-condition-map.mjs";
 
 function formatMock(key, data) {
 	return `${key}:${JSON.stringify(data ?? {})}`;
+}
+
+// Mirrors config-sheet.mjs's MASKS-SHEETS.CharacterSheets.conditions.options.N
+// localization, which basic-move-conditions.mjs (exercised here through the
+// real applyBasicMoveConditions import) resolves the applicable condition's
+// label through instead of an English literal.
+const CONDITION_LABELS = {
+	Afraid: "Afraid (-2 to engage)",
+	Angry: "Angry (-2 to comfort or pierce)",
+	Guilty: "Guilty (-2 to provoke or assess)",
+	Hopeless: "Hopeless (-2 to unleash)",
+	Insecure: "Insecure (-2 to defend or reject)"
+};
+const CONDITION_OPTIONS_BY_KEY = Object.fromEntries(
+	Object.entries(CONDITION_OPTION_KEYS).map(([condition, optionKey]) => [optionKey, CONDITION_LABELS[condition]])
+);
+
+function localizeMock(key) {
+	const match = key.match(/conditions\.options\.(\d)$/);
+	return match ? CONDITION_OPTIONS_BY_KEY[match[1]] : key;
 }
 
 // Mirrors the real EVALUATION_TEMPLATE's .cell--conditions markup (same shape the
@@ -70,7 +91,7 @@ describe("initSkipEmptyRollDialog", () => {
 	beforeEach(() => {
 		originalConfigureDialog = vi.fn().mockResolvedValue("dialog result");
 		vi.stubGlobal("CONFIG", { Dice: { RollPbtA: { prototype: { configureDialog: originalConfigureDialog } } } });
-		vi.stubGlobal("game", { i18n: { format: vi.fn(formatMock), localize: vi.fn((key) => key) } });
+		vi.stubGlobal("game", { i18n: { format: vi.fn(formatMock), localize: vi.fn(localizeMock) } });
 		vi.stubGlobal("foundry", {
 			utils: { mergeObject: (a, b) => ({ ...a, ...b }) },
 			applications: { handlebars: { renderTemplate: vi.fn() } }

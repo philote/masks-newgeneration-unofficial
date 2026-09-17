@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { readFileSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
-import { ALL_CONDITIONS_MOVE_NAMES, MOVE_CONDITIONS } from "../module/helpers/move-condition-map.mjs";
+import { ALL_CONDITIONS_MOVE_NAMES, CONDITION_OPTION_KEYS, MOVE_CONDITIONS } from "../module/helpers/move-condition-map.mjs";
 import enTranslations from "../languages/en.json";
 
 // Guards the name-based matching basic-move-conditions.mjs and
@@ -26,13 +26,12 @@ function collectPackMoveNames() {
 
 const packMoveNames = collectPackMoveNames();
 
-// The single-word condition names basic-move-conditions.mjs matches against
-// checkbox.dataset.content.split(" ")[0] — derived from the same localized
-// labels the sheet actually renders, so a copy edit to en.json is caught
-// here too.
-const conditionNames = Object.values(
-	enTranslations["MASKS-SHEETS"].CharacterSheets.conditions.options
-).map((label) => label.split(" ")[0]);
+// The single-word condition names basic-move-conditions.mjs resolves through
+// CONDITION_OPTION_KEYS and game.i18n.localize — derived from the same
+// localized labels the sheet actually renders, so a copy edit to en.json is
+// caught here too.
+const conditionOptions = enTranslations["MASKS-SHEETS"].CharacterSheets.conditions.options;
+const conditionNames = Object.values(conditionOptions).map((label) => label.split(" ")[0]);
 
 describe("move-condition-map", () => {
 	it("every MOVE_CONDITIONS key matches a real move's name in src/packs/", () => {
@@ -50,5 +49,12 @@ describe("move-condition-map", () => {
 	it("every ALL_CONDITIONS_MOVE_NAMES entry matches a real move's name in src/packs/", () => {
 		const missing = ALL_CONDITIONS_MOVE_NAMES.filter((name) => !packMoveNames.has(name));
 		expect(missing).toEqual([]);
+	});
+
+	it("every CONDITION_OPTION_KEYS entry points at the matching en.json condition option", () => {
+		const mismatched = Object.entries(CONDITION_OPTION_KEYS).filter(
+			([condition, optionKey]) => conditionOptions[optionKey]?.split(" ")[0] !== condition
+		);
+		expect(mismatched).toEqual([]);
 	});
 });

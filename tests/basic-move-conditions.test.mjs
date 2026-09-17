@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { initBasicMoveConditions } from "../module/helpers/basic-move-conditions.mjs";
-import { ALL_CONDITIONS_MOVE_NAMES, MOVE_CONDITIONS } from "../module/helpers/move-condition-map.mjs";
+import { ALL_CONDITIONS_MOVE_NAMES, CONDITION_OPTION_KEYS, MOVE_CONDITIONS } from "../module/helpers/move-condition-map.mjs";
 
 const CONDITION_LABELS = {
 	Afraid: "Afraid (-2 to engage)",
@@ -10,8 +10,19 @@ const CONDITION_LABELS = {
 	Insecure: "Insecure (-2 to defend or reject)"
 };
 
+// Mirrors config-sheet.mjs's MASKS-SHEETS.CharacterSheets.conditions.options.N
+// localization that the checkbox labels are actually rendered from.
+const CONDITION_OPTIONS_BY_KEY = Object.fromEntries(
+	Object.entries(CONDITION_OPTION_KEYS).map(([condition, optionKey]) => [optionKey, CONDITION_LABELS[condition]])
+);
+
 function formatMock(key, data) {
 	return `${key}:${JSON.stringify(data ?? {})}`;
+}
+
+function localizeMock(key) {
+	const match = key.match(/conditions\.options\.(\d)$/);
+	return match ? CONDITION_OPTIONS_BY_KEY[match[1]] : key;
 }
 
 function buildDialogHtml({ title, conditions } = {}) {
@@ -59,7 +70,7 @@ describe("initBasicMoveConditions", () => {
 				if (hook === "renderDialog") handler = fn;
 			})
 		});
-		vi.stubGlobal("game", { i18n: { format: vi.fn(formatMock) } });
+		vi.stubGlobal("game", { i18n: { format: vi.fn(formatMock), localize: vi.fn(localizeMock) } });
 		initBasicMoveConditions();
 	});
 
@@ -194,6 +205,42 @@ describe("initBasicMoveConditions", () => {
 
 		expect(root.querySelector(".cell--conditions")).toBeNull();
 		expect(app.setPosition).toHaveBeenCalledWith({ height: "auto" });
+	});
+
+	it("matches the applicable condition through i18n.localize rather than an English literal, under a non-English locale", () => {
+		const frenchOptions = {
+			"0": "Effrayé (-2 à affronter directement)",
+			"1": "Furieux (-2 à réconforter, soutenir et percer le masque)",
+			"2": "Coupable (-2 à provoquer et évaluer la situation)",
+			"3": "Désespéré (-2 à déchaîner ses pouvoirs)",
+			"4": "Démoralisé (-2 à défendre ou rejeter l'influence)"
+		};
+		vi.stubGlobal("game", {
+			i18n: {
+				format: vi.fn(formatMock),
+				localize: vi.fn((key) => {
+					const match = key.match(/conditions\.options\.(\d)$/);
+					return match ? frenchOptions[match[1]] : key;
+				})
+			}
+		});
+
+		const { root, title } = buildDialogHtml({
+			title: formatMock("PBTA.RollLabel", { label: "Directly Engage a Threat" }),
+			conditions: [
+				{ label: frenchOptions["0"], mod: -2 },
+				{ label: frenchOptions["1"], mod: -2 }
+			]
+		});
+		const app = { data: { title }, setPosition: vi.fn() };
+
+		handler(app, [root]);
+
+		const checkboxes = root.querySelectorAll('input[name="condition"]');
+		expect(checkboxes).toHaveLength(1);
+		expect(checkboxes[0].dataset.content).toBe(frenchOptions["0"]);
+		expect(checkboxes[0].checked).toBe(true);
+		expect(checkboxes[0].disabled).toBe(true);
 	});
 
 	it("no-ops when the dialog has no conditions cell", () => {
