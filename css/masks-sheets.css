@@ -63,18 +63,24 @@
 
 .dialog:has(form.roll-dialog) .window-header,
 .dialog:has(.masks-move-picker-dialog) .window-header,
-.dialog:has(.masks-basic-move-picker-dialog) .window-header {
+.dialog:has(.masks-basic-move-picker-dialog) .window-header,
+.dialog:has(.masks-roll-options-dialog) .window-header,
+.dialog:has(.masks-label-swap-dialog) .window-header {
   background-color: var(--masks-interactive-bg-color);
 }
 .dialog:has(form.roll-dialog) .dialog-button,
 .dialog:has(.masks-move-picker-dialog) .dialog-button,
-.dialog:has(.masks-basic-move-picker-dialog) .dialog-button {
+.dialog:has(.masks-basic-move-picker-dialog) .dialog-button,
+.dialog:has(.masks-roll-options-dialog) .dialog-button,
+.dialog:has(.masks-label-swap-dialog) .dialog-button {
   background-color: var(--masks-interactive-bg-color);
   color: var(--masks-primary-text-color);
 }
 .dialog:has(form.roll-dialog) .dialog-button:hover,
 .dialog:has(.masks-move-picker-dialog) .dialog-button:hover,
-.dialog:has(.masks-basic-move-picker-dialog) .dialog-button:hover {
+.dialog:has(.masks-basic-move-picker-dialog) .dialog-button:hover,
+.dialog:has(.masks-roll-options-dialog) .dialog-button:hover,
+.dialog:has(.masks-label-swap-dialog) .dialog-button:hover {
   background-color: var(--masks-interactive-bg-hover-color);
 }
 
@@ -91,7 +97,8 @@
   accent-color: var(--masks-tab-bg-active-color);
 }
 
-.masks-basic-move-picker-dialog select {
+.masks-basic-move-picker-dialog select,
+.masks-roll-options-dialog select {
   background: var(--masks-input-bg-color);
   color: var(--masks-input-text-color);
   border: 0.5px solid var(--masks-input-border-color);
@@ -731,6 +738,7 @@
   overflow-wrap: break-word;
 }
 .pbta-chat-card .card-buttons {
+  display: flex;
   justify-content: center;
   gap: 8px;
   margin-top: 6px;
@@ -769,13 +777,17 @@
   cursor: not-allowed;
 }
 
-.vtt #chat .message .pbta-chat-card .chat-title {
+.vtt #chat .message .pbta-chat-card .chat-title,
+.vtt #chat-notifications .message .pbta-chat-card .chat-title,
+.vtt .chat-popout .message .pbta-chat-card .chat-title {
   padding: 0;
   margin-bottom: 6px;
   border: none;
   gap: 8px;
 }
-.vtt #chat .message .pbta-chat-card .cell__title {
+.vtt #chat .message .pbta-chat-card .cell__title,
+.vtt #chat-notifications .message .pbta-chat-card .cell__title,
+.vtt .chat-popout .message .pbta-chat-card .cell__title {
   font-weight: bold;
   margin: 0;
   border-bottom: none;
@@ -783,41 +795,59 @@
   font-size: 20px;
   line-height: 1.2;
 }
-.vtt #chat .message .pbta-chat-card .cell__subtitle {
+.vtt #chat .message .pbta-chat-card .cell__subtitle,
+.vtt #chat-notifications .message .pbta-chat-card .cell__subtitle,
+.vtt .chat-popout .message .pbta-chat-card .cell__subtitle {
   color: var(--masks-header-bg-color);
   margin: 0 0 4px;
 }
-.vtt #chat .message .pbta-chat-card .result-label {
+.vtt #chat .message .pbta-chat-card .result-label,
+.vtt #chat-notifications .message .pbta-chat-card .result-label,
+.vtt .chat-popout .message .pbta-chat-card .result-label {
   background: transparent;
   border: none;
   padding: 0 0 6px;
   text-align: left;
   color: var(--masks-input-text-color);
 }
-.vtt #chat .message .pbta-chat-card .success .result-label {
+.vtt #chat .message .pbta-chat-card .success .result-label,
+.vtt #chat-notifications .message .pbta-chat-card .success .result-label,
+.vtt .chat-popout .message .pbta-chat-card .success .result-label {
   color: var(--masks-result-success-color);
 }
-.vtt #chat .message .pbta-chat-card .partial .result-label {
+.vtt #chat .message .pbta-chat-card .partial .result-label,
+.vtt #chat-notifications .message .pbta-chat-card .partial .result-label,
+.vtt .chat-popout .message .pbta-chat-card .partial .result-label {
   color: var(--masks-result-partial-color);
 }
-.vtt #chat .message .pbta-chat-card .failure .result-label {
+.vtt #chat .message .pbta-chat-card .failure .result-label,
+.vtt #chat-notifications .message .pbta-chat-card .failure .result-label,
+.vtt .chat-popout .message .pbta-chat-card .failure .result-label {
   color: var(--masks-result-failure-color);
 }
-.vtt #chat .message .pbta-chat-card .row--border {
+.vtt #chat .message .pbta-chat-card .row--border,
+.vtt #chat-notifications .message .pbta-chat-card .row--border,
+.vtt .chat-popout .message .pbta-chat-card .row--border {
   margin-top: 10px;
   padding-top: 10px;
   border-top: 1px solid var(--masks-input-border-color);
 }
-.vtt #chat .message .pbta-chat-card .card-buttons button {
+.vtt #chat .message .pbta-chat-card .card-buttons button,
+.vtt #chat-notifications .message .pbta-chat-card .card-buttons button,
+.vtt .chat-popout .message .pbta-chat-card .card-buttons button {
   background: var(--masks-interactive-bg-color);
   border: 1px solid var(--masks-tab-bg-active-color);
   color: var(--masks-primary-text-color);
 }
-.vtt #chat .message .pbta-chat-card .card-buttons button:hover {
+.vtt #chat .message .pbta-chat-card .card-buttons button:hover,
+.vtt #chat-notifications .message .pbta-chat-card .card-buttons button:hover,
+.vtt .chat-popout .message .pbta-chat-card .card-buttons button:hover {
   background: var(--masks-interactive-bg-hover-color);
 }
 
-.vtt #chat .message.whisper .pbta-chat-card .result-label {
+.vtt #chat .message.whisper .pbta-chat-card .result-label,
+.vtt #chat-notifications .message.whisper .pbta-chat-card .result-label,
+.vtt .chat-popout .message.whisper .pbta-chat-card .result-label {
   background: transparent;
 }
 

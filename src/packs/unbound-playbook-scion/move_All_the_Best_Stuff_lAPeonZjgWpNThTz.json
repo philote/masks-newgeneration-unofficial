@@ -8,6 +8,12 @@
     "core": {},
     "cf": {
       "id": "temp_bi8fhu4arqf"
+    },
+    "masks-newgeneration-unofficial": {
+      "rollOptions": [
+        { "label": "A hero's cache", "rollType": "savior" },
+        { "label": "A villain's cache", "rollType": "danger" }
+      ]
     }
   },
   "system": {
@@ -36,7 +42,7 @@
     },
     "uses": 0,
     "playbook": "The Scion",
-    "rollType": "prompt",
+    "rollType": "ask",
     "rollMod": 0,
     "choices": "",
     "actorType": "character"

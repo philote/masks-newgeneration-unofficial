@@ -8,7 +8,10 @@ import { initBasicMovePicker } from './helpers/basic-move-picker.mjs';
 import { initSkipEmptyRollDialog } from './helpers/skip-empty-roll-dialog.mjs';
 import { initTeamPool } from './helpers/team-pool.mjs';
 import { initMarkPotentialButton } from './helpers/mark-potential.mjs';
-import { migrateTakeAPowerfulBlow, migrateRejectingInfluence, migrateBurn, migrateNoPowersBasicMoveChoices, migrateKirbyCraftBasicMoveChoices, migrateWheneverTimePasses } from './helpers/migrations.mjs';
+import { initAttributeRoll } from './helpers/attribute-roll.mjs';
+import { initRollOptions } from './helpers/roll-options.mjs';
+import { initLabelSwap } from './helpers/label-swap.mjs';
+import { migrateTakeAPowerfulBlow, migrateRejectingInfluence, migrateBurn, migrateNoPowersBasicMoveChoices, migrateKirbyCraftBasicMoveChoices, migrateWheneverTimePasses, migrateAHigherCalling, migrateFriendsInLowPlaces, migrateLegacy, migrateConnectingTheDots, migrateAllTheBestStuff, migrateAHigherCallingLabelSwap } from './helpers/migrations.mjs';
 
 Hooks.once("init", () => {
     const masksActorSheet = MasksActorSheetMixin(game.pbta.applications.actor.PbtaActorSheet);
@@ -55,10 +58,21 @@ Hooks.once("init", () => {
     initPowerfulBlow();
     initBasicMoveConditions();
     initMovePicker();
+    // Each of these four wraps CONFIG.Item.documentClass.prototype.roll around
+    // whatever the previous one left behind, so call order here is load-bearing:
+    // the first called becomes the innermost wrapper (closest to pbta's own
+    // roll()), the last called becomes the outermost (runs its own check first).
+    // initLabelSwap must run before the pickers so a picker's renamed/retyped
+    // clone (e.g. Kirby-Craft, a roll-options choice) still gets offered the
+    // Soldier swap; initAttributeRoll must run last so a move's own fixed
+    // "formula" roll (e.g. A Higher Calling) is never intercepted by the swap.
+    initLabelSwap();
     initBasicMovePicker();
     initSkipEmptyRollDialog();
     initTeamPool();
     initMarkPotentialButton();
+    initRollOptions();
+    initAttributeRoll();
 });
 
 Hooks.once('ready', async function () {
@@ -70,6 +84,12 @@ Hooks.once('ready', async function () {
     await migrateNoPowersBasicMoveChoices();
     await migrateKirbyCraftBasicMoveChoices();
     await migrateWheneverTimePasses();
+    await migrateAHigherCalling();
+    await migrateFriendsInLowPlaces();
+    await migrateLegacy();
+    await migrateConnectingTheDots();
+    await migrateAllTheBestStuff();
+    await migrateAHigherCallingLabelSwap();
     if (game.settings.get('masks-newgeneration-unofficial', 'firstTime')) {
         game.settings.set('masks-newgeneration-unofficial', 'firstTime', false);
 

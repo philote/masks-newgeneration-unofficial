@@ -39,6 +39,10 @@ export async function migrateWheneverTimePasses() {
     await migrateMoveRollType("Whenever time passes", { rollType: "savior", rollFormula: "" });
 }
 
+export async function migrateLegacy() {
+    await migrateMoveRollType("Legacy", { rollType: "savior", rollFormula: "" });
+}
+
 const NO_POWERS_MOVE_NAME = "No Powers and Not Nearly Enough Training";
 const NO_POWERS_BASIC_MOVE_CHOICES = [
     "Compendium.masks-newgeneration-unofficial.moves.Item.RbWTLi81e6IZ9vH4",
@@ -75,6 +79,48 @@ export async function migrateNoPowersBasicMoveChoices() {
     }
 }
 
+/**
+ * Shared migration for moves that roll + a playbook-specific attribute Label
+ * (see attribute-roll.mjs) — matched by name + the attribute key not already
+ * matching (idempotent: already-migrated or manually-customized items are
+ * left alone). Each playbook's move gets a thin exported wrapper below,
+ * mirroring migrateMoveRollType()'s "generic function + per-move wrapper"
+ * shape so wiring up the next one (Bull, Nova, ...) is a single line.
+ */
+async function migrateMoveAttributeRoll(moveName, attributeKey, resolver) {
+    for (const actor of game.actors) {
+        const updates = actor.items
+            .filter((item) => {
+                const flags = item.flags?.["masks-newgeneration-unofficial"];
+                return item.type === "move" && item.name === moveName &&
+                    (flags?.attributeRollKey !== attributeKey || (resolver && flags?.attributeRollResolver !== resolver));
+            })
+            .map((item) => {
+                const update = {
+                    _id: item.id,
+                    "system.rollType": "formula",
+                    "system.rollFormula": "2d6",
+                    "flags.masks-newgeneration-unofficial.attributeRollKey": attributeKey
+                };
+                if (resolver) update["flags.masks-newgeneration-unofficial.attributeRollResolver"] = resolver;
+                return update;
+            });
+
+        if (updates.length) {
+            await actor.updateEmbeddedDocuments("Item", updates);
+            console.log(`masks-newgeneration-unofficial | Migrated "${moveName}" on actor "${actor.name}".`);
+        }
+    }
+}
+
+export async function migrateAHigherCalling() {
+    await migrateMoveAttributeRoll("A Higher Calling", "theSoldier");
+}
+
+export async function migrateFriendsInLowPlaces() {
+    await migrateMoveAttributeRoll("Friends in Low Places", "theReformed", "highestCheckedCount");
+}
+
 const KIRBY_CRAFT_MOVE_NAME = "Kirby-Craft";
 const KIRBY_CRAFT_BASIC_MOVE_CHOICES = [
     "Compendium.masks-newgeneration-unofficial.moves.Item.RbWTLi81e6IZ9vH4",
@@ -109,6 +155,114 @@ export async function migrateKirbyCraftBasicMoveChoices() {
         if (updates.length) {
             await actor.updateEmbeddedDocuments("Item", updates);
             console.log(`masks-newgeneration-unofficial | Migrated "${KIRBY_CRAFT_MOVE_NAME}" on actor "${actor.name}".`);
+        }
+    }
+}
+
+/**
+ * Shared migration for moves that gained a "rollOptions" array flag (see
+ * roll-options.mjs), matched by name + a missing flag (idempotent:
+ * already-migrated or manually-customized items are left alone).
+ */
+async function migrateMoveRollOptions(moveName, rollOptions) {
+    for (const actor of game.actors) {
+        const updates = actor.items
+            .filter(
+                (item) =>
+                    item.type === "move" &&
+                    item.name === moveName &&
+                    !item.flags?.["masks-newgeneration-unofficial"]?.rollOptions
+            )
+            .map((item) => ({
+                _id: item.id,
+                "system.rollType": "ask",
+                "flags.masks-newgeneration-unofficial.rollOptions": rollOptions
+            }));
+
+        if (updates.length) {
+            await actor.updateEmbeddedDocuments("Item", updates);
+            console.log(`masks-newgeneration-unofficial | Migrated "${moveName}" on actor "${actor.name}".`);
+        }
+    }
+}
+
+export async function migrateConnectingTheDots() {
+    await migrateMoveRollOptions("Connecting the Dots", [
+        {
+            label: "Remember someone's future self",
+            attributeRollKey: "theHarbingerMemories",
+            moveResults: {
+                success: {
+                    key: "data.moveResults.success.value",
+                    label: "Success!",
+                    value: "<p>You connect who they are now to who they are in the future; choose the role that they fulfill in the future, and the GM will tell you about their future self. You can also ask a follow-up question.</p>"
+                },
+                partial: {
+                    key: "data.moveResults.partial.value",
+                    label: "Partial success",
+                    value: "<p>You connect who they are now to who they are in the future; choose the role that they fulfill in the future, and the GM will tell you about their future self.</p>"
+                },
+                failure: {
+                    key: "data.moveResults.failure.value",
+                    label: "Complications...",
+                    value: "<p>They're not at all who you thought they would be; the GM will choose their role, or tell you that as far as you know, they don't exist in the future.</p>"
+                }
+            }
+        },
+        {
+            label: "Investigate the timeline",
+            rollType: "savior",
+            moveResults: {
+                success: {
+                    key: "data.moveResults.success.value",
+                    label: "Success!",
+                    value: "<p>Choose one figure noted above or one aspect of the future world you can remember. You've found a lead to follow to learn more about how the present version of that figure or aspect became the future version. The lead is particularly strong; right now, you can ask the GM one question about the figure or aspect, and they will answer honestly.</p>"
+                },
+                partial: {
+                    key: "data.moveResults.partial.value",
+                    label: "Partial success",
+                    value: "<p>Choose one figure noted above or one aspect of the future world you can remember. You've found a lead to follow to learn more about how the present version of that figure or aspect became the future version.</p>"
+                },
+                failure: {
+                    key: "data.moveResults.failure.value",
+                    label: "Complications...",
+                    value: "<p>You're lost in the present; the GM will tell you how things are so different here, and shift your Labels according to how it makes you feel.</p>"
+                }
+            }
+        }
+    ]);
+}
+
+export async function migrateAllTheBestStuff() {
+    await migrateMoveRollOptions("All the Best Stuff", [
+        { label: "A hero's cache", rollType: "savior" },
+        { label: "A villain's cache", rollType: "danger" }
+    ]);
+}
+
+const A_HIGHER_CALLING_LABEL_SWAP = {
+    attributeKey: "theSoldier",
+    moveTypes: ["basic", "playbook"],
+    reminderText: "Give A.E.G.I.S. Influence over you."
+};
+
+export async function migrateAHigherCallingLabelSwap() {
+    for (const actor of game.actors) {
+        const updates = actor.items
+            .filter(
+                (item) =>
+                    item.type === "move" &&
+                    item.name === "A Higher Calling" &&
+                    !item.flags?.["masks-newgeneration-unofficial"]?.labelSwap
+            )
+            .map((item) => ({
+                _id: item.id,
+                "flags.masks-newgeneration-unofficial.labelSwap": A_HIGHER_CALLING_LABEL_SWAP
+            }));
+
+        if (updates.length) {
+            await actor.updateEmbeddedDocuments("Item", updates);
+            console.log(`masks-newgeneration-unofficial | Migrated "A Higher Calling" labelSwap on actor "${actor.name}".`);
         }
     }
 }

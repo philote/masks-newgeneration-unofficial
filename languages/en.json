@@ -19,6 +19,12 @@
             "ChooseMoveTitle": "Which move are you making?",
             "ChooseMoveLabel": "Choose the basic move this applies to:",
             "ChooseMoveSubmit": "Roll",
+            "ChooseRollTitle": "Which roll are you making?",
+            "ChooseRollLabel": "Choose a roll:",
+            "ChooseRollSubmit": "Roll",
+            "LabelSwapTitle": "Which Label are you rolling with?",
+            "LabelSwapPrompt": "Choose which Label to roll with:",
+            "LabelSwapUse": "Roll +{label}",
             "MovePicker": {
                 "PlaybookChoiceTitle": "Add Playbook Move",
                 "PlaybookChoicePrompt": "How would you like to add a move?",

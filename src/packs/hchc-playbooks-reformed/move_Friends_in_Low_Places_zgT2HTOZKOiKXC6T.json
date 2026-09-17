@@ -9,14 +9,18 @@
       "id": "temp_q8mrwtx465l",
       "color": "#000000"
     },
-    "core": {}
+    "core": {},
+    "masks-newgeneration-unofficial": {
+      "attributeRollKey": "theReformed",
+      "attributeRollResolver": "highestCheckedCount"
+    }
   },
   "system": {
     "name": "",
     "description": "<p>You have ties to villains from your previous career. Choose three names to fill in:</p>\n<p><strong>Finch, Ellen &ldquo;Devil&rdquo; Drummond, Mr. Cane, The Mad Magpie, Dr. Cutler, Armorer, Tegan Queen, Lovelace</strong></p>\n<p>For each of them, choose a specialty.</p>\n<p>_______________ Specialty: weapons, materials, cosmic artifacts, alien tech, insider info</p>\n<p>Obligation: ❏ ❏ ❏ ❏</p>\n<p>_______________ Specialty: weapons, materials, cosmic artifacts, alien tech, insider info</p>\n<p>Obligation: ❏ ❏ ❏ ❏</p>\n<p>_______________ Specialty: weapons, materials, cosmic artifacts, alien tech, insider info</p>\n<p>Obligation: ❏ ❏ ❏ ❏</p>\n<p>&nbsp;</p>\n<p>When you create your character, mark two obligations on one villain, and mark one obligation on another.</p>\n<p>When you <strong>come to them for help with your problems</strong>, mark obligation on them and they&rsquo;ll help out within their specialty. If all their boxes are full, then they won&rsquo;t help you until you help them.</p>\n<p>When <strong>time passes</strong>, roll + your highest obligation. On a 10+, they come crashing into your life with a crisis. On a 7-9, they call for a favor. On a 6-, they don&rsquo;t come knocking yet, but mark obligation with them&mdash;the debts are getting heavier.</p>\n<p>When you <strong>help one of these villains with their problems</strong>, erase two obligations on them.</p>",
     "requiresMove": "",
     "moveType": "playbook",
-    "rollFormula": "",
+    "rollFormula": "2d6",
     "moveGroup": "",
     "moveResults": {
       "failure": {
@@ -37,7 +41,7 @@
     },
     "uses": 0,
     "playbook": "The Reformed",
-    "rollType": "ask",
+    "rollType": "formula",
     "rollMod": 0,
     "choices": "",
     "actorType": "character"

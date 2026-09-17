@@ -80,11 +80,15 @@
 // class of its own) and this module's own DialogV2 dialogs
 // (module/helpers/move-picker.mjs's .masks-move-picker-dialog wrapper,
 // module/helpers/basic-move-picker.mjs's .masks-basic-move-picker-dialog
-// wrapper) otherwise render with Foundry's default dialog styling instead of
+// wrapper, module/helpers/roll-options.mjs's .masks-roll-options-dialog
+// wrapper, module/helpers/label-swap.mjs's .masks-label-swap-dialog wrapper)
+// otherwise render with Foundry's default dialog styling instead of
 // matching the rest of the module's navigation bars.
 .dialog:has(form.roll-dialog),
 .dialog:has(.masks-move-picker-dialog),
-.dialog:has(.masks-basic-move-picker-dialog) {
+.dialog:has(.masks-basic-move-picker-dialog),
+.dialog:has(.masks-roll-options-dialog),
+.dialog:has(.masks-label-swap-dialog) {
   .window-header {
     background-color: var(--masks-interactive-bg-color);
   }
@@ -126,9 +130,11 @@
   }
 }
 
-// The basic-move roll picker (module/helpers/basic-move-picker.mjs) is a
-// single <select>, otherwise rendered with none of the sheet's input theming.
-.masks-basic-move-picker-dialog {
+// The basic-move roll picker (module/helpers/basic-move-picker.mjs) and the
+// roll-options picker (module/helpers/roll-options.mjs) are both a single
+// <select>, otherwise rendered with none of the sheet's input theming.
+.masks-basic-move-picker-dialog,
+.masks-roll-options-dialog {
   select {
     background: var(--masks-input-bg-color);
     color: var(--masks-input-text-color);
@@ -779,9 +785,13 @@
 // defaults. An ID always outranks any number of classes, so this module's
 // own plain `.pbta-chat-card { ... }` rules below can add new styling freely
 // but can't override those specific properties — the contested ones are
-// re-declared afterward in a selector that repeats pbta's own scoping chain
+// re-declared afterward in selectors that repeat pbta's own scoping chain
 // (see the `.vtt #chat .message .pbta-chat-card` block further down) so they
-// reliably win regardless of stylesheet load order.
+// reliably win regardless of stylesheet load order. That block also has to
+// repeat the same chain rooted at `#chat-notifications` and `.chat-popout`:
+// Foundry renders the same message markup into the brief chat-preview bubble
+// and into a message's own "pop out" window as separate DOM subtrees outside
+// `#chat` entirely, so a `#chat`-only selector silently misses both.
 .pbta-chat-card {
   border-radius: 6px;
   overflow: hidden;
@@ -910,6 +920,10 @@
   }
 
   .card-buttons {
+    // pbta's own CSS sets `display: flex` here, but only under a `#chat .message`
+    // scope that the notification preview and popout windows fall outside of
+    // (see the note above); declare it here too so the row layout survives there.
+    display: flex;
     justify-content: center;
     gap: 8px;
     margin-top: 6px;
@@ -955,7 +969,9 @@
   }
 }
 
-.vtt #chat .message .pbta-chat-card {
+.vtt #chat .message .pbta-chat-card,
+.vtt #chat-notifications .message .pbta-chat-card,
+.vtt .chat-popout .message .pbta-chat-card {
   .chat-title {
     padding: 0;
     margin-bottom: 6px;
@@ -1014,7 +1030,9 @@
   }
 }
 
-.vtt #chat .message.whisper .pbta-chat-card .result-label {
+.vtt #chat .message.whisper .pbta-chat-card .result-label,
+.vtt #chat-notifications .message.whisper .pbta-chat-card .result-label,
+.vtt .chat-popout .message.whisper .pbta-chat-card .result-label {
   background: transparent;
 }
 

@@ -38,7 +38,7 @@
     },
     "uses": 0,
     "playbook": "9",
-    "rollType": "prompt",
+    "rollType": "savior",
     "rollMod": 0,
     "choices": "",
     "actorType": "character"
