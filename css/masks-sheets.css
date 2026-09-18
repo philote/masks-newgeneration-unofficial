@@ -947,6 +947,7 @@
   background-color: var(--masks-interactive-bg-color);
 }
 .team-pool-sheet .window-content {
+  position: relative;
   background-image: var(--masks-window-bg-image);
   background-position: var(--masks-window-bg-position);
   background-repeat: repeat-x;
@@ -956,6 +957,28 @@
 }
 .team-pool-sheet__body {
   align-items: center;
+}
+.team-pool-sheet__chat-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  text-align: center;
+  border-radius: 4px;
+  background: var(--masks-interactive-bg-color);
+  color: var(--masks-primary-text-color);
+  border: 2px solid var(--masks-tab-bg-active-color);
+  cursor: pointer;
+  transition: background-color 0.1s ease-out;
+}
+.team-pool-sheet__chat-button:hover {
+  background-color: var(--masks-interactive-bg-hover-color);
+}
+.team-pool-sheet__chat-button i {
+  vertical-align: middle;
 }
 .team-pool-sheet__label {
   position: relative;

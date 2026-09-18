@@ -14,3 +14,11 @@ export async function adjustTeamPool(actor, delta) {
     const next = Math.max(0, actor.system.pool + delta);
     return actor.update({ "system.pool": next });
 }
+
+export async function postTeamPoolToChat(actor) {
+    return ChatMessage.create({
+        user: game.user.id,
+        content: game.i18n.format("MASKS-SHEETS.Chat.TeamPool", { value: actor.system.pool }),
+        speaker: ChatMessage.getSpeaker({ actor }),
+    });
+}

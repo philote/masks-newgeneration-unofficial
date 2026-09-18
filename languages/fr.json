@@ -9,10 +9,12 @@
         "TeamPool": {
             "Label": "Équipe",
             "Increase": "Ajouter à la réserve d'équipe",
-            "Decrease": "Dépenser dans la réserve d'équipe"
+            "Decrease": "Dépenser dans la réserve d'équipe",
+            "PostToChat": "Publier la réserve d'équipe dans le chat"
         },
         "Chat": {
-            "MarkPotential": "Cocher du Potentiel"
+            "MarkPotential": "Cocher du Potentiel",
+            "TeamPool": "Équipe : {value}"
         },
         "Dialog": {
             "AutoConditions": "Tous les états émotionnels cochés s'appliquent automatiquement : {total}",

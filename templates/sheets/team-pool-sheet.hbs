@@ -1,4 +1,7 @@
 <div class="team-pool-sheet__body flexcol">
+    <button type="button" class="team-pool-sheet__chat-button" data-action="postToChat" data-tooltip="{{localize 'MASKS-SHEETS.TeamPool.PostToChat'}}" data-tooltip-direction="UP">
+        <i class="fas fa-comments"></i>
+    </button>
     <div class="team-pool-sheet__label">{{localize 'MASKS-SHEETS.TeamPool.Label'}}</div>
     <div class="team-pool-sheet__counter flexrow">
         <button type="button" class="team-pool-sheet__control team-pool-sheet__control--decrease" data-action="decrease" {{#if atZero}}disabled{{/if}} title="{{localize 'MASKS-SHEETS.TeamPool.Decrease'}}">

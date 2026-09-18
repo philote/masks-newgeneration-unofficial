@@ -3,6 +3,7 @@ import {
 	adjustTeamPool,
 	baseTeamPoolName,
 	formatTeamPoolName,
+	postTeamPoolToChat,
 	TEAM_ACTOR_TYPE,
 } from "../module/helpers/team-pool-utils.mjs";
 import { initTeamPool } from "../module/helpers/team-pool.mjs";
@@ -73,6 +74,33 @@ describe("team-pool-utils", () => {
 			await adjustTeamPool(actor, -1);
 
 			expect(actor.update).toHaveBeenCalledWith({ "system.pool": 0 });
+		});
+	});
+
+	describe("postTeamPoolToChat", () => {
+		beforeEach(() => {
+			vi.stubGlobal("game", {
+				user: { id: "user1" },
+				i18n: { format: vi.fn((key, data) => `${key}:${JSON.stringify(data)}`) },
+			});
+			vi.stubGlobal("ChatMessage", {
+				create: vi.fn().mockResolvedValue(undefined),
+				getSpeaker: vi.fn(({ actor }) => ({ actor: actor.name })),
+			});
+		});
+
+		it("posts the current pool value as a chat message spoken by the actor", async () => {
+			const actor = buildActor({ system: { pool: 5 } });
+
+			await postTeamPoolToChat(actor);
+
+			expect(game.i18n.format).toHaveBeenCalledWith("MASKS-SHEETS.Chat.TeamPool", { value: 5 });
+			expect(ChatMessage.getSpeaker).toHaveBeenCalledWith({ actor });
+			expect(ChatMessage.create).toHaveBeenCalledWith({
+				user: "user1",
+				content: 'MASKS-SHEETS.Chat.TeamPool:{"value":5}',
+				speaker: { actor: "Team Pool (3)" },
+			});
 		});
 	});
 });

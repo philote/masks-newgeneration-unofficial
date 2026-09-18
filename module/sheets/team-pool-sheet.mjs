@@ -1,4 +1,4 @@
-import { adjustTeamPool } from "../helpers/team-pool-utils.mjs";
+import { adjustTeamPool, postTeamPoolToChat } from "../helpers/team-pool-utils.mjs";
 
 // Built lazily (called from initTeamPool() during the "init" hook) rather than
 // referencing foundry.applications.* at module-import time, matching
@@ -14,6 +14,7 @@ export function createTeamPoolActorSheet() {
             actions: {
                 increase: TeamPoolActorSheet.#onIncrease,
                 decrease: TeamPoolActorSheet.#onDecrease,
+                postToChat: TeamPoolActorSheet.#onPostToChat,
             },
         };
 
@@ -49,6 +50,10 @@ export function createTeamPoolActorSheet() {
 
         static async #onDecrease() {
             await adjustTeamPool(this.actor, -1);
+        }
+
+        static async #onPostToChat() {
+            await postTeamPoolToChat(this.actor);
         }
     };
 }

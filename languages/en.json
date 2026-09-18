@@ -9,10 +9,12 @@
         "TeamPool": {
             "Label": "Team",
             "Increase": "Add to the Team pool",
-            "Decrease": "Spend from the Team pool"
+            "Decrease": "Spend from the Team pool",
+            "PostToChat": "Post the Team pool to chat"
         },
         "Chat": {
-            "MarkPotential": "Mark Potential"
+            "MarkPotential": "Mark Potential",
+            "TeamPool": "Team: {value}"
         },
         "Dialog": {
             "AutoConditions": "All marked conditions apply automatically: {total}",

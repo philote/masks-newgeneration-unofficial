@@ -9,10 +9,12 @@
         "TeamPool": {
             "Label": "Equipo",
             "Increase": "Añadir a la reserva de Equipo",
-            "Decrease": "Gastar de la reserva de Equipo"
+            "Decrease": "Gastar de la reserva de Equipo",
+            "PostToChat": "Publicar la reserva de Equipo en el chat"
         },
         "Chat": {
-            "MarkPotential": "Marcar Potencial"
+            "MarkPotential": "Marcar Potencial",
+            "TeamPool": "Equipo: {value}"
         },
         "Dialog": {
             "AutoConditions": "Todas las condiciones marcadas se aplican automáticamente: {total}",
