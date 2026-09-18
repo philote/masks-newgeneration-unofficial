@@ -32,6 +32,8 @@
   --masks-result-success-color: #1e7d32;
   --masks-result-partial-color: #a3690a;
   --masks-result-failure-color: #b31a1a;
+  --masks-result-tint: 10%;
+  --masks-result-base: var(--masks-input-bg-color);
 
   --masks-window-bg-image: url("/modules/masks-newgeneration-unofficial/images/skyline.webp"),
     var(--actor-gradient);
@@ -827,7 +829,7 @@
     padding: 10px 12px 10px 18px;
     border-radius: 4px;
     border: 1px solid var(--masks-input-border-color);
-    background: color-mix(in srgb, var(--masks-result-failure-color) 10%, var(--masks-input-bg-color));
+    background: color-mix(in srgb, var(--masks-result-failure-color) var(--masks-result-tint), var(--masks-result-base));
     overflow: hidden;
 
     &::before {
@@ -841,7 +843,7 @@
     }
 
     &.success {
-      background: color-mix(in srgb, var(--masks-result-success-color) 10%, var(--masks-input-bg-color));
+      background: color-mix(in srgb, var(--masks-result-success-color) var(--masks-result-tint), var(--masks-result-base));
 
       &::before {
         background-color: var(--masks-result-success-color);
@@ -849,7 +851,7 @@
     }
 
     &.partial {
-      background: color-mix(in srgb, var(--masks-result-partial-color) 10%, var(--masks-input-bg-color));
+      background: color-mix(in srgb, var(--masks-result-partial-color) var(--masks-result-tint), var(--masks-result-base));
 
       &::before {
         background-color: var(--masks-result-partial-color);
@@ -857,7 +859,7 @@
     }
 
     &.failure {
-      background: color-mix(in srgb, var(--masks-result-failure-color) 10%, var(--masks-input-bg-color));
+      background: color-mix(in srgb, var(--masks-result-failure-color) var(--masks-result-tint), var(--masks-result-base));
 
       &::before {
         background-color: var(--masks-result-failure-color);
@@ -1034,6 +1036,76 @@
 .vtt #chat-notifications .message.whisper .pbta-chat-card .result-label,
 .vtt .chat-popout .message.whisper .pbta-chat-card .result-label {
   background: transparent;
+}
+
+/** Chat cards under Foundry's own dark mode **/
+// This is Foundry's Color Scheme setting, not this module's `enable_dark_mode`
+// (which only repaints sheets). Foundry never uses `prefers-color-scheme` in
+// CSS — even its "Browser Default" choice is resolved through matchMedia in JS
+// and stamped as a real class — so a media query here would override a user who
+// explicitly picked light. Two independent settings produce that class:
+// `colorScheme.applications` lands on <body>, `colorScheme.interface` lands on
+// `#interface` and on `#chat` itself, so each root below keys off whichever
+// element actually carries the one with authority over it.
+// Only the theme-invariant `--color-light-*`/`--color-cool-*` palette is used
+// below, never semantic tokens like `--color-text-primary`: core hardcodes the
+// `ol.chat-log` that holds every message — and `.chat-popout` — to `themed
+// theme-light`, so those tokens resolve to their *light* values inside a chat
+// card no matter which scheme the user picked.
+.vtt #chat.theme-dark,
+.vtt.theme-dark #chat:not(.theme-light),
+.vtt #interface.theme-dark #chat-notifications,
+.vtt.theme-dark .chat-popout {
+  .message {
+    background: var(--color-cool-5-90);
+    color: var(--color-light-2);
+  }
+
+  .message.whisper {
+    background: color-mix(in srgb, var(--color-cool-3) 40%, var(--color-cool-5));
+  }
+
+  .message-header {
+    color: var(--color-light-5);
+  }
+
+  .pbta-chat-card {
+    --masks-input-bg-color: #221d26;
+    --masks-input-text-color: var(--color-light-2);
+    --masks-secondary-text-color: var(--color-light-2);
+    --masks-input-border-color: var(--color-light-6);
+    --masks-header-bg-color: #8ab4e8;
+    --masks-result-success-color: #51cf66;
+    --masks-result-partial-color: #ffc14d;
+    --masks-result-failure-color: #ff6b7a;
+    // Tinting the card colour itself only muddies it; on a dark surface a nested
+    // panel has to read as raised, so the result row mixes into a lighter base.
+    --masks-result-base: #2f2b38;
+    --masks-result-tint: 14%;
+
+    box-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+
+    // pbta colours the whole result row by outcome (`.partial{color:#000}`),
+    // which reaches every child the module doesn't recolour explicitly.
+    .row.result {
+      color: var(--masks-input-text-color);
+    }
+
+    .item-icon {
+      box-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+    }
+
+    // The pale yellow tag fill is only legible behind dark text, and the card's
+    // text is light here.
+    .tags .tag {
+      background: rgb(255 255 255 / 12%);
+    }
+
+    // pbta hovers the formula to a light blue (#bcc8de) chosen for dark text.
+    .dice-formula:hover {
+      background-color: rgb(255 255 255 / 12%);
+    }
+  }
 }
 
 /** Team Pool tracker actor **/

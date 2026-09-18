@@ -26,6 +26,8 @@
   --masks-result-success-color: #1e7d32;
   --masks-result-partial-color: #a3690a;
   --masks-result-failure-color: #b31a1a;
+  --masks-result-tint: 10%;
+  --masks-result-base: var(--masks-input-bg-color);
   --masks-window-bg-image: url("/modules/masks-newgeneration-unofficial/images/skyline.webp"),
     var(--actor-gradient);
   --masks-window-bg-position: bottom left;
@@ -663,7 +665,7 @@
   padding: 10px 12px 10px 18px;
   border-radius: 4px;
   border: 1px solid var(--masks-input-border-color);
-  background: color-mix(in srgb, var(--masks-result-failure-color) 10%, var(--masks-input-bg-color));
+  background: color-mix(in srgb, var(--masks-result-failure-color) var(--masks-result-tint), var(--masks-result-base));
   overflow: hidden;
 }
 .pbta-chat-card .row.result::before {
@@ -676,19 +678,19 @@
   background-color: var(--masks-result-failure-color);
 }
 .pbta-chat-card .row.result.success {
-  background: color-mix(in srgb, var(--masks-result-success-color) 10%, var(--masks-input-bg-color));
+  background: color-mix(in srgb, var(--masks-result-success-color) var(--masks-result-tint), var(--masks-result-base));
 }
 .pbta-chat-card .row.result.success::before {
   background-color: var(--masks-result-success-color);
 }
 .pbta-chat-card .row.result.partial {
-  background: color-mix(in srgb, var(--masks-result-partial-color) 10%, var(--masks-input-bg-color));
+  background: color-mix(in srgb, var(--masks-result-partial-color) var(--masks-result-tint), var(--masks-result-base));
 }
 .pbta-chat-card .row.result.partial::before {
   background-color: var(--masks-result-partial-color);
 }
 .pbta-chat-card .row.result.failure {
-  background: color-mix(in srgb, var(--masks-result-failure-color) 10%, var(--masks-input-bg-color));
+  background: color-mix(in srgb, var(--masks-result-failure-color) var(--masks-result-tint), var(--masks-result-base));
 }
 .pbta-chat-card .row.result.failure::before {
   background-color: var(--masks-result-failure-color);
@@ -849,6 +851,67 @@
 .vtt #chat-notifications .message.whisper .pbta-chat-card .result-label,
 .vtt .chat-popout .message.whisper .pbta-chat-card .result-label {
   background: transparent;
+}
+
+/** Chat cards under Foundry's own dark mode **/
+.vtt #chat.theme-dark .message,
+.vtt.theme-dark #chat:not(.theme-light) .message,
+.vtt #interface.theme-dark #chat-notifications .message,
+.vtt.theme-dark .chat-popout .message {
+  background: var(--color-cool-5-90);
+  color: var(--color-light-2);
+}
+.vtt #chat.theme-dark .message.whisper,
+.vtt.theme-dark #chat:not(.theme-light) .message.whisper,
+.vtt #interface.theme-dark #chat-notifications .message.whisper,
+.vtt.theme-dark .chat-popout .message.whisper {
+  background: color-mix(in srgb, var(--color-cool-3) 40%, var(--color-cool-5));
+}
+.vtt #chat.theme-dark .message-header,
+.vtt.theme-dark #chat:not(.theme-light) .message-header,
+.vtt #interface.theme-dark #chat-notifications .message-header,
+.vtt.theme-dark .chat-popout .message-header {
+  color: var(--color-light-5);
+}
+.vtt #chat.theme-dark .pbta-chat-card,
+.vtt.theme-dark #chat:not(.theme-light) .pbta-chat-card,
+.vtt #interface.theme-dark #chat-notifications .pbta-chat-card,
+.vtt.theme-dark .chat-popout .pbta-chat-card {
+  --masks-input-bg-color: #221d26;
+  --masks-input-text-color: var(--color-light-2);
+  --masks-secondary-text-color: var(--color-light-2);
+  --masks-input-border-color: var(--color-light-6);
+  --masks-header-bg-color: #8ab4e8;
+  --masks-result-success-color: #51cf66;
+  --masks-result-partial-color: #ffc14d;
+  --masks-result-failure-color: #ff6b7a;
+  --masks-result-base: #2f2b38;
+  --masks-result-tint: 14%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.vtt #chat.theme-dark .pbta-chat-card .row.result,
+.vtt.theme-dark #chat:not(.theme-light) .pbta-chat-card .row.result,
+.vtt #interface.theme-dark #chat-notifications .pbta-chat-card .row.result,
+.vtt.theme-dark .chat-popout .pbta-chat-card .row.result {
+  color: var(--masks-input-text-color);
+}
+.vtt #chat.theme-dark .pbta-chat-card .item-icon,
+.vtt.theme-dark #chat:not(.theme-light) .pbta-chat-card .item-icon,
+.vtt #interface.theme-dark #chat-notifications .pbta-chat-card .item-icon,
+.vtt.theme-dark .chat-popout .pbta-chat-card .item-icon {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.vtt #chat.theme-dark .pbta-chat-card .tags .tag,
+.vtt.theme-dark #chat:not(.theme-light) .pbta-chat-card .tags .tag,
+.vtt #interface.theme-dark #chat-notifications .pbta-chat-card .tags .tag,
+.vtt.theme-dark .chat-popout .pbta-chat-card .tags .tag {
+  background: rgba(255, 255, 255, 0.12);
+}
+.vtt #chat.theme-dark .pbta-chat-card .dice-formula:hover,
+.vtt.theme-dark #chat:not(.theme-light) .pbta-chat-card .dice-formula:hover,
+.vtt #interface.theme-dark #chat-notifications .pbta-chat-card .dice-formula:hover,
+.vtt.theme-dark .chat-popout .pbta-chat-card .dice-formula:hover {
+  background-color: rgba(255, 255, 255, 0.12);
 }
 
 /** Team Pool tracker actor **/
