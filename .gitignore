@@ -56,5 +56,10 @@ foundry
 .env
 
 # Other
+# .claude/skills/ is tracked; everything else under .claude/ (settings.local.json) is not.
+# Git never descends into an excluded directory, so the directory itself must be re-included.
 .claude/
+!.claude/
+.claude/*
+!.claude/skills/
 CLAUDE.md

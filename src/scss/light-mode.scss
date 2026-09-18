@@ -1,0 +1,74 @@
+@use "sass:map";
+
+/**
+ * Light mode palettes.
+ *
+ * Gated behind [data-masks-light-theme] on <html>, set by module/helpers/theme.mjs,
+ * exactly as dark-mode.scss is gated behind [data-masks-dark-theme].
+ *
+ * The "classic" palette is deliberately absent: it IS the bare :root block in
+ * masks-sheets.scss, so selecting it removes the attribute instead of restating
+ * those values somewhere they could drift out of sync.
+ *
+ * Only the sheet chrome and the sky gradient change. The skyline background, gold
+ * accent, input styling, and result colors all stay inherited from that same :root
+ * block - light mode has no starfield, so --masks-window-bg-image is untouched.
+ *
+ * Palette keys must stay in sync with LIGHT_THEMES in theme.mjs; a test in
+ * tests/theme.test.mjs fails if they drift or if css/light-mode.css wasn't rebuilt.
+ */
+
+// Keys are quoted for the same reason as in dark-mode.scss: several read as CSS
+// color keywords and Sass would otherwise parse them as colors rather than strings.
+$masks-light-themes: (
+  "dusk": (
+    bg: #4a3a7a,
+    hover: #332a5c,
+    title: #4a3a7a,
+    sky: #8a6fb0,
+    haze: #f2a883,
+    horizon: #ffdcae,
+  ),
+  "verdant": (
+    bg: #1d5b4a,
+    hover: #134034,
+    title: #134034,
+    sky: #6fc9d8,
+    haze: #bcd9b4,
+    horizon: #f2efc0,
+  ),
+  "overcast": (
+    bg: #3d4652,
+    hover: #2a313a,
+    title: #2a313a,
+    sky: #93a7bb,
+    haze: #c6d1db,
+    horizon: #e4e0d4,
+  ),
+  "ink": (
+    bg: #242832,
+    hover: #14171d,
+    title: #14171d,
+    sky: #cfd6dd,
+    haze: #ebe7dd,
+    horizon: #f8f3e4,
+  ),
+);
+
+@each $key, $palette in $masks-light-themes {
+  :root[data-masks-light-theme="#{$key}"] {
+    --actor-gradient: linear-gradient(
+      to bottom,
+      #{map.get($palette, sky)} 0%,
+      #{map.get($palette, haze)} 80%,
+      #{map.get($palette, horizon)} 100%
+    );
+
+    --masks-interactive-bg-color: #{map.get($palette, bg)};
+    --masks-interactive-bg-hover-color: #{map.get($palette, hover)};
+    --masks-header-bg-color: #{map.get($palette, hover)};
+
+    --masks-title-text-color: #{map.get($palette, title)};
+    --masks-cell-title-border-color: #{map.get($palette, title)};
+  }
+}
