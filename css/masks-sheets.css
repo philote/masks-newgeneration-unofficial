@@ -732,8 +732,8 @@
 }
 .pbta-chat-card .result-details li .content-link,
 .pbta-chat-card .result-choices li .content-link {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  max-width: 100%;
   box-sizing: border-box;
   white-space: normal;
   word-break: normal;
@@ -858,6 +858,14 @@
 .vtt.theme-dark #chat:not(.theme-light) .message,
 .vtt #interface.theme-dark #chat-notifications .message,
 .vtt.theme-dark .chat-popout .message {
+  --color-text-emphatic: var(--color-light-1);
+  --color-text-primary: var(--color-light-2);
+  --color-text-secondary: var(--color-light-3);
+  --color-text-subtle: var(--color-light-5);
+  --content-link-background: rgb(255 255 255 / 10%);
+  --content-link-border-color: rgb(255 255 255 / 22%);
+  --content-link-icon-color: var(--color-light-4);
+  --content-link-text-color: var(--color-light-2);
   background: var(--color-cool-5-90);
   color: var(--color-light-2);
 }
