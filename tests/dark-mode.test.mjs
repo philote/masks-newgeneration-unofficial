@@ -1,65 +1,117 @@
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { initDarkMode } from "../module/helpers/dark-mode.mjs";
+import {
+	DARK_THEMES,
+	DEFAULT_DARK_THEME,
+	applyDarkTheme,
+	initDarkMode,
+} from "../module/helpers/dark-mode.mjs";
 
-describe("initDarkMode", () => {
+describe("dark mode", () => {
 	afterEach(() => {
 		vi.restoreAllMocks();
+		delete document.documentElement.dataset.masksDarkTheme;
 	});
 
-	function stubGame(enabled) {
+	function stubGame({ enabled = false, theme = DEFAULT_DARK_THEME } = {}) {
 		vi.stubGlobal("game", {
 			settings: {
 				register: vi.fn(),
-				get: vi.fn(() => enabled),
-			},
-		});
-		vi.stubGlobal("foundry", {
-			utils: {
-				getRoute: (path) => `/game/${path}`,
+				get: vi.fn((_module, key) =>
+					key === "enable_dark_mode" ? enabled : theme
+				),
 			},
 		});
 	}
 
-	// Stubs document.getElementsByTagName('HEAD') with a fake node instead of letting
-	// initDarkMode append a real <link> to the live document: happy-dom eagerly fetches
-	// a real stylesheet <link> the moment it's appended, which is unreachable in tests.
-	function stubHead() {
-		const head = { appendChild: vi.fn() };
-		vi.spyOn(document, "getElementsByTagName").mockReturnValue([head]);
-		return head;
+	function registeredSetting(key) {
+		return game.settings.register.mock.calls.find((call) => call[1] === key)?.[2];
 	}
 
-	it("registers the setting as client-scoped so each player controls their own theme", () => {
-		stubGame(false);
-		stubHead();
+	describe("initDarkMode", () => {
+		it("registers both settings as client-scoped so each player controls their own theme", () => {
+			stubGame();
 
-		initDarkMode();
+			initDarkMode();
 
-		expect(game.settings.register).toHaveBeenCalledWith(
-			"masks-newgeneration-unofficial",
-			"enable_dark_mode",
-			expect.objectContaining({ scope: "client" })
-		);
+			expect(registeredSetting("enable_dark_mode")).toMatchObject({ scope: "client" });
+			expect(registeredSetting("dark_theme")).toMatchObject({ scope: "client" });
+		});
+
+		it("offers every palette in the dropdown and defaults to a real one", () => {
+			stubGame();
+
+			initDarkMode();
+
+			const setting = registeredSetting("dark_theme");
+			expect(Object.keys(setting.choices)).toEqual(DARK_THEMES.map(({ key }) => key));
+			expect(setting.default).toBe(DEFAULT_DARK_THEME);
+			expect(setting.choices).toHaveProperty(DEFAULT_DARK_THEME);
+		});
+
+		// Both settings repaint via onChange rather than requiresReload, which is what
+		// lets a player flip palettes without reloading the world.
+		it("repaints on change instead of demanding a reload", () => {
+			stubGame();
+
+			initDarkMode();
+
+			for (const key of ["enable_dark_mode", "dark_theme"]) {
+				expect(registeredSetting(key).onChange).toBeTypeOf("function");
+				expect(registeredSetting(key).requiresReload).toBeUndefined();
+			}
+		});
+
+		it("applies the stored theme immediately on init", () => {
+			stubGame({ enabled: true, theme: "teal" });
+
+			initDarkMode();
+
+			expect(document.documentElement.dataset.masksDarkTheme).toBe("teal");
+		});
 	});
 
-	it("injects the dark-mode stylesheet when enabled", () => {
-		stubGame(true);
-		const head = stubHead();
+	describe("applyDarkTheme", () => {
+		it("marks the document with the chosen palette when enabled", () => {
+			stubGame({ enabled: true, theme: "graphite" });
 
-		initDarkMode();
+			applyDarkTheme();
 
-		expect(head.appendChild).toHaveBeenCalledTimes(1);
-		const link = head.appendChild.mock.calls[0][0];
-		expect(link.rel).toBe("stylesheet");
-		expect(link.href).toContain("modules/masks-newgeneration-unofficial/css/dark-mode.css");
+			expect(document.documentElement.dataset.masksDarkTheme).toBe("graphite");
+		});
+
+		it("removes the marker when disabled", () => {
+			document.documentElement.dataset.masksDarkTheme = "teal";
+			stubGame({ enabled: false });
+
+			applyDarkTheme();
+
+			expect(document.documentElement.dataset.masksDarkTheme).toBeUndefined();
+		});
+
+		// A palette renamed or retired in a later version must degrade to the default
+		// rather than leaving the sheet with no dark palette applied at all.
+		it("falls back to the default when the stored palette no longer exists", () => {
+			stubGame({ enabled: true, theme: "chartreuse" });
+
+			applyDarkTheme();
+
+			expect(document.documentElement.dataset.masksDarkTheme).toBe(DEFAULT_DARK_THEME);
+		});
 	});
 
-	it("does not inject the stylesheet when disabled", () => {
-		stubGame(false);
-		const head = stubHead();
+	// Guards against DARK_THEMES gaining a palette that src/scss/dark-mode.scss never
+	// got, and against css/dark-mode.css not being rebuilt after a SCSS edit - neither
+	// of which fails anywhere else, since the compiled CSS is a committed artifact.
+	it("has a compiled CSS block for every palette", () => {
+		// import.meta.url is not a file: URL under the happy-dom environment.
+		const css = readFileSync(resolve(process.cwd(), "css/dark-mode.css"), "utf8");
 
-		initDarkMode();
-
-		expect(head.appendChild).not.toHaveBeenCalled();
+		for (const { key } of DARK_THEMES) {
+			expect(css).toMatch(
+				new RegExp(`:root\\[data-masks-dark-theme=["']?${key}["']?\\]`)
+			);
+		}
 	});
 });

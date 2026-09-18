@@ -1,20 +1,22 @@
-/* Variables */
-:root {
-  --actor-gradient: linear-gradient(
-    to bottom,
-    #00012f 40%,
-    #451f29 86%,
-    #5e3e00 100%
-  );
+/**
+ * Dark mode palettes.
+ *
+ * Every rule here is gated behind [data-masks-dark-theme] on <html>, set by
+ * module/helpers/dark-mode.mjs. That attribute selector outranks the bare :root
+ * block in masks-sheets.scss on specificity alone, so this file no longer
+ * depends on being loaded second to win the cascade.
+ *
+ * Palette keys must stay in sync with DARK_THEMES in dark-mode.mjs; a test in
+ * tests/dark-mode.test.mjs fails if they drift or if css/dark-mode.css wasn't
+ * rebuilt after editing this file.
+ */
+/* Values shared by every palette */
+:root[data-masks-dark-theme] {
   --masks-primary-text-color: #ffffff;
   --masks-secondary-text-color: #fff4dc;
-  --masks-title-text-color: #C7A3AC;
   --masks-input-text-color: #000000;
   --masks-input-placeholder-color: #5a5a5a;
-  --masks-interactive-bg-color: #683b47;
-  --masks-interactive-bg-hover-color: #4b2a33;
-  --masks-option-bg-color: #683b47;
-  --interactive-color: #cd8e18;
+  --masks-input-disabled-color: #4a4a4a;
   --masks-tabs-border-color: #cd8e18;
   --masks-tab-bg-active-color: #cd8e18;
   --masks-input-bg-color: rgb(229 222 210 / 95%);
@@ -22,15 +24,84 @@
   --masks-resource-border-color: #bcc8de;
   --masks-resource-control-bg-color: #ffffff;
   --masks-stats-border-color: rgb(229 222 210 / 37%);
-  --masks-cell-title-border-color: #C7A3AC;
-  --masks-header-bg-color: #4b2a33;
   --masks-result-success-color: #2f9e44;
   --masks-result-partial-color: #cd8e18;
   --masks-result-failure-color: #d1495b;
   --masks-window-bg-image: url("/modules/masks-newgeneration-unofficial/images/skyline.webp"),
-  url("/modules/masks-newgeneration-unofficial/images/stars.webp"),
-  var(--actor-gradient);
+    url("/modules/masks-newgeneration-unofficial/images/stars.webp"),
+    var(--actor-gradient);
   --masks-window-bg-position: bottom left, top left;
   --masks-influence-icon-color: invert(0%);
   --masks-influence-icon-disabled-color: opacity(50%);
+}
+
+/* Per-palette chrome */
+:root[data-masks-dark-theme=indigo] {
+  --actor-gradient: linear-gradient(
+    to bottom,
+    #00012f 40%,
+    #2a1b4a 86%,
+    #5e3e00 100%
+  );
+  --masks-interactive-bg-color: #3a3268;
+  --masks-interactive-bg-hover-color: #282250;
+  --masks-header-bg-color: #282250;
+  --masks-title-text-color: #b9adde;
+  --masks-cell-title-border-color: #b9adde;
+}
+
+:root[data-masks-dark-theme=teal] {
+  --actor-gradient: linear-gradient(
+    to bottom,
+    #00012f 40%,
+    #123b45 86%,
+    #5e3e00 100%
+  );
+  --masks-interactive-bg-color: #1d4e55;
+  --masks-interactive-bg-hover-color: #133840;
+  --masks-header-bg-color: #133840;
+  --masks-title-text-color: #8fd3d8;
+  --masks-cell-title-border-color: #8fd3d8;
+}
+
+:root[data-masks-dark-theme=navy] {
+  --actor-gradient: linear-gradient(
+    to bottom,
+    #00012f 40%,
+    #122a52 86%,
+    #5e3e00 100%
+  );
+  --masks-interactive-bg-color: #1e3a63;
+  --masks-interactive-bg-hover-color: #142848;
+  --masks-header-bg-color: #142848;
+  --masks-title-text-color: #a4c2e8;
+  --masks-cell-title-border-color: #a4c2e8;
+}
+
+:root[data-masks-dark-theme=graphite] {
+  --actor-gradient: linear-gradient(
+    to bottom,
+    #00012f 40%,
+    #241f33 86%,
+    #5e3e00 100%
+  );
+  --masks-interactive-bg-color: #312d36;
+  --masks-interactive-bg-hover-color: #231f28;
+  --masks-header-bg-color: #231f28;
+  --masks-title-text-color: #ddd0b8;
+  --masks-cell-title-border-color: #ddd0b8;
+}
+
+:root[data-masks-dark-theme=auburn] {
+  --actor-gradient: linear-gradient(
+    to bottom,
+    #00012f 40%,
+    #451f29 86%,
+    #5e3e00 100%
+  );
+  --masks-interactive-bg-color: #683b47;
+  --masks-interactive-bg-hover-color: #4b2a33;
+  --masks-header-bg-color: #4b2a33;
+  --masks-title-text-color: #c7a3ac;
+  --masks-cell-title-border-color: #c7a3ac;
 }

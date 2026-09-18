@@ -1,25 +1,64 @@
-/* Variables */
-:root {
-    --actor-gradient: linear-gradient(
-    to bottom,
-    #00012f 40%,
-    #451f29 86%,
-    #5e3e00 100%
-  );
+@use "sass:map";
+
+/**
+ * Dark mode palettes.
+ *
+ * Every rule here is gated behind [data-masks-dark-theme] on <html>, set by
+ * module/helpers/dark-mode.mjs. That attribute selector outranks the bare :root
+ * block in masks-sheets.scss on specificity alone, so this file no longer
+ * depends on being loaded second to win the cascade.
+ *
+ * Palette keys must stay in sync with DARK_THEMES in dark-mode.mjs; a test in
+ * tests/dark-mode.test.mjs fails if they drift or if css/dark-mode.css wasn't
+ * rebuilt after editing this file.
+ */
+
+// Keys are quoted because "teal" and "navy" are CSS color keywords, which Sass
+// would otherwise parse as colors rather than strings.
+$masks-dark-themes: (
+  "indigo": (
+    bg: #3a3268,
+    hover: #282250,
+    title: #b9adde,
+    gradient-mid: #2a1b4a,
+  ),
+  "teal": (
+    bg: #1d4e55,
+    hover: #133840,
+    title: #8fd3d8,
+    gradient-mid: #123b45,
+  ),
+  "navy": (
+    bg: #1e3a63,
+    hover: #142848,
+    title: #a4c2e8,
+    gradient-mid: #122a52,
+  ),
+  "graphite": (
+    bg: #312d36,
+    hover: #231f28,
+    title: #ddd0b8,
+    gradient-mid: #241f33,
+  ),
+  "auburn": (
+    bg: #683b47,
+    hover: #4b2a33,
+    title: #c7a3ac,
+    gradient-mid: #451f29,
+  ),
+);
+
+/* Values shared by every palette */
+:root[data-masks-dark-theme] {
   --masks-primary-text-color: #ffffff;
   --masks-secondary-text-color: #fff4dc;
-  --masks-title-text-color: #C7A3AC;
   --masks-input-text-color: #000000;
   --masks-input-placeholder-color: #5a5a5a;
+  --masks-input-disabled-color: #4a4a4a;
 
-  --masks-interactive-bg-color: #683b47;
-  --masks-interactive-bg-hover-color: #4b2a33;
-  --masks-option-bg-color: #683b47;
-  
-  --interactive-color: #cd8e18;
   --masks-tabs-border-color: #cd8e18;
   --masks-tab-bg-active-color: #cd8e18;
-  
+
   --masks-input-bg-color: rgb(229 222 210 / 95%);
   --masks-input-border-color: #cd8e18;
 
@@ -27,17 +66,33 @@
   --masks-resource-control-bg-color: #ffffff;
   --masks-stats-border-color: rgb(229 222 210 / 37%);
 
-  --masks-cell-title-border-color: #C7A3AC;
-  --masks-header-bg-color: #4b2a33;
-
   --masks-result-success-color: #2f9e44;
   --masks-result-partial-color: #cd8e18;
   --masks-result-failure-color: #d1495b;
 
-  --masks-window-bg-image: url("/modules/masks-newgeneration-unofficial/images/skyline.webp"), 
-  url("/modules/masks-newgeneration-unofficial/images/stars.webp"),
-  var(--actor-gradient);
+  --masks-window-bg-image: url("/modules/masks-newgeneration-unofficial/images/skyline.webp"),
+    url("/modules/masks-newgeneration-unofficial/images/stars.webp"),
+    var(--actor-gradient);
   --masks-window-bg-position: bottom left, top left;
   --masks-influence-icon-color: invert(0%);
   --masks-influence-icon-disabled-color: opacity(50%);
+}
+
+/* Per-palette chrome */
+@each $key, $palette in $masks-dark-themes {
+  :root[data-masks-dark-theme="#{$key}"] {
+    --actor-gradient: linear-gradient(
+      to bottom,
+      #00012f 40%,
+      #{map.get($palette, gradient-mid)} 86%,
+      #5e3e00 100%
+    );
+
+    --masks-interactive-bg-color: #{map.get($palette, bg)};
+    --masks-interactive-bg-hover-color: #{map.get($palette, hover)};
+    --masks-header-bg-color: #{map.get($palette, hover)};
+
+    --masks-title-text-color: #{map.get($palette, title)};
+    --masks-cell-title-border-color: #{map.get($palette, title)};
+  }
 }

@@ -58,6 +58,17 @@
             "enable_dark_mode": {
                 "name": "Enable Dark Mode",
                 "hint": "Changes the Character, NPC, and Item sheets to a dark theme."
+            },
+            "dark_theme": {
+                "name": "Dark Mode Theme",
+                "hint": "Which color palette to use when dark mode is enabled.",
+                "choices": {
+                    "indigo": "Midnight Indigo",
+                    "teal": "Noir Teal",
+                    "navy": "Deep Navy",
+                    "graphite": "Graphite",
+                    "auburn": "Auburn (classic)"
+                }
             }
         },
         "Description": {

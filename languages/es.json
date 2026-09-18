@@ -57,6 +57,17 @@
             "enable_dark_mode": {
                 "name": "Activar modo oscuro",
                 "hint": "Cambia las hojas de personaje, npc e item al modo oscuro."
+            },
+            "dark_theme": {
+                "name": "Tema del modo oscuro",
+                "hint": "Qué paleta de colores usar cuando el modo oscuro está activado.",
+                "choices": {
+                    "indigo": "Índigo de medianoche",
+                    "teal": "Verde azulado noir",
+                    "navy": "Azul marino profundo",
+                    "graphite": "Grafito",
+                    "auburn": "Caoba (clásico)"
+                }
             }
         },
         "Description": {

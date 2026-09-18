@@ -58,6 +58,17 @@
             "enable_dark_mode": {
                 "name": "Activer le mode sombre",
                 "hint": "Passe les livrets de personnages, PNJ et les objets à un thème sombre."
+            },
+            "dark_theme": {
+                "name": "Thème du mode sombre",
+                "hint": "Quelle palette de couleurs utiliser lorsque le mode sombre est activé.",
+                "choices": {
+                    "indigo": "Indigo de minuit",
+                    "teal": "Sarcelle noir",
+                    "navy": "Bleu marine profond",
+                    "graphite": "Graphite",
+                    "auburn": "Auburn (classique)"
+                }
             }
         },
         "Description": {
