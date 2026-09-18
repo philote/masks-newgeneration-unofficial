@@ -1,4 +1,4 @@
-#Unreleased
+#2.1.0
 - Dark mode now offers five color palettes, picked per-player from the new "Dark Mode Theme" setting: Midnight Indigo, Noir Teal, Deep Navy, Graphite, and Auburn
 - **Dark mode now defaults to Midnight Indigo.** The previous reddish palette is still available — choose "Auburn (classic)" in the new dropdown to get it back
 - Switching dark mode or its palette now takes effect immediately instead of requiring a reload
