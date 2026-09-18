@@ -28,12 +28,12 @@
       "partial": {
         "key": "data.moveResults.partial.value",
         "label": "Partial success",
-        "value": "<p>They are fooled, at least for a moment.</p>\n<p>Choose two.</p>\n<ul>\n<li>you get an opportunity</li>\n<li>you expose a weakness or flaw</li>\n<li>you confuse them for some time</li>\n<li>you avoid further entanglement</li>\n</ul>"
+        "value": "<p>They are fooled, at least for a moment.</p>\n<p>Choose two.</p>"
       },
       "success": {
         "key": "data.moveResults.success.value",
         "label": "Success!",
-        "value": "<p>They are fooled, at least for a moment.</p>\n<p>Choose three.</p>\n<ul>\n<li>you get an opportunity</li>\n<li>you expose a weakness or flaw</li>\n<li>you confuse them for some time</li>\n<li>you avoid further entanglement</li>\n</ul>"
+        "value": "<p>They are fooled, at least for a moment.</p>\n<p>Choose three.</p>"
       }
     },
     "uses": 0,

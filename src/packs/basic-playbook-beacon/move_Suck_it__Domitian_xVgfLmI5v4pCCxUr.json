@@ -28,12 +28,12 @@
       "partial": {
         "key": "data.moveResults.partial.value",
         "label": "Partial success",
-        "value": "<p><a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.ychaHSFqGy2SK7d7\" data-id=\"AGsdZxeDIixx5ulh\" data-pack=\"world\" data-type=\"JournalEntryPage\" data-tooltip=\"Trading blows\">Trade blows</a> and pick one.</p>\n<ul>\n<li class=\"p1\">resist or avoid their blows</li>\n<li class=\"p1\">take something from them</li>\n<li class=\"p1\">create an opportunity for your allies</li>\n<li class=\"p1\">impress, surprise, or frighten the opposition</li>\n</ul>"
+        "value": "<p><a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.ychaHSFqGy2SK7d7\" data-id=\"AGsdZxeDIixx5ulh\" data-pack=\"world\" data-type=\"JournalEntryPage\" data-tooltip=\"Trading blows\">Trade blows</a> and pick one.</p>"
       },
       "success": {
         "key": "data.moveResults.success.value",
         "label": "Success!",
-        "value": "<p><a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.ychaHSFqGy2SK7d7\" data-id=\"AGsdZxeDIixx5ulh\" data-pack=\"world\" data-type=\"JournalEntryPage\" data-tooltip=\"Trading blows\">Trade blows</a> and pick two.</p>\n<ul>\n<li class=\"p1\">resist or avoid their blows</li>\n<li class=\"p1\">take something from them</li>\n<li class=\"p1\">create an opportunity for your allies</li>\n<li class=\"p1\">impress, surprise, or frighten the opposition</li>\n</ul>"
+        "value": "<p><a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.ychaHSFqGy2SK7d7\" data-id=\"AGsdZxeDIixx5ulh\" data-pack=\"world\" data-type=\"JournalEntryPage\" data-tooltip=\"Trading blows\">Trade blows</a> and pick two.</p>"
       }
     },
     "uses": 0,

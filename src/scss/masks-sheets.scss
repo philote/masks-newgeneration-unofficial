@@ -911,16 +911,39 @@
       }
 
       // Core pins content links to `white-space: nowrap`, which overflows a link
-      // too long for the card. Wrapping them inside one inline-block keeps the
-      // chip a single unbroken box (an inline chip's border would break open at
-      // each line) while leaving a choice's trailing description alongside it.
+      // too long for the card.
       .content-link {
-        display: inline-block;
-        max-width: 100%;
-        box-sizing: border-box;
         white-space: normal;
         word-break: normal;
         overflow-wrap: break-word;
+      }
+
+      // A choice's description is a text node outside the anchor, so no CSS can
+      // pull it into the chip; the bullet itself has to become the chip instead.
+      // Both shapes the compendium authors these in have to be matched, and only
+      // via a direct child, so a bullet that merely *contains* a nested list of
+      // choices isn't boxed up along with all of them.
+      // The anchor is matched anywhere inside the heading, not just as its direct
+      // child, so wrapping one (e.g. in `<s>` to strike an option a move forbids)
+      // doesn't silently cost that bullet its chip.
+      &:has(> .content-link),
+      &:has(> h4 .content-link) {
+        background: var(--content-link-background);
+        border: 1px solid var(--content-link-border-color);
+        border-radius: 2px;
+        padding: 2px 6px;
+        margin: 4px 0;
+
+        .content-link {
+          background: none;
+          border: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        > h4 {
+          margin: 0;
+        }
       }
     }
   }

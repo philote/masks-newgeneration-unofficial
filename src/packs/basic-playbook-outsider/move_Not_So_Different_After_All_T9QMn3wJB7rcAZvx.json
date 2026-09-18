@@ -28,12 +28,12 @@
       "partial": {
         "key": "data.moveResults.partial.value",
         "label": "Partial success",
-        "value": "<p>Choose one.</p>\n<ul>\n<li>confess a flaw of your home; add 1 Team to the pool</li>\n<li>mislead them about your home; take Influence over them</li>\n<li>describe the glories of your home; clear a condition</li>\n</ul>"
+        "value": "<p>Choose one.</p>"
       },
       "success": {
         "key": "data.moveResults.success.value",
         "label": "Success!",
-        "value": "<p>Choose two.</p>\n<ul>\n<li>confess a flaw of your home; add 1 Team to the pool</li>\n<li>mislead them about your home; take Influence over them</li>\n<li>describe the glories of your home; clear a condition</li>\n</ul>"
+        "value": "<p>Choose two.</p>"
       }
     },
     "uses": 0,

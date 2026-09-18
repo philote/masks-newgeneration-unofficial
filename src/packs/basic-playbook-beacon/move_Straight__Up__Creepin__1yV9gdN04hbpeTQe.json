@@ -28,12 +28,12 @@
       "partial": {
         "key": "data.moveResults.partial.value",
         "label": "Partial success",
-        "value": "<p>Ask one.</p>\n<ul>\n<li>what&rsquo;s my best way in/out?</li>\n<li>what happened here recently?</li>\n<li>what here is worth grabbing?</li>\n<li>who or what here is not what they seem?</li>\n<li>whose place is this?</li>\n</ul>"
+        "value": "<p>Ask one.</p>"
       },
       "success": {
         "key": "data.moveResults.success.value",
         "label": "Success!",
-        "value": "<p>Ask two.</p>\n<ul>\n<li>what&rsquo;s my best way in/out?</li>\n<li>what happened here recently?</li>\n<li>what here is worth grabbing?</li>\n<li>who or what here is not what they seem?</li>\n<li>whose place is this?</li>\n</ul>"
+        "value": "<p>Ask two.</p>"
       }
     },
     "uses": 0,

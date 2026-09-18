@@ -732,12 +732,31 @@
 }
 .pbta-chat-card .result-details li .content-link,
 .pbta-chat-card .result-choices li .content-link {
-  display: inline-block;
-  max-width: 100%;
-  box-sizing: border-box;
   white-space: normal;
   word-break: normal;
   overflow-wrap: break-word;
+}
+.pbta-chat-card .result-details li:has(> .content-link), .pbta-chat-card .result-details li:has(> h4 .content-link),
+.pbta-chat-card .result-choices li:has(> .content-link),
+.pbta-chat-card .result-choices li:has(> h4 .content-link) {
+  background: var(--content-link-background);
+  border: 1px solid var(--content-link-border-color);
+  border-radius: 2px;
+  padding: 2px 6px;
+  margin: 4px 0;
+}
+.pbta-chat-card .result-details li:has(> .content-link) .content-link, .pbta-chat-card .result-details li:has(> h4 .content-link) .content-link,
+.pbta-chat-card .result-choices li:has(> .content-link) .content-link,
+.pbta-chat-card .result-choices li:has(> h4 .content-link) .content-link {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.pbta-chat-card .result-details li:has(> .content-link) > h4, .pbta-chat-card .result-details li:has(> h4 .content-link) > h4,
+.pbta-chat-card .result-choices li:has(> .content-link) > h4,
+.pbta-chat-card .result-choices li:has(> h4 .content-link) > h4 {
+  margin: 0;
 }
 .pbta-chat-card .card-buttons {
   display: flex;

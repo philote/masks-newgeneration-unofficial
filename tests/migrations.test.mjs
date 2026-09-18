@@ -11,7 +11,8 @@ import {
 	migrateLegacy,
 	migrateConnectingTheDots,
 	migrateAllTheBestStuff,
-	migrateAHigherCallingLabelSwap
+	migrateAHigherCallingLabelSwap,
+	migrateDuplicateChoiceLists
 } from "../module/helpers/migrations.mjs";
 
 function buildActor(name, items) {
@@ -1053,5 +1054,165 @@ describe("migrateAHigherCallingLabelSwap", () => {
 
 		expect(cleanActor.updateEmbeddedDocuments).not.toHaveBeenCalled();
 		expect(staleActor.updateEmbeddedDocuments).toHaveBeenCalledTimes(1);
+	});
+});
+
+describe("migrateDuplicateChoiceLists", () => {
+	const STALE_LIST =
+		"\n<ul>\n<li>do what you say</li>\n<li>get out of your way</li>\n<li>attack you at a disadvantage</li>\n<li>freeze</li>\n</ul>";
+
+	function buildMove(overrides = {}) {
+		return {
+			id: "move1",
+			type: "move",
+			name: "Symbol of Authority",
+			system: {
+				choices: "<ul>\n<li>\n<h4>@UUID[Compendium.x.y.z]{Do what you say}</h4>\n</li>\n</ul>",
+				moveResults: {
+					success: { value: "<p>They choose one. You also take +1 forward against them.</p>" + STALE_LIST },
+					partial: { value: "<p>They choose one.</p>" + STALE_LIST }
+				},
+				...overrides
+			}
+		};
+	}
+
+	beforeEach(() => {
+		vi.spyOn(console, "log").mockImplementation(() => {});
+	});
+
+	it("strips the duplicated prose list from both results", async () => {
+		const actor = buildActor("Hero", [buildMove()]);
+		vi.stubGlobal("game", { actors: [actor] });
+
+		await migrateDuplicateChoiceLists();
+
+		expect(actor.updateEmbeddedDocuments).toHaveBeenCalledWith("Item", [
+			{
+				_id: "move1",
+				"system.moveResults.success.value":
+					"<p>They choose one. You also take +1 forward against them.</p>",
+				"system.moveResults.partial.value": "<p>They choose one.</p>"
+			}
+		]);
+	});
+
+	it("is idempotent once the list has been removed", async () => {
+		const migrated = buildMove({
+			moveResults: {
+				success: { value: "<p>They choose one. You also take +1 forward against them.</p>" },
+				partial: { value: "<p>They choose one.</p>" }
+			}
+		});
+		const actor = buildActor("Hero", [migrated]);
+		vi.stubGlobal("game", { actors: [actor] });
+
+		await migrateDuplicateChoiceLists();
+
+		expect(actor.updateEmbeddedDocuments).not.toHaveBeenCalled();
+	});
+
+	it("leaves a move alone when the player has rewritten the list", async () => {
+		const customized = buildMove({
+			moveResults: {
+				success: { value: "<p>They choose one.</p>\n<ul>\n<li>my own option</li>\n</ul>" },
+				partial: { value: "<p>They choose one.</p>\n<ul>\n<li>my own option</li>\n</ul>" }
+			}
+		});
+		const actor = buildActor("Hero", [customized]);
+		vi.stubGlobal("game", { actors: [actor] });
+
+		await migrateDuplicateChoiceLists();
+
+		expect(actor.updateEmbeddedDocuments).not.toHaveBeenCalled();
+	});
+
+	it("leaves the prose list in place when there are no choices to replace it", async () => {
+		const actor = buildActor("Hero", [buildMove({ choices: "" })]);
+		vi.stubGlobal("game", { actors: [actor] });
+
+		await migrateDuplicateChoiceLists();
+
+		expect(actor.updateEmbeddedDocuments).not.toHaveBeenCalled();
+	});
+
+	it("ignores a move of another name carrying the same markup", async () => {
+		const other = buildMove();
+		other.name = "Some Other Move";
+		const actor = buildActor("Hero", [other]);
+		vi.stubGlobal("game", { actors: [actor] });
+
+		await migrateDuplicateChoiceLists();
+
+		expect(actor.updateEmbeddedDocuments).not.toHaveBeenCalled();
+	});
+});
+
+describe("migrateDuplicateChoiceLists - Fight the Good Fight", () => {
+	const STALE_LIST = "\n<ul>\n<li class=\"p1\">resist or avoid their blows</li>\n<li class=\"p1\">take something from them</li>\n<li class=\"p1\">create an opportunity for your allies</li>\n<li class=\"p1\"><s>impress, surprise, or frighten the opposition</s></li>\n</ul>";
+	const OLD_CHOICES = "<ul>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.t9kFvEp4eNYMCUkC]{Resisting or avoiding their blows}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.VTyTLEzt5Zbx3JM4]{Taking something from them}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.AGsdZxeDIixx5ulh]{Creating an opportunity for your allies}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.3e3Dyp1IAnqrGwNj]{Impress, surprise, or frighten the opposition}</h4>\n</li>\n</ul>";
+	const NEW_CHOICES = "<ul>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.t9kFvEp4eNYMCUkC]{Resisting or avoiding their blows}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.VTyTLEzt5Zbx3JM4]{Taking something from them}</h4>\n</li>\n<li>\n<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.AGsdZxeDIixx5ulh]{Creating an opportunity for your allies}</h4>\n</li>\n<li>\n<h4><s>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.3e3Dyp1IAnqrGwNj]{Impress, surprise, or frighten the opposition}</s></h4>\n</li>\n</ul>";
+
+	function buildMove(overrides = {}) {
+		return {
+			id: "ftgf1",
+			type: "move",
+			name: "Fight the Good Fight",
+			system: {
+				choices: OLD_CHOICES,
+				moveResults: {
+					success: { value: "<p>Trade blows and pick two.</p>" + STALE_LIST },
+					partial: { value: "<p>Trade blows and pick one.</p>" + STALE_LIST }
+				},
+				...overrides
+			}
+		};
+	}
+
+	beforeEach(() => {
+		vi.spyOn(console, "log").mockImplementation(() => {});
+	});
+
+	it("drops the prose list and strikes the forbidden option in the choices", async () => {
+		const actor = buildActor("Hero", [buildMove()]);
+		vi.stubGlobal("game", { actors: [actor] });
+
+		await migrateDuplicateChoiceLists();
+
+		expect(actor.updateEmbeddedDocuments).toHaveBeenCalledWith("Item", [
+			{
+				_id: "ftgf1",
+				"system.moveResults.success.value": "<p>Trade blows and pick two.</p>",
+				"system.moveResults.partial.value": "<p>Trade blows and pick one.</p>",
+				"system.choices": NEW_CHOICES
+			}
+		]);
+	});
+
+	it("keeps the restriction visible rather than dropping the option", async () => {
+		const actor = buildActor("Hero", [buildMove()]);
+		vi.stubGlobal("game", { actors: [actor] });
+
+		await migrateDuplicateChoiceLists();
+
+		const [[, [update]]] = actor.updateEmbeddedDocuments.mock.calls;
+		expect(update["system.choices"]).toContain("Impress, surprise, or frighten the opposition");
+		expect(update["system.choices"]).toContain("<s>");
+	});
+
+	it("is idempotent once the option is already struck", async () => {
+		const migrated = buildMove({
+			choices: NEW_CHOICES,
+			moveResults: {
+				success: { value: "<p>Trade blows and pick two.</p>" },
+				partial: { value: "<p>Trade blows and pick one.</p>" }
+			}
+		});
+		const actor = buildActor("Hero", [migrated]);
+		vi.stubGlobal("game", { actors: [actor] });
+
+		await migrateDuplicateChoiceLists();
+
+		expect(actor.updateEmbeddedDocuments).not.toHaveBeenCalled();
 	});
 });

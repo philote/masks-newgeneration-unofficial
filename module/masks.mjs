@@ -11,7 +11,7 @@ import { initMarkPotentialButton } from './helpers/mark-potential.mjs';
 import { initAttributeRoll } from './helpers/attribute-roll.mjs';
 import { initRollOptions } from './helpers/roll-options.mjs';
 import { initLabelSwap } from './helpers/label-swap.mjs';
-import { migrateTakeAPowerfulBlow, migrateRejectingInfluence, migrateBurn, migrateNoPowersBasicMoveChoices, migrateKirbyCraftBasicMoveChoices, migrateWheneverTimePasses, migrateAHigherCalling, migrateFriendsInLowPlaces, migrateLegacy, migrateConnectingTheDots, migrateAllTheBestStuff, migrateAHigherCallingLabelSwap } from './helpers/migrations.mjs';
+import { migrateTakeAPowerfulBlow, migrateRejectingInfluence, migrateBurn, migrateNoPowersBasicMoveChoices, migrateKirbyCraftBasicMoveChoices, migrateWheneverTimePasses, migrateAHigherCalling, migrateFriendsInLowPlaces, migrateLegacy, migrateConnectingTheDots, migrateAllTheBestStuff, migrateAHigherCallingLabelSwap, migrateDuplicateChoiceLists } from './helpers/migrations.mjs';
 
 Hooks.once("init", () => {
     const masksActorSheet = MasksActorSheetMixin(game.pbta.applications.actor.PbtaActorSheet);
@@ -90,6 +90,7 @@ Hooks.once('ready', async function () {
     await migrateConnectingTheDots();
     await migrateAllTheBestStuff();
     await migrateAHigherCallingLabelSwap();
+    await migrateDuplicateChoiceLists();
     if (game.settings.get('masks-newgeneration-unofficial', 'firstTime')) {
         game.settings.set('masks-newgeneration-unofficial', 'firstTime', false);
 

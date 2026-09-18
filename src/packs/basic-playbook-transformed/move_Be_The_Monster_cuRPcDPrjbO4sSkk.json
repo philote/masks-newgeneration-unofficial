@@ -28,12 +28,12 @@
       "partial": {
         "key": "data.moveResults.partial.value",
         "label": "Partial success",
-        "value": "<p>They are thrown off and make themselves vulnerable to you, or they flee. Choose two.</p>\n<ul>\n<li>you frighten others you had not intended to scare</li>\n<li>you hurt someone or break something you shouldn&rsquo;t have</li>\n<li>you feel like more of a monster afterward; mark a condition (GM&rsquo;s choice)</li>\n</ul>"
+        "value": "<p>They are thrown off and make themselves vulnerable to you, or they flee. Choose two.</p>"
       },
       "success": {
         "key": "data.moveResults.success.value",
         "label": "Success!",
-        "value": "<p>They are thrown off and make themselves vulnerable to you, or they flee. Choose one.</p>\n<ul>\n<li>you frighten others you had not intended to scare</li>\n<li>you hurt someone or break something you shouldn&rsquo;t have</li>\n<li>you feel like more of a monster afterward; mark a condition (GM&rsquo;s choice)</li>\n</ul>"
+        "value": "<p>They are thrown off and make themselves vulnerable to you, or they flee. Choose one.</p>"
       }
     },
     "uses": 0,

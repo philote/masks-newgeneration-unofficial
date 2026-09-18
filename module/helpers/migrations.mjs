@@ -266,3 +266,82 @@ export async function migrateAHigherCallingLabelSwap() {
         }
     }
 }
+
+const DUPLICATE_CHOICE_LISTS = {
+    "Are You Watching Closely?":
+        "\n<ul>\n<li>you get an opportunity</li>\n<li>you expose a weakness or flaw</li>\n<li>you confuse them for some time</li>\n<li>you avoid further entanglement</li>\n</ul>",
+    "Be The Monster":
+        "\n<ul>\n<li>you frighten others you had not intended to scare</li>\n<li>you hurt someone or break something you shouldn&rsquo;t have</li>\n<li>you feel like more of a monster afterward; mark a condition (GM&rsquo;s choice)</li>\n</ul>",
+    "Bull's Heart: Defender":
+        "\n<ul>\n<li class=\"p1\">add a Team to the pool</li>\n<li class=\"p1\">take Influence over someone you protect</li>\n<li class=\"p1\">clear a condition</li>\n</ul>\n",
+    "Fight the Good Fight":
+        "\n<ul>\n<li class=\"p1\">resist or avoid their blows</li>\n<li class=\"p1\">take something from them</li>\n<li class=\"p1\">create an opportunity for your allies</li>\n<li class=\"p1\"><s>impress, surprise, or frighten the opposition</s></li>\n</ul>",
+    "Not So Different After All":
+        "\n<ul>\n<li>confess a flaw of your home; add 1 Team to the pool</li>\n<li>mislead them about your home; take Influence over them</li>\n<li>describe the glories of your home; clear a condition</li>\n</ul>",
+    "Reality Storm (Flare)":
+        "\n<ul>\n<li class=\"p1\">resist or avoid their blows</li>\n<li class=\"p1\">take something from them</li>\n<li class=\"p1\">create an opportunity for your allies</li>\n<li class=\"p1\">impress, surprise, or frighten the opposition</li>\n</ul>",
+    "Shielding (Flare)":
+        "\n<ul>\n<li class=\"p1\">add a Team to the pool</li>\n<li class=\"p1\">take Influence over someone you protect</li>\n<li class=\"p1\">clear a condition</li>\n</ul>\n",
+    "Straight. Up. Creepinâ€™":
+        "\n<ul>\n<li>what&rsquo;s my best way in/out?</li>\n<li>what happened here recently?</li>\n<li>what here is worth grabbing?</li>\n<li>who or what here is not what they seem?</li>\n<li>whose place is this?</li>\n</ul>",
+    "Suck it, Domitian":
+        "\n<ul>\n<li class=\"p1\">resist or avoid their blows</li>\n<li class=\"p1\">take something from them</li>\n<li class=\"p1\">create an opportunity for your allies</li>\n<li class=\"p1\">impress, surprise, or frighten the opposition</li>\n</ul>",
+    "Symbol of Authority":
+        "\n<ul>\n<li>do what you say</li>\n<li>get out of your way</li>\n<li>attack you at a disadvantage</li>\n<li>freeze</li>\n</ul>",
+    "Venting Frustration":
+        "\n<ul>\n<li class=\"p1\">resist or avoid their blows</li>\n<li class=\"p1\">take something from them</li>\n<li class=\"p1\">create an opportunity for your allies</li>\n<li class=\"p1\">impress, surprise, or frighten the opposition</li>\n</ul>"
+};
+/**
+ * Fight the Good Fight forbids one of its options in its own description, which the prose list
+ * conveyed by striking that line through. With the prose list gone the choices
+ * list has to carry it instead, so the matching entry is struck there.
+ */
+const STRUCK_CHOICES = {
+    "Fight the Good Fight": {
+        from:
+            "<h4>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.3e3Dyp1IAnqrGwNj]{Impress, surprise, or frighten the opposition}</h4>",
+        to:
+            "<h4><s>@UUID[Compendium.masks-newgeneration-unofficial.documents.JournalEntry.w5RMQhyRMu0Kz8Bh.JournalEntryPage.3e3Dyp1IAnqrGwNj]{Impress, surprise, or frighten the opposition}</s></h4>"
+    }
+};
+
+
+/**
+ * These moves used to repeat their choice list as plain prose inside each result,
+ * so a chat card listed every option twice - once as text, once as the linked
+ * choices. Actors keep the copy they were granted, so the stale list has to be
+ * stripped from those too. Matched on the exact old list plus a choices list that
+ * is still there, leaving a move whose prose a player rewrote alone (idempotent:
+ * the fragment no longer matches once removed).
+ */
+export async function migrateDuplicateChoiceLists() {
+    for (const actor of game.actors) {
+        const updates = [];
+
+        for (const item of actor.items) {
+            if (item.type !== "move") { continue; }
+
+            const staleList = DUPLICATE_CHOICE_LISTS[item.name];
+            if (!staleList || !item.system?.choices?.trim()) { continue; }
+
+            const update = { _id: item.id };
+            for (const key of ["success", "partial"]) {
+                const value = item.system.moveResults?.[key]?.value;
+                if (!value?.includes(staleList)) { continue; }
+                update[`system.moveResults.${key}.value`] = value.replace(staleList, "").trim();
+            }
+
+            const struckChoice = STRUCK_CHOICES[item.name];
+            if (struckChoice && item.system.choices.includes(struckChoice.from)) {
+                update["system.choices"] = item.system.choices.replace(struckChoice.from, struckChoice.to);
+            }
+
+            if (Object.keys(update).length > 1) { updates.push(update); }
+        }
+
+        if (updates.length) {
+            await actor.updateEmbeddedDocuments("Item", updates);
+            console.log(`masks-newgeneration-unofficial | Migrated duplicate choice lists on actor "${actor.name}".`);
+        }
+    }
+}
