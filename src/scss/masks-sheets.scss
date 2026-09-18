@@ -1121,6 +1121,10 @@
     --masks-result-success-color: #51cf66;
     --masks-result-partial-color: #ffc14d;
     --masks-result-failure-color: #ff6b7a;
+    // The light theme's yellow accent reads as a hot outline against a dark card.
+    // Inside the card this only draws the Mark Potential and shift button borders
+    // - the tag fill that also uses it is set separately below.
+    --masks-tab-bg-active-color: rgb(255 255 255 / 22%);
     // Tinting the card colour itself only muddies it; on a dark surface a nested
     // panel has to read as raised, so the result row mixes into a lighter base.
     --masks-result-base: #2f2b38;

@@ -912,6 +912,7 @@
   --masks-result-success-color: #51cf66;
   --masks-result-partial-color: #ffc14d;
   --masks-result-failure-color: #ff6b7a;
+  --masks-tab-bg-active-color: rgb(255 255 255 / 22%);
   --masks-result-base: #2f2b38;
   --masks-result-tint: 14%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);

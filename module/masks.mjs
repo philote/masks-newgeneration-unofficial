@@ -11,6 +11,7 @@ import { initMarkPotentialButton } from './helpers/mark-potential.mjs';
 import { initAttributeRoll } from './helpers/attribute-roll.mjs';
 import { initRollOptions } from './helpers/roll-options.mjs';
 import { initLabelSwap } from './helpers/label-swap.mjs';
+import { initDarkMode } from './helpers/dark-mode.mjs';
 import { migrateTakeAPowerfulBlow, migrateRejectingInfluence, migrateBurn, migrateNoPowersBasicMoveChoices, migrateKirbyCraftBasicMoveChoices, migrateWheneverTimePasses, migrateAHigherCalling, migrateFriendsInLowPlaces, migrateLegacy, migrateConnectingTheDots, migrateAllTheBestStuff, migrateAHigherCallingLabelSwap, migrateDuplicateChoiceLists } from './helpers/migrations.mjs';
 
 Hooks.once("init", () => {
@@ -23,25 +24,7 @@ Hooks.once("init", () => {
         label: 'MASKS-SHEETS.SheetConfig.character',
     });
 
-    game.settings.register("masks-newgeneration-unofficial", "enable_dark_mode", {
-        name: "MASKS-SHEETS.Settings.enable_dark_mode.name",
-        hint: "MASKS-SHEETS.Settings.enable_dark_mode.hint",
-        scope: "world",
-        config: true,
-        type: Boolean,
-        default: false,
-        requiresReload: true
-    });
-
-    var head = document.getElementsByTagName('HEAD')[0];
-    if (game.settings.get("masks-newgeneration-unofficial","enable_dark_mode")){
-		var link = document.createElement('link');
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = foundry.utils.getRoute('modules/masks-newgeneration-unofficial/css/dark-mode.css');
-		//Append link element to HTML head
-		head.appendChild(link);
-	}
+    initDarkMode();
 
     // Register settings
     game.settings.register('masks-newgeneration-unofficial', 'firstTime', {
