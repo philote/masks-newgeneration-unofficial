@@ -319,7 +319,7 @@
 		}
 	],
 	"esmodules": ["module/masks.mjs"],
-	"styles": ["css/masks-sheets.css", "css/dark-mode.css"],
+	"styles": ["css/masks-sheets.css", "css/dark-mode.css", "css/light-mode.css"],
 	"documentTypes": {
 		"Actor": {
 			"team": {}

@@ -69,6 +69,17 @@
                     "graphite": "Graphite",
                     "auburn": "Auburn (classique)"
                 }
+            },
+            "light_theme": {
+                "name": "Thème du mode clair",
+                "hint": "Quelle palette de couleurs utiliser lorsque le mode sombre est désactivé.",
+                "choices": {
+                    "classic": "Lumière du jour (classique)",
+                    "dusk": "Crépuscule",
+                    "verdant": "Verdoyant",
+                    "overcast": "Ciel couvert",
+                    "ink": "Encre"
+                }
             }
         },
         "Description": {

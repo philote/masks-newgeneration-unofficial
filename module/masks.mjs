@@ -11,7 +11,7 @@ import { initMarkPotentialButton } from './helpers/mark-potential.mjs';
 import { initAttributeRoll } from './helpers/attribute-roll.mjs';
 import { initRollOptions } from './helpers/roll-options.mjs';
 import { initLabelSwap } from './helpers/label-swap.mjs';
-import { initDarkMode } from './helpers/dark-mode.mjs';
+import { initTheme } from './helpers/theme.mjs';
 import { migrateTakeAPowerfulBlow, migrateRejectingInfluence, migrateBurn, migrateNoPowersBasicMoveChoices, migrateKirbyCraftBasicMoveChoices, migrateWheneverTimePasses, migrateAHigherCalling, migrateFriendsInLowPlaces, migrateLegacy, migrateConnectingTheDots, migrateAllTheBestStuff, migrateAHigherCallingLabelSwap, migrateDuplicateChoiceLists } from './helpers/migrations.mjs';
 
 Hooks.once("init", () => {
@@ -24,7 +24,7 @@ Hooks.once("init", () => {
         label: 'MASKS-SHEETS.SheetConfig.character',
     });
 
-    initDarkMode();
+    initTheme();
 
     // Register settings
     game.settings.register('masks-newgeneration-unofficial', 'firstTime', {

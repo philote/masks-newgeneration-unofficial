@@ -41,7 +41,7 @@ As of this release, the module is maintained by [ctincorvia](https://github.com/
 The following Foundry VTT game system must be installed to use this module: [Powered by the Apocalypse](https://github.com/asacolips-projects/pbta).
 
 > [!WARNING]
-> ### Masks V1.9+
+> ### Masks V2.0+
 > **ONLY** works with Foundry v14+ and PbtA v1.2.0+
 #### If you use Foundry v13:
 - use PbtA [v1.1.23](https://github.com/asacolips-projects/pbta/releases/tag/1.1.23) with Masks [v1.8.x](https://github.com/ctincorvia/masks-newgeneration-unofficial/releases)

@@ -15,8 +15,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "sass src/scss/masks-sheets.scss css/masks-sheets.css --style=expanded --no-source-map && sass src/scss/dark-mode.scss css/dark-mode.css --style=expanded --no-source-map",
-    "watch": "sass src/scss/masks-sheets.scss:css/masks-sheets.css src/scss/dark-mode.scss:css/dark-mode.css --style=expanded --source-map --watch",
+    "build": "sass src/scss/masks-sheets.scss:css/masks-sheets.css src/scss/dark-mode.scss:css/dark-mode.css src/scss/light-mode.scss:css/light-mode.css --style=expanded --no-source-map",
+    "watch": "sass src/scss/masks-sheets.scss:css/masks-sheets.css src/scss/dark-mode.scss:css/dark-mode.css src/scss/light-mode.scss:css/light-mode.css --style=expanded --source-map --watch",
     "sync-manifest": "node ./tools/sync-manifest.mjs",
     "pushLDBtoJSON": "node ./tools/pushLDBtoJSON.mjs",
     "pullJSONtoLDB": "node ./tools/pullJSONtoLDB.mjs",

@@ -2,6 +2,8 @@
 - Dark mode now offers five color palettes, picked per-player from the new "Dark Mode Theme" setting: Midnight Indigo, Noir Teal, Deep Navy, Graphite, and Auburn
 - **Dark mode now defaults to Midnight Indigo.** The previous reddish palette is still available — choose "Auburn (classic)" in the new dropdown to get it back
 - Switching dark mode or its palette now takes effect immediately instead of requiring a reload
+- Light mode now offers five palettes too, via a new "Light Mode Theme" setting: Daylight (the existing look, still the default), Dusk, Verdant, Overcast, and Ink
+- Added `npm run sync-manifest` for dev installs, which copies the manifest into the local Foundry module directory — a `module.json` edit has no runtime effect until it is re-copied
 
 #2.0.4
 - Added a French translation (sedric, based on the official translation by Guy Blavin for 500 Nuances de Geek)

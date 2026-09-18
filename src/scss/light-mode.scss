@@ -21,11 +21,13 @@
 // Keys are quoted for the same reason as in dark-mode.scss: several read as CSS
 // color keywords and Sass would otherwise parse them as colors rather than strings.
 $masks-light-themes: (
+  // Sky is kept this light on purpose: a deeper violet drops the section-heading
+  // contrast against it to ~2.3:1, since headings sit directly on the gradient.
   "dusk": (
     bg: #4a3a7a,
     hover: #332a5c,
-    title: #4a3a7a,
-    sky: #8a6fb0,
+    title: #3a2d63,
+    sky: #b49ad6,
     haze: #f2a883,
     horizon: #ffdcae,
   ),

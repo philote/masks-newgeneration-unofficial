@@ -69,6 +69,17 @@
                     "graphite": "Graphite",
                     "auburn": "Auburn (classic)"
                 }
+            },
+            "light_theme": {
+                "name": "Light Mode Theme",
+                "hint": "Which color palette to use when dark mode is disabled.",
+                "choices": {
+                    "classic": "Daylight (classic)",
+                    "dusk": "Dusk",
+                    "verdant": "Verdant",
+                    "overcast": "Overcast",
+                    "ink": "Ink"
+                }
             }
         },
         "Description": {

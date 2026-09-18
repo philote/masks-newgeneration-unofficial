@@ -1,0 +1,72 @@
+/**
+ * Light mode palettes.
+ *
+ * Gated behind [data-masks-light-theme] on <html>, set by module/helpers/theme.mjs,
+ * exactly as dark-mode.scss is gated behind [data-masks-dark-theme].
+ *
+ * The "classic" palette is deliberately absent: it IS the bare :root block in
+ * masks-sheets.scss, so selecting it removes the attribute instead of restating
+ * those values somewhere they could drift out of sync.
+ *
+ * Only the sheet chrome and the sky gradient change. The skyline background, gold
+ * accent, input styling, and result colors all stay inherited from that same :root
+ * block - light mode has no starfield, so --masks-window-bg-image is untouched.
+ *
+ * Palette keys must stay in sync with LIGHT_THEMES in theme.mjs; a test in
+ * tests/theme.test.mjs fails if they drift or if css/light-mode.css wasn't rebuilt.
+ */
+:root[data-masks-light-theme=dusk] {
+  --actor-gradient: linear-gradient(
+    to bottom,
+    #b49ad6 0%,
+    #f2a883 80%,
+    #ffdcae 100%
+  );
+  --masks-interactive-bg-color: #4a3a7a;
+  --masks-interactive-bg-hover-color: #332a5c;
+  --masks-header-bg-color: #332a5c;
+  --masks-title-text-color: #3a2d63;
+  --masks-cell-title-border-color: #3a2d63;
+}
+
+:root[data-masks-light-theme=verdant] {
+  --actor-gradient: linear-gradient(
+    to bottom,
+    #6fc9d8 0%,
+    #bcd9b4 80%,
+    #f2efc0 100%
+  );
+  --masks-interactive-bg-color: #1d5b4a;
+  --masks-interactive-bg-hover-color: #134034;
+  --masks-header-bg-color: #134034;
+  --masks-title-text-color: #134034;
+  --masks-cell-title-border-color: #134034;
+}
+
+:root[data-masks-light-theme=overcast] {
+  --actor-gradient: linear-gradient(
+    to bottom,
+    #93a7bb 0%,
+    #c6d1db 80%,
+    #e4e0d4 100%
+  );
+  --masks-interactive-bg-color: #3d4652;
+  --masks-interactive-bg-hover-color: #2a313a;
+  --masks-header-bg-color: #2a313a;
+  --masks-title-text-color: #2a313a;
+  --masks-cell-title-border-color: #2a313a;
+}
+
+:root[data-masks-light-theme=ink] {
+  --actor-gradient: linear-gradient(
+    to bottom,
+    #cfd6dd 0%,
+    #ebe7dd 80%,
+    #f8f3e4 100%
+  );
+  --masks-interactive-bg-color: #242832;
+  --masks-interactive-bg-hover-color: #14171d;
+  --masks-header-bg-color: #14171d;
+  --masks-title-text-color: #14171d;
+  --masks-cell-title-border-color: #14171d;
+}

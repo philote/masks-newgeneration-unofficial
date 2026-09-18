@@ -68,6 +68,17 @@
                     "graphite": "Grafito",
                     "auburn": "Caoba (clásico)"
                 }
+            },
+            "light_theme": {
+                "name": "Tema del modo claro",
+                "hint": "Qué paleta de colores usar cuando el modo oscuro está desactivado.",
+                "choices": {
+                    "classic": "Luz de día (clásico)",
+                    "dusk": "Crepúsculo",
+                    "verdant": "Verdor",
+                    "overcast": "Nublado",
+                    "ink": "Tinta"
+                }
             }
         },
         "Description": {
