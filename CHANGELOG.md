@@ -1,4 +1,6 @@
 #Unreleased
+
+#2.1.2
 - Fixed the "Would you like to use a Masks theme for your login screen?" question re-appearing on every world load (issue #9) — it is now asked once per world, and answering it (either way) settles it for good
 - Removed an unreachable code path that read a `enableLoginImg` setting the module stopped registering several versions ago
 
