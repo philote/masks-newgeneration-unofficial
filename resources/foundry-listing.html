@@ -6,11 +6,11 @@
 </p>
 <p>
   This module contains moves for the game Masks: A New Generation for use with the Foundry VTT generic PbtA System (
-  <a href="https://gitlab.com/asacolips-projects/foundry-mods/pbta" target="_blank" rel="nofollow noopener">
-    https://gitlab.com/asacolips-projects/foundry-mods/pbta
-  </a>). You can install this system with this link:
-  <a href="https://gitlab.com/asacolips-projects/foundry-mods/pbta/-/jobs/artifacts/beta/raw/system.json?job=build-beta" target="_blank" rel="nofollow noopener">
-    https://gitlab.com/asacolips-projects/foundry-mods/pbta/-/jobs/artifacts/beta/raw/system.json?job=build-beta
+  <a href="https://github.com/asacolips-projects/pbta" target="_blank" rel="nofollow noopener">
+    https://github.com/asacolips-projects/pbta
+  </a>). The PbtA system can be installed from the Foundry system directory, or from its releases page:
+  <a href="https://github.com/asacolips-projects/pbta/releases" target="_blank" rel="nofollow noopener">
+    https://github.com/asacolips-projects/pbta/releases
   </a>
 </p>
 <p>
@@ -41,9 +41,34 @@
       https://gitlab.com/geekswordsman/masks-newgeneration-sheets
     </a>)
   </li>
+  <li>
+    Further development and the Spanish translation added by erizocosmico (
+    <a href="https://github.com/erizocosmico" target="_blank" rel="nofollow noopener">
+      https://github.com/erizocosmico
+    </a>)
+  </li>
+  <li>
+    French translation added by sedric (
+    <a href="https://github.com/sedric" target="_blank" rel="nofollow noopener">
+      https://github.com/sedric
+    </a>), based on the official translation by Guy Blavin for 500 Nuances de Geek
+  </li>
+  <li>
+    Continued maintenance through Foundry v13 by philote / ephson (
+    <a href="https://github.com/philote" target="_blank" rel="nofollow noopener">
+      https://github.com/philote
+    </a>)
+  </li>
 </ul>
 <p>
   The current version is a merging of these modules' features, cleanup of the moves and bringing the module up to date with Foundry VTT versions and PbtA system versions.
+</p>
+<p>
+  The module is maintained by ctincorvia (
+  <a href="https://github.com/ctincorvia" target="_blank" rel="nofollow noopener">
+    https://github.com/ctincorvia
+  </a>) as of the 2.x releases, which added Foundry v14 support. Thanks to philote for handing the
+  project over and for the years of maintenance that got it here.
 </p>
 <p>
   This module is a prerequisite for Masks: A New Generation Sheets (
@@ -86,29 +111,59 @@
       alt="Masks Settings Page"/>
   </a>
 </figure>
-<h2 class="border">Masks V1.7+</h2>
+<h2 class="border">Masks V2.0+</h2>
 <ul>
-  <li>Only works with Foundry v12+ and PbtA v1+</li>
-  <li>If you need Foundry v11 or PbtA v0.9 support then use Masks v1.6.3</li>
+  <li><b>ONLY</b> works with Foundry v14+ and PbtA v1.2.0+</li>
+  <li>If you use Foundry v13: use PbtA v1.1.23 with Masks v1.8.x</li>
+  <li>If you use Foundry v12: use PbtA v1.1.15.2 with Masks v1.7.6</li>
+  <li>If you use Foundry v11: use PbtA v0.9.7 with Masks v1.6.3</li>
 </ul>
 
 <h2 class="border">Features</h2>
 <ul>
-  <li>PC Character Sheets</li>
-  <li>NPC Character Sheets</li>
-  <li>Light and Dark designs with a setting to switch them</li>
-  <li>Compendium of moves</li>
-  <li>Easy Label switching</li>
-  <li>Better description fields</li>
+  <li>PC and NPC character sheets, with an improved layout and Social and Advancement tabs</li>
+  <li>Compendium of moves and playbooks</li>
+  <li>Easy Label switching and better description fields</li>
   <li>Most playbooks have unique attributes to track, once they are added to the character sheet</li>
   <li>Improved Influences interface</li>
   <li>Automation for playbooks</li>
-  <li>Improved layout with Social and Advancement Tabs</li>
+</ul>
+<h3 class="border">Rolling &amp; move automation</h3>
+<ul>
+  <li><b>Conditions apply themselves.</b> Each move knows which condition penalizes it — the roll dialog marks and locks that one and hides the rest.</li>
+  <li><b>"Take a Powerful Blow" and "Burn" count conditions correctly</b> — these roll + conditions marked rather than taking the usual -2 each.</li>
+  <li><b>The roll dialog is skipped when there's nothing to decide</b> — it only appears when you actually have a choice to make.</li>
+  <li><b>A "Mark Potential" button appears on the chat card</b> whenever a miss tells you to mark Potential, visible only to the character's owner and the GM.</li>
+  <li><b>Moves that fold several rolls into one now ask which you're making</b> — "Connecting the Dots" and "All the Best Stuff".</li>
+  <li><b>Moves that let you roll a basic move under your own Label now ask which one</b> — "No Powers and Not Nearly Enough Training" and "Kirby-Craft".</li>
+  <li><b>Playbook-specific Labels are rollable</b>, including playbooks whose Label is tracked as a grid of checkboxes.</li>
+  <li><b>Label-swap prompt</b> for moves that grant it, currently the Soldier's "A Higher Calling".</li>
+</ul>
+<h3 class="border">Team Pool Tracker</h3>
+<ul>
+  <li>A dedicated Team Pool sheet with plus/minus controls and the current total shown in the actor's name.</li>
+  <li>Every player can spend from it, not just the GM.</li>
+  <li>A post-to-chat button to announce the current pool to the table.</li>
+</ul>
+<h3 class="border">Adding moves to a sheet</h3>
+<ul>
+  <li><b>Picker dialogs instead of blank moves.</b> The "+" on Playbook Moves and Adult Moves offers a list to choose from.</li>
+</ul>
+<h3 class="border">Look &amp; feel</h3>
+<ul>
+  <li><b>Dark mode is per-player</b> and applies instantly, and follows Foundry's own dark mode.</li>
+  <li><b>Five dark palettes:</b> Midnight Indigo (default), Noir Teal, Deep Navy, Graphite, and Auburn.</li>
+  <li><b>Five light palettes:</b> Daylight (default), Dusk, Verdant, Overcast, and Ink.</li>
+  <li><b>Chat cards and the chat pane restyled</b> in both light and dark.</li>
+</ul>
+<h3 class="border">Languages</h3>
+<ul>
+  <li>French translation by sedric, based on the official 500 Nuances de Geek translation by Guy Blavin.</li>
+  <li>Spanish translation by erizocosmico.</li>
+  <li>Spanish and French cover all the features above.</li>
 </ul>
 <h3 class="border">TODO</h3>
 <ul>
-  <li>Team Pool Tracker</li>
-  <li>Automate marking potential on a failed roll</li>
   <li>Add influence to roll dialogs</li>
   <li>Common tracking of who has influence over who</li>
   <li>Figure out how to support the Joined better</li>

@@ -14,9 +14,10 @@ them to Foundry's package listing. Each link only works once the previous one ha
 version doesn't match both the tag and local `package.json`. Skipping ahead produces a failure, not a
 silent no-op — but there's no reason to hit it: follow the order below.
 
-Releases are cut from **`origin`** (`ctincorvia/masks-newgeneration-unofficial-overhaul`), not the
-repo named in `package.json`'s `homepage`/`bugs`. The `upstream` remote (`philote/...`) is not a
-release target.
+Releases are cut from **`origin`** (`philote/masks-newgeneration-unofficial`), which is also the repo
+named in `package.json`'s `homepage`/`bugs` and in `foundry_release.py`'s `DEFAULT_REPO`. The `fork`
+remote (`ctincorvia/masks-newgeneration-unofficial-overhaul`) is archived and is **not** a release
+target — it only exists to keep the v2.0.0–v2.1.0 release assets downloadable.
 
 ## 0. Determine the version bump
 

@@ -2,20 +2,20 @@
 
 <p align="center">
     <img alt="Foundry Version 14 support" src="https://img.shields.io/badge/Foundry-v14-informational">
-    <img alt="Latest Release Download Count" src="https://img.shields.io/github/downloads/ctincorvia/masks-newgeneration-unofficial/latest/total"> 
-    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/ctincorvia/masks-newgeneration-unofficial"> 
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ctincorvia/masks-newgeneration-unofficial">
+    <img alt="Latest Release Download Count" src="https://img.shields.io/github/downloads/philote/masks-newgeneration-unofficial/latest/total"> 
+    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/philote/masks-newgeneration-unofficial"> 
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/philote/masks-newgeneration-unofficial">
 </p>
 <p align="center">
-    <img alt="GitHub" src="https://img.shields.io/github/license/ctincorvia/masks-newgeneration-unofficial"> 
-    <a href="https://github.com/ctincorvia/masks-newgeneration-unofficial/issues">
-        <img alt="GitHub issues" src="https://img.shields.io/github/issues/ctincorvia/masks-newgeneration-unofficial">
+    <img alt="GitHub" src="https://img.shields.io/github/license/philote/masks-newgeneration-unofficial"> 
+    <a href="https://github.com/philote/masks-newgeneration-unofficial/issues">
+        <img alt="GitHub issues" src="https://img.shields.io/github/issues/philote/masks-newgeneration-unofficial">
     </a> 
-    <a href="https://github.com/ctincorvia/masks-newgeneration-unofficial/network">
-        <img alt="GitHub forks" src="https://img.shields.io/github/forks/ctincorvia/masks-newgeneration-unofficial">
+    <a href="https://github.com/philote/masks-newgeneration-unofficial/network">
+        <img alt="GitHub forks" src="https://img.shields.io/github/forks/philote/masks-newgeneration-unofficial">
     </a> 
-    <a href="https://github.com/ctincorvia/masks-newgeneration-unofficial/stargazers">
-        <img alt="GitHub stars" src="https://img.shields.io/github/stars/ctincorvia/masks-newgeneration-unofficial">
+    <a href="https://github.com/philote/masks-newgeneration-unofficial/stargazers">
+        <img alt="GitHub stars" src="https://img.shields.io/github/stars/philote/masks-newgeneration-unofficial">
     </a>
 </p>
 
@@ -27,10 +27,11 @@ This revised version of the module is based on works from multiple people:
 - A sheet module created by Geekswordsman (https://gitlab.com/geekswordsman/masks-newgeneration-sheets)
 - Further development and Spanish translation added by erizocosmico
 - French translation added by sedric, based on the official translation by Guy Blavin for 500 Nuances de Geek
-- Continued maintenance through Foundry v14 by philote (ephson)
+- Continued maintenance through Foundry v13 by philote (ephson)
+
 The current version is a merging of these modules' features, cleanup of the moves and bringing the module up to date with Foundry VTT versions and PbtA system versions.
 
-As of this release, the module is maintained by [ctincorvia](https://github.com/ctincorvia), continuing the project after the previous maintainer became unreachable.
+The module is maintained by [ctincorvia](https://github.com/ctincorvia) as of the 2.x releases, which added Foundry v14 support. Thanks to [philote](https://github.com/philote) for handing the project over and for the years of maintenance that got it here.
 
 ## Screenshots
 ![A screenshot of the Masks character sheet in light mode](images/screenshots/character-sheet_light.webp)
@@ -44,11 +45,11 @@ The following Foundry VTT game system must be installed to use this module: [Pow
 > ### Masks V2.0+
 > **ONLY** works with Foundry v14+ and PbtA v1.2.0+
 #### If you use Foundry v13:
-- use PbtA [v1.1.23](https://github.com/asacolips-projects/pbta/releases/tag/1.1.23) with Masks [v1.8.x](https://github.com/ctincorvia/masks-newgeneration-unofficial/releases)
+- use PbtA [v1.1.23](https://github.com/asacolips-projects/pbta/releases/tag/1.1.23) with Masks [v1.8.x](https://github.com/philote/masks-newgeneration-unofficial/releases)
 #### If you use Foundry v12: 
-- use PbtA [v1.1.15.2](https://github.com/asacolips-projects/pbta/releases/tag/1.1.15.2) with Masks [v1.7.6](https://github.com/ctincorvia/masks-newgeneration-unofficial/releases/tag/1.7.6)
+- use PbtA [v1.1.15.2](https://github.com/asacolips-projects/pbta/releases/tag/1.1.15.2) with Masks [v1.7.6](https://github.com/philote/masks-newgeneration-unofficial/releases/tag/1.7.6)
 #### If you use Foundry v11: 
-- use PbtA [v0.9.7](https://github.com/asacolips-projects/pbta/releases/tag/0.9.7) with Masks [v1.6.3](https://github.com/ctincorvia/masks-newgeneration-unofficial/releases/tag/1.6.3)
+- use PbtA [v0.9.7](https://github.com/asacolips-projects/pbta/releases/tag/0.9.7) with Masks [v1.6.3](https://github.com/philote/masks-newgeneration-unofficial/releases/tag/1.6.3)
 
 ## Features
 - PC and NPC character sheets, with an improved layout and Social and Advancement tabs
@@ -105,7 +106,7 @@ The following Foundry VTT game system must be installed to use this module: [Pow
 This module is listed in the Foundry module directory and can be searched and installed within the application.
 
 ## Manual Instalation
-Go to **modules** and use this link: https://raw.githubusercontent.com/ctincorvia/masks-newgeneration-unofficial/main/module.json
+Go to **modules** and use this link: https://github.com/philote/masks-newgeneration-unofficial/releases/latest/download/module.json
 
 # How To
 1. Activate the module.

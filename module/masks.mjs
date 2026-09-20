@@ -282,7 +282,7 @@ Hooks.on("renderSettings", (app, html) => {
             {
                 action: (ev) => {
                     ev.preventDefault();
-                    window.open("https://github.com/ctincorvia/masks-newgeneration-unofficial", "_blank");
+                    window.open("https://github.com/philote/masks-newgeneration-unofficial", "_blank");
                 },
                 iconClasses: ["fab", "fa-github"],
                 labelKey: "MASKS-SHEETS.Settings.game.github.title",

@@ -1,14 +1,14 @@
 {
   "name": "masks-newgeneration-unofficial",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "author": "Charlie Incorvia",
   "description": "Masks system for Foundry VTT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ctincorvia/masks-newgeneration-unofficial.git"
+    "url": "https://github.com/philote/masks-newgeneration-unofficial.git"
   },
-  "homepage": "https://github.com/ctincorvia/masks-newgeneration-unofficial",
-  "bugs": "https://github.com/ctincorvia/masks-newgeneration-unofficial/issues",
+  "homepage": "https://github.com/philote/masks-newgeneration-unofficial",
+  "bugs": "https://github.com/philote/masks-newgeneration-unofficial/issues",
   "browserslist": [
     "last 3 versions"
   ],

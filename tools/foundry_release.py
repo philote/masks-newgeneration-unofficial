@@ -34,8 +34,10 @@ from pathlib import Path
 GITHUB_API = "https://api.github.com"
 FOUNDRY_RELEASE_API = "https://foundryvtt.com/_api/packages/release_version/"
 
-# Releases are cut from the overhaul repo, not the one package.json's homepage/bugs point at.
-DEFAULT_REPO = "ctincorvia/masks-newgeneration-unofficial-overhaul"
+# Releases are cut from the canonical repo, which package.json's homepage/bugs also point at. The
+# 2.0.0-2.1.0 releases came from the now-archived ctincorvia/...-overhaul fork; pass --repo to read
+# one of those.
+DEFAULT_REPO = "philote/masks-newgeneration-unofficial"
 
 TOKENIZED_FIELDS = ("version", "url", "manifest", "download")
 

@@ -1,3 +1,9 @@
+#2.1.1
+- The project's home is now https://github.com/philote/masks-newgeneration-unofficial again — the 2.x work has been merged back into the original repository, and releases are cut from there from this version on
+- Bug reports, the README links, and the GitHub button in the Settings sidebar all point to that repository now
+- Corrected the README's credits: philote maintained the module through Foundry v13, and the 2.x releases that added v14 support are ctincorvia's
+- No changes to module behavior, content, or styling
+
 #2.1.0
 - Dark mode now offers five color palettes, picked per-player from the new "Dark Mode Theme" setting: Midnight Indigo, Noir Teal, Deep Navy, Graphite, and Auburn
 - **Dark mode now defaults to Midnight Indigo.** The previous reddish palette is still available — choose "Auburn (classic)" in the new dropdown to get it back
@@ -25,7 +31,7 @@
 - Updated styling for chat panes (light and dark mode)
 
 #2.0.0
-- New maintainer as of this release (ctincorvia), after the previous maintainer became unreachable — see README for the full lineage
+- New maintainer as of this release (ctincorvia), taking over from philote — see README for the full lineage
 - Added a Team Pool Tracker sheet
 - Added an automatic Mark Potential button that appears when a move result calls for it
 - Added move picker dialogs for playbook, basic, and adult moves, and automatic condition application based on move results
@@ -36,7 +42,7 @@
 - Removed the dead Foundry v12 branch from the settings sidebar integration
 - Removed unused TinyMCE styling (TinyMCE was removed from Foundry in v13; ProseMirror is now the only editor)
 - Fixed the login screen background never actually applying, due to an inverted response check
-- Removed the in-app Ko-fi/donation link tied to the previous maintainer's personal account
+- Removed the in-app Ko-fi/donation link, which pointed to a personal account
 - If you use Foundry v13:
     - use PbtA v1.1.23 with Masks v1.8.x
 - If you use Foundry v12: 
