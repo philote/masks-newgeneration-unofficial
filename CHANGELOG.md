@@ -1,3 +1,7 @@
+#Unreleased
+- Fixed the "Would you like to use a Masks theme for your login screen?" question re-appearing on every world load (issue #9) — it is now asked once per world, and answering it (either way) settles it for good
+- Removed an unreachable code path that read a `enableLoginImg` setting the module stopped registering several versions ago
+
 #2.1.1
 - The project's home is now https://github.com/philote/masks-newgeneration-unofficial again — the 2.x work has been merged back into the original repository, and releases are cut from there from this version on
 - Bug reports, the README links, and the GitHub button in the Settings sidebar all point to that repository now

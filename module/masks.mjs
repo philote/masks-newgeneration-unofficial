@@ -12,6 +12,7 @@ import { initAttributeRoll } from './helpers/attribute-roll.mjs';
 import { initRollOptions } from './helpers/roll-options.mjs';
 import { initLabelSwap } from './helpers/label-swap.mjs';
 import { initTheme } from './helpers/theme.mjs';
+import { initLoginBackground, promptLoginBackgroundOnce } from './helpers/login-background.mjs';
 import { migrateTakeAPowerfulBlow, migrateRejectingInfluence, migrateBurn, migrateNoPowersBasicMoveChoices, migrateKirbyCraftBasicMoveChoices, migrateWheneverTimePasses, migrateAHigherCalling, migrateFriendsInLowPlaces, migrateLegacy, migrateConnectingTheDots, migrateAllTheBestStuff, migrateAHigherCallingLabelSwap, migrateDuplicateChoiceLists } from './helpers/migrations.mjs';
 
 Hooks.once("init", () => {
@@ -25,15 +26,7 @@ Hooks.once("init", () => {
     });
 
     initTheme();
-
-    // Register settings
-    game.settings.register('masks-newgeneration-unofficial', 'firstTime', {
-        name: 'First Time Startup',
-        scope: 'world',
-        config: false,
-        type: Boolean,
-        default: true,
-    });
+    initLoginBackground();
 
     // Preload Handlebars stuff.
     utils.preloadHandlebarsTemplates();
@@ -74,66 +67,7 @@ Hooks.once('ready', async function () {
     await migrateAllTheBestStuff();
     await migrateAHigherCallingLabelSwap();
     await migrateDuplicateChoiceLists();
-    if (game.settings.get('masks-newgeneration-unofficial', 'firstTime')) {
-        game.settings.set('masks-newgeneration-unofficial', 'firstTime', false);
-
-        const callback = async () => {
-            game.settings.set('masks-newgeneration-unofficial', 'firstTime', true);
-            const worldData = {
-                id: game.world.id,
-                action: 'editWorld',
-                background: `modules/masks-newgeneration-unofficial/images/login-bg-lt.webp`,
-            };
-            let response;
-            try {
-                response = await foundry.utils.fetchJsonWithTimeout(foundry.utils.getRoute('setup'), {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(worldData),
-                });
-                if (response && response.error) {
-                    ui.notifications.error(response.error);
-                } else if (response) {
-                    game.world.updateSource(response);
-                }
-            } catch (e) {
-                return ui.notifications.error(e);
-            }
-        };
-
-        foundry.applications.api.DialogV2.confirm({
-            window: { title: 'Welcome to Masks: A New Generation!' },
-            content: '<p>Would you like to use a Masks theme for your login screen?</p>',
-            rejectClose: false,
-            modal: true,
-            yes: { callback: callback },
-        });
-    } else {
-        if (game.settings.settings.has('masks-newgeneration-unofficial.enableLoginImg')) {
-            if (game.settings.get('masks-newgeneration-unofficial', 'enableLoginImg')) {
-                const worldData = {
-                    id: game.world.id,
-                    action: 'editWorld',
-                    background: `modules/masks-newgeneration-unofficial/images/login-bg-lt.webp`,
-                };
-                let response;
-                try {
-                    response = await foundry.utils.fetchJsonWithTimeout(foundry.utils.getRoute('setup'), {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(worldData),
-                    });
-                    if (response && response.error) {
-                        ui.notifications.error(response.error);
-                    } else if (response) {
-                        game.world.updateSource(response);
-                    }
-                } catch (e) {
-                  return ui.notifications.error(e);
-                }
-            }
-        }
-    }
+    await promptLoginBackgroundOnce();
 });
 
 Hooks.once('pbtaSheetConfig', () => {
