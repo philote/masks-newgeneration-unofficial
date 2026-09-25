@@ -52,6 +52,9 @@ coverage/
 foundry-config.yaml
 foundry
 
+# Headless Foundry dev-server PID file (tools/run_foundry_headless.py)
+tools/.foundry-headless.pid
+
 # Environment variables
 .env
 
