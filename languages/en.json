@@ -80,6 +80,10 @@
                     "overcast": "Overcast",
                     "ink": "Ink"
                 }
+            },
+            "team_pool_token_image": {
+                "name": "Team Pool Token Image",
+                "hint": "Image used when a Team Pool actor is placed on a scene. Leave blank for the module's default team icon. Tokens already on a scene aren't changed."
             }
         },
         "Description": {

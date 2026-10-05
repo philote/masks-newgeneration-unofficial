@@ -1265,10 +1265,16 @@
     text-shadow: 0 2px 3px rgb(0 0 0 / 55%);
   }
 
+  // Both dimensions are pinned (not just aspect-ratio) because Foundry's core
+  // button rules set a height that otherwise wins, squashing these into ovals.
   &__control {
     box-sizing: border-box;
     flex: 0 0 auto;
     width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
     aspect-ratio: 1;
     padding: 0;
     margin: 0;
@@ -1317,6 +1323,10 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     width: 22px;
+    height: 22px;
+    min-width: 22px;
+    min-height: 22px;
+    max-height: 22px;
     aspect-ratio: 1;
     padding: 0;
     margin: 0;

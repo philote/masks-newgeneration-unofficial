@@ -80,6 +80,10 @@
                     "overcast": "Ciel couvert",
                     "ink": "Encre"
                 }
+            },
+            "team_pool_token_image": {
+                "name": "Image du jeton de la réserve d'Équipe",
+                "hint": "Image utilisée lorsqu'un acteur de réserve d'Équipe est placé sur une scène. Laissez vide pour utiliser l'icône d'équipe par défaut du module. Les jetons déjà présents sur une scène ne sont pas modifiés."
             }
         },
         "Description": {

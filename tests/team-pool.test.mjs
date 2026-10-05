@@ -2,8 +2,10 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import {
 	adjustTeamPool,
 	baseTeamPoolName,
+	DEFAULT_TEAM_POOL_TOKEN_IMAGE,
 	formatTeamPoolName,
 	postTeamPoolToChat,
+	resolveTeamPoolTokenImage,
 	TEAM_ACTOR_TYPE,
 } from "../module/helpers/team-pool-utils.mjs";
 import { initTeamPool } from "../module/helpers/team-pool.mjs";
@@ -77,6 +79,22 @@ describe("team-pool-utils", () => {
 		});
 	});
 
+	describe("resolveTeamPoolTokenImage", () => {
+		it("returns a configured image path", () => {
+			expect(resolveTeamPoolTokenImage("worlds/test/team.webp")).toBe("worlds/test/team.webp");
+		});
+
+		it("falls back to the bundled team icon when blank", () => {
+			expect(resolveTeamPoolTokenImage("")).toBe(DEFAULT_TEAM_POOL_TOKEN_IMAGE);
+			expect(resolveTeamPoolTokenImage("   ")).toBe(DEFAULT_TEAM_POOL_TOKEN_IMAGE);
+			expect(resolveTeamPoolTokenImage(undefined)).toBe(DEFAULT_TEAM_POOL_TOKEN_IMAGE);
+		});
+
+		it("keeps the bundled default URL-safe (no literal '#')", () => {
+			expect(DEFAULT_TEAM_POOL_TOKEN_IMAGE).not.toContain("#");
+		});
+	});
+
 	describe("postTeamPoolToChat", () => {
 		beforeEach(() => {
 			vi.stubGlobal("game", {
@@ -119,8 +137,13 @@ describe("initTeamPool", () => {
 			DOCUMENT_OWNERSHIP_LEVELS: { OWNER: 3 },
 			TOKEN_DISPLAY_MODES: { ALWAYS: 50 },
 			TOKEN_DISPOSITIONS: { NEUTRAL: 0 },
+			DEFAULT_TOKEN: "icons/svg/mystery-man.svg",
 		});
-		vi.stubGlobal("game", { i18n: { localize: vi.fn((key) => key) }, pbta: { sheetConfig: { actorTypes: { character: {} } } } });
+		vi.stubGlobal("game", {
+			i18n: { localize: vi.fn((key) => key) },
+			pbta: { sheetConfig: { actorTypes: { character: {} } } },
+			settings: { register: vi.fn(), get: vi.fn(() => "worlds/test/team.webp") },
+		});
 		vi.stubGlobal("foundry", {
 			documents: { collections: { Actors: { registerSheet: vi.fn() } } },
 			utils: { getProperty: (obj, path) => path.split(".").reduce((o, k) => o?.[k], obj) },
@@ -138,6 +161,20 @@ describe("initTeamPool", () => {
 			"masks-newgeneration-unofficial",
 			expect.any(Function),
 			expect.objectContaining({ types: [TEAM_ACTOR_TYPE], makeDefault: true })
+		);
+	});
+
+	it("registers a world-scoped token image setting with an image file picker and the bundled default", () => {
+		expect(game.settings.register).toHaveBeenCalledWith(
+			"masks-newgeneration-unofficial",
+			"team_pool_token_image",
+			expect.objectContaining({
+				scope: "world",
+				config: true,
+				type: String,
+				filePicker: "image",
+				default: DEFAULT_TEAM_POOL_TOKEN_IMAGE,
+			})
 		);
 	});
 
@@ -191,6 +228,61 @@ describe("initTeamPool", () => {
 			hooks.preCreateActor(document);
 
 			expect(document.updateSource).not.toHaveBeenCalled();
+		});
+	});
+
+	describe("preCreateToken", () => {
+		function buildToken({ actorType = TEAM_ACTOR_TYPE, src = "icons/svg/mystery-man.svg" } = {}) {
+			return {
+				actor: actorType ? { type: actorType } : null,
+				texture: { src },
+				updateSource: vi.fn(),
+			};
+		}
+
+		it("replaces Foundry's default token image with the configured one", () => {
+			const token = buildToken();
+
+			hooks.preCreateToken(token);
+
+			expect(game.settings.get).toHaveBeenCalledWith("masks-newgeneration-unofficial", "team_pool_token_image");
+			expect(token.updateSource).toHaveBeenCalledWith({ "texture.src": "worlds/test/team.webp" });
+		});
+
+		it("uses the bundled team icon when the setting is blank", () => {
+			game.settings.get.mockReturnValue("");
+			const token = buildToken();
+
+			hooks.preCreateToken(token);
+
+			expect(token.updateSource).toHaveBeenCalledWith({ "texture.src": DEFAULT_TEAM_POOL_TOKEN_IMAGE });
+		});
+
+		it("also fills in a token with no image at all", () => {
+			const token = buildToken({ src: null });
+
+			hooks.preCreateToken(token);
+
+			expect(token.updateSource).toHaveBeenCalledWith({ "texture.src": "worlds/test/team.webp" });
+		});
+
+		it("leaves a hand-picked prototype token image alone", () => {
+			const token = buildToken({ src: "worlds/test/custom.webp" });
+
+			hooks.preCreateToken(token);
+
+			expect(token.updateSource).not.toHaveBeenCalled();
+		});
+
+		it("ignores tokens for other actor types or with no actor", () => {
+			const other = buildToken({ actorType: "character" });
+			const orphan = buildToken({ actorType: null });
+
+			hooks.preCreateToken(other);
+			hooks.preCreateToken(orphan);
+
+			expect(other.updateSource).not.toHaveBeenCalled();
+			expect(orphan.updateSource).not.toHaveBeenCalled();
 		});
 	});
 

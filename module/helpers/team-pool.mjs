@@ -1,9 +1,30 @@
 import { createTeamPoolDataModel } from "../data/team-pool-data.mjs";
 import { createTeamPoolActorSheet } from "../sheets/team-pool-sheet.mjs";
-import { TEAM_ACTOR_TYPE, formatTeamPoolName, adjustTeamPool } from "./team-pool-utils.mjs";
+import {
+    TEAM_ACTOR_TYPE,
+    TEAM_POOL_TOKEN_IMAGE_SETTING,
+    DEFAULT_TEAM_POOL_TOKEN_IMAGE,
+    formatTeamPoolName,
+    adjustTeamPool,
+    resolveTeamPoolTokenImage,
+} from "./team-pool-utils.mjs";
+
+const MODULE_ID = "masks-newgeneration-unofficial";
 
 export function initTeamPool() {
     CONFIG.Actor.dataModels[TEAM_ACTOR_TYPE] = createTeamPoolDataModel();
+
+    // A world normally has exactly one Team Pool, so its token image lives in a
+    // world setting rather than on the (deliberately image-free) sheet.
+    game.settings.register(MODULE_ID, TEAM_POOL_TOKEN_IMAGE_SETTING, {
+        name: "MASKS-SHEETS.Settings.team_pool_token_image.name",
+        hint: "MASKS-SHEETS.Settings.team_pool_token_image.hint",
+        scope: "world",
+        config: true,
+        type: String,
+        filePicker: "image",
+        default: DEFAULT_TEAM_POOL_TOKEN_IMAGE,
+    });
 
     const TeamPoolActorSheet = createTeamPoolActorSheet();
     const Actors = foundry.documents.collections.Actors;
@@ -46,6 +67,20 @@ export function initTeamPool() {
                 displayName: CONST.TOKEN_DISPLAY_MODES.ALWAYS,
                 disposition: CONST.TOKEN_DISPOSITIONS.NEUTRAL,
             },
+        });
+    });
+
+    // Applied at drop time only: tokens already on a scene keep whatever image
+    // they had. A prototype token image the GM set by hand (anything other than
+    // Foundry's mystery-man default) wins over the setting.
+    Hooks.on("preCreateToken", (document) => {
+        if (document.actor?.type !== TEAM_ACTOR_TYPE) { return; }
+
+        const current = document.texture?.src;
+        if (current && current !== CONST.DEFAULT_TOKEN) { return; }
+
+        document.updateSource({
+            "texture.src": resolveTeamPoolTokenImage(game.settings.get(MODULE_ID, TEAM_POOL_TOKEN_IMAGE_SETTING)),
         });
     });
 
