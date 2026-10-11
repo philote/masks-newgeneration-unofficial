@@ -16,8 +16,10 @@
   --masks-interactive-bg-hover-color: #173f6e;
   --masks-option-bg-color: #683b47;
 
-  --masks-tabs-border-color: #ffeb98;
-  --masks-tab-bg-active-color: #ffeb98;
+  // The "selected/checked" accent; every palette in light-mode.scss and
+  // dark-mode.scss sets its own pair, so this yellow only shows on classic.
+  --masks-accent-color: #ffeb98;
+  --masks-accent-text-color: #000000;
 
   --masks-input-bg-color: rgb(255 255 255 / 75%);
   --masks-input-border-color: rgb(0 0 0 / 75%);
@@ -60,7 +62,7 @@
     background: var(--masks-input-bg-color);
     color: var(--masks-input-text-color);
     border: 0.5px solid var(--masks-input-border-color);
-    accent-color: var(--masks-tab-bg-active-color);
+    accent-color: var(--masks-accent-color);
     font-weight: bold;
   }
 
@@ -128,7 +130,7 @@
   }
 
   input[type="radio"] {
-    accent-color: var(--masks-tab-bg-active-color);
+    accent-color: var(--masks-accent-color);
   }
 }
 
@@ -573,7 +575,7 @@
   }
 
   .tabs {
-    border-bottom: 2px solid var(--masks-tabs-border-color);
+    border-bottom: 2px solid var(--masks-accent-color);
   }
 
   .sheet-tabs.tabs > a.item {
@@ -585,8 +587,8 @@
 
     &.active,
     &.active:hover {
-      background-color: var(--masks-tab-bg-active-color);
-      color: var(--masks-secondary-text-color);
+      background-color: var(--masks-accent-color);
+      color: var(--masks-accent-text-color);
     }
 
     &:hover,
@@ -598,8 +600,8 @@
   }
 
   .sheet-header__fields .view-playbook {
-    background: var(--masks-tab-bg-active-color);
-    color: var(--masks-secondary-text-color);
+    background: var(--masks-accent-color);
+    color: var(--masks-accent-text-color);
     opacity: 1;
     border: 0.5px solid var(--masks-interactive-bg-hover-color);
 
@@ -897,9 +899,9 @@
   }
 
   .tags .tag {
-    background: var(--masks-tab-bg-active-color);
+    background: var(--masks-accent-color);
     border: 1px solid var(--masks-input-border-color);
-    color: var(--masks-secondary-text-color);
+    color: var(--masks-accent-text-color);
   }
 
   .result-details,
@@ -977,7 +979,7 @@
     margin-top: 6px;
     padding: 6px 10px;
     border-radius: 6px;
-    border: 2px solid var(--masks-tab-bg-active-color);
+    border: 2px solid var(--masks-accent-color);
     background: var(--masks-interactive-bg-color);
     color: var(--masks-primary-text-color);
     font-weight: bold;
@@ -1051,7 +1053,7 @@
 
   .card-buttons button {
     background: var(--masks-interactive-bg-color);
-    border: 1px solid var(--masks-tab-bg-active-color);
+    border: 1px solid var(--masks-accent-color);
     color: var(--masks-primary-text-color);
 
     &:hover {
@@ -1067,7 +1069,7 @@
 }
 
 /** Chat cards under Foundry's own dark mode **/
-// This is Foundry's Color Scheme setting, not this module's `enable_dark_mode`
+// This is Foundry's Color Scheme setting, not this module's `theme` setting
 // (which only repaints sheets). Foundry never uses `prefers-color-scheme` in
 // CSS — even its "Browser Default" choice is resolved through matchMedia in JS
 // and stamped as a real class — so a media query here would override a user who
@@ -1122,10 +1124,11 @@
     --masks-result-success-color: #51cf66;
     --masks-result-partial-color: #ffc14d;
     --masks-result-failure-color: #ff6b7a;
-    // The light theme's yellow accent reads as a hot outline against a dark card.
+    // A pale sheet-theme accent reads as a hot outline against a dark card.
     // Inside the card this only draws the Mark Potential and shift button borders
     // - the tag fill that also uses it is set separately below.
-    --masks-tab-bg-active-color: rgb(255 255 255 / 22%);
+    --masks-accent-color: rgb(255 255 255 / 22%);
+    --masks-accent-text-color: var(--color-light-2);
     // Tinting the card colour itself only muddies it; on a dark surface a nested
     // panel has to read as raised, so the result row mixes into a lighter base.
     --masks-result-base: #2f2b38;
@@ -1143,8 +1146,8 @@
       box-shadow: 0 1px 2px rgb(0 0 0 / 50%);
     }
 
-    // The pale yellow tag fill is only legible behind dark text, and the card's
-    // text is light here.
+    // A sheet theme's pale accent fill is only legible behind dark text, and the
+    // card's text is light here.
     .tags .tag {
       background: rgb(255 255 255 / 12%);
     }
@@ -1188,7 +1191,7 @@
     border-radius: 4px;
     background: var(--masks-interactive-bg-color);
     color: var(--masks-primary-text-color);
-    border: 2px solid var(--masks-tab-bg-active-color);
+    border: 2px solid var(--masks-accent-color);
     cursor: pointer;
     transition: background-color 0.1s ease-out;
 
@@ -1224,7 +1227,7 @@
       top: 50%;
       height: 2px;
       width: 22px;
-      background-color: var(--masks-tab-bg-active-color);
+      background-color: var(--masks-accent-color);
       transform: skewX(-15deg) translateY(-50%);
     }
 
@@ -1249,8 +1252,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle at 35% 30%, #3a76c4 0%, var(--masks-interactive-bg-color) 55%, var(--masks-interactive-bg-hover-color) 100%);
-    border: 4px solid var(--masks-tab-bg-active-color);
+    background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--masks-interactive-bg-color), white 25%) 0%, var(--masks-interactive-bg-color) 55%, var(--masks-interactive-bg-hover-color) 100%);
+    border: 4px solid var(--masks-accent-color);
     box-shadow: 0 3px 8px rgb(0 0 0 / 45%), inset 0 0 12px rgb(0 0 0 / 25%);
 
     &--pulse {
@@ -1284,7 +1287,7 @@
     justify-content: center;
     background: var(--masks-interactive-bg-color);
     color: var(--masks-primary-text-color);
-    border: 2px solid var(--masks-tab-bg-active-color);
+    border: 2px solid var(--masks-accent-color);
     font-size: 16px;
     line-height: 1;
     cursor: pointer;
@@ -1336,7 +1339,7 @@
     justify-content: center;
     background: var(--masks-interactive-bg-color);
     color: var(--masks-primary-text-color);
-    border: 1px solid var(--masks-tab-bg-active-color);
+    border: 1px solid var(--masks-accent-color);
     font-size: 11px;
     line-height: 1;
     cursor: pointer;

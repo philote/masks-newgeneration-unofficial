@@ -17,10 +17,7 @@
   --masks-input-text-color: #000000;
   --masks-input-placeholder-color: #5a5a5a;
   --masks-input-disabled-color: #4a4a4a;
-  --masks-tabs-border-color: #cd8e18;
-  --masks-tab-bg-active-color: #cd8e18;
   --masks-input-bg-color: rgb(229 222 210 / 95%);
-  --masks-input-border-color: #cd8e18;
   --masks-resource-border-color: #bcc8de;
   --masks-resource-control-bg-color: #ffffff;
   --masks-stats-border-color: rgb(229 222 210 / 37%);
@@ -48,6 +45,9 @@
   --masks-header-bg-color: #282250;
   --masks-title-text-color: #b9adde;
   --masks-cell-title-border-color: #b9adde;
+  --masks-accent-color: #a78bfa;
+  --masks-accent-text-color: #000000;
+  --masks-input-border-color: #a78bfa;
 }
 
 :root[data-masks-dark-theme=teal] {
@@ -62,6 +62,9 @@
   --masks-header-bg-color: #133840;
   --masks-title-text-color: #8fd3d8;
   --masks-cell-title-border-color: #8fd3d8;
+  --masks-accent-color: #4fd1c5;
+  --masks-accent-text-color: #000000;
+  --masks-input-border-color: #4fd1c5;
 }
 
 :root[data-masks-dark-theme=navy] {
@@ -76,6 +79,9 @@
   --masks-header-bg-color: #142848;
   --masks-title-text-color: #a4c2e8;
   --masks-cell-title-border-color: #a4c2e8;
+  --masks-accent-color: #63b3ed;
+  --masks-accent-text-color: #000000;
+  --masks-input-border-color: #63b3ed;
 }
 
 :root[data-masks-dark-theme=graphite] {
@@ -90,6 +96,9 @@
   --masks-header-bg-color: #231f28;
   --masks-title-text-color: #ddd0b8;
   --masks-cell-title-border-color: #ddd0b8;
+  --masks-accent-color: #b9aed0;
+  --masks-accent-text-color: #000000;
+  --masks-input-border-color: #b9aed0;
 }
 
 :root[data-masks-dark-theme=auburn] {
@@ -104,4 +113,7 @@
   --masks-header-bg-color: #4b2a33;
   --masks-title-text-color: #c7a3ac;
   --masks-cell-title-border-color: #c7a3ac;
+  --masks-accent-color: #f08ca0;
+  --masks-accent-text-color: #000000;
+  --masks-input-border-color: #f08ca0;
 }

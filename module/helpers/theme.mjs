@@ -1,14 +1,16 @@
 const MODULE_ID = "masks-newgeneration-unofficial";
 
 /**
- * Palette keys must match the $masks-dark-themes map in src/scss/dark-mode.scss.
+ * Palette keys must match the $masks-dark-themes map in src/scss/dark-mode.scss,
+ * and must never collide with a LIGHT_THEMES key — the single theme setting tells
+ * the two modes apart purely by which list a key belongs to.
  */
 export const DARK_THEMES = [
-    { key: "indigo", labelKey: "MASKS-SHEETS.Settings.dark_theme.choices.indigo" },
-    { key: "teal", labelKey: "MASKS-SHEETS.Settings.dark_theme.choices.teal" },
-    { key: "navy", labelKey: "MASKS-SHEETS.Settings.dark_theme.choices.navy" },
-    { key: "graphite", labelKey: "MASKS-SHEETS.Settings.dark_theme.choices.graphite" },
-    { key: "auburn", labelKey: "MASKS-SHEETS.Settings.dark_theme.choices.auburn" }
+    { key: "indigo", labelKey: "MASKS-SHEETS.Settings.theme.choices.indigo" },
+    { key: "teal", labelKey: "MASKS-SHEETS.Settings.theme.choices.teal" },
+    { key: "navy", labelKey: "MASKS-SHEETS.Settings.theme.choices.navy" },
+    { key: "graphite", labelKey: "MASKS-SHEETS.Settings.theme.choices.graphite" },
+    { key: "auburn", labelKey: "MASKS-SHEETS.Settings.theme.choices.auburn" }
 ];
 
 export const DEFAULT_DARK_THEME = "indigo";
@@ -19,15 +21,17 @@ export const DEFAULT_DARK_THEME = "indigo";
  * default in masks-sheets.scss.
  */
 export const LIGHT_THEMES = [
-    { key: "classic", labelKey: "MASKS-SHEETS.Settings.light_theme.choices.classic" },
-    { key: "dusk", labelKey: "MASKS-SHEETS.Settings.light_theme.choices.dusk" },
-    { key: "verdant", labelKey: "MASKS-SHEETS.Settings.light_theme.choices.verdant" },
-    { key: "overcast", labelKey: "MASKS-SHEETS.Settings.light_theme.choices.overcast" },
-    { key: "ink", labelKey: "MASKS-SHEETS.Settings.light_theme.choices.ink" }
+    { key: "classic", labelKey: "MASKS-SHEETS.Settings.theme.choices.classic" },
+    { key: "dusk", labelKey: "MASKS-SHEETS.Settings.theme.choices.dusk" },
+    { key: "verdant", labelKey: "MASKS-SHEETS.Settings.theme.choices.verdant" },
+    { key: "overcast", labelKey: "MASKS-SHEETS.Settings.theme.choices.overcast" },
+    { key: "ink", labelKey: "MASKS-SHEETS.Settings.theme.choices.ink" }
 ];
 
 export const CLASSIC_LIGHT_THEME = "classic";
 export const DEFAULT_LIGHT_THEME = CLASSIC_LIGHT_THEME;
+
+export const THEMES = [...LIGHT_THEMES, ...DARK_THEMES];
 
 function choicesFrom(themes) {
     return Object.fromEntries(themes.map(({ key, labelKey }) => [key, labelKey]));
@@ -43,52 +47,60 @@ function resolveTheme(themes, settingKey, fallback) {
     return themes.some(({ key }) => key === stored) ? stored : fallback;
 }
 
+function legacyTheme() {
+    if (game.settings.get(MODULE_ID, "enable_dark_mode")) {
+        return resolveTheme(DARK_THEMES, "dark_theme", DEFAULT_DARK_THEME);
+    }
+    return resolveTheme(LIGHT_THEMES, "light_theme", DEFAULT_LIGHT_THEME);
+}
+
 export function applyTheme() {
     const root = document.documentElement;
+    const theme = resolveTheme(THEMES, "theme", DEFAULT_LIGHT_THEME);
 
-    if (game.settings.get(MODULE_ID, "enable_dark_mode")) {
+    if (DARK_THEMES.some(({ key }) => key === theme)) {
         delete root.dataset.masksLightTheme;
-        root.dataset.masksDarkTheme = resolveTheme(DARK_THEMES, "dark_theme", DEFAULT_DARK_THEME);
+        root.dataset.masksDarkTheme = theme;
         return;
     }
 
     delete root.dataset.masksDarkTheme;
 
-    const light = resolveTheme(LIGHT_THEMES, "light_theme", DEFAULT_LIGHT_THEME);
-    if (light === CLASSIC_LIGHT_THEME) delete root.dataset.masksLightTheme;
-    else root.dataset.masksLightTheme = light;
+    if (theme === CLASSIC_LIGHT_THEME) delete root.dataset.masksLightTheme;
+    else root.dataset.masksLightTheme = theme;
 }
 
 export function initTheme() {
+    // Legacy settings (checkbox + two dropdowns), hidden and kept only to seed `theme`'s default — drop them only after a real write-once migration.
     game.settings.register(MODULE_ID, "enable_dark_mode", {
-        name: "MASKS-SHEETS.Settings.enable_dark_mode.name",
-        hint: "MASKS-SHEETS.Settings.enable_dark_mode.hint",
         scope: "client",
-        config: true,
+        config: false,
         type: Boolean,
-        default: false,
-        onChange: () => applyTheme()
+        default: false
     });
 
     game.settings.register(MODULE_ID, "dark_theme", {
-        name: "MASKS-SHEETS.Settings.dark_theme.name",
-        hint: "MASKS-SHEETS.Settings.dark_theme.hint",
         scope: "client",
-        config: true,
+        config: false,
         type: String,
-        choices: choicesFrom(DARK_THEMES),
-        default: DEFAULT_DARK_THEME,
-        onChange: () => applyTheme()
+        default: DEFAULT_DARK_THEME
     });
 
     game.settings.register(MODULE_ID, "light_theme", {
-        name: "MASKS-SHEETS.Settings.light_theme.name",
-        hint: "MASKS-SHEETS.Settings.light_theme.hint",
+        scope: "client",
+        config: false,
+        type: String,
+        default: DEFAULT_LIGHT_THEME
+    });
+
+    game.settings.register(MODULE_ID, "theme", {
+        name: "MASKS-SHEETS.Settings.theme.name",
+        hint: "MASKS-SHEETS.Settings.theme.hint",
         scope: "client",
         config: true,
         type: String,
-        choices: choicesFrom(LIGHT_THEMES),
-        default: DEFAULT_LIGHT_THEME,
+        choices: choicesFrom(THEMES),
+        default: legacyTheme(),
         onChange: () => applyTheme()
     });
 

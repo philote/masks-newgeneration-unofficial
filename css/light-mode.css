@@ -8,9 +8,10 @@
  * masks-sheets.scss, so selecting it removes the attribute instead of restating
  * those values somewhere they could drift out of sync.
  *
- * Only the sheet chrome and the sky gradient change. The skyline background, gold
- * accent, input styling, and result colors all stay inherited from that same :root
- * block - light mode has no starfield, so --masks-window-bg-image is untouched.
+ * Only the sheet chrome, the selected/checked accent, and the sky gradient change.
+ * The skyline background, input styling, and result colors all stay inherited from
+ * that same :root block - light mode has no starfield, so --masks-window-bg-image
+ * is untouched.
  *
  * Palette keys must stay in sync with LIGHT_THEMES in theme.mjs; a test in
  * tests/theme.test.mjs fails if they drift or if css/light-mode.css wasn't rebuilt.
@@ -27,6 +28,8 @@
   --masks-header-bg-color: #332a5c;
   --masks-title-text-color: #3a2d63;
   --masks-cell-title-border-color: #3a2d63;
+  --masks-accent-color: #f4b08a;
+  --masks-accent-text-color: #000000;
 }
 
 :root[data-masks-light-theme=verdant] {
@@ -41,6 +44,8 @@
   --masks-header-bg-color: #134034;
   --masks-title-text-color: #134034;
   --masks-cell-title-border-color: #134034;
+  --masks-accent-color: #8fdcaa;
+  --masks-accent-text-color: #000000;
 }
 
 :root[data-masks-light-theme=overcast] {
@@ -55,6 +60,8 @@
   --masks-header-bg-color: #2a313a;
   --masks-title-text-color: #2a313a;
   --masks-cell-title-border-color: #2a313a;
+  --masks-accent-color: #9cc8ec;
+  --masks-accent-text-color: #000000;
 }
 
 :root[data-masks-light-theme=ink] {
@@ -69,4 +76,6 @@
   --masks-header-bg-color: #14171d;
   --masks-title-text-color: #14171d;
   --masks-cell-title-border-color: #14171d;
+  --masks-accent-color: #3d6cb9;
+  --masks-accent-text-color: #ffffff;
 }

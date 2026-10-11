@@ -54,30 +54,20 @@
 					"title": "Repositorio del módulo"
 				}
 			},
-            "enable_dark_mode": {
-                "name": "Activar modo oscuro",
-                "hint": "Cambia las hojas de personaje, npc e item al modo oscuro."
-            },
-            "dark_theme": {
-                "name": "Tema del modo oscuro",
-                "hint": "Qué paleta de colores usar cuando el modo oscuro está activado.",
-                "choices": {
-                    "indigo": "Índigo de medianoche",
-                    "teal": "Verde azulado noir",
-                    "navy": "Azul marino profundo",
-                    "graphite": "Grafito",
-                    "auburn": "Caoba (clásico)"
-                }
-            },
-            "light_theme": {
-                "name": "Tema del modo claro",
-                "hint": "Qué paleta de colores usar cuando el modo oscuro está desactivado.",
+            "theme": {
+                "name": "Tema de las hojas",
+                "hint": "Paleta de colores de las hojas de personaje, npc e item. Los temas marcados con (oscuro) usan un fondo oscuro.",
                 "choices": {
                     "classic": "Luz de día (clásico)",
                     "dusk": "Crepúsculo",
                     "verdant": "Verdor",
                     "overcast": "Nublado",
-                    "ink": "Tinta"
+                    "ink": "Tinta",
+                    "indigo": "Índigo de medianoche (oscuro)",
+                    "teal": "Verde azulado noir (oscuro)",
+                    "navy": "Azul marino profundo (oscuro)",
+                    "graphite": "Grafito (oscuro)",
+                    "auburn": "Caoba (clásico oscuro)"
                 }
             },
             "team_pool_token_image": {

@@ -55,30 +55,20 @@
 					"title": "Module Repository"
 				}
 			},
-            "enable_dark_mode": {
-                "name": "Enable Dark Mode",
-                "hint": "Changes the Character, NPC, and Item sheets to a dark theme."
-            },
-            "dark_theme": {
-                "name": "Dark Mode Theme",
-                "hint": "Which color palette to use when dark mode is enabled.",
-                "choices": {
-                    "indigo": "Midnight Indigo",
-                    "teal": "Noir Teal",
-                    "navy": "Deep Navy",
-                    "graphite": "Graphite",
-                    "auburn": "Auburn (classic)"
-                }
-            },
-            "light_theme": {
-                "name": "Light Mode Theme",
-                "hint": "Which color palette to use when dark mode is disabled.",
+            "theme": {
+                "name": "Sheet Theme",
+                "hint": "Color palette for the Character, NPC, and Item sheets. Themes marked (dark) use a dark background.",
                 "choices": {
                     "classic": "Daylight (classic)",
                     "dusk": "Dusk",
                     "verdant": "Verdant",
                     "overcast": "Overcast",
-                    "ink": "Ink"
+                    "ink": "Ink",
+                    "indigo": "Midnight Indigo (dark)",
+                    "teal": "Noir Teal (dark)",
+                    "navy": "Deep Navy (dark)",
+                    "graphite": "Graphite (dark)",
+                    "auburn": "Auburn (classic dark)"
                 }
             },
             "team_pool_token_image": {

@@ -10,9 +10,10 @@
  * masks-sheets.scss, so selecting it removes the attribute instead of restating
  * those values somewhere they could drift out of sync.
  *
- * Only the sheet chrome and the sky gradient change. The skyline background, gold
- * accent, input styling, and result colors all stay inherited from that same :root
- * block - light mode has no starfield, so --masks-window-bg-image is untouched.
+ * Only the sheet chrome, the selected/checked accent, and the sky gradient change.
+ * The skyline background, input styling, and result colors all stay inherited from
+ * that same :root block - light mode has no starfield, so --masks-window-bg-image
+ * is untouched.
  *
  * Palette keys must stay in sync with LIGHT_THEMES in theme.mjs; a test in
  * tests/theme.test.mjs fails if they drift or if css/light-mode.css wasn't rebuilt.
@@ -30,6 +31,8 @@ $masks-light-themes: (
     sky: #b49ad6,
     haze: #f2a883,
     horizon: #ffdcae,
+    accent: #f4b08a,
+    accent-text: #000000,
   ),
   "verdant": (
     bg: #1d5b4a,
@@ -38,6 +41,8 @@ $masks-light-themes: (
     sky: #6fc9d8,
     haze: #bcd9b4,
     horizon: #f2efc0,
+    accent: #8fdcaa,
+    accent-text: #000000,
   ),
   "overcast": (
     bg: #3d4652,
@@ -46,7 +51,11 @@ $masks-light-themes: (
     sky: #93a7bb,
     haze: #c6d1db,
     horizon: #e4e0d4,
+    accent: #9cc8ec,
+    accent-text: #000000,
   ),
+  // A pale accent would vanish against this near-white window, so ink's stands
+  // apart from its near-black tabs by hue (blue ink) rather than by lightness.
   "ink": (
     bg: #242832,
     hover: #14171d,
@@ -54,6 +63,8 @@ $masks-light-themes: (
     sky: #cfd6dd,
     haze: #ebe7dd,
     horizon: #f8f3e4,
+    accent: #3d6cb9,
+    accent-text: #ffffff,
   ),
 );
 
@@ -72,5 +83,8 @@ $masks-light-themes: (
 
     --masks-title-text-color: #{map.get($palette, title)};
     --masks-cell-title-border-color: #{map.get($palette, title)};
+
+    --masks-accent-color: #{map.get($palette, accent)};
+    --masks-accent-text-color: #{map.get($palette, accent-text)};
   }
 }

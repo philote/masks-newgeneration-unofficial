@@ -1,6 +1,8 @@
 #Unreleased
 - Team Pool tokens dropped onto a scene now use a team icon instead of Foundry's default hooded figure. A GM can pick a different image with the new "Team Pool Token Image" world setting. It applies to newly placed tokens; tokens already on a scene, and any image hand-set in the actor's Prototype Token settings, are left alone
 - The Team Pool sheet's +/- buttons (and the token HUD's) are now true circles instead of ovals
+- The "Enable Dark Mode" checkbox and the separate light/dark palette dropdowns are merged into a single "Sheet Theme" dropdown listing every palette, with dark ones marked "(dark)". Each player's current look carries over automatically
+- Every sheet theme now has its own highlight color for checked boxes (conditions, LOCKED, potential), the active tab, the playbook eye button, chat-card tags, and the Team Pool. Before, every theme except Daylight still used Masks's yellow/amber. In the dark themes, the active tab's text is now legible against its highlight, and input outlines match the theme too
 
 #2.1.2
 - Fixed the "Would you like to use a Masks theme for your login screen?" question re-appearing on every world load (issue #9) — it is now asked once per world, and answering it (either way) settles it for good

@@ -5,11 +5,13 @@ import {
 	CLASSIC_LIGHT_THEME,
 	DARK_THEMES,
 	DEFAULT_DARK_THEME,
-	DEFAULT_LIGHT_THEME,
 	LIGHT_THEMES,
+	THEMES,
 	applyTheme,
 	initTheme,
 } from "../module/helpers/theme.mjs";
+
+const LEGACY_KEYS = ["enable_dark_mode", "dark_theme", "light_theme"];
 
 describe("theme", () => {
 	afterEach(() => {
@@ -18,18 +20,15 @@ describe("theme", () => {
 		delete document.documentElement.dataset.masksLightTheme;
 	});
 
-	function stubGame({
-		enabled = false,
-		dark = DEFAULT_DARK_THEME,
-		light = DEFAULT_LIGHT_THEME,
-	} = {}) {
+	// Mimics Foundry: an unstored setting reads back as its registered default.
+	function stubGame(stored = {}) {
+		const registered = {};
 		vi.stubGlobal("game", {
 			settings: {
-				register: vi.fn(),
-				get: vi.fn((_module, key) => {
-					if (key === "enable_dark_mode") return enabled;
-					return key === "dark_theme" ? dark : light;
+				register: vi.fn((_module, key, config) => {
+					registered[key] = config;
 				}),
+				get: vi.fn((_module, key) => (key in stored ? stored[key] : registered[key]?.default)),
 			},
 		});
 	}
@@ -41,49 +40,40 @@ describe("theme", () => {
 	const { dataset } = document.documentElement;
 
 	describe("initTheme", () => {
-		it("registers every setting as client-scoped so each player controls their own theme", () => {
+		it("registers one client-scoped theme dropdown that repaints without a reload", () => {
 			stubGame();
 
 			initTheme();
 
-			for (const key of ["enable_dark_mode", "dark_theme", "light_theme"]) {
-				expect(registeredSetting(key)).toMatchObject({ scope: "client" });
+			const setting = registeredSetting("theme");
+			expect(setting).toMatchObject({ scope: "client", config: true });
+			expect(setting.onChange).toBeTypeOf("function");
+			expect(setting.requiresReload).toBeUndefined();
+		});
+
+		it("keeps the legacy settings registered but hidden from the settings menu", () => {
+			stubGame();
+
+			initTheme();
+
+			for (const key of LEGACY_KEYS) {
+				expect(registeredSetting(key)).toMatchObject({ scope: "client", config: false });
 			}
 		});
 
-		it("offers every palette in each dropdown and defaults to a real one", () => {
+		it("offers every light palette, then every dark palette", () => {
 			stubGame();
 
 			initTheme();
 
-			const cases = [
-				["dark_theme", DARK_THEMES, DEFAULT_DARK_THEME],
-				["light_theme", LIGHT_THEMES, DEFAULT_LIGHT_THEME],
-			];
-
-			for (const [key, themes, fallback] of cases) {
-				const setting = registeredSetting(key);
-				expect(Object.keys(setting.choices)).toEqual(themes.map((theme) => theme.key));
-				expect(setting.default).toBe(fallback);
-				expect(setting.choices).toHaveProperty(fallback);
-			}
-		});
-
-		// Settings repaint via onChange rather than requiresReload, which is what lets a
-		// player flip palettes without reloading the world.
-		it("repaints on change instead of demanding a reload", () => {
-			stubGame();
-
-			initTheme();
-
-			for (const key of ["enable_dark_mode", "dark_theme", "light_theme"]) {
-				expect(registeredSetting(key).onChange).toBeTypeOf("function");
-				expect(registeredSetting(key).requiresReload).toBeUndefined();
-			}
+			expect(Object.keys(registeredSetting("theme").choices)).toEqual([
+				...LIGHT_THEMES.map((theme) => theme.key),
+				...DARK_THEMES.map((theme) => theme.key),
+			]);
 		});
 
 		it("applies the stored theme immediately on init", () => {
-			stubGame({ enabled: true, dark: "teal" });
+			stubGame({ theme: "teal" });
 
 			initTheme();
 
@@ -91,9 +81,50 @@ describe("theme", () => {
 		});
 	});
 
+	// Players who picked a palette under the old checkbox + two dropdowns must keep it.
+	describe("migration from the legacy settings", () => {
+		function defaultFor(stored) {
+			stubGame(stored);
+			initTheme();
+			return registeredSetting("theme").default;
+		}
+
+		it("carries over a dark palette when legacy dark mode was on", () => {
+			expect(defaultFor({ enable_dark_mode: true, dark_theme: "teal", light_theme: "ink" })).toBe("teal");
+			expect(dataset.masksDarkTheme).toBe("teal");
+		});
+
+		it("carries over a light palette when legacy dark mode was off", () => {
+			expect(defaultFor({ enable_dark_mode: false, dark_theme: "teal", light_theme: "verdant" })).toBe("verdant");
+			expect(dataset.masksLightTheme).toBe("verdant");
+		});
+
+		it("defaults a player who never touched any setting to classic", () => {
+			expect(defaultFor({})).toBe(CLASSIC_LIGHT_THEME);
+		});
+
+		it("uses the old dark default when legacy dark mode was on with no palette picked", () => {
+			expect(defaultFor({ enable_dark_mode: true })).toBe(DEFAULT_DARK_THEME);
+		});
+
+		it("falls back within the legacy mode when the legacy palette no longer exists", () => {
+			expect(defaultFor({ enable_dark_mode: true, dark_theme: "chartreuse" })).toBe(DEFAULT_DARK_THEME);
+			expect(defaultFor({ enable_dark_mode: false, light_theme: "chartreuse" })).toBe(CLASSIC_LIGHT_THEME);
+		});
+
+		it("lets an explicit pick from the new dropdown win over the legacy settings", () => {
+			stubGame({ enable_dark_mode: true, dark_theme: "teal", theme: "dusk" });
+
+			initTheme();
+
+			expect(dataset.masksLightTheme).toBe("dusk");
+			expect(dataset.masksDarkTheme).toBeUndefined();
+		});
+	});
+
 	describe("applyTheme", () => {
-		it("marks the document with the chosen dark palette when dark mode is on", () => {
-			stubGame({ enabled: true, dark: "graphite" });
+		it("marks the document with a dark palette when one is chosen", () => {
+			stubGame({ theme: "graphite" });
 
 			applyTheme();
 
@@ -101,8 +132,8 @@ describe("theme", () => {
 			expect(dataset.masksLightTheme).toBeUndefined();
 		});
 
-		it("marks the document with the chosen light palette when dark mode is off", () => {
-			stubGame({ enabled: false, light: "verdant" });
+		it("marks the document with a light palette when one is chosen", () => {
+			stubGame({ theme: "verdant" });
 
 			applyTheme();
 
@@ -112,8 +143,8 @@ describe("theme", () => {
 
 		// Classic light is the bare :root block in masks-sheets.scss rather than a palette
 		// block of its own, so it must leave the attribute off entirely.
-		it("sets no light attribute for the classic palette", () => {
-			stubGame({ enabled: false, light: CLASSIC_LIGHT_THEME });
+		it("sets no attribute for the classic palette", () => {
+			stubGame({ theme: CLASSIC_LIGHT_THEME });
 
 			applyTheme();
 
@@ -121,26 +152,49 @@ describe("theme", () => {
 			expect(dataset.masksDarkTheme).toBeUndefined();
 		});
 
-		it("clears the other mode's attribute when toggling", () => {
+		it("clears the other mode's attribute when switching", () => {
 			dataset.masksLightTheme = "ink";
-			stubGame({ enabled: true, dark: "navy" });
-
+			stubGame({ theme: "navy" });
 			applyTheme();
-
 			expect(dataset.masksDarkTheme).toBe("navy");
 			expect(dataset.masksLightTheme).toBeUndefined();
+
+			stubGame({ theme: "dusk" });
+			applyTheme();
+			expect(dataset.masksLightTheme).toBe("dusk");
+			expect(dataset.masksDarkTheme).toBeUndefined();
 		});
 
 		// A palette renamed or retired in a later version must degrade to the default
-		// rather than leaving the sheet with no palette applied at all.
-		it("falls back to the default when a stored palette no longer exists", () => {
-			stubGame({ enabled: true, dark: "chartreuse" });
-			applyTheme();
-			expect(dataset.masksDarkTheme).toBe(DEFAULT_DARK_THEME);
+		// rather than leaving a stale or unknown palette attribute behind.
+		it("falls back to classic when the stored palette no longer exists", () => {
+			stubGame({ theme: "chartreuse" });
 
-			stubGame({ enabled: false, light: "chartreuse" });
 			applyTheme();
+
 			expect(dataset.masksLightTheme).toBeUndefined();
+			expect(dataset.masksDarkTheme).toBeUndefined();
+		});
+	});
+
+	describe("translations", () => {
+		function readChoices(lang) {
+			const json = JSON.parse(readFileSync(resolve(process.cwd(), "languages", `${lang}.json`), "utf8"));
+			return json["MASKS-SHEETS"].Settings.theme.choices;
+		}
+
+		it("labels every palette in every language", () => {
+			for (const lang of ["en", "es", "fr"]) {
+				const choices = readChoices(lang);
+				for (const { key } of THEMES) expect(choices[key], `${lang}: ${key}`).toBeTruthy();
+			}
+		});
+
+		it("marks exactly the dark palettes as dark in English", () => {
+			const choices = readChoices("en");
+
+			for (const { key } of DARK_THEMES) expect(choices[key]).toMatch(/dark\)$/);
+			for (const { key } of LIGHT_THEMES) expect(choices[key]).not.toMatch(/dark/i);
 		});
 	});
 
@@ -171,6 +225,47 @@ describe("theme", () => {
 				if (key === CLASSIC_LIGHT_THEME) expect(css).not.toMatch(pattern);
 				else expect(css).toMatch(pattern);
 			}
+		});
+
+		function paletteBlock(css, mode, key) {
+			return css.match(new RegExp(`:root\\[data-masks-${mode}-theme=["']?${key}["']?\\]\\s*\\{([^}]*)\\}`))?.[1];
+		}
+
+		// Without its own pair, a palette silently falls back to classic's yellow accent.
+		it("gives every non-classic palette its own accent and accent text color", () => {
+			const palettes = [
+				...DARK_THEMES.map(({ key }) => ["dark", key]),
+				...LIGHT_THEMES.filter(({ key }) => key !== CLASSIC_LIGHT_THEME).map(({ key }) => ["light", key]),
+			];
+
+			for (const [mode, key] of palettes) {
+				const block = paletteBlock(readCss(`${mode}-mode.css`), mode, key);
+				expect(block, key).toMatch(/--masks-accent-color:/);
+				expect(block, key).toMatch(/--masks-accent-text-color:/);
+			}
+		});
+
+		it("gives each dark palette input outlines in its own accent", () => {
+			const css = readCss("dark-mode.css");
+
+			for (const { key } of DARK_THEMES) {
+				const block = paletteBlock(css, "dark", key);
+				const accent = block.match(/--masks-accent-color:\s*([^;]+);/)[1];
+				expect(block, key).toContain(`--masks-input-border-color: ${accent};`);
+			}
+		});
+
+		it("keeps the old amber only as the partial-hit result color in dark mode", () => {
+			const lines = readCss("dark-mode.css").split("\n").filter((line) => /#cd8e18/i.test(line));
+
+			expect(lines.map((line) => line.trim())).toEqual(["--masks-result-partial-color: #cd8e18;"]);
+		});
+
+		it("draws the classic accent from the renamed variables only", () => {
+			const css = readCss("masks-sheets.css");
+
+			expect(css).not.toMatch(/--masks-tab-bg-active-color|--masks-tabs-border-color/);
+			expect(css).toMatch(/--masks-accent-color:\s*#ffeb98/);
 		});
 	});
 });

@@ -21,30 +21,40 @@ $masks-dark-themes: (
     hover: #282250,
     title: #b9adde,
     gradient-mid: #2a1b4a,
+    accent: #a78bfa,
+    accent-text: #000000,
   ),
   "teal": (
     bg: #1d4e55,
     hover: #133840,
     title: #8fd3d8,
     gradient-mid: #123b45,
+    accent: #4fd1c5,
+    accent-text: #000000,
   ),
   "navy": (
     bg: #1e3a63,
     hover: #142848,
     title: #a4c2e8,
     gradient-mid: #122a52,
+    accent: #63b3ed,
+    accent-text: #000000,
   ),
   "graphite": (
     bg: #312d36,
     hover: #231f28,
     title: #ddd0b8,
     gradient-mid: #241f33,
+    accent: #b9aed0,
+    accent-text: #000000,
   ),
   "auburn": (
     bg: #683b47,
     hover: #4b2a33,
     title: #c7a3ac,
     gradient-mid: #451f29,
+    accent: #f08ca0,
+    accent-text: #000000,
   ),
 );
 
@@ -56,11 +66,7 @@ $masks-dark-themes: (
   --masks-input-placeholder-color: #5a5a5a;
   --masks-input-disabled-color: #4a4a4a;
 
-  --masks-tabs-border-color: #cd8e18;
-  --masks-tab-bg-active-color: #cd8e18;
-
   --masks-input-bg-color: rgb(229 222 210 / 95%);
-  --masks-input-border-color: #cd8e18;
 
   --masks-resource-border-color: #bcc8de;
   --masks-resource-control-bg-color: #ffffff;
@@ -94,5 +100,9 @@ $masks-dark-themes: (
 
     --masks-title-text-color: #{map.get($palette, title)};
     --masks-cell-title-border-color: #{map.get($palette, title)};
+
+    --masks-accent-color: #{map.get($palette, accent)};
+    --masks-accent-text-color: #{map.get($palette, accent-text)};
+    --masks-input-border-color: #{map.get($palette, accent)};
   }
 }

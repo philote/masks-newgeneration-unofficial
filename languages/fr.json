@@ -55,30 +55,20 @@
                     "title": "Dépôt du module"
                 }
             },
-            "enable_dark_mode": {
-                "name": "Activer le mode sombre",
-                "hint": "Passe les livrets de personnages, PNJ et les objets à un thème sombre."
-            },
-            "dark_theme": {
-                "name": "Thème du mode sombre",
-                "hint": "Quelle palette de couleurs utiliser lorsque le mode sombre est activé.",
-                "choices": {
-                    "indigo": "Indigo de minuit",
-                    "teal": "Sarcelle noir",
-                    "navy": "Bleu marine profond",
-                    "graphite": "Graphite",
-                    "auburn": "Auburn (classique)"
-                }
-            },
-            "light_theme": {
-                "name": "Thème du mode clair",
-                "hint": "Quelle palette de couleurs utiliser lorsque le mode sombre est désactivé.",
+            "theme": {
+                "name": "Thème des livrets",
+                "hint": "Palette de couleurs des livrets de personnages, PNJ et des objets. Les thèmes marqués (sombre) utilisent un fond sombre.",
                 "choices": {
                     "classic": "Lumière du jour (classique)",
                     "dusk": "Crépuscule",
                     "verdant": "Verdoyant",
                     "overcast": "Ciel couvert",
-                    "ink": "Encre"
+                    "ink": "Encre",
+                    "indigo": "Indigo de minuit (sombre)",
+                    "teal": "Sarcelle noir (sombre)",
+                    "navy": "Bleu marine profond (sombre)",
+                    "graphite": "Graphite (sombre)",
+                    "auburn": "Auburn (classique sombre)"
                 }
             },
             "team_pool_token_image": {
