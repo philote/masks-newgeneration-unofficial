@@ -1,4 +1,6 @@
 #Unreleased
+
+#2.1.3
 - Team Pool tokens dropped onto a scene now use a team icon instead of Foundry's default hooded figure. A GM can pick a different image with the new "Team Pool Token Image" world setting. It applies to newly placed tokens; tokens already on a scene, and any image hand-set in the actor's Prototype Token settings, are left alone
 - The Team Pool sheet's +/- buttons (and the token HUD's) are now true circles instead of ovals
 - The "Enable Dark Mode" checkbox and the separate light/dark palette dropdowns are merged into a single "Sheet Theme" dropdown listing every palette, with dark ones marked "(dark)". Each player's current look carries over automatically
