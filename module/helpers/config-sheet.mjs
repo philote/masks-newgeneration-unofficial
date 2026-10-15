@@ -170,6 +170,10 @@ export const configSheet = async () => {
                 label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.conditions.options.4"),
                 value: false,
               },
+              5: {
+                label: game.i18n.localize("MASKS-SHEETS.CharacterSheets.conditions.options.5"),
+                value: false,
+              },
             },
           },
           bringsDoomCloser: {

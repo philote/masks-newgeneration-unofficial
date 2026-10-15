@@ -243,6 +243,38 @@ describe("initBasicMoveConditions", () => {
 		expect(checkboxes[0].disabled).toBe(true);
 	});
 
+	it("strips a marked Damaged condition from a basic move's dialog, keeping only the applicable one", () => {
+		const { root, title } = buildDialogHtml({
+			title: formatMock("PBTA.RollLabel", { label: "Directly Engage a Threat" }),
+			conditions: [
+				{ label: CONDITION_LABELS.Afraid, mod: -2 },
+				{ label: "Damaged (+1 to take a powerful blow)", mod: 1 }
+			]
+		});
+		const app = { data: { title }, setPosition: vi.fn() };
+
+		handler(app, [root]);
+
+		const checkboxes = root.querySelectorAll('input[name="condition"]');
+		expect(checkboxes).toHaveLength(1);
+		expect(checkboxes[0].dataset.content).toBe(CONDITION_LABELS.Afraid);
+		expect(root.querySelector(".notes").textContent).toBe(
+			formatMock("MASKS-SHEETS.Dialog.AutoConditions", { total: "-2" })
+		);
+	});
+
+	it("removes the whole conditions cell when Damaged is the only marked condition", () => {
+		const { root, title } = buildDialogHtml({
+			title: formatMock("PBTA.RollLabel", { label: "Directly Engage a Threat" }),
+			conditions: [{ label: "Damaged (+1 to take a powerful blow)", mod: 1 }]
+		});
+		const app = { data: { title }, setPosition: vi.fn() };
+
+		handler(app, [root]);
+
+		expect(root.querySelector(".cell--conditions")).toBeNull();
+	});
+
 	it("no-ops when the dialog has no conditions cell", () => {
 		const { root, title } = buildDialogHtml({
 			title: formatMock("PBTA.RollLabel", { label: "Comfort or Support" })

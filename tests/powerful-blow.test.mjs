@@ -97,6 +97,28 @@ describe("initPowerfulBlow", () => {
 		);
 	});
 
+	it("counts a marked Damaged condition as +1 alongside the others", () => {
+		const { root, title } = buildDialogHtml({
+			title: formatMock("PBTA.RollLabel", { label: "Take a Powerful Blow" }),
+			conditions: [
+				{ label: "Afraid (-2 to engage)", mod: -2 },
+				{ label: "Damaged (+1 to take a powerful blow)", mod: 1 }
+			]
+		});
+		const app = { data: { title } };
+
+		handler(app, [root]);
+
+		const damaged = root.querySelectorAll('input[name="condition"]')[1];
+		expect(damaged.dataset.mod).toBe("1");
+		expect(damaged.dataset.content).toBe("Damaged (+1)");
+		expect(damaged.checked).toBe(true);
+		expect(damaged.disabled).toBe(true);
+		expect(root.querySelector(".notes").textContent).toBe(
+			formatMock("MASKS-SHEETS.Dialog.AutoConditions", { total: "+2" })
+		);
+	});
+
 	it("no-ops when the actor has no marked conditions", () => {
 		const { root, title } = buildDialogHtml({
 			title: formatMock("PBTA.RollLabel", { label: "Take a Powerful Blow" })

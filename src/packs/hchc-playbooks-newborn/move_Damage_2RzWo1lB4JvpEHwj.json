@@ -9,7 +9,10 @@
       "id": "temp_omlrv0qfo3",
       "color": "#000000"
     },
-    "core": {}
+    "core": {},
+    "masks-newgeneration-unofficial": {
+      "grantsCondition": "Damaged"
+    }
   },
   "system": {
     "name": "",

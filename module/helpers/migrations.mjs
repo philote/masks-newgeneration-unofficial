@@ -267,6 +267,58 @@ export async function migrateAHigherCallingLabelSwap() {
     }
 }
 
+const DAMAGED_OPTION_KEY = "5";
+
+/**
+ * Characters only get their conditions options from the sheet config when
+ * they're created, so ones made before the move-granted "Damaged" option
+ * existed need it added (granted-conditions.mjs hides it until a move grants
+ * it). Matched by a missing option key (idempotent).
+ */
+export async function migrateDamagedConditionOption() {
+    for (const actor of game.actors) {
+        if (actor.type !== "character") { continue; }
+
+        const options = actor.system?.attributes?.conditions?.options;
+        if (!options || DAMAGED_OPTION_KEY in options) { continue; }
+
+        await actor.update({
+            [`system.attributes.conditions.options.${DAMAGED_OPTION_KEY}`]: {
+                label: game.i18n.localize(`MASKS-SHEETS.CharacterSheets.conditions.options.${DAMAGED_OPTION_KEY}`),
+                value: false
+            }
+        });
+        console.log(`masks-newgeneration-unofficial | Added the Damaged condition option to actor "${actor.name}".`);
+    }
+}
+
+/**
+ * "Damage" (The Newborn) gained a "grantsCondition" flag that shows the
+ * Damaged condition on the sheet (see granted-conditions.mjs). Matched by name
+ * + a missing flag (idempotent: already-migrated or manually-customized items
+ * are left alone since they already have it).
+ */
+export async function migrateDamageGrantsCondition() {
+    for (const actor of game.actors) {
+        const updates = actor.items
+            .filter(
+                (item) =>
+                    item.type === "move" &&
+                    item.name === "Damage" &&
+                    !item.flags?.["masks-newgeneration-unofficial"]?.grantsCondition
+            )
+            .map((item) => ({
+                _id: item.id,
+                "flags.masks-newgeneration-unofficial.grantsCondition": "Damaged"
+            }));
+
+        if (updates.length) {
+            await actor.updateEmbeddedDocuments("Item", updates);
+            console.log(`masks-newgeneration-unofficial | Migrated "Damage" on actor "${actor.name}".`);
+        }
+    }
+}
+
 const DUPLICATE_CHOICE_LISTS = {
     "Are You Watching Closely?":
         "\n<ul>\n<li>you get an opportunity</li>\n<li>you expose a weakness or flaw</li>\n<li>you confuse them for some time</li>\n<li>you avoid further entanglement</li>\n</ul>",

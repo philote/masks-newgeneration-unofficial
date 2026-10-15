@@ -142,7 +142,8 @@
                     "1": "Furieux (-2 à réconforter, soutenir et percer le masque)",
                     "2": "Coupable (-2 à provoquer et évaluer la situation)",
                     "3": "Désespéré (-2 à déchaîner ses pouvoirs)",
-                    "4": "Démoralisé (-2 à défendre ou rejeter l'influence)"
+                    "4": "Démoralisé (-2 à défendre ou rejeter l'influence)",
+                    "5": "Endommagé (+1 pour encaisser un coup puissant)"
                 }
             },
             "momentUnlocked": {

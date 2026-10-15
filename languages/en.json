@@ -142,7 +142,8 @@
                     "1": "Angry (-2 to comfort or pierce)",
                     "2": "Guilty (-2 to provoke or assess)",
                     "3": "Hopeless (-2 to unleash)",
-                    "4": "Insecure (-2 to defend or reject)"
+                    "4": "Insecure (-2 to defend or reject)",
+                    "5": "Damaged (+1 to take a powerful blow)"
                 }
             },
             "momentUnlocked": {

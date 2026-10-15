@@ -1,4 +1,5 @@
 #Unreleased
+- Characters with the Newborn's **Damage** move (on any playbook) get a sixth "Damaged" checkbox in their Conditions list. Damaged doesn't penalize any roll, but when marked it adds +1 to Take a Powerful Blow (and Burn) like any other marked condition. Characters without the move don't see it, unless it's still marked after the move was removed. Existing characters and existing copies of the move are updated automatically when the GM loads the world
 
 #2.1.3
 - Team Pool tokens dropped onto a scene now use a team icon instead of Foundry's default hooded figure. A GM can pick a different image with the new "Team Pool Token Image" world setting. It applies to newly placed tokens; tokens already on a scene, and any image hand-set in the actor's Prototype Token settings, are left alone

@@ -141,7 +141,8 @@
                     "1": "Furioso (-2 a reconfortar o atravesar)",
                     "2": "Culpable (-2 a provocar o valorar)",
                     "3": "Desesperanzado (-2 a desatar)",
-                    "4": "Inseguro (-2 a defender o rechazar)"
+                    "4": "Inseguro (-2 a defender o rechazar)",
+                    "5": "Dañado (+1 a recibir un golpe poderoso)"
                 }
             },
             "momentUnlocked": {
