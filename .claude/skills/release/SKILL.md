@@ -38,6 +38,9 @@ them.
   `main.yml` zips `css/` exactly as committed and never runs sass, so an uncommitted or stale CSS
   build ships broken styling with no error at any step. Commit any resulting `css/` changes.
 - `npm test` — the vitest suite.
+- Optional: `gh workflow run main.yml --ref main` dry-runs the release workflow itself (install, packs,
+  zip) and uploads `module.zip` as a run artifact without touching any release. Worth doing if the
+  workflow, dependencies, or runner have changed since the last release.
 
 There is no `lint` script and no pre-commit hook in this repo, so nothing runs these for you.
 
@@ -75,7 +78,8 @@ what fires `main.yml` (a tag alone does nothing — see the workflow's own heade
 
 ## 5. Wait for the workflow and verify assets
 
-Find the run the release triggered (`gh run list --workflow=main.yml -L 3`) and watch it:
+Find the run the release triggered (`gh run list --workflow=main.yml --event release -L 3`; the `--event`
+filter keeps manual dry runs out of the list) and watch it:
 `gh run watch <run-id> --exit-status`. Once it succeeds, confirm the assets actually landed:
 
 ```

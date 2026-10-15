@@ -30,6 +30,10 @@
 #   - Has the module's entry on FoundryVTT's module administration site
 #     (https://foundryvtt.com/admin) been updated?
 #
+#   - Does the pipeline itself still work?
+#     A manual run (`gh workflow run main.yml`) builds module.zip as a run
+#     artifact without touching any release.
+#
 name: Create Module Files For GitHub Release
 
 
@@ -61,28 +65,52 @@ on:
   release:
     types: [published]
 
+  # Manual dry run: builds module.zip and uploads it as a run artifact instead
+  # of attaching it to a release.
+  workflow_dispatch:
+
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # Pinned rather than ubuntu-latest so a runner image migration can't change the build; bump by hand.
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
+
+      - name: Set Up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          package-manager-cache: false
 
 
       # Extract version embedded in the tag.
       # This step expects the tag to be one of the following formats:
       #   - "v<major>.<minor>.<patch>" (e.g., "v1.2.3")
       #   - "<major>.<minor>.<patch>"  (e.g., "1.2.3")
+      # Anything else fails the run. A manual dry run uses "0.0.0-dryrun".
       #
       # The version will be used by later steps to fill in the value for the
       # "version" key required for a valid module manifest.
       - name: Extract Version From Tag
         id: get_version
-        uses: battila7/get-version-action@v2
+        env:
+          TAG: ${{ github.event.release.tag_name }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "release" ]; then
+            VERSION="${TAG#v}"
+          else
+            VERSION="0.0.0-dryrun"
+          fi
+          if ! [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+ ]]; then
+            echo "::error::Tag '$TAG' is not v<major>.<minor>.<patch> or <major>.<minor>.<patch>"
+            exit 1
+          fi
+          echo "version-without-v=$VERSION" >> "$GITHUB_OUTPUT"
 
 
       # Modify "module.json" with values specific to the release.
@@ -104,9 +132,10 @@ jobs:
 
       # `npm ci` is recommended:
       # https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+      # --ignore-scripts skips esbuild's (vitest-only) install script, which intermittently fails with ETXTBSY; LevelDB uses a prebuilt binary.
       - name: Install Dependencies
-        run: npm ci
-      
+        run: npm ci --ignore-scripts
+
       # Pull JSON to LDB packs
       - name: Build Packs
         run: npm run pullJSONtoLDB
@@ -142,6 +171,7 @@ jobs:
       # Update the GitHub release with the manifest and module archive files.
       - name: Update Release With Files
         id: create_version_release
+        if: github.event_name == 'release'
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
@@ -152,3 +182,13 @@ jobs:
           artifacts: './module.json, ./module.zip'
           tag: ${{ github.event.release.tag_name }}
           body: ${{ github.event.release.body }}
+
+
+      - name: Upload Dry-Run Archive
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v7
+        with:
+          name: module-dryrun
+          path: module.zip
+          if-no-files-found: error
+          retention-days: 7
