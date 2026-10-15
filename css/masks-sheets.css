@@ -772,12 +772,11 @@
 }
 .pbta-chat-card .masks-roll-bonuses {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 6px;
   margin-top: 6px;
 }
 .pbta-chat-card .masks-roll-bonuses .masks-roll-bonus {
-  flex: 1 1 calc(50% - 3px);
   margin-top: 0;
 }
 .pbta-chat-card .masks-mark-potential,
