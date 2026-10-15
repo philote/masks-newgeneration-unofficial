@@ -13,6 +13,10 @@ beforeEach(() => {
 	stubRollGlobals();
 });
 
+function actions(bonuses) {
+	return bonuses.map((b) => b.action);
+}
+
 describe("baseModifier", () => {
 	it("sums signed flat modifiers and ignores the dice", () => {
 		expect(baseModifier(new FakeRoll({ mods: [2, -2, 1] }))).toBe(1);
@@ -86,50 +90,39 @@ describe("applyRollBonus", () => {
 });
 
 describe("availableBonuses", () => {
-	it("offers nothing when the actor has no forward, ongoing, or influence", () => {
-		expect(availableBonuses(buildActor())).toEqual([]);
+	it("always offers Use Influence, even with no forward, ongoing, or Influence list entries", () => {
+		expect(availableBonuses(buildActor())).toEqual([{ action: "influence", amount: 1 }]);
 	});
 
 	it("keeps offering forward while any remains, regardless of how many were used", () => {
 		const actor = buildActor({ forward: 1 });
-		expect(availableBonuses(actor, { forwardUsed: 2 })).toEqual([{ action: "forward", amount: 1 }]);
+		expect(actions(availableBonuses(actor, { forwardUsed: 2 }))).toContain("forward");
+		expect(actions(availableBonuses(buildActor({ forward: 0 })))).not.toContain("forward");
 	});
 
 	it("offers ongoing +1 at a time, until this roll has used as much as the actor has", () => {
 		const actor = buildActor({ ongoing: 3 });
-		expect(availableBonuses(actor)).toEqual([{ action: "ongoing", amount: 1 }]);
-		expect(availableBonuses(actor, { ongoingUsed: 2 })).toEqual([{ action: "ongoing", amount: 1 }]);
-		expect(availableBonuses(actor, { ongoingUsed: 3 })).toEqual([]);
+		expect(availableBonuses(actor)).toContainEqual({ action: "ongoing", amount: 1 });
+		expect(availableBonuses(actor, { ongoingUsed: 2 })).toContainEqual({ action: "ongoing", amount: 1 });
+		expect(actions(availableBonuses(actor, { ongoingUsed: 3 }))).not.toContain("ongoing");
 	});
 
-	it("offers one Use Influence per character the actor has influence over", () => {
-		const actor = buildActor({
-			influences: [
-				{ id: "a", name: "Jonas", haveInfluenceOver: true },
-				{ id: "b", name: "Mom", haveInfluenceOver: false, hasInfluenceOver: true },
-				{ id: "c", name: "", haveInfluenceOver: true }
-			]
-		});
-
-		expect(availableBonuses(actor)).toEqual([
-			{ action: "influence", amount: 1, influenceId: "a", name: "Jonas" },
-			{ action: "influence", amount: 1, influenceId: "c", name: "" }
-		]);
-	});
-
-	it("swaps every Use Influence for Exploit on the used target, then nothing once exploited", () => {
+	it("doesn't name or depend on the sheet's Influence list", () => {
 		const actor = buildActor({
 			influences: [
 				{ id: "a", name: "Jonas", haveInfluenceOver: true },
 				{ id: "b", name: "Mom", haveInfluenceOver: true }
 			]
 		});
-		const used = { influenceUsed: { influenceId: "a", name: "Jonas" } };
 
-		expect(availableBonuses(actor, used)).toEqual([
-			{ action: "exploit", amount: 1, influenceId: "a", name: "Jonas" }
-		]);
-		expect(availableBonuses(actor, { ...used, influenceExploited: true })).toEqual([]);
+		expect(availableBonuses(actor)).toEqual([{ action: "influence", amount: 1 }]);
+	});
+
+	it("swaps Use Influence for Exploit Influence once used, then offers neither once exploited", () => {
+		const actor = buildActor();
+
+		expect(availableBonuses(actor, { influenceUsed: true })).toEqual([{ action: "exploit", amount: 1 }]);
+		expect(availableBonuses(actor, { influenceUsed: true, influenceExploited: true })).toEqual([]);
 	});
 });
 
@@ -139,13 +132,13 @@ describe("nextBonusState", () => {
 		state = nextBonusState(state, { action: "forward" });
 		state = nextBonusState(state, { action: "ongoing" });
 		state = nextBonusState(state, { action: "ongoing" });
-		state = nextBonusState(state, { action: "influence", influenceId: "a", name: "Jonas" });
-		state = nextBonusState(state, { action: "exploit", influenceId: "a", name: "Jonas" });
+		state = nextBonusState(state, { action: "influence" });
+		state = nextBonusState(state, { action: "exploit" });
 
 		expect(state).toEqual({
 			forwardUsed: 2,
 			ongoingUsed: 2,
-			influenceUsed: { influenceId: "a", name: "Jonas" },
+			influenceUsed: true,
 			influenceExploited: true
 		});
 	});

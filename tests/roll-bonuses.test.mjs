@@ -28,9 +28,7 @@ function setup({ actor = buildActor(), messages } = {}) {
 
 describe("renderRollBonuses", () => {
 	it("adds a button per available bonus after the dice roll", () => {
-		const { message } = setup({
-			actor: buildActor({ forward: 2, ongoing: 1, influences: [{ id: "a", name: "Jonas", haveInfluenceOver: true }] })
-		});
+		const { message } = setup({ actor: buildActor({ forward: 2, ongoing: 1 }) });
 		const html = renderCard();
 
 		renderRollBonuses(message, html);
@@ -39,8 +37,18 @@ describe("renderRollBonuses", () => {
 		expect(html.querySelector(".dice-roll").nextElementSibling.classList.contains("masks-roll-bonuses")).toBe(true);
 	});
 
-	it("adds nothing when there is no bonus to offer", () => {
+	it("still offers Use Influence when the actor has no forward or ongoing", () => {
 		const { message } = setup();
+		const html = renderCard();
+
+		renderRollBonuses(message, html);
+
+		expect(buttonsIn(html)).toEqual(["influence"]);
+	});
+
+	it("adds nothing once every bonus on the roll is used up", () => {
+		const { message } = setup();
+		message.getFlag.mockReturnValue({ influenceUsed: true, influenceExploited: true });
 		const html = renderCard();
 
 		renderRollBonuses(message, html);
@@ -114,34 +122,42 @@ describe("useRollBonus", () => {
 		expect(message.update).not.toHaveBeenCalled();
 	});
 
-	it("Use Influence records the chosen target", async () => {
-		const { actor, message } = setup({
-			actor: buildActor({ influences: [{ id: "a", name: "Jonas", haveInfluenceOver: true }] })
-		});
+	it("Use Influence adds +1 without posting anything else", async () => {
+		const { actor, message } = setup();
+		message.rolls[0] = new FakeRoll({ dice: 6, mods: [0] });
 
-		await useRollBonus(message, actor, { action: "influence", influenceId: "a" });
+		await useRollBonus(message, actor, { action: "influence" });
 
+		expect(message.rolls[0].total).toBe(7);
+		expect(message.rolls[0].options.conditions).toEqual(["MASKS-SHEETS.Chat.InfluenceCondition (+1)"]);
 		expect(message.update).toHaveBeenCalledWith(expect.objectContaining({
-			[`flags.${MODULE_ID}.rollBonuses`]: { influenceUsed: { influenceId: "a", name: "Jonas" } }
+			[`flags.${MODULE_ID}.rollBonuses`]: { influenceUsed: true }
 		}));
 		expect(ChatMessage.create).not.toHaveBeenCalled();
 	});
 
-	it("Exploit Influence adds another +1 and announces the lost Influence in chat", async () => {
-		const { actor, message } = setup({
-			actor: buildActor({ influences: [{ id: "a", name: "Jonas", haveInfluenceOver: true }] })
-		});
-		message.getFlag.mockReturnValue({ influenceUsed: { influenceId: "a", name: "Jonas" } });
+	it("Exploit Influence adds another +1 and announces the lost Influence in chat, naming no target", async () => {
+		const { actor, message } = setup();
+		message.getFlag.mockReturnValue({ influenceUsed: true });
 
-		await useRollBonus(message, actor, { action: "exploit", influenceId: "a" });
+		await useRollBonus(message, actor, { action: "exploit" });
 
 		expect(message.update).toHaveBeenCalledWith(expect.objectContaining({
-			[`flags.${MODULE_ID}.rollBonuses`]: { influenceUsed: { influenceId: "a", name: "Jonas" }, influenceExploited: true }
+			[`flags.${MODULE_ID}.rollBonuses`]: { influenceUsed: true, influenceExploited: true }
 		}));
 		expect(ChatMessage.create).toHaveBeenCalledWith(expect.objectContaining({
-			content: `MASKS-SHEETS.Chat.ExploitedInfluence:${JSON.stringify({ actor: "Kid Flash", target: "Jonas" })}`
+			content: `MASKS-SHEETS.Chat.ExploitedInfluence:${JSON.stringify({ actor: "Kid Flash" })}`
 		}));
 		expect(actor.update).not.toHaveBeenCalled();
+	});
+
+	it("refuses Exploit Influence before Use Influence", async () => {
+		const { actor, message } = setup();
+
+		await useRollBonus(message, actor, { action: "exploit" });
+
+		expect(ui.notifications.warn).toHaveBeenCalledWith("MASKS-SHEETS.Chat.BonusUnavailable");
+		expect(ChatMessage.create).not.toHaveBeenCalled();
 	});
 
 	it("refuses a bonus that's no longer available (e.g. forward spent elsewhere)", async () => {

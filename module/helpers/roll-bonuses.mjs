@@ -69,8 +69,7 @@ export async function useRollBonus(message, actor, bonus) {
     }
 
     const state = bonusState(message);
-    const current = availableBonuses(actor, state)
-        .find((b) => b.action === bonus.action && b.influenceId === bonus.influenceId);
+    const current = availableBonuses(actor, state).find((b) => b.action === bonus.action);
     if (!current) {
         ui.notifications.warn(game.i18n.localize("MASKS-SHEETS.Chat.BonusUnavailable"));
         return ui.chat?.updateMessage?.(message);
@@ -92,10 +91,7 @@ export async function useRollBonus(message, actor, bonus) {
         if (current.action === "exploit") {
             await ChatMessage.create({
                 user: game.user.id,
-                content: game.i18n.format("MASKS-SHEETS.Chat.ExploitedInfluence", {
-                    actor: actor.name,
-                    target: influenceName(current)
-                }),
+                content: game.i18n.format("MASKS-SHEETS.Chat.ExploitedInfluence", { actor: actor.name }),
                 speaker: ChatMessage.getSpeaker({ actor })
             });
         }
@@ -108,32 +104,24 @@ function bonusState(message) {
     return message.getFlag(MODULE_ID, "rollBonuses") ?? {};
 }
 
-function influenceName(bonus) {
-    return bonus.name || game.i18n.localize("MASKS-SHEETS.Chat.InfluenceUnnamed");
-}
+const BUTTON_LABEL_KEYS = {
+    forward: "MASKS-SHEETS.Chat.UseForward",
+    ongoing: "MASKS-SHEETS.Chat.UseOngoing",
+    influence: "MASKS-SHEETS.Chat.UseInfluence",
+    exploit: "MASKS-SHEETS.Chat.ExploitInfluence"
+};
+
+const CONDITION_LABEL_KEYS = {
+    forward: "PBTA.Forward",
+    ongoing: "PBTA.Ongoing",
+    influence: "MASKS-SHEETS.Chat.InfluenceCondition",
+    exploit: "MASKS-SHEETS.Chat.ExploitCondition"
+};
 
 function buttonLabel(bonus) {
-    switch (bonus.action) {
-        case "forward":
-            return game.i18n.localize("MASKS-SHEETS.Chat.UseForward");
-        case "ongoing":
-            return game.i18n.localize("MASKS-SHEETS.Chat.UseOngoing");
-        case "influence":
-            return game.i18n.format("MASKS-SHEETS.Chat.UseInfluence", { name: influenceName(bonus) });
-        case "exploit":
-            return game.i18n.format("MASKS-SHEETS.Chat.ExploitInfluence", { name: influenceName(bonus) });
-    }
+    return game.i18n.localize(BUTTON_LABEL_KEYS[bonus.action]);
 }
 
 function conditionLabel(bonus) {
-    switch (bonus.action) {
-        case "forward":
-            return `${game.i18n.localize("PBTA.Forward")} (+1)`;
-        case "ongoing":
-            return `${game.i18n.localize("PBTA.Ongoing")} (+1)`;
-        case "influence":
-            return game.i18n.format("MASKS-SHEETS.Chat.InfluenceCondition", { name: influenceName(bonus) });
-        case "exploit":
-            return game.i18n.format("MASKS-SHEETS.Chat.ExploitCondition", { name: influenceName(bonus) });
-    }
+    return `${game.i18n.localize(CONDITION_LABEL_KEYS[bonus.action])} (+1)`;
 }

@@ -74,17 +74,9 @@ export function availableBonuses(actor, state = {}) {
     // Ongoing is situational, so it's applied +1 at a time, up to the actor's total, and never spent.
     if (ongoing > (state.ongoingUsed ?? 0)) bonuses.push({ action: "ongoing", amount: 1 });
 
-    if (state.influenceUsed) {
-        if (!state.influenceExploited) {
-            bonuses.push({ action: "exploit", amount: 1, ...state.influenceUsed });
-        }
-    } else {
-        const influences = actor.getFlag(MODULE_ID, "influences") ?? [];
-        for (const influence of influences) {
-            if (!influence.haveInfluenceOver) continue;
-            bonuses.push({ action: "influence", amount: 1, influenceId: influence.id, name: influence.name ?? "" });
-        }
-    }
+    // Not tied to the sheet's Influence list: the player knows whether they have Influence over whoever this roll is against.
+    if (!state.influenceUsed) bonuses.push({ action: "influence", amount: 1 });
+    else if (!state.influenceExploited) bonuses.push({ action: "exploit", amount: 1 });
 
     return bonuses;
 }
@@ -97,7 +89,7 @@ export function nextBonusState(state = {}, bonus) {
         case "ongoing":
             return { ...state, ongoingUsed: (state.ongoingUsed ?? 0) + 1 };
         case "influence":
-            return { ...state, influenceUsed: { influenceId: bonus.influenceId, name: bonus.name } };
+            return { ...state, influenceUsed: true };
         case "exploit":
             return { ...state, influenceExploited: true };
         default:
