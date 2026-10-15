@@ -827,12 +827,14 @@
   }
 
   .row.result {
+    --masks-result-color: var(--masks-result-failure-color);
+
     position: relative;
     margin: 10px 0 0;
     padding: 10px 12px 10px 18px;
     border-radius: 4px;
     border: 1px solid var(--masks-input-border-color);
-    background: color-mix(in srgb, var(--masks-result-failure-color) var(--masks-result-tint), var(--masks-result-base));
+    background: color-mix(in srgb, var(--masks-result-color) var(--masks-result-tint), var(--masks-result-base));
     overflow: hidden;
 
     &::before {
@@ -842,31 +844,28 @@
       top: 0;
       bottom: 0;
       width: 6px;
-      background-color: var(--masks-result-failure-color);
+      background-color: var(--masks-result-color);
     }
 
     &.success {
-      background: color-mix(in srgb, var(--masks-result-success-color) var(--masks-result-tint), var(--masks-result-base));
-
-      &::before {
-        background-color: var(--masks-result-success-color);
-      }
+      --masks-result-color: var(--masks-result-success-color);
     }
 
     &.partial {
-      background: color-mix(in srgb, var(--masks-result-partial-color) var(--masks-result-tint), var(--masks-result-base));
-
-      &::before {
-        background-color: var(--masks-result-partial-color);
-      }
+      --masks-result-color: var(--masks-result-partial-color);
     }
 
     &.failure {
-      background: color-mix(in srgb, var(--masks-result-failure-color) var(--masks-result-tint), var(--masks-result-base));
+      --masks-result-color: var(--masks-result-failure-color);
+    }
 
-      &::before {
-        background-color: var(--masks-result-failure-color);
-      }
+    // A move where a hit is bad and a miss is good (see inverted-result.mjs).
+    &.masks-result-inverted.success {
+      --masks-result-color: var(--masks-result-failure-color);
+    }
+
+    &.masks-result-inverted.failure {
+      --masks-result-color: var(--masks-result-success-color);
     }
   }
 
@@ -1017,10 +1016,20 @@
 .vtt #chat-notifications .message .pbta-chat-card,
 .vtt .chat-popout .message .pbta-chat-card {
   .chat-title {
+    align-items: center;
     padding: 0;
     margin-bottom: 6px;
     border: none;
     gap: 8px;
+  }
+
+  // pbta sizes this only under `#chat`; without it the preview bubble's
+  // `.flexrow` stretches the icon to fill the row.
+  .item-icon {
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
   }
 
   .cell__title {
@@ -1045,16 +1054,10 @@
     color: var(--masks-input-text-color);
   }
 
-  .success .result-label {
-    color: var(--masks-result-success-color);
-  }
-
-  .partial .result-label {
-    color: var(--masks-result-partial-color);
-  }
-
+  .success .result-label,
+  .partial .result-label,
   .failure .result-label {
-    color: var(--masks-result-failure-color);
+    color: var(--masks-result-color);
   }
 
   .row--border {

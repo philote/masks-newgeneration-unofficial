@@ -660,12 +660,13 @@
   opacity: 0.75;
 }
 .pbta-chat-card .row.result {
+  --masks-result-color: var(--masks-result-failure-color);
   position: relative;
   margin: 10px 0 0;
   padding: 10px 12px 10px 18px;
   border-radius: 4px;
   border: 1px solid var(--masks-input-border-color);
-  background: color-mix(in srgb, var(--masks-result-failure-color) var(--masks-result-tint), var(--masks-result-base));
+  background: color-mix(in srgb, var(--masks-result-color) var(--masks-result-tint), var(--masks-result-base));
   overflow: hidden;
 }
 .pbta-chat-card .row.result::before {
@@ -675,25 +676,22 @@
   top: 0;
   bottom: 0;
   width: 6px;
-  background-color: var(--masks-result-failure-color);
+  background-color: var(--masks-result-color);
 }
 .pbta-chat-card .row.result.success {
-  background: color-mix(in srgb, var(--masks-result-success-color) var(--masks-result-tint), var(--masks-result-base));
-}
-.pbta-chat-card .row.result.success::before {
-  background-color: var(--masks-result-success-color);
+  --masks-result-color: var(--masks-result-success-color);
 }
 .pbta-chat-card .row.result.partial {
-  background: color-mix(in srgb, var(--masks-result-partial-color) var(--masks-result-tint), var(--masks-result-base));
-}
-.pbta-chat-card .row.result.partial::before {
-  background-color: var(--masks-result-partial-color);
+  --masks-result-color: var(--masks-result-partial-color);
 }
 .pbta-chat-card .row.result.failure {
-  background: color-mix(in srgb, var(--masks-result-failure-color) var(--masks-result-tint), var(--masks-result-base));
+  --masks-result-color: var(--masks-result-failure-color);
 }
-.pbta-chat-card .row.result.failure::before {
-  background-color: var(--masks-result-failure-color);
+.pbta-chat-card .row.result.masks-result-inverted.success {
+  --masks-result-color: var(--masks-result-failure-color);
+}
+.pbta-chat-card .row.result.masks-result-inverted.failure {
+  --masks-result-color: var(--masks-result-success-color);
 }
 .pbta-chat-card .dice-roll {
   margin-top: 10px;
@@ -814,10 +812,19 @@
 .vtt #chat .message .pbta-chat-card .chat-title,
 .vtt #chat-notifications .message .pbta-chat-card .chat-title,
 .vtt .chat-popout .message .pbta-chat-card .chat-title {
+  align-items: center;
   padding: 0;
   margin-bottom: 6px;
   border: none;
   gap: 8px;
+}
+.vtt #chat .message .pbta-chat-card .item-icon,
+.vtt #chat-notifications .message .pbta-chat-card .item-icon,
+.vtt .chat-popout .message .pbta-chat-card .item-icon {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
 }
 .vtt #chat .message .pbta-chat-card .cell__title,
 .vtt #chat-notifications .message .pbta-chat-card .cell__title,
@@ -845,19 +852,15 @@
   color: var(--masks-input-text-color);
 }
 .vtt #chat .message .pbta-chat-card .success .result-label,
-.vtt #chat-notifications .message .pbta-chat-card .success .result-label,
-.vtt .chat-popout .message .pbta-chat-card .success .result-label {
-  color: var(--masks-result-success-color);
-}
 .vtt #chat .message .pbta-chat-card .partial .result-label,
-.vtt #chat-notifications .message .pbta-chat-card .partial .result-label,
-.vtt .chat-popout .message .pbta-chat-card .partial .result-label {
-  color: var(--masks-result-partial-color);
-}
 .vtt #chat .message .pbta-chat-card .failure .result-label,
+.vtt #chat-notifications .message .pbta-chat-card .success .result-label,
+.vtt #chat-notifications .message .pbta-chat-card .partial .result-label,
 .vtt #chat-notifications .message .pbta-chat-card .failure .result-label,
+.vtt .chat-popout .message .pbta-chat-card .success .result-label,
+.vtt .chat-popout .message .pbta-chat-card .partial .result-label,
 .vtt .chat-popout .message .pbta-chat-card .failure .result-label {
-  color: var(--masks-result-failure-color);
+  color: var(--masks-result-color);
 }
 .vtt #chat .message .pbta-chat-card .row--border,
 .vtt #chat-notifications .message .pbta-chat-card .row--border,

@@ -8,6 +8,7 @@ import { initBasicMovePicker } from './helpers/basic-move-picker.mjs';
 import { initSkipEmptyRollDialog } from './helpers/skip-empty-roll-dialog.mjs';
 import { initTeamPool } from './helpers/team-pool.mjs';
 import { initMarkPotentialButton } from './helpers/mark-potential.mjs';
+import { initInvertedResultColors } from './helpers/inverted-result.mjs';
 import { initRollBonuses } from './helpers/roll-bonuses.mjs';
 import { initAttributeRoll } from './helpers/attribute-roll.mjs';
 import { initRollOptions } from './helpers/roll-options.mjs';
@@ -50,6 +51,7 @@ Hooks.once("init", () => {
     initSkipEmptyRollDialog();
     initTeamPool();
     initMarkPotentialButton();
+    initInvertedResultColors();
     initRollBonuses();
     initRollOptions();
     initAttributeRoll();
