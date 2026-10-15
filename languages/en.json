@@ -12,6 +12,10 @@
             "Decrease": "Spend from the Team pool",
             "PostToChat": "Post the Team pool to chat"
         },
+        "Moves": {
+            "HoldIncrease": "Gain hold",
+            "HoldDecrease": "Spend hold"
+        },
         "Chat": {
             "MarkPotential": "Mark Potential",
             "TeamPool": "Team: {value}",

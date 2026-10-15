@@ -220,6 +220,100 @@
   border: 0.5px solid var(--masks-input-border-color);
   background: var(--masks-resource-control-bg-color);
 }
+.pbta.sheet .cell--moves .items-list .item .masks-move-hold {
+  order: 1;
+}
+.pbta.sheet .cell--moves .items-list .item .item-meta {
+  order: 2;
+}
+.pbta.sheet .cell--moves .items-list .item .item-controls {
+  order: 3;
+}
+.pbta.sheet .cell--moves .items-list .item .item-description {
+  order: 4;
+}
+.pbta.sheet .cell--moves .items-list .item:has(.masks-move-hold) .item-meta {
+  flex: 0 0 auto;
+}
+.pbta.sheet .masks-move-hold {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 4px;
+}
+.pbta.sheet .masks-move-hold__label {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: var(--font-size-12);
+  color: var(--masks-secondary-text-color);
+}
+.pbta.sheet .masks-move-hold__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.pbta.sheet .masks-move-hold__input {
+  width: 2.5ch;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: var(--masks-secondary-text-color);
+  font-weight: bold;
+  text-align: center;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+.pbta.sheet .masks-move-hold__input::-webkit-inner-spin-button, .pbta.sheet .masks-move-hold__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.pbta.sheet .masks-move-hold__input:focus {
+  outline: 1px solid var(--masks-accent-color);
+}
+.pbta.sheet .masks-move-hold__input:disabled {
+  background: transparent;
+  color: var(--masks-secondary-text-color);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.pbta.sheet .masks-move-hold__control {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  max-height: 18px;
+  padding: 0;
+  margin: 0;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--masks-interactive-bg-color);
+  color: var(--masks-primary-text-color);
+  border: 1px solid var(--masks-accent-color);
+  font-size: 11px;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.1s ease-out, background-color 0.1s ease-out;
+}
+.pbta.sheet .masks-move-hold__control:hover:not(:disabled) {
+  background-color: var(--masks-interactive-bg-hover-color);
+}
+.pbta.sheet .masks-move-hold__control:active:not(:disabled) {
+  transform: scale(0.9);
+}
+.pbta.sheet .masks-move-hold__control:disabled {
+  background: var(--masks-interactive-bg-color);
+  color: var(--masks-primary-text-color);
+  opacity: 0.4;
+  cursor: not-allowed;
+}
 .pbta.sheet .cell__checkboxes,
 .pbta.sheet .cell__radio {
   margin: 0;

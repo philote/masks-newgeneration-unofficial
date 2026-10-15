@@ -23,6 +23,10 @@ class BaseSheet {
 			}
 		};
 	}
+
+	async _prepareItems() {}
+
+	activateListeners() {}
 }
 
 const MasksSheet = MasksActorSheetMixin(BaseSheet);
@@ -78,5 +82,77 @@ describe("MasksActorSheet.getData", () => {
 		const context = await new MasksSheet([], { playbook: { uuid: CUSTOM_PLAYBOOK.uuid } }).getData();
 
 		expect(context.playbooks).toEqual([CUSTOM_PLAYBOOK, BEACON_PLAYBOOK]);
+	});
+});
+
+describe("MasksActorSheet._prepareItems", () => {
+	it("gives a hold-stepper move its stored hold, and leaves other moves alone", async () => {
+		const burn = { _id: "burn", flags: { "masks-newgeneration-unofficial": { holdStepper: true, hold: 2 } } };
+		const assess = { _id: "assess", flags: {} };
+		const context = { moves: { playbook: [burn], basic: [assess] } };
+
+		await new MasksSheet([])._prepareItems(context);
+
+		expect(burn.masksHold).toEqual({ value: 2 });
+		expect(assess.masksHold).toBeUndefined();
+	});
+});
+
+describe("MasksActorSheet.activateListeners", () => {
+	function renderHoldStepper(editable) {
+		const root = document.createElement("div");
+		root.innerHTML = `
+			<li class="item" data-item-id="burn">
+				<div class="masks-move-hold">
+					<button type="button" class="masks-move-hold__control" data-hold-action="decrease">-</button>
+					<input type="number" class="masks-move-hold__input" value="2"/>
+					<button type="button" class="masks-move-hold__control" data-hold-action="increase">+</button>
+				</div>
+			</li>`;
+
+		const burn = {
+			flags: { "masks-newgeneration-unofficial": { holdStepper: true, hold: 2 } },
+			setFlag: vi.fn().mockResolvedValue(undefined)
+		};
+		const sheet = new MasksSheet([]);
+		sheet.actor.items = { get: (id) => (id === "burn" ? burn : undefined) };
+		sheet.isEditable = editable;
+		sheet.activateListeners([root]);
+
+		return { root, burn };
+	}
+
+	it("steps the move's hold from the -/+ buttons", () => {
+		const { root, burn } = renderHoldStepper(true);
+
+		root.querySelector('[data-hold-action="increase"]').click();
+		root.querySelector('[data-hold-action="decrease"]').click();
+
+		expect(burn.setFlag).toHaveBeenNthCalledWith(1, "masks-newgeneration-unofficial", "hold", 3);
+		expect(burn.setFlag).toHaveBeenNthCalledWith(2, "masks-newgeneration-unofficial", "hold", 1);
+	});
+
+	it("stores a typed hold without letting the change reach the actor form", () => {
+		const { root, burn } = renderHoldStepper(true);
+		const formListener = vi.fn();
+		root.addEventListener("change", formListener);
+
+		const input = root.querySelector(".masks-move-hold__input");
+		input.value = "5";
+		input.dispatchEvent(new Event("change", { bubbles: true }));
+
+		expect(burn.setFlag).toHaveBeenCalledWith("masks-newgeneration-unofficial", "hold", 5);
+		expect(formListener).not.toHaveBeenCalled();
+	});
+
+	it("binds nothing on a sheet the user can't edit", () => {
+		const { root, burn } = renderHoldStepper(false);
+
+		root.querySelector('[data-hold-action="increase"]').click();
+		const input = root.querySelector(".masks-move-hold__input");
+		input.value = "5";
+		input.dispatchEvent(new Event("change", { bubbles: true }));
+
+		expect(burn.setFlag).not.toHaveBeenCalled();
 	});
 });

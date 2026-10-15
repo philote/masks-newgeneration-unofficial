@@ -7,27 +7,31 @@ half-deploy is checked and repaired here, so "it works after running this" shoul
 Each run:
   1. Stops any headless server this script previously started (tracked via a PID file). This
      happens first, not last: besides freeing the port, a running Foundry holds the compendium
-     LevelDBs open, and step 4 cannot write a pack that's locked.
+     LevelDBs open, and step 4 cannot write a pack that's locked. The lock-release buffer this
+     needs before the *next* server may start is tracked as a deadline, not slept off here, so
+     it overlaps steps 2-6 instead of adding to them.
   2. Verifies (and repairs) the junctions from Data/modules/masks-newgeneration-unofficial into
      this repo, adding one for any new top-level folder the manifest started referencing. See
      refresh_masks_links() for why this can't be assumed to be already correct.
   3. Re-copies this module's module.json/LICENSE/README.md over the deployed copy (module.json
      isn't junction-linked, so a manifest edit here needs to be re-copied there before Foundry
      will see it -- the same job as `npm run sync-manifest`).
-  4. Compiles src/packs/ JSON into the LevelDB packs/ Foundry actually reads
-     (`npm run pullJSONtoLDB`), so compendium edits aren't silently a release behind.
-     Skip with --skip-packs.
-  5. Compiles src/scss into css/ (`npm run build`), so stylesheet edits aren't a build behind.
-     Skip with --skip-css.
-  6. Pre-flights the deployed manifest: every file module.json references must exist at its
+  4. Runs these three builds concurrently (they write disjoint outputs), each one's output
+     printed as a single block when it finishes:
+       - src/packs/ JSON -> the LevelDB packs/ Foundry actually reads (`npm run pullJSONtoLDB`),
+         so compendium edits aren't silently a release behind. Skip with --skip-packs.
+       - src/scss -> css/ (`npm run build`), so stylesheet edits aren't a build behind.
+         Skip with --skip-css.
+       - `npm run build` in the pbta checkout, so dist/ reflects whatever's on disk right now,
+         even if no `gulp watch` is running. Skip with --skip-pbta-build.
+  5. Pre-flights the deployed manifest: every file module.json references must exist at its
      deployed path. This is exactly what Foundry's own package loader validates, and failing
      it makes Foundry reject the module outright -- see preflight_manifest().
-  7. Re-creates the junctions from Data/systems/pbta's subfolders to the pbta checkout's
-     dist/ output, and re-copies its system.json/template.json.
-  8. Runs `npm run build` in the pbta checkout so dist/ (and therefore what those junctions
-     point at) reflects whatever's on disk right now, even if no `gulp watch` is running.
-     Skip with --skip-pbta-build.
-  9. Starts `node main.js` from the installed Foundry app against the existing Data/Config
+  6. Verifies (and repairs) the junctions from Data/systems/pbta's subfolders to the pbta
+     checkout's dist/ output, and re-copies its system.json/template.json. This runs after the
+     pbta build because that build's `clean` step deletes and regenerates both files.
+  7. Waits out whatever is left of step 1's lock-release buffer, then starts `node main.js`
+     from the installed Foundry app against the existing Data/Config
      (already licensed on this machine -- nothing to re-license), streaming its output here.
      With no --world given, it lands on Foundry's setup/world-selection screen, same as a
      fresh launch of the desktop app would; pass --world to skip straight into one. The moment
@@ -60,6 +64,7 @@ Usage:
     py tools/run_foundry_headless.py --world suit-up --port 30000
 """
 import argparse
+import concurrent.futures
 import json
 import os
 import shutil
@@ -68,6 +73,7 @@ import stat
 import subprocess
 import sys
 import time
+from dataclasses import dataclass
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -189,34 +195,69 @@ def refresh_masks_manifest():
         shutil.copyfile(REPO_ROOT / name, MASKS_DATA / name)
 
 
-def compile_packs():
-    """Compile src/packs/ JSON into the LevelDB packs/ Foundry reads (`npm run pullJSONtoLDB`).
+@dataclass
+class BuildStep:
+    label: str
+    cmd: str
+    cwd: Path
+    failure_message: str
 
-    packs/ is junctioned, so this writes straight through to the deployed side with no separate
-    sync step -- but nothing compiles it automatically, so without this a compendium edit stays
-    invisible until someone remembers to run it by hand.
+
+# packs/ is junctioned, so this writes straight through to the deployed side with no separate
+# sync step -- but nothing compiles it automatically, so without this a compendium edit stays
+# invisible until someone remembers to run it by hand.
+PACKS_STEP = BuildStep(
+    "masks: src/packs -> packs (pullJSONtoLDB)", "npm run pullJSONtoLDB", REPO_ROOT,
+    "error: pack compilation failed.\n"
+    "  By far the most likely cause is that something still has the compendium LevelDBs\n"
+    "  open -- compilePack cannot write a pack Foundry is holding, and fails with a raw\n"
+    "  `LEVEL_ITERATOR_NOT_OPEN` / `ModuleError` stack trace that doesn't mention locking\n"
+    "  at all. This script already stops the server it started, so the usual culprit is a\n"
+    "  Foundry instance it can't see: the desktop app, or a server started some other way.\n"
+    "  Close that and re-run, or pass --skip-packs if src/packs/ hasn't changed.",
+)
+CSS_STEP = BuildStep(
+    "masks: src/scss -> css (npm run build)", "npm run build", REPO_ROOT,
+    "error: sass build failed -- see its output above. Fix it, or pass --skip-css.",
+)
+PBTA_STEP = BuildStep(
+    "pbta: npm run build -> dist/", "npm run build", PBTA_ROOT,
+    "error: pbta build failed -- see its output above. Fix it, or pass --skip-pbta-build.",
+)
+
+
+def _run_step(step):
+    start = time.monotonic()
+    result = subprocess.run(
+        step.cmd, cwd=str(step.cwd), shell=True,
+        stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+        text=True, encoding="utf-8", errors="replace",
+    )
+    return result.returncode == 0, result.stdout, time.monotonic() - start
+
+
+def run_parallel_steps(steps):
+    """Run every step concurrently; return the subset that failed.
+
+    Each step's combined output is buffered and printed as one block the moment that step
+    finishes, so concurrent builds never interleave line-by-line. Every step is waited on even
+    after one fails, so a single run surfaces all broken builds rather than one per run.
     """
-    print("masks: compiling src/packs -> packs (pullJSONtoLDB) ...")
-    try:
-        subprocess.run("npm run pullJSONtoLDB", cwd=str(REPO_ROOT), shell=True, check=True)
-    except subprocess.CalledProcessError:
-        sys.exit(
-            "error: pack compilation failed.\n"
-            "  By far the most likely cause is that something still has the compendium LevelDBs\n"
-            "  open -- compilePack cannot write a pack Foundry is holding, and fails with a raw\n"
-            "  `LEVEL_ITERATOR_NOT_OPEN` / `ModuleError` stack trace that doesn't mention locking\n"
-            "  at all. This script already stops the server it started, so the usual culprit is a\n"
-            "  Foundry instance it can't see: the desktop app, or a server started some other way.\n"
-            "  Close that and re-run, or pass --skip-packs if src/packs/ hasn't changed."
-        )
-
-
-def build_css():
-    print("masks: compiling src/scss -> css (npm run build) ...")
-    try:
-        subprocess.run("npm run build", cwd=str(REPO_ROOT), shell=True, check=True)
-    except subprocess.CalledProcessError:
-        sys.exit("error: sass build failed -- see its output above. Fix it, or pass --skip-css.")
+    if not steps:
+        return []
+    print("build: running in parallel -- " + "; ".join(step.label for step in steps))
+    failed = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(steps)) as pool:
+        futures = {pool.submit(_run_step, step): step for step in steps}
+        for future in concurrent.futures.as_completed(futures):
+            step = futures[future]
+            ok, output, elapsed = future.result()
+            print(f"--- {step.label} -- {'ok' if ok else 'FAILED'} ({elapsed:.1f}s) ---")
+            if output.strip():
+                print(output.rstrip())
+            if not ok:
+                failed.append(step)
+    return failed
 
 
 def preflight_manifest():
@@ -266,10 +307,13 @@ def _remove_existing(path):
 
 
 def relink_pbta():
-    print("pbta: re-linking Data/systems/pbta to the checkout's dist/ output ...")
+    relinked = []
     for name in PBTA_LINKED_DIRS:
         link = PBTA_DATA / name
         target = PBTA_DIST / name
+        if _is_junction_to(link, target):
+            continue
+        relinked.append(name)
         _remove_existing(link)
         subprocess.run(
             ["cmd", "/c", "mklink", "/J", str(link), str(target)],
@@ -277,11 +321,8 @@ def relink_pbta():
         )
     shutil.copyfile(PBTA_DIST / "system.json", PBTA_DATA / "system.json")
     shutil.copyfile(PBTA_DIST / "template.json", PBTA_DATA / "template.json")
-
-
-def build_pbta():
-    print("pbta: running `npm run build` so dist/ is current ...")
-    subprocess.run("npm run build", cwd=str(PBTA_ROOT), shell=True, check=True)
+    summary = f"relinked {relinked}" if relinked else f"all {len(PBTA_LINKED_DIRS)} already correct"
+    print(f"pbta: junctions -- {summary}; system.json/template.json re-copied.")
 
 
 def is_node_process(pid):
@@ -333,20 +374,31 @@ def stop_server_process(pid, port, grace_seconds=GRACE_SECONDS):
 
 
 def stop_previous_server(port):
-    if not PID_FILE.exists():
-        return
-    pid = PID_FILE.read_text().strip()
-    if pid and pid.isdigit() and is_node_process(pid):
-        print(f"server: stopping previous headless server (PID {pid}) ...")
-        process_gone, port_closed = stop_server_process(pid, port)
-        if not (process_gone and port_closed):
-            print(f"warning: previous server (PID {pid}) may not have fully stopped -- "
-                  f"process_gone={process_gone} port_closed={port_closed}")
-        # A process disappearing from tasklist doesn't guarantee Windows has released every file
-        # handle it held (e.g. Foundry's own Data-directory lock file) yet -- give it a moment,
-        # or the new node process below can fail to start with "already locked by another process".
-        time.sleep(LOCK_RELEASE_BUFFER_SECONDS)
+    """Stop the tracked server, if any. Returns the monotonic time before which a new server must
+    not start (see LOCK_RELEASE_BUFFER_SECONDS), or None if nothing was stopped."""
+    deadline = None
+    if PID_FILE.exists():
+        pid = PID_FILE.read_text().strip()
+        if pid and pid.isdigit() and is_node_process(pid):
+            print(f"server: stopping previous headless server (PID {pid}) ...")
+            process_gone, port_closed = stop_server_process(pid, port)
+            if not (process_gone and port_closed):
+                print(f"warning: previous server (PID {pid}) may not have fully stopped -- "
+                      f"process_gone={process_gone} port_closed={port_closed}")
+            deadline = time.monotonic() + LOCK_RELEASE_BUFFER_SECONDS
     PID_FILE.unlink(missing_ok=True)
+    return deadline
+
+
+def lock_release_remaining(deadline):
+    return 0.0 if deadline is None else max(0.0, deadline - time.monotonic())
+
+
+def wait_for_lock_release(deadline):
+    remaining = lock_release_remaining(deadline)
+    if remaining > 0:
+        print(f"server: waiting {remaining:.1f}s more for the previous server's data lock to go stale ...")
+        time.sleep(remaining)
 
 
 def ensure_port_free(port):
@@ -448,30 +500,40 @@ def main():
     # Stopping the old server comes first, before any deploy step -- not just because it frees the
     # port. A running Foundry holds the compendium LevelDBs open, and compilePack cannot write a
     # pack that's locked, so doing this later would make pack compilation fail on every re-run
-    # (i.e. the script's whole purpose: restart to pick up changes). Its lock-release buffer now
-    # overlaps the deploy work below instead of being dead time, which is a free speedup too.
-    stop_previous_server(args.port)
+    # (i.e. the script's whole purpose: restart to pick up changes). Its lock-release buffer is
+    # returned as a deadline and only waited out right before the new server starts, so it
+    # overlaps the deploy work below instead of being dead time.
+    deploy_start = time.monotonic()
+    lock_deadline = stop_previous_server(args.port)
 
     # Then: links first (everything downstream writes or reads through them), then the manifest
-    # copy, then packs and css, and only then the preflight -- which has to run last of these so
-    # it validates the state Foundry will actually see, not a half-refreshed one.
+    # copy, then the builds, and only then the preflight -- which has to run after them so it
+    # validates the state Foundry will actually see, not a half-refreshed one.
     refresh_masks_links()
     refresh_masks_manifest()
-    if args.skip_packs:
-        print("masks: skipping pack compilation (--skip-packs).")
-    else:
-        compile_packs()
-    if args.skip_css:
-        print("masks: skipping sass build (--skip-css).")
-    else:
-        build_css()
-    preflight_manifest()
 
+    skipped = [flag for flag, skip in [("--skip-packs", args.skip_packs), ("--skip-css", args.skip_css),
+                                       ("--skip-pbta-build", args.skip_pbta_build)] if skip]
+    if skipped:
+        print(f"build: skipping {', '.join(skipped)}.")
+    steps = [step for step, skip in [(PACKS_STEP, args.skip_packs), (CSS_STEP, args.skip_css),
+                                     (PBTA_STEP, args.skip_pbta_build)] if not skip]
+    failed = run_parallel_steps(steps)
+    if PACKS_STEP in failed and lock_release_remaining(lock_deadline) > 0:
+        # Belt-and-braces: the stopped server's LevelDB handles should already be released, but if
+        # pack compilation raced them, give it the rest of the lock-release buffer and retry once.
+        print("masks: pack compilation failed while the previous server's locks may still be releasing -- retrying once.")
+        wait_for_lock_release(lock_deadline)
+        failed.remove(PACKS_STEP)
+        failed += run_parallel_steps([PACKS_STEP])
+    if failed:
+        sys.exit("\n\n".join(step.failure_message for step in failed))
+
+    preflight_manifest()
     relink_pbta()
-    if args.skip_pbta_build:
-        print("pbta: skipping `npm run build` (--skip-pbta-build).")
-    else:
-        build_pbta()
+    print(f"deploy steps took {time.monotonic() - deploy_start:.1f}s.")
+
+    wait_for_lock_release(lock_deadline)
     ensure_port_free(args.port)
     start_server(args.world, args.port)
 

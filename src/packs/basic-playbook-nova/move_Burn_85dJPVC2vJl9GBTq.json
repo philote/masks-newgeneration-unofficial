@@ -5,6 +5,9 @@
   "effects": [],
   "folder": null,
   "flags": {
+    "masks-newgeneration-unofficial": {
+      "holdStepper": true
+    },
     "core": {},
     "cf": {
       "id": "temp_f8mhy5sjrn9",

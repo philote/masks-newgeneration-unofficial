@@ -16,7 +16,7 @@ import { initLabelSwap } from './helpers/label-swap.mjs';
 import { initTheme } from './helpers/theme.mjs';
 import { initLoginBackground, promptLoginBackgroundOnce } from './helpers/login-background.mjs';
 import { registerCustomPlaybookSetting } from './helpers/custom-playbook.mjs';
-import { migrateTakeAPowerfulBlow, migrateRejectingInfluence, migrateBurn, migrateNoPowersBasicMoveChoices, migrateKirbyCraftBasicMoveChoices, migrateWheneverTimePasses, migrateAHigherCalling, migrateFriendsInLowPlaces, migrateLegacy, migrateConnectingTheDots, migrateAllTheBestStuff, migrateAHigherCallingLabelSwap, migrateDuplicateChoiceLists, migrateDamagedConditionOption, migrateDamageGrantsCondition } from './helpers/migrations.mjs';
+import { migrateTakeAPowerfulBlow, migrateRejectingInfluence, migrateBurn, migrateNoPowersBasicMoveChoices, migrateKirbyCraftBasicMoveChoices, migrateWheneverTimePasses, migrateAHigherCalling, migrateFriendsInLowPlaces, migrateLegacy, migrateConnectingTheDots, migrateAllTheBestStuff, migrateAHigherCallingLabelSwap, migrateDuplicateChoiceLists, migrateDamagedConditionOption, migrateDamageGrantsCondition, migrateHoldStepper } from './helpers/migrations.mjs';
 
 Hooks.once("init", () => {
     const masksActorSheet = MasksActorSheetMixin(game.pbta.applications.actor.PbtaActorSheet);
@@ -75,6 +75,7 @@ Hooks.once('ready', async function () {
     await migrateDuplicateChoiceLists();
     await migrateDamagedConditionOption();
     await migrateDamageGrantsCondition();
+    await migrateHoldStepper();
     await promptLoginBackgroundOnce();
 });
 

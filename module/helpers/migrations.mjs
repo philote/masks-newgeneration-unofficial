@@ -319,6 +319,49 @@ export async function migrateDamageGrantsCondition() {
     }
 }
 
+const HOLD_STEPPER_MOVE_NAMES = [
+    "Before We Get Started",
+    "Team Move - Share a Vulnerability",
+    "Always Prepared",
+    "There When It Matters",
+    "Burn",
+    "Belong in Two Worlds"
+];
+
+function moveMentionsHold(item) {
+    const system = item.system ?? {};
+    const results = Object.values(system.moveResults ?? {}).map((result) => result?.value ?? "");
+    return /\bhold\b/i.test([system.description, system.choices, ...results].join(" "));
+}
+
+/**
+ * The moves that grant hold gained a "holdStepper" flag that shows a Hold
+ * stepper on their sheet row (see move-hold.mjs). Matched by name + a missing
+ * flag, plus hold in the move's own text: every playbook has a "Team Move -
+ * Share a Vulnerability", but only the Brain's and the Bull's grant hold.
+ */
+export async function migrateHoldStepper() {
+    for (const actor of game.actors) {
+        const updates = actor.items
+            .filter(
+                (item) =>
+                    item.type === "move" &&
+                    HOLD_STEPPER_MOVE_NAMES.includes(item.name) &&
+                    !item.flags?.["masks-newgeneration-unofficial"]?.holdStepper &&
+                    moveMentionsHold(item)
+            )
+            .map((item) => ({
+                _id: item.id,
+                "flags.masks-newgeneration-unofficial.holdStepper": true
+            }));
+
+        if (updates.length) {
+            await actor.updateEmbeddedDocuments("Item", updates);
+            console.log(`masks-newgeneration-unofficial | Added Hold steppers on actor "${actor.name}".`);
+        }
+    }
+}
+
 const DUPLICATE_CHOICE_LISTS = {
     "Are You Watching Closely?":
         "\n<ul>\n<li>you get an opportunity</li>\n<li>you expose a weakness or flaw</li>\n<li>you confuse them for some time</li>\n<li>you avoid further entanglement</li>\n</ul>",

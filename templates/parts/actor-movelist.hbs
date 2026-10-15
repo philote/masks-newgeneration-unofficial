@@ -80,6 +80,16 @@
 				{{#each moveGroup as |item id|}}
 					<li class="item flexrow" data-item-id="{{item._id}}" draggable="true">
 					{{> "pbta.actor-moves" item=item statSettings=../../statSettings sheetSettings=../../sheetSettings}}
+					{{#if item.masksHold}}
+					<div class="masks-move-hold">
+						<label class="masks-move-hold__label">{{localize "PBTA.Hold"}}</label>
+						<div class="masks-move-hold__wrapper">
+							<button type="button" class="masks-move-hold__control masks-move-hold__decrease" data-hold-action="decrease" data-tooltip="{{localize 'MASKS-SHEETS.Moves.HoldDecrease'}}" aria-label="{{localize 'MASKS-SHEETS.Moves.HoldDecrease'}}" {{#unless @root.editable}}disabled{{/unless}}>-</button>
+							<input type="number" class="masks-move-hold__input" value="{{item.masksHold.value}}" min="0" step="1" aria-label="{{localize 'PBTA.Hold'}}" {{#unless @root.editable}}disabled{{/unless}}/>
+							<button type="button" class="masks-move-hold__control masks-move-hold__increase" data-hold-action="increase" data-tooltip="{{localize 'MASKS-SHEETS.Moves.HoldIncrease'}}" aria-label="{{localize 'MASKS-SHEETS.Moves.HoldIncrease'}}" {{#unless @root.editable}}disabled{{/unless}}>+</button>
+						</div>
+					</div>
+					{{/if}}
 					</li>
 				{{/each}}
 				</ol>

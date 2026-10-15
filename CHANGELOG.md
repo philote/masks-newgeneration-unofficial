@@ -1,4 +1,5 @@
 #Unreleased
+- Moves that give you hold now have a **Hold** stepper right on their row in the Moves tab, so you can track it without a scratch note. It works like the Forward and Ongoing steppers: click -/+ or type a number. Each move keeps its own count. The moves that get one are Burn (Nova), Belong in Two Worlds (Outsider), There When It Matters and Share a Vulnerability (Bull), Always Prepared and Share a Vulnerability (Brain), and Before We Get Started (Soldier). Existing characters' copies of these moves get the stepper automatically when the GM loads the world
 
 #2.2.0
 - Characters with the Newborn's **Damage** move (on any playbook) get a sixth "Damaged" checkbox in their Conditions list. Damaged doesn't penalize any roll, but when marked it adds +1 to Take a Powerful Blow (and Burn) like any other marked condition. Characters without the move don't see it, unless it's still marked after the move was removed. Existing characters and existing copies of the move are updated automatically when the GM loads the world

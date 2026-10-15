@@ -12,6 +12,10 @@
             "Decrease": "Dépenser dans la réserve d'équipe",
             "PostToChat": "Publier la réserve d'équipe dans le chat"
         },
+        "Moves": {
+            "HoldIncrease": "Gagner de la réserve",
+            "HoldDecrease": "Dépenser de la réserve"
+        },
         "Chat": {
             "MarkPotential": "Cocher du Potentiel",
             "TeamPool": "Équipe : {value}",

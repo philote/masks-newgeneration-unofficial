@@ -12,6 +12,10 @@
             "Decrease": "Gastar de la reserva de Equipo",
             "PostToChat": "Publicar la reserva de Equipo en el chat"
         },
+        "Moves": {
+            "HoldIncrease": "Añadir a lo guardado",
+            "HoldDecrease": "Gastar de lo guardado"
+        },
         "Chat": {
             "MarkPotential": "Marcar Potencial",
             "TeamPool": "Equipo: {value}",
