@@ -121,34 +121,21 @@ describe("initSkipEmptyRollDialog", () => {
 			expect(roll._onDialogSubmit).not.toHaveBeenCalled();
 		});
 
-		it("banked forward", async () => {
+		it("rollType \"ask\" never offers banked forward/ongoing/hold in pbta's dialog", async () => {
 			const roll = buildRoll({
-				conditionGroups: [],
-				rollType: "danger",
-				resources: { forward: { value: 1 }, ongoing: { value: 0 }, hold: { value: 0 } }
+				rollType: "ask",
+				resources: { forward: { value: 2 }, ongoing: { value: 1 }, hold: { value: 1 }, other: 5 }
 			});
 
-			await CONFIG.Dice.RollPbtA.prototype.configureDialog.call(roll, {}, {});
+			await CONFIG.Dice.RollPbtA.prototype.configureDialog.call(roll, { title: "Move" }, {});
 
 			expect(originalConfigureDialog).toHaveBeenCalled();
-			expect(roll._onDialogSubmit).not.toHaveBeenCalled();
-		});
-
-		it("banked ongoing or hold", async () => {
-			const ongoing = buildRoll({
-				rollType: "danger",
-				resources: { forward: { value: 0 }, ongoing: { value: 1 }, hold: { value: 0 } }
+			expect(roll.data.resources).toEqual({
+				forward: { value: 0 },
+				ongoing: { value: 0 },
+				hold: { value: 0 },
+				other: 5
 			});
-			const hold = buildRoll({
-				rollType: "danger",
-				resources: { forward: { value: 0 }, ongoing: { value: 0 }, hold: { value: 1 } }
-			});
-
-			await CONFIG.Dice.RollPbtA.prototype.configureDialog.call(ongoing, {}, {});
-			await CONFIG.Dice.RollPbtA.prototype.configureDialog.call(hold, {}, {});
-
-			expect(ongoing._onDialogSubmit).not.toHaveBeenCalled();
-			expect(hold._onDialogSubmit).not.toHaveBeenCalled();
 		});
 
 		it("stat-token spend available", async () => {
@@ -171,6 +158,45 @@ describe("initSkipEmptyRollDialog", () => {
 
 			expect(originalConfigureDialog).toHaveBeenCalled();
 			expect(roll._onDialogSubmit).not.toHaveBeenCalled();
+		});
+	});
+
+	describe("banked forward/ongoing/hold no longer trigger a dialog", () => {
+		it.each([
+			["forward", { forward: { value: 1 }, ongoing: { value: 0 }, hold: { value: 0 } }],
+			["ongoing", { forward: { value: 0 }, ongoing: { value: 1 }, hold: { value: 0 } }],
+			["hold", { forward: { value: 0 }, ongoing: { value: 0 }, hold: { value: 1 } }]
+		])("banked %s with no conditions hands pbta zeroed resources, so it rolls straight through", async (_, resources) => {
+			const roll = buildRoll({ conditionGroups: [], rollType: "danger", resources });
+
+			await CONFIG.Dice.RollPbtA.prototype.configureDialog.call(roll, {}, {});
+
+			expect(originalConfigureDialog).toHaveBeenCalled();
+			expect(roll.data.resources).toEqual(NO_MODS_RESOURCES);
+		});
+
+		it("banked forward alongside conditions still takes the dialog-free condition path", async () => {
+			renderTemplate.mockResolvedValue(
+				renderConditionsHtml([{ label: "Angry (-2 to comfort or pierce)", mod: -2 }])
+			);
+			const roll = buildRoll({
+				conditionGroups: ["Angry"],
+				rollType: "mundane",
+				resources: { forward: { value: 2 }, ongoing: { value: 1 }, hold: { value: 0 } }
+			});
+
+			const result = await CONFIG.Dice.RollPbtA.prototype.configureDialog.call(
+				roll,
+				{ title: "Comfort or Support" },
+				{}
+			);
+
+			expect(originalConfigureDialog).not.toHaveBeenCalled();
+			expect(renderTemplate).toHaveBeenCalledWith(
+				"systems/pbta/templates/chat/roll-dialog.html",
+				expect.objectContaining({ hasSituationalMods: false, resources: NO_MODS_RESOURCES })
+			);
+			expect(result).toEqual({ appliedMod: -2, conditions: ["Angry (-2 to comfort or pierce)"] });
 		});
 	});
 

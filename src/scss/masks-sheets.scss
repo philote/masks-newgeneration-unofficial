@@ -969,7 +969,20 @@
     }
   }
 
-  .masks-mark-potential {
+  .masks-roll-bonuses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 6px;
+
+    .masks-roll-bonus {
+      flex: 1 1 calc(50% - 3px);
+      margin-top: 0;
+    }
+  }
+
+  .masks-mark-potential,
+  .masks-roll-bonus {
     box-sizing: border-box;
     display: flex;
     align-items: center;

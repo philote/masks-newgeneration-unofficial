@@ -14,7 +14,17 @@
         },
         "Chat": {
             "MarkPotential": "Mark Potential",
-            "TeamPool": "Team: {value}"
+            "TeamPool": "Team: {value}",
+            "UseForward": "Use Forward (+1)",
+            "UseOngoing": "Use Ongoing (+1)",
+            "UseInfluence": "Use Influence: {name}",
+            "ExploitInfluence": "Exploit Influence: {name}",
+            "InfluenceCondition": "Influence over {name} (+1)",
+            "ExploitCondition": "Exploited Influence over {name} (+1)",
+            "ExploitedInfluence": "{actor} exploited their Influence over {target} and loses it.",
+            "InfluenceUnnamed": "someone",
+            "NotLatestRoll": "Bonuses can only be added to your most recent roll.",
+            "BonusUnavailable": "That bonus is no longer available for this roll."
         },
         "Dialog": {
             "AutoConditions": "All marked conditions apply automatically: {total}",

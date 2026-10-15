@@ -2,34 +2,36 @@ import { applyPowerfulBlowConditions } from "./powerful-blow.mjs";
 import { applyBasicMoveConditions } from "./basic-move-conditions.mjs";
 
 /**
- * pbta's configureDialog() shows a dialog whenever the actor has ANY condition
- * marked (conditionGroups.length > 0), even though basic-move-conditions.mjs and
- * powerful-blow.mjs always force every checkbox to checked+disabled or remove the
- * whole cell the instant that dialog renders — there's never anything left for the
- * player to click. The other three triggers (ask/prompt rollType, banked
- * forward/ongoing/hold, stat-token spend) are all genuine choices and must keep
- * showing a dialog.
+ * Masks has no preroll dialog for situational modifiers: forward, ongoing and
+ * Influence are offered as buttons on the posted chat card instead (see
+ * roll-bonuses.mjs). So this zeroes forward/ongoing/hold in the roll's data
+ * before pbta's configureDialog() sees them — which both stops them triggering
+ * a dialog and keeps their checkboxes out of the "ask" stat-picker dialog,
+ * the one pbta dialog that remains (a genuine Label choice).
  *
- * Suppressing the condition trigger isn't purely cosmetic though: pbta's
- * _onDialogSubmit() is the only place a condition's modifier actually gets folded
- * into the roll formula, so this can't just force needsDialog to false. Instead,
- * when conditions are the only reason a dialog would show, this replicates
- * configureDialog()'s own pre-dialog setup, renders the real template, runs the two
- * condition-lockdown handlers directly (in the same order their renderDialog hooks
- * fire), and calls the real _onDialogSubmit() itself — never constructing a Dialog.
+ * pbta also shows a dialog whenever the actor has ANY condition marked, even
+ * though basic-move-conditions.mjs and powerful-blow.mjs always force every
+ * checkbox to checked+disabled or remove the whole cell the instant that dialog
+ * renders. Suppressing that isn't purely cosmetic though: pbta's
+ * _onDialogSubmit() is the only place a condition's modifier actually gets
+ * folded into the roll formula. So when conditions are the only reason a dialog
+ * would show, this replicates configureDialog()'s own pre-dialog setup, renders
+ * the real template, runs the two condition-lockdown handlers directly (in the
+ * same order their renderDialog hooks fire), and calls the real
+ * _onDialogSubmit() itself — never constructing a Dialog.
  */
 export function initSkipEmptyRollDialog() {
     const originalConfigureDialog = CONFIG.Dice.RollPbtA.prototype.configureDialog;
 
     CONFIG.Dice.RollPbtA.prototype.configureDialog = async function configureDialog(data = {}, options = {}) {
+        if (this.data.resources) {
+            this.data = { ...this.data, resources: withoutSituationalMods(this.data.resources) };
+        }
+
         const { conditionGroups, resources, rollType } = this.data;
-        const hasSituationalMods = resources
-            ? resources.forward.value !== 0 || resources.ongoing.value !== 0 || resources.hold.value > 0
-            : false;
         const templateData = data.templateData ?? {};
         const hasOtherRealChoice =
             ["ask", "prompt"].includes(rollType)
-            || hasSituationalMods
             || (templateData.isStatToken && templateData.numOfToken);
 
         if (hasOtherRealChoice || !conditionGroups?.length) {
@@ -66,5 +68,14 @@ export function initSkipEmptyRollDialog() {
         applyBasicMoveConditions(fakeApp, [container]);
 
         return this._onDialogSubmit([container]);
+    };
+}
+
+function withoutSituationalMods(resources) {
+    return {
+        ...resources,
+        forward: { ...resources.forward, value: 0 },
+        ongoing: { ...resources.ongoing, value: 0 },
+        hold: { ...resources.hold, value: 0 }
     };
 }

@@ -14,7 +14,17 @@
         },
         "Chat": {
             "MarkPotential": "Cocher du Potentiel",
-            "TeamPool": "Équipe : {value}"
+            "TeamPool": "Équipe : {value}",
+            "UseForward": "Utiliser un bonus au prochain jet (+1)",
+            "UseOngoing": "Utiliser le bonus continu (+1)",
+            "UseInfluence": "Utiliser l'Influence : {name}",
+            "ExploitInfluence": "Exploiter l'Influence : {name}",
+            "InfluenceCondition": "Influence sur {name} (+1)",
+            "ExploitCondition": "Influence exploitée sur {name} (+1)",
+            "ExploitedInfluence": "{actor} a exploité son Influence sur {target} et la perd.",
+            "InfluenceUnnamed": "quelqu'un",
+            "NotLatestRoll": "Les bonus ne peuvent s'ajouter qu'à ton jet le plus récent.",
+            "BonusUnavailable": "Ce bonus n'est plus disponible pour ce jet."
         },
         "Dialog": {
             "AutoConditions": "Tous les états émotionnels cochés s'appliquent automatiquement : {total}",
