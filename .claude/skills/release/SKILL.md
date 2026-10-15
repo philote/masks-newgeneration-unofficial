@@ -14,6 +14,11 @@ them to Foundry's package listing. Each link only works once the previous one ha
 version doesn't match both the tag and local `package.json`. Skipping ahead produces a failure, not a
 silent no-op — but there's no reason to hit it: follow the order below.
 
+**Run steps 0–5 straight through without stopping for confirmation.** The user has pre-authorized
+building, testing, the changelog/version bump, committing, `git push origin main`, `gh release create`,
+and waiting on the workflow. The only approval point is step 6, the real Foundry submission. Stop
+earlier only when something fails or required input is missing (see Notes).
+
 Releases are cut from **`origin`** (`philote/masks-newgeneration-unofficial`), which is also the repo
 named in `package.json`'s `homepage`/`bugs` and in `foundry_release.py`'s `DEFAULT_REPO`. The `fork`
 remote (`ctincorvia/masks-newgeneration-unofficial-overhaul`) is archived and is **not** a release
@@ -46,9 +51,9 @@ There is no `lint` script and no pre-commit hook in this repo, so nothing runs t
 
 ## 2. Update CHANGELOG.md and package.json
 
-- `CHANGELOG.md`: rename the `#Unreleased` heading to `#X.Y.Z`, keeping its bullets as-is. Ask the
-  user before adding a fresh empty `#Unreleased` above it. If there is no `#Unreleased` section, ask
-  what the release notes should be rather than inventing them from the commit log.
+- `CHANGELOG.md`: rename the `#Unreleased` heading to `#X.Y.Z`, keeping its bullets as-is, and always
+  add a fresh empty `#Unreleased` heading above it (don't ask). If there is no `#Unreleased` section,
+  stop and ask what the release notes should be rather than inventing them from the commit log.
 - `package.json`: bump `"version"` to `X.Y.Z`.
 
 Do **not** run `npm run sync-manifest` — that's only needed when `module.json` itself changes, and it
@@ -59,12 +64,13 @@ Foundry version.
 
 ## 3. Commit and push
 
-`git add` the changed files, commit (e.g. "Release X.Y.Z"), then **confirm with the user before
-pushing** — `git push origin main` is a shared-remote action, and step 4 builds on the pushed commit.
+`git add` the changed files, commit (e.g. "Release X.Y.Z"), then `git push origin main`. Step 4
+builds on the pushed commit. No confirmation needed.
 
 ## 4. Publish the GitHub release
 
-This is the trigger, and the point of no easy return. **Get the user's explicit go-ahead first.**
+This is the trigger, and the point of no easy return. Proceed without asking, but only if step 1's
+build and tests passed and any `css/` changes are committed and pushed.
 
 Write the new CHANGELOG section's bullets to a temp file and use it as the release body — that's the
 established convention here (v2.0.4's release body is its `#2.0.4` section verbatim):
@@ -91,8 +97,8 @@ step 6 without this.
 
 ## 6. Publish to Foundry via `tools/foundry_release.py`
 
-Ask the user for their Foundry package API token at this point — never invent, store, echo, or log it
-beyond the single command it's passed to. Per `CLAUDE.md`'s scripts-toolbox convention:
+**This is the first and only step that stops for the user.** Ask the user for their Foundry package
+API token at this point — never invent, store, echo, or log it beyond the single command it's passed to. Per `CLAUDE.md`'s scripts-toolbox convention:
 
 1. Run `py tools/foundry_release.py --token <token> --dry-run` first and show the full output (it
    prints the payload it would submit: repo/id/version/manifest/notes/compat, then Foundry's HTTP
@@ -108,9 +114,10 @@ per `CLAUDE.md` §1, `python` on this machine may resolve to a Microsoft Store s
 
 ## Notes
 
-- Don't commit, push, or publish a release without the user's explicit go-ahead at each of those
-  steps — this mirrors every other mutating-action rule in `CLAUDE.md`, not something special to
-  releases.
+- Steps 0–5 (including commit, push, and the GitHub release) are pre-authorized by the user. Don't stop
+  for routine confirmation. Stop early only on a real problem: a build or test failure, a workflow
+  failure, a `package.json`/tag version mismatch, or a missing `#Unreleased` section. The real Foundry
+  submission in step 6 always needs the user's explicit approval.
 - If `gh run watch` reports a failure, read the failing step's log before assuming anything about the
   release chain — the same "assume the code is wrong before assuming the tool is wrong" rule from
   `CLAUDE.md` §4 applies to a broken release build as much as to a local test failure.
