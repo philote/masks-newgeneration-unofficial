@@ -1,4 +1,6 @@
 #Unreleased
+
+#2.2.0
 - Characters with the Newborn's **Damage** move (on any playbook) get a sixth "Damaged" checkbox in their Conditions list. Damaged doesn't penalize any roll, but when marked it adds +1 to Take a Powerful Blow (and Burn) like any other marked condition. Characters without the move don't see it, unless it's still marked after the move was removed. Existing characters and existing copies of the move are updated automatically when the GM loads the world
 - Added a blank **Custom** playbook for homebrew characters, turned on with the new "Allow Custom Playbooks" world setting (off by default). It starts with every Label at 0, no details or moves, eight blank advancements you fill in yourself, and the standard later advances. Add its playbook moves with "Create Blank Move" or "From Another Playbook". Turning the setting off hides Custom from the playbook list, but characters already using it keep it
 - Take a Powerful Blow's chat card now shows a 10+ in red and a miss in green (a 7-9 stays amber), since a high roll is the bad outcome for this move. The result text is unchanged
