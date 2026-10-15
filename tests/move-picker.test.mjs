@@ -98,6 +98,14 @@ describe("listPlaybookPacks", () => {
 
 		expect(listPlaybookPacks()).toEqual([beacon, bull]);
 	});
+
+	it("excludes the move-less Custom playbook pack", () => {
+		const beacon = buildPack({ id: "masks-newgeneration-unofficial.basic-playbook-beacon", name: "basic-playbook-beacon" });
+		const custom = buildPack({ id: "masks-newgeneration-unofficial.custom-playbook", name: "custom-playbook" });
+		vi.stubGlobal("game", { packs: buildPacksCollection([beacon, custom]) });
+
+		expect(listPlaybookPacks()).toEqual([beacon]);
+	});
 });
 
 describe("listPlaybookMoves", () => {
@@ -301,6 +309,17 @@ describe("initMovePicker", () => {
 				]
 			})
 		);
+	});
+
+	it("offers only another playbook or a blank move to a Custom playbook character", () => {
+		const actor = buildActor([{ type: "playbook", name: "Custom" }]);
+		actor.system = { playbook: { uuid: "Compendium.masks-newgeneration-unofficial.custom-playbook.Item.lpBBC1uT1iFGbwXs" } };
+
+		clickMovePickerButton({ actor }, "playbook");
+
+		const { buttons, content } = foundry.applications.api.DialogV2.wait.mock.calls[0][0];
+		expect(buttons.map((button) => button.action)).toEqual(["other", "blank"]);
+		expect(content).not.toContain("MASKS-SHEETS.Dialog.MovePicker.NoPlaybook");
 	});
 
 	it("opens the other-playbook picker forced to the module's light theme, with a themed Next button", async () => {

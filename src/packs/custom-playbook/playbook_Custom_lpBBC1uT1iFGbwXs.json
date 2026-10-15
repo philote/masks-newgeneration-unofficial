@@ -1,0 +1,204 @@
+{
+  "name": "Custom",
+  "type": "playbook",
+  "img": "modules/masks-newgeneration-unofficial/images/gameicons/playbook.svg",
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "core": {}
+  },
+  "system": {
+    "description": "<div class=\"playbook\">\n<section>\n<h1>CUSTOM</h1>\n<p>A blank playbook for homebrew heroes. Set your Labels, details, and advancements by hand (the later advances are the standard ones), and add your own playbook moves with Create Blank Move.</p>\n</section>\n</div>",
+    "slug": "custom",
+    "actorType": "character",
+    "stats": {
+      "danger": {
+        "label": "Danger",
+        "value": 0
+      },
+      "freak": {
+        "label": "Freak",
+        "value": 0
+      },
+      "savior": {
+        "label": "Savior",
+        "value": 0
+      },
+      "superior": {
+        "label": "Superior",
+        "value": 0
+      },
+      "mundane": {
+        "label": "Mundane",
+        "value": 0
+      }
+    },
+    "statsDetail": "",
+    "attributes": {
+      "advancements": {
+        "label": "Advancements",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "[Text]"
+              },
+              "1": {
+                "value": false,
+                "label": "[Text]"
+              },
+              "2": {
+                "value": false,
+                "label": "[Text]"
+              },
+              "3": {
+                "value": false,
+                "label": "[Text]"
+              },
+              "4": {
+                "value": false,
+                "label": "[Text]"
+              },
+              "5": {
+                "value": false,
+                "label": "[Text]"
+              },
+              "6": {
+                "value": false,
+                "label": "[Text]"
+              },
+              "7": {
+                "value": false,
+                "label": "[Text]"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes",
+        "value": "",
+        "max": null,
+        "options": {},
+        "description": ""
+      },
+      "laterAdvances": {
+        "label": "Later Advances",
+        "type": "ListMany",
+        "choices": [
+          {
+            "options": {
+              "0": {
+                "value": false,
+                "label": "Unlock your Moment of Truth after it’s been used once"
+              },
+              "1": {
+                "value": false,
+                "label": "Change playbooks"
+              },
+              "2": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "3": {
+                "value": false,
+                "label": "Take an adult move"
+              },
+              "4": {
+                "value": false,
+                "label": "Lock a Label, and add +1 to a Label of your choice"
+              },
+              "5": {
+                "value": false,
+                "label": "Retire from the life or become a paragon of the city"
+              }
+            },
+            "value": ""
+          }
+        ],
+        "custom": false,
+        "path": "attributes",
+        "value": "",
+        "max": null,
+        "options": {},
+        "description": ""
+      },
+      "look": {
+        "label": "Look",
+        "type": "LongText",
+        "value": "",
+        "choices": [],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {},
+        "description": ""
+      },
+      "abilities": {
+        "label": "Abilities",
+        "type": "LongText",
+        "value": "",
+        "choices": [],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {},
+        "description": ""
+      },
+      "backstory": {
+        "label": "Backstory",
+        "type": "LongText",
+        "value": "",
+        "choices": [],
+        "custom": false,
+        "path": "details",
+        "max": null,
+        "options": {},
+        "description": ""
+      },
+      "relationshipQuestions": {
+        "label": "Relationships",
+        "type": "LongText",
+        "choices": [],
+        "custom": false,
+        "path": "attributes",
+        "description": ""
+      },
+      "momentOfTruth": {
+        "label": "Moment of Truth",
+        "type": "LongText",
+        "choices": [],
+        "custom": false,
+        "path": "attributes",
+        "description": ""
+      },
+      "teamQuestion": {
+        "label": "When our team first came together...",
+        "type": "LongText",
+        "choices": [],
+        "custom": false,
+        "path": "attributes",
+        "description": ""
+      }
+    },
+    "choiceSets": []
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "14.367",
+    "systemId": "pbta",
+    "systemVersion": "1.2.0",
+    "createdTime": 1792022400000,
+    "modifiedTime": 1792022400000,
+    "lastModifiedBy": null
+  },
+  "_id": "lpBBC1uT1iFGbwXs",
+  "sort": 0,
+  "_key": "!items!lpBBC1uT1iFGbwXs"
+}

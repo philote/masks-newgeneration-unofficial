@@ -10,10 +10,12 @@
  */
 
 import { CANONICAL_ADULT_MOVE_NAMES } from "./adult-moves.mjs";
+import { CUSTOM_PLAYBOOK_PACK, isCustomPlaybookUuid } from "./custom-playbook.mjs";
 
 const MODULE_ID = "masks-newgeneration-unofficial";
 
-const PLAYBOOK_PACK_EXCLUSIONS = ["moves", "documents"];
+// The Custom playbook's pack has no moves of its own to offer.
+const PLAYBOOK_PACK_EXCLUSIONS = ["moves", "documents", CUSTOM_PLAYBOOK_PACK];
 
 export function initMovePicker() {
     Hooks.on("renderActorSheet", onRenderActorSheet);
@@ -57,9 +59,10 @@ async function openAdultMovePicker(actor) {
 
 async function openPlaybookChoiceDialog(actor) {
     const hasPlaybook = Boolean(getActorPlaybookItem(actor));
+    const hasOwnPlaybookMoves = hasPlaybook && !isCustomPlaybookUuid(actor.system?.playbook?.uuid);
 
     const buttons = [];
-    if (hasPlaybook) {
+    if (hasOwnPlaybookMoves) {
         buttons.push({
             action: "own",
             label: game.i18n.localize("MASKS-SHEETS.Dialog.MovePicker.OwnPlaybook"),

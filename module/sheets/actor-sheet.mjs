@@ -1,4 +1,5 @@
 import { hideUngrantedConditions } from '../helpers/granted-conditions.mjs';
+import { filterPlaybookChoices } from '../helpers/custom-playbook.mjs';
 
 export function MasksActorSheetMixin(Base) {
 	return class MasksActorSheet extends Base {
@@ -7,6 +8,15 @@ export function MasksActorSheetMixin(Base) {
 		/** @override */
 		get template() {
 			return 'modules/masks-newgeneration-unofficial/templates/sheets/actor-sheet.hbs';
+		}
+
+		/** @override */
+		async getData(options) {
+			const context = await super.getData(options);
+			if (context.playbooks) {
+				context.playbooks = filterPlaybookChoices(context.playbooks, this.actor.system.playbook?.uuid);
+			}
+			return context;
 		}
 
 		/** @override */

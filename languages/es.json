@@ -73,6 +73,10 @@
             "team_pool_token_image": {
                 "name": "Imagen del token de la reserva de Equipo",
                 "hint": "Imagen que se usa al colocar un actor de reserva de Equipo en una escena. Déjala en blanco para usar el icono de equipo predeterminado del módulo. Los tokens que ya están en una escena no cambian."
+            },
+            "allow_custom_playbooks": {
+                "name": "Permitir libretos personalizados",
+                "hint": "Añade un libreto personalizado en blanco (Custom) a la lista de libretos de la hoja de personaje, para libretos caseros. Los personajes que ya lo usan lo conservan aunque esta opción esté desactivada."
             }
         },
         "Description": {

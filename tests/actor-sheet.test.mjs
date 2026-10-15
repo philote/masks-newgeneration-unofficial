@@ -1,9 +1,16 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { MasksActorSheetMixin } from "../module/sheets/actor-sheet.mjs";
 
+const CUSTOM_PLAYBOOK = { name: "Custom", uuid: "Compendium.masks-newgeneration-unofficial.custom-playbook.Item.lpBBC1uT1iFGbwXs" };
+const BEACON_PLAYBOOK = { name: "The Beacon", uuid: "Compendium.masks-newgeneration-unofficial.basic-playbook-beacon.Item.0iryK44tVpbXhlMF" };
+
 class BaseSheet {
-	constructor(items) {
-		this.actor = { items };
+	constructor(items, system = {}) {
+		this.actor = { items, system };
+	}
+
+	async getData() {
+		return { playbooks: [CUSTOM_PLAYBOOK, BEACON_PLAYBOOK] };
 	}
 
 	async _prepareAttrs(context) {
@@ -41,5 +48,35 @@ describe("MasksActorSheet._prepareAttrs", () => {
 		await new MasksSheet([damageMove])._prepareAttrs(context);
 
 		expect(context.system.attrLeft.conditions.options["5"]).toBeDefined();
+	});
+});
+
+describe("MasksActorSheet.getData", () => {
+	function stubAllowCustomPlaybooks(allowed) {
+		vi.stubGlobal("game", { settings: { get: vi.fn().mockReturnValue(allowed) } });
+	}
+
+	it("hides the Custom playbook from the dropdown when custom playbooks aren't allowed", async () => {
+		stubAllowCustomPlaybooks(false);
+
+		const context = await new MasksSheet([]).getData();
+
+		expect(context.playbooks).toEqual([BEACON_PLAYBOOK]);
+	});
+
+	it("lists the Custom playbook when custom playbooks are allowed", async () => {
+		stubAllowCustomPlaybooks(true);
+
+		const context = await new MasksSheet([]).getData();
+
+		expect(context.playbooks).toEqual([CUSTOM_PLAYBOOK, BEACON_PLAYBOOK]);
+	});
+
+	it("keeps the Custom playbook listed for an actor already using it", async () => {
+		stubAllowCustomPlaybooks(false);
+
+		const context = await new MasksSheet([], { playbook: { uuid: CUSTOM_PLAYBOOK.uuid } }).getData();
+
+		expect(context.playbooks).toEqual([CUSTOM_PLAYBOOK, BEACON_PLAYBOOK]);
 	});
 });
